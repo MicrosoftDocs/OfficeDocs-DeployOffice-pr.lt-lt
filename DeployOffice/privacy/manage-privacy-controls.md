@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo kontrolės mechanizmus "Office 365 ProPlus" naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: 096d6a368965ecedcff3807bbbf3e90649eb8562
-ms.sourcegitcommit: 6145cfe372725bedab7bc6a80adab100561f74fd
+ms.openlocfilehash: 069b21632044354afded61ccc9b1d099cd9cda98
+ms.sourcegitcommit: 8dd9721bd618ae6e4d27f2c45c5dc8e3219858ac
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34106896"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250391"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus
 
@@ -85,6 +85,9 @@ Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos f
 - Leisti „Office" naudoti prisijungus naudojamas funkcijas
 
 Jei nekonfigūruosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos. Tai suteikia jūsų vartotojams visų funkcijų ir funkcionalumo pasiekiamumą per „Office 365 ProPlus“. Tačiau suprantame, kad gali tekti išjungti kai kurias arba visas prisijungus naudojamas funkcijas, kad jos atitiktų tam tikrus jūsų organizacijos reikalavimus.
+
+> [!IMPORTANT]
+> Šiuo metu yra problemų dėl šių 4 strategijos parametrų, kuriuos stengiamės ištaisyti. Dabar norėdami išjungti vieną iš šių strategijos parametrų naudodami grupės strategijos valdymo įrankį, turite pasirinkti išrinkimo mygtuką Įgalinta ir tada iš išplečiamojo sąrašo, kuris yra dalyje **Parinktys**, pasirinkti **Išjungta**. Pasirinkus išrinkimo mygtuką **Išjungta**, šie strategijos parametrai nebus išjungti.
 
 Jei nuspręsite kai kurių tipų prisijungus naudojamas funkcijas padaryti nepasiekiamas vartotojams, šių funkcijų juostelės arba meniu komandos bus rodoma pilkos arba vartotojai gaus klaidos pranešimą, kai bandys jas naudoti. Tokiu atveju jokie[reikalingi tarnybų duomenys](required-service-data.md)apie prisijungus naudojamas funkcijas nebus siunčiami „Microsoft“.
 
