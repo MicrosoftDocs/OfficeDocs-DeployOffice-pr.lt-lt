@@ -30,17 +30,17 @@ ms.locfileid: "32435863"
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
-Šie diagnostikos duomenys, susiję su „Office“ kliento programine įranga, naudojama kompiuteriuose, kuriuose įdiegta operacinė sistema „Windows“, renkami ir siunčiami „Microsoft“. Kai kurie diagnostikos duomenys yra būtini, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums būtinuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
+Šie diagnostikos duomenys, susiję su „Office“ kliento programine įranga, naudojama kompiuteriuose, kuriuose įdiegta operacinė sistema „Windows“, renkami ir siunčiami „Microsoft“. Kai kurie diagnostikos duomenys yra privalomi, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums privalomuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
 
 ***Pasirinktiniai diagnostikos duomenys*** yra papildomi duomenys, kurie padeda mums tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir ištaisyti kilusias problemas.
 
-Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, būtinieji diagnostikos duomenys taip pat bus įtraukti.
+Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, privalomieji diagnostikos duomenys taip pat bus įtraukti.
 
 Pasirinktinių diagnostikos duomenų pavyzdžiai yra duomenys, kuriuos renkame apie paveikslėlius, kuriuos vartotojai įterpia į „Word“ dokumentus, kad galėtume teikti geresnes vaizdų parinktis, bei duomenys, kuriuos renkame apie tai, per kiek laiko „PowerPoint“ skaidrė pasirodo jūsų ekrane, kad galėtume pagerinti veikimą, jei jis lėtas.
 
-Daugiau informacijos apie diagnostikos duomenis, žr.:
+Daugiau informacijos apie diagnostikos duomenis žr.:
 
-- [Būtinieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
+- [Privalomieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 Jei esate organizacijos administratorius, galbūt jus domina šios temos:
@@ -52,18 +52,18 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
 Pasirinktinai diagnostikos duomenys skirstomi į šias kategorijas:
 
-- Programinės įrangos sąranka ir inventorius
-- Produktų ir tarnybų naudojimas
-- Produktų ir tarnybų našumas
-- Įrenginių jungiamumas ir konfigūracija
+- turima programinė įranga ir jos sąranka
+- produktų ir tarnybų naudojimas
+- produktų ir tarnybų našumas
+- įrenginio ryšiai ir konfigūracija
 
-Šios kategorijos rodomos diagnostikos duomenų peržiūros programoje ir jos yra tokios pačios, kaip kategorijos, naudojamos su būtinaisiais diagnostikos duomenimis.
+Šios kategorijos rodomos diagnostikos duomenų peržiūros programoje ir yra tokios pačios, kaip kategorijos, taikomomis privalomiesiems diagnostikos duomenims.
 
 Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekvienos kategorijos įvykių pavyzdžiai.
 
-## <a name="software-setup-and-inventory-events"></a>Programinės įrangos sąrankos ir inventoriaus įvykiai
+## <a name="software-setup-and-inventory-events"></a>Su turima programine įranga ir jos sąranka susiję įvykiai
 
-Šioje kategorijoje yra įvykiai, kurie gali apimti šias sritis:
+Į šią kategoriją gali būti įtraukti šių sričių įvykiai:
 
 - Įdiegtas produktas ir versija bei diegimo būsena
 - Programinės įrangos papildiniai ir jų parametrai.
@@ -76,9 +76,9 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 | Office\_Extensibility\_AppCommands\_GetRibbonUpdatesForUserId | Šis įvykis nurodo, ar „Word“ sėkmingai atnaujina juostelę „Word“ vartotojo sąsajoje, kai vartotojas pakeičia savo tapatybę. Šį įvykį naudojame siekdami aptikti neteisingą sąranką ir kitas problemas, kurios gali turėti įtakos „Office“ vartotojo sąsajai. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Šis įvykis suteikia informacijos apie vartotojo įdiegtą „Office“ papildinį, įskaitant programos ID, operacinės sistemos versiją ir komponavimo versiją, informaciją, ar diegimas pavyko, ir diegimo trukmę.  |
 
-## <a name="product-and-service-usage-events"></a>Produktų ir tarnybų naudojimo įvykiai
+## <a name="product-and-service-usage-events"></a>Su produktų ir tarnybų naudojimu susiję įvykiai
 
-Šioje kategorijoje yra įvykiai, kurie gali apimti šias sritis:
+Į šią kategoriją gali būti įtraukti šių sričių įvykiai:
 
 - Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas).
 - Nustatymas, ar įvyko specifiniai funkcijų įvykiai, pvz., paleidimas ar sustabdymas, ir ar funkcija veikia.
@@ -90,16 +90,16 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | Šis įvykis nurodo, kad „Word“ įvykdė teksto paryškinimo komandą. Naudojame šį įvykį, kad aptiktume klaidas teksto paryškinimo komandoje.  |
 | Office.Translator.AddInLoaded   | Kontrolinis signalas, nurodantis, kad vertyklės funkcija įkelta ir sėkmingai pateikta.  |
-| Office.Graphics.InsertPictureCommandActivity  | Seka paveikslėlio įterpimo funkcijos pavykimą arba nepavykimą bei praneša informaciją apie įterptų paveikslėlių tipus ir šaltinį.|
+| Office.Graphics.InsertPictureCommandActivity  | Seka, ar paveikslėlio įterpimo funkcija pavyko, bei praneša informaciją apie įterptų paveikslėlių tipus ir šaltinį.|
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | Šis įvykis nustato, ar dokumente yra sekcijų, kai vartotojas įterpia interaktyviąją suvestinės peržiūrą, ir ar vartotojas pasirenka panaikinti esamas sekcijas. |
-| Office.Security.SecureReaderHost.ProtectedViewValidation | Seka kada ir kodėl failas atidaromas apsaugotame rodinyje. Naudojama tam, kad būtų galima diagnozuoti sąlygas, kai apsaugotas rodinys gali būti netinkamai suaktyvintas, siekiant užtikrinti, kad funkcija veiktų tinkamai. |
+| Office.Security.SecureReaderHost.ProtectedViewValidation | Seka, kada ir kodėl failas atidaromas apsaugotame rodinyje. Naudojama tam, kad būtų galima diagnozuoti sąlygas, kai apsaugotas rodinys gali būti netinkamai suaktyvintas, siekiant užtikrinti, kad funkcija veiktų tinkamai. |
 
-## <a name="product-and-service-performance-events"></a>Produktų ir tarnybų našumo įvykiai
+## <a name="product-and-service-performance-events"></a>Su produktų ir tarnybų našumu susiję įvykiai
 
-Šioje kategorijoje yra įvykiai, kurie gali apimti šias sritis:
+Į šią kategoriją gali būti įtraukti šių sričių įvykiai:
 
 - Nenumatytas programų uždarymas (užstrigimas) ir programos būsena, kai taip nutinka.
-- Scenarijų, tokių kaip programos paleidimas ar failo atidarymas, prastas atsakymo laikas ar našumas.
+- Prastas atsakymo laikas ar našumas vykdant scenarijus, tokius kaip programos paleidimas ar failo atidarymas.
 - Funkcijos ar vartotojo patirties veikimo klaidos.
 
 Šioje lentelėje pateikiami šios kategorijos įvykių pavyzdžiai ir šių įvykių aprašymas.
@@ -111,9 +111,9 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | Šis įvykis fiksuoja, kiek laiko trunka atvaizduoti pirmąją „PowerPoint“ skaidrių ruošinio miniatiūrą.  |
 | Office.Extensibility.Diagnostics   | Šis įvykis suteikia bendrą „Office“ papildinių diagnostikos informaciją, tokią kaip derinimui skirtos gedimų ataskaitos.|
 
-## <a name="device-connectivity-and-configuration-events"></a>Įrenginių jungiamumo ir konfigūracijos įvykiai
+## <a name="device-connectivity-and-configuration-events"></a>Su įrenginio ryšiais ir konfigūracija susiję duomenys
 
-Šioje kategorijoje yra įvykiai, kurie gali apimti šias sritis:
+Į šią kategoriją gali būti įtraukti šių sričių įvykiai:
 
 - Tinklo ryšio būsena ir įrenginio parametrai, tokie kaip atmintis.
 
