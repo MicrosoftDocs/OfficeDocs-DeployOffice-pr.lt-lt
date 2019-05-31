@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo kontrolės mechanizmus "Office 365 ProPlus" naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: 069b21632044354afded61ccc9b1d099cd9cda98
-ms.sourcegitcommit: 8dd9721bd618ae6e4d27f2c45c5dc8e3219858ac
+ms.openlocfilehash: a28da8a54ecb37f6fd26576ce2dfb4614521dd19
+ms.sourcegitcommit: c4147043c5e6581d58a6d09edbf95266e67dd796
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250391"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34545466"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus
 
@@ -87,7 +87,7 @@ Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos f
 Jei nekonfigūruosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos. Tai suteikia jūsų vartotojams visų funkcijų ir funkcionalumo pasiekiamumą per „Office 365 ProPlus“. Tačiau suprantame, kad gali tekti išjungti kai kurias arba visas prisijungus naudojamas funkcijas, kad jos atitiktų tam tikrus jūsų organizacijos reikalavimus.
 
 > [!IMPORTANT]
-> Šiuo metu yra problemų dėl šių 4 strategijos parametrų, kuriuos stengiamės ištaisyti. Dabar norėdami išjungti vieną iš šių strategijos parametrų naudodami grupės strategijos valdymo įrankį, turite pasirinkti išrinkimo mygtuką Įgalinta ir tada iš išplečiamojo sąrašo, kuris yra dalyje **Parinktys**, pasirinkti **Išjungta**. Pasirinkus išrinkimo mygtuką **Išjungta**, šie strategijos parametrai nebus išjungti.
+> 2019 m. gegužės 28 d., antradienį, paskelbus naujus administravimo šablono failus (ADMX/ADML), buvo išspręsta problema, susijusi su šių 4 strategijos parametrų išjungimu. Būtinai atsisiųskite ir įdiekite atnaujintus grupės strategijos failus iš [„Microsoft Download Center“](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
 
 Jei nuspręsite kai kurių tipų prisijungus naudojamas funkcijas padaryti nepasiekiamas vartotojams, šių funkcijų juostelės arba meniu komandos bus rodoma pilkos arba vartotojai gaus klaidos pranešimą, kai bandys jas naudoti. Tokiu atveju jokie[reikalingi tarnybų duomenys](required-service-data.md)apie prisijungus naudojamas funkcijas nebus siunčiami „Microsoft“.
 
@@ -207,8 +207,8 @@ Kai kurie administratoriai pirmenybę teikia parametrų keitimui tiesiogiai regi
 |Kliento programinės įrangos diagnostikos duomenų lygio, „Office“ siunčiamų „Microsoft“ tarnybai, konfigūravimas  | SendTelemetry |1 = privaloma <br/> 2 = pasirenkamas <br/> 3 = nė vienas|
 |Leisti „Office" naudoti prisijungus naudojamas funkcijas, analizuojančias turinį  | UserContentDisabled | 1 = įjungta <br/> 2 = išjungta|
 |Leisti „Office" naudoti prisijungus naudojamas funkcijas, kurios parsiunčia internetinį turinį  | DownloadContentDisabled | 1 = įjungta <br/> 2 = išjungta|
-|Leisti „Office“ naudoti pasirinktines, papildomas prisijungus naudojamas funkcijas    |  DisconnectedState |1 = įjungta <br/> 2 = išjungta|
-|Leisti „Office" naudoti prisijungus naudojamas funkcijas | ControllerConnectedServicesEnabled  | 1 = įjungta <br/> 2 = išjungta|
+|Leisti „Office“ naudoti pasirinktines, papildomas prisijungus naudojamas funkcijas    | ControllerConnectedServicesEnabled  |1 = įjungta <br/> 2 = išjungta|
+|Leisti „Office" naudoti prisijungus naudojamas funkcijas | DisconnectedState  | 1 = įjungta <br/> 2 = išjungta|
 
 Norėdami sukurti .reg failą privatumo parametruose, atidarykite užrašinę ir nukopijuokite toliau nurodytas eilutes. Koreguokite reikšmes, kad atitiktų jūsų poreikius, tada įrašykite failą. Įsitikinkite, kad failo vardas turi plėtinį .reg
 
