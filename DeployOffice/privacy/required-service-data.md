@@ -1,5 +1,5 @@
 ---
-title: Reikalingi „Office“ tarnybų duomenys
+title: Privalomieji „Office“ tarnybų duomenys
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Leidžia „Office“ administratoriams apžvelgti būtinųjų tarnybų duomenis, kurie renkami apie „Office“ prisijungus naudojamas funkcijas.
+description: Leidžia „Office“ administratoriams apžvelgti privalomuosius tarnybų duomenis, kurie renkami apie „Office“ prijungtąsias funkcijas.
 hideEdit: true
 ms.openlocfilehash: 88f8aadc098af6e167206486566e32af1767c741
 ms.sourcegitcommit: 894a18676566981183dbe2d78f7466c9bb2c6354
@@ -20,7 +20,7 @@ ms.contentlocale: lt-LT
 ms.lasthandoff: 04/29/2019
 ms.locfileid: "33468553"
 ---
-# <a name="required-service-data-for-office"></a>Reikalingi „Office“ tarnybų duomenys 
+# <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys 
 
 > [!IMPORTANT]
 > Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
@@ -30,29 +30,29 @@ ms.locfileid: "33468553"
 
 „Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
-Būtinieji tarnybų duomenys yra labai svarbūs, nes jie įgalina šių debesų technologija pagrįstų prisijungus naudojamų funkcijų veikimą, leidžia jas apsaugoti ir vykdyti kaip numatyta. Reikalingus tarnybų duomenis sudaro trijų tipų informacija.
+Privalomieji tarnybų duomenys yra labai svarbūs, nes jie įgalina šių debesų technologija pagrįstų prijungtųjų funkcijų veikimą, leidžia jas apsaugoti ir užtikrinti, kad klientams jos veiktų, kaip numatyta. Privalomuosius tarnybų duomenis sudaro trijų tipų informacija.
 
 - **Kliento turinys** – turinys, kurį sukuriate naudodami „Office“, pvz., „Word“ dokumente įvestas tekstas; naudojamas kartu su prisijungus naudojamomis funkcijomis.
 - **Funkciniai duomenys** apima informaciją, kurios reikia, kad prisijungus naudojama funkcija galėtų atlikti užduotį, pvz., programos konfigūracijos informacija.
-- **Tarnybų diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Šie duomenys glaudžiai susiję su prisijungus naudojama paslauga, todėl jie atskirti nuo būtinųjų arba pasirinktinių diagnostikos duomenų lygių.
+- **Tarnybų diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Kadangi šie duomenys glaudžiai susiję su prijungtosiomis funkcijomis, jie atskirti nuo privalomųjų arba pasirinktinių diagnostikos duomenų lygių.
 
-## <a name="example-of-required-service-data-for-a-connected-experience"></a>Prisijungus naudojamų funkcijų būtinųjų tarnybos duomenų pavyzdys
+## <a name="example-of-required-service-data-for-a-connected-experience"></a>Prijungtosios funkcijos privalomųjų tarnybos duomenų pavyzdys
 
-Kad geriau suprastumėte reikalingus tarnybų duomenis, pateikiame pavyzdinį scenarijų, kuriame naudojamas „PowerPoint“ dizaino įrankis – prisijungus naudojama funkcija, kurią pasitelkę galite kurti pateikties skaidres. „PowerPoint“ dizaino įrankis patobulina skaidres automatiškai generuodamas dizaino idėjas, iš kurių galite rinktis. Kai keliate turinį į skaidrę, dizaino įrankis veikia fone, kad pritaikytų turinį prie profesionalių maketų.
+Kad geriau suprastumėte privalomuosius tarnybos duomenis, pateikiame pavyzdinį scenarijų, kuriame naudojamas „PowerPoint“ dizaino įrankis – prijungtoji funkcija, padedanti kurti pateikties skaidres. „PowerPoint“ dizaino įrankis patobulina skaidres automatiškai generuodamas dizaino idėjas, iš kurių galite rinktis. Kai keliate turinį į skaidrę, dizaino įrankis veikia fone, kad pritaikytų turinį prie profesionalių maketų.
 
-Reikalingi tarnybų duomenys, kurie siunčiami „Microsoft“, kad šį prisijungus naudojama funkcija veiktų, gali apimti nurodytuosius toliau.
+Privalomieji tarnybos duomenys, kurie siunčiami „Microsoft“, kad ši prijungtoji funkcija veiktų, gali apimti nurodytuosius toliau.
 
 - *Kliento turinį*, kuris yra tekstas arba vaizdai, kuriuos įtraukiate į skaidrę.
 - *Funkcinius duomenis*, pvz., informaciją, kurioje skaidrėje dirbate, ir jos maketą.
 - *Paslaugos diagnostikos duomenis*, pvz., įvykius, kurie pasako mums, ar dizaino idėja buvo tinkamai pritaikyta skaidrėje ir ar paslauga buvo tinkamai iškviesta.
 
-## <a name="view-and-manage-required-service-data"></a>Būtinųjų tarnybų duomenų peržiūra ir valdymas
+## <a name="view-and-manage-required-service-data"></a>Privalomųjų tarnybos duomenų peržiūra ir valdymas
 
 Tarnybų diagnostikos duomenis galite matyti naudodami diagnostikos duomenų peržiūros programą. Daugiau informacijos žr. [Tarnybų diagnostikos duomenų įvykių pavyzdžiai](#examples-of-events-for-service-diagnostic-data).
 
-Suteikiame jums galimybę pasirinkti, kuriuos prisijungus naudojamų funkcijų tipus norite naudoti „Office“ programose. Tai lemia, kokie būtinieji tarnybų duomenis mums siunčiami. Pavyzdžiui, „PowerPoint“ dizaino įrankis yra viena iš prisijungus naudojamų funkcijų, kurios analizuoja jūsų turinį. Jei pasirinksite išjungti prisijungus naudojamą funkciją, kuri analizuoja turinį, mums nebus siunčiami jokie būtinieji „PowerPoint“ dizaino įrankio tarnybos duomenys, nes „PowerPoint“ dizaino įrankio nebus galima naudoti.
+Suteikiame jums galimybę pasirinkti, kokių tipų prijungtąsias funkcijas norite naudoti „Office“ programose. Nuo to priklauso, kokie privalomieji tarnybų duomenys mums siunčiami. Pavyzdžiui, „PowerPoint“ dizaino įrankis yra viena iš prijungtųjų funkcijų, kurios analizuoja jūsų turinį. Jei pasirinksite išjungti prijungtąją funkciją, kuri analizuoja turinį, mums nebus siunčiami jokie privalomieji „PowerPoint“ dizaino įrankio tarnybos duomenys, nes „PowerPoint“ dizaino įrankio nebus galima naudoti.
 
-Taip pat renkami ir įmonei „Microsoft“ siunčiami pagrindinių „Office“ tarnybų, pvz., licencijavimo tarnybos, kuri patvirtina, kad turite tinkamą licenciją naudoti „Office“, duomenys. Šie pagrindinių tarnybų duomenys siunčiami neatsižvelgiant į kitus su privatumu susijusius parametrus, kuriuos sukonfigūravote.
+Taip pat renkami ir įmonei „Microsoft“ siunčiami pagrindinių „Office“ tarnybų, pvz., licencijavimo tarnybos, kuri patvirtina, kad turite tinkamą licenciją naudoti „Office“, privalomieji tarnybų duomenys. Šie pagrindinių tarnybų duomenys siunčiami neatsižvelgiant į kitus su privatumu susijusius parametrus, kuriuos sukonfigūravote.
 
 Jei reikia daugiau informacijos, žr.:
 

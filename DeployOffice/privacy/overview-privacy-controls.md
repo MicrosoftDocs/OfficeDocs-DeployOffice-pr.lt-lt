@@ -26,11 +26,11 @@ ms.locfileid: "33828366"
 
 „Microsoft“ yra įsipareigojusi suteikti jums reikiamą informaciją ir valdiklius, kad galėtumėte pasirinkti, kaip renkami ir naudojami jūsų duomenys, kai naudojate „Office 365 ProPlus“.
 
-Pradedant „Office 365 ProPlus“ 1904 versija (kuri buvo išleista mėnesiniame naujinimo kanale 2019 m. balandžio mėn. 29 d.), jums bus pasiekiami nauji, atnaujinti ir patobulinti toliau nurodytų sričių privatumo valdikliai:
+Pradedant „Office 365 ProPlus“ 1904 versija (kuri buvo išleista mėnesinių naujinimų kanale 2019 m. balandžio mėn. 29 d.), jums bus pasiekiami nauji, atnaujinti ir patobulinti toliau nurodytų sričių privatumo valdikliai:
 - ***Diagnostikos duomenų***, kurie renkami ir siunčiami „Microsoft“, apie organizacijos „Windows“ kompiuteriuose naudojamą „Office“ kliento programinę įrangą.
 - ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
-Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos elementų ir privatumo parametrų.
+Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos elementų ir strategijos parametrų.
 
 > [!IMPORTANT]
 > - Šie keitimai taikomi „Access“, „Excel“, „OneNote“, „Outlook“, „PowerPoint“, „Publisher“ ir „Word“.
@@ -83,7 +83,7 @@ Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos f
 
 Pavyzdžiui, galite vartotojams padaryti pasiekiamas prisijungus naudojamas funkcijas, kurios atsisiunčia internetinį turinį, bet ne prisijungus naudojamas funkcijas, kurios analizuoja turinį. Jei nekonfigūruosite šių strategijos parametrų, visos šios prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
-Be to, bus pasiekiamas strategijos parametras, kurį naudodami galite išjungti visas šias prisijungus naudojamas funkcijas. Jį pasirinkę taip pat išjungsite kitas prisijungus naudojamas funkcijas, pvz., dokumentų redagavimą vienu metu ir failų saugojimą internetinėje saugykloje. Tačiau net jei naudodami šį strategijos parametrą išjungsite visas šias prisijungus naudojamas funkcijas, kai kurios „Office“ funkcijos vis tiek veiks, pvz., „Outlook“ pašto dėžutė toliau bus sinchronizuojama, veiks „Teams“ arba „Skype“ verslui, taip pat toliau aprašytos pagrindinės paslaugos.
+Be to, bus pasiekiamas strategijos parametras, kurį naudodami galite išjungti visas šias prijungtąsias funkcijas. Jį pasirinkę taip pat išjungsite kitas prijungtąsias funkcijas, pvz., dokumentų redagavimą vienu metu ir failų saugojimą internetinėje saugykloje. Tačiau net jei naudodami šį strategijos parametrą išjungsite visas šias prisijungus naudojamas funkcijas, kai kurios „Office“ funkcijos vis tiek veiks, pvz., „Outlook“ pašto dėžutė toliau bus sinchronizuojama, veiks „Teams“ arba „Skype“ verslui, taip pat toliau aprašytos pagrindinės paslaugos.
 
 Jei nuspręsite vartotojams nepadaryti pasiekiamų kai kurių tipų prisijungus naudojamų funkcijų, šių prisijungus naudojamų funkcijų juostelės arba meniu komanda bus rodoma pilka arba vartotojams bus rodomas klaidos pranešimas, kai bandys jas naudoti.
 
