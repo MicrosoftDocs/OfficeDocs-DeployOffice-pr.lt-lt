@@ -3,7 +3,7 @@ title: Privalomieji „Office“ tarnybų duomenys
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Leidžia „Office“ administratoriams apžvelgti privalomuosius tarnybų duomenis, kurie renkami apie „Office“ prijungtąsias funkcijas.
 hideEdit: true
-ms.openlocfilehash: 88f8aadc098af6e167206486566e32af1767c741
-ms.sourcegitcommit: 894a18676566981183dbe2d78f7466c9bb2c6354
+ms.openlocfilehash: 9a276e00f5c852ffda00844c5e1aaa9187f581c3
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33468553"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701012"
 ---
 # <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys 
 
@@ -28,13 +28,13 @@ ms.locfileid: "33468553"
 > - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
 > - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
 
-„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
+„Office“ sudaro kliento programinės įrangos programos ir prijungtosios funkcijos, padedančios kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
 Privalomieji tarnybų duomenys yra labai svarbūs, nes jie įgalina šių debesų technologija pagrįstų prijungtųjų funkcijų veikimą, leidžia jas apsaugoti ir užtikrinti, kad klientams jos veiktų, kaip numatyta. Privalomuosius tarnybų duomenis sudaro trijų tipų informacija.
 
 - **Kliento turinys** – turinys, kurį sukuriate naudodami „Office“, pvz., „Word“ dokumente įvestas tekstas; naudojamas kartu su prisijungus naudojamomis funkcijomis.
-- **Funkciniai duomenys** apima informaciją, kurios reikia, kad prisijungus naudojama funkcija galėtų atlikti užduotį, pvz., programos konfigūracijos informacija.
-- **Tarnybų diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Kadangi šie duomenys glaudžiai susiję su prijungtosiomis funkcijomis, jie atskirti nuo privalomųjų arba pasirinktinių diagnostikos duomenų lygių.
+- **Funkciniai duomenys** apima informaciją, kurios reikia, kad prijungtoji funkcija galėtų atlikti užduotį, pvz., programos konfigūracijos informacija.
+- **Tarnybos diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Kadangi šie duomenys glaudžiai susiję su prijungtosiomis funkcijomis, jie atskirti nuo privalomųjų arba pasirinktinių diagnostikos duomenų lygių.
 
 ## <a name="example-of-required-service-data-for-a-connected-experience"></a>Prijungtosios funkcijos privalomųjų tarnybos duomenų pavyzdys
 
@@ -56,7 +56,7 @@ Taip pat renkami ir įmonei „Microsoft“ siunčiami pagrindinių „Office“
 
 Jei reikia daugiau informacijos, žr.:
 
-- [„Office“ prisijungus naudojamos funkcijos](connected-experiences.md)
+- [„Office“ prijungtosios funkcijos](connected-experiences.md)
 - [Pagrindinės „Office“ tarnybos](essential-services.md)
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
@@ -65,13 +65,13 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 
-## <a name="examples-of-events-for-service-diagnostic-data"></a>Tarnybų diagnostikos duomenų įvykių pavyzdžiai
+## <a name="examples-of-events-for-service-diagnostic-data"></a>Tarnybos diagnostikos duomenų įvykių pavyzdžiai
 
-Tarnybų diagnostikos duomenys rodomi diagnostikos duomenų peržiūros programoje ir yra skirstomi į tas pačias kategorijas, kurias naudoja būtinieji ir pasirinktiniai diagnostikos duomenys. Pavyzdžiui, *Produktų ir tarnybų naudojimas* ar *Produktų ir tarnybų našumas*.
+Tarnybos diagnostikos duomenys rodomi diagnostikos duomenų peržiūros programoje ir yra skirstomi į tas pačias kategorijas, kurios taikomos privalomiesiems ir pasirinktiniams diagnostikos duomenims. Pavyzdžiui, *produktų ir tarnybų naudojimas* ar *produktų ir tarnybų našumas*.
 
-Tarnybų diagnostikos duomenų įvykiai suteikia mums reikiamą informaciją apie tai, ar prisijungus naudojama funkcija veikia taip, kad tikisi klientas. Pavyzdžiui, ar tarnyba, kurią naudoja prisijungus naudojama funkcija, buvo paleista sėkmingai ir prireikus ją buvo galima pasiekti, ar naudojant tarnybą kilo klaidų ar kitų netikėtų problemų (gedimų) bei tarnybos reagavimas ir našumas.
+Tarnybos diagnostikos duomenų įvykiai suteikia mums reikiamą informaciją apie tai, ar prijungtoji funkcija veikia taip, kad tikisi klientas. Pavyzdžiui, ar tarnyba, kurią naudoja prijungtoji funkcija, buvo paleista sėkmingai ir prireikus ją buvo galima pasiekti, ar naudojant tarnybą kilo klaidų ar kitų netikėtų problemų (gedimų), bei tarnybos reagavimas ir našumas.
 
-Šioje lentelėje pateikiama keletas tarnybų diagnostikos duomenų pavyzdžių.
+Šioje lentelėje pateikiama keletas tarnybos diagnostikos duomenų pavyzdžių.
 
 | **Pavadinimas**      | **Aprašas**    |
 | ---------- | --------------------- |
@@ -79,4 +79,4 @@ Tarnybų diagnostikos duomenų įvykiai suteikia mums reikiamą informaciją api
 | Office.Excel.Coauth.CloseWorkbook  | Įvykis, suaktyvintas programoje „Excel“ naudojant bendradarbiavimo tarnybą, kuris praneša, kai uždaroma darbaknygė. To reikia norint nustatyti, ar yra pakartotinio įkėlimo ir automatinio atnaujinimo klaidų. Šis įvykis matuoja bendradarbiavimo tarnybų veiksmų sėkmę.   |
 | Office.Security.OCX.NonTrustedEncounter    | „Office“ programose (įskaitant „Word“, „Excel“, „Outlook“, „PowerPoint“ ir „Visio“) suaktyvinamas įvykis, kai vartotojas atidaro nepatikimą dokumentą su „ActiveX“ valdikliu. Jis naudojamas siekiant plačiai įvertinti „ActiveX“ valdiklių, įdėtų „Office“ dokumentuose, naudojimą ir imtis rizikos sumažinimo veiksmų kilus saugos incidentui.  |
 | Office.Security.UrlReputation.GetUrlReputation | „Office“ programose (įskaitant „Word“, „Excel“, „PowerPoint“, „Visio“ ir „Publisher“) suaktyvinamas įvykis, kuris seka saugiųjų saitų iškvietimus. Jis naudojamas siekiant užtikrinti, kad saugiųjų saitų tarnyba veiktų tinkamai, ir diagnozuoti kilusias problemas.  |
-| Office.Voice.VoiceManager.StreamingAudio   | „Office“ programose (įskaitant „Word“, „Outlook“ ir „PowerPoint“) suaktyvinamas įvykis, kuris suteikia informacijos apie garso transliacijos sveikatą kalbos tarnybai. Jame yra informacijos apie garso srauto dydį ir visas klaidas, kurios galėjo kilti. Ši informacija naudojama stebėti tarnybos sveikatą ir diagnozuoti visas problemas, apie kurias galėjo pranešti klientai. |
+| Office.Voice.VoiceManager.StreamingAudio   | „Office“ programose (įskaitant „Word“, „Outlook“ ir „PowerPoint“) suaktyvinamas įvykis, kuris suteikia informacijos apie garso transliacijos sveikatą kalbos tarnybai. Jame yra informacijos apie garso srauto dydį ir visas klaidas, kurios galėjo kilti. Ši informacija naudojama stebint tarnybos sveikatą ir diagnozuojant visas problemas, apie kurias galėjo pranešti klientai. |

@@ -3,7 +3,7 @@ title: „Office 365 ProPlus“ privatumo valdiklių apžvalga
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirta „Office 365 ProPlus“ privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: 4752894c0fec3b9eb625476851a4d0ec40642448
-ms.sourcegitcommit: 05820eb0281c0c8591f70b9d4b285d7f292a8cf0
+ms.openlocfilehash: a65fd2a6b7169c9098d233a926041d9cbc599886
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "33828366"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701123"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių apžvalga
 
@@ -115,11 +115,11 @@ Reikalingi tarnybų duomenys yra duomenys, kurie įgalina šių debesų technolo
 
 - **Kliento turinys** – turinys, kurį sukuriate naudodami „Office“, pvz., „Word“ dokumente įvestas tekstas.
 - **Funkciniai duomenys**, kurie apima informaciją, kurios riekia, kad prisijungus naudojama funkcija galėtų atlikti užduotį, pvz., programos konfigūracijos informacija.
-- **Tarnybų diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Šie duomenys glaudžiai susiję su prisijungus naudojama paslauga, todėl jie atskirti nuo būtinųjų arba pasirinktinių diagnostikos duomenų lygių.
+- **Tarnybos diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Šie duomenys glaudžiai susiję su prisijungus naudojama paslauga, todėl jie atskirti nuo būtinųjų arba pasirinktinių diagnostikos duomenų lygių.
 
 Kad geriau suprastumėte reikalingus tarnybų duomenis, pateikiame pavyzdinį scenarijų, kuriame naudojamas „PowerPoint“ dizaino įrankis – prisijungus naudojama funkcija, kurią pasitelkę galite kurti pateikties skaidres. „PowerPoint“ dizaino įrankis patobulina skaidres automatiškai generuodamas dizaino idėjas, iš kurių galite rinktis. Kai keliate turinį į skaidrę, dizaino įrankis veikia fone, kad pritaikytų turinį prie profesionalių maketų.
 
-Reikalingi tarnybų duomenys, kurie siunčiami „Microsoft“, kad šį prisijungus naudojama funkcija veiktų, gali apimti nurodytuosius toliau.
+Privalomieji tarnybos duomenys, kurie siunčiami „Microsoft“, kad ši prijungtoji funkcija veiktų, gali apimti nurodytuosius toliau.
 
 - *Kliento turinį*, kuris yra tekstas arba vaizdai, kuriuos įtraukiate į skaidrę.
 - *Funkcinius duomenis*, pvz., informaciją, kurioje skaidrėje dirbate, ir jos maketą.
