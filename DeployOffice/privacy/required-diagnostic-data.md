@@ -3,7 +3,7 @@ title: Būtinieji „Office“ diagnostikos duomenys
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: o365-proplus-itpro
 localization_priority: Priority
@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 9b22b428999c51b46e6f6ce662fad99f5a727b4c
-ms.sourcegitcommit: 6145cfe372725bedab7bc6a80adab100561f74fd
+ms.openlocfilehash: a5ac5dfded3dbb51693b5d15616675b067c59dc3
+ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34106932"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34701706"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -30,7 +30,7 @@ ms.locfileid: "34106932"
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
-Šie diagnostikos duomenys, susiję su „Office“ kliento programine įranga, naudojama kompiuteriuose, kuriuose įdiegta operacinė sistema „Windows“, renkami ir siunčiami „Microsoft“. Kai kurie diagnostikos duomenys yra būtini, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums būtinuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
+Šie diagnostikos duomenys, susiję su „Office“ kliento programine įranga, naudojama kompiuteriuose, kuriuose įdiegta operacinė sistema „Windows“, renkami ir siunčiami „Microsoft“. Kai kurie diagnostikos duomenys yra privalomi, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums privalomuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
 
 ***Būtinieji diagnostiniai duomenys*** yra minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
 
