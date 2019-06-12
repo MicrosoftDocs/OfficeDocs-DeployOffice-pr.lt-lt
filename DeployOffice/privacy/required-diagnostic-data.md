@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: a5ac5dfded3dbb51693b5d15616675b067c59dc3
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: d42f2bd20e3e2169e58d6f5c0a563f1b117ea847
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701706"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813310"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -65,6 +65,7 @@ Būtini diagnostikos duomenys suskirstyti į kategorijas ir duomenų potipius. S
 | **Produktų ir tarnybų naudojimas**    | [Taikomosios programos funkcijų sėkmingas atlikimas](#application-feature-success-subtype)   | Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas). |
 | | [Taikomosios programos būsena ir įkrova](#application-status-and-boot-subtype)    | Nustatymas, ar įvyko specifiniai funkcijų įvykiai, pvz., paleidimas ar sustabdymas, ir ar funkcija veikia.   |
 | | [„Office“ pritaikymo neįgaliesiems konfigūracija](#office-accessibility-configuration-subtype)  | „Office“ pritaikymo neįgaliesiems funkcijos       |
+| | [Privatumas](#privacy-subtype)| „Office“ privatumo parametrai|
 | **Produktų ir tarnybų veikimas**       | [Netikėtas taikomosios programos uždarymas (gedimas)](#unexpected-application-exit-crash-subtype)  | Nenumatytas programų uždarymas ir programos būsena, kai taip nutinka.    |
 |  | [Taikomosios programos funkcijų veikimas](#application-feature-performance-subtype)  | Prastas scenarijų, pvz., taikomosios programos paleidimas ar failo atidarymas, atsakymo laikas ar veikimas. |
 |  | [Taikomosios programos veiklos klaida](#application-activity-error-subtype)   | Funkcijos ar vartotojo patirties veikimo klaidos.  |
@@ -971,6 +972,7 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 - [Taikomosios programos funkcijų sėkmingas atlikimas](#application-feature-success-subtype)
 - [Taikomosios programos būsena ir įkrova](#application-status-and-boot-subtype)
 - [„Office“ pritaikymo neįgaliesiems konfigūracija](#office-accessibility-configuration-subtype)
+- [Privatumas](#privacy-subtype)
 
 
 ### <a name="application-feature-success-subtype"></a>*Taikomosios programos funkcijos sėkmingo atlikimo potipis*
@@ -4000,8 +4002,12 @@ Renkami šių laukų duomenys:
   - **Data\_CheckRequiredPartsLoaded -** Metodo CheckRequiredPartsLoaded vykdymo trukmė milisekundėmis
 
   - **Data\_CheckWebSharingViolationForIncOpen -** Metodo CheckWebSharingViolationForIncOpen vykdymo trukmė milisekundėmis
+   
+  - **Data_CloseAndReopenWithoutDiscard –** Ar dokumentas buvo uždarytas ir iš naujo atidarytas atidarymo proceso metu neatmetant.
 
   - **Data\_ContentTransaction -** Iš anksto nustatytų reikšmių rinkiniai, kai galima sukurti transakciją (AllowedOnLoadDocument, AllowedOnOpenComplete ir kt.)
+
+  - **Data_CorrelationId -** GUID, kurį ProtocolHandler perdavė programai „PowerPoint“ telemetrijai susieti. ProtocolHandler yra atskiras procesas, kuris tvarko „Office“ saitus, skirtus OS.
 
   - **Data\_CppUncaughtExceptionCount:long -** Nepriimtos vietinės išimtys, kai veikla buvo vykdoma
 
@@ -4911,6 +4917,50 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
   - Nėra
+
+### <a name="privacy-subtype"></a>*Privatumo potipis*
+
+„Office“ privatumo parametrai 
+
+#### <a name="officeintelligentserviceprivacyconsentprivacyevent"></a>Office.IntelligentService.PrivacyConsent.PrivacyEvent
+
+Šis įvykis nurodo vartotojo arba sistemos inicijuotą veiksmą, kuris yra „Office“ vartotojo privatumo funkcijų dalis. Jis suaktyvinamas privatumo pirmojo paleidimo dialogo languose, paskyros privatumo dialogo lange ir privatumo pranešimuose. Šis įvykis naudojamas norint suprasti: vartotojus, sutinkančius su „Office“ privatumo parametrais, vartotojus, keičiančius „Office“ privatumo parametrus, ir „Office“ privatumo parametrus, kurie atnaujinami vartotojo seansuose.
+
+Renkami šių laukų duomenys:
+
+  - **Data_ActionId –** vartotojo veiksmas privatumo dialogo lange
+
+  - **Data_ControllerConnectedServicesState –** papildomų prijungtų funkcijų vartotojo politikos parametras
+
+  - **Data_DownloadedContentServiceGroupState –** atsisiųsto turinio vartotojo parametras 
+ 
+  - **Data_ForwardLinkId –** saitas į vartotojo scenarijaus privatumo dokumentaciją
+
+  - **Data_HRESULT –** klaidų, įvykusių sąveikos su privatumo dialogo langu metu, įrašas
+
+  - **Data_IsEnterpriseUser –** vartotojo licencijos kategorija
+
+  - **Data_OfficeServiceConnectionState –** prijungtų tarnybų vartotojo parametras
+
+  - **Data_RecordRegistry –** įmonės privatumo dialogo lango rodymo įrašas
+
+  - **Data_Scenario –** pirmojo paleidimo scenarijus pagal vartotojo licenciją ir kategoriją
+
+  - **Data_SeenInsidersDialog –** „Insider“ privatumo dialogo lango rodymo įrašas
+
+  - **Data_SendTelemetryOption –** telemetrijai skirtas vartotojo parametras
+
+  - **Data_SendTelemetryOptionPolicy –** telemetrijai skirtas vartotojo politikos parametras
+
+  - **Data_UserCategory –** vartotojo paskyros tipas  
+
+  - **Data_UserCCSDisabled –** vartotojo nepaisymas papildomoms pasirinktinėms prisijungus naudojamoms funkcijoms
+
+   - **Data_UserContentServiceGroupState –** vartotojo parametrai, skirti turiniui analizuoti
+
+  - **Data_WillShowDialogs –** vartotojo, kuriam reikia matyti privatumo pirmojo paleidimo dialogo langus, įrašas
+
+
 
 ## <a name="product-and-service-performance-data-events"></a>Produktų ir tarnybų našumo duomenų įvykiai
 

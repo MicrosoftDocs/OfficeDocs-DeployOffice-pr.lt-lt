@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 81b5ff2e1451f910f2e9695dba488d39d27b7241
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
+ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701285"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "34813346"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -2717,6 +2717,14 @@ Renkami šių laukų duomenys:
   - **IdentityChanged** – visada teisinga. Tapatybė pakeista.
 
   - **TimerDetectedChange** – ar keitimas aptiktas pateikus reguliariai atliekamą ryšio užklausą.
+
+### <a name="officesystemprivacyfallbacktosettingsstore"></a>Office.System.PrivacyFallbackToSettingsStore
+
+Naudojamas norint nustatyti, ar yra trikčių nuskaitant vartotojo privatumo parametrus iš tarptinklinio ryšio saugyklos.
+
+Renkami šių laukų duomenys:
+
+  - **Tag –** kodo žymė, rodanti, kuris parametras vėl grąžintas į parametrų saugyklą.
 
 ### <a name="officesystemsessiondatao365"></a>Office.System.SessionDataO365
 
