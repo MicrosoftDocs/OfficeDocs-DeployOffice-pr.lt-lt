@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia „Office“ administratoriams informacijos apie pasirinktinius duomenis naudojant „Office“, įskaitant keletą įvykių pavyzdžių.
 hideEdit: true
-ms.openlocfilehash: 852c53ad208cf02150de2e64e9e55d69015dda14
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: cf3a2488d985dd238456e86466688036c0c61ccb
+ms.sourcegitcommit: e6135e9937ef07785f0ce0eb6282ceece401f96e
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701189"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35430091"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Pasirinktiniai „Office“ diagnostikos duomenys
 
@@ -34,11 +34,11 @@ Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, apt
 
 ***Pasirinktiniai diagnostikos duomenys*** yra papildomi duomenys, kurie padeda mums tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir ištaisyti kilusias problemas.
 
-Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, privalomieji diagnostikos duomenys taip pat bus įtraukti.
+Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, būtinieji diagnostikos duomenys taip pat bus įtraukti.
 
-Pasirinktinių diagnostikos duomenų pavyzdžiai yra duomenys, kuriuos renkame apie paveikslėlius, kuriuos vartotojai įterpia į „Word“ dokumentus, kad galėtume teikti geresnes vaizdų parinktis, bei duomenys, kuriuos renkame apie tai, per kiek laiko „PowerPoint“ skaidrė pasirodo jūsų ekrane, kad galėtume pagerinti veikimą, jei jis lėtas.
+Pasirinktinių diagnostikos duomenų pavyzdžiai yra duomenys, kuriuos renkame apie figūras, kurias vartotojai įterpia į „Word“ dokumentus, kad galėtume teikti geresnes parinktis, bei duomenys, kuriuos renkame apie tai, per kiek laiko „PowerPoint“ skaidrė pasirodo jūsų ekrane, kad galėtume pagerinti veikimą, jei jis lėtas.
 
-Daugiau informacijos apie diagnostikos duomenis žr.:
+Daugiau informacijos apie diagnostikos duomenis, žr.:
 
 - [Privalomieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
@@ -73,7 +73,7 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 
 | **Įvykio pavadinimas**   | **Įvykio aprašas**  |
 | ---- | ---- |
-| Office\_Extensibility\_AppCommands\_GetRibbonUpdatesForUserId | Šis įvykis nurodo, ar „Word“ sėkmingai atnaujina juostelę „Word“ vartotojo sąsajoje, kai vartotojas pakeičia savo tapatybę. Šį įvykį naudojame siekdami aptikti neteisingą sąranką ir kitas problemas, kurios gali turėti įtakos „Office“ vartotojo sąsajai. |
+| Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | Šis įvykis nurodo, ar „Word“ sėkmingai atnaujina juostelę „Word“ vartotojo sąsajoje, kai vartotojas pakeičia savo tapatybę. Šį įvykį naudojame siekdami aptikti neteisingą sąranką ir kitas problemas, kurios gali turėti įtakos „Office“ vartotojo sąsajai. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Šis įvykis suteikia informacijos apie vartotojo įdiegtą „Office“ papildinį, įskaitant programos ID, operacinės sistemos versiją ir komponavimo versiją, informaciją, ar diegimas pavyko, ir diegimo trukmę.  |
 
 ## <a name="product-and-service-usage-events"></a>Su produktų ir tarnybų naudojimu susiję įvykiai
@@ -90,7 +90,7 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 | ------ | ------- |
 | Office.Word.Commanding.Highlight  | Šis įvykis nurodo, kad „Word“ įvykdė teksto paryškinimo komandą. Naudojame šį įvykį, kad aptiktume klaidas teksto paryškinimo komandoje.  |
 | Office.Translator.AddInLoaded   | Kontrolinis signalas, nurodantis, kad vertyklės funkcija įkelta ir sėkmingai pateikta.  |
-| Office.Graphics.InsertPictureCommandActivity  | Seka, ar paveikslėlio įterpimo funkcija pavyko, bei praneša informaciją apie įterptų paveikslėlių tipus ir šaltinį.|
+| Office.Graphics.GVizInsertShape |Seka, ar figūros įterpimo funkcija pavyko programoje „Word“, bei praneša informaciją apie įterptų figūrų tipus ir šaltinį.| 
 | Office.PowerPoint.PPT.Desktop.SummaryZoomInsertionRule   | Šis įvykis nustato, ar dokumente yra sekcijų, kai vartotojas įterpia interaktyviąją suvestinės peržiūrą, ir ar vartotojas pasirenka panaikinti esamas sekcijas. |
 | Office.Security.SecureReaderHost.ProtectedViewValidation | Seka, kada ir kodėl failas atidaromas apsaugotame rodinyje. Naudojama tam, kad būtų galima diagnozuoti sąlygas, kai apsaugotas rodinys gali būti netinkamai suaktyvintas, siekiant užtikrinti, kad funkcija veiktų tinkamai. |
 
@@ -106,7 +106,7 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 
 | **Įvykio pavadinimas**    | **Įvykio aprašas**   |
 | --------------- | -------------- |
-| Office\_Word\_Word\_CoreSaveTime100ns     | Šis įvykis užfiksuoja „Word“ dokumento įrašymo veiksmo našumą. Šį įvykį naudojame siekdami aptikti „Word“ dokumento įrašymo veiksmų klaidas ir našumo problemas.|
+| Office.Word.Word.CoreSaveTime100ns     | Šis įvykis užfiksuoja „Word“ dokumento įrašymo veiksmo našumą. Šį įvykį naudojame siekdami aptikti „Word“ dokumento įrašymo veiksmų klaidas ir našumo problemas.|
 | Office.Identity.SignInForWamAccountAad  | Šis įvykis siunčiamas, kai vartotojas yra prisijungęs prie „Azure Active Directory“ paskyros naudodamas žiniatinklio paskyrų tvarkytuvo (WAM) biblioteką. Jei šis įvykis nepavyko, jis siunčia metaduomenis, tokius kaip AppName, AppVersion ir ErrorCode. |
 | Office.PowerPoint.PPT.Desktop.FileOpen.FirstSlideMasterThumbnailRenderTime | Šis įvykis fiksuoja, kiek laiko trunka atvaizduoti pirmąją „PowerPoint“ skaidrių ruošinio miniatiūrą.  |
 | Office.Extensibility.Diagnostics   | Šis įvykis suteikia bendrą „Office“ papildinių diagnostikos informaciją, tokią kaip derinimui skirtos gedimų ataskaitos.|
@@ -121,6 +121,6 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 
 | **Įvykio pavadinimas**                    | **Įvykio aprašas**                                                                                                                                                     |
 | ------ | ----- |
-| Office\_Graphics\_ArtViewValidate | Šis įvykis fiksuoja grafinių elementų rodinio, kuris palaiko grafinę sąsają, rezultatų tikrinimą. Įvykį naudojame, kad galėtume rinkti naudojimo ir klaidų duomenis apie grafinių elementų atvaizdavimą. |
+| Office.Graphics.ArtViewValidate | Šis įvykis fiksuoja grafinių elementų rodinio, kuris palaiko grafinę sąsają, rezultatų tikrinimą. Įvykį naudojame, kad galėtume rinkti naudojimo ir klaidų duomenis apie grafinių elementų atvaizdavimą. |
 | Office.Graphics.ARCExceptionScope | Šis įvykis seka atvaizdavimo triktis, vykstančias atvaizdavimo modulyje. |
 | Office.Extensibility.ODPLatency   | Šis įvykis suteikia informacijos apie vartotojo tinklo ryšį ir greitį.     |
