@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 291ec1b925b021f3d35e504d95649a7bdd34adc0
-ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
+ms.openlocfilehash: 14b2426d021e5c559cabd3c969f80df9131cc9b9
+ms.sourcegitcommit: 22ae0005d3106ff02949fb613b82e0245abfa49f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34813346"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35817974"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -50,7 +50,7 @@ Jei esate organizacijos administratorius, jus gali dominti šios temos:
 | ------ | ---- |
 | [Autentifikavimas](#authentication-events) | Autentifikavimas yra keliose platformose veikianti paslauga, kurią naudojant patvirtinama jūsų „Office“ vartotojo tapatybė. Ji reikalinga, kad galėtumėte prisijungti prie „Office“, suaktyvinti „Office“ licenciją ir pasiekti debesyje saugomus failus. Ji veikia vienodai visuose „Office“ seansuose ir įrenginiuose.    |
 | [Spustelėkite ir naudokitės](#click-to-run-events) | Spustelėkite ir naudokitės yra diegimo technologija, naudojama diegiant ir naujinant „Office“ sistemoje „Windows“. Ji tikrina, ar išleista naujų „Office“ versijų, o kai nauja versija pasiekiama, ją atsisiunčia ir įdiegia.Paslauga Spustelėkite ir naudokitės aptiks, kada reikia naujinti „Office“, atsiųs naujinimus, įskaitant saugos naujinimus, ir juos įdiegs.     |
-| [Patobulinta konfigūravimo paslauga (ECS)](#experimentation-and-configuration-service-ecs-events) | ECS suteikia „Microsoft“ galimybę perkonfigūruoti „Office“ įdiegtis, išvengiant poreikio iš naujo visuotinai įdiegti „Office“. Ji naudojama valdyti palaipsniui diegiamas funkcijas arba naujinimus, o diegimo poveikis stebimas pagal renkamus diagnostikos duomenis. Ji taip pat naudojama siekiant sumažinti saugos arba veikimo problemas diegiant funkcijas arba naujinimus. Be to, ECS palaiko su diagnostikos duomenimis susijusius konfigūracijos keitimus, kad užtikrintų, jog būtų renkami tinkami įvykiai. |
+| [Patobulinta konfigūravimo paslauga (ECS)](#enhanced-configuration-service-ecs-events) | ECS suteikia „Microsoft“ galimybę perkonfigūruoti „Office“ įdiegtis, išvengiant poreikio iš naujo visuotinai įdiegti „Office“. Ji naudojama valdyti palaipsniui diegiamas funkcijas arba naujinimus, o diegimo poveikis stebimas pagal renkamus diagnostikos duomenis. Ji taip pat naudojama siekiant sumažinti saugos arba veikimo problemas diegiant funkcijas arba naujinimus. Be to, ECS palaiko su diagnostikos duomenimis susijusius konfigūracijos keitimus, kad užtikrintų, jog būtų renkami tinkami įvykiai. |
 | [Licencijavimas](#licensing-events)     | Licencijavimas yra debesų technologija pagrįsta paslauga, kuri palaiko naujų „Office“ įdiegčių aktyvinimą ir išlaiko licenciją įrenginiuose suaktyvinus „Office“. Ji užregistruoja visus jūsų įrenginius ir suaktyvina „Office“, patikrina „Office“ prenumeratos būseną ir valdo produktų raktus.    |
 | [Paslaugų konfigūravimas](#services-configuration-events)  | Paslaugų konfigūravimo paslauga suteikia galimybę naujinti „Office“ konfigūracijos parametrus ir įgalinti arba išjungti kliento funkcijas. Ji iškviečiama kaskart paleidus „Office“ programą ir suteikia informacijos apie kitas „Office“ konfigūracijas ir paslaugas. Paslaugų konfigūravimo paslauga taip pat valdo, kurios paslaugos laikomos pagrindinėmis paslaugomis.  |
 | [Telemetrija ](#telemetry-events)  | Naudojant telemetrijos paslaugą renkami diagnostikos duomenys iš „Office“ programų. Ji suteikia galimybę rinkti „Office“ sugeneruotus diagnostikos duomenis (tiek būtinuosius, tiek pasirinktinius). Ji taip pat atsakinga už reikalingų „Office“ tarnybų diagnostikos duomenų dalies rinkimą.  |
@@ -2395,7 +2395,7 @@ Renkami šių laukų duomenys:
   - **Data\_targetBuild** –„Office“ versija, į kurią bandoma atnaujinti
 
 
-## <a name="experimentation-and-configuration-service-ecs-events"></a>Eksperimentavimo ir konfigūravimo paslaugos (ECS) įvykiai
+## <a name="enhanced-configuration-service-ecs-events"></a>Patobulintos konfigūravimo paslaugos (ECS) įvykiai
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
 
@@ -2538,7 +2538,7 @@ Renkami šių laukų duomenys:
 
   - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui
 
-  - **LicenseStatus** – „Office“ licencijos, kurią naudoja vartotojas, būsena
+  - **LicenseStatus** – Status of the Office license that the user is using
 
   - **MachineKey** – vartotojui išduoto licencijos rakto iš raidžių ir skaitmenų sudarytas identifikatorius
 
@@ -2616,7 +2616,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingofficeclientlicensingdolicensevalidation"></a>Office.Licensing.OfficeClientLicensing.DoLicenseValidation 
 
-Licencijavimo metaduomenys, renkami iš įrenginio per kiekvieną įkrovą, kurie praneša licencijos ACID, licencijos būseną, tipą ir kitas licencijos ypatybes, kurios svarbios identifikuojant vartotojui pasiekiamų funkcijų rinkinį. Tai svarbu identifikuojant vartotojui pasiekiamų funkcijų rinkinį ir vartotojui trūkstamas funkcijas. Tai taip pat naudojama apskaičiuojant dienos / mėnesio aktyvių vartotojų skaičių ir pateikiant įvairias kitas ataskaitas įvairioms „Office“ komandoms (rinkodaros / DIG / licencijavimo), nes tai praneša vartotojo naudojamo produkto tipą, ar tai produkto prenumerata ir ar jam netrūksta svarbių funkcijų.
+Licencijavimo metaduomenys, renkami iš įrenginio per kiekvieną įkrovą, kurie praneša licencijos ACID, licencijos būseną, tipą ir kitas licencijos ypatybes, kurios svarbios identifikuojant vartotojui pasiekiamų funkcijų rinkinį. Tai svarbu identifikuojant vartotojui pasiekiamų funkcijų rinkinį ir vartotojui trūkstamas funkcijas. Tai taip pat naudojama apskaičiuojant dienos / mėnesio aktyvių vartotojų skaičių ir pateikiant įvairias kitas ataskaitas įvairioms „Office“ komandoms, nes tai praneša vartotojo naudojamo produkto tipą, ar tai produkto prenumerata ir ar jam netrūksta svarbių funkcijų.
 
 Renkami šių laukų duomenys:
 
@@ -2632,7 +2632,7 @@ Renkami šių laukų duomenys:
 
   - **LicenseCategory** – „Office“ licencijos, kurią naudoja vartotojas, kategorija 
 
-  - **LicenseStatus** – „Office“ licencijos, kurią naudoja vartotojas, būsena 
+  - **LicenseStatus** – Status of the Office license that the user is using 
 
   - **LicenseType** – „Office“ licencijos, kurią naudoja vartotojas, tipas 
 
