@@ -4930,7 +4930,7 @@ Renkami šių laukų duomenys:
 
   - **Data_ActionId –** vartotojo veiksmas privatumo dialogo lange
 
-  - **Data_ControllerConnectedServicesState –** papildomų prijungtų funkcijų vartotojo politikos parametras
+  - **Data_ControllerConnectedServicesState –** papildomų pasirinktinių prijungtųjų funkcijų vartotojo strategijos parametras
 
   - **Data_DownloadedContentServiceGroupState –** atsisiųsto turinio vartotojo parametras 
  
@@ -4950,11 +4950,11 @@ Renkami šių laukų duomenys:
 
   - **Data_SendTelemetryOption –** telemetrijai skirtas vartotojo parametras
 
-  - **Data_SendTelemetryOptionPolicy –** telemetrijai skirtas vartotojo politikos parametras
+  - **Data_SendTelemetryOptionPolicy –** telemetrijai skirtas vartotojo strategijos parametras
 
   - **Data_UserCategory –** vartotojo paskyros tipas  
 
-  - **Data_UserCCSDisabled –** vartotojo nepaisymas papildomoms pasirinktinėms prisijungus naudojamoms funkcijoms
+  - **Data_UserCCSDisabled –** papildomų pasirinktinių prisijungtųjų funkcijų vartotojo nepaisymas
 
    - **Data_UserContentServiceGroupState –** vartotojo parametrai, skirti turiniui analizuoti
 
@@ -5443,7 +5443,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_TagID** – Įvykusios klaidos identifikatorius
 
-#### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfoldererror"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder\_Klaida
+#### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfolder_error"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder\_Klaida
 
 Renka informaciją, kada įvyksta klaida, kai pereinama prie bendrinamo kalendoriaus. Šie duomenys naudojami stebint kalendoriaus bendrinimo API ir „Outlook“ sąveikos su bendrinamais kalendoriais būklę.
 
