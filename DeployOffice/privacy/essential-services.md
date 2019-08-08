@@ -2436,7 +2436,7 @@ Jie naudojami nustatant, ar vartotojo būsena yra tinkama, taip pat sistemos sve
 
 Renkami šių laukų duomenys:
 
-  - **ACID** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui
+  - **ACID** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui
 
   - **DwEulaId** – GVLS, su kuriomis vartotojas ką tik sutiko, tipo skaitinis identifikatorius
 
@@ -2448,7 +2448,7 @@ Svarbu nustatyti, kiek vartotojų turi aktyvinimo problemų. Anomalijų aptikimo
 
 Renkami šių laukų duomenys:
 
-  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui
+  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui
 
   - **ReferralData** – OĮG, kuris įdiegė „Office“ kompiuteryje, identifikatorius
 
@@ -2480,7 +2480,7 @@ Renkama kiekviename seanse, kuriame pranešama kompiuterio licencijavimo būsena
 
 Renkami šių laukų duomenys:
 
-  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui 
+  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui 
 
   - **IsSessionLicensing** – ar šiuo metu vykdomas bendrai naudojamo kompiuterio aktyvinimo režimas, ar ne 
 
@@ -2492,7 +2492,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensinggetentitlement"></a>Office.Licensing.GetEntitlement 
 
-Renkama, kai vartotojas nustato įrenginį ir iškviečiame licencijavimo paslaugą, kad aptiktume, ar prisijungęs vartotojas turi teisę, naudotis „Office“, ar ne. Tai praneša apie to iškvietimo rezultatą. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
+Renkame, kai vartotojas nustato įrenginį, ir iškviečiame licencijavimo paslaugą, kad aptiktume, ar prisijungęs vartotojas turi teisę naudotis „Office“, ar ne. Tai praneša apie to iškvietimo rezultatą. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
 
 Šis įvykis nerenka jokių laukų duomenų.
 
@@ -2510,7 +2510,7 @@ Jei įjungiamas įrenginio sumažinto funkcionalumo režimas, išsiunčiame šį
 
 Renkami šių laukų duomenys:
 
-  - **ACID** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui
+  - **ACID** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui
 
   - **DaysRemaining** – iki dabartinės „Office“ licencijos galiojimo pabaigos likusių dienų skaičius
 
@@ -2528,7 +2528,7 @@ Renkami šių laukų duomenys:
 
   - **Prid** – produktų grupės, kurios raktas diegiamas, pavadinimas
 
-  - **SkuId** – GUID identifikatorius, nurodantis „Office“ produktą, kurio raktas diegiamas 
+  - **SkuId** – GUID identifikatorius, nurodantis „Office“ produktą, kurio kodas diegiamas 
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
@@ -2536,9 +2536,9 @@ Jei matome problemų dėl aktyvinimo darbo eigos, suaktyviname licencijos vedikl
 
 Renkami šių laukų duomenys:
 
-  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui
+  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui
 
-  - **LicenseStatus** – Status of the Office license that the user is using
+  - **LicenseStatus** – „Office“ licencijos, kurią naudoja vartotojas, būsena
 
   - **MachineKey** – vartotojui išduoto licencijos rakto iš raidžių ir skaitmenų sudarytas identifikatorius
 
@@ -2578,7 +2578,7 @@ Renkama, jei parodėme GVLS vartotojui ir vartotojas pasirinko su ja nesutikti, 
 
 Renkami šių laukų duomenys:
 
-  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui
+  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui
 
   - **OptInShown** – nurodo, ar pasirinkimo dialogo langas, rodomas per pirmąją programos įkrovą, jau buvo parodytas
 
@@ -2602,7 +2602,7 @@ Renkama kiekviename įrenginio, kuriam taikomas šiuolaikinis licencijavimo proc
 
 Renkami šių laukų duomenys:
 
-  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui 
+  - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui 
 
   - **AllAcids** – visų produkto, kurio licenciją vartotojas šiuo metu turi, GUID sąrašas 
 
@@ -2632,11 +2632,11 @@ Renkami šių laukų duomenys:
 
   - **LicenseCategory** – „Office“ licencijos, kurią naudoja vartotojas, kategorija 
 
-  - **LicenseStatus** – Status of the Office license that the user is using 
+  - **LicenseStatus** – „Office“ licencijos, kurią naudoja vartotojas, būsena 
 
   - **LicenseType** – „Office“ licencijos, kurią naudoja vartotojas, tipas 
 
-  - **LicensingACID** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikiama vartotojui 
+  - **LicensingACID** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui 
 
   - **OlsLicenseId** – vartotojui išduotos licencijos iš raidžių ir skaitmenų sudarytas identifikatorius 
 
