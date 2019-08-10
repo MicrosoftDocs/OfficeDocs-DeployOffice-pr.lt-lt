@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: d42f2bd20e3e2169e58d6f5c0a563f1b117ea847
-ms.sourcegitcommit: 186aae0571f8ef5f62882b4edb10378ee8e42b6e
+ms.openlocfilehash: e6078bf96c60d0f01aeaea0cabe32f135a8fa1a3
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34813310"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238900"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -27,6 +27,8 @@ ms.locfileid: "34813310"
 > - „Office 365 ProPlus“ ir „Office 365 Business“
 > - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
 > - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+>
+> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
@@ -45,6 +47,7 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo kontrolės mechanizmų valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Būtinų diagnostikos duomenų kategorijos, duomenų porūšiai, įvykiai ir duomenų laukai
 
@@ -423,6 +426,99 @@ Informacija apie proceso seansą.
 
   - **TelemetryPermissionLevel** – reikšmė, nurodanti vartotojo pasirinktą diagnostikos duomenų lygį. Leidžia mums suprasti, kokio lygio diagnostikos duomenų galime tikėtis iš seanso.
 
+## <a name="data-fields-that-are-common-for-onenote-events"></a>„OneNote“ įvykiams dažnai naudojami duomenų laukai
+
+Šie duomenų laukai dažniausiai naudojami visiems „OneNote“, skirtos „Mac“, „iOS“ ir „Android“, įvykiams.
+
+> [!NOTE]
+> Naudojant diagnostikos duomenų peržiūros programą, „OneNote“, skirtos „Mac“, „iOS“ ir „Android“ įvykiai bus parodyti su pavadinimais Activity, ReportData arba Unexpected. Norėdami rasti tikrąjį įvykio pavadinimą, pasirinkite įvykį, tada pažiūrėkite į lauką EventName.
+
+- **Activity_ActivityType** – nurodo šio veiklos įvykio tipą. Veikla gali būti normali veikla arba svarbi veikla.
+
+- **Activity_AggMode** – nurodo sistemai kaip agreguoti veiklos rezultatus. Leidžia mums sumažinti iš vartotojo kompiuterio įkeliamos informacijos kiekį, agreguojant veiklos rezultatus į vieną periodiškai siunčiamą įvykį.
+
+- **Activity_Count** – veiklos įvykimo kartų skaičius, jeigu skaičiuojami agreguoti įvykiai. Leidžia mums nustatyti kaip dažnai veikla pavyko ar nepavyko, remiantis veiklos agregavimo režimu.
+
+- **Activity_CV** – reikšmė, nurodanti ryšį tarp veiklų ir antrinių veiklų. Leidžia atkurti ryšį tarp įdėtųjų veiklų.
+
+- **Activity_DetachedDurationInMicroseconds** – laikas, kai veikla yra laukimo būsenoje ir neatliekama jokio realaus darbo, bet laikas vis tiek įskaitomas į bendrą veiklos laiką.
+
+- **Activity_DurationInMicroseconds** – laikas, kai veikla buvo vykdoma. Leidžia mums nustatyti veikimo problemas, neigiamai veikiančias vartotojo patirtį.
+
+- **Activity_Expiration** – skaitinio formato data, nurodanti, kada šis įvykis nebebus siunčiama iš klientų
+
+- **Activity_FailCount** – nurodo, kiek kartų ši veikla nepavyko
+
+- **Activity_Name** – trumpas įvykio pavadinimas. Leidžia nustatyti iš kliento išsiųstą įvykį.
+
+- **Activity_Namespace** – įvykio vardų sritis. Leidžia suskirstyti įvykį į grupes.
+
+- **Activity_Reason** – eilutė, nurodanti priežastį, dėl kurios veikla baigiasi su konkrečiu rezultatu.
+
+- **Activity_Result** – žymė, nurodanti, ar veikla pavyko, nepavyko arba netikėtai nepavyko. Leidžia mums nustatyti, ar pavyko vartotojo produkte atlikti veiksmai. Tai leidžia mums nustatyti problemas, kurios daro įtaką vartotojui.
+
+- **Activity_State** – žymė nurodanti, ar įvykis yra naudotojo veiklos pradžioje ar pabaigoje.
+
+- **Activity_SucceedCount** – nurodo, kiek kartų pavyko ši veikla.
+
+- **ErrorCode** – nurodo klaidos kodą, jei jis yra.
+
+- **ErrorCode2** – nurodo antrą klaidos kodą, jei jis yra.
+
+- **ErrorCode3** – nurodo trečią klaidos kodą, jei jis yra.
+
+- **ErrorTag** – nurodo su klaidos kodu susietą žymę, jei ji yra.
+
+- **ErrorType** – nurodo klaidos tipą, jei jis yra.
+
+- **EventName** – unikalus „OneNote“ įvykio pavadinimas. „OneNote“ įvykiai naudoja šį pasirinktinį lauką, kad nurodytų unikalų pavadinimą dėl praeities inžinerinių apribojimų.
+
+- **ExpFeatures** – nurodo, ar vartotojas programoje „OneNote“ turi įjungti eksperimentinių funkcijų jungiklį, ar ne.
+
+- **ExpirationDate** – skaitinio formato data, nurodanti, kada šis įvykis nebebus siunčiama iš klientų
+
+- **IsConsumer** – nurodo, ar programos vartotojas yra vartotojas, ar ne
+
+- **IsEdu** – nurodo, ar vartotojas yra švietimo įstaigos nuomotojo vartotojas, ar ne
+
+- **IsIW** – nurodo, ar vartotojas yra įmonės vartotojas, ar ne
+
+- **IsMsftInternal** – nurodo, ar vartotojas yra „Microsoft“ darbuotojas, ar ne
+
+- **IsPremiumUser** – nurodo, ar vartotojas turi „Premium“ licenciją, ar ne
+
+- **Namespace** – įvykio vardų sritis. Leidžia suskirstyti įvykį į grupes.
+
+- **Release_AppStore** – žymė, nurodanti, ar komponavimo versija gaunama iš programėlių parduotuvės, ar ne.
+
+- **Release_Audience** – nurodo pateiktos auditorijos grupės papildomą auditoriją. Leidžia mums sekti auditorijos grupių poaibius, ir taip įvertinti problemų paplitimą bei nustatyti prioritetus.
+
+- **Release_AudienceGroup** – nurodo žiedą, iš kurio gaunami duomenys. Leidžia mums parengti funkcijų apibendrinimą ir nustatyti galimas problemas, prieš joms pasiekiant daugelį vartotojų.
+
+- **Release_Channel** – kanalas, per kurį produktas buvo išleistas. Leidžia mums nustatyti, ar problema veikia vieną iš mūsų išvesties kanalų skirtingai nuo kitų.
+
+- **RunningMode** – nurodo, kaip programą paleidžia vartotojas arba sistemos procesas.
+
+- **SchemaVersion** – nurodo dabartinę telemetrijos schemos versiją „OneNote“ telemetrijos sraute.
+
+- **Session_EcsETag** – testuojamos sistemos indikatorius, nurodantis testavimo variantus, siųstus į kompiuterį. Leidžia mums nustatyti, kokie testavimo variantai gali veikti nurodytą seansą.
+
+- **Session_ImpressionId** – nurodo testuojamų variantų, kurie veikia per nurodytą seansą, rinkinį. Leidžia mums aptikti, kurie atskiri testuojami variantai veikia seanso metu, kad galėtume nustatyti, ar testuojamas variantas yra problemos šaltinis, veikiantis vartotojus.
+
+- **SessionCorrelationId** – pagrindinio kompiuterio seanso visuotinis unikalusis identifikatorius.
+
+- **SH_ErrorCode** – nurodo klaidos kodą, jei jis yra, kai veikla nepavyksta.
+
+- **Tag** – sveikųjų skaičių žymė, nurodanti kode vietą, kurioje buvo sugeneruotas telemetrijos įvykis.
+
+- **UserInfo_IdType** – vartotojo paskyros tipą nurodanti eilutė
+
+- **UserInfo_OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje.
+
+- **UserInfo_OtherId** – nepirminių pseudoniminių identifikatorių, atitinkančių vartotojo paskyras, sąrašas.
+
+- **UserInfo_OtherIdType** – nepagrindinių paskyrų tipų sąrašas.
+
 ## <a name="software-setup-and-inventory-data-events"></a>Programinės įrangos sąrankos ir inventoriaus duomenų įvykiai
 
 Toliau pateikiami šios kategorijos duomenų potipiai:
@@ -451,6 +547,27 @@ Renkami šių laukų duomenys:
 - **status** – dabartinė naujinimo būsena
 
 - **targetBuild** – „Office“ versija, į kurią naujinama
+
+#### <a name="officecompliancefileformatballotdisplayedonfirstboot"></a>Office.Compliance.FileFormatBallotDisplayedOnFirstBoot
+
+Nurodo, ar „Office“ failų formato pasirinkimo dialogo langas buvo rodomas vartotojui pirmą arba antrą kartą paleidžiant „Word“, „Excel“, „PowerPoint“ sąsajoje „Win32“.  Stebi, ar rodomas dialogo langas „FileFormat Ballot“ – įvykis siunčiamas pirmą arba antrą kartą paleidžiant „Word“, „Excel“ arba PPT sąsajoje „Win32“.
+
+Renkami toliau apibūdintų laukų duomenys.
+
+- **CountryRegion** – vartotojų šalies regiono parametrai sistemoje „Windows“
+
+- **FileFormatBallotBoxAppIDBootedOnce** – nurodo, kurioje programoje („Word“, „Excel“, PPT) buvo tvarkoma failo formato balsavimo rodymo logika.
+
+- **FileFormatBallotBoxDisplayedOnFirstBoot** – nurodo, koks yra failo formato balsavimo rodymo rezultatas (rodomas, nerodomas kaip netikėtas, nerodomas dėl licencijos, nerodomas dėl vietos).
+
+#### <a name="officecompliancefileformatballotoption"></a>Office.Compliance.FileFormatBallotOption
+
+Stebi, ar rodomas dialogo langas „FileFormat Ballot“ – įvykis siunčiamas pirmą arba antrą kartą paleidžiant „Word“, „Excel“ arba PPT sąsajoje „Win32“.  Nurodo, ar „Office“ failų formato pasirinkimo dialogo langas buvo rodomas pirmą arba antrą kartą paleidžiant „Word“, „Excel“, „PowerPoint“ sąsajoje „Win32“.
+
+Renkami šių laukų duomenys:
+
+- **FileFormatBallotSelectedOption** – identifikuoja failo formato parinktį (OOXML/ODF), kurią vartotojas pasirinko per failo formato balsavimo dialogo langą.
+
 
 #### <a name="officecorrelationmetadatautccorrelationmetadata"></a>Office.CorrelationMetadata.UTCCorrelationMetadata
 
@@ -560,6 +677,26 @@ Renkami šių laukų duomenys:
 
 Programinės įrangos papildiniai ir jų parametrai.
 
+#### <a name="exceladdindefinedfunctioncustomfunctionsallinone"></a>Excel.AddinDefinedFunction.CustomFunctionsAllInOne
+
+Renka informaciją apie pasirinktinių papildinių funkcijų vykdymo veikimą. Palaiko vykdymo bandymų, sėkmingos pabaigos, infrastruktūros klaidų ir vartotojo kodų klaidų skaitiklius. Ši funkcija naudojama produkto patikimumo problemoms nustatyti ir vartotoją veikiančioms problemoms spręsti.
+ 
+Renkami šių laukų duomenys:
+
+- **AsyncBegin** – asinchroninių funkcijų skaičius, kurios prasideda
+
+- **AsyncEndAddinError** – asinchroninių funkcijų, kurios baigiasi klaida, skaičius
+
+- **AsyncEndInfraFailure** – asinchroninių funkcijų, kurios baigiasi infraraudonųjų spindulių gedimu, skaičius
+
+- **AsyncEndSuccess** – asinchroninių funkcijų, kurios baigiasi sėkmingai, skaičius
+
+- **AsyncRemoveCancel** – atšauktų asinchroninių funkcijų skaičius 
+
+- **AsyncRemoveRecycle** – asinchroninių funkcijų, kurios buvo pašalintos dėl perdirbimo, skaičius 
+
+- **StreamingCycles1** – srautinio perdavimo ciklo skaitiklis
+
 #### <a name="officeextensibilityappcommandsappcmdprojectionstatus"></a>Office.Extensibility.AppCommands.AppCmdProjectionStatus
 
 Renka informaciją, skirtą stebėti kurie „Office“ papildiniai diegimai sėkmingai atnaujino juostelę ir jų palyginimas su nepavykusiais naujinimais.
@@ -569,6 +706,21 @@ Skirtas šalintis standartines registracijos problemas, kai papildiniai nėra ti
 Renkami šių laukų duomenys:
 
   - Nėra
+
+#### <a name="officeextensibilityappcommandsaddsolution"></a>Office.Extensibility.AppCommands.AddSolution
+
+Kaupia „Office“ papildinių, kurie tinkina juostelę, diegimo informaciją.  Naudojama aptikti problemas, susijusias su tuo, kaip tinkinti papildiniai keičia „Office“ juostelę.
+ 
+Renkami šių laukų duomenys:
+
+- **AppVersion** – taikomosios programos versija
+
+- **SolutionId** – sprendimo ID
+
+- **StoreType** – nurodo taikomosios programos kilmę
+
+- **TelemetryId** – telemetrijos ID pagal pasirašytą tapatybę
+
 
 #### <a name="officeextensibilitycatalogexchangegetentitlements"></a>Office.Extensibility.Catalog.ExchangeGetEntitlements
 
@@ -748,7 +900,57 @@ Renka informaciją apie sėkmingą arba nesėkmingą „Outlook“ papildinio pa
 
 Renkami šių laukų duomenys:
 
-  - **Standartinė HVA veiklą, kai nėra pasirinktinės apkrovos**
+  - **Standartinė HVA veikla**, kai nėra pasirinktinės apkrovos
+
+#### <a name="officeoutlookmacaddinapiusage"></a>Office.Outlook.Mac.AddinAPIUsage
+
+Surenka informaciją apie sėkmingą ir nesėkmingą papildinio vykdymą programoje „Outlook“. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
+
+Renkami šių laukų duomenys:
+
+- **AccountType** – su papildiniu susietos paskyros tipas 
+
+- **Cookie** – papildinio naudojamas slapukas
+
+- **DispId** – išsiuntimo identifikatorius 
+
+- **EndTime** – laikas, kai papildinys baigėsi 
+
+- **ExecutionTime** – papildinio vykdymo laikas 
+
+- **Result** – papildinio naudojimo programoje „Outlook“ rezultatas 
+
+- **StartTime** – laikas, kai papildinys buvo paleistas
+
+
+#### <a name="officeoutlookmacaddineventapisusage"></a>Office.Outlook.Mac.AddinEventAPIsUsage
+
+Surenka informaciją apie sėkmingą arba nesėkmingą papildinio vykdymą programoje „Outlook“. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
+
+Renkami šių laukų duomenys:
+
+- **AddinType** – papildinio tipas 
+
+- **EventAction** – papildinio atliekamas veiksmas 
+
+- **EventDispid** – išsiuntimo identifikatorius
+
+- **EventResult**– veiksmo, kurį atliko papildinys, rezultatas 
+
+#### <a name="officeoutlookmacaddininstallationfrominclientstore"></a>Office.Outlook.Mac.AddInInstallationFromInClientStore
+
+Surenka informaciją apie sėkmingą arba nesėkmingą papildinio diegimą programoje „Outlook“. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
+
+Renkami šių laukų duomenys:
+
+- **AccountType** – su papildiniu susietos paskyros 
+
+- **FailureReason** – priežastis, kodėl papildinio nepavyko įdiegti 
+
+- **MarketplaceAssetId** – parduotuvės papildinio identifikatorius 
+
+- **Status** – papildinio diegimo būsena
+
 
 #### <a name="officeprogrammabilityadd-insinternalsetconnectenterprise"></a>Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
@@ -979,6 +1181,15 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 
 Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas).
 
+#### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
+
+Generuojama paleidžiant klientą, kai galutinis vartotojas įgalina „Office“ telemetrijos ataskaitų sritį.  Tenka informaciją, kai „Office“ telemetrijos agentas įkelia duomenis į bendrinimo aplanką. Šis įvykis visų pirma naudojamas norint stebėti „Office“ telemetrijos agento sveikatą. Antrinė paskirtis yra įvertinti „Office“ telemetrijos ataskaitų srities naudojimą.
+
+Renkami šių laukų duomenys:
+
+- **UploadTime** – paskutinio sėkmingo nusiuntimo, atlikti telemetrijos agento, laiko žyma.
+
+
 #### <a name="officeappcompatappcompatagentscanandupload"></a>Office.AppCompat.AppCompat.AgentScanAndUpload
 
 Renkama tik kai galutinis vartotojas įgalina „Office“ telemetrijos ataskaitų sritį.Ji renka informaciją, kai „Office“ telemetrijos agentas yra įvykdytas.Informacija renkama tik tuo atveju, kai „Office“ telemetrijos ataskaitų sritis yra įjungta ir naudojama nustatyti „Office“ telemetrijos agento sveikatą.
@@ -1048,6 +1259,36 @@ Renkami šių laukų duomenys:
   - **SolutionId –** GUID, nurodantis unikalų papildinį
 
   - **TelemetryId** – GUID, nurodantis unikalų vartotoją
+
+#### <a name="officeextensibilitycatalogexchangeprocessmanifest"></a>Office.Extensibility.Catalog.ExchangeProcessManifest
+
+Duomenys apie O365 nuomotojo administratoriaus priskirto papildinio atskiros deklaracijos tvarkymą. Naudojamas klientų problemoms analizuoti ir klientų sėkmės diagramoms kurti.
+ 
+Renkami šių laukų duomenys:
+
+- **AppVersion** – taikomosios programos versija
+
+- **IsAllReturnedManifestsParsed** – Bulio logika, nurodanti, kad mes išanalizavome visas grąžintas deklaracijas
+
+- **IsAppCommand** – Bulio logika, nurodanti, ar tai taikomosios programos komandų programa 
+
+- **ReturnedManifestsParsed** – išanalizuotų deklaracijų skaičius
+
+- **SolutionId** – sprendimo ID
+
+- **TelemetryId** – telemetrijos ID pagal pasirašytą tapatybę
+
+#### <a name="officeextensibilityodpappcommandsribbonclick"></a>Office.Extensibility.ODPAppCommandsRibbonClick
+
+Renka, ar tinkinto papildinio valdiklio spustelėjimas buvo sėkmingas, ar ne. Naudojamas norint aptikti vartotojo sąveikos su papildinių valdikliais problemas.
+ 
+Renkami šių laukų duomenys:
+
+- **CommandActionType** – papildinio komandos tipas
+
+- **CommandLabel** – spustelėta komandos žymė
+
+- **SolutionId** – sprendimo ID
 
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
@@ -1605,6 +1846,213 @@ Renkami šių laukų duomenys:
 
   - **Data.Log** – pasirinktinis žurnalo pranešimas nurodo, ar pirminis tikrinimas pavyko
 
+
+#### <a name="officeonenotenavigationcreatepage"></a>Office.OneNote.Navigation.CreatePage
+
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti puslapius programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti puslapio, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+
+- **IsAtSectionEnd** – nurodo, ar naujas puslapis sukuriamas skyriaus pabaigoje, ar ne.
+
+- **IsBlank** – nurodo, ar naujas puslapis yra tuščias, ar sukurtas naudojant šabloną.
+
+- **IsRecentsView** – nurodo, ar puslapis sukuriamas iš Naujausių, ar ne.
+
+- **NavView** – nurodo, ar puslapis sukuriamas iš naršymo rodinio, ar ne.
+
+- **NoteType** – nurodo puslapio tipą (sparčioji pastaba, sąrašas arba nuotrauka).
+
+- **QuickNoteType** – nurodo puslapio tipą (sparčioji pastaba, sąrašas arba nuotrauka).
+
+- **RailState** – nurodo „OneNote“ naršymo kreiptuvo būseną kuriant puslapį.
+
+- **Trigger** – nurodo įvesties tašką, kuriame pradedamas puslapio kūrimo veiksmas.
+
+- **TriggerInfo** – nurodo papildomą informaciją, susijusią su paleidikliu.
+
+
+#### <a name="officeonenotenavigationcreatesection"></a>Office.OneNote.Navigation.CreateSection
+
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti sekcijas programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti puslapio, tai gali lemti didelės svarbos incidentą.
+
+Renkami toliau apibūdintų laukų duomenys
+
+- **NotebookID** – unikalusis bloknoto identifikatorius.
+
+- **SectionID** – unikalusis sukurtos sekcijos identifikatorius.
+
+- **Trigger** – nurodo įvesties tašką, kuriame pradedamas sekcijos kūrimo veiksmas.
+
+- **TriggerInfo** – nurodo papildomą informaciją, susijusią su paleidikliu.
+
+
+#### <a name="officeonenotenavigationnavigate"></a>Office.OneNote.Navigation.Navigate
+
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą naršyti tarp puslapių programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali naršyti, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+
+- **FromNotebook** – unikalusis bloknoto identifikatorius.
+
+- **FromPage** – unikalusis puslapio identifikatorius.
+
+- **FromSection** – unikalusis sekcijos identifikatorius.
+
+- **FromSectionGroup** – unikalusis sekcijų grupės identifikatorius.
+
+- **IsCurrentUserEduStudent** – nurodo, ar dabartiniam vartotojui švietimo įstaigos bloknote priskirtas mokinio arba studento vaidmuo, ar ne.
+
+- **IsEduNotebook** – nurodo, ar dabartinis puslapis yra švietimo įstaigos bloknotas, ar ne.
+
+- **IsEduNotebookReadOnlyPage** – nurodo, ar dabartinis puslapis yra švietimo įstaigos bloknote tik skaitomas, ar ne.
+
+- **ToNotebook** – unikalusis bloknoto identifikatorius.
+
+- **ToPage** – unikalusis puslapio identifikatorius.
+
+- **ToSection** – unikalusis sekcijos identifikatorius.
+
+- **ToSectionGroup** – unikalusis sekcijų grupės identifikatorius.
+
+
+#### <a name="officeonenotenotebookmanagementcreatenotebook"></a>Office.OneNote.NotebookManagement.CreateNotebook
+
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti bloknotus programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti bloknotų, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+    
+- **NotebookID** – unikalusis bloknoto identifikatorius.
+
+
+#### <a name="officeonenotenotebookmanagementopennotebook"></a>Office.OneNote.NotebookManagement.OpenNotebook
+
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą atidaryti bloknotus programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali atidaryti bloknotų, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+
+-  **NotebookID** – unikalusis bloknoto identifikatorius.
+
+    
+#### <a name="officeonenotesearchsearch"></a>Office.OneNote.Search.Search
+
+Kritinio signalo ID, naudojamas stebėti „OneNote“ vartotojų gebėjimą rasti informaciją tūkstančiuose puslapių ir bloknotų.   Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali rasti informacijos įvairiuose bloknotuose, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+
+- **PageSearchResultCount** – nurodo ieškos rezultatų, rastų puslapio ieškos režimu, skaičių.
+
+-  **PageTimeToFirstResultInMs** – nurodo, per kiek laiko puslapio ieškos režimu veikianti „OneNote“ randa pirmą atitikmenį.
+    
+-  **PageTimeToLastResultInMs** – nurodo, per kiek laiko puslapio ieškos režimu veikianti „OneNote“ randa paskutinį atitikmenį.
+
+-  **PageTimeToMedianResultInMs** – nurodo, laiko, per kurį puslapio ieškos režimu veikianti „OneNote“ randa visus atitikmenis, medianą.
+
+-  **SearchResultCount** – nurodo ieškos rezultatų skaičių.
+
+-  **TagSearchResultCount** – nurodo ieškos rezultatų, rastų žymių ieškos režimu, skaičių.
+
+-  **TagTimeToFirstResultInMs** – nurodo, per kiek laiko žymių ieškos režimu veikianti „OneNote“ randa pirmą atitikmenį.
+
+-  **TagTimeToLastResultInMs** – nurodo, per kiek laiko žymių ieškos režimu veikianti „OneNote“ randa paskutinįjį atitikmenį.
+
+-  **TagTimeToMedianResultInMs** – nurodo, laiko, per kurį žymių ieškos režimu veikianti „OneNote“ randa visus atitikmenis, medianą.
+
+-  **TimeToFirstResultInMs** – nurodo, per kiek laiko „OneNote“ randa pirmą atitikmenį.
+
+-  **TimeToLastResultInMs** – nurodo, per kiek laiko „OneNote“ randa paskutinį atitikmenį.
+
+-  **TimeToMedianResultInMs** – nurodo, laiko, per kurį „OneNote“ randa visus atitikmenis, medianą.
+
+
+#### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
+ 
+Šis įvykis registruoja bloknoto sinchronizavimo rezultatą. Jis naudojamas norint suprasti, kiek reikia unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą.
+ 
+Renkami toliau apibūdintų laukų duomenys
+
+- **CachedError_Code** – skaitinis arba raidinis kodas, naudojamas nustatyti talpyklinės klaidos pobūdį ir (arba) kodėl ji įvyko
+    
+- **CachedError_Description** – talpyklinės klaidos aprašas
+
+- **CachedError_Tag** – nurodo, kur kode įvyksta talpyklinė klaida
+
+- **CachedError_Type** – talpyklinės klaidos tipas, pvz., „Win32Error“ ir t. t.
+
+- **ExecutionTime** – laikas milisekundėmis, reikalingas bloknotui dubliuoti
+
+- **Gosid** – visuotinio objekto srities ID
+
+- **IdentityType** – tapatybės tipas, pavyzdžiui, „Windows Live“, organizacijos ID ir t. t.
+
+- **InitialReplicationInSession** – nurodo, ar dubliuojamas pirmasis bloknoto dubliavimas atidarius, ar ne
+
+- **IsBackgroundSync** – nurodo, ar tai fono sinchronizavimas ar ne
+
+- **IsCachedErrorSuppressed** – nurodo, ar talpyklinė klaida suglaudinta, ar ne
+
+- **IsCachedErrorUnexpected** – nurodo, ar talpyklinė klaida netikėta, ar ne
+
+- **IsNotebookErrorSuppressed** – nurodo, ar bloknoto lygio sinchronizavimo klaida suglaudinta, ar ne
+
+- **IsNotebookErrorUnexpected** – nurodo, ar bloknoto lygio sinchronizavimo klaida netikėta, ar ne
+
+- **IsSectionErrorSuppressed** – nurodo, ar sekcijos sinchronizavimo klaida suglaudinta, ar ne
+
+- **IsSectionErrorUnexpected** – nurodo, ar sekcijos sinchronizavimo klaida suglaudinta, ar ne
+
+- **IsUsingRealtimeSync** – nurodo, ar bloknotas sinchronizuotas naudojant šiuolaikinį puslapio turinio sinchronizavimą, ar ne
+
+- **LastAttemptedSync** – laiko žyma, nurodanti, kada bloknotas buvo bandytas sinchronizuoti paskutinį kartą
+
+- **LastBackgroundSync** – laiko žyma, nurodanti, kada paskutinį kartą buvo bandyta sinchronizuoti foną
+
+- **LastNotebookViewedDate** – vėliausios bloknoto peržiūros data
+
+- **LastSuccessfulSync** – laiko žyma, nurodanti, kada bloknotas buvo sėkmingai sinchronizuotas prieš tai
+
+- **NeedToRestartBecauseOfInconsistencies** – nurodo, ar sinchronizavimą reikia paleisti iš naujo dėl nesuderinamumų, ar ne
+
+- **NotebookErrorCode** – nurodo, kad bloknoto lygio sinchronizavimo klaidos kodas įrašytas bloknoto diagramos srityje
+
+- **NotebookId** – bloknoto ID
+
+- **NotebookType** – bloknoto tipas
+
+- **ReplicatingAgainBecauseOfInconsistencies** – nurodo, ar sinchronizavimas paleidžiamas iš naujo dėl nesuderinamumų, ar ne
+
+- **SectionError_Code** – skaitinis arba raidinis kodas, naudojamas nustatyti sekcijos sinchronizavimo klaidos pobūdį ir (arba) kodėl ji įvyko
+
+- **SectionError_Description** – sekcijos sinchronizavimo klaidos aprašas
+
+- **SectionError_Tag** – nurodo, kur kode įvyksta sekcijos sinchronizavimo klaida
+
+- **SectionError_Type** – sekcijos sinchronizavimo klaidos tipas, pvz., „Win32Error“ ir t. t.
+
+- **Success** – nurodo, ar bloknotą pavyko sėkmingai sinchronizuoti, ar ne
+
+- **SyncDestinationType** – nurodo sinchronizacijos paskirties tipą, pvz., „OneDrive“ arba „SharePoint Online“
+
+- **SyncId** – unikalus kiekvieno bloknoto sinchronizavimo numeris
+
+- **SyncWasFirstInSession** – nurodo, ar šis sinchronizavimas yra pirmasis sinchronizavimas per dabartinį seansą
+
+- **SyncWasUserInitiated** – nurodo, ar šį sinchronizavimą inicijavo vartotojas, ar ne
+
+- **TenantId** – „SharePoint“ nuomotojo ID
+
+- **TimeSinceLastAttemptedSync** – laikas, praėjęs nuo vėliausio bandymo sinchronizuoti bloknotą
+
+- **TimeSinceLastSuccessfulSync** – laikas, praėjęs nuo vėliausio sėkmingo bloknoto sinchronizavimo
+
+
+#### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
+
+Tada kritinis signalas naudojamas užtikrinti, kad „OneNote“ vartotojai gali sėkmingai paleisti taikomąją programą.
+Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti taikomosios programos mūsų efektyvumo lange, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys: jokių
+
 #### <a name="officeoutlookdesktopaccountconfigurationcreateaccountresult"></a>Office.Outlook.Desktop.AccountConfiguration.CreateAccountResult
 
 Rezultatas yra paskyros įtraukimas į naują profilį „Outlook“ iš „Office Backstage“ arba iš paskyros nustatymų dialogo lango. Duomenys yra aktyviai stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija.
@@ -1670,6 +2118,68 @@ Renkami šių laukų duomenys:
   - **StoreType** – parduotuvės, sukūrusios OST/PST/NST, tipas
 
   - **StoreVersion** – sukurtos mažos / didelės / „Tardis“ parduotuvės versija
+
+#### <a name="officeoutlookmacaccountaddworkflow"></a>Office.Outlook.Mac.AccountAddWorkflow
+
+Paskyros įtraukimo į programą „Outlook“ rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
+
+Renkami šių laukų duomenys:
+
+- **AccountConfigMethod** – paskyros konfigūravimo metodas
+
+- **AccountType** – konfigūruojamos paskyros tipas
+
+- **AccountWorkflowSession** – seansas, per kurį bandoma paskyros darbo eiga
+
+- **SessionDuration** – seanso trukmė 
+
+- **ThreadId** – gijos identifikatorius
+
+
+#### <a name="officeoutlookmacaccountonboardingflow"></a>Office.Outlook.Mac.AccountOnboardingFlow
+
+Paskyros įtraukimo į programą „Outlook“, naudojant naujas paskyros konfigūravimo funkcijas, rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
+
+Renkami šių laukų duomenys:
+
+- **AccountConfigAutoSignIn** – administratoriaus nustatytas automatinis paskyros konfigūravimas
+
+- **AccountConfigDomain** – domenas, nurodytas konfigūruojant paskyrą 
+
+- **AccountConfigEntryPoint** – įvesties taškas, kuriame vartotojas įvedė paskyros konfigūraciją 
+
+- **AccountConfigErrorCode** – konfigūruojant paskyrą aptiktas klaidos kodas 
+
+- **AccountConfigErrorString** – konfigūruojant paskyrą aptikta klaida
+
+- **AccountConfigMethod** – paskyros konfigūravimo metodas
+
+- **AccountConfigPhase** – dabartinis paskyros konfigūravimo darbo eigos veiksmas
+
+- **AccountConfigPhaseFrom** – pradinis paskyros konfigūravimo darbo eigos veiksmas 
+
+- **AccountConfigPhaseTo** – paskutinis paskyros konfigūravimo darbo eigos veiksmas 
+
+- **AccountType** – konfigūruojamos paskyros tipas
+
+- **AccountWorkflowSession** – seansas, per kurį bandoma paskyros darbo eiga
+
+- **SessionDuration** – seanso trukmė
+
+
+#### <a name="officeoutlookmacdeleteaccountusage"></a>Office.Outlook.Mac.DeleteAccountUsage
+
+Paskyros naikinimo programoje „Outlook“ rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
+
+Renkami šių laukų duomenys:
+
+- **AccountType** – konfigūruojamos paskyros tipas
+
+- **AccountID** – paskyros identifikatorius
+
+- **DeprovisionAccount** – nurodo, ar paskyra pašalinama iš serverio
+
+- **IsFastDelete** – nurodo, ar paskyra panaikinta iš fono gijos
 
 #### <a name="officepowerpointdocoperationclose"></a>Office.PowerPoint.DocOperation.Close
 
@@ -2075,457 +2585,481 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointdocoperationsaveas"></a>Office.PowerPoint.DocOperation.SaveAs
 
-Surinkti kiekvieną kartą, kai „PowerPoint“ atlieka operaciją įrašyti kaip. Apima sėkmingai arba nesėkmingai atlikto našumo metrikų ir susijusio dokumento metaduomenų įrašymo rezultato tipą. Nepavykus įrašymui, duomenys gali būti prarasti.
-
-„Microsoft“ naudoja šiuos duomenis, kad užtikrintų, jog funkcija veikia kaip priklauso ir vartotojo turinys yra sėkmingai išlaikomas.
+Surinkti kiekvieną kartą, kai „PowerPoint“ atlieka operaciją įrašyti kaip. Apima sėkmingai arba nesėkmingai atlikto našumo metrikų ir susijusio dokumento metaduomenų įrašymo rezultato tipą. Nepavykus įrašymui, duomenys gali būti prarasti.  „Microsoft“ naudoja šiuos duomenis, kad užtikrintų, jog funkcija veikia kaip priklauso ir vartotojo turinys yra sėkmingai išlaikomas.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemetryResult:long –** ar šis žurnalo įrašas turi visą reikiamą dokumento telemetriją (Data\_Doc\_\* laukus)? Jei ne, kodėl?
+- **Data_AddDocTelemetryResult:long** – ar šis žurnalo įrašas turi visą reikiamą dokumento telemetriją (Data_Doc_* fields)? Jei ne, kodėl?
 
-  - **Data\_CppUncaughtExceptionCount:long –** veiklos veikimo metu neaptiktos vietinės išimtys
+- **Data_CppUncaughtExceptionCount:long** – veiklos veikimo metu neaptiktos vietinės išimtys
 
-  - **Data\_DetachedDuration:long –** veiklos atskyrimo / neveikimo trukmė
+- **Data_DetachedDuration:long** – veiklos atskyrimo / neveikimo trukmė
 
-  - **Data\_DstDoc\_AccessMode:long –** kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
+- **Data_DstDoc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
-  - **Data\_DstDoc\_AccessMode:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+- **Data_DstDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
-  - **Data\_DstDoc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
+- **Data_DstDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
-  - **Data\_DstDoc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
+- **Data_DstDoc_EdpState:long** – dokumento įmonės duomenų apsaugos būsena
 
-  - **Data\_DstDoc\_Ext:string –** dokumento plėtinys
+- **Data_DstDoc_Ext:string** – dokumento plėtinys
 
-  - **Data\_DstDoc\_Extension:string –** dokumento plėtinys
+- **Data_DstDoc_Extension:string** – dokumento plėtinys
 
-  - **Data\_DstDoc\_FileFormat:long –** iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
+- **Data_DstDoc_FileFormat:long** – iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
 
-  - **Data\_DstDoc\_Fqdn:string –** vieta, kurioje saugomas dokumentas (SharePoint.com, live.net) galima tik „Office 365“ domenams
+- **Data_DstDoc_Fqdn:string** – vieta, kurioje saugomas dokumentas (SharePoint.com, live.net), galima tik „Office 365“ domenams
+    
+- **Data_DstDoc_FqdnHash:string** – dokumento saugojimo vietos maiša
 
-  - **Data\_DstDoc\_FqdnHash:string –** dokumento saugojimo vietos maiša
+- **Data_DstDoc_IdentityTelemetryId:string** – unikalusis vartotojo GUID
 
-  - **Data\_DstDoc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
+- **Data_DstDoc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-  - **Data\_DstDoc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+- **Data_DstDoc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
-  - **Data\_DstDoc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
+- **Data_DstDoc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
+    
+- **Data_DstDoc_IsCloudCollabEnabled:bool** – „teisinga“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
 
-  - **Data\_DstDoc\_IrmRights:long –** iš anksto nustatytų reikšmių, nurodančių kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
+- **Data_DstDoc_IsIncrementalOpen:bool** – nurodo, ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
 
-  - **Data\_DstDoc\_IsCloudCollabEnabled:bool –** „true“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
+- **Data_DstDoc_IsOcsSupported:bool** – nurodo, ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
 
-  - **Data\_DstDoc\_IsIncrementalOpen:bool –** ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
+- **Data_DstDoc_IsOpeningOfflineCopy:bool** – tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-  - **Data\_DstDoc\_IsOcsSupported:bool –** ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
+- **Data_DstDoc_IsSyncBacked:bool** – nurodo, ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
+    
+- **Data_DstDoc_Location:long** – iš anksto apibrėžtas dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy:bool –** tikrina, ar dokumentas atidarytas iš vietinės talpyklos
+- **Data_DstDoc_LocationDetails:long** – iš anksto apibrėžtas išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
 
-  - **Data\_DstDoc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
+- **Data_DstDoc_NumberCoAuthors:long** – bendraautorių skaičius dokumento atidarymo metu
 
-  - **Data\_DstDoc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
+- **Data_DstDoc_PasswordFlags:long** – iš anksto apibrėžtas dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
 
-  - **Data\_DstDoc\_LocationDetails:long –** iš anksto apibrėžtų išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
+- **Data_DstDoc_ReadOnlyReasons:long** – iš anksto apibrėžtas dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
-  - **Data\_DstDoc\_NumberCoAuthors:long –** bendraautorių skaičius dokumento atidarymo metu
+- **Data_DstDoc_ResourceIdHash:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_DstDoc\_PasswordFlags:long –** iš anksto apibrėžtų dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
+- **Data_DstDoc_ServerDocId:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_DstDoc\_ReadOnlyReasons:long –** iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
+- **Data_DstDoc_ServerProtocol:long** – iš anksto apibrėžtas reikšmių, nurodančių, kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
-  - **Data\_DstDoc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_DstDoc_ServerType:long** – iš anksto apibrėžtas serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
 
-  - **Data\_DstDoc\_ServerDocId:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_DstDoc_ServerVersion:long** – tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
 
-  - **Data\_DstDoc\_ServerProtocol:long –** iš anksto apibrėžtų reikšmių, nurodančių kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
+- **Data_DstDoc_SessionId:long** – generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
 
-  - **Data\_DstDoc\_ServerType:long –** iš anksto apibrėžtų serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
+- **Data_DstDoc_SharePointServiceContext:string** – nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkama kliento ir serverio įvykių žurnalų koreliacijai
 
-  - **Data\_DstDoc\_ServerVersion:long –** tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
+- **Data_DstDoc_SizeInBytes:long** – dokumento dydis baitais
 
-  - **Data\_DstDoc\_SessionId:long –** generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+- **Data_DstDoc_SpecialChars:long** – šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
 
-  - **Data\_DstDoc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
+- **Data_DstDoc_StorageProviderId:string** – eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
 
-  - **Data\_DstDoc\_SizeInBytes:long –** dokumento dydis baitais
+- **Data_DstDoc_StreamAvailability:long** – iš anksto apibrėžtas dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
 
-  - **Data\_DstDoc\_SpecialChars:long –** šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
+- **Data_DstDoc_UrlHash:string** – debesyje saugomų dokumentų visų URL maiša
 
-  - **Data\_DstDoc\_StorageProviderId:string –** eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
+- **Data_DstDoc_UsedWrsDataOnOpen:bool** – „teisinga“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
 
-  - **Data\_DstDoc\_StreamAvailability:long –** iš anksto apibrėžtų dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
+- **Data_DstDoc_WopiServiceId:string** – WOPI tarnybos identifikatorius, pvz., „Dropbox“
 
-  - **Data\_DstDoc\_UrlHash:string –** debesyje saugomų dokumentų visų URL maiša
+- **Data_FileType:long** – iš anksto apibrėžtas failo vidinio tipo reikšmių rinkinys
 
-  - **Data\_DstDoc\_UsedWrsDataOnOpen:bool –** „true“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
+- **Data_fLifeguarded:bool** – nurodo, ar kada dokumentui buvo naudojama apsauginė funkcija (funkcija, automatiškai taisanti dokumento klaidas nepranešant vartotojui)?
 
-  - **Data\_DstDoc\_WopiServiceId:string –** WOPI tarnybos identifikatorius, pvz., „Dropbox“
+- **Data_FWebCreated:bool** – nurodo, ar šiame dokumente yra WebCreator žymė?
 
-  - **Data\_FileType:long –** iš anksto apibrėžtas failo vidinio tipo reikšmių rinkinys
+- **Data_SaveReason:long** – iš anksto apibrėžtas reikšmių, nurodančių įrašymo atlikimo priežastis, rinkinys (AutoSave, ToOCSTransitionSave, ToCSITransitionSave ir kt.)
 
-  - **Data\_fLifeguarded:bool –** ar kada dokumentui buvo naudojama apsauginė funkcija (funkcija, automatiškai taisanti dokumento klaidas nepranešant vartotojui)?
+- **Data_SaveType:long** – iš anksto apibrėžtas įrašymo tipo reikšmių rinkinys (SaveAs, Publish, Manual, OMSave ir kt.) 
 
-  - **Data\_FWebCreated:bool –** ar šiame dokumente yra WebCreator žymė?
+- **Data_SrcDoc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
-  - **Data\_SaveReason:long –** iš anksto apibrėžtas reikšmių, nurodančių įrašymo atlikimo priežastis, rinkinys (AutoSave, ToOCSTransitionSave, ToCSITransitionSave ir kt.)
+- **Data_SrcDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
-  - **Data\_SaveType:long –** iš anksto nustatytų įrašymo tipo reikšmių rinkinys (SaveAs, Publish, Manual, OMSave ir kt.)
+- **Data_SrcDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“ 
 
-  - **Data\_SrcDoc\_AccessMode:long –** kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
+- **Data_SrcDoc_EdpState:long** – dokumento įmonės duomenų apsaugos būsena
 
-  - **Data\_SrcDoc\_AssistedReadingReasons:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+- **Data_SrcDoc_Ext:string** – dokumento plėtinys
 
-  - **Data\_SrcDoc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
+- **Data_SrcDoc_Extension:string** – dokumento plėtinys
 
-  - **Data\_SrcDoc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
+- **Data_SrcDoc_FileFormat:long** – iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
 
-  - **Data\_SrcDoc\_Ext:string –** dokumento plėtinys
+- **Data_SrcDoc_Fqdn:string** – vieta, kurioje saugomas dokumentas (SharePoint.com, live.net), galima tik „Office 365“ domenams
 
-  - **Data\_SrcDoc\_Extension:string –** dokumento plėtinys
+- **Data_SrcDoc_FqdnHash:string** – dokumento saugojimo vietos maiša
 
-  - **Data\_SrcDoc\_FileFormat:long –** iš anksto apibrėžtų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
+- **Data_SrcDoc_IdentityTelemetryId:string** – unikalusis vartotojo GUID
 
-  - **Data\_SrcDoc\_Fqdn:string –** vieta, kurioje saugomas dokumentas (SharePoint.com, live.net) galima tik „Office 365“ domenams
+- **Data_SrcDoc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-  - **Data\_SrcDoc\_FqdnHash:string –** dokumento saugojimo vietos maiša
+- **Data_SrcDoc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
-  - **Data\_SrcDoc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
+- **Data_SrcDoc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
 
-  - **Data\_SrcDoc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+- **Data_SrcDoc_IsCloudCollabEnabled:bool** – „teisinga“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
 
-  - **Data\_SrcDoc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
+- **Data_SrcDoc_IsIncrementalOpen:bool** – nurodo, ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
 
-  - **Data\_SrcDoc\_IrmRights:long –** iš anksto apibrėžtų reikšmių, nurodančių kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
+- **Data_SrcDoc_IsOcsSupported:bool** – nurodo, ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
 
-  - **Data\_SrcDoc\_IsCloudCollabEnabled:bool –** „true“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
+- **Data_SrcDoc_IsOpeningOfflineCopy:bool** – tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-  - **Data\_SrcDoc\_IsIncrementalOpen:bool –** ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
+- **Data_SrcDoc_IsSyncBacked:bool** – nurodo, ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
-  - **Data\_SrcDoc\_IsOcsSupported:bool –** ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
+- **Data_SrcDoc_Location:long** – iš anksto apibrėžtas dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy:bool –** tikrina, ar dokumentas atidarytas iš vietinės talpyklos
+- **Data_SrcDoc_LocationDetails:long** – iš anksto apibrėžtas išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
 
-  - **Data\_SrcDoc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
+- **Data_SrcDoc_NumberCoAuthors:long** – bendraautorių skaičius dokumento atidarymo metu
 
-  - **Data\_SrcDoc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
+- **Data_SrcDoc_PasswordFlags:long** – iš anksto apibrėžtas dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
 
-  - **Data\_SrcDoc\_LocationDetails:long –** iš anksto apibrėžtų išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
+- **Data_SrcDoc_ReadOnlyReasons:long** – iš anksto apibrėžtas dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
-  - **Data\_SrcDoc\_NumberCoAuthors:long –** bendraautorių skaičius dokumento atidarymo metu
+- **Data_SrcDoc_ResourceIdHash:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_SrcDoc\_PasswordFlags:long –** iš anksto apibrėžtų dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit) –
+- **Data_SrcDoc_ServerDocId:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_SrcDoc\_ReadOnlyReasons:long –** iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
+- **Data_SrcDoc_ServerProtocol:long** – iš anksto apibrėžtas reikšmių, nurodančių, kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
-  - **Data\_SrcDoc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_SrcDoc_ServerType:long** – iš anksto apibrėžtas serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
 
-  - **Data\_SrcDoc\_ServerDocId:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_SrcDoc_ServerVersion:long** – patikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office16“ Data_SrcDoc_SessionId:long sukurtas GUID, identifikuojantis dokumento egzempliorių tame pačiame proceso seanse
 
-  - **Data\_SrcDoc\_ServerProtocol:long –** iš anksto apibrėžtų reikšmių, nurodančių kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
+- **Data_SrcDoc_SharePointServiceContext:string** – nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkama kliento ir serverio įvykių žurnalų koreliacijai
 
-  - **Data\_SrcDoc\_ServerType:long –** iš anksto apibrėžtų serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
+- **Data_SrcDoc_SizeInBytes:long** – dokumento dydis baitais
 
-  - **Data\_SrcDoc\_ServerVersion:long –** patikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office16“ Data\_SrcDoc\_SessionId:long sukurtas GUID, identifikuojantis dokumento egzempliorių tame pačiame proceso seanse
+- **Data_SrcDoc_SpecialChars:long** – šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
 
-  - **Data\_SrcDoc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
+- **Data_SrcDoc_StorageProviderId:string** – eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
 
-  - **Data\_SrcDoc\_SizeInBytes:long –** dokumento dydis baitais
+- **Data_SrcDoc_StreamAvailability:long** – iš anksto apibrėžtas dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
 
-  - **Data\_SrcDoc\_SpecialChars:long –** šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
+- **Data_SrcDoc_UrlHash:string** – debesyje saugomų dokumentų visų URL maiša
 
-  - **Data\_SrcDoc\_StorageProviderId:string –** eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
+- **Data_SrcDoc_UsedWrsDataOnOpen:bool** – „teisinga“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
 
-  - **Data\_SrcDoc\_StreamAvailability:long –** iš anksto apibrėžtų dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
+- **Data_SrcDoc_WopiServiceId:string** – WOPI tarnybos identifikatorius, pvz., „Dropbox“
 
-  - **Data\_SrcDoc\_UrlHash:string –** debesyje saugomų dokumentų visų URL maiša
+- **Data_StopwatchDuration:long** – visas veiklos laikas
 
-  - **Data\_SrcDoc\_UsedWrsDataOnOpen:bool –** „true“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
+- **Data_TypeOfSaveDialog:long** – iš anksto apibrėžtas dialogo reikšmių rinkinys (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG ir t. t.)
 
-  - **Data\_SrcDoc\_WopiServiceId:string –** WOPI tarnybos identifikatorius, pvz., „Dropbox“
+- **DstDoc** – nauja dokumento vieta 
 
-  - **Data\_StopwatchDuration:long –** visas veiklos laikas
+- **SrcDoc** – pradinė dokumento vieta
 
-  - **Data\_TypeOfSaveDialog:long –** iš anksto apibrėžtų dialogo lango reikšmių rinkinys (RUN\_SAVEAS\_DLG, RUN\_SAVEMEDIA\_DLG, RUN\_SAVEAS\_VIDEO\_DLG ir kt.)
-
-  - **DstDoc –** nauja dokumento vieta
-
-  - **SrcDoc –** pradinė dokumento vieta
 
 #### <a name="officepowerpointdocoperationsavelegacy"></a>Office.PowerPoint.DocOperation.SaveLegacy
 
-Surinkti kiekvieną kartą, kai „PowerPoint“ įrašo naudodama senesnį kodo kelią. Apima sėkmingai arba nesėkmingai atlikto našumo metrikų ir susijusio dokumento metaduomenų įrašymo rezultato tipą. Nepavykus įrašymui, duomenys gali būti prarasti. „Microsoft“ naudoja šiuos duomenis, kad užtikrintų, jog funkcija veikia kaip priklauso ir vartotojo turinys yra sėkmingai išlaikomas.
+Surinkti kiekvieną kartą, kai „PowerPoint“ įrašo naudodama senesnį kodo kelią. Apima sėkmingai arba nesėkmingai atlikto našumo metrikų ir susijusio dokumento metaduomenų įrašymo rezultato tipą.  Nepavykus įrašymui, duomenys gali būti prarasti.  „Microsoft“ naudoja šiuos duomenis, kad užtikrintų, jog funkcija veikia kaip priklauso ir vartotojo turinys yra sėkmingai išlaikomas.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemetryResult:long –** ar šis žurnalo įrašas turi visą reikiamą dokumento telemetriją (Data\_Doc\_\* laukus)? Jei ne, kodėl?
+- **Data_AddDocTelemetryResult:long** – ar šis žurnalo įrašas turi visą reikiamą dokumento telemetriją (Data_Doc_* fields)? Jei ne, kodėl?
 
-  - **Data\_CppUncaughtExceptionCount:long –** veiklos veikimo metu neaptiktos vietinės išimtys
+- **Data_CppUncaughtExceptionCount:long** – veiklos veikimo metu neaptiktos vietinės išimtys
 
-  - **Data\_DetachedDuration:long –** veiklos atskyrimo / neveikimo trukmė
+- **Data_DetachedDuration:long** – veiklos atskyrimo / neveikimo trukmė
 
-  - **Data\_Doc\_AccessMode:long –** kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
+- **Data_Doc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
-  - **Data\_Doc\_AssistedReadingReasons:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+- **Data_Doc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
-  - **Data\_Doc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
+- **Data_Doc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
-  - **Data\_Doc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
+- **Data_Doc_EdpState:long** – dokumento įmonės duomenų apsaugos būsena
 
-  - **Data\_Doc\_Ext:string –** dokumento plėtinys
+- **Data_Doc_Ext:string** – dokumento plėtinys
 
-  - **Data\_Doc\_Extension:string –** dokumento plėtinys
+- **Data_Doc_Extension:string** – dokumento plėtinys
 
-  - **Data\_Doc\_FileFormat:long –** iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
+- **Data_Doc_FileFormat:long** – iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
 
-  - **Data\_Doc\_Fqdn:string –** vieta, kurioje saugomas dokumentas (SharePoint.com, live.net) galima tik „Office 365“ domenams
+- **Data_Doc_Fqdn:string** – vieta, kurioje saugomas dokumentas (SharePoint.com, live.net), galima tik „Office 365“ domenams
 
-  - **Data\_Doc\_FqdnHash:string –** dokumento saugojimo vietos maiša
+- **Data_Doc_FqdnHash:string** – dokumento saugojimo vietos maiša
 
-  - **Data\_Doc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
+- **Data_Doc_IdentityTelemetryId:string** – unikalusis vartotojo GUID
 
-  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+- **Data_Doc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-  - **Data\_Doc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
+- **Data_Doc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
-  - **Data\_Doc\_IrmRights:long –** iš anksto nustatytų reikšmių, nurodančių kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
+- **Data_Doc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
 
-  - **Data\_Doc\_IsCloudCollabEnabled:bool –** „true“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
+- **Data_Doc_IsCloudCollabEnabled:bool** – „teisinga“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
 
-  - **Data\_Doc\_IsIncrementalOpen:bool –** ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
+- **Data_Doc_IsIncrementalOpen:bool** – nurodo, ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
 
-  - **Data\_Doc\_IsOcsSupported:bool –** ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
+- **Data_Doc_IsOcsSupported:bool** – nurodo, ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool –** tikrina, ar dokumentas atidarytas iš vietinės talpyklos
+- **Data_Doc_IsOpeningOfflineCopy:bool** – tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Data\_Doc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
+- **Data_Doc_IsSyncBacked:bool** – nurodo, ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
-  - **Data\_Doc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
+- **Data_Doc_Location:long** – iš anksto apibrėžtas dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
 
-  - **Data\_Doc\_LocationDetails:long –** iš anksto apibrėžtų išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
+- **Data_Doc_LocationDetails:long** – iš anksto apibrėžtas išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
 
-  - **Data\_Doc\_NumberCoAuthors:long –** bendraautorių skaičius dokumento atidarymo metu
+- **Data_Doc_NumberCoAuthors:long** – bendraautorių skaičius dokumento atidarymo metu
 
-  - **Data\_Doc\_PasswordFlags:long –** iš anksto apibrėžtų dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
+- **Data_Doc_PasswordFlags:long** – iš anksto apibrėžtas dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
 
-  - **Data\_Doc\_ReadOnlyReasons:long –** iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
+- **Data_Doc_ReadOnlyReasons:long** – iš anksto apibrėžtas dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
-  - **Data\_Doc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_Doc_ResourceIdHash:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_Doc\_ServerDocId:string –** debesyje saugomų dokumentų nekeičiamas identifikatorius
+- **Data_Doc_ServerDocId:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_Doc\_ServerProtocol:long –** iš anksto apibrėžtų protokolo naudojimas kreiptis į serverį reikšmių rinkinys (Http, „Cobalt“, WOPI ir kt.)
+- **Data_Doc_ServerProtocol:long** – iš anksto apibrėžtas reikšmių, nurodančių, kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
-  - **Data\_Doc\_ServerType:long –** iš anksto apibrėžtų serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
+- **Data_Doc_ServerType:long** – iš anksto apibrėžtas serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI) 
 
-  - **Data\_Doc\_ServerVersion:long –** tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
+- **Data_Doc_ServerVersion:long** – tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
 
-  - **Data\_Doc\_SessionId:long –** generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+- **Data_Doc_SessionId:long** – generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
 
-  - **Data\_Doc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
+- **Data_Doc_SharePointServiceContext:string** – nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkama kliento ir serverio įvykių žurnalų koreliacijai
 
-  - **Data\_Doc\_SizeInBytes:long –** dokumento dydis baitais
+- **Data_Doc_SizeInBytes:long** – dokumento dydis baitais
 
-  - **Data\_Doc\_SpecialChars:long –** šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
+- **Data_Doc_SpecialChars:long** – šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
 
-  - **Data\_Doc\_StorageProviderId:string –** eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
+- **Data_Doc_StorageProviderId:string** – eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
 
-  - **Data\_Doc\_StreamAvailability:long –** iš anksto apibrėžtų dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
+- **Data_Doc_StreamAvailability:long** – iš anksto apibrėžtas dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
 
-  - **Data\_Doc\_UrlHash:string –** debesyje saugomų dokumentų visų URL maiša
+- **Data_Doc_UrlHash:string** – debesyje saugomų dokumentų visų URL maiša
 
-  - **Data\_Doc\_UsedWrsDataOnOpen:bool –** „true“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
+- **Data_Doc_UsedWrsDataOnOpen:bool** – „teisinga“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
 
-  - **Data\_Doc\_WopiServiceId:string –** WOPI tarnybos identifikatorius, pvz., „Dropbox“
+- **Data_Doc_WopiServiceId:string** – WOPI tarnybos identifikatorius, pvz., „Dropbox“
 
-  - **Data\_DstDoc\_AccessMode:long –** kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
+- **Data_DstDoc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
-  - **Data\_DstDoc\_AccessMode:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+- **Data_DstDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
-  - **Data\_DstDoc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
+- **Data_DstDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
-  - **Data\_DstDoc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
+- **Data_DstDoc_EdpState:long** – dokumento įmonės duomenų apsaugos būsena
 
-  - **Data\_DstDoc\_Ext:string –** dokumento plėtinys
+- **Data_DstDoc_Ext:string** – dokumento plėtinys
 
-  - **Data\_DstDoc\_Extension:string –** dokumento plėtinys
+- **Data_DstDoc_Extension:string** – dokumento plėtinys
 
-  - **Data\_DstDoc\_FileFormat:long –** iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
+- **Data_DstDoc_FileFormat:long** – iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
 
-  - **Data\_DstDoc\_Fqdn:string –** vieta, kurioje saugomas dokumentas (SharePoint.com, live.net) galima tik „Office 365“ domenams
+- **Data_DstDoc_Fqdn:string** – vieta, kurioje saugomas dokumentas (SharePoint.com, live.net), galima tik „Office 365“ domenams
+    
+- **Data_DstDoc_FqdnHash:string** – dokumento saugojimo vietos maiša
 
-  - **Data\_DstDoc\_FqdnHash:string –** dokumento saugojimo vietos maiša
+- **Data_DstDoc_IdentityTelemetryId:string** – unikalusis vartotojo GUID
 
-  - **Data\_DstDoc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
+- **Data_DstDoc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-  - **Data\_DstDoc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+- **Data_DstDoc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
-  - **Data\_DstDoc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
+- **Data_DstDoc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
 
-  - **Data\_DstDoc\_IrmRights:long –** iš anksto nustatytų reikšmių, nurodančių kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
+- **Data_DstDoc_IsCloudCollabEnabled:bool** – „teisinga“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
 
-  - **Data\_DstDoc\_IsCloudCollabEnabled:bool –** „true“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
+- **Data_DstDoc_IsIncrementalOpen:bool** – nurodo, ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
 
-  - **Data\_DstDoc\_IsIncrementalOpen:bool –** ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
+- **Data_DstDoc_IsOcsSupported:bool** – nurodo, ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
 
-  - **Data\_DstDoc\_IsOcsSupported:bool –** ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
+- **Data_DstDoc_IsOpeningOfflineCopy:bool** – tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy:bool –** tikrina, ar dokumentas atidarytas iš vietinės talpyklos
+- **Data_DstDoc_IsSyncBacked:bool** – nurodo, ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
-  - **Data\_DstDoc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
+- **Data_DstDoc_Location:long** – iš anksto apibrėžtas dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
 
-  - **Data\_DstDoc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
+- **Data_DstDoc_LocationDetails:long** – iš anksto apibrėžtas išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
 
-  - **Data\_DstDoc\_LocationDetails:long –** iš anksto apibrėžtų išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
+- **Data_DstDoc_NumberCoAuthors:long** – bendraautorių skaičius dokumento atidarymo metu
 
-  - **Data\_DstDoc\_NumberCoAuthors:long –** bendraautorių skaičius dokumento atidarymo metu
+- **Data_DstDoc_PasswordFlags:long** – iš anksto apibrėžtas dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
 
-  - **Data\_DstDoc\_PasswordFlags:long –** iš anksto apibrėžtų dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
+- **Data_Doc_ReadOnlyReasons:long** – iš anksto apibrėžtas dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
-  - **Data\_DstDoc\_ReadOnlyReasons:long –** iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
+- **Data_DstDoc_ResourceIdHash:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_DstDoc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_DstDoc_ServerDocId:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_DstDoc\_ServerDocId:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_DstDoc_ServerProtocol:long** – iš anksto apibrėžtas reikšmių, nurodančių, kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
-  - **Data\_DstDoc\_ServerProtocol:long –** iš anksto apibrėžtų reikšmių, nurodančių kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
+- **Data_DstDoc_ServerType:long** – iš anksto apibrėžtas serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
 
-  - **Data\_DstDoc\_ServerType:long –** iš anksto apibrėžtų serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
+- **Data_DstDoc_ServerVersion:long** – tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
 
-  - **Data\_DstDoc\_ServerVersion:long –** tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
+- **Data_DstDoc_SessionId:long** – generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
 
-  - **Data\_DstDoc\_SessionId:long –** generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+- **Data_DstDoc_SharePointServiceContext:string** – nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkama kliento ir serverio įvykių žurnalų koreliacijai
 
-  - **Data\_DstDoc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
+- **Data_DstDoc_SizeInBytes:long** – dokumento dydis baitais
 
-  - **Data\_DstDoc\_SizeInBytes:long –** dokumento dydis baitais
+- **Data_DstDoc_SpecialChars:long** – šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
 
-  - **Data\_DstDoc\_SpecialChars:long –** šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
+- **Data_DstDoc_StorageProviderId:string** – eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
 
-  - **Data\_DstDoc\_StorageProviderId:string –** eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
+- **Data_DstDoc_StreamAvailability:long** – iš anksto apibrėžtas dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
 
-  - **Data\_DstDoc\_StreamAvailability:long –** iš anksto apibrėžtų dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
+- **Data_DstDoc_UrlHash:string** – debesyje saugomų dokumentų visų URL maiša
 
-  - **Data\_DstDoc\_UrlHash:string –** debesyje saugomų dokumentų visų URL maiša
+- **Data_DstDoc_UsedWrsDataOnOpen:bool** – „teisinga“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
 
-  - **Data\_DstDoc\_UsedWrsDataOnOpen:bool –** „true“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
+- **Data_DstDoc_WopiServiceId:string** – WOPI tarnybos identifikatorius, pvz., „Dropbox“
 
-  - **Data\_DstDoc\_WopiServiceId:string –** WOPI tarnybos identifikatorius, pvz., „Dropbox“
+- **Data_FileType:long** – iš anksto apibrėžtas failo vidinio tipo reikšmių rinkinys
 
-  - **Data\_FileType:long –** iš anksto apibrėžtas failo vidinio tipo reikšmių rinkinys
+- **Data_fLifeguarded:bool** – nurodo, ar kada dokumentui buvo naudojama apsauginė funkcija (funkcija, automatiškai taisanti dokumento klaidas nepranešant vartotojui)?
 
-  - **Data\_fLifeguarded:bool –** ar kada dokumentui buvo naudojama apsauginė funkcija (funkcija, automatiškai taisanti dokumento klaidas nepranešant vartotojui)?
+- **Data_SaveReason:long** – iš anksto apibrėžtas reikšmių, nurodančių įrašymo atlikimo priežastis, rinkinys (AutoSave, ToOCSTransitionSave, ToCSITransitionSave ir kt.)
 
-  - **Data\_SaveReason:long –** iš anksto apibrėžtas reikšmių, nurodančių įrašymo atlikimo priežastis, rinkinys (AutoSave, ToOCSTransitionSave, ToCSITransitionSave ir kt.)
+- **Data_SaveType:long** – iš anksto apibrėžtas įrašymo tipo reikšmių rinkinys (SaveAs, Publish, Manual, OMSave ir kt.)
 
-  - **Data\_SaveType:long –** iš anksto nustatytų įrašymo tipo reikšmių rinkinys (SaveAs, Publish, Manual, OMSave ir kt.)
+- **Data_SrcDoc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
-  - **Data\_SrcDoc\_AccessMode:long –** kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
+- **Data_SrcDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
-  - **Data\_SrcDoc\_AssistedReadingReasons:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+- **Data_SrcDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
-  - **Data\_SrcDoc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
+- **Data_SrcDoc_EdpState:long** – dokumento įmonės duomenų apsaugos būsena
 
-  - **Data\_SrcDoc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
+- **Data_SrcDoc_Ext:string** – dokumento plėtinys
 
-  - **Data\_SrcDoc\_Ext:string –** dokumento plėtinys
+- **Data_SrcDoc_Extension:string** – dokumento plėtinys
 
-  - **Data\_SrcDoc\_Extension:string –** dokumento plėtinys
+- **Data_SrcDoc_FileFormat:long** – iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
 
-  - **Data\_SrcDoc\_FileFormat:long –** iš anksto apibrėžtų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
+- **Data_SrcDoc_Fqdn:string** – vieta, kurioje saugomas dokumentas (SharePoint.com, live.net), galima tik „Office 365“ domenams
 
-  - **Data\_SrcDoc\_Fqdn:string –** vieta, kurioje saugomas dokumentas (SharePoint.com, live.net) galima tik „Office 365“ domenams
+- **Data_SrcDoc_FqdnHash:string** – dokumento saugojimo vietos maiša 
 
-  - **Data\_SrcDoc\_FqdnHash:string –** dokumento saugojimo vietos maiša
+- **Data_SrcDoc_IdentityTelemetryId:string** – unikalusis vartotojo GUID
 
-  - **Data\_SrcDoc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
+- **Data_SrcDoc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-  - **Data\_SrcDoc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+- **Data_SrcDoc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
-  - **Data\_SrcDoc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
+- **Data_SrcDoc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
+    
+- **Data_SrcDoc_IsCloudCollabEnabled:bool** – „teisinga“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
 
-  - **Data\_SrcDoc\_IrmRights:long –** iš anksto apibrėžtų reikšmių, nurodančių kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
+- **Data_SrcDoc_IsIncrementalOpen:bool** – nurodo, ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
 
-  - **Data\_SrcDoc\_IsCloudCollabEnabled:bool –** „true“, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
+- **Data_SrcDoc_IsOcsSupported:bool** – nurodo, ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
 
-  - **Data\_SrcDoc\_IsIncrementalOpen:bool –** ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
+- **Data_SrcDoc_IsOpeningOfflineCopy:bool** – tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-  - **Data\_SrcDoc\_IsOcsSupported:bool –** ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
+- **Data_SrcDoc_IsSyncBacked:bool** – nurodo, ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy:bool –** tikrina, ar dokumentas atidarytas iš vietinės talpyklos
+- **Data_SrcDoc_Location:long** – iš anksto apibrėžtas dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
 
-  - **Data\_SrcDoc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
+- **Data_SrcDoc_LocationDetails:long** – iš anksto apibrėžtas išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
 
-  - **Data\_SrcDoc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
+- **Data_SrcDoc_NumberCoAuthors:long** – bendraautorių skaičius dokumento atidarymo metu
 
-  - **Data\_SrcDoc\_LocationDetails:long –** iš anksto apibrėžtų išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
+- **Data_SrcDoc_PasswordFlags:long** – iš anksto apibrėžtas dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
 
-  - **Data\_SrcDoc\_NumberCoAuthors:long –** bendraautorių skaičius dokumento atidarymo metu
+- **Data_SrcDoc_ReadOnlyReasons:long** – iš anksto apibrėžtas dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
-  - **Data\_SrcDoc\_PasswordFlags:long –** iš anksto apibrėžtų dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
+- **Data_SrcDoc_ResourceIdHash:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_SrcDoc\_ReadOnlyReasons:long –** iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
+- **Data_SrcDoc_ServerDocId:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_SrcDoc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_SrcDoc_ServerProtocol:long** – iš anksto apibrėžtas reikšmių, nurodančių, kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
-  - **Data\_SrcDoc\_ServerDocId:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+- **Data_SrcDoc_ServerType:long** – iš anksto apibrėžtas serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
 
-  - **Data\_SrcDoc\_ServerProtocol:long –** iš anksto apibrėžtų reikšmių, nurodančių kuris protokolas naudojamas kreiptis į serverį, rinkinys (Http, „Cobalt“, WOPI ir kt.)
+- **Data_SrcDoc_ServerVersion:long** – tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
 
-  - **Data\_SrcDoc\_ServerType:long –** iš anksto apibrėžtų serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
+- **Data_SrcDoc_SessionId:long** – generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
 
-  - **Data\_SrcDoc\_ServerVersion:long –** tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
+- **Data_SrcDoc_SharePointServiceContext:string** – nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkama kliento ir serverio įvykių žurnalų koreliacijai
 
-  - **Data\_SrcDoc\_SessionId:long –** generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+- **Data_SrcDoc_SizeInBytes:long** – dokumento dydis baitais
 
-  - **Data\_SrcDoc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
+- **Data_SrcDoc_SpecialChars:long** – šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
 
-  - **Data\_SrcDoc\_SizeInBytes:long –** dokumento dydis baitais
+- **Data_SrcDoc_StorageProviderId:string** – eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
 
-  - **Data\_SrcDoc\_SpecialChars:long –** šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
+- **Data_SrcDoc_StreamAvailability:long** – iš anksto apibrėžtas dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
 
-  - **Data\_SrcDoc\_StorageProviderId:string –** eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
+- **Data_SrcDoc_UrlHash:string** – debesyje saugomų dokumentų visų URL maiša
 
-  - **Data\_SrcDoc\_StreamAvailability:long –** iš anksto apibrėžtų dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
+- **Data_SrcDoc_UsedWrsDataOnOpen:bool** – „teisinga“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
 
-  - **Data\_SrcDoc\_UrlHash:string –** debesyje saugomų dokumentų visų URL maiša
+- **Data_SrcDoc_WopiServiceId:string** – WOPI tarnybos identifikatorius, pvz., „Dropbox“
 
-  - **Data\_SrcDoc\_UsedWrsDataOnOpen:bool –** „true“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
+- **Data_StopwatchDuration:long** – visas veiklos laikas
 
-  - **Data\_SrcDoc\_WopiServiceId:string –** WOPI tarnybos identifikatorius, pvz., „Dropbox“
+- **Data_TypeOfSaveDialog:long** – iš anksto apibrėžtas dialogo reikšmių rinkinys (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG ir t. t.)
 
-  - **Data\_StopwatchDuration:long –** visas veiklos laikas
+- **Doc** – dabartinis dokumentas įrašymui
 
-  - **Data\_TypeOfSaveDialog:long –** iš anksto apibrėžtų dialogo lango reikšmių rinkinys (RUN\_SAVEAS\_DLG, RUN\_SAVEMEDIA\_DLG, RUN\_SAVEAS\_VIDEO\_DLG ir kt.)
+- **DstDoc** – nauja dokumento vieta (kai naudojama funkcija SaveAs)
 
-  - **Doc –** dabartinis dokumentas įrašymui
+- **SrcDoc** – pradinė dokumento vieta (kai naudojama funkcija SaveAs)
 
-  - **DstDoc –** nauja dokumento vieta (kai naudojama funkcija SaveAs)
+#### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-  - **SrcDoc –** pirminė dokumento vieta (kai naudojama funkcija SaveAs)
+Renkama, kai PDF spausdinimo arba PDF eksportavimo operacija baigta, ir joje yra informacijos apie maketo tipą bei operacijos sėkmę. Ši informacija yra labai svarbi norint nustatyti, kaip ar PDF spausdinimo arba PDF eksportavimo operacijos sėkmingai vykdomos mūsų programoje.
+
+Renkami šių laukų duomenys:
+
+- **Data_ExportAsPDFSucceed** – Bulio logika, nurodanti, ar PDF eksportavimas buvo sėkmingas.
+
+- **Data_SavePrintLayoutType** – spausdinimo maketo tipas tuo metu, kai pradedama spausdinti arba eksportuoti.
+
 
 #### <a name="officepowerpointpptsharedslideshowfailure"></a>Office.PowerPoint.PPT.Shared.SlideShow.Failure
 
-Triktys renkamos skaidrių demonstravimo metu. Skaidrių demonstravimas yra pagrindinė „PowerPoint“ funkcija. „Microsoft“ skaidrių demonstravimo metu renka informaciją apie klaidos įvykimą, kad padėtų tobulinti naudotojo patirtį skaidrių demonstravimo metu. „Microsoft“ šiuos duomenis naudoja gauti diagnostinę informaciją apie tai, kur su klaida įvyksta, kai vartotojas naudoja skaidrių demonstravimą
+Informacijos apie trikti per skaidrių demonstravimą, kuris yra svarbiausia „PowerPoint“ funkcija, rinkimas. „Microsoft“ skaidrių demonstravimo metu renka informaciją apie klaidos įvykimą, kad padėtų tobulinti naudotojo patirtį. „Microsoft“ šiuos duomenis naudoja gauti diagnostinę informaciją apie tai, kur klaida įvyksta, kai vartotojas naudoja skaidrių demonstravimą.
 
 Renkami šių laukų duomenys:
 
-  - **CountSlideShowErrors** – bendrą skaidrių demonstravimo klaidų skaičius
+- **CountOArtErrors** – bendras OArt klaidų skaičius
 
-  - **CountPPTErrors** – bendras PPT klaidų skaičius
+- **CountOtherErrors** – bendras kitų klaidų skaičius
 
-  - **CountOArtErrors** – bendras OArt klaidų skaičius
+- **CountPPTErrors** – bendras PPT klaidų skaičius
 
-  - **CountOtherErrors** – bendras kitų klaidų skaičius
+- **CountSlideShowErrors** – bendras skaidrių demonstravimo klaidų skaičius
 
-  - **FirstSlideShowError** – pirma klaida įvykusi skaidrių demonstravimo metu
+- **FirstOArtError** – pirma klaida, įvykusi OArt
 
-  - **FirstOArtError** – pirma klaida įvykusi OArt
+- **FirstOtherError** – pirma klaida, įvykusi kitoje srityje
 
-  - **FirstPPTError** – pirma klaida įvykusi PPT
+- **FirstPPTError** – pirma klaida, įvykusi PPT
 
-  - **FirstOtherError** – pirma klaida įvykusi kitoje srityje
+- **FirstSlideShowError** – pirma klaida, įvykusi skaidrių demonstravimo metu
+
+    
+#### <a name="officepowerpointrunprintoperation"></a>Office.PowerPoint.RunPrintOperation
+
+Renkama, kai PDF spausdinimo operacija baigta, ir joje yra informacijos apie maketo tipą, skaidrių numerių naudojimą bei apie operacijos sėkmę. Ši informacija yra labai svarbi norint nustatyti, kaip ar PDF spausdinimo operacijos sėkmingai vykdomos mūsų programoje.
+
+Renkami šių laukų duomenys:
+
+- **Data_PrintWithSlideNumbers** – Bulio logika, nurodanti, ar vartotojas spausdindamas naudoja skaidrių numerius.
+
+- **Data_SavePrintLayoutType** – spausdinimo maketo tipas tuo metu, kai pradedama spausdinti arba eksportuoti.
+
+- **Data_Success** – Bulio logika, nurodanti, ar spausdinimas buvo sėkmingas.
+
 
 #### <a name="officeprojectprojectfilesave"></a>Office.Project.ProjectFileSave
 
@@ -2645,121 +3179,124 @@ Renkami šių laukų duomenys:
 
   - **Data\_RequestUrl** – CDN ištekliaus URL, kurį bandome gauti
 
+
+
 #### <a name="officetranslatordocumenttranslated"></a>Office.Translator.DocumentTranslated
 
 Renka informaciją, ar viso dokumento vertimas, kurį vartotojas įjungė Translator SDX, atliktas sėkmingai. Labai svarbu įvertinti vertimo funkcijos sveikatą ir reaguoti į bet kokius sutrikimus, kurie gali atsirasti. Stebi „verčiamo dokumento“ scenarijaus sveikatą programoje „Word“.
 
 Renkami šių laukų duomenys:
 
-  - **Data.actionSource –** kaip buvo paleistas vertimas
+- **Data.actionSource** – nurodo, kaip buvo paleistas vertimo pasirinkimas
 
-  - **Data.bodyBackgroundColor –** „Office“ temos konteinerio fono spalva –
+- **Data.bodyBackgroundColor** – „Office“ temos konteinerio fono spalva
 
-  - **Data.bodyForegroundColor –** „Office“ temos konteinerio priekinio plano spalva –
+- **Data.bodyForegroundColor** – „Office“ temos konteinerio priekinio plano spalva
 
-  - **Data.browserLang –** dabartinė naršyklės rodoma kalba –
+- **Data.browserLang** – dabartinė naršyklės rodoma kalba
 
-  - **Data.browserOnline –** nebenaudojamas –
+- **Data.browserOnline** – nebenaudojamas
 
-  - **Data.browserPlatform –** naršyklės platforma –
+- **Data.browserPlatform** – naršyklės platforma
 
-  - **Data.browserUserAgent –** naršyklės vartotojo agentas –
+- **Data.browserUserAgent** – naršyklės vartotojo agentas
 
-  - **Data.colorDepth –** sistemos spalvos gylis –
+- **Data.colorDepth** – sistemos spalvos gylis
 
-  - **Data.contentLanguage –** aptikta verstino turinio kalba –
+- **Data.contentLanguage** – aptikta verstino turinio kalba
 
-  - **Data.controlBackgroundColor –** „Office“ temos valdiklio fono spalva –
+- **Data.controlBackgroundColor** – „Office“ temos valdiklio fono spalva
 
-  - **Data.controlBackgroundColor –** „Office“ temos valdiklio priekinio plano spalva –
+- **Data.controlBackgroundColor** – „Office“ temos valdiklio priekinio plano spalva
 
-  - **Data.correlationId –** tarnybai siųstos užklausos unikalus identifikatorius –
+- **Data.correlationId** – tarnybai siųstos užklausos unikalusis identifikatorius
 
-  - **Data.crossSessionId –** unikalus vartotojo identifikatorius –
+- **Data.crossSessionId** – unikalusis vartotojo identifikatorius
 
-  - **Data.crossSessionStartTime –** vertimo seanso pradžios UTC laiko žyma –
+- **Data.crossSessionStartTime** – vertimo seanso pradžios UTC laiko žyma
 
-  - **Data.currentTime –** telemetrijos laiko pranešimos UTC laiko žyma –
+- **Data.currentTime** – šio telemetrijos pranešimo išsiuntimo UTC laiko žyma
 
-  - **Data.displayLanguage –** rodoma „Office“ kalba –
+- **Data.displayLanguage** – rodoma „Office“ kalba
 
-  - **Data.documentSourceLang –** dokumento turinio kalba –
+- **Data.documentSourceLang** – dokumento turinio kalba
 
-  - **Data.documentTargetLang –** kalba, į kurią bus išverstas dokumentas –
+- **Data.documentTargetLang** – kalba, į kurią bus išverstas dokumentas
 
-  - **Data.Environment –** tarnybos aplinka, kuriai išsiųsta užklausa –
+- **Data.Environment** – tarnybos aplinka, kuriai išsiųsta užklausa
 
-  - **Data.errorMessage –** tarnybos pateiktas klaidos pranešimas –
+- **Data.errorMessage** – tarnybos pateiktas klaidos pranešimas
 
-  - **Data.eventActionType –** telemetrijos įvykio tipas –
+- **Data.eventActionType** – telemetrijos įvykio tipas
 
-  - **Data.eventTagId –** kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalus identifikatorius
+- **Data.eventTagId** – kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalusis identifikatorius.
 
-  - **TestuojamoVarianto.Duomenys –** įgalinti testuojami variantai –
+- **Data.flights** – įgalinti testuojami variantai
 
-  - **Data.fileSize –** „Word“ failo, skirto versti, dydis –
+- **Data.fileSize** – „Word“ failo, skirto versti, dydis
 
-  - **Data.fileSource –** „Word“ failo laikymo vieta (offline, online) –
+- **Data.fileSource** – „Word“ failo laikymo vieta (neprisijungus, internete)
 
-  - **Data.fileType –** „Word“ failo plėtinys –
+- **Data.fileType** – „Word“ failo plėtinys
 
-  - **Data.innerHeight"–** šoninės srities konteinerio aukštis –
+- **Data.innerHeight"** – šoninės srities konteinerio aukštis
 
-  - **Data.innerWidth"–** šoninės srities konteinerio plotis –
+- **Data.innerWidth"** – šoninės srities konteinerio plotis
 
-  - **Data.lookupSourceLang –** nenaudojama dokumentui versti –
+- **Data.lookupSourceLang** – nenaudojama dokumentui versti
 
-  - **Data.lookupTargetLang –** nenaudojama dokumentui versti –
+- **Data.lookupTargetLang** – nenaudojama dokumentui versti
 
-  - **Data.officeHost –** „Office“ taikomoji programa, esanti šoninėje srityje –
+- **Data.officeHost** – „Office“ taikomoji programa, esanti šoninėje srityje
 
-  - **Data.officeLocale –** vartotojo „Office“ kalba –
+- **Data.officeLocale** – „Office“ vartotojo kalba
 
-  - **Data.officeMachineId –** unikalus įrenginio identifikatorius –
+- **Data.officeMachineId** – unikalusis įrenginio identifikatorius
 
-  - **Data.officePlatform –** įrenginio platforma –
+- **Data.officePlatform** – įrenginio platforma
 
-  - **Data.officeSessionId –** „Office“ seanso identifikatorius –
+- **Data.officeSessionId** – „Office“ seanso identifikatorius
 
-  - **Data.officeUserId –** „Office“ vartotojo unikalus identifikatorius –
+- **Data.officeUserId** – „Office“ vartotojo unikalusis identifikatorius
 
-  - **Data.officeVersion –** „Office“ versija –
+- **Data.officeVersion** – „Office“ versija
 
-  - **Data.pageXOffset –** kairėje šoninėje srityje esančios šoninės srities horizontalios slinkties padėtis –
+- **Data.pageXOffset** – kairėje šoninėje srityje esančios šoninės srities horizontalios slinkties padėtis
 
-  - **Data.pageYOffset –** viršutinėje šoninėje srityje esančios šoninės srities vertikalios slinkties padėtis –
+- **Data.pageYOffset** – viršutinėje šoninėje srityje esančios šoninės srities vertikalios slinkties padėtis
 
-  - **Data.pixelDepth –** ekrano spalvų skiriamoji geba –
+- **Data.pixelDepth** – ekrano spalvų skiriamoji geba
 
-  - **Data.responseCode –** HTTP atsakymo iš tarnybos kodas –
+- **Data.responseCode** – iš tarnybos gautas atsakymo į užklausą kodas
 
-  - **Data.responseTime –** praėjęs užklausos laikas –
+- **Data.responseTime** – praėjęs užklausos laikas 
 
-  - **Data.resultType –** užklausos rezultatas –
+- **Data.resultType** – užklausos rezultatas
 
-  - **Data.screenHeight –** ekrano aukštis pikseliais –
+- **Data.screenHeight** – ekrano aukštis pikseliais
 
-  - **Data.screenLeft –** lango horizontali koordinatė ekrano atžvilgiu –
+- **Data.screenLeft** – lango horizontalioji koordinatė ekrano atžvilgiu
 
-  - **Data.screenTop –** lango vertikali koordinatė ekrano atžvilgiu –
+- **Data.screenTop** – lango vertikalioji koordinatė ekrano atžvilgiu
 
-  - **Data.screenWidth –** ekrano plotis pikseliais –
+- **Data.screenWidth** – ekrano plotis pikseliais
 
-  - **Data.selectedTab –** pasirinktas skirtukas: Selection arba Document -
+- **Data.selectedTab** – pasirinktas skirtukas: Pasirinkimas arba Dokumentas
 
-  - **Data.serverUrl –** vertimo tarnybos URL –
+- **Data.serverUrl** – vertimo tarnybos URL
 
-  - **Data.sessionId –** šoninės srities seanso identifikatorius –
+- **Data.sessionId** – šoninės srities seanso identifikatorius
 
-  - **Data.sessionStartTime –** vertimo seanso pradžios UTC laiko žyma –
+- **Data.sessionStartTime** – vertimo seanso pradžios UTC laiko žyma
 
-  - **Data.sourceTextHash –** verstino teksto maiša –
+- **Data.sourceTextHash** – verstino teksto maiša
 
-  - **Data.sourceTextLength –** verstino teksto ilgis –
+- **Data.sourceTextLength** – verstino teksto ilgis
 
-  - **Data.sourceTextWords –** žodžių skaičius verstiname tekste –
+- **Data.sourceTextWords** – žodžių skaičius verstiname tekste
 
-  - **Data.warningMessage –** tarnybos pateiktas įspėjimo pranešimas –
+- **Data.warningMessage** – tarnybos pateiktas įspėjimo pranešimas
+
 
 #### <a name="officetranslatortexttranslated"></a>Office.Translator.TextTranslated
 
@@ -2767,173 +3304,171 @@ Renka informaciją apie tai, ar pasirinktos dalies vertimas, kurį vartotojas į
 
 Renkami šių laukų duomenys:
 
-  - **Data.actionSource –** kaip buvo paleistas vertimo pasirinkimas
+- **Data.actionSource** – nurodo, kaip buvo paleistas vertimo pasirinkimas
 
-  - **Data.bodyBackgroundColor –** „Office“ temos konteinerio fono spalva
+- **Data.bodyBackgroundColor** – „Office“ temos konteinerio fono spalva
 
-  - **Data.bodyForegroundColor –** „Office“ temos konteinerio priekinio plano spalva
+- **Data.bodyForegroundColor** – „Office“ temos konteinerio priekinio plano spalva
 
-  - **Data.browserLang –** dabartinė naršyklės rodoma kalba
+- **Data.browserLang** – dabartinė naršyklės rodoma kalba
 
-  - **Data.browserOnline -** nebenaudojamas
+- **Data.browserOnline** – nebenaudojamas
 
-  - **Data.browserPlatform –** naršyklės platforma
+- **Data.browserPlatform** – naršyklės platforma
 
-  - **Data.browserUserAgent –** naršyklės vartotojo agentas
+- **Data.browserUserAgent** – naršyklės vartotojo agentas
 
-  - **Data.colorDepth –** sistemos spalvos gylis
+- **Data.colorDepth** – sistemos spalvos gylis
 
-  - **Data.contentLanguage –** aptikta verstino turinio kalba
+- **Data.contentLanguage** – aptikta verstino turinio kalba
 
-  - **Data.controlBackgroundColor –** „Office“ temos valdiklio fono spalva
+- **Data.controlBackgroundColor** – „Office“ temos valdiklio fono spalva
 
-  - **Data.controlBackgroundColor –** „Office“ temos valdiklio priekinio plano spalva
+- **Data.controlBackgroundColor** – „Office“ temos valdiklio priekinio plano spalva
 
-  - **Data.correlationId –** tarnybai siųstos užklausos unikalus identifikatorius
+- **Data.correlationId** – tarnybai siųstos užklausos unikalusis identifikatorius
 
-  - **Data.crossSessionId –** unikalus vartotojo identifikatorius
+- **Data.crossSessionId** – unikalusis vartotojo identifikatorius
 
-  - **Data.crossSessionStartTime –** vertimo seanso pradžios UTC laiko žyma
+- **Data.crossSessionStartTime** – vertimo seanso pradžios UTC laiko žyma
 
-  - **Data.currentTime –** telemetrijos laiko pranešimos UTC laiko žyma
+- **Data.currentTime** – šio telemetrijos pranešimo išsiuntimo UTC laiko žyma
 
-  - **Data.displayLanguage –** rodoma „Office“ kalba
+- **Data.displayLanguage** – rodoma „Office“ kalba
 
-  - **Data.documentSourceLang –** nenaudojama pasirinkti
+- **Data.documentSourceLang** – nenaudojama pasirinkimui
 
-  - **Data.documentTargetLang –** nenaudojama vertimo atrankai
+- **Data.documentTargetLang** – nenaudojama vertimo pasirinkimui
 
-  - **Data.Environment –** tarnybos aplinka, kuriai išsiųsta užklausa
+- **Data.Environment** – tarnybos aplinka, kuriai išsiųsta užklausa
 
-  - **Data.errorMessage –** tarnybos pateiktas klaidos pranešimas
+- **Data.errorMessage** – tarnybos pateiktas klaidos pranešimas
 
-  - **Data.eventActionType –** telemetrijos įvykio tipas
+- **Data.eventActionType** – telemetrijos įvykio tipas
 
-  - **Data.eventTagId"–** kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalus identifikatorius
+- **Data.eventTagId"** – kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalusis identifikatorius
 
-  - **TestuojamoVarianto.Duomenys –** įgalinti testuojami variantai
+- **Data.flights** – įgalinti testuojami variantai
 
-  - **Data.innerHeight –** šoninės srities konteinerio aukštis
+- **Data.innerHeight** – šoninės srities konteinerio aukštis
 
-  - **Data.innerWidth –** šoninės srities konteinerio plotis
+- **Data.innerWidth** – šoninės srities konteinerio plotis
 
-  - **Data.lookupSourceLang –** dabartinio pasirinkto teksto kalba
+- **Data.lookupSourceLang** – dabartinio pažymėto teksto kalba
 
-  - **Data.lookupTargetLang –** kalba, į kurią bus verčiamas pasirinktas tekstas
+- **Data.lookupTargetLang** – kalba, į kurią bus verčiamas pažymėtas tekstas
 
-  - **Data.officeHost –** „Office“ taikomoji programa, esanti šoninėje srityje
+- **Data.officeHost** – „Office“ taikomoji programa, esanti šoninėje srityje
 
-  - **Data.officeLocale –** vartotojo „Office“ kalba
+- **Data.officeLocale** – „Office“ vartotojo kalba
 
-  - **Data.officeMachineId –** unikalus įrenginio identifikatorius
+- **Data.officeMachineId** – unikalusis įrenginio identifikatorius
 
-  - **Data.officePlatform –** įrenginio platforma
+- **Data.officePlatform** – įrenginio platforma
 
-  - **Data.officeSessionId –** „Office“ seanso identifikatorius
+- **Data.officeSessionId** – „Office“ seanso identifikatorius
 
-  - **Data.officeUserId –** „Office“ vartotojo unikalus identifikatorius
+- **Data.officeUserId** – „Office“ vartotojo unikalusis identifikatorius
 
-  - **Data.officeVersion –** „Office“ versija
+- **Data.officeVersion** – „Office“ versija
 
-  - **Data.pageXOffset –** kairėje šoninėje srityje esančios šoninės srities horizontalios slinkties padėtis
+- **Data.pageXOffset** – kairėje šoninėje srityje esančios šoninės srities horizontalios slinkties padėtis
 
-  - **Data.pageYOffset –** viršutinėje šoninėje srityje esančios šoninės srities vertikalios slinkties padėtis
+- **Data.pageYOffset** – viršutinėje šoninėje srityje esančios šoninės srities vertikalios slinkties padėtis
 
-  - **Data.pixelDepth –** ekrano spalvų skiriamoji geba
+- **Data.pixelDepth** – ekrano spalvų skiriamoji geba
 
-  - **Data.responseCode –** HTTP atsakymo iš tarnybos kodas
+- **Data.responseCode** – iš tarnybos gautas atsakymo į užklausą kodas
 
-  - **Data.responseTime –** praėjęs užklausos laikas
+- **Data.responseTime** – praėjęs užklausos laikas
 
-  - **Data.resultType –** užklausos rezultatas
+- **Data.resultType** – užklausos rezultatas
 
-  - **Data.screenHeight –** ekrano aukštis pikseliais
+- **Data.screenHeight** – ekrano aukštis pikseliais
 
-  - **Data.screenLeft –** lango horizontali koordinatė ekrano atžvilgiu
+- **Data.screenLeft** – lango horizontalioji koordinatė ekrano atžvilgiu
 
-  - **Data.screenTop –** lango vertikali koordinatė ekrano atžvilgiu
+- **Data.screenTop** – lango vertikalioji koordinatė ekrano atžvilgiu
 
-  - **Data.screenWidth –** ekrano plotis pikseliais
+- **Data.screenWidth** – ekrano plotis pikseliais
 
-  - **Data.selectedTab –** pasirinktas skirtukas: Selection arba Document
+- **Data.selectedTab** – pasirinktas skirtukas: Pasirinkimas arba Dokumentas
 
-  - **Data.serverUrl –** vertimo tarnybos URL
+- **Data.serverUrl** – vertimo tarnybos URL
 
-  - **Data.sessionId –** šoninės srities seanso identifikatorius
+- **Data.sessionId** – šoninės srities seanso identifikatorius
 
-  - **Data.sessionStartTime –** vertimo seanso pradžios UTC laiko žyma
+- **Data.sessionStartTime** – vertimo seanso pradžios UTC laiko žyma
 
-  - **Data.sourceTextHash –** verstino teksto maiša
+- **Data.sourceTextHash** – verstino teksto maiša
 
-  - **Data.sourceTextLength –** verstino teksto ilgis
+- **Data.sourceTextLength** – verstino teksto ilgis
 
-  - **Data.sourceTextWords –** žodžių skaičius verstiname tekste
+- **Data.sourceTextWords** – žodžių skaičius verstiname tekste
 
-  - **Data.warningMessage –** tarnybos pateiktas įspėjimo pranešimas
+- **Data.warningMessage** – tarnybos pateiktas įspėjimo pranešimas
 
 #### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
-Šis įvykis registruoja dokumentų statistiką kiekvienam dokumentui, kai „Office Word“ yra uždaryta ar sustabdyta.
-
-Įvykis naudojamas susieti dokumento keitimus, dydį ir t. t. su dokumento įrašymo, dokumento bendrinimo ir dokumento internetinio bendradarbiavimo klaidomis.
+Šis įvykis registruoja dokumentų statistiką kiekvienam dokumentui, kai „Office Word“ yra uždaryta ar sustabdyta.  Įvykis naudojamas norint susieti dokumento keitimus, dydį ir t. t. su dokumento įrašymo, dokumento bendrinimo ir dokumento internetinio bendradarbiavimo klaidomis.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_BkmkRefCount –** žymelių nuorodų skaičius dokumente
+- **Data_BkmkRefCount** – žymelių nuorodų skaičius dokumente
 
-  - **Data\_CharacterCount –** simbolių skaičius dokumente
+- **Data_CharacterCount** – simbolių skaičius dokumente
 
-  - **Data\_CharactersWithSpaceCount –** simbolių ir tarpų skaičius dokumente
+- **Data_CharactersWithSpaceCount** – simbolių ir tarpų skaičius dokumente
 
-  - **Data\_ChartCount –** diagramų skaičius dokumente
+- **Data_ChartCount** – diagramų skaičius dokumente
 
-  - **Data\_CitationCount –** citatų skaičius dokumente
+- **Data_CitationCount** – citatų skaičius dokumente
 
-  - **Data\_DocumentLocation –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_DocumentLocation** – nurodo dokumentą pateikusią tarnybą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
-  - **Data\_ETW\_TrackbackTag –** nurodo kodo vietą, iš kurios šis įvykis buvo išleistas (Close ar Suspend)
+- **Data_ETW_TrackbackTag** – nurodo kodo vietą, iš kurios šis įvykis buvo išleistas (Close arba Suspend)
 
-  - **Data\_EndnoteDocCount –** dokumentų išnašų skaičius dokumente
+- **Data_EndnoteDocCount** – dokumentų išnašų skaičius dokumente
 
-  - **Data\_FootnoteDocCount –** puslapio išnašų skaičius dokumente
+- **Data_FootnoteDocCount** – puslapio išnašų skaičius dokumente
 
-  - **Data\_HasBibliography –** nurodo, ar dokumente yra bibliografija
+- **Data_HasBibliography** – nurodo, ar dokumente yra bibliografija
 
-  - **Data\_HasHeader –** nurodo, ar dokumente yra antraštė
+- **Data_HasHeader** – nurodo, ar dokumente yra antraštė
 
-  - **Data\_IsImeUsed –** nurodo, ar įvesties metodo rengyklė buvo naudota dokumente
+- **Data_IsImeUsed** – nurodo, ar dokumente buvo naudota įvesties metodo rengyklė
 
-  - **Data\_IsPageCountInProgress –** nurodo, ar šiuo metu dokumentui yra skaičiuojamas puslapių skaičius.
+- **Data_IsPageCountInProgress** – nurodo, ar šiuo metu skaičiuojami dokumento puslapiai.
+    
+- **Data_IsTouchUsed** – nurodo, ar dokumente buvo naudojama lietimo įvestis
 
-  - **Data\_IsTouchUsed –** nurodo, ar dokumente buvo naudojama lietimo įvestis
+- **Data_IsTrackChangesOn** – nurodo, ar dokumentui buvo įjungtas keitimų sekimas
 
-  - **Data\_IsTrackChangesOn –** nurodo, ar dokumentui buvo įjungtas keitimų sekimas
+- **Data_LineCount** – dokumento eilučių skaičius
 
-  - **Data\_LineCount –** dokumento eilučių skaičius
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
 
-  - **Data\_MainPdod –** „Office Word“ proceso dokumento identifikatorius.
+- **Data_PageCount** – dokumento puslapių skaičius
 
-  - **Data\_PageCount –** dokumento puslapių skaičius
+- **Data_PageNumberFieldCount** – puslapio numerių laukų skaičius dokumente
 
-  - **Data\_PageNumberFieldCount –** puslapio numerių laukų skaičius dokumente
+- **Data_ParagraphCount** – pastraipų skaičius dokumente
 
-  - **Data\_ParagraphCount –** paragrafų skaičius dokumente
+- **Data_PicCount** – paveikslėlių skaičius dokumente
 
-  - **Data\_PicCount –** paveikslėlių skaičius dokumente
+- **Data_RsidCount** – įrašytų peržiūrų identifikatorių skaičius dokumente
 
-  - **Data\_RsidCount –** įrašytų peržiūrų identifikatorių skaičius dokumente
+- **Data_TocCount** – turinio lentelių skaičius dokumente
 
-  - **Data\_TocCount –** turinio lentelių skaičius dokumente
+- **Data_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_UrlHash –** vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_UserActionID** – šis duomenų laukas nenaudojamas (reikšmė visada yra 0).
 
-  - **Data\_UserActionID –** šis duomenų laukas nenaudojamas (reikšmė visada yra 0).
+- **Data_UserActionName** – visada „DocumentStatsOnCloseAndSuspend“
 
-  - **Data\_UserActionName –** visada „DocumentStatsOnCloseAndSuspend“
-
-  - **Data\_UserInteractionTimeMsec –** vartotojo aktyvios sąveikos su dokumentų skaičius milisekundėmis
-
-  - **Data\_WordCount –** žodžių skaičius dokumente
+- **Data_UserInteractionTimeMsec** – vartotojo aktyvios sąveikos su dokumentu trukmė milisekundėmis
+    
+- **Data_WordCount** – žodžių skaičius dokumente
 
 #### <a name="officewordfilenewcreatenewfile"></a>Office.Word.FileNew.CreateNewFile
 
@@ -2955,187 +3490,187 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemRes –** nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
+- **Data_AddDocTelemRes** – nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
 
-  - **Data\_DetachedDuration –** kiek laiko gijoje nebuvo veiklos
+- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
 
-  - **Data\_Doc\_AccessMode –** dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_Doc\_AssistedReadingReasons –** iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+    
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_Doc\_EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_Doc\_Ext –** dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_Doc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_Doc\_FileFormat –** failo formato protokolo versija
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
 
-  - **Data\_Doc\_Fqdn –** „OneDrive“ arba „SharePoint“ interneto domeno vardas
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
 
-  - **Data\_Doc\_FqdnHash –** kliento identifikuojamo domeno vardo vienpusė maiša
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_Doc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
 
-  - **Data\_Doc\_IdentityTelemetryId –** atidarymui naudojamos vartotojo tapatybės maiša
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_Doc\_InitializationScenario –** įrašo, kaip dokumentas buvo atidarytas
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
+    
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_Doc\_IrmRights –** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
+    
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data\_Doc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Data\_Doc\_IsOcsSupported -** Žyma, nurodanti, kad dokumentas palaikomas bendradarbiavimo tarnybos
+- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Duomenų\_ad\_IsSyncBacked -** žyma, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_Doc\_Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Data\_Doc\_LocationDetails –** nurodo vietoje saugomo dokumento žinomą aplanką
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_Doc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_PasswordFlags –** nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymų rinkinys
+- **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ReadOnlyReasons –** dokumento atidarymo tik kaip skaitomo priežastys
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_Doc\_ResourceIdHash –** anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
 
-  - **Data\_Doc\_ServerDocId –** nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_Doc\_ServerProtocol –** protokolo versija, naudojama norint susisiekti su tarnyba
+- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_Doc\_ServerType –** tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_Doc\_ServerVersion –** Serverio versija, siūlanti tarnybą
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_Doc\_SessionId –** nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_Doc\_SharePointServiceContext –** „SharePoint Online“ užklausų diagnostinė informacija
+- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
 
-  - **Data\_Doc\_SizeInBytes –** dokumento dydžio indikatorius
+- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_Doc\_SpecialChars –** dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_Doc\_StreamAvailability –** indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
+- **Data_EditorDisablingRename** – pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
 
-  - **Data\_Doc\_SyncBackedType –** dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
+- **Data_EditorsCount** – dokumento redaktorių skaičius
 
-  - **Data\_Doc\_UrlHash –** vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_LastLoggedTag** – unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas įrašyti (naudojama duomenų kokybės diagnostikai)
 
-  - **Data\_EditorDisablingRename –** pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
+- **Data_MoveDisabledReason** – klaida, kuri yra išjungia dokumento perkėlimą
 
-  - **Data\_EditorsCount –** dokumento redaktorių skaičius
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_LastLoggedTag –** unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas įrašyti (naudojama duomenų kokybės diagnostikai)
+- **Data_RenameDisabledReason** – klaida, dėl kurios išjungiamas dokumento pervardijimas
 
-  - **Data\_MoveDisabledReason –** klaida, išjungianti dokumento perkėlimą
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
-  - **Data\_MoveFlightEnabled –** ar yra įgalinta testuojamo varianto perkėlimo funkcija
-
-  - **Data\_RenameDisabledReason –** klaida, dėl kurios išjungiamas dokumento pervardijimas
-
-  - **Data\_RenameFlightEnabled –** ar įgalinta testuojamo varianto pervardijimo funkcija
-
+    
 #### <a name="officewordfilesaveactfconfirmsavedoccoreautorecoverysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
 
-Šis įvykis nurodo, kad „Office Word“ įrašo automatinio atkūrimo dokumentą, kuris anksčiau nebuvo įrašytas. Tai suteikia galimybę „Microsoft“ aptikti automatinio atkūrimo klaidas, svarbias dokumento duomenų saugumui.
-
-Įvykis stebi, ar automatinio atkūrimo įrašymo funkcija veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
+Šis įvykis nurodo, kad „Office Word“ įrašo automatinio atkūrimo dokumentą, kuris anksčiau nebuvo įrašytas. Tai suteikia galimybę „Microsoft“ aptikti automatinio atkūrimo klaidas, svarbias dokumento duomenų saugumui.  Įvykis stebi, ar automatinio atkūrimo įrašymo funkcija veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_DetachedDuration –** kiek laiko gijoje nebuvo veiklos
+- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
 
-  - **Data\_Doc\_AccessMode –** dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_Doc\_AssistedReadingReasons –** iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+    
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_Doc\_EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_Doc\_Ext –** dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_Doc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_Doc\_FileFormat –** failo formato protokolo versija
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
 
-  - **Data\_Doc\_Fqdn –** „OneDrive“ arba „SharePoint“ interneto domeno vardas
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
 
-  - **Data\_Doc\_FqdnHash –** kliento identifikuojamo domeno vardo vienpusė maiša
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_Doc\_IdentityTelemetryId –** atidarymui naudojamos vartotojo tapatybės vienpusė maiša
+- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
 
-  - **Data\_Doc\_InitializationScenario –** įrašo, kaip dokumentas buvo atidarytas
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_Doc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
 
-  - **Data\_Doc\_IrmRights –** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_Doc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
+    
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data\_Doc\_IsOcsSupported -** Žyma, nurodanti, kad dokumentas palaikomas bendradarbiavimo tarnybos
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
-  - **Duomenų\_ad\_IsSyncBacked -** žyma, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_Doc\_Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_Doc\_LocationDetails –** nurodo vietoje saugomo dokumento žinomą aplanką
+- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Data\_Doc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_Doc\_PasswordFlags –** nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymų rinkinys
+- **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ReadOnlyReasons –** dokumento atidarymo tik kaip skaitomo priežastys
+- **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ResourceIdHash –** anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_Doc\_ServerDocId –** nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
 
-  - **Data\_Doc\_ServerProtocol –** susisiekimui su tarnyba naudojama protokolo versija
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_Doc\_ServerType –** tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_Doc\_ServerVersion –** tarnybą siūlančio serverio versija
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_Doc\_SessionId –** nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_Doc\_SharePointServiceContext –** „SharePoint Online“ užklausų diagnostinė informacija
+- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_Doc\_SizeInBytes –** dokumento dydžio indikatorius
+- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
 
-  - **Data\_Doc\_SpecialChars –** dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_Doc\_StreamAvailability –** indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_Doc\_SyncBackedType –** dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
+- **Data_Doc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių
 
-  - **Data\_Doc\_UrlHash –** vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_FailureClass** – sveikasis skaičius, nurodantis „Office“ bendradarbiavimo tarnybos (OCS) perėjimo trikties klasę
+    
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
 
-  - **Data\_Doc\_WopiServiceId –** apima unikalų WOPI tarnybos teikėjo identifikatorių
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_FailureClass –** sveikasis skaičius, nurodantis „Office“ bendradarbiavimo tarnybos (OCS) perėjimo trikties klasę
+- **Data_OCSSyncbackSaveStarted** – žymė, nurodanti, kad šis įrašymas susijęs su sinchronizuotu atsarginės kopijos įrašymu
 
-  - **Data\_MainPdod –** „Office Word“ proceso dokumento identifikatorius.
+- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas
 
-  - **Data\_MoveFlightEnabled -** Ar įjungta perkėlimo testavimo funkcija
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
-  - **Data\_OCSSyncbackSaveStarted –** žymė, nurodanti, kad šis įrašymas susijęs su sinchronizuotu atsarginės kopijos įrašymu
+- **Data_SaveInitiateKind** – sveikasis skaičius, nurodantis, kaip buvo inicijuotas įrašymas
 
-  - **Data\_RenameDisabledReason –** klaida, dėl kurios šiam dokumentui išjungtas pervardijimas
+- **Data_SrcDocIsUnnamedOrNew** – nurodo, ar įrašomas dokumentas yra naujas
 
-  - **Data\_RenameFlightEnabled -** Ar įjungta pervardijimo testavimo funkcija
-
-  - **Data\_SaveInitiateKind –** sveikasis skaičius, nurodantis, kaip inicijuotas įrašymas
-
-  - **Data\_SrcDocIsUnnamedOrNew –** nurodo, ar įrašomas dokumentas yra naujas
 
 #### <a name="officewordfilesaveactfconfirmsavedoccorequerysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -3143,113 +3678,114 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemRes –** nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
+- **Data_AddDocTelemRes** – nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
 
-  - **Data\_DetachedDuration –** kiek laiko gijoje nebuvo veiklos
+- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
 
-  - **Data\_Doc\_AccessMode –** dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_Doc\_AssistedReadingReasons –** iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
-  - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_Doc\_EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_Doc\_Ext –** dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_Doc\_FileFormat –** failo formato protokolo versija
+- **Data_Doc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_Doc\_Fqdn –** „OneDrive“ arba „SharePoint“ interneto domeno vardas
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
 
-  - **Data\_Doc\_FqdnHash –** kliento identifikuojamo domeno vardo vienpusė maiša
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
 
-  - **Data\_Doc\_IdentityTelemetryId –** atidarymui naudojamos vartotojo tapatybės vienpusė maiša
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_Doc\_InitializationScenario –** įrašo, kaip dokumentas buvo atidarytas
+- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
 
-  - **Data\_Doc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_Doc\_IrmRights –** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
 
-  - **Data\_Doc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_Doc\_IsOcsSupported -** Žyma, nurodanti, kad dokumentas palaikomas bendradarbiavimo tarnybos
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
+    
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Duomenų\_ad\_IsSyncBacked -** žyma, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
-  - **Data\_Doc\_Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_Doc\_LocationDetails –** nurodo vietoje saugomo dokumento žinomą aplanką
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_Doc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Data\_Doc\_PasswordFlags –** nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymų rinkinys
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_Doc\_ReadOnlyReasons –** dokumento atidarymo tik kaip skaitomo priežastys
+- **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ResourceIdHash –** anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ServerDocId –** nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_Doc\_ServerProtocol –** susisiekimui su tarnyba naudojama protokolo versija
+- **Data_Doc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
 
-  - **Data\_Doc\_ServerType –** tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_Doc\_ServerVersion –** tarnybą siūlančio serverio versija
+- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_Doc\_SessionId –** nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_Doc\_SharePointServiceContext –** „SharePoint Online“ užklausų diagnostinė informacija
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_Doc\_SizeInBytes –** dokumento dydžio indikatorius
+- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_Doc\_SpecialChars –** dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
 
-  - **Data\_Doc\_StreamAvailability –** indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
+- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_Doc\_SyncBackedType –** dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_Doc\_UrlHash –** vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_Doc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių
 
-  - **Data\_Doc\_WopiServiceId -** Apima unikalų WOPI tarnybos teikėjo identifikatorių
+- **Data_DstDoc_AccessMode** – paskirties dokumentas skirtas tik skaityti / redaguoti
 
-  - **Data\_DstDoc\_AccessMode -** Paskirties dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_DstDoc_EdpState** – elektroninių duomenų apsaugos parametras, skirtas paskirties dokumentui
 
-  - **Data\_DstDoc\_EdpStatee – Elektroninių duomenų apsaugos nustatymas, skirtas paskirties dokumentui-**
+- **Data_DstDoc_Ext** – paskirties dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_DstDoc\_Ext -** Paskirties dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_DstDoc_FileFormat** – paskirties dokumento failo formato protokolo versija
 
-  - **Data\_DstDoc\_FileFormat -** Paskirties dokumento failo formato protokolo versija
+- **Data_DstDoc_Location** – nurodo, kuri tarnyba teikia paskirties dokumento saugyklą („OneDrive“, failų serveris, „SharePoint“, kt.)
 
-  - **Data\_DstDoc\_Location -** Nurodo, kuri tarnyba teikia paskirties dokumento saugyklą („OneDrive“, failų serveris, „SharePoint“, kt.)
+- **Data_DstDoc_LocationDetails** – nurodo, kuriuose žinomuose aplankuose yra paskirties dokumentas
 
-  - **Data\_DstDoc\_LocationDetails -** Nurodo, kuriuose žinomuose aplankuose yra paskirties dokumentas
+- **Data_DstDoc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_DstDoc\_SessionId -** Nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_DstDoc_UrlHash** – vienpusė maiša, skirta paskirties dokumento „naïve“ dokumento identifikatoriui sukurti
 
-  - **Data\_DstDoc\_UrlHash -** Vienpusė maiša, skirta paskirties dokumento „naïve“ dokumento identifikatoriui sukurti
+- **Data_FailureClass** – sveikasis skaičius, nurodantis OCS perėjimo trikčių trikties klasę
 
-  - **Data\_FailureClass -** Sveikasis skaičius, nurodantis OCS perėjimo trikties klasę
+- **Data_LocationPickerSaveStatus** – sveikojo skaičiaus reikšmė, kuri nurodo veiksmą, suaktyvinantį įrašymą naudojant įrašymo arba išėjimo dialogo langą
 
-  - **Data\_LocationPickerSaveStatus -** Sveikojo skaičiaus reikšmė, kuri nurodo veiksmą, suaktyvinantį įrašymą naudojant įrašymo arba išėjimo dialogo langą
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
 
-  - **Data\_MainPdod -** Dokumento identifikatorius vykstant „Office Word“ procesui.
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_MoveFlightEnabled -** Ar įjungta perkėlimo testavimo funkcija
+- **Data_OCSSyncbackSaveStarted** – žymė, nurodanti, kad šis įrašymas susijęs su sinchronizuotu atsarginės kopijos įrašymu 
 
-  - **Data\_OCSSyncbackSaveStarted –** žymė, nurodanti, kad šis įrašymas susijęs su sinchronizuotu atsarginės kopijos įrašymu
+- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas
 
-  - **Data\_RenameDisabledReason –** klaida, dėl kurios šiam dokumentui išjungtas pervardijimas
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
-  - **Data\_RenameFlightEnabled -** Ar įjungta pervardijimo testavimo funkcija
+- **Data_SaveInitiateKind** – sveikasis skaičius, nurodantis, kaip buvo inicijuotas įrašymas
 
-  - **Data\_SaveInitiateKind –** sveikasis skaičius, nurodantis, kaip inicijuotas įrašymas
+- **Data_SrcDocIsUnnamedOrNew** – nurodo, ar įrašomas dokumentas yra naujas
 
-  - **Data\_SrcDocIsUnnamedOrNew -** Nurodo, ar įrašomas dokumentas yra naujas
 
 #### <a name="officewordfilesavesaveassavefile"></a>Office.Word.FileSave.SaveAsSaveFile
 
@@ -3257,257 +3793,232 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemRes –** nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
+- **Data_AddDocTelemRes** – nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
 
-  - **Data\_AddDocTelemResDst -** Nurodo, ar paskirties dokumento įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
+- **Data_AddDocTelemResDst** – nurodo, ar paskirties dokumento įvykyje galima tinkamai užpildyti susijusias kitų dokumentų telemetrijos reikšmes. Naudojama duomenų kokybės diagnostikai.
 
-  - **Data\_AddDocTelemResDst -** Nurodo, ar šaltinio dokumento įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
+- **Data_AddDocTelemResSrc** – nurodo, ar šaltinio dokumento įvykyje galima tinkamai užpildyti susijusias kitų dokumentų telemetrijos reikšmes. Naudojama duomenų kokybės diagnostikai.
 
-  - **Data\_DetachedDuration –** kiek laiko gijoje nebuvo veiklos
+- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
 
-  - **Data\_Doc\_AccessMode –** dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_Doc\_AssistedReadingReasons –** iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
-  - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_Doc\_EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_Doc\_Ext –** dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_Doc\_FileFormat –** failo formato protokolo versija
+- **Data_Doc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_Doc\_Fqdn –** „OneDrive“ arba „SharePoint“ interneto domeno vardas
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
 
-  - **Data\_Doc\_FqdnHash –** kliento identifikuojamo domeno vardo vienpusė maiša
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
 
-  - **Data\_Doc\_IdentityTelemetryId -** Vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_Doc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_Doc\_IrmRights –** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
 
-  - **Data\_Doc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_Doc\_IsOcsSupported -** Žyma, nurodanti, kad dokumentas palaikomas bendradarbiavimo tarnybos
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Duomenų\_ad\_IsSyncBacked -** žyma, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Data\_Doc\_Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
-  - **Data\_Doc\_LocationDetails –** nurodo vietoje saugomo dokumento žinomą aplanką
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_Doc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_Doc\_ReadOnlyReasons -** Priežastys, kodėl dokumentas buvo atidarytas tik kaip skaitomas
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_Doc\_ResourceIdHash –** anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ServerDocId –** nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ServerProtocol –** susisiekimui su tarnyba naudojama protokolo versija
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_Doc\_ServerType –** tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_Doc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
 
-  - **Data\_Doc\_ServerVersion –** tarnybą siūlančio serverio versija
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_Doc\_SessionId –** nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_Doc\_SharePointServiceContext –** „SharePoint Online“ užklausų diagnostinė informacija
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_Doc\_SizeInBytes –** dokumento dydžio indikatorius
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_Doc\_SpecialChars –** dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_Doc\_StreamAvailability -** Indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas / išjungtas
+- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
 
-  - **Data\_Doc\_UrlHash -** Vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_DstDoc\_AccessMode -** Paskirties dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_DstDoc_AccessMode** – paskirties dokumentas skirtas tik skaityti / redaguoti
 
-  - **Data\_DstDoc\_AssistedReadingReasons -** Iš anksto nustatytų reikšmių rinkinys, kodėl dokumentas buvo atidarytas pagalbiniu skaitymo režimu
+- **Data_DstDoc_AssistedReadingReasons** – iš anksto apibrėžtas reikšmių rinkinys, kodėl dokumentas buvo atidarytas pagalbiniu skaitymo režimu
+    
+- **Data_DstDoc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_DstDoc\_ChunkingType -** Vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_DstDoc_EdpState** – paskirties dokumentui skirtas elektroninių duomenų apsaugos parametras
 
-  - **Data\_DstDoc\_EdpState -** Elektroninių duomenų apsaugos nustatymas, skirtas paskirties dokumentui
+- **Data_DstDoc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_DstDoc\_Ext -** Dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_DstDoc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_DstDoc\_FileFormat -** Failo formato protokolo versija
+- **Data_DstDoc_Fqdn** – „OneDrive“ arba „SharePoint Online“ paskirties dokumento domeno vardas
 
-  - **Data\_DstDoc\_Fqdn -** „OneDrive“ arba „SharePoint Online“ paskirties dokumento domeno vardas
+- **Data_DstDoc_FqdnHash** – vienpusė kliento identifikuojamo paskirties dokumento domeno vardo maiša
 
-  - **Data\_DstDoc\_FqdnHash -** Vienpusė kliento identifikuojamo paskirties dokumento domeno vardo maiša
+- **Data_DstDoc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_DstDoc\_IdentityTelemetryId -** Vartotojo tapatybės, naudojamos atidaryti, vienpusė maiša
+- **Data_DstDoc_InitializationScenario** – įrašo, kaip paskirties dokumentas buvo atidarytas
 
-  - **Data\_DstDoc\_InitializationScenario -** Įrašo, kaip paskirties dokumentas buvo atidarytas
+- **Data_DstDoc_IOFlags** – informuoja apie į talpyklą įtrauktas žymas, naudotas paskirties dokumento užklausos parinktims nustatyti
+    
+- **Data_DstDoc_IrmRights** – elektroninių duomenų apsaugos strategijos leidžiami veiksmai, kurie buvo taikyti paskirties dokumentui arba vartotojui
 
-  - **Data\_DstDoc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymas, naudotas paskirties dokumento užklausos parinktims nustatyti 
+- **Data_DstDoc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_DstDoc\_IrmRights -** Veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti paskirties dokumentui / vartotojui
+- **Data_DstDoc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
 
-  - **Data\_DstDoc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_DstDoc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data\_DstDoc\_IsOcsSupported -** Žymė, nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
+- **Data_DstDoc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Data\_DstDoc\_IsOpeningOfflineCopy -** Žymė, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data_DstDoc_Location** – nurodo, kuri tarnyba teikia paskirties dokumento saugyklą („OneDrive“, failų serveris, „SharePoint“, kt.)
 
-  - **Data\_DstDoc\_IsSyncBacked -** Žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data_DstDoc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_DstDoc\_Location -** Nurodo, kuri tarnyba teikia paskirties dokumento saugyklą („OneDrive“, failų serveris, „SharePoint“, kt.)
+- **Data_DstDoc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_DstDoc\_LocationDetails -** Nurodo, kuriuose žinomuose aplankuose yra vietoje saugomų dokumentų
+- **Data_DstDoc_PasswordFlags** – nurodo, ar nustatytas paskirties dokumento skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Data\_DstDoc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_DstDoc_ReadOnlyReasons** – nurodo priežastis, kodėl paskirties dokumentas buvo atidarytas tik kaip skaitomas 
 
-  - **Data\_DstDoc\_PasswordFlags -** Nurodo, ar nustatytas paskirties dokumento skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
+- **Data_DstDoc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_DstDoc\_ReadOnlyReasons -** Priežastys, kodėl paskirties dokumentas buvo atidarytas tik kaip skaitomas
+- **Data_DstDoc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_DstDoc\_ResourceIdHash -** Anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_DstDoc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_DstDoc\_ServerDocId -** Nekintamų anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_DstDoc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
+    
+- **Data_DstDoc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_DstDoc\_ServerProtocol -** Protokolo versija, naudojama norint susisiekti su tarnyba
+- **Data_DstDoc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_DstDoc\_ServerType -** Serverio tipas, siūlantis tarnybą („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_DstDoc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_DstDoc\_ServerVersion -** Serverio versija, siūlanti tarnybą
+- **Data_DstDoc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_DstDoc\_SessionId -** Nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_DstDoc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_DstDoc\_SharePointServiceContext -** Diagnostinė informacija iš „SharePoint Online“ užklausų
+- **Data_DstDoc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
 
-  - **Data\_DstDoc\_SizeInBytes -** Dokumento dydžio indikatorius
+- **Data_DstDoc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_DstDoc\_SpecialChars -** Dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_DstDoc_UrlHash** – vienpusė maiša, skirta paskirties dokumento „naïve“ dokumento identifikatoriui sukurti
+    
+- **Data_DstDoc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių
 
-  - **Data\_DstDoc\_StreamAvailability -** Indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas / išjungtas
+- **Data_FailureClass** – sveikasis skaičius, nurodantis OCS perėjimo trikčių trikties klasę
 
-  - **Data\_DstDoc\_SyncBackedType -** Dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
+- **Data_LocationPickerPropagateToSaveTime,spLapsedMsec** – matuoja laiką milisekundėmis, kiek trunka įrašymo sužadinimas gavus vietos duomenų rinkiklio rezultatus
 
-  - **Data\_DstDoc\_UrlHash -** Vienpusė maiša, skirta paskirties dokumento „naïve“ dokumento identifikatoriui sukurti
+- **Data_LocationPickerSaveStatus** – vietos parinkiklio pateikta būsena
 
-  - **Data\_Doc\_WopiServiceId -** Apima unikalų WOPI tarnybos teikėjo identifikatorių
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
 
-  - **Data\_FailureClass -** Sveikasis skaičius, nurodantis OCS perėjimo trikties klasę
+- **Data_MoveDisabledReason** – klaida, kuri yra išjungia dokumento perkėlimą
 
-  - **Data\_LocationPickerPropagateToSaveTime,spLapsedMsec -** Matuoja laiką milisekundėmis, kiek trunka įrašymo sužadinimas gavus vietos duomenų rinkiklio rezultatus
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_LocationPickerSaveStatus -** Vietos parinkiklio pateikiama būsena
+- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas
 
-  - **Data\_MainPdod -** Dokumento identifikatorius vykstant „Office Word“ procesui.
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
-  - **Data\_MoveDisabledReason -** Klaida, kuri yra išjungia dokumento perkėlimą
+- **Data_SaveInitiateKind** – sveikasis skaičius, nurodantis, kaip buvo inicijuotas įrašymas
 
-  - **Data\_MoveFlightEnabled -** Ar įjungta perkėlimo testavimo funkcija
+- **Data_SrcDoc_AccessMode** – nurodo, ar šaltinio dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_RenameDisabledReason -** Klaida, atsirandanti, kai pervardijimas šiam dokumentui išjungtas
+- **Data_SrcDoc_AssistedReadingReasons** – iš anksto apibrėžtas dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
-  - **Data\_RenameFlightEnabled -** Ar įjungta pervardijimo testavimo funkcija
+- **Data_SrcDoc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_SaveInitiateKind -** Sveikasis skaičius, nurodantis, kaip inicijuojamas įrašymas
+- **Data_SrcDoc_EdpState** – šaltinio dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_SrcDoc\_AccessMode -** Šaltinio dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_SrcDoc_Ext** – šaltinio dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_SrcDoc\_AssistedReadingReasons -** Iš anksto nustatytų reikšmių rinkinys, kodėl dokumentas buvo atidarytas pagalbiniu skaitymo režimu
+- **Data_SrcDoc_FileFormat** – šaltinio dokumento failo formato protokolo versija
 
-  - **Data\_SrcDoc\_ChunkingType -** Vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_SrcDoc_Fqdn** – „OneDrive“ arba „SharePoint Online“ šaltinio dokumento domeno vardas
 
-  - **Data\_SrcDoc\_EdpState -** Šaltinio dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_SrcDoc_FqdnHash** – vienpusė kliento identifikuojamo šaltinio dokumento domeno vardo maiša
 
-  - **Data\_SrcDoc\_Ext -** Šaltinio dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_SrcDoc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_SrcDoc\_FileFormat -** Šaltinio dokumento failo formato protokolo versija
+- **Data_SrcDoc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
 
-  - **Data\_SrcDoc\_Fqdn -** „OneDrive“ arba „SharePoint Online“ šaltinio dokumento domeno vardas
+- **Data_SrcDoc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_SrcDoc\_FqdnHash -** Vienpusė kliento identifikuojamo šaltinio dokumento domeno vardo maiša
+- **Data_SrcDoc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
 
-  - **Data\_SrcDoc\_IdentityTelemetryId -** Vartotojo tapatybės, naudojamos atidaryti, vienpusė maiša
+- **Data_SrcDoc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_SrcDoc\_InitializationScenario -** Įrašo, kaip dokumentas buvo atidarytas
+- **Data_SrcDoc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
 
-  - **Data\_SrcDoc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_SrcDoc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data\_SrcDoc\_IrmRights -** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_SrcDoc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+    
+- **Data_SrcDoc_Location** – nurodo, kuri tarnyba teikia šaltinio dokumentą („OneDrive“, failų serveris, „SharePoint“, kt.)
 
-  - **Data\_SrcDoc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_SrcDoc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_SrcDoc\_IsOcsSupported -** Žymė, nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
+- **Data_SrcDoc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_SrcDoc\_IsOpeningOfflineCopy -** Žymė, nurodanti, kad autonominė dokumento kopija
+- **Data_SrcDoc_PasswordFlags** – nurodo, ar nustatytas skaitymo, ar skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Data\_SrcDoc\_IsSyncBacked -** Žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data_SrcDoc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_SrcDoc\_Location -** Nurodo, kuri tarnyba teikia šaltinio dokumentą („OneDrive“, failų serveris, „SharePoint“, kt.)
+- **Data_SrcDoc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_SrcDoc\_LocationDetails -** Nurodo, kuriuose žinomuose aplankuose yra vietoje saugomų dokumentų
+- **Data_SrcDoc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_SrcDoc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_SrcDoc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_SrcDoc\_PasswordFlags -** Nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
+- **Data_SrcDoc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
 
-  - **Data\_SrcDoc\_ReadOnlyReasons -** Priežastys, kodėl dokumentas buvo atidarytas tik kaip skaitomas
+- **Data_SrcDoc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_SrcDoc\_ResourceIdHash -** Anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_SrcDoc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_SrcDoc\_ServerDocId -** Nekintamų anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_SrcDoc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_SrcDoc\_ServerProtocol -** Protokolo versija, naudojama norint susisiekti su tarnyba
+- **Data_SrcDoc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_SrcDoc\_ServerType -** Serverio tipas, siūlantis tarnybą („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_SrcDoc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_SrcDoc\_ServerVersion -** Serverio versija, siūlanti tarnybą
+- **Data_SrcDoc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas, ar išjungtas
 
-  - **Data\_SrcDoc\_SessionId -** Nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_SrcDoc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_SrcDoc\_SharePointServiceContext -** Diagnostinė informacija iš „SharePoint Online“ užklausų
+- **Data_SrcDoc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_SrcDoc\_SizeInBytes -** Dokumento dydžio indikatorius
+- **Data_SrcDoc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių
 
-  - **Data\_SrcDoc\_SpecialChars -** Dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_SrcDocIsUnnamedOrNew** – nurodo, ar įrašomas dokumentas yra naujas
 
-  - **Data\_SrcDoc\_StreamAvailability -** Indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas / išjungtas
-
-  - **Data\_SrcDoc\_SyncBackedType -** Dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
-
-  - **Data\_SrcDoc\_UrlHash -** Vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
-
-  - **Data\_SrcDoc\_WopiServiceId -** Apima unikalų WOPI tarnybos teikėjo identifikatorių
-
-  - **Data\_SrcDocIsUnnamedOrNew -** Nurodo, ar įrašomas dokumentas yra naujas
-
-#### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
-
-Šis įvykis nurodo, ar „Office Word“ redaguoja dokumentą, kurio keitimų vidinė būsena nustatyta kaip „juodraštis“ Tai leidžia „Microsoft“ įvertinti dokumento redagavimo sveikatos funkciją. Šis įvykis yra vartotojo redagavimų svarbiausias įvykis. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams apskaičiuoti.
-
-Renkami šių laukų duomenys:
-
-  - **Data\_CollectionTime-** Įvykio laiko žyma
-
-  - **Data\_DocumentLocation-** Dokumento vietos tipas
-
-  - **Data\_DocumentLocationDetails-** Dokumento vietos potipis
-
-  - **Data\_FAlwaysSaveEnabled-** Nurodo, ar buvo įjungta funkcija Visada įrašyti
-
-  - **Data\_FirstEditTime-** Pirmo redagavimo laiko žyma
-
-  - **Data\_NumberCoAuthors-** Bendraautorių, redagavusių dokumentą seanso metu, skaičius
-
-  - **Data\_NumberOfTimesDocumentDirtied-** Keitimų, atliktų redaguojant, skaičius
-
-  - **Data\_Pdod-** Dokumento identifikatorius vykstant „Office Word“ procesui
-
-  - **Data\_UrlHash-** Dokumento kelio maiša
-
-  - **Data\_ViewKind-** „Word“ rodinio tipas
 
 #### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
 
@@ -3569,6 +4080,31 @@ Renkami šių laukų duomenys:
 
   - **Data\_WarningShownToConvertToTable:bool** - „True“ nurodo vartotojui rodomą įspėjimą konvertuoti „Excel“ duomenis į lentelės formatą
 
+#### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
+
+Šis įvykis nurodo, ar „Office Word“ redaguoja dokumentą, kurio keitimų vidinė būsena nustatyta kaip „juodraštis“ Tai leidžia „Microsoft“ įvertinti dokumento redagavimo sveikatos funkciją. Šis įvykis yra vartotojo redagavimų svarbiausias įvykis. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams apskaičiuoti.
+
+Renkami šių laukų duomenys:
+
+  - **Data\_CollectionTime-** Įvykio laiko žyma
+
+  - **Data\_DocumentLocation-** Dokumento vietos tipas
+
+  - **Data\_DocumentLocationDetails-** Dokumento vietos potipis
+
+  - **Data\_FAlwaysSaveEnabled-** Nurodo, ar buvo įjungta funkcija Visada įrašyti
+
+  - **Data\_FirstEditTime-** Pirmo redagavimo laiko žyma
+
+  - **Data\_NumberCoAuthors-** Bendraautorių, redagavusių dokumentą seanso metu, skaičius
+
+  - **Data\_NumberOfTimesDocumentDirtied-** Keitimų, atliktų redaguojant, skaičius
+
+  - **Data\_Pdod-** Dokumento identifikatorius vykstant „Office Word“ procesui
+
+  - **Data\_UrlHash-** Dokumento kelio maiša
+
+  - **Data\_ViewKind-** „Word“ rodinio tipas
 ### <a name="application-status-and-boot-subtype"></a>*Taikomosios programos būsena ir įkrovos potipis*
 
 Nustatymas, ar įvyko specifiniai funkcijų įvykiai, pvz., paleidimas ar sustabdymas, ir ar funkcija veikia.
@@ -3853,6 +4389,35 @@ Renkami šių laukų duomenys:
 
   - **Office.Visio.VisioFileSaveSync -** Šis įvykis renka failo asinchroninio įrašymo statistiką „Visio Dev16“. Šis įvykis naudojamas stebėti rodikliams, ar failas sinchroniškai įrašytas sėkmingai / nesėkmingai, ir susieti juos su keliomis ypatybėmis, pvz., failo dydžiu ir vieta, kurioje jis įrašytas, pvz., debesis, vietinis įrašymas. Failo ypatybės leidžia greičiau pašalinti ir šalinti problemas. Šis įvykis padeda stebėti failo įrašymo nesėkmės priežastis.
 
+#### <a name="officeextensibilitysandboxodpactivationhanging"></a>Office.Extensibility.Sandbox.ODPActivationHanging
+
+Renka, kai paleisti „Office“ papildinį užtrunka netikėtai ilgai (> 5 sek.). Naudojama „Office“ papildinių paleidimo triktims aptikti ir pašalinti.
+ 
+Renkami šių laukų duomenys:
+
+- **AppId** – taikomosios programos ID
+
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, "SharePoint", failų sistema ir t. t.)
+
+- **AppInstanceId** – taikomosios programos egzemplioriaus ID 
+
+- **AssetId** – taikomosios programos ištekliaus ID
+
+- **NumberOfAddinsActivated** – suaktyvintas papildinių skaitiklis
+
+- **RemoterType** – nurodo nuotolinio elemento, kuris naudojamas norint suaktyvinti papildinį, tipą (patikimas, nepatikimas, „Win32webView“, patikimas UDF ir t. t.)
+
+- **StoreType** – taikomosios programos kilmė
+
+- **TimeForAuth** – autentifikacijai sugaištas laikas 
+
+- **TimeForSandbox** – smėlio dėžėje praleistas laikas
+
+- **TimeForServerCall** – laikas, praleistas skambinant į serverį 
+
+- **TotalTime** – bendras praleistas laikas
+
+
 #### <a name="officeoutlookdesktopexchangepuidandtenantcorrelation"></a>Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
 Kartą per seansą renka vartotojo PUID ir nuomotojo identifikatorių. PUID ir nuomininko ryšys yra būtinas norint suprasti ir diagnozuoti „Outlook“ problemas, atsižvelgiant į nuomotoją.
@@ -3867,103 +4432,14 @@ Renkami šių laukų duomenys:
 
   - **PUID** – „Exchange“ PUID, skirtas unikaliai identifikuoti vartotojus
 
-#### <a name="officepowerpointpptdesktopbootime"></a>Office.PowerPoint.PPT.Desktop.Bootime
 
-Renka, kaip paleista „PowerPoint“. Jis apima „PowerPoint“ paleistį apsaugotame rodinyje, pagalbiniu skaitymo režimu nuo makro režimo, spausdinimo, naujo ir tuščio dokumento atkūrimo iki automatizavimo ir ar jis yra paleistas paspaudžiant. Taip pat renka kiek laiko užtrunka paleisti „PowerPoint“. Šie duomenys yra labai svarbūs norint užtikrinti, kad „PowerPoint“ veiktų tinkamai, kai įkeliama iš skirtingų režimų. „Microsoft“ naudoja šiuos duomenis, kad fiksuotų ilgą paleidimo laiką, kai atidaroma „PowerPoint“ iš skirtingų režimų.
+#### <a name="officeoutlookmacmacolkactivationstate"></a>Office.Outlook.Mac.MacOLKActivationState
 
-Renkami šių laukų duomenys:
-
-  - **AssistedReading -** pagalbimiu skaitymo režimu
-
-  - **Automation -** automatizavimo režimu
-
-  - **Benchmark -** paleidžiamas vykdymo kontrolinis etalonas
-
-  - **Blank -** Tuščias dokumentas
-
-  - **BootTime -** seanso paleidimo laikas
-
-  - **Embedding -** Dokumento įdėjimas
-
-  - **IsC2R -** Technologija „Spustelėkite ir naudokitės“
-
-  - **IsNew -** Naujas dokumentas 
-
-  - **IsOpen -** Atidaryta
-
-  - **Macro1 -** Vykdoma makrokomanda
-
-  - **Macro2 -** Vykdoma makrokomanda
-
-  - **NonStandardSpaceInCmdLine** – Komandinėje eilutėje yra nestandartinė erdvė
-
-  - **Print -** Spausdinamas dokumentas
-
-  - **PrintDialog -** Spausdinamas dokumentas dialogo lange
-
-  - **PrintDialog -** Spausdinamas dokumentas spausdintuve
-
-  - **ProtectedView -** Apsaugotame rodinyje
-
-  - **Regserver -** „PowerPoint“ registravimas kaip COM serverio
-
-  - **Atkurti -** Atkurti dokumentą
-
-  - **Rodyti -** Rodyti dokumentą
-
-  - **Laikas -** Sesijos laikas
-
-  - **UnprotectedView -** Neapsaugotame rodinyje
-
-#### <a name="officepowerpointppthasuserediteddocument"></a>Office.PowerPoint.PPT.HasUserEditedDocument
-
-Renkama, kai vartotojas pradeda redaguoti dokumentą. „Microsoft“ naudoja šiuos duomenis, kad apskaičiuotų aktyvius vartotojus, kurie redagavo dokumentą „PowerPoint“
+Renka informaciją apie taip, kaip „Outlook“ aktyvinama, tokią kaip prenumeratos arba bendrosios licencijos. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. 
 
 Renkami šių laukų duomenys:
 
-  - **CorrelationId** – Dokumento koreliacijos identifikatorius
-
-#### <a name="officeprojectbootandopenproject"></a>Office.Project.BootAndOpenProject
-
-„Project“ paleidžiamas atidarant failą. Šis įvykis rodo, kad vartotojas atidarė „Office Project“ su susijusiu failu. Jame yra svarbūs sėkmės duomenys, užtikrinantys, kad „Project“ gali būti paleista ir įkelti failą.
-
-Renkami šių laukų duomenys:
-
-  - **Data\_AlertTime -** Laikas, kai aktyvus įkėlimo dialogo langas.
-
-  - **Data\_BootTime -** Laikas, kurio reikia „Project“ įkelti
-
-  - **Data\_CacheFileSize -** Jei failas laikomas saugykloje, failo dydis
-
-  - **Data\_EntDocType -** Failo, kuris buvo atidarytas, tipas
-
-  - **Data\_IsInCache -** Ar šis atidarytas failas įrašytas į talpyklą
-
-  - **Data\_LoadSRAs -** Ar vartotojas nori įkelti SRA
-
-  - **Data\_Outcome -** viso Bendras paleidimo ir failo atidarymo laikas.
-
-  - **Data\_OpenFromDocLib -** Ar „Project“ failas atidarytas iš dokumentų bibliotekos
-
-  - **Data\_ProjectServerVersion -** Versija ir komponavimo versija, kurią šiuo metu naudoja „Project“
-
-#### <a name="officeprojectbootproject"></a>Office.Project.BootProject
-
-„Project“ paleidžiamas neatidarant failo. Šis įvykis rodo, kad vartotojas atidarė „Office Project“ be susijusio failo. Jame yra svarbūs duomenys, užtikrinantys, kad „Project“ bus sėkmingai paleistas.
-
-Renkami šių laukų duomenys:
-
-  - **Data\_BootTime -** Laikas, kurio reikia „Project“ įkelti
-
-  - **Data\_FileLoaded -** „False“, jei atidaroma ne vietoje arba naujas tuščias projektas
-
-  - **Data\_IsEntOfflineWithProfile -** Jei vartotojai priklauso profesionaliam SKU ir prisijungę prie serverio
-
-  - **Data\_IsEntOnline -** Jeigu „Project“ seansas prijungtas prie „Project“ serverio su įmonės funkcijomis
-
-  - **Data\_IsEntOnline -** Jeigu „Project“ seansas prijungtas prie „Project“ serverio su įmonės funkcijomis
-
-  - **Data\_ProjectServerVersion -** Versija ir komponavimo versija, kurią šiuo metu naudoja „Project“
+- **SetupUIActivationMethod** – „Outlook“ aktyvinimo metodas, pavyzdžiui, prenumeratos arba bendrosios licencijos.
 
 #### <a name="officepowerpointdocoperationopen"></a>Office.PowerPoint.DocOperation.Open 
 
@@ -4297,6 +4773,105 @@ Renkami šių laukų duomenys:
 
   - **Data\_ZRTOpenDisabledReasons -** Kodėl mums nepavyko atidaryti dokumento iš talpyklos (nulinė kelionė pirmyn ir atgal)
 
+#### <a name="officepowerpointpptdesktopbootime"></a>Office.PowerPoint.PPT.Desktop.Bootime
+
+Renka, kaip paleista „PowerPoint“. Jis apima „PowerPoint“ paleistį apsaugotame rodinyje, pagalbiniu skaitymo režimu nuo makro režimo, spausdinimo, naujo ir tuščio dokumento atkūrimo iki automatizavimo ir ar jis yra paleistas paspaudžiant. Taip pat renka kiek laiko užtrunka paleisti „PowerPoint“. Šie duomenys yra labai svarbūs norint užtikrinti, kad „PowerPoint“ veiktų tinkamai, kai įkeliama iš skirtingų režimų. „Microsoft“ naudoja šiuos duomenis, kad fiksuotų ilgą paleidimo laiką, kai atidaroma „PowerPoint“ iš skirtingų režimų.
+
+Renkami šių laukų duomenys:
+
+  - **AssistedReading -** pagalbimiu skaitymo režimu
+
+  - **Automation -** automatizavimo režimu
+
+  - **Benchmark -** paleidžiamas vykdymo kontrolinis etalonas
+
+  - **Blank -** Tuščias dokumentas
+
+  - **BootTime -** seanso paleidimo laikas
+
+  - **Embedding -** Dokumento įdėjimas
+
+  - **IsC2R -** Technologija „Spustelėkite ir naudokitės“
+
+  - **IsNew -** Naujas dokumentas 
+
+  - **IsOpen -** Atidaryta
+
+  - **Macro1 -** Vykdoma makrokomanda
+
+  - **Macro2 -** Vykdoma makrokomanda
+
+  - **NonStandardSpaceInCmdLine** – Komandinėje eilutėje yra nestandartinė erdvė
+
+  - **Print -** Spausdinamas dokumentas
+
+  - **PrintDialog -** Spausdinamas dokumentas dialogo lange
+
+  - **PrintDialog -** Spausdinamas dokumentas spausdintuve
+
+  - **ProtectedView -** Apsaugotame rodinyje
+
+  - **Regserver -** „PowerPoint“ registravimas kaip COM serverio
+
+  - **Atkurti -** Atkurti dokumentą
+
+  - **Rodyti -** Rodyti dokumentą
+
+  - **Laikas -** Sesijos laikas
+
+  - **UnprotectedView -** Neapsaugotame rodinyje
+
+#### <a name="officepowerpointppthasuserediteddocument"></a>Office.PowerPoint.PPT.HasUserEditedDocument
+
+Renkama, kai vartotojas pradeda redaguoti dokumentą. „Microsoft“ naudoja šiuos duomenis, kad apskaičiuotų aktyvius vartotojus, kurie redagavo dokumentą „PowerPoint“
+
+Renkami šių laukų duomenys:
+
+  - **CorrelationId** – Dokumento koreliacijos identifikatorius
+
+#### <a name="officeprojectbootandopenproject"></a>Office.Project.BootAndOpenProject
+
+„Project“ paleidžiamas atidarant failą. Šis įvykis rodo, kad vartotojas atidarė „Office Project“ su susijusiu failu. Jame yra svarbūs sėkmės duomenys, užtikrinantys, kad „Project“ gali būti paleista ir įkelti failą.
+
+Renkami šių laukų duomenys:
+
+  - **Data\_AlertTime -** Laikas, kai aktyvus įkėlimo dialogo langas.
+
+  - **Data\_BootTime -** Laikas, kurio reikia „Project“ įkelti
+
+  - **Data\_CacheFileSize -** Jei failas laikomas saugykloje, failo dydis
+
+  - **Data\_EntDocType -** Failo, kuris buvo atidarytas, tipas
+
+  - **Data\_IsInCache -** Ar šis atidarytas failas įrašytas į talpyklą
+
+  - **Data\_LoadSRAs -** Ar vartotojas nori įkelti SRA
+
+  - **Data\_Outcome -** viso Bendras paleidimo ir failo atidarymo laikas.
+
+  - **Data\_OpenFromDocLib -** Ar „Project“ failas atidarytas iš dokumentų bibliotekos
+
+  - **Data\_ProjectServerVersion -** Versija ir komponavimo versija, kurią šiuo metu naudoja „Project“
+
+#### <a name="officeprojectbootproject"></a>Office.Project.BootProject
+
+„Project“ paleidžiamas neatidarant failo. Šis įvykis rodo, kad vartotojas atidarė „Office Project“ be susijusio failo. Jame yra svarbūs duomenys, užtikrinantys, kad „Project“ bus sėkmingai paleistas.
+
+Renkami šių laukų duomenys:
+
+  - **Data\_BootTime -** Laikas, kurio reikia „Project“ įkelti
+
+  - **Data\_FileLoaded -** „False“, jei atidaroma ne vietoje arba naujas tuščias projektas
+
+  - **Data\_IsEntOfflineWithProfile -** Jei vartotojai priklauso profesionaliam SKU ir prisijungę prie serverio
+
+  - **Data\_IsEntOnline -** Jeigu „Project“ seansas prijungtas prie „Project“ serverio su įmonės funkcijomis
+
+  - **Data\_IsEntOnline -** Jeigu „Project“ seansas prijungtas prie „Project“ serverio su įmonės funkcijomis
+
+  - **Data\_ProjectServerVersion -** Versija ir komponavimo versija, kurią šiuo metu naudoja „Project“
+
+
 #### <a name="officeprojectopenproject"></a>Office.Project.OpenProject
 
 „Project“ atidaro failą. Šis įvykis nurodo vartotojui, kad jis tiesiogiai atidaro „Project“ failą. Jame yra svarbūs duomenys, užtikrinantys, kad „Project“ bus sėkmingai atidaromi failai.
@@ -4371,249 +4946,251 @@ Renkami šių laukų duomenys:
 
 - **parentSessionId** – atsitiktinai sugeneruotas GUID, skirtas nustatyti taikomosios programos seansą
 
+
 #### <a name="officewordfileopenopencmdfilemrupriv"></a>Office.Word.FileOpen.OpenCmdFileMruPriv
 
-Šis įvykis nurodo „Office Word“ atidaryti dokumentą iš vėliausiai naudoto (MRU) sąrašo. Jame taip pat yra svarbūs failo atidarymo našumo duomenys ir yra programėlės pradžios įvykis vertinant iš vartotojo perspektyvos. Įvykis stebi ar file-open-from-MRU veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
+Šis įvykis nurodo „Office Word“ atidaryti dokumentą iš vėliausiai naudoto (MRU) sąrašo. Jame taip pat yra svarbių failo atidarymo našumo duomenų ir yra programėlės pradžios įvykis vertinant iš vartotojo perspektyvos. Įvykis stebi, ar file-open-from-MRU veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemRes –** nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
+- **Data_AddDocTelemRes** – nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
 
-  - **Data\_BytesAsynchronous -** Baitų (suglaudintų), kurie, kaip manoma, gali atidaryti failą, skaičius, nepaisant, ar mes juos gausime, kol vartotojas nori pradėti redaguoti arba galbūt įrašyti
+- **Data_BytesAsynchronous** – baitų (suglaudintų), kurie, kaip manoma, gali atidaryti failą, skaičius, nepaisant, ar mes juos gausime iki tol, kol vartotojas nori pradėti redaguoti arba galbūt įrašyti
 
-  - **Data\_BytesAsynchronousWithWork -** Baitų (suglaudintų), kuriuos naudodami galėtume atidaryti failą, skaičius, tačiau norint, kad tai įvyktų, reikės daug investuoti į kodą
+- **Data_BytesAsynchronousWithWork** – baitų (suglaudintų), kuriuos naudodami galėtume atidaryti failą, skaičius, tačiau norint, kad tai įvyktų, reikės daug investuoti į kodą
 
-  - **Data\_BytesSynchronous -** Baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą
+- **Data_BytesSynchronous** – baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą
 
-  - **Data\_BytesUnknown -** Baitų skaičius dokumentų dalyse, kurių nesitikėjome rasti
+- **Data_BytesUnknown** – baitų skaičius dokumento dalyse, kurių nesitikėjome rasti 
 
-  - **Data\_DetachedDuration -** Kiek laiko gijoje nebuvo veiklos
+- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
 
-  - **Data\_Doc\_AccessMode -** Dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_Doc\_AssistedReadingReasons -** Iš anksto nustatytų reikšmių rinkinys, kodėl dokumentas buvo atidarytas pagalbiniu skaitymo režimu
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
-  - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_Doc\_EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_Doc\_Ext –** dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_Doc\_FileFormat –** failo formato protokolo versija
+- **Data_Doc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_Doc\_Fqdn –** „OneDrive“ arba „SharePoint“ interneto domeno vardas
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
 
-  - **Data\_Doc\_FqdnHash –** kliento identifikuojamo domeno vardo vienpusė maiša
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
 
-  - **Data\_Doc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_Doc\_IdentityTelemetryId –** atidarymui naudojamos vartotojo tapatybės maiša
+- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
 
-  - **Data\_Doc\_InitializationScenario –** įrašo, kaip dokumentas buvo atidarytas
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_Doc\_IrmRights –** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
 
-  - **Data\_Doc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_Doc\_IsOcsSupported -** Žyma, nurodanti, kad dokumentas palaikomas bendradarbiavimo tarnybos
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Data\_Doc\_IsSyncBacked -** Žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data.Doc.IsSyncBacked –** žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Data\_Doc\_Location -** Nurodo, kuri tarnyba teikia dokumentą („OneDrive“, failų serveris, „SharePoint“, kt.)
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
-  - **Data\_Doc\_LocationDetails –** nurodo vietoje saugomo dokumento žinomą aplanką
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_Doc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_Doc\_PasswordFlags –** nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymų rinkinys
+- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Data\_Doc\_ReadOnlyReasons -** Priežastys, kodėl dokumentas buvo atidarytas tik kaip skaitomas
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_Doc\_ResourceIdHash -** Anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data.Doc.ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ServerDocId -** Nekintamų anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data.Doc.ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti 
 
-  - **Data\_Doc\_ServerProtocol -** Protokolo versija, naudojama norint susisiekti su tarnyba
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_Doc\_ServerType -** Serverio tipas, siūlantis tarnybą („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data.Doc.ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
 
-  - **Data\_Doc\_ServerVersion -** Serverio versija, siūlanti tarnybą
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_Doc\_SessionId –** nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_Doc\_SharePointServiceContext –** „SharePoint Online“ užklausų diagnostinė informacija
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_Doc\_SizeInBytes –** dokumento dydžio indikatorius
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_Doc\_SpecialChars –** dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data.Doc.SpecialChars** – dokumento URL specialiųjų simbolių indikatorius 
 
-  - **Data\_Doc\_StreamAvailability –** indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
+- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_Doc\_SyncBackedType –** dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_Doc\_UrlHash –** vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_Doc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių
 
-  - **Data\_Doc\_WopiServiceId -** Apima unikalų WOPI tarnybos teikėjo identifikatorių
+- **Data_EditorDisablingRename** – pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
 
-  - **Data\_EditorDisablingRename -** Pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
+- **Data_EditorsCount** – dokumento redaktorių skaičius
 
-  - **Data\_EditorsCount -** Dokumento redaktorių skaičius
+- **Data_ForceReadWriteReason** – sveikasis skaičius, nurodantis priežastį, kodėl failas buvo priverstinai atidarytas skaitymo / rašymo režimu
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Nurodo, kad atidaryti pavyko pašalinus triktį, įvykusią atidarant dokumentą
+- **Data_FSucceededAfterRecoverableFailure** – nurodo, kad atidaryti pavyko pašalinus triktį, įvykusią atidarant dokumentą
 
-  - **Data\_ForceReadWriteReason -** Sveikojo skaičiaus vertė, nurodanti priežastį, kodėl failas buvo priverstinai atidarytas skaitymo / rašymo režimu
+- **Data_LastLoggedTag** – unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas atidaryti (naudojama duomenų kokybės diagnostikai)
 
-  - **Data\_LastLoggedTag -** Unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas atidaryti (naudojama duomenų kokybės diagnostikai)
+- **Data_LinkStyles** – nurodo, ar mes susieti su šablono stiliais
 
-  - **Data\_LinkStyles -** Nurodo, ar mes susieti su šablono stiliais
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
 
-  - **Data\_MainPdod -** Dokumento identifikatorius vykstant „Office Word“ procesui.
+- **Data_Measurements** – užkoduota eilutė, kurioje pateiktas skirtingų dalių atidarymo laiko suskirstymas. Skirta našumui vertinti.
 
-  - **Data\_Measurements -** Užkoduota eilutė, kurioje yra skirtingų dalių atidarymo laiko suskirstymas. Skirtas našumui vertinti.
+- **Data_MoveDisabledReason** – klaida, kuri yra išjungia dokumento perkėlimą
 
-  - **Data\_MoveDisabledReason -** Klaida, kuri yra išjungia dokumento perkėlimą
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_MoveFlightEnabled -** Ar įjungta perkėlimo testavimo funkcija
+- **Data_PartsUnknown** – dokumento dalių, iš kurių nepavyko gauti duomenų, skaičius
 
-  - **Data\_PartsUnknown -** Dokumentų dalių, iš kurių nepavyko gauti duomenų, skaičius
+- **Data_RecoverableFailureInitiationLocationTag** – unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti
 
-  - **Data\_RecoverableFailureInitiationLocationTag -** Unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti
+- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas
 
-  - **Data\_RenameDisabledReason -** Klaida, atsirandanti, kai pervardijimas šiam dokumentui išjungtas
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
-  - **Data\_RenameFlightEnabled -** Ar įjungta pervardijimo testavimo funkcija
+- **Data_SecondaryTag** – unikali kodo iškvietimo vietos žymė, naudojama papildomiems trikties duomenims atidaryti 
 
-  - **Data\_SecondaryTag -** Unikali kodo iškvietimo vietos žymė, naudojama papildomiems trikties duomenims atidaryti
+- **Data_TemplateFormat** – šablono failo, kuriuo pagrįstas dokumentas, formatas.
 
-  - **Data\_TemplateFormat -** Šablono failo formatas, kuriuo pagrįstas dokumentas.
+- **Data_UsesNormal** – nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu
 
-  - **Data\_UsesNormal -** Nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu
+- **PathData_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
+
 
 #### <a name="officewordfileopenopenffileopenxstzcore"></a>Office.Word.FileOpen.OpenFFileOpenXstzCore
 
-Šis įvykis nurodo, kad „Office Word“ atidaro dokumentą, kurį vartotojas dukart spustelėjo. Jame taip pat yra svarbūs failo atidarymo našumo duomenys ir yra programėlės pradžios įvykis vertinant iš vartotojo perspektyvos. Įvykis stebi, ar file-open-from-file-double-click veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
+Šis įvykis nurodo, kad „Office Word“ atidaro dokumentą, kurį vartotojas dukart spustelėjo. Jame taip pat yra svarbių failo atidarymo našumo duomenų ir yra programėlės pradžios įvykis vertinant iš vartotojo perspektyvos. Įvykis stebi, ar funkcija file-open-from-file-double-click veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemRes -** Nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai
+- **Data_AddDocTelemRes** – nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai
+    
+- **Data_BytesAsynchronous** – baitų (suglaudintų), kurie, kaip manoma, gali atidaryti failą, skaičius, nepaisant, ar mes juos gausime iki tol, kol vartotojas nori pradėti redaguoti arba galbūt įrašyti
+    
+- **Data_BytesAsynchronousWithWork** – baitų (suglaudintų), kuriuos naudodami galėtume atidaryti failą, skaičius, tačiau norint, kad tai įvyktų, reikės daug investuoti į kodą
 
-  - **Data\_BytesAsynchronous -** Baitų (suglaudintų), kurie, kaip manoma, gali atidaryti failą, skaičius, nepaisant, ar mes juos gausime, kol vartotojas nori pradėti redaguoti arba galbūt įrašyti
+- **Data_BytesSynchronous** – baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą
+    
+- **Data_BytesUnknown** – baitų skaičius dokumento dalyse, kurių nesitikėjome rasti
 
-  - **Data\_BytesAsynchronousWithWork -** Baitų (suglaudintų), kuriuos naudodami galėtume atidaryti failą, skaičius, tačiau norint, kad tai įvyktų, reikės daug investuoti į kodą
+- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
 
-  - **Data\_BytesSynchronous -** Baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_BytesUnknown -** Baitų skaičius dokumentų dalyse, kurių nesitikėjome rasti
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
-  - **Data\_DetachedDuration -** Kiek laiko gijoje nebuvo veiklos
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_Doc\_AccessMode -** Dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_Doc\_AssistedReadingReasons -** Iš anksto nustatytų reikšmių rinkinys, kodėl dokumentas buvo atidarytas pagalbiniu skaitymo režimu
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_Doc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_Doc\_EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
 
-  - **Data\_Doc\_Ext –** dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
 
-  - **Data\_Doc\_FileFormat –** failo formato protokolo versija
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_Doc\_Fqdn –** „OneDrive“ arba „SharePoint“ interneto domeno vardas
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_Doc\_FqdnHash –** kliento identifikuojamo domeno vardo vienpusė maiša
+- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
 
-  - **Data\_Doc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
 
-  - **Data\_Doc\_IdentityTelemetryId -** Vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_Doc\_InitializationScenario -** Įrašo, kaip dokumentas buvo atidarytas
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
+    
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data\_Doc\_IrmRights –** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Data\_Doc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Data\_Doc\_IsOcsSupported -** Žyma, nurodanti, kad dokumentas palaikomas bendradarbiavimo tarnybos
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+    
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Duomenų\_ad\_IsSyncBacked -** žyma, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_Doc\_Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data.Doc.ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_LocationDetails –** nurodo vietoje saugomo dokumento žinomą aplanką
+- **Data.Doc.ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_Doc\_PasswordFlags –** nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymų rinkinys
+- **Data_Doc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
+    
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą 
 
-  - **Data\_Doc\_ReadOnlyReasons -** Priežastys, kodėl dokumentas buvo atidarytas tik kaip skaitomas
+- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_Doc\_ResourceIdHash -** Anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_Doc\_ServerDocId -** Nekintamų anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_Doc\_ServerProtocol -** Protokolo versija, naudojama norint susisiekti su tarnyba
+- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_Doc\_ServerType –** tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
 
-  - **Data\_Doc\_ServerVersion -** Serverio versija, siūlanti tarnybą
+- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_Doc\_SessionId -** Serverio versija, siūlanti tarnybą
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_Doc\_SharePointServiceContext-**
+- **Data_Doc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių
 
-  - **Data\_Doc\_SizeInBytes -** Dokumento dydžio indikatorius
+- **Data_EditorDisablingRename** – pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
 
-  - **Data\_Doc\_SpecialChars –** dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_EditorsCount** – dokumento redaktorių skaičius
 
-  - **Data\_Doc\_StreamAvailability –** indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
+- **Data_FSucceededAfterRecoverableFailure** – nurodo, kad atidaryti pavyko pašalinus triktį, įvykusią atidarant dokumentą
 
-  - **Data\_Doc\_SyncBackedType –** dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
+- **Data_ForceReadWriteReason** – sveikasis skaičius, nurodantis priežastį, kodėl failas buvo priverstinai atidarytas skaitymo / rašymo režimu
+    
+- **Data_LastLoggedTag** – unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas atidaryti (naudojama duomenų kokybės diagnostikai)
 
-  - **Data\_Doc\_UrlHash –** vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_LinkStyles** – nurodo, ar mes susieti su šablono stiliais
 
-  - **Data\_Doc\_WopiServiceId -** Apima unikalų WOPI tarnybos teikėjo identifikatorių
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
 
-  - **Data\_EditorDisablingRename -** Pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
+- **Data_Measurements** – užkoduota eilutė, kurioje pateiktas skirtingų dalių atidarymo laiko suskirstymas. Skirta našumui vertinti.
+    
+- **Data_MoveDisabledReason** – klaida, kuri yra išjungia dokumento perkėlimą
 
-  - **Data\_EditorsCount -** Dokumento redaktorių skaičius
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Nurodo, kad atidaryti pavyko pašalinus triktį, įvykusią atidarant dokumentą
+- **Data_PartsUnknown** – dokumento dalių, iš kurių nepavyko gauti duomenų, skaičius
 
-  - **Data\_ForceReadWriteReason -** Sveikojo skaičiaus vertė, nurodanti priežastį, kodėl failas buvo priverstinai atidarytas skaitymo / rašymo režimu
+- **Data_RecoverableFailureInitiationLocationTag** – unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti.
 
-  - **Data\_LastLoggedTag -** Unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas atidaryti (naudojama duomenų kokybės diagnostikai)
+- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas
 
-  - **Data\_LinkStyles -** Nurodo, ar mes susieti su šablono stiliais
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
-  - **Data\_MainPdod -** Dokumento identifikatorius vykstant „Office Word“ procesui.
+- **Data_SecondaryTag** – unikali kodo iškvietimo vietos žymė, naudojama papildomiems trikties duomenims atidaryti.
 
-  - **Data\_Measurements -** Užkoduota eilutė, kurioje yra skirtingų dalių atidarymo laiko suskirstymas. Skirtas našumui vertinti.
+- **Data_TemplateFormat** – šablono failo, kuriuo pagrįstas dokumentas, formatas.
 
-  - **Data\_MoveDisabledReason -** Klaida, kuri yra išjungia dokumento perkėlimą
-
-  - **Data\_MoveFlightEnabled -** Ar įjungta perkėlimo testavimo funkcija
-
-  - **Data\_PartsUnknown -** Dokumentų dalių, iš kurių nepavyko gauti duomenų, skaičius
-
-  - **Data\_RecoverableFailureInitiationLocationTag -** Unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti
-
-  - **Data\_RenameDisabledReason -** Klaida, atsirandanti, kai pervardijimas šiam dokumentui išjungtas
-
-  - **Data\_RenameFlightEnabled -** Ar įjungta pervardijimo testavimo funkcija
-
-  - **Data\_SecondaryTag -** Unikali kodo iškvietimo vietos žymė, naudojama papildomiems trikties duomenims atidaryti.
-
-  - **Data\_TemplateFormat -** Šablono failo formatas, kuriuo pagrįstas dokumentas.
-
-  - **Data\_UsesNormal -** Nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu
+- **Data_UsesNormal** – nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu.
 
 
 #### <a name="officewordfileopenopenifrinitargs"></a>Office.Word.FileOpen.OpenIfrInitArgs
@@ -4739,123 +5316,123 @@ Renkami šių laukų duomenys:
 
 #### <a name="officewordfileopenopenloadfile"></a>Office.Word.FileOpen.OpenLoadFile
 
-Šis įvykis nurodo, kad „Office Word“ atidaro dokumentą naudojant dialogo langą Atidaryti. Jame taip pat yra svarbūs failo atidarymo našumo duomenys ir yra programėlės pradžios įvykis vertinant iš vartotojo perspektyvos. Įvykis stebi ar file-open-from-the-open-file-dialogas veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
+Šis įvykis nurodo, kad „Office Word“ atidaro dokumentą naudojant dialogo langą Atidaryti. Jame taip pat yra svarbių failo atidarymo našumo duomenų ir yra programėlės pradžios įvykis vertinant iš vartotojo perspektyvos. Įvykis stebi, ar file-open-from-the-open-file-dialogas veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AddDocTelemRes –** nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
+- **Data_AddDocTelemRes** – nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai.
 
-  - **Data\_BytesAsynchronous -** Baitų (suglaudintų), kurie, kaip manoma, gali atidaryti failą, skaičius, nepaisant, ar mes juos gausime, kol vartotojas nori pradėti redaguoti arba galbūt įrašyti
+- **Data_BytesAsynchronous** – baitų (suglaudintų), kurie, kaip manoma, gali atidaryti failą, skaičius, nepaisant, ar mes juos gausime iki tol, kol vartotojas nori pradėti redaguoti arba galbūt įrašyti
 
-  - **Data\_BytesAsynchronousWithWork -** Baitų (suglaudintų), kuriuos naudodami galėtume atidaryti failą, skaičius, tačiau norint, kad tai įvyktų, reikės daug investuoti į kodą
+- **Data_BytesAsynchronousWithWork** – baitų (suglaudintų), kuriuos naudodami galėtume atidaryti failą, skaičius, tačiau norint, kad tai įvyktų, reikės daug investuoti į kodą
+    
+- **Data_BytesSynchronous** – baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą
 
-  - **Data\_BytesSynchronous -** Baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą
+- **Data_BytesUnknown** – baitų skaičius dokumento dalyse, kurių nesitikėjome rasti
 
-  - **Data\_BytesUnknown -** Baitų skaičius dokumentų dalyse, kurių nesitikėjome rasti
+- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
 
-  - **Data\_DetachedDuration -** Kiek laiko gijoje nebuvo veiklos
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
-  - **Data\_Doc\_AccessMode –** dokumentas yra skirtas tik skaityti / redaguoti
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
-  - **Data\_Doc\_AssistedReadingReasons –** iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
-  - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
 
-  - **Data\_Doc\_EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
 
-  - **Data\_Doc\_Ext –** dokumento plėtinys (docx / xlsb / pptx ir kt.)
+- **Data_Doc_FileFormat** – failo formato protokolo versija
 
-  - **Data\_Doc\_FileFormat –** failo formato protokolo versija
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
 
-  - **Data\_Doc\_Fqdn –** „OneDrive“ arba „SharePoint“ interneto domeno vardas
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
 
-  - **Data\_Doc\_FqdnHash -** Kliento identifikuojamo domeno vardo vienpusė maiša
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
 
-  - **Data\_Doc\_IdentityTelemetryId -** Vartotojo tapatybės, naudojamos atidaryti, vienpusė maiša
+- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
 
-  - **Data\_Doc\_InitializationScenario -** Įrašo, kaip dokumentas buvo atidarytas
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
 
-  - **Data\_Doc\_IOFlags -** Informuoja apie į talpyklą įtrauktas žymes, naudotas užklausos parinktims nustatyti 
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
+    
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
 
-  - **Data\_Doc\_IrmRights –** veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kurie buvo taikyti dokumentui / vartotojui
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
 
-  - **Data\_Doc\_IsIncrementalOpen -** Žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-  - **Data\_Doc\_IsOcsSupported -** Žyma, nurodanti, kad dokumentas palaikomas bendradarbiavimo tarnybos
+- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
 
-  - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
+- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
-  - **Duomenų\_ad\_IsSyncBacked -** žyma, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
-  - **Data\_Doc\_Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
 
-  - **Data\_Doc\_LocationDetails –** nurodo vietoje saugomo dokumento žinomą aplanką
+- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
 
-  - **Data\_Doc\_NumberCoAuthors -** Skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
-  - **Data\_Doc\_PasswordFlags –** nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymų rinkinys
+- **Data.Doc.ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
-  - **Data\_Doc\_ReadOnlyReasons -** Priežastys, kodėl dokumentas buvo atidarytas tik kaip skaitomas
+- **Data.Doc.ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti 
 
-  - **Data\_Doc\_ResourceIdHash -** Anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
 
-  - **Data\_Doc\_ServerDocId -** Nekintamų anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+- **Data.Doc.ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
 
-  - **Data\_Doc\_ServerProtocol -** Protokolo versija, naudojama norint susisiekti su tarnyba
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą
 
-  - **Data\_Doc\_ServerType -** Serverio tipas, siūlantis tarnybą („SharePoint“, „OneDrive“, WOPI ir kt.)
+- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
 
-  - **Data\_Doc\_ServerVersion -** Serverio versija, siūlanti tarnybą
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
 
-  - **Data\_Doc\_SessionId –** nustato konkretų viso seanso dokumentų redagavimo seansą
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
 
-  - **Data\_Doc\_SharePointServiceContext –** „SharePoint Online“ užklausų diagnostinė informacija
+- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
 
-  - **Data\_Doc\_SizeInBytes –** dokumento dydžio indikatorius
+- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
 
-  - **Data\_Doc\_SpecialChars –** dokumento URL arba kelio specialiųjų simbolių indikatorius
+- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
 
-  - **Data\_Doc\_StreamAvailability –** indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
 
-  - **Data\_Doc\_SyncBackedType –** dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
+- **Data_EditorDisablingRename** – pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
 
-  - **Data\_Doc\_UrlHash -** Vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
+- **Data_EditorsCount** – dokumento redaktorių skaičius
 
-  - **Data\_EditorDisablingRename -** Pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius
+- **Data_ForceReadWriteReason** – sveikasis skaičius, nurodantis priežastį, kodėl failas buvo priverstinai atidarytas skaitymo / rašymo režimu
+    
+- **Data_FSucceededAfterRecoverableFailure** – nurodo, kad atidaryti pavyko pašalinus triktį, įvykusią atidarant dokumentą
 
-  - **Data\_EditorsCount -** Dokumento redaktorių skaičius
+- **Data_LastLoggedTag** – unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas įrašyti (naudojama duomenų kokybės diagnostikai)
 
-  - **Data\_ForceReadWriteReason -** Sveikojo skaičiaus vertė, nurodanti priežastį, kodėl failas buvo priverstinai atidarytas skaitymo / rašymo režimu
+- **Data_LinkStyles** – nurodo, ar mes susieti su šablono stiliais
 
-  - **Data\_FSucceededAfterRecoverableFailure -** Nurodo, kad atidaryti pavyko pašalinus triktį, įvykusią atidarant dokumentą
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
 
-  - **Data\_LastLoggedTag -** Unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas įrašyti (naudojama duomenų kokybės diagnostikai)
+- **Data_Measurements** – užkoduota eilutė, kurioje pateiktas skirtingų dalių atidarymo laiko suskirstymas. Skirta našumui vertinti.
 
-  - **Data\_LinkStyles -** Nurodo, ar mes susieti su šablono stiliais
+- **Data_MoveDisabledReason** – klaida, kuri yra išjungia dokumento perkėlimą
 
-  - **Data\_MainPdod -** Dokumento identifikatorius vykstant „Office Word“ procesui.
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_Measurements -** Užkoduota eilutė, kurioje yra skirtingų dalių atidarymo laiko suskirstymas. Skirtas našumui vertinti.
+- **Data_PartsUnknown** – dokumento dalių, iš kurių nepavyko gauti duomenų, skaičius
 
-  - **Data\_MoveDisabledReason -** Klaida, kuri yra išjungia dokumento perkėlimą
+- **Data_RecoverableFailureInitiationLocationTag** – unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti
 
-  - **Data\_MoveFlightEnabled -** Ar įjungta perkėlimo testavimo funkcija
+- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas
 
-  - **Data\_PartsUnknown -** Dokumentų dalių, iš kurių nepavyko gauti duomenų, skaičius
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
-  - **Data\_RecoverableFailureInitiationLocationTag -** Unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti
+- **Data_SecondaryTag** – unikali kodo iškvietimo vietos žymė, naudojama papildomiems trikties duomenims atidaryti
 
-  - **Data\_RenameDisabledReason -** Klaida, atsirandanti, kai pervardijimas šiam dokumentui išjungtas
+- **Data_TemplateFormat** – šablono failo, kuriuo pagrįstas dokumentas, formatas
 
-  - **Data\_RenameFlightEnabled -** Ar įjungta pervardijimo testavimo funkcija
-
-  - **Data\_SecondaryTag -** Unikali kodo iškvietimo vietos žymė, naudojama papildomiems trikties duomenims atidaryti
-
-  - **Data\_TemplateFormat -** Šablono failo formatas, kuriuo pagrįstas dokumentas
-
-  - **Data\_UsesNormal -** Nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu
+- **Data_UsesNormal** – nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu
 
 
 ### <a name="office-accessibility-configuration-subtype"></a>*„Office“ pritaikymo neįgaliesiems konfigūracijos potipis*
@@ -4983,6 +5560,46 @@ Renkami šių laukų duomenys:
 
 - **Event Name** – Įvykio pavadinimas yra įvykio kategorija ir įvykio etiketė.
 
+#### <a name="officeapplesystemhealthappexitmacandios"></a>Office.Apple.SystemHealthAppExitMacAndiOS
+
+Taikoma sistemos įkrovos įvykiui, kuris fiksuoja sklandų ir nesklandų išėjimą iš programos, kad būtų galima tirti toliau.
+
+Renkami šių laukų duomenys:
+
+- **AffectedProcessResidentMemoryOnCrash** – nuolatinė sugedusios programos atmintis
+
+- **AffectedProcessSessionID** – ankstesnio išėjimo proceso seanso ID
+
+- **AffectedProcessUnsymbolicatedChecksum** – taikoma su dėklo maiša, siekiant užtikrinti simbolizaciją
+
+- **AffectedProcessVirtualMemoryOnCrash** – sugedusios programos virtualioji atmintis
+
+- **AffectedSessionBuildNumber** – taikomosios programos versija
+
+- **AffectedSessionDuration** – seanso trukmė iki gedimo, sekundėmis
+
+- **AffectedSessionIDSMatch** – Bulio logika, skirta patvirtinti, ar ataskaitos seanso ID yra toks pat, kaip ir paimtas MERP
+
+- **AffectedSessionLongBuildNumber** – ilgasis komponavimo versijos numeris
+
+- **AffectedSessionMERPSessionID** – MERP seanso ID
+
+- **AffectedSessionOSLocale** – operacinės sistemos lokalė
+
+- **AffectedSessionOSVersion** – operacinės sistemos versija
+
+- **AffectedSessionStackHash** – sugedusios programos dėklo pėdsako maiša
+
+- **AffectedSessionStartTime** – seanso pradžios data ir laikas
+
+- **AffectedSessionUAEType** – išvardijimas, suteikiantis mums informacijos apie gedimo tipą
+
+- **AffectedSessionVersion** – taikomosios programos versija
+
+- **DeviceModel** – aparatūros modelis
+
+- **ExitWasGraceful** – ar ankstesnis išėjimas iš programos buvo sklandus?
+
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
 Įvykis generuojamas, kai sugenda COM papildinys
@@ -4992,29 +5609,82 @@ Visuotinės įžvalgos: naudojama apskaičiuoti visuotiniam, su įmone nesusijus
 
 Renkami šių laukų duomenys:
 
-**ScopeId** – taikoma dabartinės gijos apimtis
+- **ScopeId** – taikoma dabartinės gijos apimtis
 
-**Method** – „Office“ metodas, kur įvyko išimtis
+- **Method** – „Office“ metodas, kur įvyko išimtis
 
-**Interface** – „Office“ sąsaja, kur įvyko išimtis
+- **Interface** – „Office“ sąsaja, kur įvyko išimtis
 
-**AddinId** – papildinio klasės ID
+- **AddinId** – papildinio klasės ID
 
-**AddinProgId** – papildinio programos ID
+- **AddinProgId** – papildinio programos ID
 
-**AddinFriendlyName** – papildinio draugiškas vardas
+- **AddinFriendlyName** – papildinio draugiškas vardas
 
-**Add-inTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
+- **Add-inTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
 
-**AddinVersion** – papildinio versija
+- **AddinVersion** – papildinio versija
 
-**AddinFileName** – papildinio failo vardas, išskyrus failo kelią
+- **AddinFileName** – papildinio failo vardas, išskyrus failo kelią
 
-**VSTOAddIn** – ar papildinys yra VSTO
+- **VSTOAddIn** – ar papildinys yra VSTO
 
-**Add-inconnectFlag** – dabartinio įkėlimo veiksena
+- **Add-inconnectFlag** – dabartinio įkėlimo veiksena
 
-**LoadAttempts** – bandymų įkelti papildinį skaičius
+- **LoadAttempts** – bandymų įkelti papildinį skaičius
+
+#### <a name="officeextensibilitycomaddinunhandledexceptionenterprise"></a>Office.Extensibility.COMAddinUnhandledExceptionEnterprise
+
+Įvykis generuojamas, kai sugenda COM papildinys.  Naudojama kaip skaitiklis apskaičiuojant konkrečių įmonių sveikatos būklę papildiniams, kurie naudojami bandomajam rezultatui, jei papildinys „parengtas atnaujinti“ gamybos metu.
+
+Renkami toliau apibūdintų laukų duomenys (turėkite omenyje, kad šie laukai parašyti kaip vietos rezervavimo ženklai, neleidžiantys suskaidyti esamų scenarijų: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName)
+
+
+- **AddinConnectFlag** – dabartinio įkėlimo veikimas
+
+- **AddinFileName** – laukas tuščias – netinkama
+
+- **AddinFriendlyName** – laukas tuščias – netinkama
+
+- **AddinId** – papildinio klasės ID
+
+- **AddinProgId** – laukas tuščias – netinkama
+
+- **AddinTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
+
+- **AddinVersion** – laukas tuščias – netinkama
+
+- **Interface** – „Office“ sąsaja, kurioje įvyko išimtis
+
+- **LoadAttempts** – bandymų įkelti papildinį skaičius
+
+- **Method** – „Office“ metodas, kuriame įvyko išimtis
+
+- **ScopeId** – taikoma dabartinės gijos apimtis
+
+- **VSTOAddIn** – ar papildinys yra VSTO
+
+#### <a name="officeextensibilitysandboxodpactivationheartbeat"></a>Office.Extensibility.Sandbox.ODPActivationHeartbeat
+
+„Office“ papildiniai veikia smėlio dėžėje. Šis įvykis surenka kontrolinių signalų informaciją apie aktyvinimus. Kai papildinys sugenda, šis įvykis surenka informaciją, kodėl jis sugedo, jeigu su susijusi su mūsų smėlio dėžėje. Naudojama tiriant tai atvejais, kai problemas nurodo klientai.
+ 
+Renkami šių laukų duomenys:
+
+- **AppId** – taikomosios programos ID
+
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, "SharePoint", failų sistema ir t. t.)
+
+- **AppInstanceId** – taikomosios programos egzemplioriaus ID 
+
+- **AssetId** – taikomosios programos ištekliaus ID
+
+- **ErrorCode** – bendras praleistas laikas 
+
+- **NumberOfAddinsActivated** – suaktyvintas papildinių skaitiklis
+
+- **RemoterType** – nurodo nuotolinio elemento, kuris naudojamas norint suaktyvinti papildinį, tipą (patikimas, nepatikimas, „Win32webView“, patikimas UDF ir t. t.)
+
+- **StoreType** – taikomosios programos kilmė
 
 #### <a name="officeextensibilityvbatelemetrybreak"></a>Office.Extensibility.VbaTelemetryBreak
 
@@ -5024,13 +5694,24 @@ Kompiuterio „Analytics“: naudojama kaip skaitiklis apskaičiuojant konkreči
 
 Renkami šių laukų duomenys:
 
-**TagId** – telemetrijos žymės ID
+- **TagId** – telemetrijos žymės ID
 
-**BreakReason** – nurodyta trikties priežastis (vykdymo, kompiliavimo, kita klaida)
+- **BreakReason** – nurodyta trikties priežastis (vykdymo, kompiliavimo, kita klaida)
 
-**SolutionType** – sprendimo tipas (dokumentas, šablonas, programos papildinys, COM papildinys)
+- **SolutionType** – sprendimo tipas (dokumentas, šablonas, programos papildinys, COM papildinys)
 
-**Data.ErrorCode** – klaidos kodas, kurį nurodė VBA modulis
+- **Data.ErrorCode** – klaidos kodas, kurį nurodė VBA modulis
+
+
+#### <a name="officefindtimeappfailedtostart"></a>Office.FindTime.AppFailedToStart
+
+Surinkta, kai taikomoji programa nepasileidžia dėl netikėtos klaidos paleidimo metu. Naudojama sekti išimtis ir gedimus.  Padeda stebėti ir derinti taikomosios programos sveikatą.
+
+Renkami šių laukų duomenys: 
+
+- **DateTime** – laiko žyma, kada įvykis užregistruotas.
+
+- **EventName** – registruojamo įvykio pavadinimas.
 
 #### <a name="officeoutlookdesktophangbucketmetrics"></a>Office.Outlook.Desktop.HangBucketMetrics
 
@@ -5220,6 +5901,52 @@ Renkami šių laukų duomenys:
 
   - **AddinProgId** – papildinio programos identifikatorius
 
+#### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
+
+Taikoma sistemos įkrovos įvykiui, kuris fiksuoja nesklandų išėjimą iš programos, kad būtų galima tirti toliau.
+
+Renkami šių laukų duomenys:
+
+- **AffectedProcessAppBuild** – komponavimo versijos numeris
+
+- **AffectedProcessAppBuildRevision** – komponavimo versijos tikslinimo numeris
+
+- **AffectedProcessAppMajorVer** – pagrindinės taikomosios programos versijos numeris
+
+- **AffectedProcessAppMinorVer** – papildomos taikomosios programos versijos numeris
+
+- **AffectedProcessAppName** – taikomosios programos pavadinimas
+
+- **AffectedProcessResidentMemoryOnCrash** – nuolatinė sugedusios programos atmintis
+
+- **AffectedProcessUnsymbolicatedChecksum** – taikoma su dėklo maiša, siekiant užtikrinti simbolizaciją
+
+- **AffectedProcessVirtualMemoryOnCrash** – sugedusios programos virtualioji atmintis
+
+- **AffectedSessionDuration** – seanso trukmė iki gedimo, sekundėmis
+
+- **AffectedSessionLongBuildNumber** – ilgasis komponavimo versijos numeris
+
+- **CrashedProcessSessionID** – taikomosios programos gedimo proceso seanso ID
+
+- **DetectionTime** – taikomosios programos gedimo data ir laikas
+    
+- **DeviceModel** – aparatūros modelis
+
+- **MERPSessionID** – MERP seanso ID
+
+- **ReportingOsLocaleTag** – operacinės sistemos lokalė
+
+- **ReportingOSVerStr** – operacinės sistemos versija
+
+- **SessionBuildNumber** – sugedusios taikomosios programos versija
+
+- **SessionIDSMatch** – Bulio logika, skirta patvirtinti, ar ataskaitos seanso ID yra toks pat, kaip ir paimtas MERP
+
+- **SessionVersion** – sugedusios taikomosios programos versija – **StackHash** – sugedusios taikomosios programos dėklo -pėdsako maiša
+
+- **UAEType** – išvardijimas, suteikiantis mums informacijos apie įvykusios gedimo tipą
+
 #### <a name="officethisaddinstartupfailed"></a>Office.ThisAddIn.StartupFailed
 
 Renka išimties informaciją, kuri įvyko paleidžiant Srautinio duomenų siųstuvo programą. Šie duomenys naudojami programos sveikatai stebėti. Šis įvykis sugeneruojamas iš „Microsoft“ srautinio duomenų siųstuvo, skirto „Excel“ papildiniui.
@@ -5234,6 +5961,27 @@ Renkami šių laukų duomenys:
 ### <a name="application-feature-performance-subtype"></a>*Taikomosios programos funkcijų našumo potipis*
 
 Scenarijų, tokių kaip programos paleidimas ar failo atidarymas, prastas atsakymo laikas ar našumas.
+
+#### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
+
+Šis įvykis suaktyvinamas, kai klientas naudoja „Office“ papildinį ir paslaugai teikti iškviečia raiškųjį API. Naudojamas norint įvertinti paslaugos patikimumą, veikimą ir raiškiojo API metodo naudojimą.
+ 
+Renkami šių laukų duomenys:
+
+- **Api** – visas API pavadinimas
+
+- **DispFlag** – bitų žymė, aprašanti metodo iškvietimo tipą (pavyzdžiui, 0 x 1 = METHOD, 0 x 2 = PROPERTYGET, 0 x 4 = PROPERTYPUT, 0 x 8 = PROPERTYPUTREF)
+
+- **DispId** – iškviečiamo metodo išsiuntimo ID
+
+- **HResult** – metodo iškvietimo „HResult“
+
+- **Latency** – iškvietimo gaištis mikrosekundėmis
+
+- **ReqId** – GUID, skirtas paketo užklausai, kuriai šis metodas priklauso
+
+- **TypeId** – GUID, skirtas sąsajai, kuriai šis metodas iškviečiamas
+
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -5273,6 +6021,29 @@ Renkami šių laukų duomenys:
 
   - **ShowScanPstDlg** – Parduotuvės taisymo patikrinimo metu rodomas klaidos pranešimas
 
+
+#### <a name="officeoutlookmacbootperf"></a>Office.Outlook.Mac.BootPerf
+
+Renkamas laikas, kurio reikia paleisti „Outlook“. „Outlook“ paleidimo laikas aktyviai stebimas, kad aptiktų ir diagnozuotų regresiją. Jis taip pat naudojamas klientų sudėtingesniems atvejams nustatyti ir laikui bėgant pagerinti įkrovos veikimą.
+
+Renkami šių laukų duomenys:
+
+- **MacOLKBootPerfDuration** – bendras sistemos įkrovos laikas
+
+- **MacOLKBootPerfID** – įkrovai skirto laiko identifikatorius
+
+
+#### <a name="officeoutlookmacperformanceunresponsive"></a>Office.Outlook.Mac.PerformanceUnresponsive
+
+Naudojamas identifikuoti vartotojams įtakos turinčias „Outlook“ problemas, galinčias pasireikšti pablogėjusiu veikimu. 
+
+Renkami šių laukų duomenys:
+
+- **Duration** – prabėgęs pablogėjusio veikimo laikas
+
+- **EventType** – įvykio, per kurį pablogėjo veikimas, tipas
+
+
 #### <a name="officeperformanceboot"></a>Office.Performance.Boot
 
 Surinkta taikomosios programos „Office“ paleidimo metu. Nurodoma, ar paleidimas buvo pradėtas atidarant failą, ar paleidžiant per meniu Pradžia, ar tai buvo pirmasis taikomosios programos paleidimas, kiek atminties naudoja taikomoji programa, ir ar vartotojui buvo parodyta blokuojama vartotojo sąsaja. Naudojama išmatuoti, kaip greitai veikia taikomosios programos „Office“ paleidimas ir kiek atminties naudojama paleidimo metu, kad užtikrinti priimtiną vartotojo patirtį.
@@ -5291,7 +6062,29 @@ Renkami šių laukų duomenys:
 
   - **VirtualSetMB** – proceso paketo atminties kiekis megabaitais. (tik „MacOS“/ „iOS“)
 
-  - **Workingsetpeakmb** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
+  - **WorkingSetPeakMB** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
+
+#### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
+
+Kritinis signalas, naudojamas vartotojo sąveikai su dialogu „Prisijunkite prie „Office Insider“ stebėti. Jis naudojamas nustatyti bet kokioms problemoms, kurios kyla vykdant naudotojo inicijuotus pakeitimus, tokios kaip prisijungimas prie „Office Insider“ programos, pasitraukimas iš jos arba „Office Insider“ lygio pakeitimas.
+
+Renkami šių laukų duomenys:
+
+- **Data_AcceptedContactMeNew** – nurodo, ar vartotojas sutiko, kad prisijungus prie „Office Insider“ programos, „Microsoft“ su juo susisiektų
+
+- **Data_InsiderLevel** – „Insider“ lygis atidarant dialogo langą „Prisijunkite prie „Office Insider“
+
+- **Data_InsiderLevelNew** – „Insider“ lygis uždarant dialogo langą „Prisijunkite prie „Office Insider“
+
+- **Data_IsInternalUser** – nurodo, ar taikomoji programa vykdoma naudojant „Microsoft“ įmonės paskyros kredencialus.
+
+- **Data_IsInternalUser** – nurodo, ar kodas gali nustatyti, ar taikomoji programa vykdoma naudojant „Microsoft“ įmonės paskyros kredencialus.
+
+- **Data_OpenNewsletterWebpage** – nurodo, ar „Office Insider“ informacinio biuletenio prenumeratos saitas buvo paspaustas su sąlyga, kad vartotojas prisijungė prie „„Office Insider“ programos, naujienlaiškio prenumeratos funkcija įjungta ir vartotojas neatšaukė „Office Insider“ naujienlaiškio prenumeratos svetainės atidarymo.
+    
+- **Data_RegisterInsider** – „Office Insider“ registracijos būsena
+
+- **Data_RegisterInsiderHr** – „Office Insider“ registracijos rezultatų kodas
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
@@ -5307,31 +6100,6 @@ Renkami šių laukų duomenys:
 
   - **Data_Reason** – nenaudojamas
 
-#### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
-
-„Office Insider“ dialogo lango naudojimo ir vykdymo veiklos sekimas.
-
-Renkami šių laukų duomenys:
-
-  - **Data_AcceptedContactMeNew** – kai pasirenkamas „Insider“ lygis, bei kai buvo sėkmingai įrašytas vartotojo pasirinkimas, nurodo, ar vartotojas sutiko, kad su juo susisiektų „Microsoft“.
-
-  - **Data_DialogChoice** = nenaudojamas
-  
-  - **Data_DialogId** = nenaudojamas
-  
-  - **Data_Event** – nenaudojamas
-  
-  - **Data_EventInfo** – nenaudojamas
-  
-  - **Data_InsiderLevel** – „Insider“ lygis, kai vartotojui pirmą kartą rodomas dialogo langas.
-  
-  - **Data_InsiderLevelNew** – naujas vartotojo pasirinktas „Insider“ lygis.
-  
-  - **Data_IsInternalUser** – nurodo, ar taikomoji programa vykdoma naudojant @microsoft.com paskyros kredencialus.
-  
-  - **Data_IsInternalUser** – nurodo, ar kodas gali nustatyti, ar taikomoji programa vykdoma naudojant @microsoft.com paskyros kredencialus.
-  
-  - **Data_OpenNewsletterWebpage** – kai įgalinta „Office Insider“ naujienlaiškio prenumeratos funkcija ir vartotojas pereina į „Insider“ lygį iš gamybos, nurodo, ar buvo pradėtas naršyklės nukreipimas į „Office Insider“ naujienlaiškio prenumeratos saitą.
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender
 
@@ -5431,6 +6199,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_Timeout** – kiek laiko truko „pakibimas“
 
+#### <a name="officeextensibilitysandboxodperrornotification"></a>Office.Extensibility.Sandbox.ODPErrorNotification
+
+Seka įvairius iš smėlio dėžės gautus klaidų pranešimus. Naudojamas siekiant aptikti klaidų scenarijus smėlio dėžėje ir juos ištaisyti, taip siekiant pagerinti vartotojo produktyvumą
+ 
+Renkami šių laukų duomenys:
+
+- **AppId** – taikomosios programos ID
+
+- **AppUrl** – perkeltos taikomosios programos URL 
+
+- **Result** – rezultatų klaidos kodas
+
+
 #### <a name="officegraphicsarcexceptions"></a>Office.Graphics.ARCExceptions 
 
 Ši išimties ataskaitų teikimo informacija yra svarbi vertinant bendrą grafikos rietuvės sveikatą, taip pat nustatant kodo dalis, kuriose dažniai pasitaiko gedimų, siekiant nustatyti tyrimo prioritetą. Ši išimties ataskaitų teikimo informacija yra svarbi vertinant bendrą grafikos rietuvės sveikatą, taip pat nustatant kodo dalis, kuriose dažniai pasitaiko gedimų. Tai padeda inžinieriui nustatyti, kurios generavimo problemos turi įtakos daugeliui vartotojų, leidžia mums nustatyti mūsų prioritetą sprendžiant problemas, kurios aktualios didžiausiam vartotojų skaičiui.
@@ -5501,33 +6282,33 @@ Renka sėkmingus ir nesėkmingus funkcijų Persiųsti, Persiųsti kaip priedą i
 
 Renkami šių laukų duomenys:
 
-  - **CountExceptionForward- Persiųstų susitikimų išimčių skaičius**
+  - **CountExceptionForward** – persiųstų susitikimų išimčių skaičius
 
-  - **CountExceptionForwardAsiCal- Kaip „iCal“ persiųstų susitikimų išimčių skaičius**
+  - **CountExceptionForwardAsiCal** – kaip „iCal“ persiųstų susitikimų išimčių skaičius
 
-  - **CountExceptionForwardInSplit- Iš išskaidyto juostelės meniu persiųstų susitikimų išimčių skaičius**
+  - **CountExceptionForwardInSplit** – iš išskaidyto juostelės meniu persiųstų susitikimų išimčių skaičius
 
-  - **CountExceptionForwardWithAttach- Kaip priedų persiųstų susitikimų išimčių skaičius**
+  - **CountExceptionForwardWithAttach** – kaip priedas persiųstų susitikimų išimčių skaičius
 
-  - **CountRecurringForward Persiųstų pasikartojančių susitikimų skaičius**
+  - **CountRecurringForward** – persiųstų pasikartojančių susitikimų skaičius
 
-  - **CountRecurringForwardAsiCal- Kaip „iCal“ persiųstų pasikartojančių susitikimų skaičius**
+  - **CountRecurringForwardAsiCal** – kaip „iCal“ persiųstų pasikartojančių susitikimų skaičius
 
-  - **CountRecurringForwardInSplit**- Iš išskaidyto juostelės meniu persiųstų pasikartojančių susitikimų skaičius
+  - **CountRecurringForwardInSplit** – iš išskaidyto juostelės meniu persiųstų pasikartojančių susitikimų skaičius
 
-  - **CountRecurringForwardWithAttach- Kaip priedas persiųstų pasikartojančių susitikimų skaičius**
+  - **CountRecurringForwardWithAttach** – kaip priedas persiųstų pasikartojančių susitikimų skaičius
 
-  - **CountSingleForward- Persiųstų atskirų susitikimų skaičius**
+  - **CountSingleForward** – persiųstų atskirų susitikimų skaičius
 
-  - **CountSingleForward- Kaip „iCal“ persiųstų atskirų susitikimų skaičius**
+  - **CountSingleForwardAsiCal** – kaip „iCal“ persiųstų atskirų susitikimų skaičius
 
-  - **CountSingleForwardInSplit- Iš išskaidyto juostelės meniu persiųstų atskirų susitikimų skaičius**
+  - **CountSingleForwardInSplit** – iš išskaidyto juostelės meniu persiųstų atskirų susitikimų skaičius
 
-  - **CountSingleForwardWithAttach- Kaip priedas persiųstų atskirų susitikimų skaičius**
+  - **CountSingleForwardWithAttach** – kaip priedas persiųstų atskirų susitikimų skaičius
 
-  - **HResult- ErrorCode**
+  - **HResult** – klaidos kodas
 
-  - **OlkViewName – nurodo pašto, kalendoriaus ar inspektorius rodinį**
+  - **OlkViewName** – nurodo pašto, kalendoriaus ar inspektorius rodinį
 
 #### <a name="officeoutlookdesktopoutlookcalendarusageerrmeetrcptreplyactionsruleo16"></a>Office.Outlook.Desktop.OutlookCalendarUsageErr.MeetRcpt.ReplyActions.Rule.O16
 
@@ -5535,33 +6316,33 @@ Renka sėkmingus ir nesėkmingus funkcijų Atsakyti, Atsakyti visiems, Atsakyti 
 
 Renkami šių laukų duomenys:
 
-  - **CountExceptionReply -susitikimų atsakymų dėl išimčių skaičius**
+  - **CountExceptionReply** – susitikimų atsakymų dėl išimčių skaičius
 
-  - **CountExceptionReplyAll - Susitikimų atsakymų dėl išimčių skaičius**
+  - **CountExceptionReplyAll** – susitikimų atsakymų Atsakyti visiems dėl išimčių skaičius
 
-  - **CountExceptionReplyAllWithIM- Susitikimų atsakymų Atsakyti visiems IM skaičius**
+  - **CountExceptionReplyAllWithIM** – susitikimų atsakymų Atsakyti visiems IM skaičius
 
-  - **CountExceptionReplyWithIM-- Susitikimų atsakymų Atsakyti IM skaičius**
+  - **CountExceptionReplyWithIM** – susitikimų atsakymų Atsakyti IM skaičius
 
-  - **CountRecurringReply – Pasikartojančių susitikimų atsakymų Atsakyti IM skaičius**
+  - **CountRecurringReply** – pasikartojančių susitikimų atsakymų skaičius
 
-  - **CountRecurringReplyAll- Pasikartojančių susitikimų atsakymų Atsakyti visiems skaičius**
+  - **CountRecurringReplyAll** – pasikartojančių susitikimų atsakymų Atsakyti visiems skaičius
 
-  - **CountRecurringReplyAllWithIM- Pasikartojančių susitikimų atsakymų Atsakyti visiems IM skaičius**
+  - **CountRecurringReplyAllWithIM** – pasikartojančių susitikimų atsakymų Atsakyti visiems IM skaičius
 
-  - **CountRecurringReplyWithIM- Pasikartojančių susitikimų atsakymų Atsakyti IM skaičius**
+  - **CountRecurringReplyWithIM** – pasikartojančių susitikimų atsakymų Atsakyti IM skaičius
 
-  - **CountSingleReply- skaičių Atskirų susitikimais atsakymų skaičius**
+  - **CountSingleReply** – atskirų susitikimų atsakymų skaičius
 
-  - **CountSingleReplyAll- Atskirų susitikimų atsakymų Atsakyti visiems skaičius**
+  - **CountSingleReplyAll** – atskirų susitikimų atsakymų Atsakyti visiems skaičius
 
-  - **CountSingleReplyAllWithIM- Atskirų susitikimų atsakymų Atsakyti visiems IM skaičius**
+  - **CountSingleReplyAllWithIM** – atskirų susitikimų atsakymų Atsakyti visiems IM skaičius
 
-  - **CountSingleReplyWithIM- Atskirų susitikimų atsakymų Atsakyti IM skaičius**
+  - **CountSingleReplyWithIM** – atskirų susitikimų atsakymų Atsakyti IM skaičius
 
-  - **HResult- ErrorCode**
+  - **HResult** – klaidos kodas
 
-  - **OlkViewName – nurodo pašto, kalendoriaus ar inspektorius rodinį**
+  - **OlkViewName** – nurodo pašto, kalendoriaus ar inspektorius rodinį
 
 #### <a name="officeoutlookdesktopoutlookprivsdlgsingleuserloadfail"></a>Office.Outlook.Desktop.OutlookPrivsDlgSingleUser.LoadFail
 
@@ -5573,13 +6354,37 @@ Renkami šių laukų duomenys:
 
   - **CountCreatePIMAccount** – Kiek kartų vartotojas sukūrė PIM profilį
 
+#### <a name="officeoutlookmacmacolkasserts"></a>Office.Outlook.Mac.MacOLKAsserts
+
+Naudojamas identifikuoti vartotojams įtakos turinčias „Outlook“ problemas, galinčias pasireikšti gedimais ar pablogėjusiu veikimu. 
+
+Renkami šių laukų duomenys:
+
+- **Category** – pasireiškimo tipas
+
+- **CollectionTime** – pasireiškimo gavimo laikas
+
+
+#### <a name="officeoutlookmacmacolkerrors"></a>Office.Outlook.Mac.MacOLKErrors
+
+Naudojamas identifikuoti vartotojams įtakos turinčias „Outlook“ problemas, galinčias pasireikšti gedimais ar pablogėjusiu veikimu. 
+
+Renkami šių laukų duomenys:
+
+- **Category** – klaidos tipas
+
+- **CollectionTime** – klaidos gavimo laikas
+
+- **ThreadId** – gijos identifikatorius
+
+
 #### <a name="officesystemsystemhealthasserts"></a>Office.System.SystemHealthAsserts
 
 Šio įvykio nurodytos klaidos padeda suprasti, kada blogėja klientų patirtis. Daugelis šių „ShipAsserts“ veda yra gedimų priežastis ir ši informacija leidžia daugelį jų išspręsti. Renka produkto, kuris padeda nustatyti klaidas, „ShipAsserts“.
 
 Renkami šių laukų duomenys:
 
-Skaičiavimas – kiekvieno pasireiškimo, apie kurį pranešta, skaičius
+ - **Count** – kiekvieno pasireiškimo, apie kurį pranešta, skaičius
 
   - **EndTime** – Laikas, kai užfiksuotas paskutinis pasireiškimas, apie kurį pranešta
 
