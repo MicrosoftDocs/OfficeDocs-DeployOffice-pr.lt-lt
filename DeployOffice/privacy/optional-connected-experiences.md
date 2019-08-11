@@ -13,19 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: f1d8c16b7e267d49735814ee9d393c578dbf3c28
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: e20a2cd70b8c5fbc47abac7288627cd2783855e7
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701332"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239143"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
 Jei turite darbo arba mokymo įstaigos paskyrą, jūsų organizacijos administratorius galbūt suteikė jums galimybę pasiekti vieną arba daugiau debesų technologija pagrįstų paslaugų (dar vadinamų pasirinktinėmis prisijungus naudojamomis funkcijomis) naudojant „Office 365 ProPlus“ programas. Šios debesų technologija pagrįstos paslaugos yra pasirinktinės. Ar jas naudoti, sprendžiate jūs. Jos jums teikiamos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygas. Kai kuriais atvejais gali būti taikomos ir kitos sąlygos. Šiame straipsnyje išvardytos debesų technologijos pagrindu veikiančios paslaugos, išsamiau paaiškintos jų naudojimo sąlygos ir paaiškinta, kaip galite jas bet kada išjungti arba įjungti.
 
 > [!NOTE]
-> Jei esate administratorius, žr. [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md), kur sužinosite, kaip suteikti arba uždrausti galimybę vartotojams pasiekti pasirinktines prisijungus naudojamas paslaugas.
+> Jei esate administratorius, žr. toliau pateiktus straipsnius, kad sužinotumėte, kaip suteikti arba uždrausti galimybę vartotojams pasiekti pasirinktines prisijungus naudojamas paslaugas:
+> - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+> - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Jei naudojate šias paslaugas, su kokiomis naudojimo sąlygomis turite sutikti?
 
@@ -50,6 +52,10 @@ Kai naudojate „Office“ parduotuvę, pačios parduotuvės svetainės naudojim
 ### <a name="insert-online-video"></a>Internetinio vaizdo įrašo įterpimas
 
 [Internetinio vaizdo įrašo įterpimo](https://support.office.com/article/8340EC69-4CEE-4FE1-AB96-4849154BC6DB) funkcija suteikia galimybę į dokumentą įterpti vaizdo įrašų failus. Internetinio vaizdo įrašo įterpimo funkcijai taikoma [„Microsoft“ paslaugų teikimo sutartis](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimas](https://privacy.microsoft.com/). Papildomos naudojimo sąlygos gali būti taikomos, jei pasiekiate turinį iš trečiųjų šalių šaltinių. Pavyzdžiui, kai prisijungiate prie „YouTube“, taikomos jos [naudojimo sąlygos](https://www.youtube.com/t/terms) ir [privatumo patvirtinimas](https://policies.google.com/privacy). „Microsoft“ ateityje gali įtraukti kitų vaizdo įrašų medžiagos tiekėjų.
+
+### <a name="microsoft-error-reporting-program-merp"></a>„Microsoft“ klaidų ataskaitų programa (MERP) 
+
+MERP prisijungia prie „Watson.microsoft.com“ tarnybos, kad galėtų siųsti diagnostikos duomenis, kai sugenda „Office“ kliento programos, kurios veikia „Mac“ įrenginiuose. Ji priklauso „Microsoft“ ir taikomos [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [„Microsoft“ privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygos. MERP netaikoma „Office“ kliento programoms, kurios veikia „Windows“.
 
 ### <a name="research"></a>Tyrimai
 
@@ -80,9 +86,13 @@ Pasiūlyti funkciją yra funkcija, kurią naudodami galite pateikti idėjų apie
 
 Norėdami nustatyti, ar administratorius suteikė jums galimybę pasiekti kokias nors pasirinktines prisijungus naudojamas funkcijas „Office 365 ProPlus“ programoje „Windows“ įrenginyje, eikite į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus**. Jei administratorius jums nesuteikė valdymo, matysite pranešimą „Organizacijos administratorius valdo jūsų privatumo parametrus ir nusprendė išjungti pasirinktines prisijungus naudojamas funkcijas“.
 
+Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
+
 ## <a name="your-privacy-settings"></a>Jūsų privatumo parametrai
 
 Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas „Office 365 ProPlus“ programoje „Windows“ įrenginyje, galite bet kada eiti į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkti **Valdyti parametrus** norėdami valdyti parametrus. Įjungę turėsite galimybę naudoti šiame straipsnyje aprašytas paslaugas, kai to norėsite. Išjungus jos bus nepasiekiamos.
+
+Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
 ## <a name="diagnostic-data"></a>Diagnostikos duomenys
 
@@ -93,3 +103,4 @@ Kai naudojate bet kurias šiame straipsnyje aprašytas pasirinktines debesų tec
 
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [Reikalingi „Office“ tarnybų duomenys](required-service-data.md)
+- [Paskyros privatumo parametrai](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

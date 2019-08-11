@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 3b0ac61cf01a588e3af85d1eb83d4b2fd7e8b63e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 1ae21c76eb0cc4addcc0a26e7ca1330aef99eee1
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701792"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238229"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -27,8 +27,10 @@ ms.locfileid: "34701792"
 > - „Office 365 ProPlus“ ir „Office 365 Business“
 > - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
 > - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+>
+> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
-„Office 365“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
+„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Prisijungus naudojamos funkcijos, kurios analizuoja turinį
 
@@ -129,7 +131,10 @@ Jei esate prisijungę naudodami „Microsoft“ paskyrą, atidarykite „Office�
 
 Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organizacijos administratorius nuspręs, ar šios prisijungus naudojamos funkcijos jums pasiekiamos. Nematysite jokių šių prisijungus naudojamų funkcijų pasirinkimo galimybių dalyje **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus**.
 
-Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams Daugiau informacijos apie šių strategijos parametrų naudojimą žr. [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md).
+> [!NOTE]
+> Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
+
+Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams Daugiau informacijos apie šių strategijos parametrų naudojimą žr. [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md) ir [Nuostatų naudojimas siekiant tvarkyti „Office for Mac“ privatumo valdiklius](mac-privacy-preferences.md).
 
 Jei nuspręsite išjungti kai kurių tipų prisijungus naudojamas funkcijas, šių prisijungus naudojamų funkcijų juostelės arba meniu komanda bus rodoma pilka arba bus rodomas klaidos pranešimas, kai bandysite jas naudoti.
 
@@ -141,3 +146,4 @@ Net jei išjungsite šias prisijungus naudojamas funkcijas, kai kurios „Office
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
 - [Reikalingi „Office“ tarnybų duomenys](required-service-data.md)
 - [Pagrindinės „Office“ tarnybos](essential-services.md)
+- [Paskyros privatumo parametrai](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

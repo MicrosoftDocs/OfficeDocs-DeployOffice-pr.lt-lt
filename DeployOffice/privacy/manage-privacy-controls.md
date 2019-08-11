@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo kontrolės mechanizmus "Office 365 ProPlus" naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: 5d38a944c7fe0c2c17cb6cd50339908b1cb7ae6e
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 55c6c6477d4c03d94048c98c961179686eb29c83
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701248"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238978"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus
 
@@ -41,6 +41,9 @@ Toliau pateikiami penki naujos strategijos parametrai:
 - Leisti „Office" naudoti prisijungus naudojamas funkcijas
 
 Šie strategijos parametrai gali būti įdiegti naudojant arba grupės strategiją, arba [„Office“ debesies strategijos tarnybą](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Jei naudojate grupės strategiją, turite atsisiųsti naujausius administravimo šablonų failus (ADMX/ADML) iš [„Microsoft“ atsisiuntimo centro](https://www.microsoft.com/download/details.aspx?id=49030).
+
+> [!NOTE]
+> Informaciją apie „Office for Mac“ privatumo valdiklių valdymą žr. [Nuostatų naudojimas siekiant valdyti „Office for Mac“ privatumo valdiklius](mac-privacy-preferences.md).
 
 Jei naudojate grupės strategijos valdymo įrankį, šie strategijos parametrai yra įrankio srityje Vartotojo konfigūracija\\Politikos\\Administravimo šablonai\\„Microsoft Office 2016“\\Privatumas\\ Patikimumo centras.
 
@@ -117,7 +120,7 @@ Be anksčiau minėtų prisijungus naudojamų funkcijų, kurios įtrauktos į „
 
 Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams, galite naudoti strategijos parametrą *Leisti „Office“ naudoti papildomas pasirinktines prisijungus naudojamas funkcijas*. Jei nekonfigūruosite šio strategijos parametro, šios papildomos pasirinktinės prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
-Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę dalyje **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus**. Vartotojai turės šį pasirinkimą, tik jei jie bus prisijungę prie „Office“ naudodamiesi organizacijos kredencialais (kartais vadinamais darbo arba mokymo įstaigos paskyra), o ne naudodami savo asmeninį el. pašto adresą.
+Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę eidami į [privatumo parametrų dialogo langą](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vartotojai turės šį pasirinkimą, tik jei jie bus prisijungę prie „Office“ naudodamiesi organizacijos kredencialais (kartais vadinamais darbo arba mokymo įstaigos paskyra), o ne naudodami savo asmeninį el. pašto adresą.
 
 Be to, kai kurios iš šių pasirinktinių prisijungus naudojamų funkcijų taip pat laikomos pasirinktinai naudojamomis funkcijomis, kurios analizuoja turinį arba atsisiunčia internetinį turinį. Pvz., Internetinių paveikslėlių įterpimas yra pasirinktinė prisijungus naudojama funkcija, kurią teikia „Microsoft Bing“, tačiau ji taip pat laikoma prisijungus naudojama funkcija, kuri atsisiunčia internetinį turinį. Taigi, jei išjungsite strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios atsisiunčia internetinį turinį*, strategijos parametras Internetinių paveikslėlių įterpimas nebus pasiekiamas vartotojams. Jis nebus pasiekiamas net jei įjungėte strategijos parametrą *Leisti "Office" naudoti papildomas pasirinktines prisijungus naudojamas funkcijas*. Daugiau informacijos apie tai, kurios prisijungus naudojamos funkcijos analizuoja turinį arba atsisiunčia internetinį turinį, žiūrėkite [Prisijungus naudojamos funkcijos „Office“](connected-experiences.md).
 
@@ -174,7 +177,7 @@ Paprastai, kai vienas strategijos parametrų sukonfigūruotas įjungti konkreči
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Dialogo langas apie pasirinktines prisijungus naudojamas funkcijas
 
-Jei pasirinkote teikti vartotojams [pasirinktines prisijungus naudojamas funkcijas](optional-connected-experiences.md), pirmą kartą vartotojams atidarius „Office“ programą, kuri jau bus atnaujintos 1904 versijos, pasirodys informacinis dialogo langas. Šis dialogo langas informuoja vartotojus, kad suteikėte jiems galimybę naudoti šias pasirinktines prisijungus naudojamas funkcijas, ir, kad norėdami pakeisti šį parametrą jie gali eiti į **Failas** > **Paskyra**  >  ** Paskyros privatumas**.
+Jei pasirinkote teikti vartotojams [pasirinktines prisijungus naudojamas funkcijas](optional-connected-experiences.md), pirmą kartą vartotojams atidarius „Office“ programą, kuri jau bus atnaujintos 1904 ar vėlesnės versijos, pasirodys informacinis dialogo langas. Šis dialogo langas informuoja vartotojus, kad suteikėte jiems galimybę naudoti šias pasirinktines prisijungus naudojamas funkcijas, ir, kad norėdami pakeisti šį parametrą jie gali eiti į **Failas** > **Paskyra**  >  ** Paskyros privatumas**.
 
 ### <a name="privacy-settings-removed-from-the-office-ui"></a>Iš „Office“ vartotojo sąsajos pašalinti privatumo parametrai 
 

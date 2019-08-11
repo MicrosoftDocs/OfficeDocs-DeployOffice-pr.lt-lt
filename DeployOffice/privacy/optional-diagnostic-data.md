@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia „Office“ administratoriams informacijos apie pasirinktinius duomenis naudojant „Office“, įskaitant keletą įvykių pavyzdžių.
 hideEdit: true
-ms.openlocfilehash: cf3a2488d985dd238456e86466688036c0c61ccb
-ms.sourcegitcommit: e6135e9937ef07785f0ce0eb6282ceece401f96e
+ms.openlocfilehash: e4b42e97d7d954a968ad2a1366c6f64235c1d7f0
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35430091"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239014"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Pasirinktiniai „Office“ diagnostikos duomenys
 
@@ -27,6 +27,8 @@ ms.locfileid: "35430091"
 > - „Office 365 ProPlus“ ir „Office 365 Business“
 > - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
 > - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+>
+> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
@@ -47,6 +49,7 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 
 ## <a name="categories-of-optional-diagnostic-data"></a>Pasirinktinių diagnostikos duomenų kategorijos
 

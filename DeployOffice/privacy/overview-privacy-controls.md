@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirta „Office 365 ProPlus“ privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: a65fd2a6b7169c9098d233a926041d9cbc599886
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: a362a50b3d75e0792623745ef32fb93b4e458a41
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701123"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238935"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių apžvalga
 
@@ -34,9 +34,11 @@ Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos el
 
 > [!IMPORTANT]
 > - Šie keitimai taikomi „Access“, „Excel“, „OneNote“, „Outlook“, „PowerPoint“, „Publisher“ ir „Word“.
-> - Šie keitimai taip pat taikomi „Project“ ir „Visio“ kompiuterio versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
-> - 1904 versiją tikimasi išleisti pusmetiniame naujinimų kanale (tiksliniame) rugsėjo mėn. ir pusmetiniame naujinimo kanale 2020 m. sausio mėn.
-> - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“, „Office for Mac“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
+> - Šie keitimai taikomi ir toliau nurodytiems produktams:
+>   - „Office for Mac“ (16.28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
+>   - „Project“ ir „Visio“ kompiuterio 1904 ar vėlesnėms versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+> - 1904 versijoje išleisti privatumo valdikliai turėtų būti pasiekiami pusmetiniame naujinimų kanale (tiksliniame) 2019 m. rugsėjo mėn. ir pusmetiniame naujinimo kanale 2020 m. sausio mėn.
+> - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikos duomenys, siunčiami „Microsoft“ iš „Office 365 ProPlus“
 
@@ -63,12 +65,12 @@ Vartotojai negalės pakeisti diagnostikos duomenų lygio savo įrenginiuose, jei
 Šie diagnostikos duomenys neapima vartotojų vardų, jų e. pašo adresų arba jų „Office“ failų turinio. Mūsų sistema sukuria unikalųjį ID, kuris susiejamas su vartotojo diagnostikos duomenimis. Kai gauname diagnostikos duomenis, rodančius, kad 100 kartų įvyko vienos iš mūsų programų gedimas, pagal šį unikalųjį ID galime nustatyti, ar programos gedimas įvyko 100 kartų vienam vartotojui, ar po vieną kartą 100 skirtingų vartotojų. Nenaudojame šio unikaliojo ID, kad identifikuotume konkretų vartotoją.
 
 Norėdami pamatyti, kokie diagnostikos duomenys siunčiami „Microsoft“, galite naudoti diagnostikos duomenų peržiūros programą, kurią galite nemokamai atsisiųsti ir įdiegti iš „Microsoft“ parduotuvės.
-
-Jei reikia daugiau informacijos, žr.:
+7 Jei reikia daugiau informacijos, žr.:
 
 - [Būtinieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-office-365-proplus"></a>„Office 365 ProPlus“ prisijungus naudojamos funkcijos
@@ -93,6 +95,7 @@ Jei reikia daugiau informacijos, žr.:
 
 - [„Office“ prisijungus naudojamos funkcijos](connected-experiences.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 
 ## <a name="optional-connected-experiences-for-office-365-proplus"></a>Pasirinktinės „Office 365 ProPlus“ prisijungus naudojamos funkcijos
 
@@ -102,12 +105,13 @@ Tai pasirinktinės prisijungus naudojamos funkcijos, kurioms galioja ne jūsų o
 
 Kadangi šioms pasirinktinėms prisijungus naudojamoms paslaugoms taikomos atskiros sąlygos, jas valdote atskirai nuo pirmiau minėtų prisijungus naudojamų paslaugų. Kaip organizacijos administratorius galėsite naudodami strategijos parametrą pasirinkti, ar padaryti šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas (kaip grupę) vartotojams. Jei nekonfigūruosite šio strategijos parametro, šios pasirinktinės prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
-Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę dalyje **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus**. Vartotojai turės šią pasirinkimo galimybę, tik jei jie bus prisijungę prie „Office“ naudodami organizacijos kredencialus (kartais vadinamus darbo arba mokymo įstaigos paskyra), o ne prisijungę naudodami savo asmeninį el. pašto adresą.
+Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę dalyje eidami į [privatumo parametrų dialogo langą](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vartotojai turės šią pasirinkimo galimybę, tik jei jie bus prisijungę prie „Office“ naudodami organizacijos kredencialus (kartais vadinamus darbo arba mokymo įstaigos paskyra), o ne prisijungę naudodami savo asmeninį el. pašto adresą.
 
 Jei reikia daugiau informacijos, žr.:
 
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Reikalingi prisijungus naudojamų funkcijų tarnybų duomenys
 

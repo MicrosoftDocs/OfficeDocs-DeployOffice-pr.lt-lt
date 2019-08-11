@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Leidžia „Office“ administratoriams apžvelgti privalomuosius tarnybų duomenis, kurie renkami apie „Office“ prijungtąsias funkcijas.
 hideEdit: true
-ms.openlocfilehash: 9a276e00f5c852ffda00844c5e1aaa9187f581c3
-ms.sourcegitcommit: 3f5de6281b8e92c6c41a800f4374211188460320
+ms.openlocfilehash: 76c30eddecbb84fecc5cb49c9691edcebc7c13b7
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34701012"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36238488"
 ---
 # <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys 
 
@@ -27,8 +27,10 @@ ms.locfileid: "34701012"
 > - „Office 365 ProPlus“ ir „Office 365 Business“
 > - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
 > - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+>
+> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
-„Office“ sudaro kliento programinės įrangos programos ir prijungtosios funkcijos, padedančios kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
+„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
 Privalomieji tarnybų duomenys yra labai svarbūs, nes jie įgalina šių debesų technologija pagrįstų prijungtųjų funkcijų veikimą, leidžia jas apsaugoti ir užtikrinti, kad klientams jos veiktų, kaip numatyta. Privalomuosius tarnybų duomenis sudaro trijų tipų informacija.
 
@@ -64,8 +66,9 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 
-## <a name="examples-of-events-for-service-diagnostic-data"></a>Tarnybos diagnostikos duomenų įvykių pavyzdžiai
+## <a name="examples-of-events-for-service-diagnostic-data"></a>Tarnybų diagnostikos duomenų įvykių pavyzdžiai
 
 Tarnybos diagnostikos duomenys rodomi diagnostikos duomenų peržiūros programoje ir yra skirstomi į tas pačias kategorijas, kurios taikomos privalomiesiems ir pasirinktiniams diagnostikos duomenims. Pavyzdžiui, *produktų ir tarnybų naudojimas* ar *produktų ir tarnybų našumas*.
 
