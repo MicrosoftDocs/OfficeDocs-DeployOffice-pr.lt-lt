@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 14b2426d021e5c559cabd3c969f80df9131cc9b9
-ms.sourcegitcommit: 22ae0005d3106ff02949fb613b82e0245abfa49f
+ms.openlocfilehash: 3931f44787008e076807fe59746bccf015452ac3
+ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35817974"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36239179"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -27,7 +27,8 @@ ms.locfileid: "35817974"
 > - „Office 365 ProPlus“ ir „Office 365 Business“
 > - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
 > - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
-
+>
+> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
 „Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Jei esate organizacijos administratorius, galite valdyti daugelį jums arba jūsų vartotojams pasiekiamų prisijungus naudojamų funkcijų, bet yra paslaugų, kurios yra būtinos, kad „Office“ veiktų, ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office“. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų su privatumu susijusios strategijos parametrų. Šiuos duomenis galite peržiūrėti naudodami diagnostikos duomenų peržiūros programą.
 
@@ -41,6 +42,7 @@ Jei esate organizacijos administratorius, jus gali dominti šios temos:
 
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Pagrindinių „Office“ paslaugos sąrašas 
 
@@ -52,7 +54,9 @@ Jei esate organizacijos administratorius, jus gali dominti šios temos:
 | [Spustelėkite ir naudokitės](#click-to-run-events) | Spustelėkite ir naudokitės yra diegimo technologija, naudojama diegiant ir naujinant „Office“ sistemoje „Windows“. Ji tikrina, ar išleista naujų „Office“ versijų, o kai nauja versija pasiekiama, ją atsisiunčia ir įdiegia.Paslauga Spustelėkite ir naudokitės aptiks, kada reikia naujinti „Office“, atsiųs naujinimus, įskaitant saugos naujinimus, ir juos įdiegs.     |
 | [Patobulinta konfigūravimo paslauga (ECS)](#enhanced-configuration-service-ecs-events) | ECS suteikia „Microsoft“ galimybę perkonfigūruoti „Office“ įdiegtis, išvengiant poreikio iš naujo visuotinai įdiegti „Office“. Ji naudojama valdyti palaipsniui diegiamas funkcijas arba naujinimus, o diegimo poveikis stebimas pagal renkamus diagnostikos duomenis. Ji taip pat naudojama siekiant sumažinti saugos arba veikimo problemas diegiant funkcijas arba naujinimus. Be to, ECS palaiko su diagnostikos duomenimis susijusius konfigūracijos keitimus, kad užtikrintų, jog būtų renkami tinkami įvykiai. |
 | [Licencijavimas](#licensing-events)     | Licencijavimas yra debesų technologija pagrįsta paslauga, kuri palaiko naujų „Office“ įdiegčių aktyvinimą ir išlaiko licenciją įrenginiuose suaktyvinus „Office“. Ji užregistruoja visus jūsų įrenginius ir suaktyvina „Office“, patikrina „Office“ prenumeratos būseną ir valdo produktų raktus.    |
-| [Paslaugų konfigūravimas](#services-configuration-events)  | Paslaugų konfigūravimo paslauga suteikia galimybę naujinti „Office“ konfigūracijos parametrus ir įgalinti arba išjungti kliento funkcijas. Ji iškviečiama kaskart paleidus „Office“ programą ir suteikia informacijos apie kitas „Office“ konfigūracijas ir paslaugas. Paslaugų konfigūravimo paslauga taip pat valdo, kurios paslaugos laikomos pagrindinėmis paslaugomis.  |
+|[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|„Microsoft AutoUpdate“ (MAU) yra technologija, naudojama „Microsoft“ programoms, kurios gaminamos MacOS, pvz., „Office“, atnaujinti. MAU aptiks, kada reikia naujinti „Office“, atsiųs naujinimus, įskaitant saugos naujinimus, ir juos įdiegs.|
+|[„OneNote“ sinchronizavimas](#onenote-sync-events)|„OneNote“, skirta „Mac“, palaiko tik internete laikomus „OneDrive“ arba „SharePoint Online“ bloknotus. „OneNote“ skirta „Mac“ nuolat sinchronizuoja visas vartotojo pastabas su „OneDrive“ arba „SharePoint Online“. Tai suteikia vartotojams galimybę atidaryti, peržiūrėti ir redaguoti bloknotus visuose savo įrenginiuose, kad jie visada būtų atnaujinti.
+ [Paslaugų konfigūravimas](#services-configuration-events)  | Paslaugų konfigūravimo paslauga suteikia galimybę naujinti „Office“ konfigūracijos parametrus ir įgalinti arba išjungti kliento funkcijas. Ji iškviečiama kaskart paleidus „Office“ programą ir suteikia informacijos apie kitas „Office“ konfigūracijas ir paslaugas. Paslaugų konfigūravimo paslauga taip pat valdo, kurios paslaugos laikomos pagrindinėmis paslaugomis.  |
 | [Telemetrija ](#telemetry-events)  | Naudojant telemetrijos paslaugą renkami diagnostikos duomenys iš „Office“ programų. Ji suteikia galimybę rinkti „Office“ sugeneruotus diagnostikos duomenis (tiek būtinuosius, tiek pasirinktinius). Ji taip pat atsakinga už reikalingų „Office“ tarnybų diagnostikos duomenų dalies rinkimą.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Pagrindinių „Office“ paslaugų įvykiai ir duomenų laukai
@@ -2362,6 +2366,51 @@ Renkami šių laukų duomenys:
 
   - **Data\_Version –** „Office“ versija 
 
+### <a name="officeclicktoruntransport"></a>Office.ClickToRun.Transport
+
+Teikia ataskaitą apie failo atsisiuntimo veiksmus, kad nustatytumėte operacijos sėkmę, atlikto atsisiuntimo tipą ir diagnostinę informaciją.
+
+
+- **BytesFromGroupPeers –** baitai iš grupės narių, tik atsisiuntimams naudojant pristatymo optimizavimą
+
+- **BytesFromHttp –** baitai iš http, tik atsisiuntimams naudojant pristatymo optimizavimą
+
+- **BytesFromInternetPeers –** baitai iš interneto bendraminčių, tik atsisiuntimams naudojant pristatymo optimizavimą 
+
+- **BytesFromLanPeers –** baitai iš LAN narių, tik atsisiuntimams naudojant pristatymo optimizavimą 
+
+- **CancelledJobs –** atšauktų užklausų skaičius seanse
+
+- **Prijungta –** ar susieta su šaltiniu
+
+- **Klaidos kodas –** paskutinės klaidos kodas
+
+- **ErrorDetails –** paskutinės klaidos duomenys
+
+- **ErrorMessage –** paskutinės klaidos pranešimas 
+
+- **ErrorSource –** paskutinės klaidos šaltinis, pvz., ryšys, LoadFile arba LoadRange
+
+- **FailedJob –** nepavykusių užklausų skaičius seanse
+
+- **Failo dydis –** ištekliaus dydis
+
+- **SourcePathNoFilePath – ** Pateikiamas tik http išteklio šaltinio kelias, vietinis failo kelias arba UNC kelias filtruojamas
+
+- **SucceededJobs –** atšauktų užklausų skaičius seanse
+
+- **TotalJobs –** bendras užklausų skaičius seanse
+
+- **TotalRequestedBytes –** viso seanso baitai
+
+- **TotalTransferTime –** bendrasis perkėlimo laikas seanso metu
+
+- **TransferredBytes –** iš viso perkelta baitų seanso metu
+
+- **TransportType –** transportavimo tipas, pvz., (atminties teikimo optimizavimo, http, fono intelektualioji perkėlimo tarnyba)
+
+
+
 ### <a name="officeclicktoruntransportexperimentaltransportpipelinecreatetransport"></a>Office.ClickToRun.Transport.ExperimentalTransport.PipelineCreateTransport
 
 „Office“ sąrankos ir inventoriaus duomenys, renkami, kai Spustelėkite ir naudokitės klientas kuria perdavimo srautą, kad atsisiųstų „Office“ failus. Naudojami nustatant įvairių perdavimo technologijų (pvz., HTTP, BITS, DO) sveikatą. Tai svarbu, kad „Office“ būtų tinkamai atsisiųsta diegiant ir naujinant.
@@ -2393,6 +2442,190 @@ Renkami šių laukų duomenys:
   - **Data\_status** – trumpa naujinimo būsena, pvz., Pavyko arba Atsisiųsta
 
   - **Data\_targetBuild** –„Office“ versija, į kurią bandoma atnaujinti
+
+
+### <a name="officeclicktorununiversalbootstrapperapplication"></a>Office.ClickToRun.UniversalBootstrapper.Application
+
+Praneša apie galutinio diegimo bandymo rezultatą
+
+ - **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
+
+ - **ErrorDetails –** eilutė, kuri aprašo vietą, kur įvyko neapdorota išimtis (funkcija, failas, eilutės numeris, papildomi parametrai, nustatyti naudojant „Thrower“)
+
+ - **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
+
+ - **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+
+ - **ExitCode – **sveikoji reikšmė, susieta su „bootstrapper“ paleidimu, rodanti sėkmingus bandymus ir tam tikrų tipų triktis
+
+### <a name="officeclicktorununiversalbootstrappercalculateparameters"></a>Office.ClickToRun.UniversalBootstrapper.CalculateParameters
+
+Ataskaitos apie veiksmą, atskiriantį įvestį, renkamą naudojant CollectParameters
+
+- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinio)
+
+- **ChannelId –** sveikasis skaičius, reiškiantis pažymėto naujinimo/diegimo kanalo išvardijimo reikšmes (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinis, neleistinas)
+
+- **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe.
+
+- **C2RClientUICulture –** C2R kliento diegimo kultūra
+
+- **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
+
+- **ErrorDetails –** eilutė, kuri aprašo vietą, kur įvyko neapdorota išimtis (funkcija, failas, eilutės numeris, papildomi parametrai, nustatyti naudojant „Thrower“)
+
+- **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
+
+- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+
+- **ExcludedApps –** eilutė, kurioje pateikiamas atskirų „Office“ programų pavadinimų, kurie buvo prašomi neįtraukti į įdiegtus „Office“ paketus, sąrašas
+
+- **InstalledCabVersion –** 16.0.xxxxx.yyyy „Office“ C2R kliento versija jau įdiegta
+
+- **InstalledProductVersion –** 16.0.xxxxx.yyyy „Office“ C2R kliento produkto versija jau įdiegta
+
+- **IsC2RServiceRunning –** bulio logikos žymė, nurodanti, ar moderni C2R kliento vietinė įrenginio tarnyba veikia įrenginyje
+
+- **IsElevatedFlagSet –** bulio logikos žymė, rodanti, ar „bootstrapper“ jau bandė gauti didesnes teises iš administratorių
+
+- **IsFireFlyInstalled –** bulio logikos žymė, nurodanti, ar šiuo metu įdiegtas „Office 2013“ RTM C2R klientas
+
+- **IsFireflyServiceRunning –** bulio logikos žymė, nurodanti, ar 2013 RTM C2R kliento vietinė įrenginio tarnyba veikia įrenginyje
+
+- **IsofficeInstalled –** bulio logikos žyma, nurodanti, ar jau įdiegtas modernus „Office“ klientas
+
+- **OfficeCultures –** nuosekliai išdėstytas diegiamų „Office“ kultūrų sąrašas
+
+- **OfficeSourceType –** draugiška eilutė, susieta su diegimo šaltinio išvardytomis reikšmėmis (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+
+- **Origin–** eilutės reikšmė, nurodanti, kuri iš palaikomų kilmių (Puerto Rikas [PR], Singapūras [SG], Dublinas [DB]) turėtų būti naudojama pradinio diegimo srautinei transliacijai
+
+- **PlatformFromLink –** eilutė, kurioje nurodoma, kad iš C2R sąrankos tarnybos prašoma „Office“ x86 | x64 | numatytoji bitų versija
+
+- **PlatformOfExistingInstallation –** eilutė, nurodanti, ar x86 ir x64 versijos „Office“ jau buvo įdiegta įrenginyje
+
+- **PlatformToInstall –** eilutė, kurioje nurodomas galutinis sprendimas, ar turi būti įdiegtas x86, ar x64 „Office“. Galimybės: automatinis vykdymas, konfigūravimas, vartotojams, atsisiuntimas, žinynas, pakavimo programa
+
+- **PRID –** eilutės reikšmė, vaizduojanti reikalaujamą produkto leidimo ID vartotojo diegimo scenarijuje (pvz., „O365ProPlusRetail“)
+
+- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti diegiamas produkto/kultūros derinys
+
+- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti šalinami produkto/kultūros derinai
+
+- **SharedComputerLicensing –** buliaus logika nurodo, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
+
+- **ShouldActivate –** buliaus logika nurodo, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
+
+- **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
+ 
+
+### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
+
+Ataskaitos apie veiksmą, kuris skaito pažymėtą įvestį iš exe įdėtojo parašo.  Tai nėra įrodyta koncepcija, ankstesnė „setup. exe“ iteracija nebuvo įgyvendinta ir tuo pasikliaujame, kad perkeltume vartotojo produktų/kalbų/bitų pasirinkimus iš tinklalapio į „setup. exe“ procesą.
+ 
+- **ErrorCode –** sveikasis skaičius, susietas su neapdorota išimtimi
+
+- **ErrorDetails –** eilutė, kuri aprašo vietą, kur įvyko neapdorota išimtis (funkcija, failas, eilutės numeris, papildomi parametrai, nustatyti naudojant „Thrower“)
+
+- **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
+
+- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+
+### <a name="officeclicktorununiversalbootstrappercollectparameters"></a>Office.ClickToRun.UniversalBootstrapper.CollectParameters
+
+Praneša apie parametrus, naudojamus „Office“ įdiegčiai
+
+- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinio)
+
+- **ChannelId –** sveikasis skaičius, reiškiantis pažymėto naujinimo/diegimo kanalo išvardijimo reikšmes (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinis, neleistinas)
+
+- **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe. Galimybės: automatinis vykdymas, konfigūravimas, vartotojams, atsisiuntimas, žinynas, pakavimo programa
+
+- **C2RClientUICulture –** C2R kliento diegimo kultūra
+
+- **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
+
+- **ErrorDetails –** eilutė, kuri aprašo vietą, kur įvyko neapdorota išimtis (funkcija, failas, eilutės numeris, papildomi parametrai, nustatyti naudojant „Thrower“)
+
+- **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
+
+- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+
+- **ExcludedApps –** eilutė, kurioje pateikiamas atskirų „Office“ programų pavadinimų, kurie buvo prašomi neįtraukti į įdiegtus „Office“ paketus, sąrašas
+
+- **InstalledCabVersion –** 16.0.xxxxx.yyyy „Office“ C2R kliento versija jau įdiegta
+
+- **InstalledProductVersion –** 16.0.xxxxx.yyyy „Office“ C2R kliento produkto versija jau įdiegta
+
+- **IsC2RServiceRunning –** bulio logikos žymė, nurodanti, ar moderni C2R kliento vietinė įrenginio tarnyba veikia įrenginyje
+
+- **IsElevatedFlagSet –** bulio logikos žymė, rodanti, ar „bootstrapper“ jau bandė gauti didesnes teises iš administratorių
+
+- **IsFireFlyInstalled –** bulio logikos žymė, nurodanti, ar šiuo metu įdiegtas „Office 2013“ RTM C2R klientas
+
+- **IsFireflyServiceRunning –** bulio logikos žymė, nurodanti, ar 2013 RTM C2R kliento vietinė įrenginio tarnyba veikia įrenginyje
+
+- **IsofficeInstalled –** bulio logikos žyma, nurodanti, ar jau įdiegtas modernus „Office“ klientas
+
+- **OfficeCultures –** nuosekliai išdėstytas diegiamų „Office“ kultūrų sąrašas
+
+- **OfficeSourceType –** draugiška eilutė, susieta su diegimo šaltinio išvardytomis reikšmėmis (CDN, HTTP, UNC, CMBITS, DVD, LOCAL)
+
+- **Origin–** eilutės reikšmė, nurodanti, kuri iš palaikomų kilmių (Puerto Rikas [PR], Singapūras [SG], Dublinas [DB]) turėtų būti naudojama pradinio diegimo srautinei transliacijai
+
+- **PlatformFromLink –** eilutė, kurioje nurodoma, kad iš C2R sąrankos tarnybos prašoma „Office“ x86 | x64 | numatytoji bitų versija
+
+- **PlatformOfExistingInstallation –** eilutė, nurodanti, ar x86 ir x64 versijos „Office“ jau buvo įdiegta įrenginyje
+
+- **PlatformToInstall –** eilutė, kurioje nurodomas galutinis sprendimas, ar turi būti įdiegtas x86, ar x64 „Office“.
+
+- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti šalinami produkto/kultūros derinai
+
+- **PRID –** eilutės reikšmė, vaizduojanti reikalaujamą produkto leidimo ID vartotojo diegimo scenarijuje (pvz., „O365ProPlusRetail“)
+
+- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti diegiamas produkto/kultūros derinys
+
+- **SharedComputerLicensing –** buliaus logika nurodo, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
+
+- **ShouldActivate –** buliaus logika nurodo, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
+
+- **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
+
+### <a name="officeclicktorununiversalbootstrapperexecute"></a>Office.ClickToRun.UniversalBootstrapper.Execute
+
+Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus duomenis iš „CalculateParameters“
+
+- **AvailableClientVersionText –** eilutės reikšmė C2R kliento 16.0.xxxxx.yyyyy versijoje, rasta „Version Descriptor XML“, kuri naudojama nustatyti, ar šiuo metu įdiegtas C2R klientas turi būti atnaujintas
+
+- **CleanFireflyAction –** „tesinga“, jei „CleanFireFlyAction“ užduotis suplanuota vykdyti šį diegimą
+
+- **CleanO15Action –** „teisinga“, jei „CleanO15Action“ užduotis suplanuota vykdyti šio diegimo metu
+
+- **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe. Galimybės: automatinis vykdymas, konfigūravimas, vartotojams, atsisiuntimas, žinynas, pakavimo programa
+
+- **DeliveryMechanism –** „FFNRoot“ guid, išgaunamas iš „Version Descriptor XML“ (įspaustas RDX), kuriame nurodoma, iš kokios auditorijos/kanalo gautas komponavimo šaltinis
+
+- **DownloadC2RClientAction –** „teisinga“, jei „DownloadC2RClientAction“ užduotis suplanuota vykdyti šio diegimo metu
+
+- **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
+
+- **ErrorDetails –** eilutė, kuri aprašo vietą, kur įvyko neapdorota išimtis (funkcija, failas, eilutės numeris, papildomi parametrai, nustatyti naudojant „Thrower“)
+
+- **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
+
+- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+
+- **ExitCode – **sveikoji reikšmė, susieta su „bootstrapper“ paleidimo fazės rezultatu, rodanti sėkmingus bandymus ir tam tikrų tipų triktis
+
+- **LaunchAction –** „teisinga“, jei „LaunchAction“ užduotis suplanuota vykdyti šio diegimo metu
+
+- **LaunchUpdateAction –** „teisinga“, jei „LaunchAction“ užduotis suplanuota vykdyti šio diegimo metu
+
+- **PreReqResult –** sveikojo skaičiaus išvardijimo reikšmė, kai buvo atlikti „PreReq“ tikrinimai (pavyko/nepavyko/paleisti iš naujo)
+
+- **UnexpectedAction –** „teisinga“, jei „UnexpectedAction“ užduotis (klaidos atvejis) planuojama vykdyti atliekant šį diegimą
+
+- **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
 
 
 ## <a name="enhanced-configuration-service-ecs-events"></a>Patobulintos konfigūravimo paslaugos (ECS) įvykiai
@@ -2582,7 +2815,9 @@ Renkami šių laukų duomenys:
 
   - **OptInShown** – nurodo, ar pasirinkimo dialogo langas, rodomas per pirmąją programos įkrovą, jau buvo parodytas
 
-  - **Office.Licensing.NextUserLicensingEligible –** šis signalas pasako, ar vartotojas atitinka perkėlimo į mūsų naują licencijavimo procesą reikalavimus. Tai svarbu vertinant poveikį esamiems vartotojams, kai diegiame naują licencijavimo procesą, ir siekiant užtikrinti, kad vartotojams veiktų visos funkcijos
+### <a name="officelicensingnextuserlicensingeligible"></a>Office.Licensing.NextUserLicensingEligible 
+
+Šis signalas pasako, ar vartotojas atitinka perkėlimo į mūsų naują licencijavimo procesą reikalavimus. Tai svarbu vertinant poveikį esamiems vartotojams, kai diegiame naują licencijavimo procesą, ir siekiant užtikrinti, kad vartotojams veiktų visos funkcijos
 
 Šis įvykis nerenka jokių laukų duomenų.
 
@@ -2701,6 +2936,7093 @@ Renkami šių laukų duomenys:
   - **OpportunisticTokenRenewalAttempted** – nurodo, ar bandėme oportunistiškai atnaujinti vartotojui bendrai naudojamo kompiuterio aktyvinimo režimu
 
   - **ReArmResult** – nurodo įdiegto rakto, kuris gali pratęsti dabartinės licencijos galiojimą, pradinės licencijavimo būsenos atkūrimo rezultatą
+
+## <a name="microsoft-autoupdate-mau-events"></a>„Microsoft AutoUpdate“ (MAU) įvykiai
+
+### <a name="appdelegate_launch"></a>appdelegate_launch
+
+Šis įvykis nurodo, kad įvyko mėginimas įjungti taikomąją programą. Užregistruojame jo rezultatą (nesėkmė arba sėkmė). Šis įvykis naudojamas nustatyti atvejus, kai MAU nepavyksta paleisti
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+    
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppversionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+ - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinio teksto, nurodančios paleisties būseną, rinkinys.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="appdelegate_terminate"></a>appdelegate_terminate
+
+Šis įvykis reiškia, kad įvyko sklandus išėjimas iš programos. Naudojame šį įvykį, kad atskirtume sklandžius išėjimus iš programos nuo nesklandžių.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+    
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+    
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas, nurodantis, kad „Microsoft AutoUpdate“ buvo nutrauktas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="appinstall_connecttoxpc"></a>appinstall_connecttoxpc
+
+Šis įvykis nurodo, kad įvyko klaidų prisijungiant prie MAU pagalbininko (komponento, kuris atlieka taikomųjų programų diegimą).  Šis įvykis žymi galimą MAU taikomosios programos sugadinimą. Įrenginys negalės įdiegti naujinimų.
+
+Renkami šių laukų duomenys: 
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pateikiama klaidos informacija apie ryšio problemą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="appregistry_info"></a>appregistry_info
+
+Šis įvykis nurodo, kad programa paleista. Naudojame šį įvykį, kad pateiktumėte taikomųjų programų, kurioms MAU gali valdyti naujinimus, kopijų skaičių, taip pat jų versiją ir diegimo vietą (numatytoji ar kita).
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pateikia informaciją apie identifikatorių sąrašą, kurį taikomoji programa naudoja registruodamasi „Microsoft AutoUpdate“ paslaugoms, ir registruotų taikomosios programos diegimų skaičių.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="appregistry_remove"></a>appregistry_remove
+
+Šis įvykis nurodo, kad buvo bandoma pašalinti taikomąją programą iš MAU tvarkomų taikomųjų programų sąrašo. Šį įvykį naudojame norėdami patvirtinti, kad tik MAU išleistos taikomosios programos tvarkomos per MAU (čia neturi būti „AppStore“ taikomųjų programų).
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pašalinamos taikomosios programos pavadinimas ir identifikatorius, nesvarbu, ar taikomoji programa vis dar yra registruotoje vietoje, ir, ar taikomoji programa buvo diegiama iš „AppStore“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="catalog_errorsignature"></a>catalog_errorsignature
+
+Šis įvykis nurodo, kad naujinant įvyko klaida atliekant kodo ženklo tikrinimą, atsirado antrinis failas.  Bet koks nepavykęs antrinio failo kodo ženklo tikrinimas turėtų būti laikomas negaliojančiu.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – katalogo failo, kurio parašas neleistinas, pavadinimas. Skirtingas statinis tekstas aprašomo skirtingas klaidų sąlygas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
+
+Šis įvykis įrašo problemas naudojant diegimą su klonavimu (t. y., jei nesugebame prisijungti prie pagalbininko, kad būtų pritaikytas naujinimas, arba prisijungiame tačiau pagalbininkas negali taikyti naujinimo). Jei gauname pranešimą apie įrašą, tai reiškia, kad įdiegti klonuojant nepavyko ir dabar reikės grįžti į vietinį naujinimą.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi ID, kad identifikuotų atskirą naujinimo veiklą, ir praneša apie tarpinio serverio klaidą klonavimo proceso metu.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="configuration_channel"></a>configuration_channel
+
+Šis įvykis fiksuoja bandymus perjungti kanalus (auditorijos grupę) MAU.  Naudojame tai, kad registruotume bandymus ir jų rezultatus (sėkmės ar nesėkmės).
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra pasirinkto kanalo pavadinimas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="configuration_metadata"></a>configuration_metadata
+
+Šis įvykis užregistruojamas kaskart, kai pradedamas MAU. Tai MAU reguliarių pranešimų tipo įvykis
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas, nurodantis, kad yra inicijuojami atskiri metaduomenys, arba yra inicijuojamas konfigūravimas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius.
+
+
+### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
+
+Šis įvykis reiškia, kad MAU nukrito į nenaudojamą/neatitaisomą būseną ir turi būti įdiegta iš naujo. Šis įvykis reiškia neatitaisomą klaidą, kai reikalingas vartotojo įsikišimas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima išvardijamą vartotojo pasirinkimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_alertmanager_tmpdiskfull"></a>controller_alertmanager_tmpdiskfull
+
+Šis įvykis nurodo, kad buvo aptikta nepakankama disko vieta. Negalėsime diegti naujinimų, nes diske nepakanka vietos.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_alertmanager_tmpdiskfullretry"></a>controller_alertmanager_tmpdiskfullretry
+
+Šis įvykis nurodo, kad buvo pradėtas mėginimas pabandyti įdiegti naujinimą, kai aptikta nepakankama disko vieta. Bandome diegti iš naujo po to, kai neįmanoma įdiegti naujinimų, nes nepakanka vietos diske.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+    
+
+### <a name="controller_alertmanager_tmpdiskfullretrycancel"></a>controller_alertmanager_tmpdiskfullretrycancel
+
+Šis įvykis nurodo, kad buvo pradėtas mėginimas pabandyti įdiegti naujinimą, kai aptikta nepakankama disko vieta. Naudojame šį įvykį, kad nustatytumėte, ar mūsų atsarginiai mechanizmai buvo pakankami, kad padėtų vartotojui per naujinimo procesą, kai aptikta nepakankama disko vieta.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+    
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+    
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
+
+Šis įvykis reiškia, kad tikrinant, ar yra naujinimų, nerasta jokių naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+
+### <a name="controller_checkwindow_updatecheck"></a>controller_checkwindow_updatecheck
+
+Šis įvykis nurodo, kad buvo tikrinama, ar yra naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+    
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
+
+Šis įvykis nurodo, kad buvo atšauktas naujinimų tikrinimo procesas (vartotojo arba sistemos). Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
+
+Šis įvykis nurodo, kad naujinimų tikrinimo procesas buvo atšauktas vartotojo.  Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+    
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_checkwindow_updatesfound"></a>controller_checkwindow_updatesfound
+
+Šis įvykis nurodo, kad tikrinant naujinimus buvo rasta naujinimų.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_checkwindow_uptodate"></a>controller_checkwindow_uptodate
+
+Šis įvykis nurodo, kad tikrinant, ar yra naujinimų, jų nerasta, nes įrenginyje įdiegtos taikomosios programos yra atnaujintos.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_applaunchwithpendingupdate"></a>controller_downloadwindow_applaunchwithpendingupdate
+
+Šis įvykis nurodo, kad paleista taikomoji programa, kuri yra naujinimo procese. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai. Turėtų būti neleidžiama gauti naujinimų atidarytoms programoms. Prieš naujinant programas reikia jas uždaryti.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+    
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_downloadwindow_closeapplicationdialog"></a>controller_downloadwindow_closeapplicationdialog
+
+Šis įvykis nurodo, kad paleista taikomoji programa, kuri yra naujinimo procese. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai. Turėtų būti neleidžiama gauti naujinimų atidarytoms programoms. Prieš naujinant programas reikia jas uždaryti.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_downloadwindow_curtasknull"></a>controller_downloadwindow_curtasknull
+
+Šis įvykis nurodo, kad bandant taikyti naujinimą įvyko netikėta klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
+
+Šis įvykis nurodo, kad atsisiuntimo procesas atšauktas vartotojo.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – statinis tekstas. 
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_downloadwindow_downloadfailed"></a>controller_downloadwindow_downloadfailed
+
+Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_downloadwindow_downloadfailedok"></a>controller_downloadwindow_downloadfailedok
+
+Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida, ir apie tai pranešta vartotojui. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsisiųsti tinkamai, o klaidos atveju vartotojas gautų pranešimą.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_downloadpathmissing"></a>controller_downloadwindow_downloadpathmissing
+
+Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. Šis įvykis nurodo, kad trūksta atsisiuntimo URL.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_downloadtasknull"></a>controller_downloadwindow_downloadtasknull
+
+Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ buvo paprašyta pristabdyti/tęsti atsisiuntimą, bet negalėjo rasti atitinkamo atsisiuntimo tvarkytuvo.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_filesignaturenotverified"></a>controller_downloadwindow_filesignaturenotverified
+
+Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ negalėjo patikrinti, ar šį naujinimą publikavo „Microsoft". Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. 
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, kuriame yra atsisiuntimo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_installcomplete"></a>controller_downloadwindow_installcomplete
+
+Šis įvykis nurodo, kad visi „Microsoft AutoUpdate“ siūlomi naujinimai įdiegti. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. 
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+    
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_networkunavailablealert"></a>controller_downloadwindow_networkunavailablealert
+
+Šis įvykis nurodo, kad, atsisiunčiant naujinimus, nutrūko tinklo ryšys.  Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_downloadwindow_networkunavailablealertok"></a>controller_downloadwindow_networkunavailablealertok
+
+Šis įvykis nurodo, kad, atsisiunčiant naujinimus, nutrūko tinklo ryšys. Tai taip pat reiškia, kad vartotojui buvo pranešta apie šią klaidą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_downloadwindow_noconnectionok"></a>controller_downloadwindow_noconnectionok
+
+Šis įvykis nurodo, kad, atsisiunčiant naujinimus, nutrūko tinklo ryšys. Tai taip pat reiškia, kad vartotojui buvo pranešta apie šią klaidą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_repairrequired"></a>controller_downloadwindow_repairrequired
+
+Šis įvykis nurodo, kad naujinimo procesas nepavyko. Jis taip pat nurodo, kad naujinimas buvo užbaigtas, bet „Microsoft AutoUpdate“ rado problemą su atnaujinta taikomąja programa ir reikia atlikti taisymą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+    
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+    
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+### <a name="controller_downloadwindow_updateaborted"></a>controller_downloadwindow_updateaborted
+
+Šis įvykis nurodo, kad naujinimo procesas buvo nutrauktas. Jis taip pat nurodo, kad „Daemon“ jau vykdė naujinimą ir vartotojas spustelėjo „Gerai“, kad būtų nutrauktas atsisiuntimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_updatefailed"></a>controller_downloadwindow_updatefailed
+
+Šis įvykis reiškia, kad nepavyko atlikti vieno ar daugiau naujinimų iš dabartinio paketo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_updatesuccessful"></a>controller_downloadwindow_updatesuccessful
+
+Šis įvykis nurodo, kad visi dabartinio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_userpaused"></a>controller_downloadwindow_userpaused
+
+Šis įvykis nurodo, kad visi dabartinio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_downloadwindow_userresumed"></a>controller_downloadwindow_userresumed
+
+Šis įvykis nurodo, kad naujinimų atsisiuntimo procesas sėkmingai tęsiamas po pauzės. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+    
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_mainwindow_setautomaticdownloadinstall"></a>controller_mainwindow_setautomaticdownloadinstall
+
+Šis įvykis nurodo, kad įrenginys buvo įtrauktas į automatinio naujinimo režimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_mainwindow_setmanualchecking"></a>controller_mainwindow_setmanualchecking
+
+Šis įvykis nurodo, kad įrenginys buvo įtrauktas į rankinio naujinimo režimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_templateawindow_cancel"></a>controller_templateawindow_cancel
+
+Šis įvykis reiškia, kad vartotojas pasirinko atšaukti arba nepaisyti pateikto įspėjimo pranešimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_templateawindow_enroll"></a>controller_templateawindow_enroll
+
+Šis įvykis nurodo, kad vartotojas pasirinko stebėti pateiktą įspėjimo rekomendaciją. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+    
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+
+### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
+
+Šis įvykis nurodo, kad vartotojas pasirinko stebėti pateiktą įspėjimo rekomendaciją, susijusią su programinės įrangos diegimo veiksmais. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_updatewindow_begindownloadingapps"></a>controller_updatewindow_begindownloadingapps
+
+Šis įvykis nurodo, kad naujinimų atsisiuntimas buvo pradėtas per naujinimo langą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pateikiamas galimų naujinimų paketų žodynas ir nurodymas, ar vartotojas pasirinko diegti šį įrašą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_updatewindow_networkretry"></a>controller_updatewindow_networkretry
+
+Šis įvykis nurodo, kad atnaujinimo lape dėl tinklo gedimo buvo pradėtas mėginimas kartoti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_updatewindow_networkretrycancel"></a>controller_updatewindow_networkretrycancel
+
+Šis įvykis reiškia, kad dėl tinklo gedimo nepavyko suaktyvinti mėginimo kartoti atnaujinimo lape. Šis įvykis nurodo, kad vartotojas pasirinko atšaukti naujinimus po to, kai gavo pranešimą, kad tinklas tampa nepasiekiamas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_updatewindow_networkunavailable"></a>controller_updatewindow_networkunavailable
+
+Šis įvykis nurodo, kad staiga nutrūko tinklo ryšys. Šis įvykis nurodo, kad serveris nepasiekiamas bandant atsisiųsti naujinimo paketą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_updatewindow_noupdateavailable"></a>controller_updatewindow_noupdateavailable
+
+Šis įvykis reiškia, kad buvo ieškoma naujinimų, tačiau nepavyko rasti. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ nerasta prieinamų naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_updatewindow_noupdatestoselect"></a>controller_updatewindow_noupdatestoselect
+
+Šis įvykis nurodo, kad įvyko klaida ir dėl to naujinimų sąrašas yra tuščias. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ rodo tuščią atnaujinimo lapą. Tai neturėtų nutikti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="controller_updatewindow_updateavailable"></a>Controller_UpdateWindow_UpdateAvailable
+
+Šis įvykis reiškia, kad buvo ieškoma naujinimų, ir rasti naujinimai yra siūlomi. Šis įvykis naudojamas norint nustatyti, ar siūlomi naujinimai bus rodomi vartotojui, ar naujinimo blokavimas veikia taip, kaip numatyta. Šis įvykis naudojamas norint užtikrinti, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padės pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – kiekvienam iš jų pateikiamas galimų naujinimų paketų ir vartotojo pasirinkimo būsenos žodynas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
+
+Šis įvykis nurodo, kad vartotojas atšaukė po to, kai parodytas naujinimų lapas su naujinimų sąrašu. Šis įvykis naudojamas paaiškinti priežastis, kodėl neatnaujinama (t. y. vartotojas mielai atšaukia). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadactor_pause"></a>downloadactor_pause
+
+Šis įvykis nurodo, kad vartotojas paskelbė prašymą pristabdyti atsisiuntimą. Šis įvykis naudojamas tam kad būtų paaiškintos neužbaigtų naujinimų priežastys. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadactor_redirect"></a>downloadactor_redirect
+
+Šis įvykis nurodo, kad atsisiuntimo agentas nukreiptas į galinį punktą, kuris nurodo atsisiuntimo užklausos URL peradresavimą. Šis įvykis naudojamas norint išaiškinti nepavykusį atsisiuntimą ir diagnozuoti tarpinio serverio triktis. Jis taip pat gali padėti diagnozuoti priežastis, kodėl vartotojai diegia senesnes versijas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra peradresuotas URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="downloadactor_resume"></a>downloadactor_resume
+
+Šis įvykis nurodo, kad vartotojas paskelbė prašymą tęsti pristabdytą atsisiuntimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadactor_resumeerror"></a>downloadactor_resumeerror
+
+Šis įvykis nurodo, kad vartotojas paskelbė prašymą tęsti pristabdytą atsisiuntimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo URL adresas. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="downloadactor_status"></a>downloadactor_status
+
+Šis įvykis registruoja bandymus iškviesti antrinius failus ir jų rezultatą (sėkmę arba nesėkmę). Norime žinoti, kai yra iškviečiami antriniai failai ir paketai. Netinkamas iškviestas failas gali nurodyti komponavimo versijos/antrinio failo problemą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo URL ir klaidos kodas gedimo atveju. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
+
+Šis įvykis įvyko atsisiuntimo klaida. Užregistruojamas failas, kurio atsisiųsti nepavyko. Norime žinoti, kai yra iškviečiami antriniai failai ir paketai. Nepavykus atsisiųsti deklaracijos, gali būti rodomas kaip komponavimo versijos antrinio failo generavimo triktis arba kaip CDN konfigūracijos klaida, arba kaip kliento konfigūravimo klaida, arba kaip tinklo klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo klaidos kodas ir atsisiuntimo failo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="downloadmanifest_downloadcatalogsuccess"></a>downloadmanifest_downloadcatalogsuccess
+
+Šis įvykis nurodo, kad failas sėkmingai atsisiųstas. Nepavykus atsisiųsti deklaracijos, gali būti rodomas kaip komponavimo versijos antrinio failo generavimo triktis arba kaip CDN konfigūracijos klaida, arba kaip kliento konfigūravimo klaida, arba kaip tinklo klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+    
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo klaidos kodas ir atsisiuntimo failo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_downloadfail"></a>downloadmanifest_downloadfail
+
+Šis įvykis nurodo, kad įvyko atsisiuntimo klaida. Užregistruojamas deklaracijos arba paketo failas, kurio nepavyko atsisiųsti, taip pat pateikiama klaidos informacija. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo klaidos kodas ir atsisiuntimo failo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_downloadfromurl"></a>downloadmanifest_downloadfromurl
+
+Šis įvykis reiškia, kad pradėtas katalogo failo atsisiuntimas. Užregistruojame URL, iš kurio atsisiunčiamas katalogo failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo klaidos kodas ir atsisiuntimo failo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_downloading"></a>downloadmanifest_downloading
+
+Šis įvykis reiškia, kad pradėtas katalogo failo atsisiuntimas. Užregistruojame URL, iš kurio atsisiunčiamas katalogo failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo klaidos kodas ir atsisiuntimo failo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_downloadsuccess"></a>downloadmanifest_downloadsuccess
+
+Šis įvykis reiškia, kad XML ir katalogo failo atsisiuntimas buvo sėkmingas. Užregistruojame URL, iš kurio atsisiunčiamas failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo klaidos kodas ir atsisiuntimo failo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="downloadmanifest_downloadurl"></a>downloadmanifest_downloadurl
+
+Šis įvykis reiškia, kad įvyko užklausa atsisiųsti failą. Užregistruojame URL, iš kurio atsisiunčiamas failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+    
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiuntimo klaidos kodas ir atsisiuntimo failo URL. Tai yra „Microsoft“ atsisiuntimo vieta, išskyrus atvejus, kai kanalas nustatytas kaip Pasirinktinis. Pasirinktiniame kanale ši reikšmė nustatyta kaip „Pasirinktinė vieta“.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_filenameerror"></a>downloadmanifest_filenameerror
+
+Šis įvykis nurodo, kad įvyko netikėta klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_invalidhash"></a>downloadmanifest_invalidhash
+
+Šis įvykis žymi, kad mūsų failų saugos patikra nepavyko. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiųsto failo pavadinimas su negaliojančia maišos verte.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_missingdaemon"></a>downloadmanifest_missingdaemon
+
+Šis įvykis žymi, kad vartotojas bandė patikrinti, ar yra naujinimų, ir pastebėjome, kad MAU trūko pagrindinio komponento („Daemon“). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_signatureerror"></a>downloadmanifest_signatureerror
+
+Šis įvykis nurodo, kad kodo parašo patvirtinimas nepavyko dėl paketo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsisiųsto failo pavadinimas su negaliojančia maišos verte.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmanifest_status"></a>downloadmanifest_status
+
+Šis įvykis registruoja apibendrintą bandymų/gedimų, kurie buvo atlikti vykstant deklaracijos ir paketų failų atsisiuntimo procese, agregavimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima informaciją, įskaitant URL („Microsoft“ adresą), atsisiųsto failo prefiksą, visas aptiktas klaidas ir t. t.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmgr_downloadend"></a>downloadmgr_downloadend
+
+Šis įvykis užregistruoja žymę, nurodančią, kad atsisiuntimo procesas buvo užbaigtas pats. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima informaciją, įskaitant URL („Microsoft“ adresą), atsisiųsto failo prefiksą, visas aptiktas klaidas ir t. t.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadmgr_downloadstart"></a>downloadmgr_downloadstart
+
+Šis įvykis registruoja naujinimą, kuris bus atsisiųstas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – įtrauktas atsisiunčiamo naujinimo pavadinimas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
+
+Šis įvykis užregistruoja, kad atsisiunčiant paketo failą įvyko klaida. Užregistruojame atnaujinimo maršrutą ir klaidą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – įtraukti atsisiunčiamo naujinimo ir aptiktos klaidos pavadinimai.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
+
+Sėkmingas paketo failo atsisiuntimas. Užregistruojame atnaujinimo maršrutą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi atnaujinimo maršrutą, skirtą sėkmingam atsisiuntimui.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_checkforupdate"></a>fba_checkforupdate
+
+Šis įvykis nurodo, kad procesas fone tikrina, ar yra naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_checkforupdateskip"></a>fba_checkforupdateskip
+
+Šis įvykis nurodo, kad fono procesas praleido naujinimą dėl MAU GUI atidarymo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_launchstatus"></a>fba_launchstatus
+
+Šis įvykis registruoja MAU „Daemon“ nesėkmes bandant paleisti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi OS statusą („Apple“ būsenos kodas), atspindinčią paleisties būseną.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
+
+Šis įvykis reiškia, kad vartotojas renkasi tyliuosius naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
+
+Šis įvykis nurodo, kad priverstinis naujinimų tikrinimas praleistas dėl atidaromų programų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_startforcedupdate"></a>fba_startforcedupdate
+
+Šis įvykis nurodo, kad įvyko bandymas taikyti priverstinį naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_terminate"></a>fba_terminate
+
+Šis įvykis reiškia, kad MAU „Daemon“ nutrauktas įprastai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fba_updatefound"></a>fba_updatefound
+
+Šis įvykis nurodo, kad MAU „Daemon“ rado siūlomų naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – rastų galimų naujinimų skaičius.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="fba_updatetimer"></a>fba_updatetimer
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ „Daemon“ procesas tapo aktyvus ir tikrina, ar yra naujinimų, kai po tam tikro laiko pabudo iš miego režimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima dabartinę datos laiko informaciją.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
+
+Šis įvykis registruoja, ar visos programos buvo uždarytos prieš diegimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+    
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_applaunchafterupdate"></a>fbasilentupdate_applaunchafterupdate
+
+Šis įvykis registruoja bandymą atnaujinti taikomąją programą po tyliuoju naujinimu ir naujinimo režimu (klonas arba ne). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir taikomosios programos, kuri bus paleista, pavadinimą.
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+    
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_applaunchwileinstalling"></a>fbasilentupdate_applaunchwileinstalling
+
+Mes užregistruojame, kada buvo įdiegta programų paleistis, kai įdiegiate naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_appneedtoclose"></a>fbasilentupdate_appneedtoclose
+
+Užregistruojame, kada buvo pradėtas atnaujinimo procesas, ir matome, kad naujinama programa buvo atidaryta. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą, naujinimo pavadinimą ir taikomosios programos paketo ID.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ gavo „Apple“ įvykį, informuojantį, kad taikomoji programa nutraukta. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir taikomosios programos paketo ID. Taip pat gali turėti klaidos eilutę, jei „Microsoft AutoUpdate“ nustato, kad taikomoji programa vis dar veikia, nors nutraukimo įvykis buvo gautas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
+
+Šis įvykis, kai naujinimas pritaikytas, užregistruoja koprojektinio patvirtinimo rezultatą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima koprojektinio patvirtinimo operacijos rezultatą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_download"></a>fbasilentupdate_download
+
+Šis įvykis nurodo, kad atsisiunčiamas naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir naujinimo pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
+
+Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir naujinimo pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
+
+Šis įvykis nurodo, kad paleidome naujinimų rinkinį fone (užregistruojame atsisiunčiamų naujinimų skaičių). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – į eilę įrašytų naujinimų skaičius.
+
+    - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_downloadingrepairupdate"></a>fbasilentupdate_downloadingrepairupdate
+
+Šis įvykis nurodo, kad pradedame bandyti atsisiųsti pataisytą nepavykusį naujinimą. Užregistruojame versiją ir naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir naujinimo pavadinimą.
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
+
+Šis įvykis nurodo, kad įvyko klaida. Vienu metu turėtų būti atsisiųsta po vieną konkrečios taikomosios programos naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_installattemptfailed"></a>fbasilentupdate_installattemptfailed
+
+Šis įvykis nurodo, kad nepavyko įdiegti naujinimo (versijos). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_installcomplete"></a>fbasilentupdate_installcomplete
+
+Šis įvykis nurodo, kad visi paketiniai naujinimai baigti diegti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_installed"></a>fbasilentupdate_installed
+
+Šis įvykis nurodo, kad buvo sėkmingai atliktas atskiras naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį. Apima naujinimo identifikatorių.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="fbasilentupdate_installing"></a>fbasilentupdate_installing
+
+Šis įvykis nurodo, kad buvo pradėtas atskiras naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą, naujinimo ir jo paketo pavadinimą.
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
+
+Šis įvykis nurodo, kad užblokuotas naujinimas nebeblokuojamas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra taikomosios programos ID (identifikatoriaus programa, kurią naudoja registruoti su „Microsoft AutoUpdate“ tarnyba), skirta anksčiau blokuotai programai
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_queueinstall"></a>fbasilentupdate_queueinstall
+
+Šis įvykis nurodo, kad naujinimas bus įtrauktas į eilę tyliajam įdiegimui. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_requiredappsclosed"></a>fbasilentupdate_requiredappsclosed
+
+Užregistruojame, kai programa, kuri turi laukiantį naujinimą, yra uždaryta. Tai nurodo laiką, kada gali būti vykdomas tikrasis diegimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir taikomosios programos paketo ID.
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
+
+Šis įvykis nurodo, kad įjungtas pranešimas apie galimą atnaujinimą. Turi būti užtikrinta, kad, aptikus naujinimą, būtų paleidžiamas raginimas naujinti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_userclicknotification"></a>fbasilentupdate_userclicknotification
+
+Šiame įvykyje nurodomas vartotojo spustelėtas turinys pranešime, kuris, skirtas naujinimui, ir paleidžiama „Microsoft AutoUpdate GUI“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_userselectinstalllater"></a>fbasilentupdate_userselectinstalllater
+
+Šis įvykis nurodo, kad vartotojas pasirinko diegti vėliau, po to, kai parodomas pranešimas apie prieinamą naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="fbasilentupdate_userselectinstallnow"></a>fbasilentupdate_userselectinstallnow
+
+Šis įvykis nurodo, kad vartotojas pasirinko diegti dabar, po to, kai parodomas pranešimas apie prieinamą naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installdata_checkrunning"></a>installdata_checkrunning
+
+Šis įvykis užregistruoja patikros tarp diegiamų programų rezultatus ir tai, ar bandymas bus vykdomas atsižvelgiant į atidarytą taikomąją programą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installdata_cleanup"></a>installdata_cleanup
+
+Paketiniai failai turi būti pašalinami po įdiegimo. Šis įvykis fiksuoja atvejus, kai nepašalinome jų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima atsisiųsto failo pavadinimą ir klaidos informaciją.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installedapp_invalidbundle"></a>installedapp_invalidbundle
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ negalėjo gauti paketo informacijos apie registruotą taikomąją programą tam tikru maršrutu. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installedapp_invalidpreference"></a>installedapp_invalidpreference
+
+Šis įvykis registruoja atvejus, kai vartotojo nuostatose yra neleistinas taikomosios programos įrašas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installedapp_nilbundleid"></a>installedapp_nilbundleid
+
+Šis įvykis registruoja atvejus, kai taikomojoje programoje trūko paketo ID. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installedapp_nilbundlename"></a>installedapp_nilbundlename
+
+Šis įvykis registruoja atvejus, kai taikomojoje programoje trūko paketo pavadinimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installstatus_codesign"></a>installstatus_codesign
+
+Šis įvykis registruoja OS koprojektinių dvejetainių būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+    
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installstatus_daemon"></a>installstatus_daemon
+
+Šis įvykis užregistruoja „Microsoft AutoUpdate“ „Daemon“ būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – nurodoma, ar „Daemon“ komponentas yra tikėtinoje vietoje ir ar jis koprojektinis.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installstatus_helper"></a>installstatus_helper
+
+Šis įvykis užregistruoja „Microsoft AutoUpdate“ pagalbininko įrankio būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – nurodoma, ar „PrivilegedHelperTool“ komponentas yra tikėtinoje vietoje ir ar jis koprojektinis.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installupdatestask_applaunched"></a>installupdatestask_applaunched
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ aptiko užblokuoto naujinimo taikomųjų programų paleidimą, bet negalėjo rasti tinkamos diegimo programos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pateikiamas pradėtos taikomosios programos pavadinimas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installupdatestask_applaunchwithpendingupdate"></a>installupdatestask_applaunchwithpendingupdate
+
+Šis įvykis nurodo „Microsoft AutoUpdate“ aptiktą taikomųjų programų paleidimą su laukiančiu naujinimu. Paleista taikomoji programa bus nutraukta. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installupdatestask_codesignverificationfail"></a>installupdatestask_codesignverificationfail
+
+Šis įvykis nurodo, kad nepavyko patikrinti „CodeSign“ taikomosios programos naujinimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą, naujinimo pavadinimą ir nesėkmės kodą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installupdatestask_codesignverificationstart"></a>installupdatestask_codesignverificationstart
+
+Šis įvykis nurodo, kad prasidėjo „CodeSign“ taikomosios programos naujinimo patvirtinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir atnaujintos taikomosios programos pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installupdatestask_codesignverificationsuccess"></a>installupdatestask_codesignverificationsuccess
+
+Šis įvykis nurodo, kad „CodeSign“ taikomosios programos naujinimo patvirtinimas buvo sėkmingas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir atnaujintos taikomosios programos pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installupdatestask_failsilentinstall"></a>installupdatestask_failsilentinstall
+
+Šis įvykis registruoja nesėkmes taikant tyliuosius naujinimus ir, ar tai buvo klonuotas, ar reguliarus diegimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+    
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir tipą.
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installupdatestask_multiplerelocatablepackage"></a>installupdatestask_multiplerelocatablepackage
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ nustatė keletą konkretaus naujinimo paketo taikomųjų programų įrašų egzempliorių atsisiųstoje deklaracijoje. Šis įvykis naudojamas norint užtikrinti, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padės pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir naujinimo pavadinimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installupdatestask_removeclone"></a>installupdatestask_removeclone
+
+Šis įvykis nurodo, kad buvo pašalintas klonas. Pašaliname kloną, kai Diegimo klonuojant procesas baigtas, arba, kai pradedamas naujas procesas, o senesnė klonuota versija randama kompiuteryje. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą, naujinimo ir jo paketo pavadinimą, pašalinti klono statusą, pranešimus apie klaidas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installupdatestask_retryfail"></a>installupdatestask_retryfail
+
+Šis įvykis nurodo, kad vykstant diegimo kartojimo procesui įvyko klaidų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti atnaujinimo veiklą, atnaujinimo pavadinimą ir, ar diegimas turi būti atliekamas naudojant diegimą klonuojant
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+
+Šis įvykis registruoja vidinio proceso ryšio klaidas (bendravimas su MAU pagalbininko įrankiu). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti atnaujinimo veiklą, naujinimo pavadinimą ir informaciją apie tarpinio serverio klaidos pranešimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+
+Šis įvykis registruoja vidinio proceso ryšio klaidas (bendravimas su MAU pagalbininko įrankiu). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti atnaujinimo veiklą, naujinimo pavadinimą ir informaciją apie tarpinio serverio klaidos pranešimą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+
+### <a name="installupdatestask_retryresponse"></a>installupdatestask_retryresponse
+
+Šis įvykis registruoja nepavykusius bandymus iš naujo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti atnaujinimo veiklą, naujinimo vardą, taikomosios programos versiją, naujinimo paketo pavadinimą ir nuorodą, ar buvo diegiama klonuojant, ar diegimas buvo sėkmingas ir, ar yra klaidų, pranešančių apie triktis.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installupdatestask_retrysuccess"></a>installupdatestask_retrysuccess
+
+Šis įvykis po pakartotinio atnaujinimo užregistruoja sėkmingą naujinimo diegimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti atnaujinimo veiklą, naujinimo pavadinimą, taikomosios programos versiją, naujinimo paketo pavadinimą ir nuorodą, ar buvo diegiama klonuojant.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="installupdatestask_setreopengui"></a>installupdatestask_setreopengui
+
+Šis įvykis nurodo, ar po sėkmingo įdiegimo buvo sukurtas pasirinkimas iš naujo atidaryti GUI. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis veikimo sėkmę.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
+
+Šis įvykis nurodo komandą CLI (kliento eilutės sąsaja), kad būtų taikomas naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomųjų programų, kurios turi būti atnaujinti, ID sąrašą.
+    
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo konfigūruoti „Apple“ įvykį. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo „Apple“ įvykį, kad sukurtų naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="msupdate_monitor_progress_downloaded"></a>msupdate_monitor_progress_downloaded
+
+Šis įvykis nurodo, kad naujinimai buvo atsiųsti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima atsisiųstų naujinimų sąrašus
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="msupdate_monitor_progress_failure"></a>msupdate_monitor_progress_failure
+
+Šis įvykis užregistruoja eilėje esančių naujinimų, kurių nepavyko pritaikyti, sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima naujinimų sąrašus.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="msupdate_monitor_progress_finished"></a>msupdate_monitor_progress_finished
+
+Šis įvykis užregistruoja eilėje esančių naujinimų, kurie baigti diegti, sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima naujinimų sąrašus.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="msupdate_monitor_progress_queued"></a>msupdate_monitor_progress_queued
+
+Šis įvykis užregistruoja eilėje esančių naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima naujinimų sąrašus.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="optinnotificationaction"></a>Optinnotificationaction
+
+Šis įvykis užregistruoja vartotojo atsaką į „opt-in“ dialogo langą, kad būtų galima naudoti tyliuosius naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra statinis tekstas, vaizduojantis vartotojo pasirinkimą, dėl automatinio atsisiuntimo ir įdiegimo.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="sauupdateinfoprovider"></a>sauupdateinfoprovider
+
+Šis įvykis registruoja, kai antriniame faile nėra deklaracijos rakto. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** yra eilutė, naudojama ieškoti atnaujinimo vietos ar dydžio.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatecore_appregistration"></a>updatecore_appregistration
+
+Šis įvykis registruoja žurnale bandymus užregistruoti taikomąją programą ir rezultatą/priežastį. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi identifikatorių, kuris naudojamas sekti atnaujinimo veiklą, nurodo, ar yra pirmenybė, nurodo, ar tai yra pakartotinis registravimas, ir, ar būtina registruotis.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatecore_loadinglaunchagent"></a>updatecore_loadinglaunchagent
+
+Šis įvykis nurodo, kad įkeliamas paleidimo agentas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
+
+Šis įvykis registruoja klaidas, kurios gautos siekiant „CDN“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima informaciją apie serverio pavadinimą, ar serveris galioja ir, ar yra pasiekiamas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
+
+Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame, kad nepavyko gauti datos iš taikomosios programos metaduomenų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos ID.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
+
+Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame datą, kurios nėra programos metaduomenų dalyje. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+    
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos ID.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefilterhelper_missingbuilddate"></a>updatefilterhelper_missingbuilddate
+
+Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame datą, kurios nėra programos metaduomenų dalyje. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos ID.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefilterhelper_updatebypassedoldage"></a>updatefilterhelper_updatebypassedoldage
+
+Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame tarnybą, kuri buvo apeinama dėl senos atnaujinimo datos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos ID.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_check_start"></a>updatefinder_check_start
+
+Šis įvykis užregistruoja kaskart, kai inicijuojame tikrinimą dėl naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+    
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima informaciją apie siūlomus naujinimus, registruotas taikomąsias programas ir laikinąsias vietas atsisiųstų failų įrašymui.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_check_status"></a>updatefinder_check_status
+
+Šis įvykis sujungia naujinimo operacijų patikros būseną (piltuvėlis nuo ieškos iki atsisiuntimo). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima informaciją apie siūlomus naujinimus, registruotas taikomąsias programas ir laikinąsias vietas atsisiųstų failų įrašymui.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_check_updatefound"></a>updatefinder_check_updatefound
+
+Užregistruojame, kai randama naujinimų tikrinant naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_check_updatenotfound"></a>updatefinder_check_updatenotfound
+
+Užregistruojame, kai tikrinant, ar nėra naujinimų, jų nerandama. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_check_uptodate"></a>updatefinder_check_uptodate
+
+Užregistruojame, kai tikrinant, ar nėra naujinimų, jų nerandama, nes visos programos atnaujintos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
+
+Užregistruojame, kai blokuojame naujinimą dėl „OS“ reikalavimų neatitikimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pateikiama minimali reikalinga OS versija, kaip nurodyta atsisiųstame deklaracijos faile.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
+
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ negalėjo įkelti paketo informacijos apie taikomosios programos ID, nurodytą atsisiųstame deklaracijos faile. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos ID.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_offerupdates_updaterulematched"></a>updatefinder_offerupdates_updaterulematched
+
+Šis įvykis nurodo, kad buvo rastas taikomosios programos ir bazinės linijos naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos ID ir paketo versijos informaciją.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="updatefinder_registeredapps"></a>updatefinder_registeredapps
+
+Įregistruojame programas, kurios įdiegtos/registruotos/valdomos MAU. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima taikomosios programos ID ir paketo versijos informaciją.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
+
+Programų paketo naujinimas – užregistruojame, kai nėra programų paketo atnaujinimo, nes nėra antrinio failo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – tekstas, nurodantis įvykio pobūdį.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_suite_staleversion"></a>updatefinder_suite_staleversion
+
+Programų paketo naujinimas – užregistruojame, kai programų paketo naujinimo nėra, nes bazinė versija yra per sena. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra programų paketo pavadinimas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_suite_updateapplicable"></a>updatefinder_suite_updateapplicable
+
+Programų paketo naujinimas – užregistruojame, kai yra taikomas programų paketo naujinimas. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra paketo pavadinimas, bazinė ir naujinimo versija.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_suite_updatenotapplicabledefaultpath"></a>updatefinder_suite_updatenotapplicabledefaultpath
+
+Programų paketo naujinimas – užregistruojame, kai programų paketo naujinimas nesiūlomas dėl to, kad ne visos paketo programos diegiamos po numatytuoju maršrutu. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra paketo pavadinimas, bazinė ir naujinimo versija.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="updatefinder_suite_updatenotapplicableversion"></a>updatefinder_suite_updatenotapplicableversion
+
+Programų paketo naujinimas – užregistruojame, kai programų paketo naujinimas nesiūlomas dėl to, kad ne visos paketo programos yra tos pačios bazinės versijos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra paketo pavadinimas, bazinė ir naujinimo versija.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_suite_updatenotoffered"></a>updatefinder_suite_updatenotoffered
+
+Programų paketo naujinimas – užregistruojame, kada paketo naujinimas nesiūlomas dėl paketo dydžio, kuris yra didesnis nei atskirų naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra programų paketo pavadinimas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatefinder_suite_updateoffered"></a>updatefinder_suite_updateoffered
+
+Programų paketo naujinimas – užregistruojame, kai yra siūlomas programų paketo naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra paketo pavadinimas, bazinė ir naujinimo versija.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="updatemanager_checkupdate"></a>updatemanager_checkupdate
+
+Šis įvykis registruoja „Microsoft AutoUpdate“ rastų naujinimų skaičių tikrinant, ar yra naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – rastų galimų naujinimų skaičius.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="updatemanager_updatespending"></a>updatemanager_updatespending
+
+Šis įvykis nurodo, kad naujinimai buvo rasti ir laukiama diegimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – nurodo, ar užduotis veikia pagrindinėje gijoje, ir laukiančių naujinimų skaičių.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
+
+Šis įvykis nurodo, kad buvo rasti tylaus atnaujinimo kandidatai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – rastų naujinimų skaičius ir taikomosios programos ID.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="webservices_deltaupdater"></a>webservices_deltaupdater
+
+Šis įvykis registruoja sąveiką tarp kliento kodo ir funkcijų vartų, kurie kontroliuoja, ar klientas turėtų leisti „Delta“ naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra atsakas iš žiniatinklio tarnybų ir naujinimo tipo, kuris pritaikomas.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="webservices_serviceaction"></a>webservices_serviceaction
+
+Užregistruojame klaidas, kylančias dėl netikėto webservice atsakymo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima išsamią informaciją apie veiksmus, kurie yra siunčiami iš žiniatinklio tarnybų.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="webservices_serviceaction"></a>webservices_serviceaction
+
+Užregistruojame klaidas, kylančias dėl netikėto webservice atsakymo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – apima išsamią informaciją apie veiksmus, kurie yra siunčiami iš žiniatinklio tarnybų.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+### <a name="webservices_serviceresponse"></a>webservices_serviceresponse
+
+Šis įvykis registruoja MAU tarnybos, atsakymo laiko ir klaidų užklausas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi užklausos ID, taikomosios programos pavadinimą, atsakymo laiką ir (arba) būsenos kodą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+    
+### <a name="webservices_silentupdate"></a>webservices_silentupdate
+
+Užregistruojame užklausas, kad patikrintume, ar taikomos priverstinio naujinimo taisyklės, t. y. mes privalome perkelti vartotoją nuo N komponavimo versijos prie N + 1, nes kilo didelė problema. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – turi užklausos ID, taikomosios programos pavadinimą, atsakymo laiką ir (arba) būsenos kodą.
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
+
+### <a name="webservices_webcontent"></a>webservices_webcontent
+
+Užregistruojame užklausas ir atsakymus, gautus į webservices. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – yra žiniatinklio tarnybos skambintojo ID
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+## <a name="onenote-sync-events"></a>„OneNote“ sinchronizavimo įvykiai
+
+### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
+ 
+Šis įvykis registruoja bloknoto sinchronizavimo rezultatą. Jis naudojamas norint suprasti, kiek reikia unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą.
+ 
+Renkami toliau apibūdintų laukų duomenys
+
+- **CachedError_Code** – skaitinis arba raidinis kodas, naudojamas nustatyti talpyklinės klaidos pobūdį ir (arba), kodėl ji įvyko
+
+- **CachedError_Description** – talpyklinės klaidos aprašas
+
+- **CachedError_Tag** – nurodo, kur kode įvyksta talpyklinė klaida
+
+- **CachedError_Type** – talpyklinės klaidos tipas, pvz., „Win32Error“ ir t. t.
+
+- **ExecutionTime** – laikas milisekundėmis, reikalingas bloknotui dubliuoti
+
+- **Gosid** – visuotinio objekto srities ID
+
+- **IdentityType** – tapatybės tipas, pavyzdžiui, „Windows Live“, organizacijos ID ir t. t.
+
+- **InitialReplicationInSession** – nurodo, ar dubliuojamas pirmasis bloknoto dubliavimas atidarius, ar ne
+
+- **IsBackgroundSync** – nurodo, ar tai fono sinchronizavimas ar ne
+
+- **IsCachedErrorSuppressed** – nurodo, ar talpyklinė klaida suglaudinta, ar ne
+
+- **IsCachedErrorUnexpected** – nurodo, ar talpyklinė klaida netikėta, ar ne
+
+- **IsNotebookErrorSuppressed** – nurodo, ar bloknoto lygio sinchronizavimo klaida suglaudinta, ar ne
+
+- **IsNotebookErrorUnexpected** – nurodo, ar bloknoto lygio sinchronizavimo klaida netikėta, ar ne
+
+- **IsSectionErrorSuppressed** – nurodo, ar sekcijos sinchronizavimo klaida suglaudinta, ar ne
+
+- **IsSectionErrorUnexpected** – nurodo, ar sekcijos sinchronizavimo klaida suglaudinta, ar ne
+
+- **IsUsingRealtimeSync** – nurodo, ar bloknotas sinchronizuotas naudojant šiuolaikinį puslapio turinio sinchronizavimą, ar ne
+
+- **LastAttemptedSync** – laiko žyma, nurodanti, kada bloknotas buvo bandytas sinchronizuoti paskutinį kartą
+
+- **LastBackgroundSync** – laiko žyma, nurodanti, kada paskutinį kartą buvo bandyta sinchronizuoti foną
+
+- **LastNotebookViewedDate** – vėliausios bloknoto peržiūros data
+
+- **LastSuccessfulSync** – laiko žyma, nurodanti, kada bloknotas buvo sėkmingai sinchronizuotas prieš tai
+
+- **NeedToRestartBecauseOfInconsistencies** – nurodo, ar sinchronizavimą reikia paleisti iš naujo dėl nesuderinamumų, ar ne
+
+- **NotebookErrorCode** – nurodo, kad bloknoto lygio sinchronizavimo klaidos kodas įrašytas bloknoto diagramos srityje
+
+- **NotebookId** – bloknoto ID
+
+- **NotebookType** – bloknoto tipas
+
+- **ReplicatingAgainBecauseOfInconsistencies** – nurodo, ar sinchronizavimas paleidžiamas iš naujo dėl nesuderinamumų, ar ne
+
+- **SectionError_Code** – skaitinis arba raidinis kodas, naudojamas nustatyti sekcijos sinchronizavimo klaidos pobūdį ir (arba) kodėl ji įvyko
+
+- **SectionError_Description** – sekcijos sinchronizavimo klaidos aprašas
+
+- **SectionError_Tag** – nurodo, kur kode įvyksta sekcijos sinchronizavimo klaida
+
+- **SectionError_Type** – sekcijos sinchronizavimo klaidos tipas, pvz., „Win32Error“ ir t. t.
+
+- **Success** – nurodo, ar bloknotą pavyko sėkmingai sinchronizuoti, ar ne
+
+- **SyncDestinationType** – nurodo sinchronizacijos paskirties tipą, pvz., „OneDrive“ arba „SharePoint Online“
+
+- **SyncId** – unikalus kiekvieno bloknoto sinchronizavimo numeris
+
+- **SyncWasFirstInSession** – nurodo, ar šis sinchronizavimas yra pirmasis sinchronizavimas per dabartinį seansą
+
+- **SyncWasUserInitiated** – nurodo, ar šį sinchronizavimą inicijavo vartotojas, ar ne
+
+- **TenantId** – „SharePoint“ nuomotojo ID
+
+- **TimeSinceLastAttemptedSync** – laikas, praėjęs nuo vėliausio bandymo sinchronizuoti bloknotą
+
+- **TimeSinceLastSuccessfulSync** – laikas, praėjęs nuo vėliausio sėkmingo bloknoto sinchronizavimo
+
+### <a name="officeonenotestoragerealtimewebsocketsessioninfo"></a>Office.OneNote.Storage.RealTime.WebSocketSessionInfo
+ 
+Šis įvykis registruoja „WebSocket“ sinchronizavimo rezultatus, kad OneNot" moderniame puslapyje turinys būtų sinchronizuojamas šiuolaikiška hierarchija. Jis naudojamas norint suprasti, kiek yra unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą. Jis taip pat naudojamas „OneNote“ modernių sinchronizavimo efektyvumo ataskaitų srityje.
+ 
+Renkami šių laukų duomenys:
+ 
+- **CloseReason** – „Web Socket“ uždarymo priežastis, pvz., nenormalus uždarymas ir t. t.
+
+- **DataIsFreshCount** – sėkmingų užklausų iš „Web Socket“ seanso skaičius
+
+- **DeviceSessionId** – įrenginio seanso ID
+
+- **DownloadCount** – Atsisiuntimų skaičius „Web Socket“ seanso metu
+
+- **Error** – yra iš esmės Exception_Type + Exception_Description + Exception_Code + Exception_Tag
+
+- **Exception_Code** – skaitinis arba raidinis kodas, naudojamas nustatyti klaidos pobūdį ir (arba), kodėl ji įvyko
+
+- **Exception_Description** – trumpas klaidos aprašas
+
+- **Exception_Tag** – nurodo vietą kode, kur yra klaida
+
+- **Exception_Type** – klaidos tipas, pvz. Win32Error ir t.t.
+
+- **FirstUpdateSize** – pirmo atnaujinimo pranešimo ilgis
+
+- **HasError** – ar įvyko klaida „Web Socket“ seanso metu 
+
+- **IsEducationNotebook** – ar dabartinis bloknotas yra išsilavinimo bloknotas, ar ne
+
+- **IsHierarchyResource** – ar dabartiniai ištekliai yra puslapyje, ar sekcijoje
+
+- **NotebookId** – „OneNote“ bloknoto ID
+
+- **OperationWithError** – kurios operacijos metu įvyko klaida, pvz., WebSocket.Close, WebSocket.Open ir t.t.
+
+- **ResourceId** – „OneNote“ puslapio arba skyriaus išteklių ID
+
+- **SectionId** – „OneNote“ skyriaus ID
+
+- **ServerSessionId** – seanso ID, naudojamas susieti „WebSocket“ prašymą su onenote.com
+
+- **SessionDurationInMs** – „WebSocket“ seanso trukmė milisekundėmis
+
+- **TenantId** – „SharePoint“ nuomotojo ID
+
+- **TimeToFirstUpdateInMs** laikas milisekundėmis gaunant pirmąjį atnaujinimą iš serverio, kai vyksta „WebSocket“ seansas
+
+- **UploadAckCount** – nusiuntimo skaičius „WebSocket“ seanso metu
+
+- **WebUrl** -PII ir trinamas žiniatinklio URL 
+
+### <a name="officeonenotestoragesectionsyncresult"></a>Office.OneNote.Storage.SectionSyncResult
+ 
+Šis įvykis registruoja skyriaus sinchronizavimo rezultatą. Jis naudojamas norint suprasti, kiek reikia unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą. Jis taip pat naudojamas „OneNote“ modernių sinchronizavimo efektyvumo ataskaitų srityje.
+ 
+Renkami toliau apibūdintų laukų duomenys
+
+- **Error_Code** – skaitinis arba raidinis kodas, naudojamas nustatyti klaidos pobūdį ir (arba), kodėl ji įvyko
+
+- **Error_Description** – trumpas klaidos aprašas
+
+- **Error_Tag** – nurodo, kur kode įvyksta klaida
+
+- **Error_Type** – klaidos tipas, pvz., „Win32Error“ ir t. t.
+
+- **ErrorLast** – paskutinį kartą matytos klaidos kodas 
+
+- **ExecutionTime** – laikas milisekundėmis, reikalingas skyriui dubliuoti
+
+- **InitialReplicationInSession** – nurodo, ar dubliuojamas pirmasis bloknoto dubliavimas atidarius, ar ne
+
+- **IsAttachedViaShortcut** – ar skyrius prisegtas per nuorodą, ar ne
+
+- **IsBackgroundSync** – nurodo, ar tai fono sinchronizavimas, ar ne
+
+- **IsEncrypted** – ar skyrius užšifruotas, ar ne
+
+- **IsCachedErrorSuppressed** – nurodo, ar klaida suglaudinta, ar ne 
+
+- **IsErrorTransient** – ar ši klaida laikina, ar ne
+
+- **IsCachedErrorUnexpected** – nurodo, ar klaida netikėta, ar ne
+
+- **IsUsingRealtimeSync** – nurodo, ar skyrius sinchronizuotas naudojant šiuolaikinį puslapio turinio sinchronizavimą, ar ne
+
+- **NotebookId** – bloknoto ID
+
+- **NotebookPath** – PII trinama bloknoto URL
+
+- **SectionPath** – PII trinamas skyriaus URL
+
+- **SectionReplicatingIsOutbound** – ar tai replikacija, siuntimo replikacija, ar ne
+
+- **SectionReplicatingIsSameIdentity**– ar replikacija paremta tuo pačiu failo identifikatoriumi ar ne
+
+- **SectionResourceId** – „OneNote“ skyriaus išteklių ID
+
+- **Success** – nurodo, ar skyrių pavyko sėkmingai sinchronizuoti, ar ne
+
+- **SyncDestinationType** – nurodo sinchronizacijos paskirties tipą, pvz., „OneDrive“ arba „SharePoint Online“
+
+- **SyncId** – unikalus kiekvieno skyriaus sinchronizavimo numeris
+
+- **SyncWasFirstInSession** – nurodo, ar šis sinchronizavimas yra pirmasis sinchronizavimas per dabartinį seansą
+
+- **SyncWasUserInitiated** – nurodo, ar šį sinchronizavimą inicijavo vartotojas, ar ne
+
+- **TenantId** – „SharePoint“ nuomotojo ID
+
+- **UnmappedGosid** – skyriaus ID prieš pritaikant susiejimą su GUID
+
+
+### <a name="officeonenotestoragesyncscore"></a>Office.OneNote.Storage.SyncScore
+ 
+Šis įvykis registruoja visus neigiamus sinchronizavimo elementus, kurie matomi vartotojams. Jis naudojamas apskaičiuojant „OneNote“ sinchronizavimo balą, kuris yra kritinė metrika, skirta „OneNote“ vartotojų sinchronizavimo patirčiai įvertinti.
+ 
+Renkami toliau apibūdintų laukų duomenys
+
+- **AutoShowSyncStatus** – ar sinchronizavimo būsena yra automatiškai rodoma, ar ne
+
+- **Cause** – dėl ko „OneNote“ puslapiai/skyriai perkelti į netinkamoje vietoje esančius skyrius
+
+- **Context** – išvardijama, ką vartotojas bando daryti, pvz., pervardyti skyrių, iš naujo atidaryti bloknotą ir t. t.
+
+- **Error_Code** – skaitinis arba raidinis kodas, naudojamas nustatyti klaidos pobūdį ir (arba), kodėl ji įvyko
+
+- **Error_Description** – trumpas klaidos aprašas
+
+- **Error_Tag** – nurodo, kur kode įvyksta klaida
+
+- **Error_Type** – klaidos tipas, pvz., „Win32Error“ ir t. t.
+
+- **ErrorText** – vartotojo sąsajos rodomas klaidos tekstas
+
+- **Explanation** – paaiškinama, kokius laukiančius siuntimo pakeitimus reikia perkelti į netinkamoje vietoje esančius skyrius
+
+- **fishbowlType** – „Fishbowl“ tipas pvz., Page Fishbowl, Section Fishbowl ir t. t.
+
+- **IDS** – vartotojo sąsajos rodomo teksto sveikasis identifikavimo ženklas
+
+- **idsFishbowl** – vartotojo sąsajos rodomas „Fishbowl“ klaidos sveikasis identifikatorius
+
+- **IsUsingRealtimeHierarchySync** – ar naudoja modernų hierarchinį sinchronizavimą, ar ne
+
+- **NotebookId** – bloknoto ID
+
+- **PageSyncUIState** – puslapių sinchronizavimo būsenos eilutė, pvz., UpToDate, Syncing, SaveOffline, SyncError ir t. t. 
+
+- **ServerGosid** – naujai sukurto nesuderinamumų puslapio šaltinio ID
+
+- **Source** – išvardijimas nurodo, kuris įvykis paskatino vartotojo sąsają, t. y. sukūrė naują redx vaizdą, sinchronizavimo klaida sinchronizuojant vartotojo sąsajoje, rodomas klaidos dialogo langas ir t. t.
+
 
 ## <a name="services-configuration-events"></a>Paslaugų konfigūravimo įvykiai
 
