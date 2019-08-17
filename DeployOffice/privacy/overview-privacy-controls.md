@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirta „Office 365 ProPlus“ privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: a362a50b3d75e0792623745ef32fb93b4e458a41
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
+ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238935"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36441605"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių apžvalga
 
@@ -65,7 +65,8 @@ Vartotojai negalės pakeisti diagnostikos duomenų lygio savo įrenginiuose, jei
 Šie diagnostikos duomenys neapima vartotojų vardų, jų e. pašo adresų arba jų „Office“ failų turinio. Mūsų sistema sukuria unikalųjį ID, kuris susiejamas su vartotojo diagnostikos duomenimis. Kai gauname diagnostikos duomenis, rodančius, kad 100 kartų įvyko vienos iš mūsų programų gedimas, pagal šį unikalųjį ID galime nustatyti, ar programos gedimas įvyko 100 kartų vienam vartotojui, ar po vieną kartą 100 skirtingų vartotojų. Nenaudojame šio unikaliojo ID, kad identifikuotume konkretų vartotoją.
 
 Norėdami pamatyti, kokie diagnostikos duomenys siunčiami „Microsoft“, galite naudoti diagnostikos duomenų peržiūros programą, kurią galite nemokamai atsisiųsti ir įdiegti iš „Microsoft“ parduotuvės.
-7 Jei reikia daugiau informacijos, žr.:
+
+Jei reikia daugiau informacijos, žr.:
 
 - [Būtinieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
