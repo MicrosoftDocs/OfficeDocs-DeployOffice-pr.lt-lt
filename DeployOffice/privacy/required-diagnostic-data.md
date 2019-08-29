@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: e6078bf96c60d0f01aeaea0cabe32f135a8fa1a3
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
+ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238900"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36656126"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -954,27 +954,19 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeprogrammabilityadd-insinternalsetconnectenterprise"></a>Office.Programmability.Add-ins.InternalSetConnectEnterprise
 
-Įvykis sugeneruotas, kai COM papildinys yra įkeltas „Enterprise“ įrenginyje. Kompiuterio analizė: \# įkėlimai naudojami kaip vardiklis sveikatai apskaičiuoti (\# gedimas / \# įkėlimai), kai skaičiuojami sveikatos metrikai bandomajam sprendimui ir gamybos žiediniams tinklams „Enterprise“ scenarijuose. Tai reikalauja, kad duomenys būtų tikslūs, ne atrinkti, nes įrenginių skaičius yra mažesnis (100–1000).
+Įvykis generuojamas, kai COM papildinys yra įkeltas į įmonės įrenginį. 
 
 Renkami šių laukų duomenys:
 
+  - **Activity Result** – sėkmingai užmegzto ryšio būsena
+
   - **Add-inconnectFlag** – dabartinio įkėlimo veikimas
 
-  - **Add-inDescription** – papildinio aprašas
-
-  - **Add-inFileName** – papildinio failo vardas, be failo kelio
-
-  - **Įtraukti inFriendlyName** – papildinio aiškus pavadinimas
-
-  - **Add-inFriendlyName** – papildinio klasės ID
-
-  - **Add-inProgId** – papildinio programos ID
-
-  - **Add-inProvider** – papildinio teikėjas
+  - **Add-inId** – papildinio klasės ID
 
   - **Add-inTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
 
-  - **Add-inVersion** – papildinio versija
+  - **IsBootInProgress** – ar „Office“ taikomoji programa šiuo metu perkraunama
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -3016,13 +3008,11 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointpptmacshellprintinfo"></a>Office.PowerPoint.PPT.Mac.Shell.PrintInfo
 
-Renkama, kai PDF spausdinimo arba PDF eksportavimo operacija baigta, ir joje yra informacijos apie maketo tipą bei operacijos sėkmę. Ši informacija yra labai svarbi norint nustatyti, kaip ar PDF spausdinimo arba PDF eksportavimo operacijos sėkmingai vykdomos mūsų programoje.
+Renkama, kai PDF eksportavimo operacija baigta, ir joje yra informacijos apie operacijos sėkmę. Ši informacija yra labai svarbi norint nustatyti, ar PDF eksportavimo operacijos sėkmingai vykdomos mūsų programoje.
 
 Renkami šių laukų duomenys:
 
 - **Data_ExportAsPDFSucceed** – Bulio logika, nurodanti, ar PDF eksportavimas buvo sėkmingas.
-
-- **Data_SavePrintLayoutType** – spausdinimo maketo tipas tuo metu, kai pradedama spausdinti arba eksportuoti.
 
 
 #### <a name="officepowerpointpptsharedslideshowfailure"></a>Office.PowerPoint.PPT.Shared.SlideShow.Failure
@@ -3528,7 +3518,7 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
 - **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
@@ -3619,7 +3609,7 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
 - **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
@@ -3716,7 +3706,7 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
 - **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
@@ -3833,7 +3823,7 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
-- **Data.Doc.Location –** nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
 - **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
 
@@ -5602,10 +5592,9 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
-Įvykis generuojamas, kai sugenda COM papildinys
+Įvykis generuojamas, kai vartotojo „Office“ taikomųjų programų versijoje sugenda COM papildinys. 
 
-Kompiuterio „Analytics“: naudojama kaip skaitiklis apskaičiuojant konkrečių įmonių sveikatos būklę papildiniams, kurie naudojami bandomajam rezultatui, jei papildinys „parengtas atnaujinti“ gamybos metu.  
-Visuotinės įžvalgos: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam papildinio „pasirengimui“, papildinys tada skelbiamas readyforwindows.com ir kitose priemonėse, pvz., „Readiness Toolkit“
+Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Office 365 ProPlus“ „pritaikymui“; po to papildinys skelbiamas readyforwindows.com ir kitose priemonėse, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Office 365 ProPlus“ versijomis, ir atitinkamai suplanuoti jų plėtotes. 
 
 Renkami šių laukų duomenys:
 
@@ -5617,15 +5606,15 @@ Renkami šių laukų duomenys:
 
 - **AddinId** – papildinio klasės ID
 
-- **AddinProgId** – papildinio programos ID
+- **AddinProgId** – nebenaudojama
 
-- **AddinFriendlyName** – papildinio draugiškas vardas
+- **AddinFriendlyName** – nebenaudojama
 
-- **Add-inTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
+- **AddinTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
 
-- **AddinVersion** – papildinio versija
+- **AddinVersion** – nebenaudojama
 
-- **AddinFileName** – papildinio failo vardas, išskyrus failo kelią
+- **AddinFileName** – nebenaudojama
 
 - **VSTOAddIn** – ar papildinys yra VSTO
 
@@ -5635,34 +5624,33 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilitycomaddinunhandledexceptionenterprise"></a>Office.Extensibility.COMAddinUnhandledExceptionEnterprise
 
-Įvykis generuojamas, kai sugenda COM papildinys.  Naudojama kaip skaitiklis apskaičiuojant konkrečių įmonių sveikatos būklę papildiniams, kurie naudojami bandomajam rezultatui, jei papildinys „parengtas atnaujinti“ gamybos metu.
+Įvykis generuojamas, kai COM papildinys sugenda įmonės „Office“ taikomųjų programų versijoje.
 
-Renkami toliau apibūdintų laukų duomenys (turėkite omenyje, kad šie laukai parašyti kaip vietos rezervavimo ženklai, neleidžiantys suskaidyti esamų scenarijų: AddinFriendlyName, AddinProgId, AddinVersion, AddinFileName)
-
-
-- **AddinConnectFlag** – dabartinio įkėlimo veikimas
-
-- **AddinFileName** – laukas tuščias – netinkama
-
-- **AddinFriendlyName** – laukas tuščias – netinkama
-
-- **AddinId** – papildinio klasės ID
-
-- **AddinProgId** – laukas tuščias – netinkama
-
-- **AddinTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
-
-- **AddinVersion** – laukas tuščias – netinkama
-
-- **Interface** – „Office“ sąsaja, kurioje įvyko išimtis
-
-- **LoadAttempts** – bandymų įkelti papildinį skaičius
-
-- **Method** – „Office“ metodas, kuriame įvyko išimtis
+Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Office 365 ProPlus“ „pritaikymui“; po to papildinys skelbiamas readyforwindows.com ir kitose priemonėse, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Office 365 ProPlus“ versijomis, ir atitinkamai suplanuoti jų plėtotes. 
 
 - **ScopeId** – taikoma dabartinės gijos apimtis
 
+- **Method** – „Office“ metodas, kur įvyko išimtis
+
+- **Interface** – „Office“ sąsaja, kur įvyko išimtis
+
+- **AddinId** – papildinio klasės ID
+
+- **AddinProgId** – nebenaudojama
+
+- **AddinFriendlyName** – nebenaudojama
+
+- **AddinTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
+
+- **AddinVersion** – nebenaudojama
+
+- **AddinFileName** – nebenaudojama
+
 - **VSTOAddIn** – ar papildinys yra VSTO
+
+- **Add-inconnectFlag** – dabartinio įkėlimo veiksena
+
+- **LoadAttempts** – bandymų įkelti papildinį skaičius
 
 #### <a name="officeextensibilitysandboxodpactivationheartbeat"></a>Office.Extensibility.Sandbox.ODPActivationHeartbeat
 
@@ -6050,9 +6038,13 @@ Surinkta taikomosios programos „Office“ paleidimo metu. Nurodoma, ar paleidi
 
 Renkami šių laukų duomenys:
 
-  - **Activationkind** – ar taikomoji programa buvo pradėta paleidžiant meniu Pradžia, atidarant failą arba naudojant OLE automatizavimą.
+  - **ActivationKind** – ar taikomoji programa buvo pradėta naudojant Pradžios meniu, atidarant failą arba naudojant OLE automatizavimą.
+  
+  - **BootToStart** – ar paleidžiant šią taikomąją programą vartotojas pasirinko rodyti pradžios ekraną.
 
-  - **Firstboot** – ar tai buvo pirmas taikomosios programos įkrovimas.
+  - **DocLocation** – atidarant dokumentą nurodo dokumentą pateikusią tarnybą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
+
+  - **FirstBoot** – ar tai buvo pirmas taikomosios programos įkrovimas.
 
   - **Initializationduration** – pirmojo „Office“ inicijavimo proceso trukmė mikrosekundėmis.
 
@@ -6062,11 +6054,41 @@ Renkami šių laukų duomenys:
 
   - **VirtualSetMB** – proceso paketo atminties kiekis megabaitais. (tik „MacOS“/ „iOS“)
 
-  - **WorkingSetPeakMB** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
+  - **Workingsetpeakmb** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
+
+#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+
+Veiklos stebėjimas nustatyti, ar „Office Insider“ informacijos dalis gali būti rodoma vartotojui „Office Backstage UI“ skirtuke Paskyra.
+
+Renkami šių laukų duomenys:
+
+  - **Data_CanShow** – nurodo, ar „Office Insider“ informacijos dalis gali būti rodoma vartotojui „Office Backstage UI“ skirtuke Paskyra.
+  
+  - **Data_Event** – nenaudojamas
+
+  - **Data_EventInfo** – nenaudojamas
+
+  - **Data_Reason** – nenaudojamas
+ 
+
+#### <a name="officeuxofficeinsiderregistercurrentinsider"></a>Office.UX.OfficeInsider.RegisterCurrentInsider
+
+Kritinis signalas, skirtas stebėti sėkmingą arba nesėkmingą vartotojų, kurie anksčiau nebuvo užregistruoti kaip „Office Insider“ programos dalyviai, registravimą naudojant „Office Insider“ komponavimo versijas. Jis visų pirma taikomas dabartiniams „Office Insider“ programos dalyviams, kurie prie „Office Insider“ programos prisijungė prieš įtraukiant „Office Insider“ programos dalyvių registraciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_RegisterInsider** – „Office Insider“ registracijos būsena
+
+- **Data_RegisterInsiderHr** – „Office Insider“ registracijos rezultatų kodas
+
+- **Data_RegistrationStateCurrent** – dabartinė registracijos būsena
+
+- **Data_RegistrationStateDesired** – prašoma registracijos būsena
+
 
 #### <a name="officeuxofficeinsidershowofficeinsiderdlg"></a>Office.UX.OfficeInsider.ShowOfficeInsiderDlg
 
-Kritinis signalas, naudojamas vartotojo sąveikai su dialogu „Prisijunkite prie „Office Insider“ stebėti. Jis naudojamas nustatyti bet kokioms problemoms, kurios kyla vykdant naudotojo inicijuotus pakeitimus, tokios kaip prisijungimas prie „Office Insider“ programos, pasitraukimas iš jos arba „Office Insider“ lygio pakeitimas.
+Kritinis signalas, naudojamas vartotojo sąveikai su dialogu „Prisijunkite prie „Office Insider“ stebėti. Jis naudojamas nustatyti bet kokioms problemoms, kurios kyla vykdant vartotojo inicijuotus pakeitimus, tokius kaip prisijungimas prie „Office Insider“ programos, pasitraukimas iš jos arba „Office Insider“ programos dalyvio lygio pakeitimas.
 
 Renkami šių laukų duomenys:
 
@@ -6086,19 +6108,11 @@ Renkami šių laukų duomenys:
 
 - **Data_RegisterInsiderHr** – „Office Insider“ registracijos rezultatų kodas
 
-#### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
+- **Data_RegistrationStateCurrent** – dabartinė registracijos būsena
 
-Veiklos stebėjimas nustatyti, ar „Office Insider“ informacijos dalis gali būti rodoma vartotojui „Office Backstage UI“ skirtuke Paskyra.
+- **Data_RegistrationStateDesired** – prašoma registracijos būsena
 
-Renkami šių laukų duomenys:
 
-  - **Data_CanShow** – nurodo, ar „Office Insider“ informacijos dalis gali būti rodoma vartotojui „Office Backstage UI“ skirtuke Paskyra.
-  
-  - **Data_Event** – nenaudojamas
-
-  - **Data_EventInfo** – nenaudojamas
-
-  - **Data_Reason** – nenaudojamas
 
 
 #### <a name="officevisiosharedvisiofilerender"></a>Office.Visio.Shared.VisioFileRender

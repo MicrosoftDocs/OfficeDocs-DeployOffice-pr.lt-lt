@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 3931f44787008e076807fe59746bccf015452ac3
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 785cd7f3e881d61be0ee3ee72924efb695e2f5a7
+ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36239179"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36656198"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -4664,7 +4664,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
 
-Šis įvykis nurodo, kad vartotojas pasirinko stebėti pateiktą įspėjimo rekomendaciją, susijusią su programinės įrangos diegimo veiksmais. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad vartotojas pasirinko stebėti pateiktą įspėjimo rekomendaciją, susijusią su programinės įrangos diegimo veiksmų inicijavimu. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
 Renkami šių laukų duomenys:
 
@@ -10504,8 +10504,6 @@ Renkami šių laukų duomenys:
 
   - **sysVolSizeMB –** sistemos disko vietos kiekis megabaitais.
 
-<!-- end list -->
-
   - **WindowsErrorReportingMachineId** – įrenginio, kuriame naudojamas „Office“, „Windows“ klaidų ataskaitų priskirto kompiuterio identifikatorius.
 
   - **WindowsSqmMachineId** – įrenginio, kuriame naudojamas „Office“, „Windows“ priskirto kompiuterio identifikatorius.
@@ -11163,6 +11161,12 @@ Renkami šių laukų duomenys:
   - **ErrorMessage** – analizės klaidos pranešimas
 
   - **NodeName** – mazgas, kurio nepavyko išanalizuoti
+
+### <a name="officetelemetrydynamicconfigpopulatedrequestignored"></a>Office.Telemetry.DynamicConfig.PopulatedRequestIgnored
+
+Šis įvykis generuojamas, kai nepavyksta nustatyti telemetrijos konfigūravimo galimybių.
+
+Šis įvykis nerenka jokių laukų duomenų.
 
 ### <a name="officetelemetrydynamicconfigpopulatetreecalledagain"></a>Office.Telemetry.DynamicConfig.PopulateTreeCalledAgain
 
