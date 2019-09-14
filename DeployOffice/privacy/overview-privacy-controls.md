@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirta „Office 365 ProPlus“ privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: ab024c4ce2eb4d81809880b607e084932658be3c
-ms.sourcegitcommit: 3f2319ff2f8fcde87ae5ffefa3b956a8239c4aed
+ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
+ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36441605"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980343"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių apžvalga
 
@@ -36,8 +36,9 @@ Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos el
 > - Šie keitimai taikomi „Access“, „Excel“, „OneNote“, „Outlook“, „PowerPoint“, „Publisher“ ir „Word“.
 > - Šie keitimai taikomi ir toliau nurodytiems produktams:
 >   - „Office for Mac“ (16.28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
->   - „Project“ ir „Visio“ kompiuterio 1904 ar vėlesnėms versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
-> - 1904 versijoje išleisti privatumo valdikliai turėtų būti pasiekiami pusmetiniame naujinimų kanale (tiksliniame) 2019 m. rugsėjo mėn. ir pusmetiniame naujinimo kanale 2020 m. sausio mėn.
+>   - 1904 ar vėlesnėms „Project“ ir „Visio“ kompiuterio versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+> - Šie privatumo valdikliai įtraukti į pusmetinių naujinimų kanalo (tikslinio) 1908 versiją, kuri buvo išleista 2019 m. rugsėjo 10 d. Tikimasi, kad jie bus prieinami ir 2020 m. sausio mėn. pusmetinių naujinimų kanale.
+> - Planuojama, kad šie privatumo valdikliai 2019 m. spalio mėn. antroje pusėje bus prieinami „Excel“, „OneNote“, „PowerPoint“. „Visio“ ir „Word“ „iOS“ versijose. Daugiau informacijos pateiksime spalio pradžioje.
 > - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikos duomenys, siunčiami „Microsoft“ iš „Office 365 ProPlus“
