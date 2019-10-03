@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 1ae21c76eb0cc4addcc0a26e7ca1330aef99eee1
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: 04d71fcd601f76d2613dda9bd00dccd24ab8e950
+ms.sourcegitcommit: 27db488cae3bd23342bc0d902c53b5bf89ae30a7
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238229"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37379756"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -47,6 +47,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | Rengyklė    | [Rengyklė yra jūsų rašymo asistentas](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Idėjos     | [Idėjos programoje „Excel“](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „Office 365“ programą „PowerPoint“](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Automatiniai aprašai ir subtitrai |  [Pristatymas naudojant tikralaikius automatinius aprašus programoje „PowerPoint“](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Žemėlapiai papildinyje „Power View“   | [Žemėlapiai papildinyje „Power View“](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | „Office“ pristatymo paslauga  | [„PowerPoint“ pateikties transliavimas internetu nuotolinei auditorijai](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
