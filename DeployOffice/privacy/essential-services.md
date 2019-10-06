@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 785cd7f3e881d61be0ee3ee72924efb695e2f5a7
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: 82068f529e341a71557e65e6b7d060bab878bcbe
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656198"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386927"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -585,6 +585,27 @@ Renkami šių laukų duomenys:
   - **Data\_PrereqFailure\_Type –** įvykusi būtinosios sąlygos triktis
 
   - **Data\_ProductReleaseId –** diegiamas produktas, pvz., „Office 365 ProPlus“
+
+### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
+
+Ataskaitos apie naujo spustelėkite ir naudokitės naujinimo srauto būseną ("Repoman") ir, jei ji sėkmingai atsisiunčia ir pritaiko "Office" naujinimus.
+
+Renkami šių laukų duomenys:
+
+  - **ApplySucceeded –** tiesa, jei srautui sėkmingai pritaikytas „Office“ naujinys, klaidinga, jei ne.
+  
+  - **DownloadSucceeded –** tiesa, jei srautui sėkmingai pritaikytas „Office“ naujinys, klaidinga, jei ne.
+
+  - **ErrorCode –** paskutinės klaidos, kuri įvyko „spustelėkite ir naudokitės“ „Repoman“ sraute, kodas.
+
+  - **ErrorDetails –** papildoma paskutinės klaidos, kuri įvyko „spustelėkite ir naudokitės“ „Repoman“ sraute, informacija.
+ 
+  - **ErrorMessage –** paskutinės klaidos, kuri įvyko „spustelėkite ir naudokitės“ „Repoman“ sraute, pranešimas.
+
+  - **Openstreamsessionpavyko –** teisinga, jei srautas sėkmingai sukuria seansą, skirtą „Office“ naujiniui transliuoti, klaidinga, jei ne.
+
+  - **RepomanErrorMessage –** klaidos pranešimas, gautas iš repoman.dll.
+ 
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigure"></a>Office.ClickToRun.Scenario.InstallTaskConfigure
 
@@ -2658,6 +2679,13 @@ Renkami šių laukų duomenys:
 
   - **UnmergedConfigs** – nesujungtų konfigūracijų sąrašas
 
+### <a name="officeexperimentationtriggeranalysis"></a>Office.Experimentation.TriggerAnalysis
+
+Šis įvykis padeda analizuoti produkto naudojimą ir veikimo metriką (pvz., triktis, užstrigimus ir t. t.) į vartotojų arba įrenginių, kurie gali naudoti funkciją, pogrupį ir taip padeda užtikrinti, kad produktas veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+  - **FeatureGate –** nurodo funkcijų, kurioms galima taikyti analizę, rinkinį.
 
 ## <a name="licensing-events"></a>Licencijavimo įvykiai
 
@@ -10920,7 +10948,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officesystemsystemhealthungracefulapplicationexitwin32"></a>Office.System.SystemHealthUngracefulApplicationExitWin32
 
-Naudojama gaunant gedimo metriką.
+Įvykį sukelia neįprastas programos nutraukimas (pvz., užduočių tvarkyklės uždarymas, programos pakibimas ir kt.), jis skirtas „Office“ kliento programoms, tokioms kaip, bet tuo neapsiribojant, „Word“, „Excel“, „PowerPoint“ ir „Outlook“. „Office“ klientų produktų būklei įvertinti naudojame nesklandaus išėjimo iš programos metriką. Tai yra verslui svarbus signalas, kurį naudoja „Office“ inžinieriai, siekdami užtikrinti produkto stabilumą.
 
 Renkami šių laukų duomenys:
 
@@ -10932,11 +10960,7 @@ Renkami šių laukų duomenys:
 
   - **CrashedAppRevision –** paveikto proceso komponavimo versijos identifikatorius.
 
-  - **CrashedConfigIds –** procesui, kuriame įvyko gedimas, priskirta konfigūracija.
-
   - **CrashedEcsETag -** proceso, kuriame įvyko gedimas, eksperimento identifikatorius.
-
-  - **CrashedImpressionId –** proceso, kuriame įvyko gedimas, parodymo identifikatorius.
 
   - **CrashedModuleName –** modulio su klaida pavadinimas.
 
@@ -10951,6 +10975,8 @@ Renkami šių laukų duomenys:
   - **ExceptionAddress –** adresas programoje, kur įvyko triktis.
 
   - **ExceptionCode –** išimties skirstymo identifikatorius.
+
+  - **HexCrashTag-** unikalus gedimo kodo identifikatorius.
 
   - **HexExceptionAddress –** šešioliktainis adresas programoje, kur įvyko triktis.
 
@@ -10977,6 +11003,8 @@ Renkami šių laukų duomenys:
   - **PreviousBuild –** anksčiau įdiegta komponavimo versija
 
   - **UAEOSEnvironment –** operacinės sistemos aplinkos identifikatorius.
+
+  - **UninitLibletId –** unikalus nepavykusio gedimo komponento identifikatorius.
 
   - **VerifyElseCrashTag –** programos gedimo vietos unikalusis identifikatorius.
 
