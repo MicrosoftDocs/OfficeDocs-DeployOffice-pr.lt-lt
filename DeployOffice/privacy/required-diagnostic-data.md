@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 6a03f23d77aef8f2c8f6548cf462a33194d8a4aa
-ms.sourcegitcommit: a47876f7500d1ae0270f35ee79da8ab32e57ae3a
+ms.openlocfilehash: a5770d3ed30f86dfbf1cb1dfc4a45bbb15179da8
+ms.sourcegitcommit: 4abc1462753e6cb5c01642c9711d19b220dadac0
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36656126"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37386973"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -124,31 +124,31 @@ Informacija apie vartotojų sutikimą dėl diagnostikos duomenų ir prisijungus 
 
   - **DiagnosticConsentSourceLocation** – nurodo, kaip vartotojas pateikė sutikimą dėl diagnostikos duomenų
 
-  - **DiagnosticConsentConsentTime** – nurodo, kada vartotojas pateikė sutikimą dėl diagnostikos duomenų
+  - **DiagnosticConsentConsentTime** – nurodo, kada vartotojas pateikė sutikimą dėl diagnostikos duomenų. Data bus rodoma kaip žmonėms skirta data arba mašininio šifravimo data, kuri atrodo kaip didelis skaičius.
 
   - **ServiceConnectionState** – nurodo, ar vartotojas pasirinko naudoti visas prisijungus naudojamas funkcijas
 
   - **ServiceConnectionStateSourceLocation** – nurodo, kaip vartotojas pasirinko, ar naudoti visas prisijungus naudojamas funkcijas
 
-  - **ServiceConnectionStateConsentTime** – nurodo, kada vartotojas pasirinko, ar naudoti visas prisijungus naudojamas funkcijas
+  - **ServiceConnectionStateConsentTime** – nurodo, kada vartotojas pasirinko, ar naudoti visas prisijungus naudojamas funkcijas. Data bus rodoma kaip žmonėms skirta data arba mašininio šifravimo data, kuri atrodo kaip didelis skaičius.
 
   - **ControllerConnectedServicesState** – nurodo, ar vartotojas turi prieigą prie pasirinktinių prisijungus naudojamų funkcijų
 
   - **ControllerConnectedServicesStateSourceLocation** – nurodo, kaip vartotojas pasirinko pasirinktines prisijungus naudojamas funkcijas
 
-  - **ControllerConnectedServicesStateConsentTime** – nurodo, kada vartotojas pasirinko pasirinktinių prisijungus naudojamų funkcijų būseną
+  - **ControllerConnectedServicesStateConsentTime** – nurodo, kada vartotojas pasirinko pasirinktinių prisijungus naudojamų funkcijų būseną. Data bus rodoma kaip žmonėms skirta data arba mašininio šifravimo data, kuri atrodo kaip didelis skaičius.
 
   - **UserContentDependentState** – nurodo, ar vartotojas pasirinko įjungti prijungus naudojamas funkcijas, analizuojančias turinį
 
   - **UserContentDependentStateSourceLocation** – nurodo, kaip vartotojas pasirinko prijungus naudojamų funkcijų, analizuojančių turinį, įjungimą arba išjungimą
 
-  - **UserContentDependentStateConsentTime** – nurodo, kada vartotojas pasirinko prijungus naudojamų funkcijų, analizuojančių turinį, įjungimą arba išjungimą
+  - **UserContentDependentStateConsentTime** – nurodo, kada vartotojas pasirinko prijungus naudojamų funkcijų, analizuojančių turinį, įjungimą arba išjungimą. Data bus rodoma kaip žmonėms skirta data arba mašininio šifravimo data, kuri atrodo kaip didelis skaičius.
 
   - **DownloadContentState** – nurodo, ar vartotojas pasirinko įjungti prijungus naudojamas funkcijas, atsisiunčiančias internetinį turinį
 
   - **DownloadContentStateSourceLocation** – nurodo, kaip vartotojas pasirinko prijungus naudojamų funkcijų, atsisiunčiančių internetinį turinį, įjungimą arba išjungimą
 
-  - **DownloadContentStateConsentTime** – nurodo, kada vartotojas pasirinko prijungus naudojamų funkcijų, atsisiunčiančių internetinį turinį, įjungimą arba išjungimą.
+  - **DownloadContentStateConsentTime** – nurodo, kada vartotojas pasirinko prijungus naudojamų funkcijų, atsisiunčiančių internetinį turinį, įjungimą arba išjungimą. Data bus rodoma kaip žmonėms skirta data arba mašininio šifravimo data, kuri atrodo kaip didelis skaičius.
 
 #### <a name="device"></a>Įrenginys 
 
@@ -305,6 +305,10 @@ Informacija apie įrenginio konfigūraciją ir funkcines galimybes.
   - **MotherboardUUIDHash** – unikalaus pagrindinės plokštės identifikatoriaus maiša. Leidžia mums priskirti duomenis remiantis įrenginio suvestine.
 
   - **Name** – įrenginio pavadinimas. Leidžia mums priskirti duomenis remiantis įrenginio suvestine.
+  
+  - **NetworkCost** – nurodo tinklo kainą arba tipą, pvz., apskaičiuotas, apskaičiuotas virš savikainos.
+  
+  - **NetworkCountry** – siuntėjo šalies kodas, pagrįstas netvarkytu kliento IP adresu.
 
   - **NumProcPhysCores** – procesoriaus fizinių branduolių skaičius. Leidžia mums priskirti duomenis remiantis įrenginio suvestine.
 
@@ -613,7 +617,66 @@ Renkami šių laukų duomenys:
 
 - **sessionID** – atsitiktinai sugeneruotas GUID, skirtas nustatyti taikomosios programos seansą
 
-- **UTCReplace_AppSessionGuid** – nuolatinė Bulio logikos vertė. Visuomet „true“.
+- **UTCReplace_AppSessionGuid** – nuolatinė Bulio logikos vertė. Visuomet „True“.
+
+#### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
+
+Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai galėtų sėkmingai paleisti ir paleisti „OneNote“ pirmą kartą.  Telemetrija renkama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+
+- **AfterOneDriveFrozenAccountError** – nurodo klaidą iš „OneDrive“, kai paskyra yra pristabdyta.
+
+- **Attempt** – kiek kartų turi būti bandoma paleisti pirmą kartą.
+
+- **IsDefaultNotebookCreated** – nurodo, ar „OneNote“ sukūrė vartotojo numatytąjį bloknotą, ar ne.
+
+- **Isdelayesignin** – nurodo, ar pirmasis paleidimas veikia uždelsto prisijungimo režimu, kai vartotojui nereikia prisijungti.
+
+- **IsMSA** – nurodo, ar paskyra yra „Microsoft“ paskyra.
+
+#### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
+
+Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai („Microsoft“ paskyra) gali sėkmingai paleisti ir naudoti „OneNote“ pirmą kartą.
+Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+
+- **Attempt** – kiek kartų turi būti bandoma paleisti pirmą kartą.
+
+- **Error A** – „OneNote“ klaidos objektas, nurodantis klaidą pirmojo paleidimo metu, jei tokių yra.
+
+- **FAllowAddingGuide** – nurodo, ar „OneNote“ leis sukurti vadovo bloknotą.
+
+- **FrozenOneDriveAccount** – nurodo, ar „OneDrive“ paskyra yra sustabdyta.
+
+- **IsDefaultNotebookCreated** – nurodo, ar „OneNote“ sukūrė vartotojo numatytąjį bloknotą, ar ne.
+
+- **NoInternetConnection** – nurodo, ar įrenginys turi interneto ryšį.
+
+- **ProvisioningFailure** – „OneNote“ klaidos objektas, nurodantis pateikiamą klaidą, jei tokių yra.
+
+- **ProvisioningFinishedTime** – nurodo „OneNote“ bloknoto pateikimo pabaigos laiką pirmojo paleidimo metu.
+
+- **ProvisioningStartedTime** – nurodo „OneNote“ bloknoto pateikimo pradžios laiką pirmojo paleidimo metu.
+
+- **ShowSuggestedNotebooks** – nurodo, ar „OneNote“ parodys siūlomo bloknoto funkciją.
+
+#### <a name="officeonenotefirstrunfirstrunfororgid"></a>Office.OneNote.FirstRun.FirstRunForOrgId
+
+Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji įmonės vartotojai (AAD/ORGID) galėtų sėkmingai paleisti ir vykdyti „OneNote“ pirmą kartą.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+
+- **Attempt** – kiek kartų turi būti bandoma paleisti pirmą kartą.
+
+- **Error** – „OneNote“ klaidos objektas, nurodantis klaidą pirmojo paleidimo metu, jei tokių yra.
+
+- **FAllowAddingGuide** – nurodo, ar „OneNote“ leis sukurti vadovo bloknotą.
+
+- **IsDefaultNotebookCreated** – nurodo, ar „OneNote“ sukūrė vartotojo numatytąjį bloknotą, ar ne.
+
+- **ProvisioningFailure** – „OneNote“ klaidos objektas, nurodantis pateikiamo klaidą, jei tokių yra.
+
+- **ProvisioningFinishedTime** – nurodo „OneNote“ bloknoto pateikimo pabaigos laiką pirmojo paleidimo metu.
+
+- **ProvisioningStartedTime** – nurodo „OneNote“ bloknoto pateikimo pradžios laiką pirmojo paleidimo metu.
 
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
@@ -1173,6 +1236,489 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 
 Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas).
 
+#### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcCreateRepublishingLicense API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+#### <a name="ipcgetlicenseproperty"></a>IpcGetLicenseProperty
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetLicenseProperty API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicensePropertyType** – licencijos ypatybės tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+#### <a name="ipcgetserializedlicenseproperty"></a>IpcGetSerializedLicenseProperty
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetSerializedLicenseProperty API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicensePropertyType** – licencijos ypatybės tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+#### <a name="ipcgettemplateissuerlist"></a>IpcGetTemplateIssuerList
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetTemplateIssuerList API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
+
+- **RMS.ConnectionInfo.ExtranetUrl** – ryšio informacijos ekstraneto URL
+
+- **RMS.ConnectionInfo.IntranetUrl** – ryšio informacijos intraneto URL
+
+- **RMS.ConnectionMode** – ryšio režimas tarp teisių valdymo tarnybos kliento ir serverio: prisijungęs ar neprisijungęs
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.GuestTenant** – vartotojo svečio nuomotojo ID
+
+- **RMS.GuestTenant** – vartotojo namų nuomotojo ID
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Identity.ExtranetUrl** – vartotojo teisių valdymo tarnybos ekstraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+ 
+- **RMS.Identity.IntranetUrl** – vartotojo teisių valdymo tarnybos intraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.Status** – pirmas kartas, kai buvo gautas teisių paskyros sertifikatas iš serverio arba buvo atnaujintas teisių paskyros sertifikatas 
+
+- **RMS.Identity.Type** – vartotojo paskyros tipas, pvz., „Windows“ paskyra arba tiesioginė paskyra
+
+- **RMS.Identity.UserProvided** – nurodo, ar pateiktas vartotojo el. pašto adresas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.IssuerId** – teisių valdymo tarnybos serverio, kuris išduoda teisių paskyros sertifikatą, ID 
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.RACType** –teisių paskyros sertifikato tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **UserInfo.UserObjectId** – vartotojo objekto ID
+
+#### <a name="ipcgettemplatelist"></a>IpcGetTemplateList
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetTemplateList API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
+
+- **RMS.ConnectionInfo.ExtranetUrl** – ryšio informacijos ekstraneto URL
+
+- **RMS.ConnectionInfo.IntranetUrl** – ryšio informacijos intraneto URL
+
+- **RMS.ConnectionMode** – ryšio režimas tarp teisių valdymo tarnybos kliento ir serverio: prisijungęs ar neprisijungęs
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.GuestTenant** – vartotojo svečio nuomotojo ID
+
+- **RMS.GuestTenant** – vartotojo namų nuomotojo ID
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Identity.ExtranetUrl** – vartotojo teisių valdymo tarnybos ekstraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+ 
+- **RMS.Identity.IntranetUrl** – vartotojo teisių valdymo tarnybos intraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.Status** – pirmas kartas, kai buvo gautas teisių paskyros sertifikatas iš serverio arba buvo atnaujintas teisių paskyros sertifikatas 
+
+- **RMS.Identity.Type** – vartotojo paskyros tipas, pvz., „Windows“ paskyra arba tiesioginė paskyra
+
+- **RMS.Identity.UserProvided** – nurodo, ar pateiktas vartotojo el. pašto adresas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.IssuerId** – teisių valdymo tarnybos serverio, kuris išduoda teisių paskyros sertifikatą, ID 
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.RACType** –teisių paskyros sertifikato tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **RMS.TemplatesCount** – šablonų skaičius
+
+- **UserInfo.UserObjectId** – vartotojo objekto ID
+
+#### <a name="ipcpcreatelicensefromscratch"></a>IpcpCreateLicenseFromScratch
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpCreateLicenseFromScratch API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.GuestTenant** – vartotojo svečio nuomotojo ID
+
+- **RMS.GuestTenant** – vartotojo namų nuomotojo ID
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Identity.ExtranetUrl** – vartotojo teisių valdymo tarnybos ekstraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.IntranetUrl** – vartotojo teisių valdymo tarnybos intraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.UserProvided** – nurodo, ar pateiktas vartotojo el. pašto adresas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.IssuerId** – teisių valdymo tarnybos serverio, kuris išduoda teisių paskyros sertifikatą, ID 
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.RACType** –teisių paskyros sertifikato tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **RMS.TokenProvided** – nurodo, ar pateikiama žymė kaip API iškvietimo įvestis 
+
+- **RMS.UserProvided** – nurodo, ar pateikiamas vartotojas kaip API iškvietimo įvestis 
+
+- **UserInfo.UserObjectId** – vartotojo objekto ID 
+
+#### <a name="ipcpcreatelicensefromtemplate"></a>IpcpCreateLicenseFromTemplate
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpCreateLicenseFromTemplate API iškvietimo metu. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
+
+- **RMS.ConnectionMode** – ryšio režimas tarp teisių valdymo tarnybos kliento ir serverio: prisijungęs ar neprisijungęs
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **RMS.TokenProvided** – nurodo, ar pateikiama žymė kaip API iškvietimo įvestis 
+
+- **RMS.UserProvided** – nurodo, ar pateikiamas vartotojas kaip API iškvietimo įvestis 
+
+#### <a name="ipcpgettemplatelistforuser"></a>IpcpGetTemplateListForUser
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpGetTemplateListForUser API iškvietimo metu. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
+
+- **RMS.ConnectionInfo.ExtranetUrl** – ryšio informacijos ekstraneto URL
+
+- **RMS.ConnectionInfo.IntranetUrl** – ryšio informacijos intraneto URL
+
+- **RMS.ConnectionMode** – ryšio režimas tarp teisių valdymo tarnybos kliento ir serverio: prisijungęs ar neprisijungęs
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.GuestTenant** – vartotojo svečio nuomotojo ID
+
+- **RMS.GuestTenant** – vartotojo namų nuomotojo ID
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Identity.ExtranetUrl** – vartotojo teisių valdymo tarnybos ekstraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.IntranetUrl** – vartotojo teisių valdymo tarnybos intraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.Status** – pirmas kartas, kai buvo gautas teisių paskyros sertifikatas iš serverio arba buvo atnaujintas teisių paskyros sertifikatas 
+
+- **RMS.Identity.Type** – vartotojo paskyros tipas, pvz., „Windows“ paskyra arba tiesioginė paskyra
+
+- **RMS.Identity.UserProvided** – nurodo, ar pateiktas vartotojo el. pašto adresas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.IssuerId** – teisių valdymo tarnybos serverio, kuris išduoda teisių paskyros sertifikatą, ID 
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.RACType** –teisių paskyros sertifikato tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **RMS.TemplatesCount** – šablonų skaičius
+
+- **RMS.TokenProvided** – nurodo, ar pateikiama žymė kaip API iškvietimo įvestis 
+    
+- **RMS.UserProvided** – nurodo, ar pateikiamas vartotojas kaip API iškvietimo įvestis 
+
+- **UserInfo.UserObjectId** – vartotojo objekto ID 
+
+#### <a name="ipcpserializelicense"></a>IpcpSerializeLicense
+
+Gaunamas, kai vartotojas bando taikyti IRM apsaugas dokumentui. jame yra informacija, būtina siekiant tinkamai ištirti ir nustatyti problemas, kurios įvyko atliekant IpcpSerializeLicense API iškvietimą.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
+
+- **RMS.ConnectionMode** – ryšio režimas tarp teisių valdymo tarnybos kliento ir serverio: prisijungęs ar neprisijungęs
+
+- **RMS.ContentId** dokumento turinio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.GuestTenant** – vartotojo svečio nuomotojo ID
+
+- **RMS.GuestTenant** – vartotojo namų nuomotojo ID
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Identity.ExtranetUrl** – vartotojo teisių valdymo tarnybos ekstraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.IntranetUrl** – vartotojo teisių valdymo tarnybos intraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.Status** – pirmas kartas, kai buvo gautas teisių paskyros sertifikatas iš serverio arba buvo atnaujintas teisių paskyros sertifikatas 
+
+- **RMS.Identity.Type** – vartotojo paskyros tipas, pvz., „Windows“ paskyra arba tiesioginė paskyra
+
+- **RMS.Identity.UserProvided** – nurodo, ar pateiktas vartotojo el. pašto adresas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.IssuerId** – teisių valdymo tarnybos serverio, kuris išduoda teisių paskyros sertifikatą, ID 
+
+- **RMS.KeyHandle** – rakto valdymo programos atminties adresas
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.RACType** –teisių paskyros sertifikato tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **RMS.TokenProvided** – nurodo, ar pateikiama žymė kaip API iškvietimo įvestis 
+
+- **RMS.UserProvided** – nurodo, ar pateikiamas vartotojas kaip API iškvietimo įvestis 
+
+- **UserInfo.UserObjectId** – vartotojo objekto ID 
+
+#### <a name="ipcsetlicenseproperty"></a>IpcSetLicenseProperty
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcSetLicenseProperty API iškvietimo metu. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra 
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicensePropertyType** – licencijos ypatybės tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.StatusCode** – API apibrėžtas scenarijaus ID
+
+
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
 Generuojama paleidžiant klientą, kai galutinis vartotojas įgalina „Office“ telemetrijos ataskaitų sritį.  Tenka informaciją, kai „Office“ telemetrijos agentas įkelia duomenis į bendrinimo aplanką. Šis įvykis visų pirma naudojamas norint stebėti „Office“ telemetrijos agento sveikatą. Antrinė paskirtis yra įvertinti „Office“ telemetrijos ataskaitų srities naudojimą.
@@ -1201,6 +1747,20 @@ Renkama tik kai „Office“ telemetrijos ataskaitų sritis yra įgalinta galuti
 Renkami šių laukų duomenys:
 
   - **Data.CollectionTime** – laiko žyma, kai buvo užregistruotas gedimo įvykis
+
+#### <a name="office_apple_cisauthticketwithidentity"></a>Office_Apple_CISAuthTicketWithIdentity
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas fiksuoti autorizavimo žymos generavimo klaidas atliekant InAppPurchase „Mac“ (įvykių žurnalai, gautas klaidos kodas).  Šis įvykis naudojamas nustatant ir sprendžiant autorizavimo žymos generavimo klaidas
+
+Renkami šių laukų duomenys:
+
+- **Data_EmptyAuthToken** – renkame eilutę, nurodančią aktyvaus nuolatinio licencijos srauto klaidą.
+
+- **Data_TicketAuthError** – klaidos kodas, kuris nurodo klaidos priežastį
+
+- **Data_ValidIdentity** – ar klientas turi tinkamą tapatybę
+
+
 
 #### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
 
@@ -1310,6 +1870,8 @@ Renkami šių laukų duomenys:
 
   - **Data.Doc.AssistedReadingReasons –** nustato, ar dokumentas turi elektroninių duomenų apsaugą
 
+  - **Data.Doc.AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
   - **Data.Doc.ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
 
   - **Data.Doc.EdpState –** dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -1416,7 +1978,7 @@ Renkami šių laukų duomenys:
 
   - **Data.FullyQualifiedDomainName –** nebenaudojamas, pakeistas į Data\_Doc\_Fqdn
 
-  - **Data.Input.FileOpenState –** taikomosios programos (skaityti / skaityti ir rašyti, ir kt.) užklausta būsena **-**
+  - **Data.Input.FileOpenState –** taikomosios programos (skaityti / skaityti ir rašyti, ir kt.) užklausta būsena
 
   - **Data.Input.OpenAsync –** taikomosios programos užklaustas asinchroninis atidarymas
 
@@ -1561,6 +2123,8 @@ Renkami šių laukų duomenys:
   - **Data.Doc.AccessMode –** dokumentas yra skirtas tik skaityti
 
   - **Data.Doc.AssistedReadingReasons –** nustato, ar dokumentas turi elektroninių duomenų apsaugą
+
+  - **Data.Doc.AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
 
   - **Data.Doc.ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
 
@@ -1817,6 +2381,84 @@ Renkami šių laukų duomenys:
 
 - **EventName** – užregistruoto įvykio pavadinimas
 
+#### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
+
+Registruojama, kai vartotojas atidaro asmeninę kortelę. Naudojama stebėti kritines tiesioginių asmeninių kortelių klaidų dažnumo anomalijas.
+
+Renkami šių laukų duomenys:
+
+- **Data.appContextId** – atsitiktine tvarka generuojamas ID, naudojamas identifikuoti skirtingas tos pačios programos paskyras
+
+- **Data.AppInfo.Name** naudojamos tarnybos pavadinimas (profilio kortelė)
+
+- **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
+
+- **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
+
+- **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
+
+- **Data.clientType** – įrenginio, kuriame veikia programa, tipas.
+
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., LivePersonaCardRenderedAction
+
+- **Data.exportName** vartotojo veiksmo įvykio žmonėms perskaitomas pavadinimas, pvz., OpenedPersonaCard
+
+- **Data.exportType** – BDAR eksportavimo užklausos įvykio kategorija
+
+- **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
+
+- **Data.hostAppRing** – žiedas, kuriuo buvo išplatinta programa
+
+- **Data.OTelJS.Version** – OTel registravimo priemonės versija
+
+- **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
+
+- **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis
+
+- **Data.userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.Id dublikatas)
+
+- **Data.UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius 
+
+- **Data.UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius(Data.UserInfo.MsaId dublikatas)
+
+- **Data.version** – tarnybos versija (profilio kortelė)
+
+- **Data.viewType** – apibrėžia rodomos profilio kortelės tipą
+
+- **NetworkCost** – nurodo tinklo kainą / tipą (apskaičiuotas, apskaičiuotas virš savikainos ir kt.)
+
+- **NetworkCountry** – siuntėjo šalies kodas, pagrįstas netvarkytu kliento IP adresu.
+
+- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+
+    - **bandwidthEstimateMbps** – efektyvios dažnių juostos apskaičiavimas Mbps
+
+    - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
+
+    - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
+
+    - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas 
+
+    - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+
+    - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+
+    - **networkEffectiveType** – tinklo ryšio efektyvus tipas, pvz., slow-2g Online, skirtas identifikuoti, ar vartotojas yra prisijungęs prie interneto asmeninės kortelės rodymo metu
+
+    - **networkType** – naudojamo įrenginio tinklo ryšio tipas
+
+    - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+    - **roundTripEstimateMs** – dabartinio ryšio pirmyn ir atgal numatomas efektyvus laikas milisekundėmis
+
+    - **wasOpenedAsCompactCard** – naudojama identifikuoti, jeigu kortelė iš pradžių buvo atidaryta kompaktiniame rodinyje
+
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -1957,6 +2599,34 @@ Renkami šių laukų duomenys:
 -  **TimeToMedianResultInMs** – nurodo, laiko, per kurį „OneNote“ randa visus atitikmenis, medianą.
 
 
+#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+
+Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+
+- **NoteLocalId** – atskiriamas unikalusis identifikatorius, priskirtas pastabai tuo metu, kai vartotojas sukuria pastabą programoje.
+
+- **IsExportable** – žymė, nurodanti, ar šis įvykis tapo vartotojo veiksmo rezultatu. Turėtų būti nustatyta į True, nes NoteCreated yra vartotojo suaktyvinamas veiksmas.
+
+- **StickyNotes-SDKVersion** – versijos numeris, nurodantis priklijuojamų lapelių programos, kurią naudoja vartotojas, versiją. Leidžia mums nustatyti kurios produkto versijos rodo problemą, kad galėtume tinkamai nustatyti jos prioritetą.
+
+
+#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+
+Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys:
+
+- **HasImages** – žymė, nurodanti, ar peržiūrėta pastaba turi joje išsaugotų vaizdų.
+
+- **IsExportable** – žymė, nurodanti, ar šis įvykis tapo vartotojo veiksmo rezultatu. Turėtų būti nustatyta į True, nes NoteViewed yra vartotojo suaktyvinamas veiksmas.
+
+- **NoteLocalId** – atskiriamas unikalusis identifikatorius, priskirtas pastabai tuo metu, kai vartotojas sukuria pastabą programoje.
+
+- **StickyNotes-SDKVersion** – versijos numeris, nurodantis priklijuojamų lapelių programos, kurią naudoja vartotojas, versiją. Leidžia mums nustatyti kurios produkto versijos rodo problemą, kad galėtume tinkamai nustatyti jos prioritetą.
+
+
 #### <a name="officeonenotestoragenotebooksyncresult"></a>Office.OneNote.Storage.NotebookSyncResult
  
 Šis įvykis registruoja bloknoto sinchronizavimo rezultatą. Jis naudojamas norint suprasti, kiek reikia unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą.
@@ -2040,8 +2710,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 #### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Tada kritinis signalas naudojamas užtikrinti, kad „OneNote“ vartotojai gali sėkmingai paleisti taikomąją programą.
-Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti taikomosios programos mūsų efektyvumo lange, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas užtikrinti, kad „OneNote“ vartotojai gali sėkmingai paleisti taikomąją programą. Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti taikomosios programos mūsų efektyvumo lange, tai gali lemti didelės svarbos incidentą.
 
 Renkami šių laukų duomenys: jokių
 
@@ -2091,13 +2760,6 @@ Renkami šių laukų duomenys:
 
   - **Result** – bandymo naujinti slaptažodį rezultatas. Pvz.: „Success“ ar „Fail\_AllowLessSecureAppsDisabled“
 
-#### <a name="officeoutlookdesktopprovidersloadproviderlibrary"></a>Office.Outlook.Desktop.Providers.LoadProviderLibrary
-
-Šis įvykis seka ar pavyko MAPI bandymas įkelti teikėjo DLL (pvz., contab32.dll, emsmdb32.dll, DLL naudojamą papildinio). MAPI operacija, atsakinga už tai, kad įkėlimo teikėjo DLL yra labai svarbūs „Outlook“ privalomiems veiksmams, bei išplėtimui (naudojant papildinius arba pasirinktinius parduotuvės / transportavimo / adresų knygos paslaugų teikėjus). Aktyviai stebime, ar pavyko ši operacija, kad užtikrinti, jog ši pagrindinė MAPI funkcija veikia kaip numatyta.
-
-Renkami šių laukų duomenys:
-
-  - **Standartinė HVA veikla**, kai nėra pasirinktinės apkrovos
 
 #### <a name="officeoutlookdesktopstorescreatenewstore"></a>Office.Outlook.Desktop.Stores.CreateNewStore
 
@@ -2193,6 +2855,8 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_AssistedReadingReasons:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
+  - **Data_Doc_AsyncOpenKind:long** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
   - **Data\_Doc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
 
   - **Data\_Doc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
@@ -2223,8 +2887,6 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool –** tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
   - **Data\_Doc\_IsSyncBacked:bool –** tikrina, ar dokumentas atidarytas iš aplanko, naudojamo „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
   - **Data\_Doc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
@@ -2239,7 +2901,9 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_Doc\_ServerDocId:string –** debesyje saugomų dokumentų nekeičiamas identifikatorius
+  - **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
+
+  - **Data\_Doc\_ResourceIdHash:string -** Debesyje saugomų dokumentų maišos išteklių identifikatorius
 
   - **Data\_Doc\_ServerProtocol:long –** iš anksto apibrėžtų protokolo naudojimas kreiptis į serverį reikšmių rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
@@ -2327,6 +2991,8 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_AssistedReadingReasons:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
+  - **Data_Doc_AsyncOpenKind:long** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
   - **Data\_Doc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
 
   - **Data\_Doc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
@@ -2355,9 +3021,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IsOcsSupported:bool –** ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Ar dokumentas atidarytas iš vietinės talpyklos?
-
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool –** ar dokumentas atidarytas iš vietinės talpyklos?
 
   - **Data\_Doc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
@@ -2373,7 +3037,9 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_Doc\_ServerDocId:string –** debesyje saugomų dokumentų nekeičiamas identifikatorius
+  - **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
+
+  - **Data\_Doc\_ResourceIdHash:string -** Debesyje saugomų dokumentų maišos išteklių identifikatorius
 
   - **Data\_Doc\_ServerProtocol:long –** iš anksto apibrėžtų protokolo naudojimas kreiptis į serverį reikšmių rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
@@ -2449,6 +3115,8 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_AssistedReadingReasons:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
+  - **Data_Doc_AsyncOpenKind:long** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
   - **Data\_Doc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
 
   - **Data\_Doc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
@@ -2479,8 +3147,6 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool –** tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
   - **Data\_Doc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
   - **Data\_Doc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
@@ -2495,7 +3161,9 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
-  - **Data\_Doc\_ServerDocId:string –** debesyje saugomų dokumentų nekeičiamas identifikatorius
+  - **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
+
+  - **Data\_Doc\_ResourceIdHash:string -** Debesyje saugomų dokumentų maišos išteklių identifikatorius
 
   - **Data\_Doc\_ServerProtocol:long –** iš anksto apibrėžtų protokolo naudojimas kreiptis į serverį reikšmių rinkinys (Http, „Cobalt“, WOPI ir kt.)
 
@@ -2591,6 +3259,8 @@ Renkami šių laukų duomenys:
 
 - **Data_DstDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
+- **Data_DstDoc_AsyncOpenKind:long** – nurodo, ar naujo debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_DstDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
 - **Data_DstDoc_EdpState:long** – dokumento įmonės duomenų apsaugos būsena
@@ -2674,6 +3344,8 @@ Renkami šių laukų duomenys:
 - **Data_SrcDoc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+
+- **Data_SrcDoc_AsyncOpenKind:long** – nurodo, ar pradinio debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
 
 - **Data_SrcDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“ 
 
@@ -2768,6 +3440,8 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
+- **Data_Doc_AsyncOpenKind:long** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_Doc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
 - **Data_Doc_EdpState:long** – dokumento įmonės duomenų apsaugos būsena
@@ -2798,8 +3472,6 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsOpeningOfflineCopy:bool** – tikrina, ar dokumentas atidarytas iš vietinės talpyklos
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data_Doc_IsSyncBacked:bool** – nurodo, ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
 - **Data_Doc_Location:long** – iš anksto apibrėžtas dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
@@ -2813,6 +3485,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons:long** – iš anksto apibrėžtas dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
 - **Data_Doc_ResourceIdHash:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data_Doc_ServerDocId:string** – debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
@@ -2843,6 +3517,8 @@ Renkami šių laukų duomenys:
 - **Data_DstDoc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
 - **Data_DstDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+
+- **Data_DstDoc_AsyncOpenKind:long** – nurodo, ar naujo debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
 
 - **Data_DstDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
@@ -2925,6 +3601,8 @@ Renkami šių laukų duomenys:
 - **Data_SrcDoc_AccessMode:long** – nurodo, kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
 
 - **Data_SrcDoc_AssistedReadingReasons:long** – iš anksto apibrėžtas reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+
+- **Data_SrcDoc_AsyncOpenKind:long** – nurodo, ar pradinio debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
 
 - **Data_SrcDoc_ChunkingType:long** – nurodo, kaip dokumentas saugomas programoje „SharePoint“
 
@@ -3398,6 +4076,68 @@ Renkami šių laukų duomenys:
 
 - **Data.warningMessage** – tarnybos pateiktas įspėjimo pranešimas
 
+
+#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
+
+Stebi funkcijos testavimą vartotojams. Šis įvykis padės mums nustatyti, ar funkcija testuojama sėkmingai.
+
+Renkami šių laukų duomenys:
+
+  - **Data\_Enable:bool**- „True“ nurodo, ar funkcija įjungta esamam vartotojui
+
+  - **Data\_Feature:string** - Funkcijos pavadinimas
+
+  - **Data\_Flighted:bool** - „True“ nurodo, ar funkcija yra įjungta
+
+  - **Data\_Licensed:bool** - „True“ nurodo, ar tikrinama funkcijos licencija
+
+  - **Data\_Subscriber:bool** - „True“ nurodo, ar vartotojas turi prenumeratos licenciją
+
+#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
+
+Fiksuoja diagramos atnaujinimo gedimus, kai failas sukuriamas per DV. Tai padeda mums derinti gedimus ir problemas atnaujinant duomenis DV diagramoje.
+
+Renkami šių laukų duomenys:
+
+  - **Data\_ConnectorsBasedOnSequence:bool**– „True“ nurodo, jei atnaujinta diagrama iš pradžių buvo sukurta naudojant jungtį, pagrįstą sekos parinktimi
+
+  - **Data\_DialogError**:**string** - klaida atnaujinant išmaniąją diagramą
+
+  - **Data\_FileError:string** - klaidos eilutė, kai prijungtas „Excel“ failas yra netinkamas
+
+  - **Data\_OverwriteSelected**:**bool** - „True“ nurodo, ar vartotojas atnaujinant diagramą pasirinko diagramos perrašymo parinktį
+
+  - **Data\_WarningShown**:**bool** - „True“ nurodo, ar nebuvo jokių įspėjimų vartotojui atliekant duomenų atnaujinimą
+
+#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
+
+Fiksuoja „Excel“ rašymo triktis, kai failas sukurtas naudojant DV. Tai padeda mums derinti gedimus ir problemas įrašant duomenis į „Excel“ DV diagramoje.
+
+Renkami šių laukų duomenys:
+
+  - **Data\_ConnectorsBasedOnSequence:bool** - „True“ nurodo jungtis, kurios sukurtos pagrindžiant sekos parametrais
+
+  - **Data\_DataSourceType:string** - Šioje srityje nurodoma, ar diagrama sukurta naudojant „Lentelė“, ar „Pasirinkitnis diapazonas“
+
+  - **Data\_DialogError:string** - Pasirinktinis klaidos tipas kuriant išmaniąją diagramą „Excel“
+
+  - **Data\_NoOfShapesAdded:int** - Figūrų, kurios pridėtos įrašant „Excel“ funkcijos kopiją skaičius
+
+  - **Data\_NoOfShapesDeleted:int** - Figūrų, kurios panakintos įrašant „Excel“ funkcijos kopiją skaičius
+
+  - **Data\_OverwriteSelected:bool** - „True“ nurodo, ar vartotojas pasirinko duomenų perrašymo parinktį
+
+  - **Data\_SourceDataModified:bool** - „True“ nurodo, kad pakeisti šaltinio duomenys
+
+  - **Data\_WarningShown:bool** - „True“ reiškia, kad vartotojui rodomas duomenų naujinimo įspėjimas
+
+  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** - „True“ nurodo vartotojui rodomą įspėjimą dėl formulės programoje „Excel“
+
+  - **Data\_WarningShownToAddNextStepID:bool** - „True“ nurodo vartotojui rodomą įspėjimą dėl kitų identifikavimo priemonės programoje „Excel“ praleistų veiksmų
+
+  - **Data\_WarningShownToConvertToTable:bool** - „True“ nurodo vartotojui rodomą įspėjimą konvertuoti „Excel“ duomenis į lentelės formatą
+
+
 #### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
 
 Šis įvykis registruoja dokumentų statistiką kiekvienam dokumentui, kai „Office Word“ yra uždaryta ar sustabdyta.  Įvykis naudojamas norint susieti dokumento keitimus, dydį ir t. t. su dokumento įrašymo, dokumento bendrinimo ir dokumento internetinio bendradarbiavimo klaidomis.
@@ -3474,6 +4214,130 @@ Renkami šių laukų duomenys:
 
   - **Data\_UsesCustomTemplate** – nurodo, ar dokumentas buvo sukurtas naudojant pasirinktinį šabloną
 
+#### <a name="officewordfileopenuserinitiatedopen"></a>Office.Word.FileOpen.UserInitiatedOpen 
+
+Šis įvykis nurodo, kad „Office Word“ atidaro dokumentą vartotojo inicijavimu, o ne programiškai iš „Office Word“. Jame taip pat yra svarbių failo atidarymo našumo duomenų ir yra programėlės pradžios įvykis vertinant iš vartotojo perspektyvos.  Įvykis stebi ar file-open veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti. 
+ 
+Renkami šių laukų duomenys:
+
+- **Data_AddDocTelemRes** – nurodo, ar įvykyje galima tinkamai užpildyti kitų dokumentų telemetrijos susijusias reikšmes. Naudojama duomenų kokybės diagnostikai. 
+
+- **Data_BytesAsynchronous** – baitų (suglaudintų), kurie, kaip manoma, gali atidaryti failą, skaičius, nepaisant, ar mes juos gausime iki tol, kol vartotojas nori pradėti redaguoti arba galbūt įrašyti. 
+
+- **Data_BytesAsynchronousWithWork** – baitų (suglaudintų), kuriuos naudodami galėtume atidaryti failą, skaičius, tačiau norint, kad tai įvyktų, reikės daug investuoti į kodą 
+
+- **Data_BytesSynchronous** – baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą 
+
+- **Data_BytesUnknown** – baitų skaičius dokumento dalyse, kurių nesitikėjome rasti. 
+
+- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas 
+
+- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys 
+
+- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui 
+
+- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras 
+
+- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.) 
+
+- **Data_Doc_FileFormat** – failo formato protokolo versija 
+
+- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas 
+
+- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša 
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša 
+
+- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas 
+
+- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis 
+
+- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui 
+
+- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas 
+
+- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba 
+
+- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija 
+
+- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje 
+
+- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“) 
+
+- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką 
+
+- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių 
+
+- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys 
+
+- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys 
+
+- **Data.Doc.ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti 
+
+- **Data.Doc.ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti 
+
+- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba 
+
+- **Data_Doc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.) 
+
+- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą 
+
+- **Data_Doc_SessionId** – serverio versija, siūlanti tarnybą 
+
+- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija 
+
+- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius 
+
+- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius 
+
+- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas 
+
+- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba) 
+
+- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui 
+
+- **Data_Doc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių 
+
+- **Data_EditorDisablingRename** – pirmojo redaktoriaus, dėl kurio buvo išjungtas pervardijimas, identifikatorius 
+
+- **Data_EditorsCount** – dokumento redaktorių skaičius 
+
+- **Data_ForceReadWriteReason** – sveikasis skaičius, nurodantis priežastį, kodėl failas buvo priverstinai atidarytas skaitymo / rašymo režimu 
+
+- **Data_FSucceededAfterRecoverableFailure** – nurodo, kad atidaryti pavyko pašalinus triktį, įvykusią atidarant dokumentą 
+
+- **Data_LastLoggedTag** – unikali kodo iškvietimo žymės vieta, naudojama nustatyti, kada dukart nepavyksta bandymas atidaryti (naudojama duomenų kokybės diagnostikai) 
+
+- **Data_LinkStyles** – nurodo, ar mes susieti su šablono stiliais 
+
+- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui. 
+
+- **Data_Measurements** – užkoduota eilutė, kurioje pateiktas skirtingų dalių atidarymo laiko suskirstymas. Skirtas diagnozuoti atvirai veiklai. 
+
+- **Data_MoveDisabledReason** – klaida, kuri yra išjungia dokumento perkėlimą 
+
+- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija 
+
+- **Data_OpenInitiateKind** – scenarijaus tipas, kai vartotojas pradėjo šią file-open operaciją. 
+
+- **Data_PartsUnknown** – dokumento dalių, iš kurių nepavyko gauti duomenų, skaičius 
+
+- **Data_RecoverableFailureInitiationLocationTag** – unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti 
+
+- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas 
+
+- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija 
+
+- **Data_SecondaryTag** – unikali kodo iškvietimo vietos žymė, naudojama papildomiems trikties duomenims atidaryti. 
+
+- **Data_TemplateFormat** – šablono failo, kuriuo pagrįstas dokumentas, formatas. 
+
+- **Data_UsesNormal** – nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu. 
+
+- **Data_VerboseMeasurements** – užkoduota eilutė, kurioje pateiktas skirtingų dalių atidarymo išsamus laiko suskirstymas.  Naudojama matuoti efektyvumą, įgalinta tik vidiniams žiedams. 
+
+
+
 #### <a name="officewordfilesaveactcmdgosubsaveas"></a>Office.Word.FileSave.ActCmdGosubSaveAs
 
 Šis įvykis nurodo, kad vartotojas įrašo savo pakeitimus į naują dokumentą. Įvykis stebi, ar įrašymas į naują dokumentą veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
@@ -3487,7 +4351,9 @@ Renkami šių laukų duomenys:
 - **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
 - **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
-    
+
+- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
 - **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -3514,8 +4380,6 @@ Renkami šių laukų duomenys:
     
 - **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
 - **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
@@ -3529,6 +4393,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
 - **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
@@ -3578,6 +4444,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
 
 - **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
+
+- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
     
 - **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
@@ -3605,8 +4473,6 @@ Renkami šių laukų duomenys:
     
 - **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
 - **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
@@ -3620,6 +4486,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
 - **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
@@ -3676,6 +4544,8 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
+- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
 - **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -3702,8 +4572,6 @@ Renkami šių laukų duomenys:
     
 - **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
 - **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
@@ -3717,6 +4585,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
 - **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
@@ -3795,6 +4665,8 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
+- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
 - **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -3819,8 +4691,6 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
 - **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
@@ -3832,6 +4702,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
 - **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
@@ -3856,6 +4728,8 @@ Renkami šių laukų duomenys:
 - **Data_DstDoc_AccessMode** – paskirties dokumentas skirtas tik skaityti / redaguoti
 
 - **Data_DstDoc_AssistedReadingReasons** – iš anksto apibrėžtas reikšmių rinkinys, kodėl dokumentas buvo atidarytas pagalbiniu skaitymo režimu
+
+- **Data_DstDoc_AsyncOpenKind** – nurodo, ar naujo debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
     
 - **Data_DstDoc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
@@ -3943,6 +4817,8 @@ Renkami šių laukų duomenys:
 
 - **Data_SrcDoc_AssistedReadingReasons** – iš anksto apibrėžtas dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
+- **Data_SrcDoc_AsyncOpenKind** – nurodo, ar pradinio debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_SrcDoc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
 - **Data_SrcDoc_EdpState** – šaltinio dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -4010,66 +4886,6 @@ Renkami šių laukų duomenys:
 - **Data_SrcDocIsUnnamedOrNew** – nurodo, ar įrašomas dokumentas yra naujas
 
 
-#### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
-
-Stebi funkcijos testavimą vartotojams. Šis įvykis padės mums nustatyti, ar funkcija testuojama sėkmingai.
-
-Renkami šių laukų duomenys:
-
-  - **Data\_Enable:bool**- „True“ nurodo, ar funkcija įjungta esamam vartotojui
-
-  - **Data\_Feature:string** - Funkcijos pavadinimas
-
-  - **Data\_Flighted:bool** - „True“ nurodo, ar funkcija yra įjungta
-
-  - **Data\_Licensed:bool** - „True“ nurodo, ar tikrinama funkcijos licencija
-
-  - **Data\_Subscriber:bool** - „True“ nurodo, ar vartotojas turi prenumeratos licenciją
-
-#### <a name="officevisiosharedrefreshsmartdiagram"></a>Office.Visio.Shared.RefreshSmartDiagram
-
-Fiksuoja diagramos atnaujinimo gedimus, kai failas sukuriamas per DV. Tai padeda mums derinti gedimus ir problemas atnaujinant duomenis DV diagramoje.
-
-Renkami šių laukų duomenys:
-
-  - **Data\_ConnectorsBasedOnSequence:bool**– „True“ nurodo, jei atnaujinta diagrama iš pradžių buvo sukurta naudojant jungtį, pagrįstą sekos parinktimi
-
-  - **Data\_DialogError**:**string** - klaida atnaujinant išmaniąją diagramą
-
-  - **Data\_FileError:string** - klaidos eilutė, kai prijungtas „Excel“ failas yra netinkamas
-
-  - **Data\_OverwriteSelected**:**bool** - „True“ nurodo, ar vartotojas atnaujinant diagramą pasirinko diagramos perrašymo parinktį
-
-  - **Data\_WarningShown**:**bool** - „True“ nurodo, ar nebuvo jokių įspėjimų vartotojui atliekant duomenų atnaujinimą
-
-#### <a name="officevisiosharedwritebacktoexcel"></a>Office.Visio.Shared.WritebackToExcel
-
-Fiksuoja „Excel“ rašymo triktis, kai failas sukurtas naudojant DV. Tai padeda mums derinti gedimus ir problemas įrašant duomenis į „Excel“ DV diagramoje.
-
-Renkami šių laukų duomenys:
-
-  - **Data\_ConnectorsBasedOnSequence:bool** - „True“ nurodo jungtis, kurios sukurtos pagrindžiant sekos parametrais
-
-  - **Data\_DataSourceType:string** - Šioje srityje nurodoma, ar diagrama sukurta naudojant „Lentelė“, ar „Pasirinkitnis diapazonas“
-
-  - **Data\_DialogError:string** - Pasirinktinis klaidos tipas kuriant išmaniąją diagramą „Excel“
-
-  - **Data\_NoOfShapesAdded:int** - Figūrų, kurios pridėtos įrašant „Excel“ funkcijos kopiją skaičius
-
-  - **Data\_NoOfShapesDeleted:int** - Figūrų, kurios panakintos įrašant „Excel“ funkcijos kopiją skaičius
-
-  - **Data\_OverwriteSelected:bool** - „True“ nurodo, ar vartotojas pasirinko duomenų perrašymo parinktį
-
-  - **Data\_SourceDataModified:bool** - „True“ nurodo, kad pakeisti šaltinio duomenys
-
-  - **Data\_WarningShown:bool** - „True“ reiškia, kad vartotojui rodomas duomenų naujinimo įspėjimas
-
-  - **Data\_WarningShownBecauseOfPresenceOfFormula:bool** - „True“ nurodo vartotojui rodomą įspėjimą dėl formulės programoje „Excel“
-
-  - **Data\_WarningShownToAddNextStepID:bool** - „True“ nurodo vartotojui rodomą įspėjimą dėl kitų identifikavimo priemonės programoje „Excel“ praleistų veiksmų
-
-  - **Data\_WarningShownToConvertToTable:bool** - „True“ nurodo vartotojui rodomą įspėjimą konvertuoti „Excel“ duomenis į lentelės formatą
-
 #### <a name="officewordworddocumentdirtyflagchanged"></a>Office.Word.Word.DocumentDirtyFlagChanged
 
 Šis įvykis nurodo, ar „Office Word“ redaguoja dokumentą, kurio keitimų vidinė būsena nustatyta kaip „juodraštis“ Tai leidžia „Microsoft“ įvertinti dokumento redagavimo sveikatos funkciją. Šis įvykis yra vartotojo redagavimų svarbiausias įvykis. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams apskaičiuoti.
@@ -4095,9 +4911,254 @@ Renkami šių laukų duomenys:
   - **Data\_UrlHash-** Dokumento kelio maiša
 
   - **Data\_ViewKind-** „Word“ rodinio tipas
+
+
+#### <a name="parselicenseop"></a>ParseLicenseOp
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias analizuojant licencijų operacijas. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.Duration** – bendras operacijos baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia operacija, jei tokia yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.Result** – operacijos sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – operacijos rezultato būsenos kodas
+
+- **RMS.VerifyCertChainDuration** – sertifikato grandinės patvirtinimo trukmė
+
+- **RMS.VerifySignatureDuration** – parašo patvirtinimo trukmė
+
+#### <a name="storeop"></a>StoreOp
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias teisių valdymo tarnybos licencijos operacijos problemas. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.ContentId** – galutinio vartotojo licencijos turinio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia operacija, jei tokia yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.OperationName** – operacijos pavadinimas
+
+- **RMS.Result** – operacijos sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – operacijos rezultato būsenos kodas
+
+- **RMS.Url** – teisių valdymo tarnybos serverio URL
+
+
 ### <a name="application-status-and-boot-subtype"></a>*Taikomosios programos būsena ir įkrovos potipis*
 
 Nustatymas, ar įvyko specifiniai funkcijų įvykiai, pvz., paleidimas ar sustabdymas, ir ar funkcija veikia.
+
+#### <a name="dnslookupop"></a>DnsLookupOp
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant DNS informacijos peržvalgos operaciją. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.Duration** – bendras operacijos baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia operacija, jei tokia yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.NoOfDomainsSearched** – ieškotų domenų skaičius  
+
+- **RMS.NoOfDomainsSkipped** – praleistų domenų skaičius 
+
+- **RMS.Result** – operacijos sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – operacijos rezultato būsenos kodas
+
+#### <a name="getuserop"></a>GetUserOp
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant vartotojo sertifikatų gavimo operaciją. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.ContentId** – turinio ID
+
+- **RMS.Duration** – bendras operacijos baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia operacija
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.Result** – operacijos sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – operacijos rezultato būsenos kodas
+
+- **RMS.Type** - vartotojo informacijos tipas
+
+#### <a name="httpop"></a>HttpOp
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant HTTP užklausos operaciją.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+    
+- **AppInfo.Name** – programos pavadinimas
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.CallBackStatus** – autentifikavimo atskambinimo pateikto rezultato būsena
+
+- **RMS.CallbackTime** – laikas, sunaudotas autentifikavimo atskambinimui 
+
+- **RMS.CorrelationId** – HTTP užklausos sąsajos ID
+
+- **RMS.DataSize** – HTTP užklausos duomenų dydis
+
+- **RMS.Duration** – bendras operacijos baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia operacija, jei tokia yra
+
+- **RMS.HttpCall** – nurodo, ar yra įdėtoji HTTP operacija 
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.OperationName** – operacijos pavadinimas
+
+- **RMS.Result** – operacijos sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – operacijos rezultato būsenos kodas
+
+- **RMS.Url** – teisių valdymo tarnybos serverio URL
+
+- **RMS.WinhttpCallbackStatus** – winhttp atskambinimo rezultato būsena
+
+#### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcCreateOauth2Token API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+    
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
 
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
@@ -4116,6 +5177,8 @@ Renkami šių laukų duomenys:
   - **Data\_AppSizeWidth –** Prideda**-** lango dydžio plotį
 
   - **Data\_AppURL -** Papildinio URL; Registruoja parduotuvėje esančio papildinio visą URL ir ne parduotuvėje esančio papildinio URL domeną
+
+  - **Data_Doc_AsyncOpenKind:long** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
 
   - **Data\_AuthorsCount:integer -** Autorių, redagavusių dokumentą šio seanso metu, skaičius
 
@@ -4149,8 +5212,6 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool -** Ar dokumentas atidarytas iš vietinės talpyklos?
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
   - **Data\_Doc\_IsSyncBacked:bool-** „True“, kai tai yra serverio dokumentas, kuris yra vietoje, ir yra sinchronizuotas su serveriu (pvz., per „OneDrive“ arba ODB kliento programas)
 
   - **Data\_Doc\_Location:long-** : Iš anksto nustatytų reikšmių, kur saugomas dokumentas (vietoje, „SharePoint“, WOPI, tinkle ir kt.) rinkinys
@@ -4158,6 +5219,8 @@ Renkami šių laukų duomenys:
   - **Data\_Doc\_LocationDetails:long -** Iš anksto nustatytų išsamesnės informacijos apie vietą (laikinas aplankas, atsisiuntimų aplankas, „One Drive“ dokumentai, „One Drive“ paveikslėliai) rinkinys
 
   - **Data\_Doc\_ResourceIdHash:string -** Debesyje saugomų dokumentų maišos išteklių identifikatorius
+
+  - **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
   - **Data\_Doc\_ResourceIdHash:string -** Debesyje saugomų dokumentų maišos išteklių identifikatorius
 
@@ -4495,6 +5558,8 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_AssistedReadingReasons:long -** Iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
+  - **Data_Doc_AsyncOpenKind:long** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
   - **Data\_Doc\_ChunkingType:long -** Kaip dokumentas saugomas programoje „SharePoint“
 
   - **Data\_Doc\_EdpState:long -** Įmonės duomenų apsaugos dokumento būsena
@@ -4525,8 +5590,6 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IsOpeningOfflineCopy:bool –** Ar dokumentas atidarytas iš vietinės talpyklos?
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
   - **Data\_Doc\_IsSyncBacked:bool –** Ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
   - **Data\_Doc\_Location:long –** Iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
@@ -4540,6 +5603,8 @@ Renkami šių laukų duomenys:
   - **Data\_Doc\_ReadOnlyReasons:long –** Iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
   - **Data\_Doc\_ResourceIdHash:string –** Debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+
+  - **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
   - **Data\_Doc\_ResourceIdHash:string –** Debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
@@ -4959,6 +6024,8 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
+- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
 - **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -4985,8 +6052,6 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data.Doc.IsSyncBacked –** žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
 - **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
@@ -5000,6 +6065,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
 - **Data.Doc.ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data.Doc.ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti 
 
@@ -5082,6 +6149,8 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
+- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
 - **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -5108,8 +6177,6 @@ Renkami šių laukų duomenys:
     
 - **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
 - **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
@@ -5123,6 +6190,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
 - **Data.Doc.ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data.Doc.ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
@@ -5203,6 +6272,8 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_AssistedReadingReasons –** iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
+  - **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
   - **Data\_Doc\_ChunkingType –** vienetai, naudojami nuosekliam dokumento atidarymui
 
   - **Data\_Doc\_EdpState -** Dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -5229,8 +6300,6 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IsOpeningOfflineCopy -** Žyma, nurodanti, kad autonominė dokumento kopija atidaryta
 
-  - **Data_Doc_IsRtcAlwaysOn –** „true“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
   - **Duomenų\_ad\_IsSyncBacked -** žyma, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
   - **Data\_Doc\_Location -** Nurodo, kuri tarnyba teikia dokumentą („OneDrive“, failų serveris, „SharePoint“)
@@ -5244,6 +6313,8 @@ Renkami šių laukų duomenys:
   - **Data\_Doc\_ReadOnlyReasons -** Priežastys, kodėl dokumentas buvo atidarytas tik kaip skaitomas
 
   - **Data\_Doc\_ResourceIdHash -** Anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+  - **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
   - **Data\_Doc\_ServerDocId -** Nekintamų anonimizuotų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
 
@@ -5326,6 +6397,8 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
 
+- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
+
 - **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
 
 - **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
@@ -5352,8 +6425,6 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
 
-- **Data_Doc_IsRtcAlwaysOn** – „teisinga“, jei šiam failui visada yra įjungtas realiojo laiko kanalas (RTC).
-
 - **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
 
 - **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
@@ -5367,6 +6438,8 @@ Renkami šių laukų duomenys:
 - **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
 
 - **Data.Doc.ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
+
+- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
 - **Data.Doc.ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti 
 
@@ -5423,6 +6496,83 @@ Renkami šių laukų duomenys:
 - **Data_TemplateFormat** – šablono failo, kuriuo pagrįstas dokumentas, formatas
 
 - **Data_UsesNormal** – nurodo, ar atidarytas dokumentas pagrįstas įprastu šablonu
+
+
+#### <a name="renewuserop"></a>RenewUserOp
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant vartotojo sertifikatų atnaujinimo operaciją. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.Duration** – bendras operacijos baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia operacija, jei tokia yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.Result** – operacijos sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – operacijos rezultato būsenos kodas
+
+- **RMS.Type** - vartotojo informacijos tipas
+
+#### <a name="servicediscoveryop"></a>ServiceDiscoveryOp
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant tarnybos aptikimo operaciją. 
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.Duration** – bendras operacijos baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia operacija, jei tokia yra
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.OperationName** – operacijos pavadinimas
+
+- **RMS.Result** – operacijos sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – operacijos rezultato būsenos kodas
 
 
 ### <a name="office-accessibility-configuration-subtype"></a>*„Office“ pritaikymo neįgaliesiems konfigūracijos potipis*
@@ -5737,7 +6887,7 @@ Renkami šių laukų duomenys:
 
   - **ElapsedHanging** – „pakibimo“ laikas iškviečiant
 
-#### <a name="officepowerpointsession"></a>**Office.PowerPoint.Session**
+#### <a name="officepowerpointsession"></a>Office.PowerPoint.Session
 
 Renka kiekvieno „PowerPoint“ seanso funkcijos naudojimą.Šie duomenys naudojami apskaičiuoti „PowerPoint“ netikėto uždarymo santykį naudojant funkciją. „PowerPoint“ netikėto uždarymo santykis yra pagrindinis signalas, užtikrinantis, kad „PowerPoint“ veikia taip, kaip tikėtasi.
 
@@ -5889,6 +7039,12 @@ Renkami šių laukų duomenys:
 
   - **AddinProgId** – papildinio programos identifikatorius
 
+#### <a name="officeprogrammabilitytelemetrymacrofileopened"></a>Office.Programmability.Telemetry.MacroFileOpened 
+
+Suaktyvinama atidarant makrokomandą (VBA) turintį failą įrenginyje, kuriame IT administratorius naudojo „Office“ programas kaip tarnybą (OAAS), ir kai „Office 365 ProPlus“ buvo suaktyvinta su įmonės licencija. Įvykis naudojamas suprasti makrokomandą (VBA) turinčių failų sveiktą pas nuomotoją ir palyginti su Office.Programmability.Telemetry.VbaTelemetryBreak, kuris seka klaidas VBA turinčiuose failuose. 
+
+Nepasirinkti jokie laikai.
+
 #### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
 Taikoma sistemos įkrovos įvykiui, kuris fiksuoja nesklandų išėjimą iš programos, kad būtų galima tirti toliau.
@@ -5950,6 +7106,75 @@ Renkami šių laukų duomenys:
 
 Scenarijų, tokių kaip programos paleidimas ar failo atidarymas, prastas atsakymo laikas ar našumas.
 
+#### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpBootstrapUser API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+
+- **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
+
+- **RMS.ConnectionInfo.ExtranetUrl** – ryšio informacijos ekstraneto URL
+
+- **RMS.ConnectionInfo.IntranetUrl** – ryšio informacijos intraneto URL
+
+- **RMS.ConnectionMode** – ryšio režimas tarp teisių valdymo tarnybos kliento ir serverio: prisijungęs ar neprisijungęs
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.GuestTenant** – vartotojo svečio nuomotojo ID
+
+- **RMS.GuestTenant** – vartotojo namų nuomotojo ID
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Identity.ExtranetUrl** – vartotojo teisių valdymo tarnybos ekstraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.IntranetUrl** – vartotojo teisių valdymo tarnybos intraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.Status** – pirmas kartas, kai buvo gautas teisių paskyros sertifikatas iš serverio arba buvo atnaujintas teisių paskyros sertifikatas 
+
+- **RMS.Identity.Type** – vartotojo paskyros tipas, pvz., „Windows“ paskyra arba tiesioginė paskyra
+
+- **RMS.Identity.UserProvided** – nurodo, ar pateiktas vartotojo el. pašto adresas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.IssuerId** – teisių valdymo tarnybos serverio, kuris išduoda teisių paskyros sertifikatą, ID  
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.RACType** –teisių paskyros sertifikato tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **RMS.TemplatesCount** – šablonų skaičius
+
+- **RMS.TokenProvided** – nurodo, ar pateikiama žymė kaip API iškvietimo įvestis 
+
+- **RMS.UserProvided** – nurodo, ar pateikiamas vartotojas kaip API iškvietimo įvestis 
+
+- **UserInfo.UserObjectId** – vartotojo objekto ID
 #### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
 
 Šis įvykis suaktyvinamas, kai klientas naudoja „Office“ papildinį ir paslaugai teikti iškviečia raiškųjį API. Naudojamas norint įvertinti paslaugos patikimumą, veikimą ir raiškiojo API metodo naudojimą.
@@ -6493,6 +7718,35 @@ Renkami šių laukų duomenys:
   - **FirstTimeStamp** – Pirmas kartas, kai įvyko klaida
 
   - **Trackback** – Konkrečios klaidos unikalus identifikatorius
+
+#### <a name="renewidentityfailure"></a>RenewIdentityFailure
+
+Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias kai nepavyko atnaujinti vartotojo sertifikatų.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **Failure.Category** – klaidos UnhandledError kategorija
+
+- **Failure.Detail** – klaidos išsami informacija
+
+- **Failure.Id** – klaidos ID
+
+- **Failure.Signature** klaidos parašas, kuris yra toks pats, kaip įvykio pavadinimas
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.HRESULT** – vartotojo sertifikato atnaujinimo rezultatas
+
+- **RMS.ScenarioId** – scenarijaus ID, kurį apibrėžia teisių valdymo tarnybos klientas
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Įrenginių jungiamumo ir konfigūracijos duomenų įvykiai
 
