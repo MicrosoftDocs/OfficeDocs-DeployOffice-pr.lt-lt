@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirta „Office 365 ProPlus“ privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: 329d3de3fd4ff20518a8a49f01d7c5bfcd75342b
-ms.sourcegitcommit: de39739d7ab82666ff1389be360d74c518ae97f6
+ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
+ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "36980343"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37417416"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių apžvalga
 
@@ -39,6 +39,7 @@ Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos el
 >   - 1904 ar vėlesnėms „Project“ ir „Visio“ kompiuterio versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
 > - Šie privatumo valdikliai įtraukti į pusmetinių naujinimų kanalo (tikslinio) 1908 versiją, kuri buvo išleista 2019 m. rugsėjo 10 d. Tikimasi, kad jie bus prieinami ir 2020 m. sausio mėn. pusmetinių naujinimų kanale.
 > - Planuojama, kad šie privatumo valdikliai 2019 m. spalio mėn. antroje pusėje bus prieinami „Excel“, „OneNote“, „PowerPoint“. „Visio“ ir „Word“ „iOS“ versijose. Daugiau informacijos pateiksime spalio pradžioje.
+> - Numatyta, kad dauguma internetinės „Office“ taikomųjų programų naująjį privatumo valdiklį, skirtą [pasirinktinėms prijungtosioms funkcijoms](optional-connected-experiences.md), pradės naudoti 2019 m. spalio mėn. viduryje. Minėtos programos yra šios: internetinė „Excel“, internetinė „OneNote“, „PowerPoint“ žiniatinkliui, internetinė „Visio“ ir internetinė „Word“. Iki tol norėdami konfigūruoti atitinkamą [strategijos parametrą](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences), galite naudoti [„Office“ debesies strategijos tarnybą](../overview-office-cloud-policy-service.md).
 > - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
 
 ## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikos duomenys, siunčiami „Microsoft“ iš „Office 365 ProPlus“
