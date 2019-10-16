@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo kontrolės mechanizmus "Office 365 ProPlus" naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: 041e7c5df5bb046843b07bedc4a8ee9b3848903d
-ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
+ms.openlocfilehash: 5f3b63c65d43827befe58ba600c7957410f2d3c0
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417326"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510282"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus
 
@@ -43,7 +43,9 @@ Toliau pateikiami penki naujos strategijos parametrai:
 Šie strategijos parametrai gali būti įdiegti naudojant arba grupės strategiją, arba [„Office“ debesies strategijos tarnybą](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Jei naudojate grupės strategiją, turite atsisiųsti naujausius administravimo šablonų failus (ADMX/ADML) iš [„Microsoft“ atsisiuntimo centro](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
-> Informaciją apie „Office for Mac“ privatumo valdiklių valdymą žr. [Nuostatų naudojimas siekiant valdyti „Office for Mac“ privatumo valdiklius](mac-privacy-preferences.md).
+> - Informaciją apie „Office for Mac“ privatumo valdiklių valdymą žr. [Nuostatų naudojimas siekiant valdyti „Office for Mac“ privatumo valdiklius](mac-privacy-preferences.md).
+> - Informaciją apie panašius „Office“ parametrus „iOS“ įrenginiuose žr. [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md).
+
 
 Jei naudojate grupės strategijos valdymo įrankį, šie strategijos parametrai yra įrankio srityje Vartotojo konfigūracija\\Politikos\\Administravimo šablonai\\„Microsoft Office 2016“\\Privatumas\\ Patikimumo centras.
 

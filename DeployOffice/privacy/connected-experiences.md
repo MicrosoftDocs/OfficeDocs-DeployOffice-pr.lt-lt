@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 04d71fcd601f76d2613dda9bd00dccd24ab8e950
-ms.sourcegitcommit: 27db488cae3bd23342bc0d902c53b5bf89ae30a7
+ms.openlocfilehash: 8b9038bdff83c786616ae87565e6ae66ac85516a
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37379756"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510408"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -135,7 +135,11 @@ Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organiza
 > [!NOTE]
 > Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
-Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams Daugiau informacijos apie šių strategijos parametrų naudojimą žr. [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md) ir [Nuostatų naudojimas siekiant tvarkyti „Office for Mac“ privatumo valdiklius](mac-privacy-preferences.md).
+Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams Daugiau informacijos apie šių politikos parametrų naudojimą ieškokite šiuose straipsniuose: 
+
+- [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
+- [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 
 Jei nuspręsite išjungti kai kurių tipų prisijungus naudojamas funkcijas, šių prisijungus naudojamų funkcijų juostelės arba meniu komanda bus rodoma pilka arba bus rodomas klaidos pranešimas, kai bandysite jas naudoti.
 

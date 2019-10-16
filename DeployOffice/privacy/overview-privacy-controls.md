@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirta „Office 365 ProPlus“ privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: 708c8b1dae02f54d4c6a6195cec9513c8639b62d
-ms.sourcegitcommit: aed9a0908021ffc80baa7159a66b63dd4f9f28e4
+ms.openlocfilehash: 24a3d30d05fb2a1456e10d8a8036f31c25c14db7
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37417416"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510704"
 ---
 # <a name="overview-of-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių apžvalga
 
@@ -38,7 +38,7 @@ Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos el
 >   - „Office for Mac“ (16.28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 >   - 1904 ar vėlesnėms „Project“ ir „Visio“ kompiuterio versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
 > - Šie privatumo valdikliai įtraukti į pusmetinių naujinimų kanalo (tikslinio) 1908 versiją, kuri buvo išleista 2019 m. rugsėjo 10 d. Tikimasi, kad jie bus prieinami ir 2020 m. sausio mėn. pusmetinių naujinimų kanale.
-> - Planuojama, kad šie privatumo valdikliai 2019 m. spalio mėn. antroje pusėje bus prieinami „Excel“, „OneNote“, „PowerPoint“. „Visio“ ir „Word“ „iOS“ versijose. Daugiau informacijos pateiksime spalio pradžioje.
+> - Šie privatumo valdikliai pasiekiami 2.30 ir vėlesnėse „Excel“, „OneNote“, „PowerPoint“ ir „Word“ versijose, skirtose „iOS“, taip pat 1.17 ir vėlesnėse „Visio“ peržiūros programos, skirtos „iOS“, versijose.
 > - Numatyta, kad dauguma internetinės „Office“ taikomųjų programų naująjį privatumo valdiklį, skirtą [pasirinktinėms prijungtosioms funkcijoms](optional-connected-experiences.md), pradės naudoti 2019 m. spalio mėn. viduryje. Minėtos programos yra šios: internetinė „Excel“, internetinė „OneNote“, „PowerPoint“ žiniatinkliui, internetinė „Visio“ ir internetinė „Word“. Iki tol norėdami konfigūruoti atitinkamą [strategijos parametrą](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences), galite naudoti [„Office“ debesies strategijos tarnybą](../overview-office-cloud-policy-service.md).
 > - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
 
@@ -74,6 +74,7 @@ Jei reikia daugiau informacijos, žr.:
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
+- [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-office-365-proplus"></a>„Office 365 ProPlus“ prisijungus naudojamos funkcijos
@@ -99,6 +100,7 @@ Jei reikia daugiau informacijos, žr.:
 - [„Office“ prisijungus naudojamos funkcijos](connected-experiences.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
+- [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 
 ## <a name="optional-connected-experiences-for-office-365-proplus"></a>Pasirinktinės „Office 365 ProPlus“ prisijungus naudojamos funkcijos
 
@@ -115,6 +117,7 @@ Jei reikia daugiau informacijos, žr.:
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
+- [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Reikalingi prisijungus naudojamų funkcijų tarnybų duomenys
 

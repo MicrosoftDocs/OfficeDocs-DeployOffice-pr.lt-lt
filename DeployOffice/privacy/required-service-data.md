@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Leidžia „Office“ administratoriams apžvelgti privalomuosius tarnybų duomenis, kurie renkami apie „Office“ prijungtąsias funkcijas.
 hideEdit: true
-ms.openlocfilehash: 76c30eddecbb84fecc5cb49c9691edcebc7c13b7
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: eaa659e375d3d5c29d5410ab53db7ae583df6e9d
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36238488"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510614"
 ---
 # <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys 
 
@@ -67,6 +67,7 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
+- [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 
 ## <a name="examples-of-events-for-service-diagnostic-data"></a>Tarnybų diagnostikos duomenų įvykių pavyzdžiai
 

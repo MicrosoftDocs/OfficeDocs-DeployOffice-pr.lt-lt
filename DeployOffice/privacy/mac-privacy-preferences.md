@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti „Office for Mac“ privatumo kontrolės valdiklius naudojant nuostatas.
 hideEdit: true
-ms.openlocfilehash: 01bb31f3b6c307ec1dc4762b54fea17185dcf27d
-ms.sourcegitcommit: 0fd23324ba1364fa1f8dd1578adf25946adde90f
+ms.openlocfilehash: a1fdd9f7d0fe2095b3a32f61f885f724f2259188
+ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36246300"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "37510221"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-for-mac"></a>„Office for Mac“ privatumo valdiklių valdymas naudojant nuostatas
 
@@ -34,7 +34,8 @@ Be to, yra naujas nuostatų parametras, susijęs su „Microsoft AutoUpdate“ (
 Daugiau informacijos apie diagnostikos duomenis ir prijungtąsias funkcijas žr. [Privatumo valdiklių apžvalga](overview-privacy-controls.md).
 
 > [!NOTE]
-> Informacijos apie panašius „Office“ parametrus kompiuteriuose, kuriuose veikia „Windows“, žr. [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md).
+> - Informaciją apie panašius „Office“ parametrus kompiuteriuose, kuriuose veikia „Windows“, žr. [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md).
+> - Informaciją apie panašius „Office“ parametrus „iOS“ įrenginiuose žr. [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md).
 
 ## <a name="setting-preferences"></a>Nuostatų nustatymas
 
@@ -52,12 +53,11 @@ Diagnostikos duomenys naudojami siekiant apsaugoti ir atnaujinti „Office“, a
 |**Galimos reikšmės**  | `BasicDiagnosticData` *(nustatomas lygis Privalomieji)* <br/> `FullDiagnosticData` *(nustatomas lygis Pasirinktiniai)* <br/> `ZeroDiagnosticData` *(nustatomas lygis Nė vienas)* |
 |**Pasiekiamumas** |16.28 ir vėlesnės versijos |
 
-> [!NOTE]
-> Jei nustatėte šią nuostatą, ji taip pat bus taikoma šiems produktams:
-> - „Teams for Mac“ 1.00.217856 ir vėlesnėms versijoms
-> - „Skype“ verslui, skirta „Mac“ 16.28 ir vėlesnėms versijoms
+Pradedant nuo naujų 16.30 versijos diegimų, jei nenustatysite šios nuostatos, „Microsoft“ bus siunčiami tik privalomieji diagnostikos duomenys, jei vartotojai, turintys „Office 365“ prenumeratą, yra prisijungę naudodami darbo arba mokymo įstaigos paskyrą arba jei vartotojai turi bendrojo licencijavimo „Office 2019 for Mac“ versiją. Be to, šie vartotojai negali pakeisti diagnostikos duomenų lygio, neatsižvelgiant į tai, kaip nustatėte šią nuostatą.
 
-Jei nenustatysite šios nuostatos, „Microsoft“ bus siunčiami pasirinktiniai ir privalomieji diagnostikos duomenys, jei vartotojai, turintys „Office 365“ prenumeratą, yra prisijungę naudodami darbo arba mokymo įstaigos paskyrą arba jei vartotojai turi bendrojo licencijavimo „Office 2019 for Mac“ versiją. Be to, šie vartotojai negali pakeisti diagnostikos duomenų lygio, neatsižvelgiant į tai, kaip nustatėte šią nuostatą.
+> [!NOTE]
+> - Jei įdiegsite 16.28 arba 16.29 versiją ir nenustatysite šios nuostatos, „Microsoft“ bus siunčiami ir pasirinktiniai, ir privalomieji diagnostikos duomenys. Jei tada atnaujinsite versiją į 16.30 ar naujesnę, tiek pasirinktiniai, tiek privalomieji diagnostikos duomenys vis tiek bus siunčiami „Microsoft“, nebent pasinaudosite šia nuostata ir nustatysite kitą reikšmę.
+> - Jei nustatysite šią nuostatą, ji taip pat bus taikoma 1.00.217856 ir vėlesnei „Teams for Mac“ versijai bei 16.28 ir vėlesnei „Skype“ verslui, skirtos „Mac“, versijai.
 
 Kitų vartotojų, pvz., namų vartotojų, turinčių „Office 365“ prenumeratą, siunčiami tik privalomieji diagnostikos duomenys, nebent vartotojas pasirenka taip pat siųsti pasirinktinius diagnostikos duomenis eidamas į sritį **Preferences** > **Privacy** (Nuostatos > Privatumas).
 
