@@ -1,7 +1,8 @@
 # „Office 365 ProPlus“ privatumas
 ## [Privatumo valdiklių apžvalga](overview-privacy-controls.md)
 ## [Privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
-## [Privatumo valdiklių valdymas naudojant ypatybes („Mac“)](mac-privacy-preferences.md)
+## [Privatumo valdiklių valdymas naudojant nuostatas („Mac“)](mac-privacy-preferences.md)
+## [Privatumo valdiklių valdymas naudojant nuostatas („iOS“)](ios-privacy-preferences.md)
 
 ## Diagnostikos duomenys
 ### [Būtinieji diagnostikos duomenys](required-diagnostic-data.md)
