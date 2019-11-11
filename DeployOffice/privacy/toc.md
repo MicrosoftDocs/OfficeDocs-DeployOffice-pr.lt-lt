@@ -3,6 +3,7 @@
 ## [Privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 ## [Privatumo valdiklių valdymas naudojant nuostatas („Mac“)](mac-privacy-preferences.md)
 ## [Privatumo valdiklių valdymas naudojant nuostatas („iOS“)](ios-privacy-preferences.md)
+## [Privatumo valdiklių valdymas naudojant strategijos parametrus („Android“)](android-privacy-controls.md)
 
 ## Diagnostikos duomenys
 ### [Būtinieji diagnostikos duomenys](required-diagnostic-data.md)
