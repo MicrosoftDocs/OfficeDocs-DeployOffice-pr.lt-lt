@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: f59c737a41c3075f9c29c49f623d88f9876bf32d
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
+ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067267"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "38276483"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -47,9 +47,9 @@ Pastaba. Toliau aprašytu privatumo parametru nevaldomos funkcijos, kurias naudo
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Funkcijos, kurios naudoja kitas „Microsoft“ priklausančias internetines paslaugas ir (arba) trečiosioms šalims priklausančias paslaugas
 
-### <a name="office-store"></a>„Office“ parduotuvė 
+### <a name="help--suggest-a-feature"></a>Žinynas > Pasiūlyti funkciją
 
-Kai naudojate „Office“ parduotuvę, pačios parduotuvės svetainės naudojimą licencijuoja [„Microsoft“ paslaugų teikimo sutartis](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimas](https://privacy.microsoft.com/). Tačiau bet kokiems [„Office“ papildiniams](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D), kuriuos atsisiunčiate iš „Office“ parduotuvės, taikomos papildinio teikėjo naudojimo sąlygos. Tai gali būti įvairios organizacijos arba įmonės ir kai kurios iš jų gali imti naudojimo mokestį. Turėsite peržiūrėti kiekvieno papildinio teises, privatumo patvirtinimą ir licencijos sąlygas, kad sužinotumėte, kokios sąlygos taikomos, ir galėtumėte nuspręsti, ar norite sutikti su tos organizacijos siūlomomis naudojimo sąlygomis.
+Pasiūlyti funkciją yra funkcija, kurią naudodami galite pateikti idėjų apie „Outlook“ naudojimą. Jūsų pasiūlymai pateikiami tiesiai trečiosios šalies paslaugų teikėjui „UserVoice“. Jei pateikiate idėją naudodami Pasiūlyti funkciją, taikomos [„UserVoice“ naudojimo sąlygos ir privatumo politika](https://outlook.uservoice.com/tos).
 
 ### <a name="insert-online-video"></a>Internetinio vaizdo įrašo įterpimas
 
@@ -58,6 +58,10 @@ Kai naudojate „Office“ parduotuvę, pačios parduotuvės svetainės naudojim
 ### <a name="microsoft-error-reporting-program-merp"></a>„Microsoft“ klaidų ataskaitų programa (MERP) 
 
 MERP prisijungia prie „Watson.microsoft.com“ tarnybos, kad galėtų siųsti diagnostikos duomenis, kai sugenda „Office“ kliento programos, kurios veikia „Mac“ įrenginiuose. Ji priklauso „Microsoft“ ir taikomos [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [„Microsoft“ privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygos. MERP netaikoma „Office“ kliento programoms, kurios veikia „Windows“.
+
+### <a name="office-store"></a>„Office“ parduotuvė 
+
+Kai naudojate „Office“ parduotuvę, pačios parduotuvės svetainės naudojimą licencijuoja [„Microsoft“ paslaugų teikimo sutartis](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimas](https://privacy.microsoft.com/). Tačiau bet kokiems [„Office“ papildiniams](https://support.office.com/article/16278816-1948-4028-91E5-76DCA5380F8D), kuriuos atsisiunčiate iš „Office“ parduotuvės, taikomos papildinio teikėjo naudojimo sąlygos. Tai gali būti įvairios organizacijos arba įmonės ir kai kurios iš jų gali imti naudojimo mokestį. Turėsite peržiūrėti kiekvieno papildinio teises, privatumo patvirtinimą ir licencijos sąlygas, kad sužinotumėte, kokios sąlygos taikomos, ir galėtumėte nuspręsti, ar norite sutikti su tos organizacijos siūlomomis naudojimo sąlygomis.
 
 ### <a name="research"></a>Tyrimai
 
@@ -70,19 +74,6 @@ MERP prisijungia prie „Watson.microsoft.com“ tarnybos, kad galėtų siųsti 
 
 Programos „Outlook“ [orų prognozės juostoje](https://support.office.com/article/d11b7532-7c58-489e-8103-5cc5d727b06b) rodomos pasirinktų geografinių vietų orų prognozės. Naudojant orų prognozės juosta programoje „Outlook“ pagal numatytuosius parametrus prisijungia prie MSN orų. MSN priklauso „Microsoft“ ir taikomos [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [„Microsoft“ privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygos. Kai naudojate orų prognozės juostą su MSN orais, „Microsoft“ neaptinka jūsų buvimo vietos ir miestai, kurių informaciją pasirenkate rodyti, nėra susiejami su jumis. Galite [pakeisti šį numatytąjį parametrą](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) ir prisijungti prie kitų orų prognozės paslaugų teikėjų. Jei nuspręsite naudoti kitą orų prognozės paslaugų teikėją, turėsite peržiūrėti to teikėjo privatumo patvirtinimą ir licenciją, kad sužinotumėte, kokios sąlygos taikomos.
 
-## <a name="experiences-that-allow-you-to-submit-feedback"></a>Funkcijos, kurios suteikia galimybę pateikti atsiliepimą
-
-### <a name="help--feedback"></a>Žinynas > Atsiliepimai
-
-Kai apsilankote dalyje **Žinynas** > **Atsiliepimai** ir pateikiate atsiliepimą arba nusprendžiate atsakyti į vieną iš mūsų apklausų „Norėtume išgirsti jūsų atsiliepimus“ naudodamiesi „Office 365 ProPlus“ programa, jūsų pateikta informacija siunčiama „Microsoft“ ir taikomos [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygos. Kai pateikiate atsiliepimą spustelėję mygtuką Atsiliepimai, galite pasirinktinai nurodyti savo el. pašto adresą ir (arba) pateikti savo ekrano kopiją. Tai nėra būtina informacija.  
-
-#### <a name="outlook-is-an-exception"></a>„Outlook“ yra išimtis
-
-„Outlook“ dalis **Žinynas** > **Atsiliepimai** skiriasi nuo dalies **Žinynas** > **Atsiliepimai** kitose „Office 365 ProPlus“ programose. Kai pateikiate atsiliepimą „Outlook“ dalyje **Žinynas** > **Atsiliepimai**, leidžiate „Microsoft“ rinkti „Outlook“ žurnalus, kad galėtų spręsti potencialias veikimo problemas. Šiuose žurnaluose gali būti asmeninės informacijos, pvz., jūsų vardas, pavardė, el. pašto adresas, jūsų el. laiškų turinys arba ieškos terminai. Ši paslauga teikiama pagal jūsų organizacijos „Microsoft“ licenciją. Todėl norėdami pateikti atsiliepimą spustelėję mygtuką Atsiliepimai programoje „Outlook“, jums nereikia sudaryti atskiros sutarties su „Microsoft“ ir šiame straipsnyje aprašytas privatumo parametras netaikomas.
-
-### <a name="help--suggest-a-feature"></a>Žinynas > Pasiūlyti funkciją
-
-Pasiūlyti funkciją yra funkcija, kurią naudodami galite pateikti idėjų apie „Outlook“ naudojimą. Jūsų pasiūlymai pateikiami tiesiai trečiosios šalies paslaugų teikėjui „UserVoice“. Jei pateikiate idėją naudodami Pasiūlyti funkciją, taikomos [„UserVoice“ naudojimo sąlygos ir privatumo politika](https://outlook.uservoice.com/tos).
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kaip nustatyti, ar administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas
 
