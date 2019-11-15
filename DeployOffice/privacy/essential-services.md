@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: a482854210e5f609a41e6a810c3c3338a19586e7
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
+ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510473"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38310688"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -44,6 +44,7 @@ Jei esate organizacijos administratorius, jus gali dominti šios temos:
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
+- [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Pagrindinių „Office“ paslaugos sąrašas 
 
@@ -6456,7 +6457,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
 
-Šis įvykis nurodo, kad „Microsoft AutoUpdate“ gavo „Apple“ įvykį, informuojantį, kad taikomoji programa nutraukta. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ gavo „Apple“ įvykį, informuojantį apie taikomosios programos nutraukimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -8179,7 +8180,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
 
-Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo konfigūruoti „Apple“ įvykį. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo „Apple“ įvykį, kurį reikia konfigūruoti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -8220,7 +8221,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
 
-Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo „Apple“ įvykį, kad sukurtų naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo „Apple“ įvykį, nurodantį sukurti naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -10058,6 +10059,15 @@ Renkami toliau apibūdintų laukų duomenys
 Tarnybų konfigūravimo paslauga nerenka būtinųjų tarnybų diagnostikos duomenų įvykių.
 
 ## <a name="telemetry-events"></a>Telemetrijos įvykiai
+
+### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas stebėti mūsų telemetrijos pasirenkamo srauto pirmojo vykdymo patirties būseną. Mes renkame kodą, nurodantį vartotojo pasirinktą diagnostikos duomenų rinkimo parinktį.
+
+Renkami šių laukų duomenys:
+
+ - **Data_EventId** – kodas, nurodantis vartotojo pasirinktą diagnostikos duomenų rinkimo nuostatą.
+
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 

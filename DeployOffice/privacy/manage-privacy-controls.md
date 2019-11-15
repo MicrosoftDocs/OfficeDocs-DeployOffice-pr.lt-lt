@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo kontrolės mechanizmus "Office 365 ProPlus" naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: 31db528fe639b8685acf56d88d4a4bf8dd406bd3
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
+ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067448"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639323"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus
 
@@ -92,9 +92,6 @@ Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos f
 
 Jei nekonfigūruosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos. Tai suteikia jūsų vartotojams visų funkcijų ir funkcionalumo pasiekiamumą per „Office 365 ProPlus“. Tačiau suprantame, kad gali tekti išjungti kai kurias arba visas prisijungus naudojamas funkcijas, kad jos atitiktų tam tikrus jūsų organizacijos reikalavimus.
 
-> [!IMPORTANT]
-> 2019 m. gegužės 28 d., antradienį, paskelbus naujus administravimo šablono failus (ADMX/ADML), buvo išspręsta problema, susijusi su šių 4 strategijos parametrų išjungimu. Būtinai atsisiųskite ir įdiekite atnaujintus grupės strategijos failus iš [„Microsoft Download Center“](https://www.microsoft.com/en-us/download/details.aspx?id=49030).
-
 Jei nuspręsite kai kurių tipų prisijungus naudojamas funkcijas padaryti nepasiekiamas vartotojams, šių funkcijų juostelės arba meniu komandos bus rodoma pilkos arba vartotojai gaus klaidos pranešimą, kai bandys jas naudoti. Tokiu atveju jokie[reikalingi tarnybų duomenys](required-service-data.md)apie prisijungus naudojamas funkcijas nebus siunčiami „Microsoft“.
 
 Vartotojai negalės pasirinkti, ar šios prisijungus naudojamos funkcijos yra įjungtos, ar išjungtos „Office 365 ProPlus“, jei jie prisijungę prie „Office“ naudodami organizacijos kredencialus, kurie kartais vadinami darbo arba mokymo įstaigos paskyra.
@@ -131,7 +128,7 @@ Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieina
 > - internetinę „Visio“;
 > - internetinę „Word“.
 >
-> Numatyta, kad internetinės „Office“ programos pradės naudoti naują privatumo valdiklį, skirtą pasirinktinėms prijungtosioms funkcijoms 2019 m. spalio mėn. viduryje, tačiau strategijos parametrą galite konfigūruoti jau dabar. Norėdami konfigūruoti šį strategijos parametrą minėtoms internetinės „Office“ programoms, turite naudoti [„Office“ debesies strategijos tarnybą](../overview-office-cloud-policy-service.md).
+> Norėdami konfigūruoti šį strategijos parametrą minėtoms internetinės „Office“ programoms, turite naudoti [„Office“ debesies strategijos tarnybą](../overview-office-cloud-policy-service.md).
 
 Net jei šias pasirinktines prijungtąsias funkcijas padarysite pasiekiamas vartotojams, jie galės jas išjungti kaip grupę eidami į [privatumo parametrų dialogo langą](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vartotojai turės šį pasirinkimą, tik jei jie bus prisijungę prie „Office“ naudodamiesi organizacijos kredencialais (kartais vadinamais darbo arba mokymo įstaigos paskyra), o ne naudodami savo asmeninį el. pašto adresą.
 
