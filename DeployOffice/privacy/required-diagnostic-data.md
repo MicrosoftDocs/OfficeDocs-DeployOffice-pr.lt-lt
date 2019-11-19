@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 71b05ab46c7aa6aee2c7dbc2aa88201f50fc8b99
-ms.sourcegitcommit: 02c4120c0b10bfe378d21d60699ae49aaef97834
+ms.openlocfilehash: 0437779d269d4de7132961ce2edc37363d10b309
+ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "37510005"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38639388"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -49,6 +49,7 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
+- [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Būtinų diagnostikos duomenų kategorijos, duomenų porūšiai, įvykiai ir duomenų laukai
 
@@ -1237,6 +1238,7 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 
 Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas).
 
+
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
 Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcCreateRepublishingLicense API iškvietimo metu.
@@ -1749,6 +1751,24 @@ Renkami šių laukų duomenys:
 
   - **Data.CollectionTime** – laiko žyma, kai buvo užregistruotas gedimo įvykis
 
+#### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas nuolatinio aktyvinimo srauto sveikatai stebėti, bei tirti trikčių priežastis, peržiūrint parametro „FailedAt“ reikšmes.
+
+Renkami šių laukų duomenys:
+
+- **Data_FailedAt** – renkame duomenis eilutės, nurodančios aktyvaus nuolatinio licencijos srauto klaidą.
+
+#### <a name="office_apple_activatesubscription"></a>Office_Apple_ActivateSubscription
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Mes renkame informaciją, susijusią su perkėlimu iš senstelėjusių licencijavimo kodų rinkinio į „vNext“ licencijavimo kodo rinkinį. Tai naudojama prenumeratos aktyvinimo srauto sveikatai stebėti, taip pat sekti, ar tai yra perkėlimas į „vNext“ licencijavimą ir ar buvo naudojamas pagrindinė tapatybė.
+
+Renkami šių laukų duomenys:
+
+- **Data_ActivatingPrimaryIdentity** – teisinga/klaidinga reikšmė, jei buvo naudojamas pagrindinį tapatybė. 
+
+- **Data_NULSubscriptionLicensed** – teisinga/klaidinga reikšmė, žyminti prenumeratos būseną
+
 #### <a name="office_apple_cisauthticketwithidentity"></a>Office_Apple_CISAuthTicketWithIdentity
 
 Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas fiksuoti autorizavimo žymos generavimo klaidas atliekant InAppPurchase „Mac“ (įvykių žurnalai, gautas klaidos kodas).  Šis įvykis naudojamas nustatant ir sprendžiant autorizavimo žymos generavimo klaidas
@@ -1761,7 +1781,51 @@ Renkami šių laukų duomenys:
 
 - **Data_ValidIdentity** – ar klientas turi tinkamą tapatybę
 
+#### <a name="office_apple_inappassociationactivity"></a>Office_Apple_InAppAssociationActivity
 
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Mes renkame informaciją, susijusią su produkto sąsaja pirkimo programėlėje. Užregistruojame, kurį prenumeratos SKU susiejame.  Tai naudojama pirkimo programėlėje produktų susiejimų sveikatai stebėti.
+
+Renkami šių laukų duomenys:
+
+- **Data_ProductID** – prenumeratos SKU, kuriam bandome susieti produktą.
+
+#### <a name="office_apple_inapppurchaseactivity"></a>Office_Apple_InAppPurchaseActivity
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. 
+
+Renkame informaciją, susijusią su produktų pirkimu „AppStore“. Stebime pirkimo rezultatą (nepavyko, pavyko, mokėjimo problema ir t. t.), pirkimo užklausos tipą (atkūrimas, įsigijimas) ir įsigytą SKU/produktą („Office 365 Home“ ir t. t.).  Šie duomenys naudojami pirkimo programėlėje srautų sveikatai stebėti.
+
+Renkami šių laukų duomenys:
+
+- **Data_ Data_PurchaseResult** – pirkimo operacijos rezultatas
+
+- **Data_ProductID** – perkamas produktas
+
+- **Data_PurchaseRequestType** – pirkimo užklausos tipas
+
+#### <a name="office_apple_intune"></a>Office_Apple_InTune
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Renkame, ar dabartinis seansas yra "Intune" valdomas. Tai naudojama „Intune“ valdomuose seansuose greitai rikiuoti / filtruoti, bei suteikia mums galimybę ištirti galimas programos „Office, kuri vykdoma kaip „Intune“ valdoma taikomoji programa, triktis.
+
+Renkami šių laukų duomenys:
+
+- **Data_EventID** – renkame eilutę, nurodančią kodą, pateikiantį, ar seansas yra „Intune“ valdomas.
+
+#### <a name="office_apple_licensing_mac_licensingstate"></a>Office_Apple_Licensing_Mac_LicensingState
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis fiksuoja dabartinę seanso licencijos būseną kompiuteryje (OLS licencijos ID, naudojamą SKU, ar lengvatinis laikotarpis, RFM ir t. t.). Surinkti duomenys naudojami klaidoms aptikti ir nustatyti trikčių priežastis. 
+
+Renkami šių laukų duomenys:
+
+- **Data_DidRunPreview** – eilutė, nurodanti, ar seansas paleidžiamas dalyje Peržiūra
+
+- **Data_LicensingACID** – eilutė, nurodanti licencijavimo sistemos vidinį identifikatorių
+
+- **Data_LicensingType** – eilutė, nurodanti licencijos tipą
+
+- **Data_OLSLicenseId** – eilutė, nurodanti licencijos identifikatorių
+
+- **Data_State** – eilutė, nurodanti dabartinę licencijos būseną
 
 #### <a name="officeconnectdeviceactivitystart"></a>Office.ConnectDevice.Activity.Start
 
@@ -1798,6 +1862,258 @@ Renkami šių laukų duomenys:
 - **Activity_StartStopType** – stabdymas
 
 - **Activity_DateTimeTicks** – veiklos data ir laikas
+
+#### <a name="office_docs_apple_docsuxiossaveasthroughfilemenu"></a>Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma operacija Įrašyti kaip, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo operacijos informaciją, pvz., vietų kategorijas.  Operacija Įrašyti kaip vykdoma, kai vartotojas sukuria naują failą ir įrašo jį pirmą kartą arba išsaugo esamo failo kopiją naujoje vietoje.
+
+Renkami šių laukų duomenys:
+
+- **Data_OriginServiceType** – pradinės failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_ServiceType** – naujos failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas kai įrašymas yra baigtas ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+#### <a name="office_docs_apple_docsuxmacatmentioninsertedatmention"></a>Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kai vartotojas „@“ pamini kitą vartotoją ir yra naudojamas norint suprasti ir nustatyti vartotojo patirčių prioritetus, atsižvelgiant į tai, kaip vartotojai bendradarbiauja su kitais vartotojais.
+
+Renkami šių laukų duomenys:
+
+- **Data_CharactersTyped** – skaitinė reikšmė, nurodanti bendrą simbolių skaičių, įvestą tekste, kuriame minimas vartotojas „@“.
+
+#### <a name="office_docs_apple_docsuxmacodspsharingwebviewsharingcompleted"></a>Office_Docs_Apple_DocsUXMacODSPSharingWebViewSharingCompleted 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka bendrinti debesies dokumentą naudodamas „OneDrive“ bendrinimo patirtį ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_ShareType** – užprogramuota eilutė, kurioje nurodoma, kokio tipo operacija buvo baigta, įskaitant, bet neapsiribojant operacijomis „kopijuoti saitą“, „daugiau taikomųjų programų“, „Teams“.
+
+- **Data_ShareWebViewMode** – užprogramuota eilutė, nurodanti, kokio tipo bendrinimo režimas buvo aktyvus, kai bendrinamas buvo baigtas, įskaitant, bet neapsiribojant „ManageAccess“, „AtMentions“, Bendrinti.
+
+#### <a name="office_docsui_collaboration_coauthorgalleryrowtapped"></a>Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka dabartinio bendraautorių sąrašo peržiūrą.  Šie duomenys naudojami siekiant geriau suprasti ir nustatyti vartotojo patirčių prioritetus, susijusius su dokumento redagavimu vienu metu.
+
+Renkami šių laukų duomenys:
+
+- **Data_CoauthorCount** – skaitinė reikšmė, nurodanti bendrą skaičių žmonių, kurie vienu metu redaguoja tą patį dokumentą.
+
+#### <a name="office_docsui_collaboration_collabcornerpeoplegallerycoauthorsupdated"></a>Office_DocsUI_Collaboration_CollabCornerPeopleGalleryCoauthorsUpdated 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai pasikeičia aktyvių bendraautorių skaičius debesies dokumente.  Šie duomenys naudojami siekiant geriau suprasti ir nustatyti vartotojo patirčių prioritetus, susijusius su dokumento redagavimu vienu metu.
+
+Renkami šių laukų duomenys:
+
+- **Data_CoauthorsJoined** – bendraautorių, prisijungusių prie dokumento, skaičius.
+
+- **Data_CoauthorsLeft** – bendraautorių, kurie atsijungė nuo dokumento, skaičius.
+
+- **Data_NewCoauthorCount** – naujas aktyvių dokumento bendraautorių skaičius. 
+
+- **Data_OldCoauthorCount** – ankstesnis prieš naujinimą nustatytas aktyvių bendraautorių skaičius.
+
+- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+#### <a name="office_docsui_docstage_docstagecreatenewfromtemplate"></a>Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykio įrašai, nurodantys patirtį naują failą sukuriant naudojant funkciją Naujas iš šablono, ir naudojami siekiant geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų kūrimo informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_InHomeTab** – Bulio logikos reikšmė, nurodanti, ar naujas failas iš šablono buvo sukurtas failo naujų funkcijų skirtuke Pagrindinis.
+
+- **Data_InSearch** – Bulio logika, nurodanti, ar failas buvo sukurtas, kai vartotojas ieškojo šablono.
+
+- **Data_IsHomeTabEnabled** – Bulio logikos reikšmė, nurodanti, ar skirtukas Pagrindinis šiuo metu pasiekiamas vartotojui.
+
+- **Data_IsRecommendedEnabled** – Bulio logikos reikšmė, nurodanti, ar patirtis Rekomenduojama šiuo metu pasiekiamas vartotojui.
+
+- **Data_TemplateIndex** – vartotojui vizualiai rodomas šablono failo skaitinis indeksas.
+
+- **Data_TemplateType** – klasifikacija, padedanti atskirti šablono tipą, bet neapsiribojant šablonais „Online“, „Online search" ar „Local“.
+
+#### <a name="office_docsui_docstage_recommendedopen"></a>Office_DocsUI_DocStage_RecommendedOpen
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_Success** – Bulio logikos reikšmė, nurodanti, ar pavyko atlikti operaciją.
+
+#### <a name="office_docsui_fileoperations_docsuifileopenmacrequired"></a>Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“ ir pirmaisiais keturiais plėtinio simboliais.
+
+Renkami šių laukų duomenys:
+
+- **Data_Ext** – failo plėtinys, apribotas iki pirmų keturių ar mažiau plėtinio simbolių.
+
+- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas.
+
+#### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“ ir kurioje taikomosios programos vietoje naudotojas pateikė prašymą atidaryti failą.
+
+Renkami šių laukų duomenys:
+
+- **Data_IsCandidateDropboxFile** – tai yra Bulio logikos reikšmė, kuri registruojama, jei tikrinant failo kelią, manome, kad jis gali būti iš aplanko, kuris sinchronizuotas saugyklos „DropBox“.
+
+- **Data_IsSignedIn** – ar failo įrašymo metu vartotojas yra prisijungęs.
+
+- **Data_OpenReason** – atviroji priežastis yra skaitinė reikšmė, nurodanti vietą, iš kurios taikomojoje programoje vartotojas atidarė failą.
+
+- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus skaitinis kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+#### <a name="office_docsui_fileoperations_savetourl"></a>Office_DocsUI_FileOperations_SaveToURL
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma operacija „įrašyti kaip“, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo operacijos informacija, pvz., vietinėmis kategorijomis ir pirmaisiais keturiais plėtinio simboliais.  Operacija „įrašyti kaip“ vykdoma, kai vartotojas sukuria naują failą ir įrašo jį pirmą kartą arba išsaugo esamo failo kopiją naujoje vietoje.
+
+Renkami šių laukų duomenys:
+
+- **Data_FileExtension** – pirmi keturi naujo failo plėtinio simboliai.
+
+- **Data_IsNewFileCreation** – nurodo, ar įrašymo operacija skirta naujam failui, ar esamo failo kopijai.
+
+- **Data_IsSignedIn** – ar failo įrašymo metu vartotojas yra prisijungęs.
+
+- **Data_SaveErrorCode** – skaitinė reikšmė, nustatoma įvykus klaidai, kad padėtų nustatyti klaidos tipą.
+
+- **Data_SaveErrorDomain** – nurodo SaveErrorCode domeną, kaip apibrėžta „Apple“ SaveErrorDomains – „yra pasirenkamos eilutės, skirtos kodų grupėms atskirti".
+
+- **Data_SaveLocation** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_SaveOperationType** – skaitinė reikšmė, apibrėžta „Apple“ NSSaveOperationType reikšmių grupėje.
+
+#### <a name="office_docsui_sharingui_cloudupsellshown"></a>Office_DocsUI_SharingUI_CloudUpsellShown 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kada vartotojas peržvelgia papildomo debesies srauto pardavimo dokumentą.  Šie duomenys naudojami siekiant geriau suprasti ir nustatyti vartotojo patirčių prioritetus, susijusius su dokumentų perkėlimu į debesį.
+
+Renkami šių laukų duomenys:
+
+- **Data_FileStyle** – skaitinė reikšmė, nurodanti, koks scenarijus buvo naudojamas papildomo pardavimo patirties rodymui, pvz., automatinio įrašymo jungiklio ar bendrinimo mygtuko.
+
+- **Data_FileType** – pirmi keturi esamo failo plėtinio simboliai.
+
+- **Data_InDocStage** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis rodoma iš dokumentų galerijos ar dokumento lango.
+
+- **Data_IsDocumentOpened** – Bulio logika, nurodanti, ar taip pat atidarytas esamas dokumentas, kuriame rodoma papildomo pardavimo patirtis.
+
+- **Data_IsDraft** – Bulio logika, nurodanti, ar esamas failas kada nors buvo įrašytas.
+
+- **Data_IsSheetModal** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis buvo pateikta modališkai.
+
+#### <a name="office_docsui_sharingui_cloudupsellupload"></a>Office_DocsUI_SharingUI_CloudUpsellUpload 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja kada vartotojas pasirenka nusiųsti naują ar vietinį failą į debesį ir šios operacijos rezultatą.  Šie duomenys naudojami siekiant geriau suprasti ir nustatyti vartotojo patirčių prioritetus, susijusius su dokumentų perkėlimu į debesį.
+
+Renkami šių laukų duomenys:
+
+- **Data_FileStyle** – skaitinė reikšmė, nurodanti, koks scenarijus buvo naudojamas papildomo pardavimo patirties rodymui, pavyzdžiui, automatinio įrašymo jungiklio ar bendrinimo mygtuko.
+
+- **Data_FileType** – pirmi keturi esamo failo plėtinio simboliai.
+
+- **Data_InDocStage** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis rodoma iš dokumentų galerijos ar dokumento lango.
+
+- **Data_IsDefaultServiceLocation** – Bulio logikos reikšmė, nurodanti, ar pasirinkta dokumento įkėlimo vieta yra numatytoji vieta.
+
+- **Data_IsDocumentOpened** – Bulio logika, nurodanti, ar taip pat atidarytas esamas dokumentas, kuriame rodoma papildomo pardavimo patirtis.
+
+- **Data_IsDraft** – Bulio logika, nurodanti, ar esamas failas kada nors buvo įrašytas.
+
+- **Data_IsSheetModal** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis buvo pateikta modališkai.
+
+- **Data_LocationServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_UploadAction** – užprogramuota eilutė, nurodanti, ar nusiuntimas buvo perkėlimo, ar kopijavimo operacija.
+
+- **Data_UploadResult** – užprogramuota eilutė, nurodanti mėginimo nusiųsti rezultatą, įskaitant, bet neapsiribojant parametrais „Success", „UserCancelledUpload“ ir „PreAuthFailed“.
+
+#### <a name="office_docsui_sharingui_copylinkoperation"></a>Office.Security.SecureReaderHost.OpenInOSR
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka dokumento bendrinimą sugeneruodamas nuorodą į debesies dokumentą ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_ ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_LinkType** – užprogramuota eilutė, aprašanti kvietimo operacijos rūšį, pvz., „ViewOnly“ ir „ViewAndEdit“.
+
+- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš taikomosios programos vartotojo sąsajos, įskaitant, bet neapsiribojant „FileMenu“, „OpenTabShareActionMenu“ ar „RecentTabShareActionMenu“.
+
+#### <a name="office_docsui_sharingui_docsuionedriveshare"></a>Office_DocsUI_SharingUI_DocsUIOneDriveShare 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka bendrinti debesies dokumentą naudodamas „OneDrive“ bendrinimo patirtį ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_ODSPShareWebviewShareError** – jei bendrinimo patirties metu įvyksta klaida, tai yra skaitinė reikšmė, padedanti nustatyti trikties priežastį.
+
+- **Data_ODSPShareWebviewShareGrantAccessResult** – Bulio logikos reikšmė. Kai yra teisinga, nurodo, kad sėkmingai įvykdyta paprasta bendrinimo operacija.
+
+- **Data_ODSPShareWebviewShareSuccessType** – sėkmingai užbaigus bendrinimo operaciją, tai yra skaitinė reikšmė, naudojama nustatyti atliktos bendrinimo operacijos tipą.
+
+- **Data_WebViewInfoResult** – jei nepavyko įkelti vartotojo sąsajos, tai yra skaitinė reikšmė, padedanti nustatyti trikties priežastį. 
+
+- **Data_WebViewLoadTimeInMs** – skaitinė reikšmė, kuri registruoja laiką, reikalingą įkelti žiniatinklio vartotojo sąsają.
+
+#### <a name="office_docsui_sharingui_invitepeople"></a>Office_DocsUI_SharingUI_InvitePeople 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka žmonių kvietimą prisijungti prie debesies dokumento ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_ ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_InviteeCount** – bendras kontaktų, pakviestų prisijungti prie dokumento atliekant vieną kvietimo veiksmą, skaičius.
+
+- **Data_LinkType** – užprogramuota eilutė, aprašanti kvietimo operacijos rūšį, pvz., „ViewOnly“ ir „ViewAndEdit“.
+
+- **Data_MessageLength** – bendras išsiųsto pakvietimo pranešimo simbolių skaičius.
+
+- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš taikomosios programos vartotojo sąsajos, įskaitant, bet neapsiribojant „FileMenu“, „OpenTabShareActionMenu“ ar „RecentTabShareActionMenu“.
+
+#### <a name="office_docsui_sharingui_sendacopyoperation"></a>Office_DocsUI_SharingUI_SendACopyOperation
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis fiksuoja, kada vartotojas pasirenka siųsti dokumento kopiją ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_IsHomeTabEnabled** – Bulio logikos reikšmė, nurodanti, ar skirtukas Pagrindinis šiuo metu pasiekiamas vartotojui.
+
+- **Data_IsRecommendedEnabled** – Bulio logikos reikšmė, nurodanti, ar patirtis Rekomenduojama šiuo metu pasiekiamas vartotojui.
+
+- **Data_OperationType** – skaitinė reikšmė, nurodanti vykdomos kopijos siuntimo operacijos tipą, pvz., siųsti kopiją el. paštu arba nusiųsti kopiją naudojantis „Apple“ bendrinimo valdymo funkcija.
+
+- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_ShareFileType** – užprogramuotas eilutės aprašas, nurodantis bendrinamo objekto tipą, įskaitant, bet neapsiribojant „Dokumentas“, „PDF“ ar „Paveikslėlis“.
+
+- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš taikomosios programos vartotojo sąsajos, įskaitant, bet neapsiribojant „FileMenu“, „OpenTabShareActionMenu“ ar „RecentTabShareActionMenu“.
+
+- **Data_SharingService** – Bulio logika, nurodanti, ar failas buvo sukurtas, kai vartotojas ieškojo šablono.
+
+#### <a name="office_docsui_sharingui_upsellshare"></a>Office_DocsUI_SharingUI_UpsellShare 
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kai vartotojas peržvelgia papildomo debesies srauto pardavimo dokumentą, kai bando bendrinti dokumentą.  Šie duomenys naudojami, kad geriau suprasti ir nustatyti vartotojo patirčių prioritetus, susijusius su dokumentų perkėlimu į debesį.
+
+Renkami šių laukų duomenys:
+
+- **Data_FileOperationResult** – skaitinė reikšmė, nurodanti, ar pavyko atlikti operaciją.
+
+- **Data_HostedFromDocStage** – Bulio logika, nurodanti, ar vartotojas peržiūri debesies srauto reklamą naudodami DocStage funkcijas arba iš atidaryto dokumento.
+
+- **Data_isLocalCopyOn** – Bulio logika, nurodanti, ar naudoti pasirinko saugoti dokumento vietinę kopiją, kuri buvo nusiųsta į debesį arba perkelti esamą dokumentą į debesį.
+
+- **Data_NewFileType** – naujos failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_OriginalFileType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+
+- **Data_UploadButtonPressed** – Bulio logika, nurodanti, ar vartotojas pasirinko įkelti dabartinį dokumentą į vietą debesyje.
+
+- **Data_UploadError** – skaitinė reikšmė, nurodanti klaidos tipą, jei įkėlimo operacijos atlikti nepavyksta.
+
+- **Data_UpsellAppearsFromDelegate** – Bulio logikos reikšmė, nurodanti, ar rodinys buvo rodomas bendrinamame meniu.
 
 #### <a name="officeextensibilitycatalogexchangeprocessentitlement"></a>Office.Extensibility.Catalog.ExchangeProcessEntitlement
 
@@ -1856,7 +2172,11 @@ Renkami šių laukų duomenys:
   - **Data.AsyncOpen –** žyma, nurodanti, kad atidarymo metu buvo turinys, gautas po pagrindinės dalies atidarymo
 
   - **Data.CacheFileId –** prisijungia prie „Office“ dokumentų talpyklos telemetrijos, kad atliktų vartotojo patiriamų talpyklos problemų analizę
+ 
+  - **Data.CFREnabled** – nurodo, kad seansui įgalinta funkcija CacheFileRuntime.
 
+  - **Data.CFRFailure** – nurodo, kad įvyko funkcijos CacheFileRuntime klaida.
+  
   - **Data.CoauthStatus –** informuoja apie dokumento bendradarbiavimo būseną atidarymo metu
 
   - **Data.CountOfMultiRoundTripsDownload –** kelionių į serverį ir atgal skaičius, naudotas veikimo triktims ir tinklo problemoms šalinti
@@ -2083,6 +2403,8 @@ Renkami šių laukų duomenys:
 
   - **Data.UseClientIdAsSchemaLockId –** žymė, kontroliuojanti kaip dokumentai yra užrakinti tarnyboje
 
+  - **Data.VersionType** – nurodo dabartinės operacinės sistemos versijos tipą.
+
   - **Data.WopiServiceId –** nebenaudojamas, pakeistas į Data\_Doc\_WopiServiceId
 
 #### <a name="officefileiocsiccachedfilecsisavefilebasic"></a>Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
@@ -2114,6 +2436,10 @@ Renkami šių laukų duomenys:
   - **Data.CountOfMultiRoundTripsDownload –** kelionių į serverį ir atgal skaičius, naudotas veikimo triktims ir tinklo problemoms šalinti
 
   - **Data.CountOfMultiRoundTripsUpload –** kelionių į serverį ir atgal skaičius, naudotas našumo triktims ir tinklo problemoms šalinti
+  
+  - **Data.CFREnabled** – nurodo, kad seansui įgalinta funkcija CacheFileRuntime.
+
+  - **Data.CFRFailure** – nurodo, kad įvyko funkcijos CacheFileRuntime klaida.
 
   - **Data.DialogChoice –** įrašo pasirinkimą bet kuriuose klaidų dialogų languose
 
@@ -2381,6 +2707,198 @@ Renkami šių laukų duomenys:
 - **DateTime** – laiko žyma, kada įvykis užregistruotas
 
 - **EventName** – užregistruoto įvykio pavadinimas
+
+#### <a name="office_firstrun_apple_activationresult"></a>Office_FirstRun_Apple_ActivationResult
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis, kad išsiaiškintume „O365“ prenumeratos aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa (FRE), srautas taikomojoje programoje, pirkimas ir t. t.).
+
+Renkami šių laukų duomenys:
+
+- **Data_ActivationStatusCollectionTime** – laiko žyma
+
+- **Data_ActivationStatusError** – aktyvinimo klaidos kodas.
+
+- **Data_ActivationStatusFlowType** – skaitinė reikšmė, nurodanti aktyvinimo srauto tipą
+
+#### <a name="office_firstrun_apple_activationstatus"></a>Office_FirstRun_Apple_ActivationStatus
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas išsiaiškinti „O365“ prenumeratos aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa, srautas taikomojoje programoje, pirkimas ir t. t.). Renkame duomenis, kuriuose yra aktyvinimo tipas, srauto tipas (FRE/DocStage/pirkimas) ir „Office“ licencijavimo tarnybos ID.
+
+Renkami šių laukų duomenys:
+
+- **Data_ActivationTypeCollectionTime** – laiko žyma
+
+- **Data_ActivationTypeFlowType** – skaitinė reikšmė, nurodanti aktyvinimo srauto tipą
+
+- **Data_ActivationTypeOLSLicense** – licencijos identifikatorius
+
+- **Data_ActivationTypeStatus** – aktyvinimo būsenos kodas.
+
+#### <a name="office_firstrun_apple_firstruncomplete"></a>Office_FirstRun_Apple_FirstRunComplete
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis leidžia mums žinoti, ar vartotojas naudoja prenumeratą „Freemium“, vykdomo srauto tipą (FRE/DocStage/pirkimas) ir tapatybės tipą (MSA/OrgID). Šį įvykį naudojame norėdami išsiaiškinti, ar įvykdyta pirmojo sistemos paleidimo programa (FRE) ir prisijungimui naudotą tapatybės tipą (MSA/OrgID).
+
+Renkami šių laukų duomenys:
+
+- **Data_FirstRunCompletedCollectionTime** – laiko žyma, skirta srauto užbaigimo laikui registruoti
+
+- **Data_FirstRunCompletedFlowType** – kodas, žymintis vartotojo užbaigto srauto tipą 
+
+- **Data_FirstRunCompletedFreemiumStatus** – kodas, nurodantis prenumeratos „Freemium“ vartotojo srauto užbaigimo būseną
+
+- **Data_FirstRunCompletedIdentityType** – vartotojo, užbaigusio srautą, tapatybės tipas
+
+#### <a name="office_firstrun_apple_firstrunstart"></a>Office_FirstRun_Apple_FirstRunStart
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis leidžia mums žinoti, kad vartotojas įvedė pirmojo sistemos paleidimo programą ir vykdomo srauto tipą (FRE/DocStage/pirkimas). Šį įvykį naudojame išsiaiškinti, ar pirmojo sistemos paleidimo programa (FRE) buvo sėkmingai paleista.
+
+Renkami šių laukų duomenys:
+
+- **Data_FirstRunStartedCollectionTime** – laiko žyma, skirta srauto užbaigimo laikui registruoti
+
+- **Data_FirstRunStartedFlowType** – kodas, žymintis vartotojo užbaigto srauto tipą 
+
+#### <a name="office_firstrun_apple_firstrunstartedandcompleted"></a>Office_FirstRun_Apple_FirstRunStartedAndCompleted
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis leidžia mums žinoti, ar vartotojas naudoja prenumeratą „Freemium“, vykdomo srauto tipą (FRE/DocStage/pirkimas) ir tapatybės tipą (MSA/OrgID). Naudojame šį įvykį mūsų pirmojo sistemos paleidimo programos (FRE) sveikatai ir efektyvumui išsiaiškinti.
+
+Renkami šių laukų duomenys:
+
+- **Data_FirstRunCompletedCollectionTime** – laiko žyma, skirta srauto užbaigimo laikui registruoti
+
+- **Data_FirstRunCompletedFlowType** – kodas, žymintis vartotojo užbaigto srauto tipą  
+
+- **Data_FirstRunCompletedFreemiumStatus** – kodas, nurodantis prenumeratos „Freemium“ vartotojo srauto užbaigimo būseną
+
+- **Data_FirstRunCompletedIdentityType** – vartotojo, užbaigusio srautą, tapatybės tipas
+
+- **Data_FirstRunStartedCollectionTime** – laiko žyma, skirta srauto pradėjimo laikui registruoti
+
+- **Data_FirstRunStartedFlowType** – kodas, žymintis pradėto vartotojo srauto tipą
+
+#### <a name="office_firstrun_apple_inapppurchaseactivationfail"></a>Office_FirstRun_Apple_InAppPurchaseActivationFail
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis, kad išsiaiškintume pirkimo programėlėje aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa, srautas programėlėje, pirkimas ir t. t.). 
+
+Renkami šių laukų duomenys:
+
+- **Data_ActivationFailCollectionTime** – laiko žyma, registruojant aktyvinimo klaidos įvykimo laiką 
+
+- **Data_ActivationFailFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+- **Data_AssoicatedSuccessfullyCollectionTime** – laiko žyma, registruojant laiką, kada įvyko susiejimas 
+
+- **Data_AssoicatedSuccessfullyFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+#### <a name="office_firstrun_apple_inapppurchaseactivationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseActivationSuccess
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis, kad išsiaiškintume pirkimo programėlėje aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa, srautas programėlėje, pirkimas ir t. t.). 
+
+Renkami šių laukų duomenys:
+
+- **Data_ActivatedSuccessfullyCollectionTime** – laiko žyma, registruojant laiką, kada įvyko veikla 
+
+- **Data_ActivatedSuccessfullyFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+- **Data_AssoicatedSuccessfullyCollectionTime** – laiko žyma, registruojant laiką, kada įvyko susiejimas 
+
+- **Data_AssoicatedSuccessfullyFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+#### <a name="office_firstrun_apple_inapppurchaseassociationfailed"></a>Office_FirstRun_Apple_InAppPurchaseAssociationFailed
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis, kad išsiaiškintume pirkimo programėlėje aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa, srautas programėlėje, pirkimas ir t. t.). 
+
+Renkami šių laukų duomenys:
+
+- **Data_AppChargedSuccessfullyCollectionTime** – laiko žyma, registruojant laiką, kada buvo įvykdytas pirkimas
+
+- **Data_AppChargedSuccessfullyFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+- **Data_AssoicationFailedCollectionTime** – laiko žyma, registruojant laiką, kada taikomųjų programų susiejimas nepavyko
+
+- **Data_AssoicationFailedFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+- **Data_AssoicationFailedResult** – kodas, nurodantis pastebėtos trikties tipą
+
+#### <a name="office_firstrun_apple_inapppurchaseassociationsuccess"></a>Office_FirstRun_Apple_InAppPurchaseAssociationSuccess
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis, kad išsiaiškintume pirkimo programėlėje aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa, srautas programėlėje, pirkimas ir t. t.). 
+
+Renkami šių laukų duomenys:
+
+- **Data_AppChargedSuccessfullyCollectionTime** – laiko žyma, registruojant laiką, kada buvo įvykdytas pirkimas
+
+- **Data_AppChargedSuccessfullyFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+- **Data_AssoicatedSuccessfullyCollectionTime** – laiko žyma, registruojant laiką, kada taikomųjų programų susiejimas nepavyko
+
+- **Data_AssoicatedSuccessfullyFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+#### <a name="office_firstrun_apple_inapppurchasefailures"></a>Office_FirstRun_Apple_InAppPurchaseFailures
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis apie pirkimo programėlėje srauto rezultatus.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppStoreFailureFlowType** – kodas, nurodantis vykdyto vartotojo srauto tipą
+
+- **Data_AppStoreFailureResult** – pastebėtas nesėkmingas rezultatas
+
+- **Data_CancelRequestFlowType** – kodas, nurodantis vykdyto vartotojo srauto tipą
+
+- **Data_EventId** – kodas, nurodantis pastebėto gedimo tipą
+
+#### <a name="office_firstrun_apple_inapppurchasesattempted"></a>Office_FirstRun_Apple_InAppPurchasesAttempted
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos pirkimo programėlėje srauto sveikatai stebėti. Renkame duomenis, kad galėtume stebėti pirkimą programėlėje ir įsigyjamo SKU tipą (mėnesinis/kasmetinis/namams/asmeninis).
+
+Renkami šių laukų duomenys:
+
+- **Data_EventId** – kodas, nurodantis stebimo rezultato tipą
+
+- **Data_PurchasedClickedOfferType** – SKU, kurį buvo bandoma įsigyti, tipas
+
+- **Data_PurchaseSuccessfulFlowType** – kodas, žymintis vykdyto vartotojo srauto tipą
+
+#### <a name="office_firstrun_apple_inapprestoreattempted"></a>Office_FirstRun_Apple_InAppRestoreAttempted
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos pirkimo programėlėje srauto sveikatai stebėti. Renkame duomenis, kad galėtume stebėti kortelėje atliekamą atkūrimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_EventId** – kodas, nurodantis bandymo rezultato tipą
+
+- **Data_RestoreAttemptFlowType** – kodas, nurodantis vykdyto vartotojo srauto tipą
+
+#### <a name="office_firstrun_apple_inapprestoreattemptfailed"></a>Office_FirstRun_Apple_InAppRestoreAttemptFailed
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos pirkimo programėlėje srauto sveikatai stebėti. Renkame duomenis, kad galėtume stebėti kortelėje atliekamą atkūrimą ir susieti srautą bei klaidas.
+
+Renkami šių laukų duomenys:
+
+- **Data_RestoreButtonFlowType** – kodas, nurodantis vykdyto vartotojo srauto tipą
+
+- **Data_RestoredFailedPaymentCancelledFlowType** – kodas, nurodantis vykdyto mokėjimo atšaukimo srauto tipą
+
+- **Data_RestoredFailedUnKnownFlowType** – ar bandymas nepavyko dėl netikėto vartotojo srauto vykdymo
+
+- **Data_RestoredFailedUnKnownResult** – ar bandymas nepavyko dėl nežinomų priežasčių
+
+#### <a name="office_firstrun_apple_macfirstruncompleted"></a>Office_FirstRun_Apple_MacFirstRunCompleted
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis leidžia mums žinoti, kad vartotojas atliko iki galo pirmojo sistemos paleidimo programą. Šį įvykį naudojame norėdami išsiaiškinti, ar pirmojo sistemos paleidimo programa (FRE) sėkmingai užbaigta.
+
+Renkami šių laukų duomenys:
+
+- **Data_FirstRunCollectionTime** – laiko žyma, skirta srauto užbaigimo laikui registruoti.
+
+#### <a name="office_firstrun_apple_macwxpfirstrunstarted"></a>Office_FirstRun_Apple_MacWXPFirstRunStarted
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis leidžia mums žinoti, kad vartotojas paleido pirmojo sistemos paleidimo programą. Šį įvykį naudojame išsiaiškinti, ar pirmojo sistemos paleidimo programa (FRE) buvo sėkmingai paleista.
+
+Renkami šių laukų duomenys:
+
+- **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -5968,6 +6486,14 @@ Renkami šių laukų duomenys:
 
 - **UTCReplace_AppSessionGuid** - Pastovi Bulio logikos vertė. Visuomet „True“.
 
+#### <a name="officesystemsessionhandoff"></a>Office.System.SessionHandoff
+
+Nurodo, kad dabartinis „Office“ seansas yra perdavimo seansas. Tai reiškia, kad vartotojo prašymo atidaryti dokumentą tvarkymas perduodamas į tos pačios taikomosios programos jau veikiantį egzempliorių.
+
+Renkami toliau apibūdintų laukų duomenys.
+
+- **ParentSessionId** – ID seanso, kuris perims vartotojų užklausos tvarkymą.
+
 #### <a name="officetelemetryengineisprelaunch"></a>Office.TelemetryEngine.IsPreLaunch
 
 Tinka Office UWP taikomosioms programoms.  Šis įvykis sužadinamas, kai „Office“ programa paleidžiama pirmą kartą po atnaujinimo / įdiegimo iš parduotuvės. Tai yra pagrindinės diagnostikos duomenų dalis, naudojama seansui stebėti, ar jis pradėtas.
@@ -6002,6 +6528,21 @@ Renkami šių laukų duomenys:
 
 - **parentSessionId** – atsitiktinai sugeneruotas GUID, skirtas nustatyti taikomosios programos seansą
 
+#### <a name="officevisiovisioiosappboottime"></a>Office.Visio.VisioIosAppBootTime
+
+Jis suaktyvinamas kiekvieną kartą, kai paleidžiama „Visio iOS“. Labai svarbu suprasti taikomosios programos „Visio iOS“ paleidimo rezultatus. Naudojama prasto veikimo trikčių diagnostikai. 
+
+Renkami šių laukų duomenys:
+
+- **Data_AppBootTime** – taikomosios programos paleidimo trukmė, išreikšta milisekundėmis.
+
+#### <a name="officevisiovisioiosappresumetime"></a>Office.Visio.VisioIosAppResumeTime 
+
+Šis įvykis paleidžiamas kiekvieną kartą, kai taikomoji programa „Visio iOS“ tęsia fokusavimą. Būtina išmatuoti taikomosios programos tęsimo našumą ir taikomosios programos „Visio iOS“ trikčių diagnostikos našumo problemas.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppResumeTime** – programos trukmė iki tęsimo, išreikšta milisekundėmis.
 
 #### <a name="officewordfileopenopencmdfilemrupriv"></a>Office.Word.FileOpen.OpenCmdFileMruPriv
 
@@ -6604,6 +7145,72 @@ Renkami šių laukų duomenys:
 
   - **Data\_Data\_ZoomText -** Nurodo, ar Teksto mastelis veikė seanso metu
 
+#### <a name="office_apple_darkmode"></a>Office_Apple_DarkMode
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis praneša mums, ar vartotojas naudoja sistemą režime „DarkMode“ ir ar vartotojas perrašė programos „Office“ sistemos „DarkMode“ parametrus.  Naudojame šį įvykį, kad užtikrintume pritaikymą neįgaliesiems ir nustatytume prioritetu vartotojų patirties optimizavimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_DarkModeIsEnabled** – nurodo, ar sistemoje įgalintas „DarkMode“.
+
+- **Data_RequiresAquaSystemAppearanceEnabled** – ar programoje „Office“ perrašytas „DarkMode“.
+
+#### <a name="office_apple_hardwarekeyboardinuse_apple"></a>Office_Apple_HardwareKeyboardInUse_Apple
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis praneša mums, kad vartotojas prijungia klaviatūrą prie savo mobiliojo įrenginio. Įvykis padeda patobulinti pritaikymą neįgaliesiems ir optimizuoti mūsų vartotojų patirtį.
+
+Renkami šių laukų duomenys:
+
+- **Data_CollectionTime** – laiko žyma, rodanti įvykio rinkimo laiką.
+
+#### <a name="office_apple_mbuinstrument_deviceaccessibilitysettings"></a>Office_Apple_MbuInstrument_DeviceAccessibilitySettings
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis renka skirtingų pritaikymų neįgaliesiems parinkčių būsenas, pasiekiamas seanso metu. Naudojame šį įvykį, kad užtikrintume pritaikymą neįgaliesiems ir nustatytume prioritetu vartotojų patirties optimizavimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_AccessibilityContentSize** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_AssistiveTouchRunning** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_BoldTextEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_CollectionTime** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_DarkerSystemColorsEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_DifferentiateWithoutColor** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_GrayscaleEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_GuidedAccessEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_IncreaseContrast** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_InvertColorsEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_PreferredContentSizeCategory** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_ReduceMotionEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_ReduceTransparency** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_ReduceTransparencyEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_ShakeToUndeEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas. (Netinkama – naudojama tik senoms komponavimo versijoms.)
+
+- **Data_ShakeToUndoEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas.
+
+- **Data_SpeakScreenEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_SpeakSelectionEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_SwitchControlRunning** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_UAZoomEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
+- **Data_VoiceOverRunning** – vėliavėlė, rodanti, ar šis parametras įgalintas
+
 #### <a name="officewordaccessibilitylearningtoolsreadaloudplayreadaloud"></a>Office.Word.Accessibility.LearningTools.ReadAloud.PlayReadAloud
 
 Šis įvykis nurodo, ar „Office Word“ garsiai perskaito tekstą dokumente. Šis įvykis yra pasikartojantis naudojant pritaikymo neįgaliesiems funkciją, kuri leidžia „Microsoft“ įvertinti skaitymo garsiai būseną.
@@ -6701,45 +7308,51 @@ Renkami šių laukų duomenys:
 
 - **Event Name** – Įvykio pavadinimas yra įvykio kategorija ir įvykio etiketė.
 
-#### <a name="officeapplesystemhealthappexitmacandios"></a>Office.Apple.SystemHealthAppExitMacAndiOS
+#### <a name="office_apple_identitydomainname"></a>Office_Apple_IdentityDomainName
 
-Taikoma sistemos įkrovos įvykiui, kuris fiksuoja sklandų ir nesklandų išėjimą iš programos, kad būtų galima tirti toliau.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas mūsų sistemos sveikatai stebėti, taip pat tiriant tam tikrų domenų vartotojų trikčių priežastis. Renkame domeną, kurį naudoja mūsų vartotojai autentifikavimo metu.  Naudojame šiuos duomenis, kad padėtų nustatyti ir išspręsti šias problemas, kurios gali atrodyti pernelyg darančios poveikį platesniame lygmenyje, bet kurios paaiškėja, kad daro poveikį tam tikram vartotojų domenui.
 
 Renkami šių laukų duomenys:
 
-- **AffectedProcessResidentMemoryOnCrash** – nuolatinė sugedusios programos atmintis
+- **Data_Domain** – autentifikavimui naudojamas domenas
 
-- **AffectedProcessSessionID** – ankstesnio išėjimo proceso seanso ID
+- **Data_IdentityProvider** – autentifikavimo tapatybės teikėjo pavadinimas. (t. y. LiveId arba ADAL)
 
-- **AffectedProcessUnsymbolicatedChecksum** – taikoma su dėklo maiša, siekiant užtikrinti simbolizaciją
+- **Data_IdentityProviderEnum** – autentifikavimo tapatybės teikėjo kodas. (Skaičius)
 
-- **AffectedProcessVirtualMemoryOnCrash** – sugedusios programos virtualioji atmintis
+#### <a name="office_apple_systemhealthappexitmacandios"></a>Office_Apple_SystemHealthAppExitMacAndiOS
 
-- **AffectedSessionBuildNumber** – taikomosios programos versija
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas „Office“ taikomųjų programų sveikatai stebėti, taip pat tirti trikčių priežastis. Mes renkame duomenis apie kiekvieną išėjimą iš programos, kad nustatyti, ar taikomoji programa išėjo sklandžiai.
 
-- **AffectedSessionDuration** – seanso trukmė iki gedimo, sekundėmis
+Renkami šių laukų duomenys:
 
-- **AffectedSessionIDSMatch** – Bulio logika, skirta patvirtinti, ar ataskaitos seanso ID yra toks pat, kaip ir paimtas MERP
+- **Data_AffectedProcessSessionID** – seanso, dėl kurio buvo išeita iš programos, identifikatorius.
 
-- **AffectedSessionLongBuildNumber** – ilgasis komponavimo versijos numeris
+- **Data_AffectedSessionBuildNumber** – papildoma taikomosios programos versija, kurioje buvo pastebėtas išėjimas iš programos.
 
-- **AffectedSessionMERPSessionID** – MERP seanso ID
+- **Data_AffectedSessionDuration** – seanso trukmė nuo pradžios iki išėjimo
 
-- **AffectedSessionOSLocale** – operacinės sistemos lokalė
+- **Data_AffectedSessionIDSMatch** – indikatorius, nurodantis telemetrijos sveikatą.
 
-- **AffectedSessionOSVersion** – operacinės sistemos versija
+- **Data_AffectedSessionMERPSessionID** – telemetrijos sveikatos indikatorius.
 
-- **AffectedSessionStackHash** – sugedusios programos dėklo pėdsako maiša
+- **Data_AffectedSessionOSLocale** – OS lokalė, po kurios buvo stebėtas išėjimas iš programos.
 
-- **AffectedSessionStartTime** – seanso pradžios data ir laikas
+- **Data_AffectedSessionOSVersion** – OS versija, po kurios buvo stebėtas išėjimas iš programos.
 
-- **AffectedSessionUAEType** – išvardijimas, suteikiantis mums informacijos apie gedimo tipą
+- **Data_AffectedSessionResidentMemoryOnCrash** – nuolatinės atminties kiekis, kuris buvo sunaudotas įvykus išėjimui iš programos
 
-- **AffectedSessionVersion** – taikomosios programos versija
+- **Data_AffectedSessionStackHash** – identifikatorius, žymintis tam tikras įvykusias klaidas.
 
-- **DeviceModel** – aparatūros modelis
+- **Data_AffectedSessionStartTime** – seanso pradžios laikas.
 
-- **ExitWasGraceful** – ar ankstesnis išėjimas iš programos buvo sklandus?
+- **Data_AffectedSessionUAEType** – pastebėto išėjimo iš programos tipas (jei išėjimas nebuvo sklandus, šis kodas nurodo pastebėtą klaidos tipą)
+
+- **Data_AffectedSessionVersion** – pagrindinė taikomosios programos versija, kurioje buvo pastebėtas išėjimas iš programos.
+
+- **Data_AffectedSessionVirtualMemoryOnCrash** – virtualiosios atminties kiekis, kuris buvo sunaudotas įvykus išėjimui iš programos.
+
+- **Data_ExitWasGraceful** – ar išėjimas iš programos buvo sklandus.
 
 #### <a name="officeextensibilitycomaddinunhandledexception"></a>Office.Extensibility.COMAddinUnhandledException
 
@@ -6824,6 +7437,11 @@ Renkami šių laukų duomenys:
 - **RemoterType** – nurodo nuotolinio elemento, kuris naudojamas norint suaktyvinti papildinį, tipą (patikimas, nepatikimas, „Win32webView“, patikimas UDF ir t. t.)
 
 - **StoreType** – taikomosios programos kilmė
+
+- **Tag** – nurodo, kur tiksliai kodas nepavyko, naudojant su juo susietą unikalią žymę.
+
+- **UsesSharedRuntime** – nurodo, ar taikomoji programa naudoja „sharedRuntime“.
+
 
 #### <a name="officeextensibilityvbatelemetrybreak"></a>Office.Extensibility.VbaTelemetryBreak
 
@@ -7105,7 +7723,21 @@ Renkami šių laukų duomenys:
 
 ### <a name="application-feature-performance-subtype"></a>*Taikomosios programos funkcijų našumo potipis*
 
-Scenarijų, tokių kaip programos paleidimas ar failo atidarymas, prastas atsakymo laikas ar našumas.
+Prastas scenarijų, pvz., taikomosios programos paleidimas ar failo atidarymas, atsakymo laikas ar veikimas.
+
+#### <a name="initial_page_landing"></a>Initial_page_landing 
+ 
+Šis įvykis padeda sekti vartotojo matomą patirties tipą, kai vartotojai bus perkeliami į mūsų taikomosios programos puslapį.  Šie duomenys naudojami norint nustatyti vartotojų srautą, nukreiptą į kiekvieną mūsų taikomosios programos patirtį ir taip pat padeda lengvai konsoliduoti eksperimentų rezultatus.
+ 
+Renkami šių laukų duomenys: 
+
+- **Page** – ši funkcija naudojama patirties tipą, kurią vartotojai pirmiausia mato, kai pereina į mūsų puslapį. Galimos reikšmės yra „bandomoji versija“, „praleisti“, "iš karto", „iš anksto sugrupuota“, „prenumerata“ ir t. t.
+
+- **storeExperience** – naudojama nustatyti, ar vartotojas turi teisę matyti saugyklos SDK patirtį.
+
+- **stringVariant** – ši funkcija naudojama norint nustatyti vartotojų matomų eilučių tipą, kai jie pereina į mūsų puslapį. Atminkite, kad bet kuriame puslapyje, pvz., „bandomoji versija“, vartotojas gali matyti kitas eilutes. Tai priklauso nuo to, ar jie yra įsidiegę senesnę „Office“ versiją, arba jei anksčiau suaktyvino programą „Office“. Galimi šios ypatybės išvardijimai yra „LegacyUpsell“, „OfficeOpened“, „Default“, „YesIntent“, „NoIntent“ ir t. t.
+
+- **windowsBuildType** – tai naudojama norint stebėti naudotojo naudojamo „WindowsBuildType“ tipą. i.e. „RS4“, „RS5“, „RS19H1“, „Vibranium“ ir t. t. Kadangi mūsų patirtys dažniausiai orientuojasi į skirtingus „WindowsBuildTypes“ tipus, ši ypatybė yra gyvybiškai svarbi norint atskirti išvestis. 
 
 #### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
 
@@ -7176,6 +7808,211 @@ Renkami šių laukų duomenys:
 - **RMS.UserProvided** – nurodo, ar pateikiamas vartotojas kaip API iškvietimo įvestis 
 
 - **UserInfo.UserObjectId** – vartotojo objekto ID
+
+#### <a name="json_parse_error"></a>json_parse_error 
+ 
+Šis įvykis nurodo, kad klaidą pateikė json formato analizatorius.  Galėsime derinti nuskaitytą registro eilutę, kuri buvo išsiųsta json formato analizatoriui, kad būtų galima užtikrinti sklandžią mūsų vartotojų patirtį.
+ 
+Renkami šių laukų duomenys: 
+
+- **Error** – šis parametras susideda iš klaidos pranešimo, grąžinto klaidos objekto.
+
+#### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas skaičiuoti taikomosios programos paleidimo laikui, taip pat gauti tam tikrą informaciją apie įkrovos tipą. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
+
+Renkami šių laukų duomenys:
+
+- **Data_ Data_EvtBootTimerDocStageReady** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_DocumentRecoveryInvoked** – nurodo, ar dokumento atkūrimas buvo iškviestas paleidimo metu.
+
+- **Data_EvtBootTimerBootIdle** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_EvtBootTimerFinishLaunchEnd** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_EvtBootTimerLaunchDidFinish** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_EvtBootTimerLaunchStart** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_EvtBootTimerMainStart** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_EvtBootTimerStaticInit** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_EvtDockStageReady** – laikas reikalingas pasiekti tam tikrą kodo vietą.
+
+- **Data_IsFileOpenAttempted** – nurodo, ar buvo bandoma atidaryti failą paleidimo metu.
+
+- **Data_IsFirstRunAttempted** – nurodo, ar taikomosios programos paleidimo metu buvo naudojama pirmojo sistemos paleidimo programa.
+
+- **Data_SentToBackground** – nurodo, ar taikomoji programa buvo nusiųsta į foną įkėlimo metu.
+
+#### <a name="office_apple_diskruleresultserializererroronstreamop"></a>Office_Apple_DiskRuleResultSerializerErrorOnStreamOp
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas savo telemetrijos infrastruktūros sveikatai stebėti. Šis įvykis nurodo įvykusią klaidą.
+
+Renkami šių laukų duomenys:
+
+- **Data_ActualBytesModified** – modifikuotų baitų skaičius.
+
+- **Data_BytesRequested** – apdorotų baitų skaičius.
+
+- **Data_IsWriteOp** – nurodo, ar ruošiamės atlikti rašymo operaciją
+
+#### <a name="office_apple_macbootresourceusage"></a>Office_Apple_MacBootResourceUsage
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas surinkti keletą indikatorių apie išteklius, naudojamus „Office“ taikomųjų programų paleidimo metu. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
+
+Renkami šių laukų duomenys:
+
+- **Data_BlockInputOperations** – blokų įvesties operacijų skaičius
+
+- **Data_BlockOutputOperations** – blokų įvesties operacijų skaičius
+
+- **Data_InvoluntaryContextSwitches** – priverstinio konteksto perjungiklių skaičius
+
+- **Data_MainThreadCPUTime** – praėjusio laiko matavimas
+
+- **Data_MaxResidentSize** – atminties dydžio matavimas
+
+- **Data_MessagesReceived** – gautų pranešimų skaičius
+
+- **Data_MessagesSent** – išsiųstų pranešimų skaičius
+
+- **Data_PageFaults** – puslapio atkūrimų skaičius
+
+- **Data_PageReclaims** – puslapio atkūrimų skaičius
+
+- **Data_ProcessCPUTime** – praėjusio laiko matavimas
+
+- **Data_SharedTextMemorySize** – atminties dydžio matavimas
+
+- **Data_SignalsReceived** – gautų signalų skaičius
+
+- **Data_Swaps** – apsikeitimo duomenimis skaičius
+
+- **Data_SystemCPUTime** – praėjusio laiko matavimas
+
+- **Data_SystemUpTime** – praėjusio laiko matavimas
+
+- **Data_UnsharedDataSize** – duomenų dydžio matavimas
+
+- **Data_UnsharedStackSize** – bloko dydžio matavimas
+
+- **Data_UserCPUTime** – praėjusio laiko matavimas
+
+- **Data_VoluntaryContextSwitchesNvcsw** – neverstinio konteksto perjungiklių skaičius
+
+#### <a name="office_apple_mau_validation"></a>Office_Apple_MAU_Validation
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas stebėti sveikatą „Microsoft AutoUpdate“ komponento, kuris naudojamas platinti ir diegti taikomųjų programų naujinimus. Surinkti duomenys naudojami klaidoms aptikti ir nustatyti trikčių priežastis.
+
+Renkami šių laukų duomenys:
+
+- **Data_EventID** – renkame duomenis eilutės, atvaizduojančios klaidos kodą
+
+- **Data_Message** – renkame duomenis eilutės, kurioje pateikiamas klaidos aprašymas
+
+#### <a name="office_apple_mbuinstrument_hang_detection_spin_control"></a>Office_Apple_MbuInstrument_Hang_Detection_Spin_Control
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis užregistruojamas, kai taikomoji programa neatsako. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
+
+Renkami šių laukų duomenys:
+
+- **Data_CountSpinControlStart** – žymiklis, nurodantis, kad taikomoji programa nebeatsako (arba atsako lėtai)
+
+#### <a name="office_apple_mbuinstrument_vmondocumentclose"></a>Office_Apple_MbuInstrument_VMOnDocumentClose
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas rinkti atminties būsenos momentinę kopiją dokumento uždarymo metu. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
+
+Renkami šių laukų duomenys:
+
+- **Data_CollectionTime** – laiko žyma nuo momento, kai duomenys buvo surinkti
+
+- **Data_ResidentMemory** – stebima nuolatinės atminties reikšmė
+
+- **Data_VirtualMemory** – stebima virtualiosios atminties reikšmė
+
+#### <a name="office_apple_mbuinstrument_vmonshutdown"></a>Office_Apple_MbuInstrument_VMOnShutdown
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas rinkti atminties būsenos momentinę kopiją taikomosios programos išjungimo metu. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
+
+Renkami šių laukų duomenys:
+
+- **Data_CollectionTime** – laiko žyma nuo momento, kai duomenys buvo surinkti
+
+- **Data_ResidentMemory** – stebima nuolatinės atminties reikšmė
+
+- **Data_VirtualMemory** – stebima virtualiosios atminties reikšmė
+
+#### <a name="office_apple_mbuinstrument_vmonstart"></a>Office_Apple_MbuInstrument_VMOnStart
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas rinkti atminties būsenos momentinę kopiją taikomosios programos paleidimo metu. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
+
+Renkami šių laukų duomenys:
+
+- **Data_CollectionTime** – laiko žyma nuo momento, kai duomenys buvo surinkti
+
+- **Data_ResidentMemory** – stebima nuolatinės atminties reikšmė
+
+- **Data_VirtualMemory** – stebima virtualiosios atminties reikšmė
+
+#### <a name="office_apple_msoappdelegate_bootperf"></a>Office_Apple_MsoAppDelegate_BootPerf
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas rinkti informaciją apie laiką ir atmintį, sunaudotą „Office“ programų paleidimo metu, taip pat kai kurią informaciją apie paleidimo tipą. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppLaunchDurationMicroSec** – paleidimo proceso trukmė
+
+- **Data_AppLaunchFinishSystemTime** – laiko žyma ties konkrečia paleidimo kodo žyma
+
+- **Data_AppLaunchStartSystemTime** – laiko žyma ties konkrečia paleidimo kodo žyma
+
+- **Data_ResidentMemory** – prieinamos nuolatinės atminties momentinė kopija
+
+- **Data_VirtualMemory** – prieinamos virtualios atminties momentinė kopija
+
+#### <a name="office_apple_ungracefulappexithangsinprevioussession"></a>Office_Apple_UngracefulAppExitHangsInPreviousSession
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas „Office“ taikomųjų programų sveikatai stebėti, taip pat tirti trikčių priežastis. Renkame informaciją, kiek kartų taikomoji programa neatsakė iki buvo pasirinktas nesklandusis programos išėjimas.
+
+Renkami šių laukų duomenys:
+
+- **Data_HangsDetected** – kiek kartų taikomoji programa neatsakė iki buvo pastebėtas nesklandusis programos išėjimas.
+
+- **Data_LastSessionId** – seanso, kurio metu buvo stebėtas nesklandusis programos išėjimas, identifikatorius.
+
+- **Data_SessionBuildNumber** – papildoma taikomosios programos versija, kurioje buvo pastebėtas nesklandusis išėjimas iš programos.
+
+- **Data_SessionVersion** – pagrindinė taikomosios programos versija, kurioje buvo pastebėtas nesklandusis išėjimas iš programos.
+
+#### <a name="office_apple_whatsnewerrorandwarning"></a>Office_Apple_WhatsNewErrorAndWarning
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas funkcijos Kas nauja sveikatai stebėti. Šis įvykis nurodo, kad funkcijos Kas nauja turinio analizavimo įvyko klaida/įspėjimas, nurodanti galimas turinio kūrimo triktis.
+
+Renkami šių laukų duomenys:
+
+- **Data_ContentKey** – žymiklis, nurodantis turinio dalį, kuri galėjo sukelti klaidą.
+
+- **Data_ErrorCode** – pastebėtos klaidos kodas (jei yra)
+
+- **Data_ErrorDescription** – klaidos aprašas (jei yra)
+
+- **Data_EventID** – renkame duomenis eilutės, nurodančios pastebėtos klaidos tipą.
+
+- **Data_IncludesHTMLTag** – ar turinyje yra raiškiojo html
+
+- **Data_IncludesItemsTag** – ar turinyje yra elementų hierarchija
+
+- **Data_LengthOfRawData** – turinio dydis
+
+- **Data_RequestURL** – URL, iš kurio atsisiųstas turinys
+
+- **Data_ServerLanguageTag** – kalba, kuria buvo sukurtas turinys.
+
+- **Data_StatusCode** – klaidos būsena (jei yra)
+
 #### <a name="officeextensibilityrichapimethodinvocation"></a>Office.Extensibility.RichApiMethodInvocation
 
 Šis įvykis suaktyvinamas, kai klientas naudoja „Office“ papildinį ir paslaugai teikti iškviečia raiškųjį API. Naudojamas norint įvertinti paslaugos patikimumą, veikimą ir raiškiojo API metodo naudojimą.
@@ -7439,6 +8276,28 @@ Renkami šių laukų duomenys:
 
   - **Data\_Timeout** – kiek laiko truko „pakibimas“
 
+#### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas užfiksuoti „Digital River“ aktyvinimo nesėkmes (įvykis registruoja raktą ir produktą, kuris buvo naudojamas aktyvinimui, taip pat gautą klaidos kodą).  Šis įvykis naudojamas nustatant ir padedant šalinti aktyvinimo triktis („Digital River“ problemos).
+
+Renkami šių laukų duomenys:
+
+- **Data_DigitalRiverID** – „Digital River“ produkto ID, siejantis su šia „Office“ produkto partnerių programa SKY
+
+- **Data_Error** – eilutė, nurodanti aktyvinimo klaidos kodą.
+
+- **Data_ProductKey** – produkto kodas, kurį buvo bandoma suaktyvinti
+
+- **Data_ProductKeyHash** – aktyvintas užkoduotas produkto kodas
+
+#### <a name="office_apple_licensing_mac_getmachinestatuserrors"></a>Office_Apple_Licensing_Mac_GetMachineStatusErrors
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis surenka pateiktą klaidos kodą, bei periodiškai tikrina prenumeratos licencijos galiojimą. Klaidos kodas gali reikšti serverio nepasiekiamumą, bet taip pat licencijos galiojimo laiko pasibaigimą, kompiuterių skaičiaus limitą, neteisingą aparatūros ID ir t. t.  Šis įvykis naudojamas stebėti „Office“ licencijavimo tarnybos sveikatą, bei tirti įvykius, susijusius su kompiuterio prenumeratos valdymu.
+
+Renkami šių laukų duomenys:
+
+- **Data_Error** – renkame duomenis eilutės, atvaizduojančios klaidos kodą.
+
 #### <a name="officeextensibilitysandboxodperrornotification"></a>Office.Extensibility.Sandbox.ODPErrorNotification
 
 Seka įvairius iš smėlio dėžės gautus klaidų pranešimus. Naudojamas siekiant aptikti klaidų scenarijus smėlio dėžėje ir juos ištaisyti, taip siekiant pagerinti vartotojo produktyvumą
@@ -7451,6 +8310,13 @@ Renkami šių laukų duomenys:
 
 - **Result** – rezultatų klaidos kodas
 
+#### <a name="office_firstrun_apple_maconiolkfirstrunstarted"></a>Office_FirstRun_Apple_MacONIOLKFirstRunStarted
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis leidžia mums žinoti, kad vartotojas paleido pirmojo sistemos paleidimo programą. Šį įvykį naudojame norėdami išsiaiškinti, ar pirmojo sistemos paleidimo programa (FRE) sėkmingai paleista.
+
+Renkami šių laukų duomenys:
+
+- **Data_FirstRunCollectionTime** – laiko žyma, skirta srauto pradėjimo laikui registruoti.
 
 #### <a name="officegraphicsarcexceptions"></a>Office.Graphics.ARCExceptions 
 
