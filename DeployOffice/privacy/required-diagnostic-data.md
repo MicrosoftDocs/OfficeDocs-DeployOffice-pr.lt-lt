@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 0437779d269d4de7132961ce2edc37363d10b309
-ms.sourcegitcommit: ff396a54d8e36d71ebc4cade5014eb502952dc65
+ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
+ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38639388"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39837686"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -3118,7 +3118,7 @@ Renkami šių laukų duomenys:
 -  **TimeToMedianResultInMs** – nurodo, laiko, per kurį „OneNote“ randa visus atitikmenis, medianą.
 
 
-#### <a name="officeonenotestickynotesnotecreated"></a>Office.OneNote.StickyNotes.NoteCreated
+#### <a name="officeonenotestickynotesnotecreated-on-ios-onenotestickynotesnotecreated-on-android"></a>Office.OneNote.StickyNotes.NoteCreated („iOS“), OneNote.StickyNotes.NoteCreated („Android“)
 
 Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, tai gali lemti didelės svarbos incidentą.
 
@@ -3131,7 +3131,7 @@ Renkami šių laukų duomenys:
 - **StickyNotes-SDKVersion** – versijos numeris, nurodantis priklijuojamų lapelių programos, kurią naudoja vartotojas, versiją. Leidžia mums nustatyti kurios produkto versijos rodo problemą, kad galėtume tinkamai nustatyti jos prioritetą.
 
 
-#### <a name="officeonenotestickynotesnoteviewed"></a>Office.OneNote.StickyNotes.NoteViewed
+#### <a name="officeonenotestickynotesnoteviewed-on-ios-onenotestickynotesnoteviewed-on-android"></a>Office.OneNote.StickyNotes.NoteViewed („iOS“), OneNote.StickyNotes.NoteViewed („Android“)
 
 Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, tai gali lemti didelės svarbos incidentą.
 
@@ -4657,68 +4657,6 @@ Renkami šių laukų duomenys:
   - **Data\_WarningShownToConvertToTable:bool** - „True“ nurodo vartotojui rodomą įspėjimą konvertuoti „Excel“ duomenis į lentelės formatą
 
 
-#### <a name="officewordexperimentationdocumentstatsoncloseandsuspend"></a>Office.Word.Experimentation.DocumentStatsOnCloseAndSuspend
-
-Šis įvykis registruoja dokumentų statistiką kiekvienam dokumentui, kai „Office Word“ yra uždaryta ar sustabdyta.  Įvykis naudojamas norint susieti dokumento keitimus, dydį ir t. t. su dokumento įrašymo, dokumento bendrinimo ir dokumento internetinio bendradarbiavimo klaidomis.
-
-Renkami šių laukų duomenys:
-
-- **Data_BkmkRefCount** – žymelių nuorodų skaičius dokumente
-
-- **Data_CharacterCount** – simbolių skaičius dokumente
-
-- **Data_CharactersWithSpaceCount** – simbolių ir tarpų skaičius dokumente
-
-- **Data_ChartCount** – diagramų skaičius dokumente
-
-- **Data_CitationCount** – citatų skaičius dokumente
-
-- **Data_DocumentLocation** – nurodo dokumentą pateikusią tarnybą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
-
-- **Data_ETW_TrackbackTag** – nurodo kodo vietą, iš kurios šis įvykis buvo išleistas (Close arba Suspend)
-
-- **Data_EndnoteDocCount** – dokumentų išnašų skaičius dokumente
-
-- **Data_FootnoteDocCount** – puslapio išnašų skaičius dokumente
-
-- **Data_HasBibliography** – nurodo, ar dokumente yra bibliografija
-
-- **Data_HasHeader** – nurodo, ar dokumente yra antraštė
-
-- **Data_IsImeUsed** – nurodo, ar dokumente buvo naudota įvesties metodo rengyklė
-
-- **Data_IsPageCountInProgress** – nurodo, ar šiuo metu skaičiuojami dokumento puslapiai.
-    
-- **Data_IsTouchUsed** – nurodo, ar dokumente buvo naudojama lietimo įvestis
-
-- **Data_IsTrackChangesOn** – nurodo, ar dokumentui buvo įjungtas keitimų sekimas
-
-- **Data_LineCount** – dokumento eilučių skaičius
-
-- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
-
-- **Data_PageCount** – dokumento puslapių skaičius
-
-- **Data_PageNumberFieldCount** – puslapio numerių laukų skaičius dokumente
-
-- **Data_ParagraphCount** – pastraipų skaičius dokumente
-
-- **Data_PicCount** – paveikslėlių skaičius dokumente
-
-- **Data_RsidCount** – įrašytų peržiūrų identifikatorių skaičius dokumente
-
-- **Data_TocCount** – turinio lentelių skaičius dokumente
-
-- **Data_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
-
-- **Data_UserActionID** – šis duomenų laukas nenaudojamas (reikšmė visada yra 0).
-
-- **Data_UserActionName** – visada „DocumentStatsOnCloseAndSuspend“
-
-- **Data_UserInteractionTimeMsec** – vartotojo aktyvios sąveikos su dokumentu trukmė milisekundėmis
-    
-- **Data_WordCount** – žodžių skaičius dokumente
-
 #### <a name="officewordfilenewcreatenewfile"></a>Office.Word.FileNew.CreateNewFile
 
 Šis įvykis nurodo, kad sukurtas naujas dokumentas „Office Word“ ir sekamas sėkmingas arba nesėkmingas operacijų atlikimas. Įvykis naudojamas stebėti, ar naujų dokumentų kūrimas veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
@@ -4952,102 +4890,6 @@ Renkami šių laukų duomenys:
 - **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
 
     
-#### <a name="officewordfilesaveactfconfirmsavedoccoreautorecoverysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreAutoRecoverySave
-
-Šis įvykis nurodo, kad „Office Word“ įrašo automatinio atkūrimo dokumentą, kuris anksčiau nebuvo įrašytas. Tai suteikia galimybę „Microsoft“ aptikti automatinio atkūrimo klaidas, svarbias dokumento duomenų saugumui.  Įvykis stebi, ar automatinio atkūrimo įrašymo funkcija veikia tinkamai. Jis taip pat naudojamas mėnesio aktyviems vartotojams / įrenginiams ir debesies patikimumo rodikliams apskaičiuoti.
-
-Renkami šių laukų duomenys:
-
-- **Data_DetachedDuration** – nurodo, kiek laiko gijoje nebuvo veiklos
-
-- **Data_Doc_AccessMode** – nurodo, ar dokumentas yra skirtas tik skaityti, ar redaguojamas
-
-- **Data_Doc_AssistedReadingReasons** – iš anksto nustatytų dokumento atidarymo pagalbiniu skaitymo režimu priežasčių reikšmių rinkinys
-
-- **Data_Doc_AsyncOpenKind** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
-    
-- **Data_Doc_ChunkingType** – elementai, naudojami nuosekliam dokumento atidarymui
-
-- **Data_Doc_EdpState** – dokumentui taikomas elektroninių duomenų apsaugos parametras
-
-- **Data_Doc_Ext** – dokumento plėtinys (docx, xlsb, pptx ir kt.)
-
-- **Data_Doc_FileFormat** – failo formato protokolo versija
-
-- **Data_Doc_Fqdn** – „OneDrive“ arba „SharePoint“ interneto domeno vardas
-
-- **Data_Doc_FqdnHash** – kliento identifikuojamo domeno vardo vienpusė maiša
-
-- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša
-
-- **Data_Doc_InitializationScenario** – įrašo, kaip dokumentas buvo atidarytas
-
-- **Data_Doc_IOFlags** – informuoja apie į talpyklą įtrauktas žymes, naudotas nustatyti užklausos parinktis
-
-- **Data_Doc_IrmRights** – veiksmai, leidžiami elektroninių duomenų apsaugos strategijos, kuri buvo taikyta dokumentui arba vartotojui
-
-- **Data_Doc_IsIncrementalOpen** – žymė, nurodanti, kad dokumentas buvo palaipsniui atidarytas
-
-- **Data_Doc_IsOcsSupported** – žymė nurodanti, kad dokumentą palaiko bendradarbiavimo tarnyba
-    
-- **Data_Doc_IsOpeningOfflineCopy** – žymė, nurodanti, kad atidaryta autonominė dokumento kopija
-
-- **Data_Doc_IsSyncBacked** – žymė, nurodanti, kad automatiškai sinchronizuota dokumento kopija yra kompiuteryje
-
-- **Data_Doc_Location** – nurodo tarnybą, pateikusią dokumentą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
-
-- **Data_Doc_LocationDetails** – nurodo įrenginyje saugomo dokumento žinomą aplanką
-
-- **Data_Doc_NumberCoAuthors** – skaičiuoja bendro redagavimo seanso metu bendradarbiaujančių vartotojų skaičių
-
-- **Data_Doc_PasswordFlags** – nurodo, ar nustatytas skaitymo arba skaitymo / rašymo slaptažodžio žymių rinkinys
-
-- **Data_Doc_ReadOnlyReasons** – dokumento atidarymo tik kaip skaitomo priežastys
-
-- **Data_Doc_ResourceIdHash** – anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
-
-- **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
-
-- **Data_Doc_ServerDocId** – nekintamų anonimiškai pateiktų dokumentų identifikatorius, naudojamas problemoms diagnozuoti
-
-- **Data_Doc_ServerProtocol** – protokolo versija, naudojama norint susisiekti su tarnyba
-
-- **Data_Doc_ServerType** – tarnybą siūlančio serverio tipas („SharePoint“, „OneDrive“, WOPI ir kt.)
-
-- **Data_Doc_ServerVersion** – serverio versija, siūlanti tarnybą
-
-- **Data_Doc_SessionId** – nustato konkretų dokumentų redagavimo seansą visame seanse
-
-- **Data_Doc_SharePointServiceContext** – „SharePoint Online“ užklausų diagnostinė informacija
-
-- **Data_Doc_SizeInBytes** – dokumento dydžio indikatorius
-
-- **Data_Doc_SpecialChars** – dokumento URL arba kelio specialiųjų simbolių indikatorius
-
-- **Data_Doc_StreamAvailability** – indikatorius, nurodantis, ar dokumentų srautas yra pasiekiamas arba išjungtas
-
-- **Data_Doc_SyncBackedType** – dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba)
-
-- **Data_Doc_UrlHash** – vienpusė maiša, skirta „naïve“ dokumento identifikatoriui
-
-- **Data_Doc_WopiServiceId** – apima unikalų WOPI tarnybos teikėjo identifikatorių
-
-- **Data_FailureClass** – sveikasis skaičius, nurodantis „Office“ bendradarbiavimo tarnybos (OCS) perėjimo trikties klasę
-    
-- **Data_MainPdod** – dokumento identifikatorius vykstant „Office Word“ procesui.
-
-- **Data_MoveFlightEnabled** – nurodo, ar įjungta perkėlimo testavimo funkcija
-
-- **Data_OCSSyncbackSaveStarted** – žymė, nurodanti, kad šis įrašymas susijęs su sinchronizuotu atsarginės kopijos įrašymu
-
-- **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas
-
-- **Data_RenameFlightEnabled** – nurodo, ar įjungta pervardijimo testavimo funkcija
-
-- **Data_SaveInitiateKind** – sveikasis skaičius, nurodantis, kaip buvo inicijuotas įrašymas
-
-- **Data_SrcDocIsUnnamedOrNew** – nurodo, ar įrašomas dokumentas yra naujas
-
 
 #### <a name="officewordfilesaveactfconfirmsavedoccorequerysave"></a>Office.Word.FileSave.ActFConfirmSaveDocCoreQuerySave
 
@@ -7358,7 +7200,7 @@ Renkami šių laukų duomenys:
 
 Įvykis generuojamas, kai vartotojo „Office“ taikomųjų programų versijoje sugenda COM papildinys. 
 
-Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Office 365 ProPlus“ „pritaikymui“; po to papildinys skelbiamas readyforwindows.com ir kitose priemonėse, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Office 365 ProPlus“ versijomis, ir atitinkamai suplanuoti jų plėtotes. 
+Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Office 365 ProPlus“ „pritaikymui“; po to papildinys naudojamas kituose įrankiuose, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Office 365 ProPlus“ versijomis, ir atitinkamai suplanuoti jų plėtotes. 
 
 Renkami šių laukų duomenys:
 
@@ -7390,7 +7232,7 @@ Renkami šių laukų duomenys:
 
 Įvykis generuojamas, kai COM papildinys sugenda įmonės „Office“ taikomųjų programų versijoje.
 
-Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Office 365 ProPlus“ „pritaikymui“; po to papildinys skelbiamas readyforwindows.com ir kitose priemonėse, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Office 365 ProPlus“ versijomis, ir atitinkamai suplanuoti jų plėtotes. 
+Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Office 365 ProPlus“ „pritaikymui“; po to papildinys naudojamas kituose įrankiuose, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Office 365 ProPlus“ versijomis, ir atitinkamai suplanuoti jų plėtotes. 
 
 - **ScopeId** – taikoma dabartinės gijos apimtis
 
@@ -7430,7 +7272,9 @@ Renkami šių laukų duomenys:
 
 - **AssetId** – taikomosios programos ištekliaus ID
 
-- **ErrorCode** – bendras praleistas laikas 
+- **ErrorCode** – bendras praleistas laikas
+
+- **IsDebug** – nurodo, ar seansas yra derinimo seansas
 
 - **NumberOfAddinsActivated** – suaktyvintas papildinių skaitiklis
 

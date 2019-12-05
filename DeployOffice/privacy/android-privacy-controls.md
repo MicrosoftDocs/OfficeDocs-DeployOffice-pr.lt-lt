@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Pateikiama informacija „Office“ administratoriams, kaip valdyti „Office“ privatumo parametrus „Android“ įrenginiuose.
 hideEdit: true
-ms.openlocfilehash: 36ae9878d03845c24e3717dfac970b2b961279dc
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 69a8880b03e63be391731f9882bcee17a81a51ab
+ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38068439"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39837722"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijų parametrus
 
@@ -31,7 +31,7 @@ Yra strategijų parametrų, skirtų „Office“ programoms „Android“ įreng
 Daugiau informacijos apie diagnostikos duomenis ir prisijungus naudojamas funkcijas žr. [Privatumo valdiklių apžvalga](overview-privacy-controls.md).
 
 Šie strategijų parametrai taikomi šioms programoms:
-- 16.0.12226.10000 ir naujesnės „Word“, skirtos „Android, „Excel“, skirtos „Android“, ir „PowerPoint“, skirtos „Android“, versijos.
+- 16.0.12228.20260 ir naujesnės „Word“, skirtos „Android“, „Excel“, skirtos „Android“, ir „PowerPoint“, skirtos „Android“, versijos.
 - 16.0.12228.20004 ir naujesnės „OneNote“, skirtos „Android“, versijos.
 
 > [!NOTE]
