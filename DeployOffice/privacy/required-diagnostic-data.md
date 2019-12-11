@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: b345c9c8f3138f9c38900dd36dc9983f83623341
-ms.sourcegitcommit: e542473cc4fe07a98874c275846f6982a6863e35
+ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
+ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39837686"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "39906620"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -262,7 +262,7 @@ Informacijos apie įdiegtą taikomąją programą, iš kurios buvo renkami įvyk
 
   - **IsClickToRunInstall** – žyma, nurodanti, ar diegimui buvo naudojama spustelėkite ir diekite technologija. Leidžia mums nustatyti problemas, kurios gali būti susijusios su spustelėkite ir naudokite diegimo mechanizmu.
 
-  - **IsDebug** – žyma, nurodanti, ar „Office“ komponavimo versija yra derinta komponavimo versija. Leidžia mums nustatyti, ar problemos kyla iš derintų komponavimo versijų, kurios gali veikti kitaip.
+  - **IsDebug** – žyma, rodanti, ar „Office“ komponavimo versija yra derinta komponavimo versija. Leidžia mums nustatyti, ar problemos kyla iš derintų komponavimo versijų, kurios gali veikti kitaip.
 
   - **IsInstalledOnExternalStorage** – žyma, nurodanti, ar „Office“ buvo įdiegta išorinėje saugykloje. Leidžia mums nustatyti, ar problemos gali būti atsektos iki išorinės saugyklos vietos.
 
@@ -538,7 +538,7 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
-Taikoma visoms „win32“ taikomosioms programoms. Padeda suprasti „Office“ paketo naujinimo proceso būseną (ar sėkmingai atliktas, su klaidų informacija)
+Taikoma visoms „win32“ taikomosioms programoms. Padeda suprasti „Office“ paketo naujinimo proceso būseną (sėkmingai ar nesėkmingai atliktas, bei pateikiama klaidų informacija)
 
 Renkami šių laukų duomenys:
 
@@ -680,6 +680,16 @@ Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji įmonės vartotoja
 
 - **ProvisioningStartedTime** – nurodo „OneNote“ bloknoto pateikimo pradžios laiką pirmojo paleidimo metu.
 
+#### <a name="officeonenotefirstrunmrureadernotebookentries"></a>Office.OneNote.FirstRun.MruReaderNoteBookEntries 
+
+Signalas, naudojamas įrašyti visas problemas, iškilusias įkeliant Bloknotus pirmojo paleidimo metu.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, susijusias su pirmuoju paleidimu.
+
+Renkami šių laukų duomenys: 
+
+- **OnPremNBCount** – bloknotų skaičius „Prem“ serveryje
+
+- **TotalNBCount** – bendras su vartotojo paskyra susietų bloknotų skaičius
+
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
 Seka, ar buvo atsisiųstas paketas dinaminei matomosios tinklalapio srities daliai. Laikoma taikomosios programinės įrangos konfigūracija, nes paketas turi būti sėkmingai atsisiųstas, kad įgalinti klientą generuoti tinkamą patirtį. Yra ypač kritinės vartotojo prenumeratoms, kur matomąją tinklalapio sritį naudojame informuoti vartotoją, kad licencija nebegalioja. Naudojamas sekti metaduomenis dinaminio turinio paketo, kurį atsisiuntė ir į talpyklą įkėlė produktas, taip pat operacijų, atliktų su paketu, rezultatus: nesėkmingus atsisiuntimus, negalimą išsipakavimą, nuolatines patikros triktis, sėkmingą kreipimąsi į talpyklą, paketo naudojimus ir atsisiuntimo šaltinius.
@@ -738,6 +748,63 @@ Renkami šių laukų duomenys:
 
   - **Data\_VisioSKU**:**integer** – „0“ – standartinis SKU, o „1“ profesionalus SKU
 
+#### <a name="onenoteapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated
+
+Įrašo taikomosios programos aktyvinimo būsenos informaciją.  Duomenys stebimi, kad galėtume nustatyti aktyvinimo problemų šuolius. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis.
+
+Renkami šių laukų duomenys: 
+
+- **INSTALL_LOCATION** – nurodo, ar taikomoji programa yra iš anksto įdiegta, ar atsisiųsta iš parduotuvės
+
+#### <a name="onenoteresetstatus"></a>OneNote.ResetStatus 
+
+Signalas, naudojamas įrašyti visas problemas, iškilusias naudotojui bandant nustatyti iš naujo taikomąją programą.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, susijusias su paleidimu iš naujo. 
+
+Renkami šių laukų duomenys: 
+
+- **Accounts** – nurodo tipus, jei paskyros naudojamos prisijungti prie taikomosios programos
+
+- **GenericStringType** – pateikia informaciją, jei tai yra visiškas notes_light_data atkūrimas
+
+- **LaunchPoint** – nustatymo iš naujo inicijavimo vieta. Galimos reikšmės: Sign Out Button, Sign-out failure, Intune Triggered
+
+- **Pass** – nurodo, ar nustatymas iš naujo pavyko
+
+#### <a name="onenotesigninsignincompleted"></a>OneNote.SignIn.SignInCompleted 
+
+Kritinis signalas, naudojamas norint įsitikrinti, ar prisijungimas buvo sėkmingas. Telemetrija renkama siekiant užtikrinti kritinės regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai
+
+Renkami šių laukų duomenys: 
+
+- **CompletionState** – galutinė prisijungimo būsena: ar pavyko. Ir trikčių atvejai
+
+- **EntryPoint** – nurodo, iš kur buvo pradėtas prisijungimas
+
+- **Hresult** – klaidos kodas
+
+- **Provider Package ID** – automatinio prisijungimo atveju
+
+- **Result** – Succeeded (pavyko), Failed (nepavyko), Unknown (nežinoma), Cancelled (atšaukta)
+
+- **ServerType** – pateikia serverio, siūlančio tarnybą, tipą 
+
+- **SignInMode** – prisijungimas, prisiregistravimas, automatinis prisijungimas arba pagreitintas prisijungimas.
+
+#### <a name="onenotesigninsigninstarted"></a>OneNote.SignIn.SignInStarted 
+
+Signalas, naudojamas rodyti visas problemas, iškilusias naudojant pranešimų juostą.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, atsiradusias naudojant pranešimų juostą.
+
+Renkami šių laukų duomenys: 
+
+- **EntryPoint** – nurodo, iš kur buvo pradėtas prisijungimas
+
+- **Result** – prisijungimo srauto rezultatas
+
+- **ServerType** – pateikia serverio, siūlančio tarnybą, tipą 
+
+- **SignInMode** – prisijungimas, prisiregistravimas, automatinis prisijungimas arba pagreitintas prisijungimas.
+
+
 ### <a name="office-add-in-configuration-subtype"></a>*„Office“ papildinio konfigūracijos potipis*
 
 Programinės įrangos papildiniai ir jų parametrai.
@@ -774,7 +841,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilityappcommandsaddsolution"></a>Office.Extensibility.AppCommands.AddSolution
 
-Kaupia „Office“ papildinių, kurie tinkina juostelę, diegimo informaciją.  Naudojama aptikti problemas, susijusias su tuo, kaip tinkinti papildiniai keičia „Office“ juostelę.
+Kaupia „Office“ papildinių, kurie tinkina juostelę, diegimo informaciją.  Naudojama aptikti problemas, atsirandančias tinkintiems papildiniams keičiant „Office“ juostelę.
  
 Renkami šių laukų duomenys:
 
@@ -1721,6 +1788,75 @@ Renkami šių laukų duomenys:
 
 - **RMS.StatusCode** – API apibrėžtas scenarijaus ID
 
+#### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
+
+Šis įvykis padeda suprasti su kuria kita „Microsoft“ taikomąja programa įrenginyje mūsų taikomoji programa gavo automatinę bendrąją autentifikaciją, iš kurio įėjimo taško ir t. t. Taip pat padeda suprasti trikties priežastį, dėl kurios negauta automatinė bendroji autentifikacija.  Gauname geresnių įžvalgų, pvz., iš kurios „Microsoft“ taikomosios programos įrenginyje, galime gauti bendrosios autentifikacijos patirtį. Veikia įvykus triktims, kai bendroji autentifikacija veikia netinkamai.
+
+Renkami šių laukų duomenys:
+
+- **AccountType** – nurodo paskyros tipą, kurį naudojant vyksta bendroji autentifikacija, pvz., asmeninė „Microsoft“ paskyra arba darbo paskyra.
+
+- **EntryPoint** – nurodo taikomosios programos įvesties vietą, iš kur pradėtas bendrosios autentifikacijos bandymas.
+
+- **ErrorCode** – nurodo bendrosios autentifikacijos klaidos kodą.
+
+- **ErrorDescription** – nurodo bendrosios autentifikacijos bandymo klaidos kodą.
+
+- **ErrorCode** – nurodo bendrosios autentifikacijos bandymo rezultato būsenos kodą.
+
+- **ProviderPackageId** – kita „Microsoft“ taikomoji programa įrenginyje, iš kurio vyksta bendroji autentifikacija.
+
+#### <a name="officeandroidphonenumbersignins"></a>Office.Android.PhoneNumberSignIns
+
+Šis įvykis padeda suprasti, ar vartotojas prisijungė arba prisiregistravo naudodamas telefono numeriu paremta paskyra, ar el. paštu pagrįsta asmenine „Microsoft“ paskyra.  Šis įvykis padeda žinoti skaičių vartotojų, prisijungusių arba prisiregistravusių naudojant asmeninę „Microsoft“ paskyrą, kurioje nurodytas telefono numeris.
+
+Renkami šių laukų duomenys:
+
+- **EntryPoint** – nurodo taikomosios programos įvesties vietą, iš kur pradėtas prisijungimo bandymas.
+
+- **IsEmailMissing** – ar paskyros profilio informacijoje nėra el. pašto adreso?
+
+- **IsPhoneNumberMissing** – ar paskyros profilio informacijoje nėra telefono numerio?
+
+- **UserDecision** – nurodo vartotojo pasirinkimą, pvz., prisijungimas, užsiregistravimas arba prisijungti vėliau.
+
+#### <a name="officeandroidusersignindecision"></a>Office.Android.UserSignInDecision
+
+Šis įvykis padeda suprasti kuriame etape vartotojas atsisako prisijungimo srauto, kodėl prisijungti nepavyksta, kiek vartotojų sėkmingai prisijungė, iš kurio taikomosios programos įėjimo taško ir t. t.  Šis įvykis padeda su prisijungimų nuoseklių išimčių duomenimis, kurie padeda suprasti kuriame etape vartotojai buvo atmesti ir t. t.
+
+Renkami šių laukų duomenys:
+
+- **AccountType** – nurodo paskyros tipą, kurį naudojant buvo atliktas prisijungimo bandymas, pvz., asmeninė paskyra arba darbo paskyra.
+
+- **AfterLicensingState** – nurodo taikomosios programos licencijavimo būseną po prisijungimo baigimo.
+
+- **AllowedEditsWithoutSignIn** – nurodo, kiek nemokamų redagavimų buvo atlikta prieš prisijungimo bandymą.
+
+- **BeforeLicensingState** – nurodo taikomosios programos licencijavimo būseną prieš prisijungimo bandymą.
+
+- **CompletionState** – nurodo prisijungimo užbaigimo etapą.
+
+- **EntryPoint** – nurodo taikomosios programos įvesties vietą, iš kur pradėtas prisijungimo bandymas.
+
+- **HRDAutoAcceleratedSignUpAttemptCount** – nurodo pagreitinto užsiregistravimo bandymų skaičių.
+
+- **HRDAutoAcceleratedSignUpQuitCount** – nurodo pagreitinto užsiregistravimo atšaukimų skaičių.
+
+- **HResult** – nurodo prisijungimo operacijos rezultato būsenos kodą.
+
+- **IsPhoneOnlyAuthFeatureEnabled** – ar leidžiamas telefono numeriu paremtas prisijungimas?
+
+- **LicenseActivationHResult** – nurodo licencijos aktyvinimo bandymo būsenos numerį.
+
+- **LicenseActivationMessageCode** – nurodo licencijavimo tarnybos pranešimo kodą.
+
+- **NoFreeEditsTreatmentValue** – ar leidžiami nemokami redagavimai?
+
+- **SignUpAttemptCount** – nurodo bandymų užsiregistruoti skaičių.
+
+- **StartMode** – nurodo režimą, kuriame buvo pradėtas bandymas prisijungti.
+
+- **UserDecision** – nurodo vartotojo pasirinkimą, pvz., prisijungimas, užsiregistravimas arba prisijungti vėliau.
 
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
@@ -1950,6 +2086,102 @@ Renkami šių laukų duomenys:
 - **Data_Ext** – failo plėtinys, apribotas iki pirmų keturių ar mažiau plėtinio simbolių.
 
 - **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas.
+
+#### <a name="office_docsui_fileoperations_opendocumentmeasurements"></a>Office_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „iOS“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją ir ypač efektyvumo informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppDuration** – taikomosios programos apdorojimo trukmė atliekant failo atidarymo operaciją.
+
+- **Data_BootDuration** – failo atidarymo paleidimo proceso trukmė.
+
+- **Data_ClickOrigin** – eilutė, rodanti, saito dalį, kurią vartotojas spustelėjo „iOS Outlook“, kad atidaryti failą „Office“ programoje.
+
+- **Data_ClickTime** – „Unix“ laikotarpis, kai vartotojas spustelėjo saitą „iOS Outlook“, kad atidaryti failą programoje „Office“.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – failo plėtinys.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – GUID, kuris unikaliai identifikuoja tapatybę, naudojamą failui atidaryti.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokalus arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_InitializationReason** – išvardijimas, rodantis kaip failas atidaromas, pvz., iš kurio vartotojo sąsajos elemento arba paleistas kitos taikomosios programos.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_OpenInPlace** – ar failas turi būti kopijuojamas į „Office“ smėlio dėžės talpyklą, kad vartotojas galėtų jį atidaryti.
+
+- **Data_OpenStartTime** – „Unix“ laikotarpis, kai prasidėjo failo atidarymas.
+
+- **Data_SilhouetteDuration** – failo atidarymo generavimo trukmė.
+
+- **Data_SourceApplication** – eilutė, nurodanti šaltinio taikomosios programos grupavimo ID, kai failas atidaromas naudojant kitą taikomąją programą.
+
+- **Data_StopwatchDuration** – trukmė nuo įvykio pradžios iki pabaigos.
+
+- **Data_TimeSplitMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme, pradžios laiko žyma ir trukme.
 
 #### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
 
@@ -2999,6 +3231,32 @@ Renkami šių laukų duomenys:
 
   - **Data.Log** – pasirinktinis žurnalo pranešimas nurodo, ar pirminis tikrinimas pavyko
 
+
+#### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
+
+Šis įvykis naudojamas aptikti ir diagnozuoti aukšto dažnio klaidą, su kuria vartotojas susiduria naudodamas rankraščio funkciją.  Tai bus panaudota norint nustatyti tinkamiausią šios problemos nustatymo būdą. 
+
+Renkami šių laukų duomenys:
+
+- **CurrentCanvasZoomFactor** – dabartinis drobės padidinimo koeficientas.
+
+- **CurrentNotebook** – dabartinio aktyvaus bloknoto identifikatorius.
+
+- **CurrentPage** – dabartinio aktyvaus puslapio identifikatorius.
+
+- **CurrentSection** – dabartinio aktyvaus skyriaus identifikatorius.
+
+- **DefaultCanvasZoomFactor** – drobės padidinimo koeficiento numatytoji reikšmė.
+
+- **InkStrokeCount** – bendras rankraščio brūkštelėjimų skaičius nuo paskutinio įrašo.
+
+- **InkStrokeWithLayerInkEffect** – rankraščio brūkštelėjimų su sluoksnio rankraščio efektu skaičius nuo paskutinio įrašo.
+
+- **InkStrokeWithoutPressureCount** – nespaudžiamų rankraščio brūkštelėjimų skaičius nuo paskutinio įrašo.
+
+- **InkStrokeWithPencilInkEffect** – rankraščio brūkštelėjimų su pieštuku skaičius nuo paskutinio įrašo.
+
+- **InkStrokeWithTilt** – rankraščio brūkštelėjimų su pakreipimu skaičius nuo paskutinio įrašo.
 
 #### <a name="officeonenotenavigationcreatepage"></a>Office.OneNote.Navigation.CreatePage
 
@@ -5273,6 +5531,25 @@ Renkami šių laukų duomenys:
 
   - **Data\_ViewKind-** „Word“ rodinio tipas
 
+#### <a name="onenotecanvaspageopened"></a>OneNote.Canvas.PageOpened 
+
+Signalas, naudojamas įrašyti kai puslapis yra atidarytas.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, susijusias su puslapio atidarymu programoje „OneNote“.
+
+Renkami šių laukų duomenys: 
+
+- **JOT_ID** – atidaryto puslapio objektas
+
+- **TIME_TAKEN_IN_MS** – laikas, skirtas puslapiui atidaryti
+
+#### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
+
+Signalas, naudojamas rodyti visas problemas, iškilusias naudojant pranešimų juostą.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, atsiradusias naudojant pranešimų juostą.
+
+Renkami šių laukų duomenys: 
+
+- **Message_Bar_Type** – pateikia informaciją, jei vartotojas naudoja seną arba naują pranešimų juostą
+
+- **Message_Type** – pateikia klaidos pranešimo ID
 
 #### <a name="parselicenseop"></a>ParseLicenseOp
 
@@ -5521,13 +5798,33 @@ Renkami šių laukų duomenys:
 
 - **RMS.StatusCode** – pateikto rezultato būsenos kodas
 
+#### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
+
+Svarbu užfiksuoti programos veikimo metriką, atsižvelgiant į taikomosios programos atsakymo laiką nuo paleidimo.  „Microsoft“ šią funkciją naudoja fiksuoti laiką, skirtą taikomajai programai reaguoti ir aptikti scenarijus, kurie gali veikti paleidimo laiką WXP programose.
+
+Renkami šių laukų duomenys:
+
+- **AppLaunchResponsiveTimeInMilliSec** – taikomųjų programų paleidimo reagavimo laikas
+
+- **AppSuspendedDuringBoot** – Bulio logika, rodanti, ar taikomoji programa buvo laikinai sustabdyta paleidimo metu
+
+- **CollectionTime** – įvykio laikas
+
+- **FileActivationAttempted** – Bulio logika, rodanti, ar buvo bandyta aktyvinti failą
+
+- **FirstIdleOnAppThreadTimeInMilliSec** – taikomosios programos gijos laukimo trukmė
+
+- **IsThisFirstLaunch** – Bulio logika, rodanti, ar taikomoji programa paleidžiama pirmą kartą
+
+- **UserDialogInterruptionDuringBoot** – Bulio logika, rodanti, ar paleidimo metu buvo blokuojama vartotojo sąsaja
+
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
 Įrašo informaciją apie netikėtą „Office“ uždarymą. Tai leidžia mums nustatyti produkto gedimus ir pakibimus programoje, kad juos būtų galima pašalinti.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_AirspaceInitTime:integer-** Laikas, skirtas inicijuoti „Airspace Office“ komponentui
+  - **Data\_AirspaceInitTime:integer** – laikas, skirtas „Airspace Office“ komponentui inicijuoti
 
   - **Data\_AllShapes:integer -** Figūrų skaičius dokumente
 
@@ -5645,19 +5942,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_InitAddinsTime:integer -** Laikas, kurio reikia COM priedui inicijuoti ir įkelti
 
-  - **Data\_InitBrandTime:integer -** Laikas, kurio reikia inicijuoti ekrano užsklandai ir prekės ženklo „Office“ komponentams
+  - **Data\_InitBrandTime:integer –** laikas, kurio reikia inicijuoti ekrano užsklandai ir prekės ženklo „Office“ komponentams
 
-  - **Data\_InitGimmeTime:integer -** Laikas, skirtas inicijuoti „Office“ komponentui
+  - **Data\_InitGimmeTime:integer –** laikas, skirtas „Office“ komponentui inicijuoti
 
-  - **Data\_InitLicensingTime:integer -** Laikas, skirtas inicijuoti „Office“ komponento licencijai
+  - **Data\_InitLicensingTime:integer –** laikas, skirtas „Office“ komponento licencijai inicijuoti
 
-  - **Data\_InitMsoUtilsTime:integer -** „MSOUTILS Office“ komponento inicijavimo laikas
+  - **Data\_InitMsoUtilsTime:integer –** „MSOUTILS Office“ komponento inicijavimo laikas
 
-  - **Data\_InitPerfTime:integer -** „Office“ komponento veikimo inicijavimo laikas
+  - **Data\_InitPerfTime:integer –** „Office“ komponento veikimo inicijavimo laikas
 
-  - **Data\_InitTCOTime:integer -** Laikas, reikalingas „Office“ komponento tvarkytuvui inicijuoti
+  - **Data\_InitTCOTime:integer –** laikas, reikalingas „Office“ komponento tvarkymo priemonei inicijuoti
 
-  - **Data\_InitTrustCenterTime:integer -** Laikas, skirtas inicijuoti „Office“ komponento patikimumo centrui
+  - **Data\_InitTrustCenterTime:integer –** laikas, skirtas „Office“ komponento patikimumo centrui inicijuoti
 
   - **Data\_InitVSSubSystemsTime:integer -** Laikas, reikalingas „Visio“ komponentams inicijuoti
 
@@ -5689,7 +5986,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Layers:integer -** Sluoksnių diagramoje skaičius
 
-  - **Data\_LoadProfileTime:integer -** Laikas, kurio reikia, kad įkeltų „Office“ analizės įrankį
+  - **Data\_LoadProfileTime:integer –** laikas, kurio reikia, kad įkeltų „Office“ analizės įrankį
 
   - **Duomenų\_LoadRichEditTim:integer-** daug redaguoti komponentas įkėlimo laiką
 
@@ -5709,9 +6006,9 @@ Renkami šių laukų duomenys:
 
   - **Data\_MsoEndBootTime:integer -** Laikas, kurio reikia MSO įkelti
 
-  - **Data\_MsoInitCoreTime:integer -** Laikas, kurio reikia „MSO Office“ komponentui inicijuoti
+  - **Data\_MsoInitCoreTime:integer –** laikas, kurio reikia „MSO Office“ komponentui inicijuoti
 
-  - **Data\_MsoInitUITime:integer -** Laikas, kurio reikia „MSO Office“ komponento UI inicijuoti
+  - **Data\_MsoInitUITime:integer –** laikas, skirtas „MSO Office“ komponento vartotojo sąsajai inicijuoti
 
   - **Data\_MsoMigrateTime:integer -** Laikas, kurio reikia vartotojo parametrams perkelti pirmo paleidimo metu, jei vartotojas atnaujino iš ankstesnės versijos
 
@@ -5723,9 +6020,9 @@ Renkami šių laukų duomenys:
 
   - **Data\_NetworkIOBytesWrittenSquared :int-** kvadratu pakelta duomenų reikšmė NetworkIOBytesWritten
 
-  - **Data\_OartStartupTime:integer -** Laikas, skirtas inicijuoti „OART Office“ komponentui
+  - **Data\_OartStartupTime:integer –** laikas, skirtas „OART Office“ komponentui inicijuoti
 
-  - **Data\_OleInitTime:integer -**„OLE Office“ komponento inicijavimo laikas
+  - **Data\_OleInitTime:integer –**„OLE Office“ komponento inicijavimo laikas
 
   - **Data\_OpenDurationTimeInMs:integer -** Trukmė milisekundėmis, kiek trunka atidaryti failą
 
@@ -5831,6 +6128,125 @@ Renkami šių laukų duomenys:
 
 - **TotalTime** – bendras praleistas laikas
 
+#### <a name="onenoteappappbootcomplete"></a>OneNote.App.AppBootComplete 
+
+Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai („Microsoft“ paskyra) gali sėkmingai paleisti ir naudoti „OneNote“ pirmą kartą.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai.  Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+
+Renkami šių laukų duomenys: 
+
+- **ACTIVITY_BOOT_TIME_IN_MS** – laikas, skirtas veiklos kūrimui baigti
+
+- **ACTIVITY_NAME** – paleidimo metu atidarytos veiklos pavadinimas 
+
+- **ANY_DIALOG_SHOWN** – nurodo, ar paleidimo metu rodomas koks nors dialogo langas
+
+- **APP_SUSPEND_DURING_EVENT** – nurodo, ar paleidimas buvo iš anksto ištuštintas
+
+- **APP_THREAD_CREATION_WAIT_TIME_TIME_FOR_APP_THREAD_CREATION** – laikas, skirtas taikomųjų programų gijoms kurti
+
+- **AVAILABLE_MEMORY_IN_MB** – bendras įrenginyje pasiekiamos atminties kiekis 
+
+- **AVG_SNAPSHOT_POPULATION_TIME** – vid. laikas, skirtas bloknoto struktūroms, kai naudojama taikomoji programa, iškviesti
+
+- **BOOT_END_AT_VIEW** – veiklos subkategorijos pavadinimas (rodinio pavadinimas)
+
+- **BOOT_SNAPSHOTS** – bloknoto struktūros, išrinktos taikomojoje programoje naudojamos paskyros (-ų) išrinkimui, duomenys
+
+- **COREAPP_STARTUP_ACCOUNT_SETUP_STARTUP_ACCOUNT_SETUP** – laikas, skirtas SSO patirčiai patikrinti ir inicijuoti
+
+- **CRASH_INTERACTION_DURING_BOOT > 0** – nurodo, ar taikomoji programa sugedo paskutinio seanso metu
+
+- **DALVIK_HEAP_LIMIT_IN_MB** – nenaudojama
+
+- **DELAY_LOAD_STICKY_NOTES** – nurodo, ar Priklijuojami lapeliai yra uždelsiami
+
+- **FISHBOWL_SHOWN_DURING_EVENT** – nurodo atvejus, kai turinys nesinchronizuotas
+
+- **HAS_LOGCAT_LOGGING_IMPACT_ON_BOOT** – nurodo, ar žurnalų turi įtakos paleidimo laikui
+
+- **INIT_SNAPSHOT_DURATION** – laikas, skirtas bloknoto struktūros vartotojo paskyrai (-oms) gauti
+
+- **IS_COLD_BOOT** – nurodo, ar taikomoji programa paleidžiama, kai taikomoji programa neveikė fone
+
+- **IS_FIRST_LAUNCH** – nurodo, ar įrenginyje taikomoji programa buvo paleista pirmą kartą 
+
+- **IS_PHONE** – nurodo, ar įrenginys yra telefonas arba planšetinis kompiuteris
+
+- **IS_RECENT_PAGES_AVAILABLE_ON_FRAGMENT_CREATION** – nurodo, ar vartotojo sąsaja paruošta ir laukia, kol turinys bus pasiekiamas 
+
+- **IS_REHYDRATE_LAUNCH** – nurodo, ar taikomoji programa buvo nutraukta sistemos
+
+- **IS_UPGRADE** – nurodo, ar taikomoji programa paleidžiama atnaujinus versiją
+
+- **JOT_MAIN_APP_CREATE_TIME_MAIN_APP_CREATE_TIME** – laikas, reikalingas sukurti JOT komponentą (bendrinto kodo komponentas) 
+
+- **JOT_MAIN_APP_INIT_TIME_MAIN_APP_INIT_TIME** – laikas, skirtas JOT komponentui inicijuoti
+
+- **LAUNCH_POINT** – nurodo, ar taikomoji programa atidaryta naudojant valdiklį, taikomosios programos piktogramą, hipersaitas, ar įjungtas bendrinimas ir t. t.
+
+- **MSO_ACTIVATION_TIME_ACTIVATION_TIME** – laikas, skirtas MSO inicijuoti
+
+- **NATIVE_LIBRARIES_LOAD_TIME** – laikas, skirtas bibliotekoms įkelti
+
+- **NAVIGATION_CREATE_TO_NAVIGATION_RESUME_CREATE_TO_NAVIGATION_RESUME** – laikas, skirtas naršymui baigti
+
+- **NAVIGATION_RESUME_TO_BOOT_END_RESUME_TO_BOOT_END**– laikas, skirtas puslapio įkėlimo delsai po paleidimo išmatuoti
+
+- **NAVIGATION_SET_CONTENT_VIEW_TIME_SET_CONTENT_VIEW_TIME** – laikas, skirtas turiniui pateikti
+
+- **NUMBER_Of_RUNNING_PROCESSES** – nurodo veikiančių aktyvių procesų skaičių
+
+- **NUMBER_OF_SNAPSHOTS** – bloknoto struktūros gavimo paleidimo metu skaičius
+
+- **OFFICEASSETMANAGER_INITIALIZATION_TIME** – laikas, skirtas „ Asset Manager“ išskleisti ir inicijuoti
+
+- **PROCESS_BOOT_TIME_IN_MS** – laikas, skirtas proceso kūrimui užbaigti
+
+- **ROOT_ACTIVITY_CREATE_ACTIVITY_CREATE** – laikas, skirtas pereiti iš šakninio sluoksnio 
+
+- **ROOT_ACTIVITY_DISK_CHECK_ACTIVITY_DISK_CHECK** – nenaudojama
+
+- **ROOT_ACTIVITY_LAUNCH_NEXTACTIVITY_ACTIVITY_LAUNCH_NEXTACTIVITY** – nenaudojama
+
+- **ROOT_ACTIVITY_PROCESS_INTENT_ACTIVITY_PROCESS_INTENT** – nenaudojama 
+
+- **ROOT_ACTIVITY_SESSION_ACTIVITY_SESSION** – laikas, skirtas pereiti iš šakninio sluoksnio 
+
+- **ROOT_TO_NAVIGATION_TRANSITION_TO_NAVIGATION_TRANSITION** – laikas, skirtas perėjimui iš šakninio sluoksnio tvarkyti
+
+- **SNAPSHOT_PUBLISH_TO_RENDERING_END_PUBLISH_TO_RENDERING_END** – laikas turinio generavimui užbaigti
+
+- **SPLASH_ACTIVITY_SESSION_ACTIVITY_SESSION** – laikas, skirtas krovimosi ekranui rodyti
+
+- **SPLASH_TO_ROOT_TRANSITION_TO_ROOT_TRANSITION** – laikas, skirtas pereiti iš šakninio sluoksnio 
+
+- **TIME_BETWEEN_PROCESS_BOOT_AND_ACTIVITY_BEGIN_IN_MS** – laikas tarp proceso ir veiklos sukūrimo 
+
+- **TIME_TAKEN_IN_MS** – laikas, skirtas paleidimui užbaigti
+ 
+- **TOTAL_MEMORY_IN_MB** – bendra įrenginio atmintis
+ 
+- **USER_INTERACTED_DURING_EVENT** – nurodo, ar vartotojas sąveikavo paleidimo metu
+
+#### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
+
+Signalas, naudojamas nurodyti, kad taikomoji programa „OneNote" veikia fone.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
+
+Renkami šių laukų duomenys: jokių
+
+#### <a name="onenoteapplaunch"></a>OneNote.AppLaunch
+
+Kritinis signalas, naudojamas užtikrinti, kad „OneNote“ vartotojai gali sėkmingai paleisti taikomąją programą.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
+
+Renkami šių laukų duomenys: 
+
+- **FirstLaunchTime** – įrašo laiką, kai taikomoji programa buvo pirmą kartą paleista
+
+- **InstallLocation** – nurodo, ar taikomoji programa yra iš anksto įdiegta, ar atsisiųsta iš parduotuvės
+
+- **is_boot_completed_ever** – nurodo, ar taikomoji programa anksčiau buvo sėkmingai paleista įrenginyje
+
+- **NewOneNoteUser** – nustatyto, ar vartotojas yra naujas vartotojas
 
 #### <a name="officeoutlookdesktopexchangepuidandtenantcorrelation"></a>Office.Outlook.Desktop.ExchangePuidAndTenantCorrelation
 
@@ -6338,7 +6754,7 @@ Renkami toliau apibūdintų laukų duomenys.
 
 #### <a name="officetelemetryengineisprelaunch"></a>Office.TelemetryEngine.IsPreLaunch
 
-Tinka Office UWP taikomosioms programoms.  Šis įvykis sužadinamas, kai „Office“ programa paleidžiama pirmą kartą po atnaujinimo / įdiegimo iš parduotuvės. Tai yra pagrindinės diagnostikos duomenų dalis, naudojama seansui stebėti, ar jis pradėtas.
+Tinka Office UWP taikomosioms programoms.  Šis įvykis sužadinamas, kai „Office“ programa paleidžiama pirmą kartą po atnaujinimo ar įdiegimo iš parduotuvės. Tai yra pagrindinės diagnostikos duomenų dalis, naudojama seansui stebėti, ar jis pradėtas.
 
 Renkami šių laukų duomenys:
 
@@ -7661,6 +8077,67 @@ Renkami šių laukų duomenys:
 
 - **Error** – šis parametras susideda iš klaidos pranešimo, grąžinto klaidos objekto.
 
+#### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
+
+Svarbu užfiksuoti programos veikimo metriką, atsižvelgiant į taikomosios programos atsakymo laiką nuo paleidimo.  „Microsoft“ šią funkciją naudoja fiksuoti laiką, skirtą taikomajai programai reaguoti ir aptikti scenarijus, kurie gali veikti paleidimo laiką WXP programose.
+
+Renkami šių laukų duomenys:
+ 
+- **AnyCrashInteractionDuringBoot** – Bulio logika bet kokiam gedimui, kuris įvyko paleidimo metu
+
+- **AppActivationTimeInMs** – taikomosios programos etapo laikas
+
+- **AppSuspendedDuringBoot** – Bulio logika taikomosios programos sustabdymui paleidimo metu
+
+- **AvailableMemoryInMB** – pasiekiama atmintis
+
+- **CollectionTime** – įvykio laikas
+
+- **DalvikHeapLimitInMB** – netvarkiojo masyvo informacija
+
+- **DocumentRecoveryInvoked** – Bulio logika, nurodanti, ar buvo atkurtas koks nors dokumentas
+
+- **ExtractionDone** – vietinės bibliotekos išskleidimo laikas
+
+- **FastBootGainTimeInMs** – greito paleidimo užbaigimui skirtas laikas
+
+- **FileActivationAttempted** – Bulio logika, rodanti, ar aktyvinus failą taikomoji programa buvo paleista
+
+- **HasLogcatLoggingImpactOnBoot** – Bulio logika, rodanti, ar „logcat“ paveikė paleidimo laiką
+
+- **IsThisFirstLaunch** – Bulio logika, rodanti, ar tai yra pirmasis taikomosios programos paleidimas
+
+- **LatencyTimeInMilliSec** – gaištis milisekundėmis
+
+- **LibrarySharingTimeInMs** – bibliotekų bendrinimui skirtas laikas
+
+- **LoadMinLibsTimeInMs** – minimalus bibliotekų rinkinio įkėlimo laikas
+
+- **MruListingTimeInMs** - MRU įkėlimo laikas
+
+- **NativeLibrariesLoadTime** – CPP bibliotekos įkėlimo laikas
+
+- **NumberOfRunningProcesses** – vykdomų procesų skaičius
+
+- **NumberOfRunningProcesses** – vykdomų procesų skaičius
+
+- **NumberOfRunningServices** – veikiančių tarnybų skaičius
+
+- **OfficeActivityTimeInMs** – OfficeActivity inicijavimo laikas
+
+- **PostAppInitTimeInMs** – taikomosios programos etapo laikas
+
+- **PreAppInitializationTime** – taikomosios programos etapo inicijavimo laikas
+
+- **PreAppInitTimeInMs** – taikomosios programos etapo laikas
+
+- **TotalMemoryInMB** – bendra atmintis
+
+- **UIRaaSDownloadLanguagePackageBoot** – informacija, susijusi su kalbos paketo atsisiuntimu
+
+- **UserDialogInterruptionDuringBoot** – Bulio logika bet kokiam blokavimo dialogo langui, rodomam paleidimo metu
+
+
 #### <a name="office_apple_apple_appboot_mac"></a>Office_Apple_Apple_AppBoot_Mac
 
 Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas skaičiuoti taikomosios programos paleidimo laikui, taip pat gauti tam tikrą informaciją apie įkrovos tipą. Šis įvykis padeda mums stebėti savo našumą ir teikti produktyvumo patobulinimų.
@@ -8120,6 +8597,655 @@ Renkami šių laukų duomenys:
 
   - **Data\_Timeout** – kiek laiko truko „pakibimas“
 
+  #### <a name="officeandroidadalsigninuiprompts"></a>Office.Android.ADALSignInUIPrompts
+
+Šis įvykis nurodo, kad prisijungimo raginimas buvo pateiktas vartotojui, mokyklos arba darbo paskyrai.  Šis įvykis padeda suprasti prisijungimo prie mūsų taikomųjų programų būsenos sveikatą ir imtis reikiamų veiksmų, kai pastebime netikėtus prisijungimo raginimus. 
+
+Renkami šių laukų duomenys:
+
+- **LastLoginDelta** – laiko pokytis nuo paskutinio sėkmingo prisijungimo.
+
+- **PreviousIdentityCredProviderState** – nurodo paskyros būseną.
+
+- **PreviousIdentityState** – nurodo paskyros būseną, pvz., baigėsi seansas. 
+
+- **"SignInResultCode"** – nurodo raginimo prisijungti baigimo rezultato kodą.
+
+- **UseCache** – nurodo, ar mes primygtinai raginome vartotoją dar kartą pateikti slaptažodį.
+
+- **UserType** – nurodo, ar tai yra egzistuojanti paskyra, ar nauja paskyra
+
+#### <a name="officeandroidandroidappdocsfileoperationends"></a>Office.Android.AndroidAppDocsFileOperationEnds
+
+Tik „Android“ skirtų svarbių dokumentų („AppDocs“) telemetrijos duomenys, skirti baigiamosioms operacijoms naujas failas / atidaryti / įrašyti kaip. Ši funkcija fiksuoja šių „AppDocs“ operacijų klaidų kodus.  „Microsoft“ šią funkciją naudoja klaidoms įvairiose failų operacijose ir tiksliam sluoksniui, kuriame įvyko WXP taikomųjų programų triktis, nustatyti.
+
+Renkami šių laukų duomenys:
+
+- **AccessMode** – išvardijimo vertė, skirta failo prieigos režimui. Reikšmės – None (nėra), ReadOnly (tik skaityti), ReadOnlyUpgradable (tik skaityti / atnaujinamas), ReadWrite (skaityti / rašyti)
+
+- **BlockingUIShown** – Bulio logika, rodanti, ar vartotojo sąsajos blokavimas buvo rodomas sraute.
+
+- **ContentUriAuthority** – turinio URL prieiga iš SAF
+
+- **Correlation** – GUID, skirtas su operacija susietos ID koreliacijai
+
+- **DocId** – dokumento ID, sugeneruotas „AppDocs“
+
+- **DocInstanceId** – DocInstanceId yra dokumento egzemplioriaus ID, sugeneruotas „AppDocs“, aprėpto operacijos egzemplioriaus dokumente
+
+- **DocIsEnterpriseProtected** – Bulio logika, rodanti, ar dokumentas yra apsaugotas.
+
+- **DocUserId** – vartotojo ID iš MS autentifikavimo sluoksnio
+
+- **"DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = „Live ID“, 2 = OrgId, 3 = SSPI; 4 = ADAL
+
+- **DurationInMs** – failo operacijos užbaigimui skirtas laikas milisekundėmis
+
+- **EndReason** – išvardijimo reikšmė, nurodanti užbaigimo priežastį.  Reikšmės – None, Success, Failure, Cancel
+
+- **ErrorCode** – failo operacijos klaidos kodas
+
+- **Extension** – atidaryto failo plėtinys.
+
+- **FileSourceLocation** – failo vietos išvardijimo reikšmė. Galimos reikšmės: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** – įvykio trukmė
+
+- **FirstBCSClientError_Info** – klaidos kodo informacija, susijusi su failų konvertavimais
+
+- **HttpStatusCode** – žiniatinklio tarnybos užklausos http atsako kodas
+
+- **InitalizationReason** – failo atidarymo įvesties vieta
+
+- **K2FileIOHresult** – failo atidarymo operacijos užbaigimo Hresult kodas
+
+- **LastBCSClientError_TagId** – paskutinė BCS (dvejetainė konvertavimo tarnyba) kliento klaida
+
+- **OfficeWebServiceApiStatusFlag** – žiniatinklio tarnybos užklausos būsenos vėliavėlė
+
+- **OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija
+
+- **OpFlags** – dokumentų operacijos parametrų vėliavėlės, naudojamos „AppDocs“ sluoksnio.
+
+- **OpSeqNum** – skaičius, nurodantis su failo operacija susijusių kvietimų seką „AppDocs“ sluoksnyje
+
+- **OpType** – operacijos tipo išvardijimas. Reikšmės: „None“ (nėra), „CreateDocument“ (sukurti dokumentą), „OpenDocument“ (atidaryti dokumentą), „CopyDocument“ (kopijuoti dokumentą), „CloseDocument“ (uždaryti dokumentą), „SaveDocument“ (įrašyti dokumentą), „OpenVersion“ (atidaryti versiją), „CloseVersion“ (uždaryti versiją)
+
+- **PreFetchState** – naujo failo sukūrimo operacijų išankstinio šablonų paėmimo būsenos išvardijimas.
+
+- **ProviderApp** – taikomosios programos, kurioje atidarytas failas, paketo pavadinimas
+
+- **ScopeInstanceId** – aprėpties egzemplioriaus ID, naudojamas prijungti duomenų kontekstą prie veiklų
+
+- **Size** – failo dydis
+
+- **State** – failo būsenos išvardijimo vertė. Reikšmės: None (nėra), Creating (kuriama), Created (sukurta), CreateFailed (sukurti nepavyko), Opening (atidaroma), Opened (atidarytas), OpenFailed (atidaryti nepavyko), Copying (kopijuojama), Copied (nukopijuota), CopyFailed (nukopijuoti nepavyko), Closing (uždaroma), Closed (uždaryta), CloseFail (uždarymas nepavyko)
+
+- **TemplateName** – dokumento šablono dvejetainis šablono pavadinimas iš šablono tarnybos, pvz., TF10002009.dotx
+
+- **UriScheme** – URL schema
+
+#### <a name="officeandroidandroidautherror"></a>Office.Android.AndroidAuthError
+
+Šis įvykis žymi pagrindines autentifikavimo triktis automatinio atpažinimo ženklo atnaujinimo metu, prisijungimo puslapio iš tarnybos įkėlimo metu ir t. t.  Šis įvykis padeda suprasti prisijungimo prie mūsų taikomųjų programų būklės sveikatą, atliktus prisijungimo bandymus ir imtis reikiamų veiksmų, kai pastebime netikėtas triktis. 
+
+Renkami šių laukų duomenys:
+
+- **ADALErrorCode** – nurodo klaidos kodą, kai rodomas prisijungimo raginimas arba tylaus atpažinimo ženklo iškvietimo bandymas darbo paskyrai.
+
+- **ADALRawErrorCode** – nurodo pirminį klaidos kodą, kai rodomas prisijungimo raginimas arba tylaus atpažinimo ženklo iškvietimo bandymas darbo paskyrai.
+
+- **ErrorGroup** – nurodo paskyros tipą, pvz., asmeninė paskyra, darbo paskyra arba vietinė darbo paskyra.
+
+- **IDCRLErrorCode** – nurodo klaidos kodą, kai rodomas prisijungimo raginimas asmeninei paskyrai.
+
+- **IDCRLRawErrorCode** – nurodo pradinį klaidos kodą, kai rodomas prisijungimo raginimas asmeninei paskyrai.
+
+- **LiveOAuthErrorCode** – nurodo klaidos kodą automatinio atpažinimo ženklo asmeninei paskyrai atnaujinimo bandymo metu.
+
+- **LiveOAuthRawErrorCode** – nurodo pradinį klaidos kodą automatinio atpažinimo ženklo asmeninei paskyrai atnaujinimo bandymo metu.
+
+- **NTLMErrorCode** – nurodo klaidos kodą, kai rodomas prisijungimo raginimas vietinei darbo paskyrai.
+
+#### <a name="officeandroidandroidfileasyncsavestatus"></a>Office.Android.AndroidFileAsyncSaveStatus
+
+Fiksuoja failo asinchroninio įrašymo būsenos duomenis ir įvairius skirtingų komponentų klaidų kodus.  „Microsoft“ naudoja šiuos duomenis, kad galėtų išanalizuoti, ar nėra vartotojo duomenų praradimo taikomojoje programoje įrašant failus WXP programose.
+
+Renkami šių laukų duomenys:
+
+- **FileExtension** – failo plėtinys
+
+- **FileIOSaveHResult** – failo įrašymo operacijos HResult
+
+- **FileIOSaveIsCopy** – Bulio logika, rodanti, ar operacija yra kopijos įrašymas.
+
+- **FileSize** – failo dydis
+
+- **FileSourceLocation** – failo šaltinio vietos išvardijimas. Reikšmės: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+#### <a name="officeandroidandroidfileopenreliability"></a>Office.Android.AndroidFileOpenReliability
+
+Tai fiksuoja failo atidarymo būsenos duomenis ir įvairius klaidų kodus, kad nustatyti tikėtinas failo atidarymo triktis ir palyginti su triktimis, kurių nesitikima, bei nurodyti pranešančio kodo dalį.  „Microsoft“ naudoja šiuos duomenis, kad išanalizuotų failų atidarymo trikčių priežastis ir apskaičiuotų kritinę metriką, pvz., failų atidarymo sėkmės rodiklį programose WXP.
+
+Renkami šių laukų duomenys:
+
+- **AccessMode** – prieigos režimo išvardijimas
+
+- **AppDocsFileOpenErrorCode** – „AppDocs“ failo atidarymo klaidos kodas
+
+- **ContentUriAuthority** – turinio URL prieiga iš SAF
+
+- **DownloadCsiError** – atsisiuntimo klaidos pranešimas iš CSI
+
+- **FileExtension** – failo plėtinys
+
+- **FileOpenEndErrorCode** – failo atidarymo klaidos kodas
+
+- **FileOpenStatus** – failo atidarymo būsenos išvardijimas
+
+- **FileSize** – failo dydis
+
+- **FileSourceLocation** – failo vietos išvardijimas
+
+- **FirstBCSClientError_Info** – paskutinė BCS (dvejetainė konvertavimo tarnyba) kliento klaida
+
+- **IfWordFileOpenCancelled** – jei failo atidarymas buvo atšauktas vartotojo programoje „Word“
+
+- **InitializationReason** – failo atidarymo įvesties vietos išvardijimas
+
+- **IsAutoSaveDisabled** – ar automatinis įrašymas išjungtas failo atidarymo metu
+
+- **IsFileEmpty** – Bulio logika rodanti, ar failas yra tuščias
+
+- **K2FileIOHresult** – failo operacijos užbaigimo Hresult
+
+- **OpenCsiError** – failo atidarymo klaidos pranešimas, esantis CSI sluoksnyje
+
+- **OpEndEventId** – Operacijos faktinės užbaigimo vietos žymė
+
+- **PPTHresult** – PPT Hresult
+
+- **PPTIsExpectedError** – failo atidarymo tikėtinos / netikėtos trikties PPT klaidos klasifikavimas 
+
+- **PPTTag** – klaidų žymė PPT
+
+- **ProviderApp** – taikomosios programos, kurioje atidarytas failas, paketo pavadinimas
+
+- **ProviderFileSize** – užfiksuotas failo dydis atidarant failą per failo aktyvinimą
+
+- **Stae** – failo atidarymo būsenos išvardijimas
+
+- **UriScheme** – URL schema
+
+- **WordErrortag** – klaidos žymė programoje „Word“
+
+- **WordFileCorruptionReason** – gedimo priežastis, dėl kurio „Word“ failo gali nepavykti atidaryti
+
+- **WordFileOpenErrorCode** – specifinis „Word“ failo atidarymo klaidos kodas.
+
+- **WordFileTypeFromDod** – „Word“ failo tipo nustatymas, paremtas faktiniu failo formatu
+
+- **WordFileTypeFromExtension** – „Word“ failo tipo nustatymas, paremtas faktiniu failo plėtiniu
+
+#### <a name="officeandroidandroidfilesavestatus"></a>Office.Android.AndroidFileSaveStatus
+
+Svarbu užfiksuoti failo asinchroninio įrašymo būsenos duomenis ir įvairius skirtingų komponentų klaidų kodus.  „Microsoft“ naudoja šiuos duomenis, kad galėtų išanalizuoti, ar nėra vartotojo duomenų praradimo taikomojoje programoje įrašant failus WXP programose.
+
+Renkami šių laukų duomenys:
+
+- **AccessMode** – reikšmės**: None, ReadOnly, ReadOnlyUpgradable, ReadWrite.
+
+- **AppDocsEndReason** – failo įrašymo AppDoc EndReason išvardijimas.  Reikšmės: None, Success, Failure, Cancel.
+
+- **AppDocsErrorCode** – failo įrašymo trikties galutinės klaidos kodas
+
+- **AppDocsTriggeringSaveDetails** – laukas, rodantis, ar AppDocs suaktyvina įrašymą
+
+- **DocInstanceId** – DocInstanceId yra dokumento egzemplioriaus ID, sugeneruotas „AppDocs“, aprėpto operacijos egzemplioriaus dokumente
+
+- **ExcelFileSaveResult** – specifinis „Excel“ HResult
+
+- **FileExtension** – failo plėtinys.
+
+- **FileIOSaveErrorCode** – klaidos kodas, esantis FileIO
+
+- **FileIOSaveHResult** – HRESULT, esantis FileIO
+
+- **FileIOSaveIsCopy** – Bulio logika, rodanti, ar tai yra kopijavimo operacija
+
+- **FileSize** – failo dydis
+
+- **FileSourceLocation** – failo vietos išvardijimas.  Reikšmės: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **OpFlags** – įrašymui skirtos operacijų vėliavėlės
+
+- **PPTFileSaveFailHresult** – nepavykusio įrašymo PPT Hresult
+
+- **"PPTFileSaveFailTag** – PPT žymė nepavykusiam įrašymui
+
+- **State** – failo atidarymo būsenos išvardijimas. 
+
+- **Reikšmės** – None, Creating, Created, CreateFailed, Opening, Opened, OpenFailed, Copying, Copied, CopyFailed, Closing, Closed, CloseFail
+
+- **WordFileCopyErrorTrackbackTag** – atsekamumo žymė trikčiai yra CopyDocument etapas „Word“
+
+- **WordFileSaveCancelReason** – atsekamumo žymė, atšaukimams programoje „Word“
+
+- **WordFileSaveEid** – „Word“ specifinis klaidos kodas
+
+- **WordFileSaveErrorTrackbackTag** – atsekamumo žymė įrašymo triktims
+
+- **WordFileSaveOpResult** – rezultato būsenos išvardijimas: 0 – pavyko, 1 – nepavyko, 2 – atšaukta
+
+- **WordFileSaveSuccess** – specifinės „Word“ sėkmingo failo įrašymo operacijos informacijos išvardijimas.
+
+#### <a name="officeandroidandroidofficeactivationlatency"></a>Office.Android.AndroidOfficeActivationLatency
+
+Kritiniai duomenys, renkantys visų failų, atidaromų taikomosiose programose „Windows“, „Excel“, „PowerPoint“, tiesioginio failo atidarymo laiką.  Tai naudojama „Microsoft“, kad sužinoti mūsų taikomųjų programų failo atidarymo efektyvumo metriką
+
+Renkami šių laukų duomenys:
+
+- **AppBootingOccured** – Bulio logika, skirta patikrinti, ar baigtas taikomosios programos paleidimas
+
+- **ApplicationBootTime** – specifinei taikomosios programos paleidimo fazei reikalingas laikas
+
+- **AppSuspendedDuringBoot** – Bulio logika, skirta patikrinti, ar taikomoji programa buvo laikinai sustabdyta paleidimo metu
+
+- **BlockingUIShownDuringFileOpen** – Bulio logika, rodanti, ar failo atidarymo operacijos metu buvo rodomas blokavimo dialogo langas
+
+- **CachedInfoAvailable** – Bulio logika, ieškanti talpykloje saugomo informacijos apie failo atidarymo operaciją
+
+- **DocumentRecoveryInvoked** – Bulio logika, rodanti, ar buvo atkūrimo laukiantis dokumentas
+
+- **EndToEndActivationTime** – laikas, skirtas failui, atidarytam ne taikomojoje programoje, generuoti
+
+- **EndToEndFileOpenTime** – laikas, skirtas failui, atidarytam taikomojoje programoje, generuoti
+
+- **FileOpenPhaseDurationInMs** – failo atidarymo operacijos laikas, sunaudotas tam tikro etapo metu
+
+- **FileSourceLocation** – failo vietos išvardijimo reikšmė, pvz., None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **InitalizationReason** – failo atidarymo įvesties vieta
+
+- **InitialBootPhaseTime** – specifinei taikomosios programos paleidimo fazei reikalingas laikas
+
+- **IsThisFirstLaunch** – Bulio logika, rodanti, ar tai yra pirmasis taikomosios programos paleidimas
+
+- **MinimumLibraryLoadPhaseTime** – specifinei taikomosios programos paleidimo fazei reikalingas laikas
+
+- **MinimumLibraryLoadPhaseTime** – specifinei taikomosios programos paleidimo fazei reikalingas laikas
+
+- **MinimumLibraryLoadPhaseTime** – specifinei taikomosios programos paleidimo fazei reikalingas laikas
+
+- **PostAppInitTimeInMs** – specifinei taikomosios programos paleidimo fazei reikalingas laikas
+
+- **PPTRenderPhase** – laikas susijęs su tam tikru PPT generavimo etapu
+
+- **PreAppInitTimeInMs** – specifinei taikomosios programos paleidimo fazei reikalingas laikas
+
+- **ProviderApp** – taikomosios programos, kurioje atidarytas failas, paketo pavadinimas
+
+- **TelemetryReason** – panaši į InitialisationReason, bet išsamesnė išvardijimo reikšmė, susijusi su atidaromo failo įvedimo vieta.
+
+- **UserDialogInterruptionDuringBoot** – Bulio logika, rodanti, ar paleidimo metu buvo rodomas blokavimo dialogo langas
+
+- **XLRenderPhase** – laikas susijęs su tam tikru „Excel“ generavimo etapu
+
+#### <a name="officeandroidappdocsfileoperationends"></a>Office.Android.AppDocsFileOperationEnds
+
+Tik „Android“ skirtų svarbių dokumentų („AppDocs“) telemetrijos duomenys, skirti baigiamosioms operacijoms naujas failas / atidaryti / įrašyti kaip. Ši funkcija fiksuoja šių „AppDocs“ operacijų klaidų kodus.  „Microsoft“ šią funkciją naudoja klaidoms įvairiose failų operacijose ir tiksliam sluoksniui, kuriame įvyko WXP taikomųjų programų triktis, nustatyti.
+
+Renkami šių laukų duomenys:
+
+- **AccessMode** – išvardijimo vertė, skirta failo prieigos režimui.  Reikšmės: None (nėra), ReadOnly (tik skaityti), ReadOnlyUpgradable (tik skaityti / atnaujinamas), ReadWrite (skaityti / rašyti)
+
+- **BlockingUIShown** – Bulio logika, rodanti, ar vartotojo sąsajos blokavimas buvo rodomas sraute.
+
+- **ContentUriAuthority** – turinio URL prieiga iš SAF
+
+- **Correlation** – GUID, skirtas su operacija susietos ID koreliacijai
+
+- **DocId** – dokumento ID, sugeneruotas „AppDocs“
+
+- **DocInstanceId** – DocInstanceId yra dokumento egzemplioriaus ID, sugeneruotas „AppDocs“, aprėpto operacijos egzemplioriaus dokumente
+
+- **DocIsEnterpriseProtected** – Bulio logika, rodanti, ar dokumentas yra apsaugotas.
+
+- **DocUserId** – vartotojo ID iš MS autentifikavimo sluoksnio
+
+- **"DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = LiveId, 2 = OrgId, 3 = SSPI; 4 = ADAL
+
+- **DurationInMs** – failo operacijos užbaigimui skirtas laikas milisekundėmis
+
+- **EndReason** – išvardijimo reikšmė, nurodanti užbaigimo priežastį.  Reikšmės: None, Success, Failure, Cancel
+
+- **ErrorCode** – failo operacijos klaidos kodas
+
+- **Extension** – atidaryto failo plėtinio pirmieji keturi simboliai.
+
+- **FileSourceLocation** – failo vietos išvardijimo reikšmė. Galimos reikšmės: None, Local, UncOrMappedNetworkDrive, SkyDrive, App, SharePoint, UnknownServer
+
+- **FILETIME** – įvykio trukmė
+
+- **FirstBCSClientError_Info** – klaidos kodo informacija, susijusi su failų konvertavimais
+
+- **HttpStatusCode** – žiniatinklio tarnybos užklausos HTTP atsako kodas
+
+- **InitalizationReason** – failo atidarymo įvesties vieta
+
+- **K2FileIOHresult** – failo atidarymo operacijos užbaigimo Hresult kodas
+
+- **LastBCSClientError_TagId** – paskutinė BCS (dvejetainė konvertavimo tarnyba) kliento klaida
+
+- **OfficeWebServiceApiStatusFlag** – žiniatinklio tarnybos užklausos būsenos vėliavėlė
+
+- **OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija
+
+- **OpFlags** – dokumentų operacijos parametrų vėliavėlės, naudojamos „AppDocs“ sluoksnio.
+
+- **OpSeqNum** – skaičius, nurodantis su failo operacija susijusių kvietimų seką „AppDocs“ sluoksnyje
+
+- **OpType** – operacijos tipo išvardijimas. Reikšmės: „None“ (nėra), „CreateDocument“ (sukurti dokumentą), „OpenDocument“ (atidaryti dokumentą), „CopyDocument“ (kopijuoti dokumentą), „CloseDocument“ (uždaryti dokumentą), „SaveDocument“ (įrašyti dokumentą), „OpenVersion“ (atidaryti versiją), „CloseVersion“ (uždaryti versiją)
+
+- **PreFetchState** – naujo failo sukūrimo operacijų išankstinio šablonų paėmimo būsenos išvardijimas.
+
+- **ProviderApp** – taikomosios programos, kurioje atidarytas failas, paketo pavadinimas
+
+- **ScopeInstanceId** – aprėpties egzemplioriaus ID, naudojamas prijungti duomenų kontekstą prie veiklų
+
+- **Size** – failo dydis
+
+- **State** – failo būsenos išvardijimo vertė. Reikšmės: None (nėra), Creating (kuriama), Created (sukurta), CreateFailed (sukurti nepavyko), Opening (atidaroma), Opened (atidarytas), OpenFailed (atidaryti nepavyko), Copying (kopijuojama), Copied (nukopijuota), CopyFailed (nukopijuoti nepavyko), Closing (uždaroma), Closed (uždaryta), CloseFail (uždarymas nepavyko)
+
+- **TemplateName** – dokumento šablono dvejetainis šablono pavadinimas iš šablono tarnybos, pvz., TF10002009.dotx
+
+- **UriScheme** – URL schema
+
+#### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
+
+Dvejetainės konvertavimo klaidos telemetrija, skirta funkcijai Spausdinti ir bendrinti kaip PDF.  „Microsoft“ šią funkciją naudoja, BCS konvertavimo WXP programose trikčių vietoms nustatyti.
+
+Renkami šių laukų duomenys:
+
+- **DocumentFileSize** – failo dydis.
+
+- **FileExtension** – failo plėtinio pirmieji keturi simboliai.
+
+- **IsFileDirty** – Bulio logika, rodanti, ar faile buvo neįrašytų pakeitimų.
+
+- **Location** – failo vietos išvardijimas.  Vertės: „OneDrive“, „SharePoint“, „Dropbox“ ir pan.
+
+- **PDFConversionError** – žymė, ties kuria įvyksta PDF konvertavimo klaida
+
+- **PdfConversionErrorCode** – PDF konvertavimo klaidos kodas
+
+- **PdfConversionHRStatus** – PDF konvertavimo būsenos kodas
+
+- **PdfConversionResult** – PDF konvertavimo rezultatų išvardijimas.  Reikšmės: Success (pavyko), Failed (nepavyko) ir Cancelled (atšaukta)
+
+- **PdfFileSize** – PDF dydis
+
+#### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
+
+Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos WXP taikomojoje programoje, nustatyti.
+
+Renkami šių laukų duomenys:
+
+- **ClientTransactionId** – GUID perduotas DSC tam tikrai atsiskaitymo užklausai.
+
+- **CollectionTime** – prenumeratos pirkimo užbaigimo laikas
+
+- **CountryCode** – kliento šalies kodas, nusiųstas į DSC kliento atsiskaitymo užklausai
+
+- **"GoPremiumEntryPoint"** – įvedimo vieta, skirta pirkimui suaktyvinti 
+
+- **IsActivateExistingSubscription** – Bulio logika, rodanti, ar buvo esama prenumerata, kuri buvo aktyvinta
+
+- **IsErrorRetriable** – Bulio logika, rodanti, ar padengimas gali būti kartojamas
+
+- **IsPreviousPurchase** – Bulio logika, rodanti, ar aktyvinimas įvyko ankstesnio prenumeratos įsigijimo metu
+
+- **IsProvisioningTriggeredByRetry** – Bulio logika, rodanti, ar buvo bandoma kartoti
+
+- **LanguageCode** – kliento kalbos kodas, nusiųstas į DSC kliento atsiskaitymo užklausai
+
+- **ProductIdentifier** – bandomo kliento įsigyti SKU pavadinimas
+
+- **ProvisioningHttpStatusCode** – parengimo http būsenos kodas
+
+- **ProvisioningStatusCode** – parengimo būsenos kodas
+
+- **PurchaseOrderId** – pirkimo užsakymo identifikatorius iš „Google“ / „Samsung“ parduotuvės
+
+- **RedemptionTaskHR** – prenumeratos padengimo užduoties HResult
+
+- **SubscriptionProvisioningSucceeded** – Bulio logika, rodanti prenumeratos parengimo pavykimo rezultatą
+
+- **SubscriptionPurchaseHR** – prenumeratos įsigijimo užduoties Hresult
+
+- **SubscriptionType** – prenumeratos tipo arba SKU išvardijimas.
+
+- **TCID** – piktogramos spustelėjimas, suaktyvinantis prenumeratos srautą
+
+#### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
+
+Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos WXP taikomojoje programoje, nustatyti.
+
+Renkami šių laukų duomenys:
+
+- **ErrorAt** – žymės vertė: informacija apie vietą, kur įvyko klaida
+
+- **ExceptionErrorMessage** – daugiažodis klaidos pranešimas
+
+#### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
+
+Šį įvykį užregistruojame tuo atveju, jei yra klaidų įkeliant bendrinamas bibliotekas. Gali būti bibliotekos įkėlimo klaidų dėl dviejų priežasčių 1) įdiegtas APK nesuderinamas su įrenginiu. 2) biblioteka, kurią bandome įkelti, gali būti sugadinta dėl išskleidimo klaidų, atsiradusių trūkstant vietos arba nepakankant atminties.
+
+Renkami šių laukų duomenys:
+
+- **Data_ExceptionMessage** – išimties pranešimas pateiktas „Android“ API System.loadLibrary
+
+- **Data_FreeSpaceInMB** – laisva vieta įrenginyje
+
+- **Data_nickName** – bibliotekos, kurios nepavyko įkelti, pavadinimas.
+
+#### <a name="officeandroidintuneintunejavacopyfailedattempts"></a>Office.Android.Intune.IntuneJavaCopyFailedAttempts
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms įrašant vietinę „Intune“ apsaugotų debesies dokumentų kopiją.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- **Data_FileCreationFailedErrorCode** – klaidos kodas, susietas su srautu
+
+#### <a name="officeandroidintuneintunejavaexceptionadaltokenformam"></a>Office.Android.Intune.IntuneJavaExceptionADALTokenForMAM
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms ADAL atpažinimo ženklo gavimo „Intune“ resursams metu.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- **Data_ErrorCode** – klaidos kodas, susietas su srautu
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicy"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicy
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su gaunamomis strategijomis, identifikuojančiomis esamą procesą.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+ 
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionapppolicyforcontext"></a>Office.Android.Intune.IntuneJavaExceptionAppPolicyForContext
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su gaunamomis strategijomis, identifikuojančiomis esamą veiklą.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+ 
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionauthenticationcallback"></a>Office.Android.Intune.IntuneJavaExceptionAuthenticationCallback
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su autentifikavimo atgalinių iškvietimų registravimu valdomoms paskyroms.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptiongetaccountstatesync"></a>Office.Android.Intune.IntuneJavaExceptionGetAccountStateSync
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su valdomomis paskyromis.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+ 
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptiongetissavetolocationallowed"></a>Office.Android.Intune.IntuneJavaExceptionGetIsSaveToLocationAllowed
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant strategiją, susietą su įrašymu į vietinę vietą.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptiongetpolicyforidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetPolicyForIdentity
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su gaunamomis tapatybės strategijomis.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofromdescriptor"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromDescriptor
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su apsaugos informacija.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+  
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptiongetprotectioninfofrompath"></a>Office.Android.Intune.IntuneJavaExceptionGetProtectionInfoFromPath
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su apsaugos informacija.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptiongetuipolicyidentity"></a>Office.Android.Intune.IntuneJavaExceptionGetUIPolicyIdentity
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su gaunamomis naudotojo sąsajos strategijomis, skirtomis valdomai paskyrai.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionisidentitymanaged"></a>Office.Android.Intune.IntuneJavaExceptionIsIdentityManaged
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su identifikavimu, jei paskyra yra valdoma.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą.
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionnullenrollmentmanager"></a>Office.Android.Intune.IntuneJavaExceptionNullEnrollmentManager
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su komponentų registravimu atgaliniam iškvietimui.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionprotect"></a>Office.Android.Intune.IntuneJavaExceptionProtect
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su valdomo dokumento apsauga.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą.
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionprotectfromdescriptorifrequired"></a>Office.Android.Intune.IntuneJavaExceptionProtectFromDescriptorIfRequired
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su valdomo dokumento apsauga.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionRegisterAccountSync
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su „Intune“ valdymo paskyros registravimu.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionsetuipolicyidentitysync"></a>Office.Android.Intune.IntuneJavaExceptionSetUIPolicyIdentitySync
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su strategijų valdomai paskyrai nustatymu.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionunregisteraccountsync"></a>Office.Android.Intune.IntuneJavaExceptionUnregisterAccountSync
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su „Intune“ valdymo nuotolinio ištrynimo scenarijais.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidintuneintunejavaexceptionupdatetoken"></a>Office.Android.Intune.IntuneJavaExceptionUpdateToken
+
+Kritinės klaidos telemetrija, skirta atskiroms „Intune“ API triktims stebėti; ši telemetrija užregistruojama įvykus klaidoms iškviečiant „Intune“ API, susietas su valdomos paskyros autorizavimo atpažinimo ženklo naujinimu.  „Microsoft“ naudoja šiuos duomenis, kad nustatytų klaidas „Intune“ taikomojoje programoje registracijos metu ir ją baigus, po prisijungimo prie programos naudojant darbo paskyrą
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
+#### <a name="officeandroidlicenseactivationfailure"></a>Office.Android.LicenseActivationFailure
+
+Kritinės klaidos telemetrija, skirta sekti triktis aktyvinant „O365“ paskyrų licencijas „W/X/P“ programose.  „Microsoft“ šią funkciją naudoja įsigytos „O365“ licencijos aktyvinimo trikčiai išanalizuoti.
+
+Renkami šių laukų duomenys:
+
+- **EntryPoint** – įėjimo taško, įjungiančio licencijos aktyvinimo srautą, išvardijimas
+
+- **HResult** – trikties klaidos kodas
+
+- **IsGallatin** – Bulio logika, tikrinanti, ar tai yra „Gallatin“ paskyra
+
+- **MessageCode** – išvardijimas, nurodantis aktyvinimo trikties vietą
+
+- **PreviousEntryPoint** – įėjimo taško, įjungiančio licencijos aktyvinimo srautą, išvardijimas
+
+- **StateAfterActivation** – išvardijimas, nurodantis taikomosios programos licencijavimo būseną prieš pradedant aktyvinimo srautą
+
+- **StateBeforeActivation** – išvardijimas, nurodantis taikomosios programos licencijavimo būseną prieš pradedant aktyvinimo srautą
+
+- **UserAccountType** – išvardijimas, nurodantis, ar tai asmeninė paskyra, ar įmonės paskyra.
+
+#### <a name="officeandroidmsasigninuiprompts"></a>Office.Android.MSASignInUIPrompts
+
+Šis įvykis nurodo, kad prisijungimo raginimas buvo pateiktas vartotojui, asmeninei paskyrai.  Šis įvykis padeda suprasti prisijungimo prie mūsų taikomųjų programų būsenos sveikatą ir imtis reikiamų veiksmų, kai pastebime netikėtus prisijungimo raginimus. 
+
+Renkami šių laukų duomenys:
+
+- **ExternalCacheRefreshError** – atpažinimo ženklo atnaujinimo bandymo klaidos kodas prieš parodant prisijungimo raginimą.
+
+- **LastLoginDelta** – laiko pokytis nuo paskutinio sėkmingo prisijungimo.
+
+- **MSAserverUAID** – koreliacijos ID su tarnybos telemetrijos duomenimis.
+
+- **PreviousIdentityState** – nurodo paskyros būseną, pvz., baigėsi seansas. 
+
+- **"SignInResultCode"** – nurodo raginimo prisijungti baigimo rezultato kodą.
+
+- **UseCache** – nurodo, ar mes primygtinai raginome vartotoją dar kartą pateikti slaptažodį.
+
+- **UserType** – nurodo, ar tai yra egzistuojanti paskyra, ar nauja paskyra
+
+- **WasIdentitySignedOut** – nurodo, ar paskyra buvo atsijungimo būsenoje.
+
+
 #### <a name="office_apple_licensing_mac_dractivationfailures"></a>Office_Apple_Licensing_Mac_DRActivationFailures
 
 Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas užfiksuoti „Digital River“ aktyvinimo nesėkmes (įvykis registruoja raktą ir produktą, kuris buvo naudojamas aktyvinimui, taip pat gautą klaidos kodą).  Šis įvykis naudojamas nustatant ir padedant šalinti aktyvinimo triktis („Digital River“ problemos).
@@ -8577,3 +9703,13 @@ Renkama, kai „PowerPoint“ aptinka, kad nėra interneto ryšio. „Microsoft�
 Renkami šių laukų duomenys:
 
 - **Data\_IsNexusDetected:bool** - Rodo, ar turime interneto ryšio būseną skambinant „Nexus“ tarnybai (reikšmė TRUE (teisinga) arba iškviečiant bendrosios žiniatinklio tarnybos API iškvietimą (reikšmė FALSE (klaidinga)
+
+#### <a name="officeserviceabilitymanagerofficesvcmgrprofile"></a>Office.ServiceabilityManager.OfficeSvcMgrProfile
+
+Šis įvykis paleidžiamas, kai įjungiama „Office“ aptarnavimo valdymo tvarkymo priemonė. Šis įvykis yra labai svarbus teikiant tikslias įžvalgas apie diegimo būseną ir taikomąją programą, bei kliento nuomojamų elementų papildinių gedimus, suteikiant mums galimybę sugeneruoti įžvalgas IT administratoriui, kad galėtų užtikrintai įdiegti naujinimus savo įmonės įrenginiams.  
+
+Renkami šių laukų duomenys:
+
+- **DeviceIdJoinToken** – naudojama telemetrijos duomenų iš sveikatos ir diegimo būsenos sujungimui su kitais funkciniais duomenimis, surenkamais naudojant tarnybų srautus.
+
+- **TenantAssociationKeyStamped** – Bulio logikos reikšmės vėliavėlė, naudojama nustatyti valdomų įrenginių skaičių „Office“ ekosistemoje.
