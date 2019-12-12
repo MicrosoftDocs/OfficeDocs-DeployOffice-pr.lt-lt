@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 25f594865089d35cb46ebfcc9b97d6b048f6298d
-ms.sourcegitcommit: ad2bb6e42b2432a2cb9370594cd50f3a14f2fbe3
+ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
+ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38310688"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962853"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -423,6 +423,37 @@ Renkami šių laukų duomenys:
   - **Wamapi** – identifikuoja, kuri WAM API iškviesta
 
   - **Wamtelemetrybatch** – šiuo metu nenaudojamas. Ateityje leis WAM komponentui pateikti papildomą informaciją, susijusią su autentifikavimo įvykiu.
+
+### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
+ 
+Šis įvykis užregistruojamas, kai TokenSharingManager pateiktame paskyrų sąraše randama paskyra su galiojančiu atnaujinimo atpažinimo ženklu.  Šis scenarijus būdingas bendrajai autentifikacijai (SSO).
+ 
+Renkami šių laukų duomenys:
+ 
+- **AccountType** – užregistruojamas paskyros tipas
+
+- **ProviderPackageID** – užregistruojamas šią paskyrą pateikusios programos paketo ID
+
+### <a name="onenotesigninssoexternalappsinvalidaccount"></a>OneNote.SignIn.SSOExternalAppsInvalidAccount
+
+Šis įvykis užregistruojamas, kai įvyksta klaida bandant gauti TokenSharingManager pateiktame paskyrų sąraše esančios paskyros atnaujinimo atpažinimo ženklą. Šis scenarijus būdingas bendrajai autentifikacijai (SSO)
+ 
+Renkami šių laukų duomenys:
+ 
+- **RawError** – užregistruojama pradinė klaida, gauta bandant gauti paskyros atnaujinimo atpažinimo ženklą
+
+### <a name="onenotestickynotesfetchtokencompleted"></a>OneNote.StickyNotes.FetchTokenCompleted
+ 
+Šis įvykis užregistruojamas po autentifikacijos, baigus atnaujinimo atpažinimo ženklo iškvietimą.
+ 
+Renkami šių laukų duomenys:
+ 
+- **ErrorMessage** – nepavykus iškviesti atpažinimo ženklo užregistruojamas klaidos pranešimas 
+
+- **Result** – užregistruojamas bandymo iškviesti atpažinimo ženklą rezultatas
+
+- **StickyNoteAccountType** – užregistruojamas paskyros, kurios atnaujinimo atpažinimo ženklą bandė iškviesti programa, tipas
+
 
 ## <a name="click-to-run-events"></a>Spustelėkite ir naudokitės įvykiai
 
@@ -2531,13 +2562,19 @@ Ataskaitos apie veiksmą, atskiriantį įvestį, renkamą naudojant CollectParam
 
 - **PRID –** eilutės reikšmė, vaizduojanti reikalaujamą produkto leidimo ID vartotojo diegimo scenarijuje (pvz., „O365ProPlusRetail“)
 
-- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti diegiamas produkto/kultūros derinys
+- **PridsToMigrateFromCentennial –** „Office“ produktų, perkeliamų iš „Store“ diegimo į Spustelėkite ir naudokitės, eilutė
+
+- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti diegiamas produkto / kultūros derinys
+
+- **ProductsToMigrateFromO15C2R –** „Office“ produktų ir kultūrų, perkeliamų iš „Office 2013“ Spustelėkite ir naudokitės diegimo, eilutė
 
 - **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti šalinami produkto/kultūros derinai
 
 - **SharedComputerLicensing –** buliaus logika nurodo, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
 
 - **ShouldActivate –** buliaus logika nurodo, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
+
+- **ShouldUninstallCentennial –** Bulio logikos žymė, nurodanti, ar „Office“ produktų iš „Store“ įdiegtis turi būti pašalinta
 
 - **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
  
@@ -2602,15 +2639,21 @@ Praneša apie parametrus, naudojamus „Office“ įdiegčiai
 
 - **PlatformToInstall –** eilutė, kurioje nurodomas galutinis sprendimas, ar turi būti įdiegtas x86, ar x64 „Office“.
 
-- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti šalinami produkto/kultūros derinai
-
 - **PRID –** eilutės reikšmė, vaizduojanti reikalaujamą produkto leidimo ID vartotojo diegimo scenarijuje (pvz., „O365ProPlusRetail“)
 
-- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti diegiamas produkto/kultūros derinys
+- **PridsToMigrateFromCentennial –** „Office“ produktų, perkeliamų iš „Store“ diegimo į Spustelėkite ir naudokitės, eilutė
+
+- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti diegiamas produkto / kultūros derinys
+
+- **ProductsToMigrateFromO15C2R –** „Office“ produktų ir kultūrų, perkeliamų iš „Office 2013“ Spustelėkite ir naudokitės diegimo, eilutė
+
+- **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti šalinami produkto/kultūros derinai
 
 - **SharedComputerLicensing –** buliaus logika nurodo, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
 
 - **ShouldActivate –** buliaus logika nurodo, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
+
+- **ShouldUninstallCentennial –** Bulio logikos žymė, nurodanti, ar „Office“ produktų iš „Store“ įdiegtis turi būti pašalinta
 
 - **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
 
@@ -2651,6 +2694,37 @@ Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus
 - **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
 
 
+### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
+
+Šis įvykis užregistruojamas, kai tinklo tarnyba iškviečiama iš Spustelėkite ir naudokitės aptarnavimo tvarkytuvo atsargų papildinio, nesvarbu, ar iškvietimas sėkmingas, ar ne. Iš esmės tai paskutinė operacija papildinyje, pagal kurią stebima bendroji operacijos būsena.
+
+Renkami šių laukų duomenys:
+
+-  **WebCallSource** – išvardijimo reikšmė (nurodyta kaip sveikasis skaičius), nurodanti aptarnavimo tvarkytuvo papildiniui, koks buvo iškvietimo šaltinis:
+   - Atsargos: 0
+   - Atsargų konfigūracija: 1
+   - Atsargų strategija: 2
+   - Atsargų tinklo būsena: 3
+
+- **Result** – skaitiniai klaidų kodai, kuriuos pateikia „Office“ tinklo tarnybos iškvietimo API.
+
+### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
+
+Šis įvykis užregistruojamas, kai nepavyksta iškviesti tinklo tarnybos iš Spustelėkite ir naudokitės aptarnavimo tvarkytuvo papildinio.
+
+Renkami šių laukų duomenys:
+
+- **Add-on** – Spustelėkite ir naudokitės aptarnavimo tvarkytuvo papildinys, iš kurio buvo iškviesta tinklo tarnyba. Tai gali būti tokios reikšmės kaip atsargos, valdymas ir pan., užkoduotos kaip skaitinės reikšmės.
+
+- **Correlation ID** – atsitiktiniu būdu sugeneruotas GUID, būdingas dabartiniam egzemplioriui, kuris siunčiamas į tinklo tarnybą kliento ir serverio iškvietimams susieti.
+
+- **ErrorInfo** – skaitinių klaidos kodų informacija, kurią pateikia „Office“ tinklo tarnybos iškvietimo API.
+
+- **Function** – funkcija kode, iš kurios įvykdytas dabartinis iškvietimas.
+
+- **Status** – HTTP būsenos kodas, kurį iškvietimas pateikia tinklo tarnybai, pvz., 404, 500 ir pan.
+
+
 ## <a name="enhanced-configuration-service-ecs-events"></a>Patobulintos konfigūravimo paslaugos (ECS) įvykiai
 
 ### <a name="officeexperimentationfeaturequerybatched"></a>Office.Experimentation.FeatureQueryBatched
@@ -2688,6 +2762,14 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
   - **FeatureGate –** nurodo funkcijų, kurioms galima taikyti analizę, rinkinį.
+
+### <a name="onenoteflightdefault"></a>OneNote.FlightDefault
+ 
+Šis įvykis užregistruojamas, kai „OneNote“ paprašo ECS serverio variantų reikšmių.  Tai naudojama siekiant įgalinti vartotojų, kurie pasirinko gauti tokius variantus, eksperimentines funkcijas.
+ 
+Renkami šių laukų duomenys:
+ 
+- **ConfigParam** – konfigūracija, kurios reikšmė pasiekiama
 
 ## <a name="licensing-events"></a>Licencijavimo įvykiai
 
@@ -2757,7 +2839,10 @@ Renkami šių laukų duomenys:
 
 Renkame, kai vartotojas nustato įrenginį, ir iškviečiame licencijavimo paslaugą, kad aptiktume, ar prisijungęs vartotojas turi teisę naudotis „Office“, ar ne. Tai praneša apie to iškvietimo rezultatą. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
 
-Šis įvykis nerenka jokių laukų duomenų.
+Renkami šių laukų duomenys:
+
+- **EntitlementCount** – vartotojo turimų teisių skaičius
+
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
 
@@ -2766,6 +2851,26 @@ Kiekviename seanse tikriname, ar praėjo 72 valandos nuo paskutinio licencijos a
 Renkami šių laukų duomenys:
 
   - **Mode** – numeris, nurodantis šiame kompiuteryje naudojamą „Office“ licencijavimo procesą
+
+### <a name="officelicensinginclientpinredemptioncallpinredemptionapi"></a>Office.Licensing.InClientPinRedemption.CallPinRedemptionAPI
+
+Ši telemetrija stebi „Office“ PIN panaudojimo tarnybos iškvietimo rezultatus.
+
+Renkami šių laukų duomenys:
+
+- **ClientTransactionId** – tarnybos iškvietimo unikalusis identifikatorius.
+
+- **ErrorCategory** – kiekvienas klaidos tipas gali atitikti bendresnę kategoriją, pvz., Galima bandyti dar kartą.
+
+- **ErrorType** – trikties priežastis, pvz., AlreadyRedeemedByOther.
+
+- **InAFOFlow** – Bulio logikos reikšmė, nurodanti, ar vykdoma AFO panaudojimo eiga.
+
+- **StatusCode** – tarnybos iškvietimo rezultatas kaip vienas žodis, pvz., Sukurta.
+
+- **StatusMessage** – išsami būsenos kodo informacija, pvz., Sėkmingai parengta.
+
+- **UsingNulApi** – Bulio logikos reikšmė, nurodanti, ar naudojame naująjį licencijavimo procesą.
 
 ### <a name="officelicensinginrfm"></a>Office.Licensing.InRFM 
 
@@ -2915,6 +3020,26 @@ Jei dėl kokios nors priežasties negalime suaktyvinti vartotojo ir turime parod
 
 Šis įvykis nerenka jokių laukų duomenų.
 
+### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
+
+Vartotojams, kurių naujuose įrenginiuose „Office“ buvo įdiegtas iš anksto, bet kurie neturi teisės jo naudoti, rodomas dialogo langas, kuriame jie gali pasirinkti išbandyti „Office“, jį įsigyti arba įvesti produkto kodą, kad gautų licenciją. Šis įvykis užregistruoja vartotojo veiksmą dialogo lange. Šis įvykis naudojamas siekiant stebėti dialogo lange, rodomame vartotojui, kurio įrenginyje „Office“ buvo įdiegtas iš anksto, tačiau kuris neturi teisės jo naudoti, atliekamus veiksmus, ir padeda nustatyti, ar vartotojas gauna licenciją, ar ne.
+
+Renkami šių laukų duomenys:
+
+- **Buy** – nurodo, ar vartotojas spustelėjo pirkimo mygtuką, ar ne
+
+- **ForceAutoActivate** – nurodo, ar turi būti bandoma suaktyvinti programoje, ar ne
+
+- **GoBackToSignIn** – nurodo, ar vartotojas norėjo vėl prisijungti (galimai naudodamas kitą paskyrą)
+
+- **IsPin** – nurodo, ar vartotojas įvedė PIN
+
+- **ProductKey** – nurodo, ar vartotojas bandė įvesti produkto kodą
+
+- **Try** – nurodo, ar vartotojas spustelėjo išbandymo mygtuką, ar ne
+
+- **UserDismissed** – nurodo, ar vartotojas atmetė dialogo langą ir nepasirinko įsigyti „Office“ arba jo išbandyti; tokiu atveju bus pradėtas atidėjimo laikotarpis arba produktas veiks sumažinto funkcionalumo režimu
+
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
 
 Yra eksperimentas, kuris suteikia vartotojui galimybę bandyti nustatyti „Office“ automatinį paleidimą tiesiai iš programos, nepaliekant programos konteksto. Tai praneša apie sėkmingą to eksperimento įvykdymą arba triktį kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
@@ -2957,6 +3082,149 @@ Renkami šių laukų duomenys:
 
   - **UninstallProduct** – nurodo, ar senasis produktas bus pašalintas konvertuojant
 
+### <a name="officelicensingtelemetryflowolsresults"></a>Office.Licensing.TelemetryFlow.OLSResults
+
+Kai vartotojas neturi licencijos, atliekame kelis tarnybų iškvietimus, kad vartotojas gautų licenciją ir suaktyvintų „Office“ produktą.  Šis įvykis suaktyvinamas iškvietus „Office“ licencijavimo tarnybą, kad būtų patikrina, ar vartotojas turi teisių.  Šis įvykis bus naudojamas siekiant stebėti vartotojo licencijavimo būseną po „Office“ licencijavimo tarnybos iškvietimo ir „Office“ kliento būseną po bandymo gauti „Office“ suaktyvinimą.
+
+Renkami šių laukų duomenys:
+
+- **EntitlementPickerShown** – nurodo, ar vartotojas turėjo kelias teises ir ar jis turėjo pats iš jų pasirinkti, kad gautų licenciją
+
+- **GetAuthResult** – nurodo įvairias galimas kliento būsenas, jei gautas tuščias produkto kodas iš „Office“ licencijavimo tarnybos arba jei vartotojas turi teisę naudotis kitu produktu ir „Office“ turi būti konvertuotas į naująjį produktą
+
+- **GetEntitlementsCount** – nurodo vartotojo turimų teisių skaičių
+
+- **GetEntitlementsSucceeded** – nurodo, ar „Office“ licencijavimo tarnybos API iškvietimas siekiant gauti vartotojo teises buvo sėkmingas, ar ne
+
+- **GetKeySucceeded** – nurodo, ar „Office“ licencijavimo tarnybos API iškvietimas siekiant gauti kodą buvo sėkmingas
+
+- **GetNextUserLicenseResult** – nurodo, ar modernus licencijavimo procesas veikė ir ar vartotojas gavo licenciją, ar ne
+
+- **InstallKeyResult** – nurodo įvairias priežastis, kodėl vartotojo būsena gali būti netinkama, pvz., jei nepavyko suaktyvinti arba įdiegti kodo
+
+- **NotInitializedBeforeWhileAdding** – tai skirta tik informacijai, ar įvykis buvo įtrauktas į telemetrijos tvarkytuvo schemą jo tiesiogiai neužregistruojant
+
+- **NotInitializedBeforeWhileSending** – tai skirta tik informacijai, ar buvo bandoma siųsti įvykį jo prieš tai tiesiogiai neužregistravus telemetrijos tvarkytuvo schemoje
+
+- **SentOnDestruction** – tai skirta tik informacijai, ar įvykis buvo įtrauktas į telemetrijos tvarkytuvo schemą ir nebuvo tiesiogiai išsiųstas
+
+- **Tag** – naudojama nurodant, iš kurios kodo vietos įvykis buvo išsiųstas
+
+- **VerifyEntitlementsResult** – nurodo įvairias vartotojo būsenas patvirtinus teises, gautas iš „Office“ licencijavimo tarnybos
+
+### <a name="officelicensingtelemetryflowsearchforbindingresult"></a>Office.Licensing.TelemetryFlow.SearchForBindingResult
+
+OĮG parduoda įrenginius, kuriuose yra „Office“ (vienų metų prenumerata arba nuolatinė licencija).  Už šiuos „Office“ produktus sumokama, kai klientas įsigyja įrenginį. Įrenginiai, sukonfigūruoti naudojant konkretų registro raktą (OOBEMode: OEMTA), gali turėti „Office“ susiejimą.  Kai paleidžiame „Office“ tokiuose įrenginiuose, atliekame tarnybos patikras, kad sužinotume, ar „Office“ susiejimas atitinka įrenginį.
+
+Telemetrijos veikla stebi sėkmės ir nesėkmės taškus ieškant susiejimo. Taip siekiame užtikrinti, kad įrenginiai, kurie turi susiejimą, galėtų sėkmingai jį iškviesti ir kad mūsų paslaugos būtų geros būsenos.  Ši veikla nestebi įrenginių, kurie, kaip nustatoma atlikus tarnybos patikras, neturi susiejimų.
+
+Renkami šių laukų duomenys:
+
+- **GenuineTicketFailure** – nurodo trikties HRESULT, kai bandoma gauti įrenginio „Windows“ autentišką leidimą / produkto kodą (WPK).
+
+- **PinValidationFailure** – nurodo, kodėl nepavyko PIN patvirtinimo procesas. Galimos klaidos:
+    - GeoBlocked
+    - InvalidFormat
+    - InvalidPin
+    - InvalidState
+    - InvalidVersion
+    - Unknown
+    - Used
+
+- **PinValidationResult** – nurodo PIN, kurio nepavyko atpažinti, patvirtinimo rezultatą.
+
+- **Pkpn** – PKPN diapazonas, kuriam priklauso PIN.
+
+- **Success** – nurodo, kad sėkmingai iškvietėme galiojantį įrenginio „Office“ susiejimą (PIN).
+
+- **Tag** – nurodo, kuriame etape nustojome ieškoti susiejimo. Galimos žymės:
+  - 0x03113809 Nėra interneto / tarnybos klaida patvirtinant PIN
+   - 0x0311380a PIN patvirtinimo klaida, išsiųsta su lauko PinValidationFailure reikšme
+  - 0x0310410f Būsena Pavyko, išsiųsta su lauko Success reikšme
+  - 0x0311380d Klaidos, kurias galima bandyti išspręsti pakartotinai (interneto problemos, nežinomos klaidos)
+  - 0x0311380e Klaidos, kurių negalima bandyti išspręsti pakartotinai (baigėsi susiejimo pasiūlymo laikas)
+  - 0x0311380f Kitos klaidos (nepavyko licencijuoti)
+  - 0x03104111 Nepavyko atpažinti „Office“ PIN; siunčiama su lauko PinValidationResult reikšme
+
+- **WpkBindingFailure** – nurodo „Office“ PIN, skirto įrenginio WPK, gavimo klaidos kodą.
+
+### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
+
+Sėkmingai gavus galiojantį „Office“ PIN, skirtą įrenginiui, kuriame iš anksto įdiegtas „Office“, parodome vartotojui prisijungimo arba panaudojimo dialogo langą.  Kai PIN panaudojamas, parodome GVLS dialogo langą.  Modernizuodami AFO funkciją atnaujinome du dialogo langus, kad suteiktume daugiau informacijos apie įrenginyje esantį „Office“ produktą.  Ši telemetrija skirta stebėti, ar naudojant funkciją vartotojams kyla mažiau nesklandumų gaunant produktą. Stebima panaudojimo proceso eiga ir išėjimo taškai (kuris dialogo langas buvo atmestas).
+
+Renkami šių laukų duomenys:
+
+- **ActionCreateAccount** – vartotojas pasirinko sukurti paskyrą.
+
+- **ActionSignIn** – vartotojas pasirinko prisijungti.
+
+- **DialogRedemption** – rodomas AFO panaudojimo dialogo langas.
+
+- **DialogSignIn** – rodomas AFO prisijungimo dialogo langas.
+
+- **OExDetails** – klaidos informacija, kurią gauname, kai atmetamas prisijungimo dialogo langas.
+
+- **OExType** – klaidos tipas, kurį gauname, kai atmetamas prisijungimo dialogo langas.
+
+- **Tag** – nurodo, kuriame etape vartotojas išėjo iš AFO panaudojimo proceso. Galimos žymės:
+    - 0x0311380b Vartotojas atmetė prisijungimo dialogo langą panaudojimo dialogo lange
+    - 0x0311380c Nepavyko automatiškai įkelti tapatybės, kai vartotojas prisijungė panaudojimo dialogo lange
+    - 0x03113810 Nepavyko įkelti paskyros demografinės informacijos (šalies kodo, kalbos, valiutos, bandomojo pasiūlymo ir rinkodaros nuostatų)
+    - 0x03113805 Vartotojas atmetė prisijungimo dialogo langą prisijungimo dialogo lange
+    - 0x03113806 Nepavyko automatiškai įkelti tapatybės, kai vartotojas prisijungė prisijungimo dialogo lange
+    - 0x03113807 Nepavyko automatiškai įkelti tapatybės
+    - 0x03113811 Vartotojas uždarė prisijungimo / panaudojimo dialogo langą
+    - 0x03113812 Vartotojas uždarė sutikimo su GVLS dialogo langą
+    - 0x03113808 Vartotojas sutiko su GVLS
+
+- **UseInAppRedemption** – nurodo, ar vartotojai išlaikomi programoje ir gali panaudoti PIN joje, ar siunčiami į žiniatinklį, kad panaudotų iškviestą PIN (iš anksto įvestą).
+
+- **UseModernAFO** – nurodo, ar naudojame naująją, ar senąją AFO funkciją.
+
+### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
+
+Kai naujuose įrenginiuose yra iš anksto įdiegtas „Office“ ir vartotojas neturi teisės jo naudoti, parodome dialogo langą, kuris suteikia vartotojui galimybę išbandyti „Office“, jį įsigyti arba įvesti produkto kodą, kad galėtų gauti licenciją. Šis įvykis stebi, ar dialogo langas buvo parodytas. Šis įvykis padės sužinoti, ar vartotojui buvo parodytas dialogo langas su parinktimis išbandyti, įsigyti produktą arba įvesti produkto kodą; tai mums padės nustatyti, ar vartotojas turėjo galimybę gauti licenciją.
+
+Renkami šių laukų duomenys: 
+
+- **ActiveView** – nurodo vartotojui parodyto dialogo lango ID
+
+- **CurrentOOBEMode** – nurodo išankstinio diegimo režimą (OOBE režimą, pvz., AFO, OĮG ir pan.)
+
+- **NotInitializedBeforeWhileAdding** – tai skirta tik informacijai, ar įvykis buvo įtrauktas į telemetrijos tvarkytuvo schemą jo tiesiogiai neužregistruojant
+
+- **SentOnDestruction** – tai skirta tik informacijai, ar įvykis buvo įtrauktas į telemetrijos tvarkytuvo schemą ir nebuvo tiesiogiai išsiųstas
+
+- **ShowTryButton** – nurodo, ar vartotojui dialogo lange buvo rodomas išbandymo mygtukas, ar ne
+
+- **Tag** – naudojama nurodant, iš kurios kodo vietos įvykis buvo išsiųstas
+
+### <a name="officelicensingtelemetryflowtrialflow"></a>Office.Licensing.TelemetryFlow.TrialFlow
+
+Kai licencijos neturintis vartotojas, kurio įrenginyje iš anksto įdiegtas „Office“, bando gauti bandomąją versiją, suaktyvinamas šis įvykis.  Jis naudojamas siekiant sužinoti, kokį kelią vartotojas pasirinko, kad gautų bandomąją versiją, ir ar buvo kokių nors klaidų gaunant bandomąją versiją pirkimo programoje srityje.  Atsižvelgiant į vartotojo veiksmą ir rezultatą pirkimo programoje srityje, vartotojas gali negauti licencijos.
+
+Renkami šių laukų duomenys:
+
+- **HasConnectivity** – nurodo, ar vartotojas turi interneto ryšį. Jei ryšio nėra, vartotojas gali naudoti atidėjimo licenciją penkias dienas arba produktas gali veikti sumažinto funkcionalumo režimu
+
+- **InAppTrialPurchase** – nurodo, ar įgalintas variantas paleidžiant „Store“ pirkimo SDK, kad būtų užfiksuoti PI ir įsigyta bandomoji versija programoje
+
+- **IsRS1OrGreater** – nurodo, ar OS versija yra naujesnė nei RS1, ar ne, nes „Store“ pirkimo SDK turi būti naudojamas, tik jei OS versija yra naujesnė nei RS1
+
+- **NotInitializedBeforeWhileAdding**: tai skirta tik informacijai, ar įvykis buvo įtrauktas į telemetrijos tvarkytuvo schemą jo tiesiogiai neužregistruojant
+
+- **OEMSendToWebForTrial** – nurodo, ar variantas yra įgalintas, kad vartotojai būtų siunčiami į žiniatinklį gauti bandomajai versijai
+
+- **StoreErrorConditions** – nurodo įvairias sąlygas, kurioms esant galėjo įvykti „Store“ pirkimo SDK triktis
+
+- **StoreErrorHResult** – nurodo „Store“ pirkimo SDK pateiktą klaidos kodą
+
+- **StorePurchaseStatusResult** – nurodo „Store“ pirkimo SDK iškvietimo rezultatą ir ar vartotojas įsigijo, ar ne. Tai padės nustatyti, ar vartotojas turi gauti licenciją naudoti „Office“
+
+- **Tag** – naudojama nurodant, iš kurios kodo vietos įvykis buvo išsiųstas
+
+- **UserSignedInExplicitly** – nurodo, ar vartotojas tiesiogiai prisijungė. Tokiu atveju jis nukreipiamas į žiniatinklį, kad gautų bandomąją versiją
+
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
 Jei dėl kokios nors priežasties nepavyksta licencijuoti vartotojo, įdiegiame atidėjimo raktą ir išsiunčiame šį signalą. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
@@ -2966,6 +3234,14 @@ Renkami šių laukų duomenys:
   - **OpportunisticTokenRenewalAttempted** – nurodo, ar bandėme oportunistiškai atnaujinti vartotojui bendrai naudojamo kompiuterio aktyvinimo režimu
 
   - **ReArmResult** – nurodo įdiegto rakto, kuris gali pratęsti dabartinės licencijos galiojimą, pradinės licencijavimo būsenos atkūrimo rezultatą
+
+### <a name="onenoteenrollmentresult"></a>OneNote.EnrollmentResult
+ 
+Šis įvykis užregistruoja būseną po „Intune“ registracijos.  Šis scenarijus būdingas paskyroms, kuriose įgalinta „Intune“.
+ 
+Renkami šių laukų duomenys:
+ 
+- **EnrollmentResult** – „Intune“ registracijos rezultatas
 
 ## <a name="microsoft-autoupdate-mau-events"></a>„Microsoft AutoUpdate“ (MAU) įvykiai
 
@@ -10053,6 +10329,33 @@ Renkami toliau apibūdintų laukų duomenys
 
 - **Source** – išvardijimas nurodo, kuris įvykis paskatino vartotojo sąsają, t. y. sukūrė naują redx vaizdą, sinchronizavimo klaida sinchronizuojant vartotojo sąsajoje, rodomas klaidos dialogo langas ir t. t.
 
+### <a name="onenoteappprovisioningmovelocalnotebooktoonlinenotebookfailed"></a>OneNote.App.Provisioning.MoveLocalNotebookToOnlineNotebookFailed
+ 
+Šis įvykis užregistruojamas, kai nepavyksta perkelti vietinio bloknoto į diską.  Šis scenarijus būdingas atidėtam vartotojo prisijungimui. Kai vartotojas prisijungia, vietinis bloknotas persiunčiamas į jo „OneDrive“ saugyklą. 
+ 
+Renkami šių laukų duomenys:
+ 
+- **ErrorMsg** – klaidos pranešimas, atitinkantis triktį.
+
+### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
+ 
+Šis įvykis užregistruojamas, kai nepavyksta sukurti bloknoto.  
+ 
+Renkami šių laukų duomenys:
+ 
+- **NetworkConnection** – užregistruojamas ryšio, kuriuo šiuo metu prijungtas įrenginys, tipas, pvz., „Wi-Fi“, neprijungtas, 3G 
+
+- **ServerType** – užregistruojamas serverio, kuriame turėjo būti sukurtas bloknotas, tipas.
+
+### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
+ 
+Šis įvykis užregistruojamas, kai įvyksta trumpųjų pastabų sinchronizavimo triktis vartotojui pirmą kartą naudojantis paslauga įrenginyje.  Tai būdinga pirmojo paslaugos naudojimo scenarijui.
+ 
+Renkami šių laukų duomenys:
+ 
+- **NetworkConnection** – užregistruojamas ryšio, kuriuo šiuo metu prijungtas įrenginys, tipas, pvz., „Wi-Fi“, neprijungtas, 3G
+
+- **ServerType** – užregistruojamas serverio, kuriame turėjo būti sukurtas trumpųjų pastabų bloknotas, tipas
 
 ## <a name="services-configuration-events"></a>Paslaugų konfigūravimo įvykiai
 
