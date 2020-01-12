@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: 7e9207148c9f294e9a1e41d353fa3cdd8878f88c
-ms.sourcegitcommit: 5be570c4403e82352142b3297507cf314815bdea
+ms.openlocfilehash: ab9404b93157875589f2625be51a9e30cc3d0795
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "38276483"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024443"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -37,7 +37,15 @@ Svarbu žinoti, kad šioms pasirinktinėms debesų technologija pagrįstoms pasl
 
 ## <a name="experiences-that-rely-on-bing"></a>Funkcijos, kurios naudoja „Bing“
 
-Kai kurios debesų technologija pagrįstos paslaugos naudoja „Microsoft Bing“. „Microsoft Bing“ yra atskira organizacija nuo „Office 365 ProPlus“ ir ją „Microsoft“ valdo nepriklausomai nuo „Office 365 ProPlus“. „Office 365 ProPlus“ programų funkcijos, kuriose naudojama „Bing“, yra [trimačiai žemėlapiai](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [žemėlapio diagramos](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [internetinių paveikslėlių įterpimas](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [internetinių 3D modelių įterpimas](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [„PowerPoint“ funkcija „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Tyrėjas](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) ir [išmanioji ieška](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). Šios funkcijos jums licencijuotos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) sąlygas ir joms taikomas [privatumo patvirtinimas](https://privacy.microsoft.com/). Bet kokios ieškos užklausos, kurias pateikiate „Office 365 ProPlus“ organizacijai naudodami šias paslaugas, siunčiamos į „Microsoft Bing“. „Bing“ organizacija jų nesusieja su jumis.
+Kai kurios debesų technologija pagrįstos paslaugos naudoja „Microsoft Bing“. „Microsoft Bing“ yra atskira organizacija nuo „Office 365 ProPlus“ ir ją „Microsoft“ valdo nepriklausomai nuo „Office 365 ProPlus“. „Office 365 ProPlus“ programų funkcijos, kuriose naudojama „Bing“, yra [trimačiai žemėlapiai](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [žemėlapio diagramos](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [internetinių paveikslėlių įterpimas](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [internetinių 3D modelių įterpimas](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [„PowerPoint“ funkcija „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Tyrėjas](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) ir [išmanioji ieška](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+
+Funkcijos, kurias „Bing“ siūlo „Outlook“, skirtoje „iOS“ ir „Android“:
+
+- **Vietos pasiūlymai:**   kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, lauke Vieta taip pat bus nurodomas visas adresas.
+- **Įdomūs kalendoriai:**   galite [prenumeruoti](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) kalendorius apie savo mėgstamas sporto komandas ar televizijos laidas.
+
+
+ Šios „Bing“ grindžiamos funkcijos jums licencijuotos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) sąlygas ir joms taikomas [privatumo patvirtinimas](https://privacy.microsoft.com/). Bet kokios ieškos užklausos, kurias pateikiate „Office 365 ProPlus“ organizacijai naudodami šias paslaugas, siunčiamos į „Microsoft Bing“. „Bing“ organizacija jų nesusieja su jumis.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Funkcijos, kurios naudoja „LinkedIn“
 
@@ -47,9 +55,13 @@ Pastaba. Toliau aprašytu privatumo parametru nevaldomos funkcijos, kurias naudo
 
 ## <a name="experiences-that-rely-on-other-microsoft-owned-online-services-andor-services-owned-by-third-parties"></a>Funkcijos, kurios naudoja kitas „Microsoft“ priklausančias internetines paslaugas ir (arba) trečiosioms šalims priklausančias paslaugas
 
+### <a name="help--contact-support"></a>Žinynas > Kreipkitės į palaikymo tarnybą
+
+Jei naudojate „Outlook“, skirtą „iOS“ ir „Android“, galite pranešti apie triktis ir susisiekti su mūsų palaikymo komanda eidami į **Parametrai** > **Žinynas ir atsiliepimai** > **Kreipkitės į palaikymo tarnybą**. Šias funkcijas teikia „HelpShift“ tarnyba, todėl bus taikomos „HelpShift“ [paslaugų teikimo sąlygos](https://www.helpshift.com/legal/terms/) ir [privatumo politika](https://www.helpshift.com/legal/privacy/).
+
 ### <a name="help--suggest-a-feature"></a>Žinynas > Pasiūlyti funkciją
 
-Pasiūlyti funkciją yra funkcija, kurią naudodami galite pateikti idėjų apie „Outlook“ naudojimą. Jūsų pasiūlymai pateikiami tiesiai trečiosios šalies paslaugų teikėjui „UserVoice“. Jei pateikiate idėją naudodami Pasiūlyti funkciją, taikomos [„UserVoice“ naudojimo sąlygos ir privatumo politika](https://outlook.uservoice.com/tos).
+Pasiūlyti funkciją yra funkcija, kurią naudodami galite pateikti idėjų apie „Outlook“ naudojimą. Jūsų pasiūlymai pateikiami tiesiai trečiosios šalies paslaugų teikėjui „UserVoice“. Jei teikiate idėjas naudodamiesi parinktimi Pasiūlyti funkciją, taikomos „UserVoice“ [paslaugų teikimo sąlygos](https://outlook.uservoice.com/tos) ir [privatumo politika](https://outlook.uservoice.com/tos#privacy-policy).
 
 ### <a name="insert-online-video"></a>Internetinio vaizdo įrašo įterpimas
 

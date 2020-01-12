@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 5bf39e1fbe7e56b77496cfc0756484a9a1c051a0
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: a2f2a951db371336be1b425b0db45e5e72ea9d75
+ms.sourcegitcommit: aaf8caeee3367ba6cf3c811d1ee3e43cfccc8b33
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067538"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41024353"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -29,6 +29,8 @@ ms.locfileid: "38067538"
 > - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
 >
 > Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
+>
+> Ši informacija bus taikoma „Outlook“, skirtos „iOS“ ir „Android“, versijai, kurią tikimasi išleisti 2020 m. sausio mėn. pabaigoje.
 
 „Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
@@ -49,13 +51,16 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „Office 365“ programą „PowerPoint“](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Automatiniai aprašai ir subtitrai |  [Pristatymas naudojant tikralaikius automatinius aprašus programoje „PowerPoint“](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
+| Vietos pasiūlymai | Kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, „Outlook“, skirtos „iOS“ ir „Android“, lauke Vieta taip pat bus nurodomas visas adresas. |
 | Žemėlapiai papildinyje „Power View“   | [Žemėlapiai papildinyje „Power View“](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | „Office“ pristatymo paslauga  | [„PowerPoint“ pateikties transliavimas internetu nuotolinei auditorijai](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
 | „PowerPoint“ dizaino įrankis   | [Profesionalių skaidrių maketų kūrimas naudojant „PowerPoint“ dizaino įrankį](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publikavimas „Power BI“   | [„Excel“ turinio publikavimas „Power BI“](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publikavimas „Microsoft Stream“    | [Pateikties pavertimas vaizdo įrašu](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | Tyrimai   | [Tyrimų paslaugų pridėjimas arba keitimas](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Vizitinės kortelės nuskaitymas|  [Kontaktų įtraukimas „Outlook“, skirtoje „Android“, nuskaitant arba bakstelėjant](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 | Išmanioji ieška   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Teminė ieška „Word“ (įtraukimas iš failų)   | [Reikiamo turinio radimas ir panaudojimas, neišeinant iš „Word“](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
 | Transformavimas į tinklalapį   | [„Word“ dokumento transformavimas į „Sway“ tinklalapį](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Vertyklė   | [Teksto vertimas į kitą kalbą](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
@@ -68,14 +73,19 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 
 | **Pavadinimas**      | **Daugiau informacijos**  |
 | ------------- | ------------- |
+| Kalendoriaus programos| [Kas yra kalendoriaus programos?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Debesies šriftai                 | [Debesies šriftai programų pakete „Office“](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
 | Duomenų tipai                  | [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
+| DUK |„Outlook“, skirtoje „iOS“ ir „Android“, pasirinkę **Parametrai** > **Žinynas ir atsiliepimai** > **DUK**, būsite perkelti į [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Rankraščio efektai                 | [Piešimas ir rašymas rašikliu „Office“](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Piktogramų įterpimas                | [Piktogramų įterpimas programų pakete „Microsoft Office“](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | „Microsoft Forms“ įterpimas      | [Formos ar apklausos įterpimas į „PowerPoint“](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
 | Internetinių 3D modelių įterpimas     | [Būkite kūrybingi naudodami 3D modelius](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
 | Internetinių paveikslėlių įterpimas      | [Paveikslėlių įterpimas](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
 | Internetinio vaizdo įrašo įterpimas     | [Vaizdo įrašo įterpimas iš „YouTube“ ar kitos svetainės](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| Įdomūs kalendoriai| „Outlook“, skirtoje „iOS“ ir „Android“, [prenumeruokite kalendorių](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) apie savo mėgstamas sporto komandas ar televizijos laidas. |
+| Vietos pasiūlymai | Kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, „Outlook“, skirtos „iOS“ ir „Android“, lauke Vieta taip pat bus nurodomas visas adresas. |
+| Žemėlapiai išsamioje įvykio informacijoje | Žinokite, kur reikia nuvykti, naudodamiesi [žemėlapiais](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all), pateikiamais įvykio informacijoje programoje „Outlook“, skirtoje „iOS“ ir „Android“. |
 | „Office“ žinynas                 | Kai pasirenkate **Žinynas** > **Žinynas** juostelėje arba paspaudžiate F1 „Office“ programoje   |
 | Internetinių figūrų ieška („Visio“) | [Daugiau figūrų ir šablonų rinkinių](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | „PowerPoint“ funkcija „QuickStarter“     | [Temos nagrinėjimas naudojant „PowerPoint“ funkciją „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
