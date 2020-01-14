@@ -29,9 +29,9 @@ Yra naujų nuostatų parametrų, skirtų „Office“ „iOS“ įrenginiuose, l
 
 - ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
-Daugiau informacijos apie diagnostikos duomenis ir prisijungus naudojamas funkcijas žr. [Privatumo valdiklių apžvalga](overview-privacy-controls.md).
+Daugiau informacijos apie diagnostikos duomenis ir prijungtąsias funkcijas žr. [Privatumo valdiklių apžvalga](overview-privacy-controls.md).
 
-Šie nuostatų parametrai taikomi šioms taikomosioms programoms:
+Šie nuostatų parametrai taikomi šioms programoms:
 - 2.30 ir naujesnės versijos „Word“, skirtai „iOS“, „Excel“, skirtai „iOS“, ir „PowerPoint“, skirtai „iOS“.
 - 16.30 ir naujesnės versijos „OneNote“, skirtai „iOS“.
 - 1.17 ir naujesnės versijos „Visio“ peržiūros programai, skirtai „iOS“.

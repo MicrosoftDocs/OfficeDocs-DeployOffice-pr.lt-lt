@@ -59,7 +59,7 @@ Pradedant nuo naujų 16.30 versijos diegimų, jei nenustatysite šios nuostatos,
 > - Jei įdiegsite 16.28 arba 16.29 versiją ir nenustatysite šios nuostatos, „Microsoft“ bus siunčiami ir pasirinktiniai, ir privalomieji diagnostikos duomenys. Jei tada atnaujinsite versiją į 16.30 ar naujesnę, tiek pasirinktiniai, tiek privalomieji diagnostikos duomenys vis tiek bus siunčiami „Microsoft“, nebent pasinaudosite šia nuostata ir nustatysite kitą reikšmę.
 > - Jei nustatysite šią nuostatą, ji taip pat bus taikoma 1.00.217856 ir vėlesnei „Teams for Mac“ versijai bei 16.28 ir vėlesnei „Skype“ verslui, skirtos „Mac“, versijai.
 
-Kitų vartotojų, pvz., namų vartotojų, turinčių „Office 365“ prenumeratą, siunčiami tik privalomieji diagnostikos duomenys, nebent vartotojas pasirenka taip pat siųsti pasirinktinius diagnostikos duomenis eidamas į sritį **Preferences** > **Privacy** (Nuostatos > Privatumas).
+Kitų vartotojų, pvz., namų vartotojų, turinčių „Office 365“ prenumeratą, siunčiami tik privalomieji diagnostikos duomenys, nebent vartotojas pasirenka taip pat siųsti pasirinktinius diagnostikos duomenis nuėjęs į sritį **Preferences** > **Privacy** (Nuostatos > Privatumas).
 
 ## <a name="preference-setting-for-connected-experiences-that-analyze-your-content"></a>Turinį analizuojančių prijungtųjų funkcijų nuostatos nustatymas
 
