@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: a6003b44bc31f8165e9e102104c4b25336efd4cc
-ms.sourcegitcommit: 17f7bf4bfa65042ad44dfff23489c6a538a004e8
+ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
+ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "39906620"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "41109507"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -2391,6 +2391,139 @@ Renkami šių laukų duomenys:
 
 - **SolutionId** – sprendimo ID
 
+#### <a name="officefeedeventsinitializing"></a>Office.Feed.Events.Initializing
+
+Šio įvykio duomenys renkami, kai pradedamas informacijos santraukos inicijavimas. Šis įvykis naudojamas norint nurodyti, kad informacijos santrauka pradedama, ir diagnozuoti patikimumo triktis paleidžiant informacijos santrauką.
+
+- **AppInfo.Language** – programos kalba IETF kalbos žymės formatu.
+
+- **AppInfo.Name** – naudojamo komponento pavadinimas („Office“ informacijos santrauka).
+
+- **AppInfo.Version** – programos versija.
+
+- **clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius.
+
+- **clientType** – programa, kurioje veikia komponentas.
+
+- **DeviceInfo.Make** – įrenginio gamintojas arba įrenginio OĮG pavadinimas.
+
+- **DeviceInfo.NetworkProvider** – tinklas ar mobiliojo ryšio operatorius, pvz., „AT&T“.
+
+- **DeviceInfo.NetworkType** – naudojamo įrenginio tinklo ryšio tipas, pvz., laidinis, „WiFi“ arba „WWAN“ (duomenys / mobilusis tinklas).
+
+- **DeviceInfo.OsName** – įrenginio OS pavadinimas.
+
+- **DeviceInfo.SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos.
+
+- **eventId** – įvykio pavadinimo identifikatorius. 
+
+- **EventInfo.SdkVersion** – telemetrijos SDK, kurį klientas naudoja įvykiui generuoti, versija.
+
+- **eventpriority** – įvykio siuntimo prioriteto išvardijimo reikšmė.
+
+- **feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius.
+
+- **hostAppRing** – vartotojų, kuriems buvo paskirstyta programa, ratas.
+
+- **properties** – pateikiami kiekvieno įvykio surinkti papildomi metaduomenys.
+        
+    - **ClientTimeStamp** – laiko žyma, kada įvykis buvo užregistruotas kliente.
+
+- **publicEventName** – viešasis įvykio pavadinimas.  
+
+- **region** – informacijos santraukų tarnybos, prie kurios yra prisijungęs vartotojas, geografinis regionas. 
+
+- **tenantAadObjectId** – visuotinis unikalusis vartotojo įmonės nuomotojo identifikatorius.
+
+- **type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis, QoS.
+
+- **userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **UserInfo.IdType** – nurodo vartotojo ID tipą. 
+
+- **UserInfo.Language** – vartotojo kalba IETF kalbos žymės formatu.
+
+- **UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje.
+
+- **UserInfo.TimeZone** – vartotojo laiko juosta pagal UTC.
+
+- **userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **version** – informacijos santraukos kliento versija.
+
+#### <a name="officefeedeventsofficefeeddidappear"></a>Office.Feed.Events.OfficeFeedDidAppear
+
+Šio įvykio duomenys renkami, kai informacijos santrauka rodoma vartotojui. Įvykis naudojamas norint patvirtinti, kad informacijos santraukos inicijavimo veiksmas buvo atliktas, ir diagnozuoti patikimumo triktis paleidžiant informacijos santrauką.
+
+- **AppInfo.Language** – programos kalba IETF kalbos žymės formatu.
+
+- **AppInfo.Name** – naudojamo komponento pavadinimas („Office“ informacijos santrauka).
+
+- **AppInfo.Version** – programos versija.
+
+- **clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius.
+
+- **clientType** – programa, kurioje veikia komponentas.
+
+- **DeviceInfo.Make** – įrenginio gamintojas arba įrenginio OĮG pavadinimas.
+
+- **DeviceInfo.NetworkProvider** – tinklas ar mobiliojo ryšio operatorius, pvz., „AT&T“.
+
+- **DeviceInfo.NetworkType** – naudojamo įrenginio tinklo ryšio tipas, pvz., laidinis, „WiFi“ arba „WWAN“ (duomenys / mobilusis tinklas).
+
+- **DeviceInfo.OsName** – įrenginio OS pavadinimas.
+
+- **DeviceInfo.SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos.
+
+- **eventId** – įvykio pavadinimo identifikatorius.
+
+- **EventInfo.SdkVersion** – telemetrijos SDK, kurį klientas naudoja įvykiui generuoti, versija.
+
+- **eventpriority** – įvykio siuntimo prioriteto išvardijimo reikšmė.
+
+- **feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius.
+
+- **hostAppRing** – vartotojų, kuriems buvo paskirstyta programa, ratas.
+
+- **properties** – pateikiami kiekvieno įvykio surinkti papildomi metaduomenys.
+        
+  - **bridgeWaitingTime** – metrika, naudojama diagnozuoti informacijos santraukos generavimo našumui.
+    
+  - **ClientTimeStamp** – laiko žyma, kada įvykis buvo užregistruotas kliente.
+        
+  - **renderTime** – metrika, naudojama diagnozuoti informacijos santraukos generavimo našumui.
+
+- **publicEventName** – viešasis įvykio pavadinimas.  
+
+- **region** – informacijos santraukų tarnybos, prie kurios yra prisijungęs vartotojas, geografinis regionas. 
+
+- **tenantAadObjectId** – visuotinis unikalusis vartotojo įmonės nuomotojo identifikatorius.
+
+- **type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis, QoS.
+
+- **userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **UserInfo.IdType** – nurodo vartotojo ID tipą. 
+
+- **UserInfo.Language** – vartotojo kalba IETF kalbos žymės formatu.
+
+- **UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje.
+
+- **UserInfo.TimeZone** – vartotojo laiko juosta pagal UTC.
+
+- **userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **version** – informacijos santraukos kliento versija.
+
+
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Leidžia mums žinoti, ar failas iš FIO sluoksnio atidarytas sėkmingai. Naudojama funkcijos sveikatai užtikrinti ir stebėti.
@@ -3131,6 +3264,191 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
 - **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
+
+#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
+
+Registruojame, kada vartotojas yra programoje, kuri įkelia asmens kortelę, tikintis, kad vartotojas atidarys „Live“ asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai įkelta. 
+
+Renkami šių laukų duomenys: 
+
+- **Data.appContextId** – atsitiktine tvarka generuojamas ID, naudojamas identifikuoti skirtingas tos pačios programos paskyras
+
+- **Data.AppInfo.Name** – naudojamos tarnybos pavadinimas (profilio kortelė)
+
+- **Data.AppInfo_Id** – valdančiosios programos pavadinimas
+
+- **Data.AppInfo_Version** – valdančiosios programos versija
+
+- **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
+
+- **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
+
+- **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
+
+- **Data.clientType** – įrenginio, kuriame veikia programa, tipas
+
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., „LivePersonaCardRenderedAction“
+
+- **Data.eventpriority** – įvykio siuntimo prioriteto išvardijimo reikšmė.
+
+- **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
+
+- **Data.OTelJS.Version** – OTel registravimo priemonės versija
+
+- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+
+  - **accountType** – ar vartotojas priklauso organizacijai ar vartotojui
+
+  - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas
+
+  - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
+
+  - **ClientTimeStamp** – laikas programoje, kada buvo užregistruotas įvykis
+
+  - **consumerCorrelationId** – pirmiau esančio Data.clientCorrelationId dublikatas
+
+  - **contextType** – iš kokio konteksto (programos) buvo paleista kortelė
+
+  - **ecsConfigIds** – kortelėje įgalintų funkcijų versijų identifikatoriai
+
+  - **ecsTagId** – funkcijų žymės ID
+
+  - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+
+  - **flights** – kortelėje įgalintos funkcijos
+
+  - **fromCache** – ar duomenys buvo surinkti iš atminties
+
+  - **hasFinePointer** – ar įrenginys turi pelės žymiklio galimybę
+
+  - **hasHoverEvents** – ar įrenginys turi pelės laikymo galimybę
+
+  - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+
+  - **offlineResolved** – ar duomenys buvo surinkti neprisijungus
+
+  - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
+
+- **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis
+
+- **Data.userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.Id dublikatas)
+
+- **Data.UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.MsaId dublikatas)
+
+- **Data.version** – tarnybos versija (profilio kortelė)
+
+- **Data.workloadCulture** – valdančiojoje programoje nustatyta kultūra
+
+- **DeviceInfo_Id** – įrenginio visuotinis unikalusis identifikatorius
+
+- **DeviceInfo_Make** – operacinės sistemos prekės ženklas
+
+- **DeviceInfo_Model** – įrenginio modelis
+
+- **DeviceInfo_OsName** – įrenginio OS pavadinimas
+
+- **DeviceInfo_OsVersion** – operacinės sistemos versija
+
+- **DeviceInfo_SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos
+
+#### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
+
+Registruojama, kai vartotojas atidaro išplėstą asmeninę kortelę. Naudojama stebėti kritines tiesioginių asmeninių kortelių klaidų dažnumo anomalijas.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo_Id** – valdančiosios programos pavadinimas
+
+- **AppInfo_Version** – valdančiosios programos versija
+
+- **Data.appContextId** – atsitiktine tvarka generuojamas ID, naudojamas identifikuoti skirtingas tos pačios programos paskyras
+
+- **Data.AppInfo.Name** naudojamos tarnybos pavadinimas (profilio kortelė)
+
+- **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
+
+- **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
+
+- **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
+
+- **Data.clientType** – įrenginio, kuriame veikia programa, tipas
+
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., LivePersonaCardRenderedAction
+
+- **Data.exportName** vartotojo veiksmo įvykio žmonėms perskaitomas pavadinimas, pvz., OpenedPersonaCard
+
+- **Data.exportType** – BDAR eksportavimo užklausos įvykio kategorija
+
+- **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
+
+- **Data.hostAppRing** – žiedas, kuriuo buvo išplatinta programa
+
+- **Data.OTelJS.Version** – OTel registravimo priemonės versija
+
+- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+
+  - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
+
+  - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
+
+  - **clientScenario** – nustatyti programos funkciją, iš kurios buvo atidaryta asmens kortelė
+
+  - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas 
+
+  - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+
+  - **hasPersonalInsightRing** – „Office“ arba „LinkedIn“ įžvalgos gali būti prieinamos vartotojui
+
+  - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+
+  - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+  - **section** – aktyvi išplėstos kortelės sekcija
+
+- **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
+
+- **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis
+
+- **Data.userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.Id dublikatas)
+
+- **Data.UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius 
+
+- **Data.UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius(Data.UserInfo.MsaId dublikatas)
+
+- **Data.version** – tarnybos versija (profilio kortelė)
+
+- **DeviceInfo_Id** – įrenginio visuotinis unikalusis identifikatorius
+
+- **DeviceInfo_Make** – operacinės sistemos prekės ženklas
+
+- **DeviceInfo_Model** – įrenginio modelis
+
+- **DeviceInfo_OsName** – įrenginio OS pavadinimas
+
+- **DeviceInfo_OsVersion** – operacinės sistemos versija
+
+- **DeviceInfo_SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos
+
+- **NetworkCost** – nurodo tinklo kainą / tipą (apskaičiuotas, apskaičiuotas virš savikainos ir kt.)
+
+- **NetworkCountry** – siuntėjo šalies kodas, pagrįstas netvarkytu kliento IP adresu
+
 
 #### <a name="officelivepersonacarduseractionsopenedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedPersonaCard
 
@@ -3910,7 +4228,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
 
-  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, kuris buvo naudojamas veiksmui su bendrinamais dokumentais
 
   - **Data\_Doc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
@@ -4174,7 +4492,9 @@ Renkami šių laukų duomenys:
 
 - **Data_SrcDoc_ServerType:long** – iš anksto apibrėžtas serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
 
-- **Data_SrcDoc_ServerVersion:long** – patikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office16“ Data_SrcDoc_SessionId:long sukurtas GUID, identifikuojantis dokumento egzempliorių tame pačiame proceso seanse
+- **Data_SrcDoc_ServerVersion:long** – tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
+
+- **Data_SrcDoc_SessionId:long** – generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
 
 - **Data_SrcDoc_SharePointServiceContext:string** – nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkama kliento ir serverio įvykių žurnalų koreliacijai
 
@@ -7689,6 +8009,8 @@ Renkami šių laukų duomenys:
 - **AssetId** – taikomosios programos ištekliaus ID
 
 - **ErrorCode** – bendras praleistas laikas
+
+- **IsAugmentationScenario** – nurodo, ar praplėtimo ciklas yra atsakingas už „Office“ sprendimų sistemos valdiklio inicijavimą
 
 - **IsDebug** – nurodo, ar seansas yra derinimo seansas
 
