@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 4410d94ea0179200fce0cd4dd16aebd62a21a2f6
-ms.sourcegitcommit: 4ec332a6f7457f08aa17fdbb7ee7f308a449887f
+ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
+ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962853"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42225000"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -78,6 +78,17 @@ Tolesniuose skyriuose pateikiama ši informacija:
 
 Šie diagnostikos duomenų įvykiai renkami, kai „Office“ bando gauti autentifikavimo atpažinimo ženklą (tyliai arba pateikdamas raginimus).
 
+### <a name="officeandroidmsaguesttoaad"></a>Office.Android.MSAGuestToAAD
+
+Šis įvykis padeda suprasti, kiek vartotojų gauna raginimus įvesti asmeninės paskyros slaptažodį bandant pasiekti darbo paskyros šaltinį, kadangi jų asmeninė paskyra gali būti galiojantis svečias jų darbo paskyros nuomininkui.
+
+Šie duomenys padeda suprasti, kiek vartotojų gauna pakartotinius raginimus prisijungti, ir nustatyti prioritetus AAD atpažinimo ženklo įsigijimui, kuris pagal nutylėjimą yra „Microsoft“ paskyros SAML pasireiškime.
+
+Renkami šių laukų duomenys:
+
+- **Žymė** - Nurodo, kad vartotojas gavo raginimą prisijungti prie asmeninės paskyros, kai bandė pasiekti darbo paskyros šaltinį.
+
+
 ### <a name="officeidentityfbapromptwin32"></a>Office.Identity.FbaPromptWin32
 
 Renkama, kai „Office“ rodo vartotojui formomis pagrįsto autentifikavimo prisijungimo raginimą.
@@ -86,7 +97,7 @@ Kartu su tyliu atpažinimo ženklų gavimu, naudojami autentifikavimo raginimai 
 
 Formomis pagrįsto autentifikavimo (FBA) prisijungimo raginimai naudojami kai kuriais vietinio autentifikavimo scenarijais ir paprastai norime įsitikinti, kad tai nevyksta, nes visi turėtų naudoti šiuolaikinį autentifikavimą dėl su FBA siejamų saugos pažeidžiamumų.
 
-**Renkami šių laukų duomenys:**
+Renkami šių laukų duomenys:
 
   - **AuthScheme** – naudojama autentifikavimo schema
 
@@ -856,7 +867,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
-  - **Data\_SusClientID –**  kompiuterio „Office“ naujinimo identifikatorius 
+  - **Data\_SusClientID –** kompiuterio „Office“ naujinimo identifikatorius 
 
   - **Data\_TaskState –** kokia užduoties būsena, pvz., vykdoma arba atšaukta 
 
@@ -2693,6 +2704,11 @@ Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus
 
 - **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
 
+### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
+
+Šis įvykis naudojamas gauti standartinius meta duomenis kiekvieno Inventory priedo paleidimo metu, kuris yra dalis „Office“ aptarnavimo tvarkytuvo bei naudojamas „Office“ atsargų informacijai tuose kompiuteriuose, kur IT administratorius pasirinko dalyvauti. Specifinio intereso meta duomenys čia yra sesijos ID. Jie naudojami norint susieti kitus duomenis, saugomus kiekvieno nuomininko debesies tarnyboje. 
+
+Šis įvykis neturi papildomų laukų, kadangi yra reikalingi tik meta duomenys.
 
 ### <a name="officeserviceabilitymanagerinventoryaddonresults"></a>Office.ServiceabilityManager.InventoryAddon.Results
 
