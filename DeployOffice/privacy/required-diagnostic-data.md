@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 74f80a494eff6f82310a89cbcc52e10d0a324e15
-ms.sourcegitcommit: 752267dddf9c011bb91136f6223f641053450599
+ms.openlocfilehash: bd9a5754a8741ee3cc96bf843c59f8f509bc1738
+ms.sourcegitcommit: de34e0fff15c3bd099df452d8f4771398f9dfaf6
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "41109507"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42265471"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -1305,6 +1305,321 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 
 Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas).
 
+#### <a name="account_action"></a>account_action
+
+Būtina siekiant užtikrinti tinkamą paskyros konfigūracijos veikimą ir naudojimą, kad būtų galima stebėti paskyros kūrimo sveikatą, galimybes įtraukti naujų el. pašto paskyrų ir stebėti paskyros dalinius atkūrimus. 
+
+Renkami šių laukų duomenys: 
+
+- **account_calendar_count** – kiek kalendorių turi paskyra
+ 
+- **action** – atliekamo veiksmo tipas, pvz., create_account, delete_account.
+ 
+- **duration_seconds** – veiksmo trukmė
+ 
+- **entry_point** – veiksmo įvesties vieta, kaip vartotojas pradėjo veiksmą
+ 
+- **has_hx** – ar įrenginyje yra paskyra, kuri naudoja mūsų naują pašto sinchronizavimo paslaugą. Nebūtinai paskyra, su kuria buvo atliktas veiksmas
+ 
+- **is_hx** – paskyra, naudojanti mūsų naują pašto sinchronizavimo tarnybą
+ 
+- **is_shared_mailbox** – ar veiksmas susijęs su bendrinama pašto dėžute
+ 
+- **number_of_accounts** – bendras paskyrų, kuriose atliekamas veiksmas, skaičius
+ 
+- **result** – veiksmo rezultatas, pvz., sėkmingas, nepavyko.
+   
+- **server_type** – paskyros serverio tipas, panašus į account_type
+ 
+- **shared_type** – bendrinamos paskyros tipas (jei paskyra bendrinama)
+ 
+- **scope** – veiksmo aprėptis, jei norite panaikinti paskyrą, this_device arba all_devices
+ 
+- **total_calendar_accounts** – kalendoriaus paskyrų skaičius veiksmo atlikimo metu
+ 
+- **total_email_accounts** – el. pašto paskyrų skaičius veiksmo atlikimo metu
+ 
+- **total_file_accounts** – failų paskyrų skaičius veiksmo atlikimo metu
+
+#### <a name="app_error"></a>app_error
+
+Stebi kritinių programų klaidas, kad galėtume išvengti problemų, dėl kurių programa gali užstrigti arba neleisti skaityti el. laiškų.
+
+Renkami šių laukų duomenys: 
+
+- **clientName** – debesies failo, kuriame įvyko klaida, kliento vardas, jei taikoma.
+
+- **cloudfile_error_type** – įvykusios debesies failo klaidos tipas, jei taikoma.
+
+- **cloudfile_response_type** – įvykusios debesies failo klaidos atsako pavadinimas, jei taikoma.
+
+- **component_name** – programos, kurioje įvyko klaida, komponento pavadinimas, pvz., paštas ar kalendorius.
+
+- **debug_info** – informacija apie klaidą, kuri įvyko dėl debesies failo, kad būtų galima nustatyti, kodėl įvyko klaida.
+
+- **error_origin_identifier** – klaidos, kurį įvyko su juodraščiu, kilmė, jei taikoma.
+
+- **error_type** – įvykusios klaidos tipas. Kai kurie pavyzdžiai apima juodraščio įrašymą, juodraščio siuntimą ir debesies failo klaidas.
+
+- **exrule** – išplėstinės taisyklės reikšmė (taikoma tik paskyros pasikartojimo klaidoms)
+
+- **exdate** – išplėstinės taisyklės data (taikoma tik paskyros pasikartojimo klaidoms)
+
+- **has_attachments** – nurodo, ar juodraštis, kuriame įvyko klaida, turi priedų, jei taikoma.
+
+- **is_IRM_protected** – nurodo, ar juodraštis, kuriame įvyko klaida, yra apsaugotas taikant informacijos teisių valdymą, jei taikoma.
+
+- **is_legitimate** – nurodo, jei klaida gaunama iš programavimo klaidos. Programavimo klaidos laikomos neteisėtomis.
+
+- **is_local** – nurodo, ar juodraštis, kuriame įvyko klaida, buvo sinchronizuotas su serveriu, jei taikoma.
+
+- **is_recoverable** – nurodo, ar klaida gali būti ištaisyta, ar tai yra neištaisoma klaida.
+
+- **rdate** – pasikartojimo taisyklės data (taikoma tik paskyros pasikartojimo klaidoms) 
+
+- **rrule** – pati pasikartojimo taisyklė (taikoma tik paskyros pasikartojimo klaidoms) 
+
+- **rrule_error_message** – pasikartojimo taisyklės sintaksės klaidos pranešimas (taikoma tik paskyros pasikartojimo klaidoms)
+
+- **rrule_error_type** – pasikartojimo taisyklės sintaksės klaidos tipas (taikoma tik paskyros pasikartojimo klaidoms)
+
+- **status_code** – įvykusios klaidos būsenos kodas. Padeda mums suprasti klaidos priežastį.
+
+Visi simboliai taip pat gali būti ypatybės. Padeda mums suprasti laiško juodraščio tekste esančius simbolius, kai įvyko klaida. Pavyzdžiui, galimos ypatybės yra „a“, „b“, „c“.
+
+#### <a name="app_launch_report"></a>app_launch_report
+
+Šis įvykis leidžia mums aptikti ir išspręsti problemas, kai „Outlook“ paleidžiama lėtai arba nevisiškai, todėl vartotojams tampa sudėtinga naudoti mūsų programą. Apima informaciją apie tam tikras įgalintas funkcijas ir kiek laiko buvo truko dalių paleistis.
+
+Renkami šių laukų duomenys: 
+
+- **is_agenda_widget_active** – nurodo mums, ar aktyvus darbotvarkės valdiklis.
+
+- **is_alert_available** – nurodo mums, ar programa sukonfigūruota taip, kad pranešimuose būtų leidžiami įspėjimai.
+
+- **is_background_refresh_available** – nurodo, ar programa sukonfigūruota taip, kad būtų galima atnaujinti fone.
+
+- **is_badge_available** – nurodo mums, ar programa sukonfigūruota taip, kad pranešimuose būtų leidžiami ženkleliai.
+
+- **is_intune_managed** – nurodoma, ar programą valdo „Intune“.
+
+- **is_registered_for_remote_notifications** – nurodo, ar programa užregistruota nuotoliniams pranešimams.
+
+- **is_sound_available** – nurodo mums, ar programa sukonfigūruota taip, kad pranešimuose būtų leidžiami garsai.
+
+- **is_watch_app_installed** – nurodo, ar buvo įdiegta „Outlook“ stebėjimo programa.
+
+- **is_watch_paired** – nurodo, ar „Outlook“ stebėjimo programa susieta su pagrindine „Outlook“ programa.
+
+- **launch_to_db_ready_ms** – nurodo, kiek laiko „Outlook“ programa praleido nuo paleidimo iki duomenų bazės paruošimo.
+
+- **num_calendar_accounts** – nurodo kalendoriaus paskyrų programoje skaičių.
+
+- **num_cloud_accounts** – nurodo saugyklos paskyrų programoje skaičių.
+
+- **num_hx_calendar_accounts** – nurodo, kalendoriaus paskyrų skaičių programoje, kuri jungiasi prie mūsų naujosios pašto sinchronizavimo tarnybos.
+
+- **num_hx_mail_accounts** – nurodo, el. pašto paskyrų skaičių programoje, kuri jungiasi prie mūsų naujosios pašto sinchronizavimo tarnybos.
+
+- **num_cloud_accounts** – nurodo el. pašto paskyrų programoje skaičių.
+
+#### <a name="calendar_action"></a>calendar_action
+
+Naudojama stebėti bet kokį galimą neigiamą poveikį jūsų gebėjimui atlikti pagrindinius kalendoriaus veiksmus, pvz., kurti ar redaguoti įvykius.  Įvykis taip pat gali apimti ypatybių pavadinimų seką ir nurodyta, ar jie buvo pakeisti. Pvz., „title_changed“, „online_meeting_changed“ ir „description_changed“ yra ypatybės pavadinimai, kurie įtraukti, kad padėtų mums suprasti, ar yra kokių nors su tam tikromis ypatybėmis susijusių problemų.
+
+Renkami šių laukų duomenys: 
+
+- **account_sfb_enabled** – padeda užtikrinti tinkamą „Skype“ verslui konfigūraciją. 
+
+- **action** – veiksmo, kuris buvo atliktas su kalendoriumi, tipas. Apima tokius veiksmus, kaip atidarymą, redagavimą, sparčiųjų klavišų įtraukimą, atidėjimą ir t. t. Padeda užtikrinti, kad kalendoriaus patirtis veiktų taip, kaip numatyta, ir niekas nesugedo 
+
+- **action_result** – veiksmo, kuris buvo atliktas naudojant kalendoriaus komponentus, rezultatas. Tai gali būti tokios reikšmės kaip sėkminga, nepavyko, nežinoma ir baigėsi skirtasis laikas. Naudojama stebėti sėkmės koeficientą veiksmams ir nustatyti, ar yra plačiai paplitusi problema dėl kalendoriaus veiksmų. 
+
+- **attendee_busy_status** – dalyvio, su kuriuo susijęs veiksmas, užimtumo būsena. Ši reikšmė gali būti laisvas, užimtas arba neapsisprendęs. Padeda suprasti, ar kilo problemų dėl veiksmų, susijusių su tam tikra užimtumo būsena. 
+
+- **availability** – pasiekiamumo reikšmė, jei užimtumo reikšmė susitikimo metu pakeista į laisvas / užsiėmęs. Padeda suprasti, ar kilo problemų su tam tikros prieinamumo reikšmės nustatymu. 
+
+- **calendar_onlinemeeting_default_provider** – apima numatytąjį internetinių susitikimų teikėją, skirtą naudoti su serverio palaikomų internetinių susitikimų kūrimu. Apima „Skype“, „Skype“ verslui, „Hangout“ ir „Teams“ verslui tipus. Padeda nustatyti potencialias problemas kuriant internetinius susitikimus tam tikruose teikėjuose. 
+
+- **calendar_onlinemeeting_enabled** – teisinga, jei kalendorius palaiko serverio palaikomą internetinių susitikimų kūrimą, pagrįstą numatytuoju internetinių susitikimų teikėju. Padeda suprasti, ar yra kokių nors problemų dėl kalendorių, kuriuose įgalinti internetiniai susitikimai. 
+
+- **calendar_type** – kalendoriaus, kurio įvykis įjungtas po to, kai vartotojas suredagavo šį susitikimą, tipas. Galimos reikšmės yra pirminis, antrinis, bendrinamas ir grupės. Padeda suprasti, ar kilo problemų su tam tikro tipo kalendoriais. 
+
+- **delete_action_origin** – atlikto naikinimo veiksmo kilmė. Apima reikšmes, pvz., naršymo juostos įrankių juostą ir kapsulės įrankių juostą.  Padeda suprasti, ar kyla problemų dėl susitikimų panaikinimo iš tam tikros vietos. 
+
+- **distribution_list_count** – dalyvių, kurie yra platinimo sąrašuose, skaičius. Padeda sekti, ar yra problemų, susijusių su dalyviais, kurie yra įtraukti platinimo sąrašus. 
+
+- **guest_count** – susitikime esančių svečių skaičius.  Padeda užtikrinti tinkamą svečių įtraukimą. 
+
+- **is_all_day** – naudojama kartu su „meeting_duration“ siekiant nurodyti, ar susitikimas vyksta visą dieną. Padeda suprasti, ar yra kokių nors problemų, susijusių su veiksmais, atliekamais visą dieną vykstančių susitikimų metu. 
+
+- **is_organizer** – padeda suprasti, ar organizatorius gali tinkamai redaguoti ir kurti susitikimus. 
+
+- **is_recurring** – padeda suprasti, ar kyla problemų, konkrečiai paveikiančių pasikartojančius susitikimus. 
+
+- **launch_point** – veiksmo pradžios taškas. Gali turi reikšmes, pvz., valdiklio antraštė, valdiklių poraštė, visos dienos valdiklis ir kalendoriaus nuoroda. Padeda suprasti, nuo ko buvo pradėtas veiksmas. 
+
+- **location_count** – vietų, kurios nustatytos sukūrus arba redagavus įvykį, skaičius. Padeda suprasti, ar kilo kokių nors problemų kuriant ar redaguojant įvykius kai naudojamas tam tikras vietų skaičius. 
+
+- **location_selection_source_type** – vietos pasirinkimo šaltinio tipas. Gali būti tokios reikšmės kaip vietos pasiūlymai, pasirinktinė vieta ar esama vieta. Padeda diagnozuoti problemas dėl vietos pasirinkimo iš tam tikrų šaltinių. 
+
+- **location_session_id** – susitikimo vietos parinkiklio seanso ID. Padeda diagnozuoti problemas dėl vietos pasirinkimo siekiant ją įtraukti į susitikimą. 
+
+- **location_type** – pasirinktos vietos tipas.  Apima tipus, pvz., pasirinktinė vieta, konferencijų salė ir „Bing“. Padeda suprasti problemas dėl atitinkamų susitikimo vietų tipų. 
+
+- **meeting_duration** – susitikimo trukmė.  Padeda užtikrinti, kad susitikimai konfigūruojami naudojant teisingus laikus. 
+
+- **meeting_insights_type** – įvykio informacijos susitikimo įžvalgų tipas.  Apima failą ir pranešimą. Padeda suprasti rodomų susitikimo įžvalgų skaičių. 
+
+- **meeting_type** – su veiksmu susieto internetinio susitikimo tipas.  Apima „Skype“, „Skype“ verslui, „Hangout“ ir „Teams“ verslui tipus. Padeda suprasti, ar susitikimai internete tinkamai sukonfigūruoti. 
+
+- **origin** – kalendoriaus veiksmo kilmė. Apima tokius tipus kaip darbotvarkė, kalendorius, valdiklio darbotvarkė ir t. t. Padeda mums užtikrinti geresnę sąveiką tarp kalendoriaus komponentų 
+
+- **recurrence_scope** – susitikimo pasikartojimo įvykis – pasikartojimas ar seka.  Padeda suprasti, ar kyla problemų redaguojant skirtingų pasikartojimo tipų susitikimus. 
+
+- **reminder_time** – susitikimo priminimo laikas, jei buvo pakeistas.  Naudojamas užtikrinti, susitikimo priminimo laikas įrašytas tinkamai. 
+
+- **reminders_count** – įvykio priminimų skaičius, jei buvo pakeisti priminimai. Padeda nustatyti problemas dėl kelių įvykio priminimų. 
+
+- **sensitivity** – susitikimo konfidencialumas. Apima tokius tipus kaip: įprastas, asmeninis, privatu ir konfidencialus. Padeda suprasti, ar tinkamai konfigūruojamas susitikimo konfidencialumas. 
+
+- **session_duration** – seanso trukmė milisekundėmis. Padeda suprasti, ar kyla problemų, dėl kurių padidėja laiko trukmė, būtina kalendoriaus veiksmui atlikti. 
+
+- **shared_calendar_result** – veiksmo, atlikto su bendrinamu kalendoriumi, rezultatas. Galimos reikšmės yra gerai, nėra teisių, nežinoma, savininkas vietinis ir savininkas yra grupė. Padeda suprasti su bendrinamais kalendoriais atliekamų veiksmų patikimumą. 
+
+- **time_picker_origin** – laiko parinkiklio, skirto įrašyti veiksmą, kilmė. Apima reikšmes, pvz., daugiau parinkčių ir mažiau parinkčių. Padeda suprasti, kaip vartotojas naršė srautą, kad galėtų įrašyti susitikimą ir užtikrinti tinkamą jo funkcionavimą. 
+
+- **title** – automatiškai pasiūlytas pavadinimas iš programos apibrėžtų reikšmių. Apima tokias reikšmes kaip „Skambutis“, „Pietūs“ ir „Skype“. Padeda suprasti, ar tinkamai sukonfigūruotas automatiškai pasiūlytas pavadinimas. 
+
+- **txp** – įvykio užsakymo ar rezervacijos tipas, jei toks yra. Apima tipus, pvz., įvykio rezervavimas, skrydžio rezervavimas, automobilių nuomos rezervavimas ir t. t. Padeda suprasti, ar užsakymo / rezervavimo kortelės veikia tinkamai. 
+
+- **upcoming_event_count** – artėjančių įvykių, rodomų artėjančių įvykių rodinyje, skaičius. Padeda suprasti, ar kilo problemų su artėjančių įvykių rodiniu. 
+
+- **upcoming_event_seconds_until_event** – sekundžių, likusių iki kito artėjančio įvykio pradžios, skaičius. Padeda suprasti įprastus įvykius, kurie rodomi artėjančių įvykių rodinyje. 
+
+- **value** – konkretaus veiksmo reikšmė, pvz., įspėjimo delsos trukmė ar kartojimas iki kategorijos. Padeda suprasti veiksmo atlikimo kontekstą. 
+
+#### <a name="combined_search_use"></a>combined_search_use
+
+Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui atlikti pagrindines ieškos funkcijas, pvz., ieškoti el. laiškų, kontaktų ar įvykių.
+
+Renkami šių laukų duomenys:  
+
+- **account_switcher_action_type** – šis veiksmų tipas seka, ar vartotojas naudojo paskyros perjungiklį paprastam aptikimui, ar nusprendė perjungti paskyrą
+
+- **action** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas.
+
+- **action_type** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas. 
+
+- **answer_result_selected_count** – seka, kiek kartų ieška buvo „sėkminga“, t. y. ar vartotojas rado pageidaujamą žmogų? Sukūrė el. laišką? Pažymėjo laišką? 
+
+- **contact_result_in_full_list_selected_count** – seka, kiek kartų vartotojas paprašė „peržiūrėti visus kontaktus“ visame sąraše ir jis buvo pasirinktas bendro paieškos seanso metu
+
+- **contact_result_selected_count** – seka, kiek kontakto rezultatų buvo pasirinkta bendro paieškos seanso metu
+
+- **conversation_result_selected_count** – seka, kiek pokalbių buvo pasirinkta bendro paieškos seanso metu
+
+- **entrance_type** – nustato, kaip vartotojas pradėjo ieškos užklausą: ieškos skirtuke, naudodamas nulinę užklausą, ieškos antraštę ar ieškos rezultatą. 
+
+- **has_contact_results** – nurodo, ar kontakto rezultatai rodomi ieškos užklausoje
+
+- **include_deleted** – ar ieškos rezultatuose rodomos panaikintos parinktys 
+
+- **re_enter_search_tab** – Bulio funkcija, skirta nurodyti, ar vartotojas perjungė skirtukus prieš pasirinkdamas ieškos rezultatą
+
+- **result_selected_type** – su kokio tipo duomenimis, kurie buvo rodomi, sąveikavo vartotojas, t. y. peržiūrėjo visus kontaktus, pokalbius, įvykius ir t. t. 
+
+- **search_conversation_result_data** – apima duomenis apie pokalbį, pasirinktą iš ieškos rezultatų, įskaitant paskyros tipą (HX, AC ir t. t.), nesvarbu, ar pranešimas yra debesies tarnyboje, ir ar rodomas puslapio poslinkis yra tas pats puslapis kaip pirmasis laiškas. 
+
+- **search_origin** – kaip buvo pradėta ieška, t. y. naudojant balso asistentą, „Cortana“, klaviatūros įvestį ir pan. 
+
+- **search_request_reason** – nurodo priežastį, kodėl iš programos buvo išsiųsta ieškos užklausa, taip nurodant komponento ar vartotojo veiksmą, kuris sukėlė iešką.
+
+- **search_result_filter_type** – nurodo, kokio tipo filtras buvo pritaikytas paieškai: rodyti visus ar tik priedus
+
+- **search_scope** – eilutė, nurodanti, kokio tipo paskyroje vartotojas atliko iešką (t. y. „Exchange“, „Gmail“ ir t. t.), ar ji buvo atliekama visose paskyrose. 
+
+- **search_session_ended_type** – nurodo, kur buvo baigta ieška, nes ji buvo atšaukta arba atnaujinta užklausa
+
+- **search_suggestion_type** – nurodo, kas slypi už ieškos pasiūlymo, t. y. yra rašybos korekcija? Atsižvelgiant į retrospektyvą? Automatinis užbaigimas?
+
+- **see_all_contacts_selected_count** – seka, kiek kartų buvo pasirinkta „peržiūrėti visus kontaktus“ bendro paieškos seanso metu
+
+- **top_mail_result_selected_count** – seka, kiek kartų vartotojas pasirenka jam pateiktus populiariausius rezultatus. 
+
+#### <a name="compose_mail_accessory"></a>compose_mail_accessory
+
+Šis įvykis leidžia nustatyti ir išspręsti problemas, susijusias su pagrindiniais laiškų kūrimo veiksmais, kad nekiltų problemų, susijusių su failo pridėjimu, fotografavimu kaip priedo ar jūsų prieinamumo siuntimu.
+
+Renkami šių laukų duomenys: 
+
+- **action** – nurodo veiksmą, kurį buvo bandyta atlikti registruojant veiksmą. Kai kurie pavyzdžiai apima failo pridėjimą ir didesnio parinkčių kiekio pateikimą.
+
+- **icon_name** - nurodo piktogramos, kuri buvo rodoma registruojant veiksmą, pavadinimą.
+
+#### <a name="conversation_view_action"></a>conversation_view_action
+
+Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui peržiūrėti ir atsakyti į el. laiškus
+
+Renkami šių laukų duomenys:
+
+- **contains_mention** – nurodo, ar pokalbyje buvo naudojamas @ paminėjimas, kad galėtume nustatyti problemas su paminėjimais laiškuose
+
+- **conversation_type** – nurodo, kokio tipo el. laiško rodinys buvo generuotas, pvz., vieno laiško rodinys ar kelių laiškų rodinys. Padeda nustatyti problemas, susijusias su konkrečiu laiško tipu jūsų el. pašto pokalbių rodinyje.
+
+- **suggested_reply_char_count** – nurodo, kiek simbolių siūloma pateiktame atsakyme (jei galima), kad galėtume nustatyti su pasiūlymais susijusius nesklandumus
+
+- **suggested_reply_click_pos** – nurodo, kurioje padėtyje buvo sugeneruotas pateiktas atsakymas (jei galima), kad galėtume nustatyti konkretaus pasiūlymo nesklandumus
+
+- **use_default_quick_reply_mode** – nurodo, ar buvo naudojamas numatytasis spartaus atsakymo režimas, kad galėtume nustatyti problemas, susijusias su el. pašto spartaus atsakymo patirtimi
+
+#### <a name="draft_action"></a>draft_action
+
+Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui kurti ir įrašyti el. pašto priedus.
+
+Renkami šių laukų duomenys: 
+
+- **action** – veiksmo tipas, pvz., įrašyti, atmesti.
+ 
+- **draft_message_id** juodraščio laiško ID
+
+- **is_groups** – ar juodraštis siunčiamas į / iš grupės aplanko
+ 
+- **origin** – kur juodraštis buvo inicijuotas, pvz., laiško informacija, kurti.
+ 
+- **thread_id** – pokalbio juodraščio, su kuriuo jis yra susietas, gijos ID
+
+#### <a name="drawer_event"></a>drawer_event
+
+Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui pasiekti gautų laiškų pašto dėžutės aplankus.
+
+Renkami šių laukų duomenys:
+
+- **add_calendar_option** – nurodo kalendoriaus, kuris įtraukiamas iš stalčiaus, tipą, t. y. įdomus kalendorius, pašto kalendorius, bendrinamas kalendorius, kad būtų lengviau nustatyti su tam tikrais kalendoriaus tipais susijusias problemas
+
+- **calendar_accounts_count** – nurodo kalendoriaus paskyrų skaičių, kad būtų galima nustatyti su paskyrų skaičiumi susijusias problemas
+
+- **calendar_apps_count** – nurodo vartotojo įrenginyje esančių kalendoriaus programų skaičių, kad būtų lengviau nustatyti su kalendoriaus programomis susijusias problemas
+
+- **drawer_type** – nurodo stalčiaus tipą: kalendorius, paštas ar nulinė užklausa, kad galėtume nustatyti su stalčiaus tipu susijusias problemas
+
+- **from_favorites** – nurodo, ar veiksmas buvo paimtas iš parankinių, kad galėtume aptikti su parankiniais susijusias problemas
+
+- **group_calendar_count** – nurodo paskyros kalendorių skaičių, kuris padės aptikti problemas, susijusias su grupės kalendoriais
+
+- **inbox_unread_count** – nurodo neperskaitytų laiškų skaičių aplanke Gauta, kad būtų lengviau nustatyti aplanko Gauta neskaitytų laiškų skaičių.
+
+- **interesting_calendar_accounts_count** – nurodo paskyrų, kurios gali būti priskirtos įdomiems kalendoriams įrenginyje, skaičių, kad galėtume nustatyti su įdomiausiais kalendoriais susijusias problemas
+
+- **is_group_calendar** – nurodo, ar kalendorius yra grupės kalendorius, kad būtų lengviau nustatyti problemas, susijusias su grupės kalendoriais
+
+- **mail_folder_type** – nurodo pašto aplanko tipą, t. y. Gauta, Juodraščiai ir t. t., kad galėtume aptikti su aplankų tipais susijusias problemas.
+
+- **mail_accounts_count** – nurodo pašto paskyrų skaičių, kad būtų galima nustatyti su pašto paskyrų skaičiumi susijusias problemas.
+
+- **selected_group_calendar_count** – nurodo grupės kalendorių, kurie buvo pasirinkti ir aktyvūs vartotojo sąsajoje, skaičių
+
+- **visibility_toggle** – nurodo, ar vartotojas įjungė arba išjungia nurodytą kalendorių, kad galėtume nustatyti kalendorius rodymo ar slėpimo problemas
 
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
@@ -1788,6 +2103,259 @@ Renkami šių laukų duomenys:
 
 - **RMS.StatusCode** – API apibrėžtas scenarijaus ID
 
+
+#### <a name="mail_action"></a>mail_action
+
+Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui atlikti kritinius el. pašto veiksmus (pvz., naudoti pašto gijų režimą, užtikrinti tinkamą laiškų klasifikavimo veiksmų atlikimą), kad galėtume užtikrinti tinkamą el. pašto programos veikimą.
+
+Renkami šių laukų duomenys:
+
+- **account** – veiksmą atlikusi paskyra
+
+- **action** seka, kokio tipo veiksmas buvo atliekamas, t. y. archyvavimas, naikinimas, žymėjimas kaip perskaityto ir t. t. 
+
+- **attachment_content_type** – atsisiųsto priedo turinio tipas 
+
+- **attachment_content_type_with_count** – seka el. pašto priedų skaičių
+
+- **attachment_download_result** – priedo atsisiuntimo veiksmo rezultatas (t. y. sėkmingas / nepavyko)
+
+- **attachment_download_time** – priedo atsisiuntimo veiksmo laiko trukmė
+
+- **attachment_extn** – atsisiųsto priedo failo plėtinys
+
+- **attachment_id** – atsisiųsto priedo sistemos identifikatorius 
+
+- **attachment_size** – atsisiųsto priedo dydis
+
+- **domain** – atidaromo dokumento domenas
+
+- **duration** – stebi, kiek laiko truko veiksmas kaip žmonių nuskaitoma anglų k. eilutė (pvz., 1 s, 4 val.)
+
+- **error** – su veiksmu susietas klaidos pranešimas 
+
+- **event_mode** – kokio tipo įvykio režimu jis veikė, grupių ar kitu. 
+
+- **Extension** – saito arba priedo, susieto su šiuo veiksmu, failo plėtinys 
+
+- **internet_message_id** – sekimo pranešimo ID
+
+- **is_group_escalation** – nurodo, ar pranešimas, pagal kurį buvo atliktas veiksmas, buvo nusiųstas į vartotojo pašto dėžutę dėl eskalavimo (prenumeruota grupei)
+
+- **is_rule** – nurodo, ar atliktas pašto veiksmas iš naujo nustato reikšmingiausių / kitą klasifikaciją.
+
+- **is_threaded_mode** – nurodo, ar pranešimas buvo gijos režimu, t. y. kaip grupuojami pranešimai
+
+- **is_unread** – nurodo, ar pranešimas yra neskaitytas apie atliktą veiksmą
+
+- **left_swipe_setting** – nurodo, kuris veiksmas buvo nustatytas kaip braukimas į kairę
+
+- **message_id** – serverio pranešimo ID, skirtas veiksmui, arba kableliais atskirtas sąrašas, jei buvo atliktas daugiau nei vienas elementas.
+
+- **message_type** – nurodo, su kokio tipo pranešimu buvo atliktas veiksmas** – grupė ar kitas
+
+- **origin** – veiksmo šaltinis, t. y. langelių perbraukimas, nulinė užklausa, gilus saitas, el. pašto rodinys, el. laiškų sąrašas ir t. t.
+
+- **reported_to_msft** – nusiuntus el. laišką į nepageidaujamą el. paštą (pašto šiukšles) arba šiukšliadėžę (sukčiavimas), galima pasirinkti pranešti apie savo veiksmus „Microsoft“.
+
+- **retry** – ar veiksmas buvo kartojamas
+
+- **right_swipe_setting** – nurodo, kuris veiksmas buvo nustatytas kaip braukimas į dešinę 
+
+- **shortcut** – nurodo, ar nuoroda buvo naudota, ir kokia nuoroda buvo naudota planavimo pranešimui, t. y. vėliau, rytoj, pasirinkti laiką ir t. t.
+
+- **size** – saito arba priedo, susieto su šiuo veiksmu, dydis
+
+- **source_folder** – seka šaltinio aplanko tipą, kai veiksmas nurodo pereiti iš vieno aplanko į kitą, t. y. į aplanką Gauta, šiukšlinę ir t. t. 
+
+- **source_inbox** – nurodo, kuriame aplanke Gauta atliekamas pašto veiksmas (t. y. reikšmingiausi, kiti ir t. t.), state – veiksmo būsena, sėkminga arba gedimo vieta
+
+- **target_folder** – nurodo paskirties aplanko tipą perkeliant el. laiškus iš vieno aplanko į kitą
+
+- **thread_id** – pokalbio, nukreipti veiksmui, gijos ID arba kableliais atskirtas sąrašas, jei buvo skirta daugiau nei vienam elementui.
+
+- **time_taken_to_fetch_access_token** – laikas, kurį truko sistemos prieigos ženklo gavimo naudojimas saito atidarymui
+
+- **time_taken_to_fetch_drive_item** – laikas, kurį truko „OneDrive“ išteklių gavimas spustelėjus
+
+- **time_taken_to_fetch_embed_viewer_resource** – laikas, kurį truko įtaisytosios peržiūros programos inicijavimas atidarant saitus
+
+- **time_taken_to_load_embed_viewer** – laikas, kurį truko įtaisytosios peržiūros programos inicijavimas atidarant saitus
+
+- **time_taken_to_load_link** – laikas, per kurį baigiamas saito įkėlimo veiksmas
+
+- **time_taken_to_tap_attachment** – laikas tarp pranešimo atidarymo ir priedo spustelėjimo
+
+- **time_taken_to_tap_link** – laikas, kurį vartotojas užtruko peržiūrėdamas pranešimą ir spustelėdamas saitą
+
+- **txp** – nurodo, ar „txp“ elemento tipas susietas su el. laišku, su kuriuo buvo atliktas veiksmas, t. y. įvykio rezervavimas, skrydžio rezervavimas ir t. t. 
+
+- **type** – dokumento tipas, atidaromas naudojant saitą
+
+#### <a name="mail_compose"></a>mail_compose
+
+Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui kurti ir atsakyti į el. laiškus, pvz., susiduriama su problemomis atsakant visiems, formatuojant el. laišką ar siunčiant el. laiškus.
+
+Renkami šių laukų duomenys: 
+
+- **draft_message_id** – kuriamo pokalbio juodraščio ID, kad būtų galima nustatyti su el. pašto juodraščiais susijusias problemas
+
+- **message_id** – atsakomo ar persiunčiamo pokalbio pranešimo ID, kad būtų galima nustatyti problemas, susijusias su konkrečiu laišku
+
+- **origin** – nurodo, iš ko kurti kilmę, pvz., iš atsakymo visiems, naujo sukūrimo ar sparčiojo atsakymo. Padeda aptikti problemas, susijusias su tam tikru atsakymo kilmės tipu.
+
+- **is_group_escalation** – ar laiškas yra eskaluotas grupės pranešimas, kad būtų galima aptikti su grupėmis susijusias kūrimo problemas.
+
+- **is_link** – nurodo, ar sukurtas naujas projektas buvo sukurtas naudojant saitą. Padeda aptikti su juodraščiais, kurie buvo sukurti naudojant saitus, susijusias problemas.
+
+- **is_force_touch** – nurodo, ar naujai sukurtas juodraštis kurtas naudojant priverstinio lietimo veiksmą. Padeda aptikti su juodraščiais, kurie buvo sukurti atliekant šį konkretų veiksmą, susijusias problemas.
+
+- **is_groups** – ar įvykis buvo pradėtas iš grupių srities, kad galėtume aptikti su grupėmis susijusias kūrimo problemas.
+
+- **source_inbox** – nurodo šaltinio aplanką Gauta, pvz., ar jis buvo sutelktas, ar tai buvo kitas aplankas Gauta
+
+- **thread_id** – atsakomo ar persiunčiamo pokalbio gijos ID, kad būtų galima nustatyti problemas, susijusias su konkrečia gija
+
+#### <a name="meeting_call_to_action"></a>meeting_call_to_action
+
+Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui atlikti pagrindinius susitikimų veiksmus, pvz., kurti, redaguoti ar atsakyti į įvykius.
+
+Renkami šių laukų duomenys:
+
+- **event_mode** – nurodo, ar šis įvykis buvo iš grupės, kad būtų galima aptikti grupės įvykių problemas
+
+- **meeting_id** – susitikimo ID, kuris padeda mums sekti problemas per visą susitikimo laiką, kad galėtume nustatyti konkretaus susitikimo problemas
+
+- **meeting_provider** – nurodo internetinių susirinkimų teikėją, pvz., „Teams“, „Skype“ verslui, kad galėtume nustatyti problemas, susijusias su konkrečiais internetinių susitikimų teikėjais
+
+- **notify_type** – nurodo kitų paskyrų tipų atsakymo tipą, kad būtų galima nustatyti skirtingų paskyrų tipų problemas
+
+- **recurrence** – nurodo, kaip dažnai įvyksta šis susitikimas, t. y. pasikartojimas ar seka, kad galėtume nustatyti pasikartojančių susitikimų sekų problemas
+
+- **response** – nurodo atsakymo tipą, pvz., priimti arba atmesti tam tikrus paskyros tipus, kad būtų lengviau nustatyti problemas, susijusias su reagavimu į įvykius
+
+- **response_message_length** – nurodo, kokio ilgio buvo pranešimas, kad būtų galima aptikti atsakymų į susitikimus problemas
+
+- **review_time_proposal_action_type** – nurodo vartotojo atsakymo naujo laiko pasiūlymą, kad būtų galima nustatyti problemas, kylančias, kai siūlomas naujas laikas
+
+- **send_response** – nurodo, ar buvo išsiųstas atsakymas, kad galėtume nustatyti kvietimų į susitikimus atsakymų siuntimo problemas
+
+- **txp** – nurodo, kokio tipo susitikimas buvo sukurtas iš skrydžio užsakymų ir pristatymų, kad būtų galima aptikti problemas, susijusias su šio tipo susitikimais
+
+- **with_message_enabled** – nurodo, ar vartotojas gali atsakyti naudodamas pranešimą, kad būtų galima nustatyti problemas, susijusias su atsakymu į susitikimų kvietimus
+
+#### <a name="office_android_docsui_fileoperations_opendocumentmeasurements"></a>Office_Android_DocsUI_FileOperations_OpenDocumentMeasurements
+
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Android“ platformoje, ir įrašams, kai atliekama failo atidarymo operacija. Įvykis padeda apsaugoti, atnaujinti ir tinkamai atlikti failo atidarymo procedūrą. Šių duomenų rinkimo tikslas – nuolatos didinti failų atidarymo efektyvumą. 
+
+Renkami šių laukų duomenys:
+
+- **Data_AppDocsOperationDuration** – antriniame sluoksnyje praleista trukmė atliekant failo atidarymo operaciją.
+
+- **Data_AppDuration** – taikomosios programos apdorojimo trukmė atliekant failo atidarymo operaciją. 
+
+- **Data_BootDuration** – programos paleidimo trukmė atliekant failo atidarymo procesą.
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – failo plėtinys.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – globaliai unikalus identifikatorius (GUID), kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – GUID, kuris unikaliai identifikuoja tapatybę, naudojamą failui atidaryti. 
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokalus arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra žiniatinklio programos atviro platformos sąsajos protokolo (WOPI) failas.
+
+- **Data_ErrorId_Code** – klaidos kodas, nurodantis duomenų rinkimo operacijos klaidą
+
+- **Data_ErrorId_Tag** – kodo žymė, padedanti rasti klaidos vietą
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę. 
+
+- **Data_InitializationReason** – išvardijimas, rodantis kaip failas atidaromas, pvz., iš kurio vartotojo sąsajos elemento, paleistas kitos programos ir t. t.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_OfficeMobileInitReason** – išvardijimas, nurodantis atidaryto failo įvesties vietą. 
+
+- **Data_SilhouetteDuration** – failo atidarymo generavimo trukmė.
+
+- **Data_TimeSplitMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme, pradžios laiko žyma ir trukme. 
+
+#### <a name="office_android_intune_intunecompliancerequest"></a>Office_Android_Intune_IntuneComplianceRequest
+
+Šis įvykis renkamas „Office“ programoms, kuriose veikia „Android“, įskaitant „Office Mobile“, „Word“, „Excel“, „PowerPoint“ ir „OneNote“. Įvykis nurodo mėginimą prisijungti prie „Intune“ licencijuotos organizacijos paskyros, kur organizacijos administratorius sukonfigūravo strategiją, kad būtų galima taikyti sąlyginę prieigą prie programų. Jis naudojamas norint sužinoti skaičių galutinių vartotojų, kurie bando naudoti programas pagal šią strategijos konfigūraciją, ir yra suderintas su kitu įvykiu Office_Android_Intune_IntuneComplianceStatus, siekiant užtikrinti sukonfigūruotos strategijos vykdymą. 
+
+Nepasirinkti jokie duomenų laukai.
+
+#### <a name="office_android_intune_intunecompliancestatus"></a>Office_Android_Intune_IntuneComplianceStatus
+
+Šis įvykis renkamas „Office“ programoms, kuriose veikia „Android“, įskaitant „Office Mobile“, „Word“, „Excel“, „PowerPoint“ ir „OneNote“. Įvykis nurodo mėginimą prisijungti prie „Intune“ licencijuotos organizacijos paskyros, kur organizacijos administratorius sukonfigūravo strategiją, kad būtų galima taikyti sąlyginę prieigą prie programų. Šis įvykis nurodo būseną programos, prie kurios vartotojas yra prisijungęs ir kuri naudojama klaidoms tirti. Jis susietas su kitu įvykiu, Office_Android_Intune_IntuneComplianceRequest, siekiant užtikrinti sukonfigūruotos strategijos vykdymą.
+  
+Renkami šių laukų duomenys:
+
+- **Data_ComplianceStatus** – nurodo programos suderinamumo būseną prisijungiant su sėkmingo prisijungimo arba klaidos kodu.
+  - -1 – Nežinoma klaida
+  - 0 – Programa suderinama su organizacijos strategijomis
+  - 1 – Programa nesuderinama su organizacijos strategijomis
+  - 2 – Su tarnyba susijusios klaidos
+  - 3 – Su tinklu susijusios klaidos
+  - 4 – Programai nepavyko gauti autentifikavimo ženklelio 
+  - 5 – Dar negautas atsakas iš tarnybos
+  - 6 – Būtina įdiegti įmonės portalo programą
+
 #### <a name="officeandroidodwxpssotelemetry"></a>Office.Android.ODWXPSSO.Telemetry
 
 Šis įvykis padeda suprasti su kuria kita „Microsoft“ taikomąja programa įrenginyje mūsų taikomoji programa gavo automatinę bendrąją autentifikaciją, iš kurio įėjimo taško ir t. t. Taip pat padeda suprasti trikties priežastį, dėl kurios negauta automatinė bendroji autentifikacija.  Gauname geresnių įžvalgų, pvz., iš kurios „Microsoft“ taikomosios programos įrenginyje, galime gauti bendrosios autentifikacijos patirtį. Veikia įvykus triktims, kai bendroji autentifikacija veikia netinkamai.
@@ -1941,7 +2509,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_apple_intune"></a>Office_Apple_InTune
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Renkame, ar dabartinis seansas yra "Intune" valdomas. Tai naudojama „Intune“ valdomuose seansuose greitai rikiuoti / filtruoti, bei suteikia mums galimybę ištirti galimas programos „Office, kuri vykdoma kaip „Intune“ valdoma taikomoji programa, triktis.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Renkame, ar dabartinis seansas yra „Intune“ valdomas. Tai naudojama „Intune“ valdomuose seansuose greitai rikiuoti / filtruoti, bei suteikia mums galimybę ištirti galimas programos „Office, kuri vykdoma kaip „Intune“ valdoma taikomoji programa, triktis.
 
 Renkami šių laukų duomenys:
 
@@ -2067,7 +2635,7 @@ Renkami šių laukų duomenys:
 
 - **Data_TemplateIndex** – vartotojui vizualiai rodomas šablono failo skaitinis indeksas.
 
-- **Data_TemplateType** – klasifikacija, padedanti atskirti šablono tipą, bet neapsiribojant šablonais „Online“, „Online search" ar „Local“.
+- **Data_TemplateType** – klasifikacija, padedanti atskirti šablono tipą, bet neapsiribojant šablonais „Online“, „Online search“ ar „Local“.
 
 #### <a name="office_docsui_docstage_recommendedopen"></a>Office_DocsUI_DocStage_RecommendedOpen
 
@@ -2211,7 +2779,7 @@ Renkami šių laukų duomenys:
 
 - **Data_SaveErrorCode** – skaitinė reikšmė, nustatoma įvykus klaidai, kad padėtų nustatyti klaidos tipą.
 
-- **Data_SaveErrorDomain** – nurodo SaveErrorCode domeną, kaip apibrėžta „Apple“ SaveErrorDomains – „yra pasirenkamos eilutės, skirtos kodų grupėms atskirti".
+- **Data_SaveErrorDomain** – nurodo SaveErrorCode domeną, kaip apibrėžta „Apple“ SaveErrorDomains – „yra pasirenkamos eilutės, skirtos kodų grupėms atskirti“.
 
 - **Data_SaveLocation** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
@@ -2259,7 +2827,7 @@ Renkami šių laukų duomenys:
 
 - **Data_UploadAction** – užprogramuota eilutė, nurodanti, ar nusiuntimas buvo perkėlimo, ar kopijavimo operacija.
 
-- **Data_UploadResult** – užprogramuota eilutė, nurodanti mėginimo nusiųsti rezultatą, įskaitant, bet neapsiribojant parametrais „Success", „UserCancelledUpload“ ir „PreAuthFailed“.
+- **Data_UploadResult** – užprogramuota eilutė, nurodanti mėginimo nusiųsti rezultatą, įskaitant, bet neapsiribojant parametrais „Success“, „UserCancelledUpload“ ir „PreAuthFailed“.
 
 #### <a name="office_docsui_sharingui_copylinkoperation"></a>Office.Security.SecureReaderHost.OpenInOSR
 
@@ -3265,6 +3833,67 @@ Renkami šių laukų duomenys:
 
 - **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
 
+#### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
+
+Registruojame, kai vartotojas uždaro asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai uždaryta. 
+
+Renkami šių laukų duomenys: 
+
+- **BatchId** – visuotinis unikalus identifikatorius, jei buvo pateiktas užklausų rinkinys
+
+- **Data.appContextId** – atsitiktine tvarka generuojamas ID, naudojamas identifikuoti skirtingas tos pačios programos paskyras
+
+- **Data.AppInfo.Name** – naudojamos tarnybos pavadinimas (profilio kortelė)
+
+- **Data.AppInfo_Id** – valdančiosios programos pavadinimas
+
+- **Data.AppInfo_Version** – valdančiosios programos versija
+
+- **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
+
+- **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
+
+- **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
+
+- **Data.clientType** – įrenginio, kuriame veikia programa, tipas
+
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., LivePersonaCardRenderedAction
+
+- **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
+
+- **Data.OTelJS.Version** – OTel registravimo priemonės versija
+
+- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+  - **ClientTimeStamp** – laikas programoje, kada buvo užregistruotas įvykis
+  - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas
+  - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
+  - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas
+  - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+  - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+  - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
+
+- **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis
+
+- **Data.userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.Id dublikatas)
+
+- **Data.UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius(Data.UserInfo.MsaId dublikatas)
+
+- **Data.version** – tarnybos versija (profilio kortelė)
+
+- **Data_hostAppRing** – asmens kortelės pateikimo žiedas
+
+- **Event_ReceivedTime** – renginio registravimo tarnyboje laikas
+
 #### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
 
 Registruojame, kada vartotojas yra programoje, kuri įkelia asmens kortelę, tikintis, kad vartotojas atidarys „Live“ asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai įkelta. 
@@ -4228,7 +4857,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
 
-  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, kuris buvo naudojamas veiksmui su bendrinamais dokumentais
+  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
   - **Data\_Doc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
@@ -5004,9 +5633,9 @@ Renkami šių laukų duomenys:
 
 - **Data.fileType** – „Word“ failo plėtinys
 
-- **Data.innerHeight"** – šoninės srities konteinerio aukštis
+- **Data.innerHeight“** – šoninės srities konteinerio aukštis
 
-- **Data.innerWidth"** – šoninės srities konteinerio plotis
+- **Data.innerWidth“** – šoninės srities konteinerio plotis
 
 - **Data.lookupSourceLang** – nenaudojama dokumentui versti
 
@@ -5111,7 +5740,7 @@ Renkami šių laukų duomenys:
 
 - **Data.eventActionType** – telemetrijos įvykio tipas
 
-- **Data.eventTagId"** – kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalusis identifikatorius
+- **Data.eventTagId“** – kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalusis identifikatorius
 
 - **Data.flights** – įgalinti testuojami variantai
 
@@ -5861,6 +6490,12 @@ Renkami šių laukų duomenys:
 
 - **TIME_TAKEN_IN_MS** – laikas, skirtas puslapiui atidaryti
 
+#### <a name="onenotecapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken
+
+Šis signalas naudojamas siekiant užtikrinti, kad vartotojui prisijungus prie „OneNote“ „Android“ programos, bloknotai būtų tinkamai parengti ir vartotojas sėkmingai sukurtų naują pastabą.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai.
+
+Nepasirinkti jokie papildomi laukai.
+
 #### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
 
 Signalas, naudojamas rodyti visas problemas, iškilusias naudojant pranešimų juostą.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, atsiradusias naudojant pranešimų juostą.
@@ -5911,6 +6546,198 @@ Renkami šių laukų duomenys:
 
 - **RMS.VerifySignatureDuration** – parašo patvirtinimo trukmė
 
+#### <a name="read_conversation"></a>read_conversation
+
+Naudojama stebėti galimą neigiamą įtaką el. laiško generavimo sveikatai ir veikimo efektyvumui
+
+Renkami šių laukų duomenys: 
+
+- **above_40fps** – kadrų skaičius virš 40 fps
+ 
+- **above_50fps** – kadrų skaičius virš 50 fps
+ 
+- **above_55fps** – kadrų skaičius virš 55 fps
+
+- **adal_id** – paskyros „Active Directory“ autentifikavimo ID, unikalusis „Microsoft“ autentifikavimo sistemos identifikatorius 
+
+- **component_name** – filtruojant aktyvaus komponento/rodinio pavadinimas
+
+- **event_mode** – vieta, kurioje vartotojas prisijungė prie pokalbio (grupės arba kita)
+
+- **internet_message_id** – naujausio pokalbio pranešimo sekimo ID
+      
+- **orientation** – ekrano padėtis įvykio metu (stačias arba gulsčias)
+
+- **recent_message_id** – naujausio pokalbio pranešimo ID
+
+- **suggested_reply_state** – šio pokalbio siūlomų atsakymų būsena (nepasiekiama, pasiekiama, rodoma, naudojama arba atmesta)
+  
+- **total_count** – bendras rodomų kadrų skaičius pagal komponentą
+ 
+- **view_duration** – kiek laiko vartotojas peržiūrėjo komponentą
+
+#### <a name="save_attempt"></a>save_attempt
+
+Leidžia mums nustatyti problemų, kurios kilo vartotojams bandant įrašyti failą, poveikį vertinant veikiamų seansų skaičių ir ar yra bendrų šių seansų funkcijų.
+
+Renkami šių laukų duomenys: 
+
+- **file_type** – vartotojo bandyto įrašyti failo tipas (pvz.,. doc)
+
+- **origin** – iš kur buvo bandoma įrašyti failą (pvz., iš el. laiško), kad galėtume aptikti problemą, susijusią su failo įrašymu iš tam tikros programos vietos
+
+- **token_type** – atpažinimo ženklo tipas, naudojamas autentifikuoti paskyrą, kad būtų galima įrašyti failą, kad galėtume nustatyti autentifikavimo problemas, susijusias su failo įrašymais
+
+#### <a name="send_message"></a>send_message
+
+Naudojama stebėti galimą neigiamą įtaką el. laiško siuntimo sveikatai ir veikimo efektyvumui.
+
+Renkami šių laukų duomenys:
+  
+- **account** – seka veiksmą atlikusią paskyrą
+
+- **compose_duration** – seka bendrą laiką, kurį vartotoją kūrė laišką, įskaitant kelis juodraščių seansus
+
+- **draft_message_id** – seka siunčiamo laiško ID
+
+- **event_mode** – seka įvykio režimą, jei jis taikomas pranešimui („grupės“ arba „kita“).
+
+- **has_attachment** – nurodo, ar pranešimas turi priedų
+
+- **has_mip_label** – nurodo, ar pranešime buvo pažymėtas MIK žyme
+
+- **is_group_escalation** – ar tai grupės eskaluotas pranešimas, „eskaluotas pranešimas“ – tai pranešimas, išsiųstas į vartotojo pašto dėžutę dėl eskalavimo (prenumeruota grupei)
+
+- **is_groups** – seka, ar siunčiamas pranešimas yra grupės pranešimas
+
+- **key_stroke_count** – seka siunčiamo pranešimo klavišų paspaudimų skaičių
+
+- **message_id** – seka atsakomo / persiunčiamo pranešimo ID
+
+- **origin** – nurodo, kur buvo pradėtas kūrimas, t. y. naujas, atsakymas, greitasis atsakymas ir t. t.
+
+- **send_draft_origin** – nurodo, kur buvo inicijuotas siuntimas, t. y. sukurtas arba greitas atsakymas
+
+- **source_inbox** – nurodo šaltinio aplanko Gauta tipą nuorodos pranešimui, 
+
+- **suggested_reply_state** – fiksuoja šiam laiškui siūlomo atsakymo būseną, t. y. nepasiekiama, pasiekiama, rodoma, naudojama arba atmesta
+
+- **thread_id** – nurodo pokalbio į kurį atsakoma / kuris persiunčiamas gijos ID
+
+#### <a name="session"></a>session
+
+Leidžia nustatyti ir pataisyti situacijas, kai naudojame per daug įrenginio akumuliatoriaus energijos, taip pat padeda mums nustatyti galimą priežastį.
+
+Renkami šių laukų duomenys: 
+
+- **battery_level** – nurodo įrenginio akumuliatoriaus lygį, kad galėtume nustatyti, kada mūsų programa neigiamai veikia įrenginio akumuliatoriaus lygį
+
+- **has_hx** – nurodo, kad paskyra naudoja mūsų naują sinchronizavimo tarnybą, kad būtų galima aptikti sinchronizavimo tarnybos sukeltas problemas
+
+#### <a name="settings_action"></a>settings_action
+
+Leidžia aptikti situacijas, kai gali būti neigiamas poveikis jūsų gebėjimui konfigūruoti programos parametrus, pvz., pranešimų parametrus, pagrindinę el. pašto paskyrą ir konfigūruoti el. pašto parašą.
+
+Renkami šių laukų duomenys: 
+
+- **account_order_changed** – kad būtų galima tikrinti, ar pakeitėte paskyrų tvarką siekiant įsitikinti, jog ši konfigūracija tinkamai veikia 
+
+- **action** – galimi veiksmai, kurių buvo imtasi parametruose, pvz., panaikinta paskyra, kad būtų galima diagnozuoti problemas ir užtikrinti neigiamo poveikio buvimą
+
+- **auth_type** – paskyros naudojamas autentifikavimo tipas, kad suprastume, kurį vidinės sistemos sinchronizavimo sluoksnį naudojame ir būtų galima diagnozuoti problemas 
+
+- **auth_type** – nurodo vidinio autentifikavimo tipą, kuris leidžia žinoti, ar kilo konkretaus paskyros tipo problemų
+
+- **badge_count_state** – nurodo, kokio tipo ženklelių skaičiaus pageidavo vartotojas, t. y. nėra ženklelių, tik reikšmingiausi gautieji ir t. t. 
+
+- **changed_folder** – fiksuoja, ar buvo pakeistas aplankas, kad galėtume diagnozuoti problemas. 
+
+- **changed_folder** – nustato, ar šis veiksmas buvo archyvuotas, suplanuotas, ar kitas veiksmas.
+
+- **delete_scope** – paskyros naikinimo metu, ar panaikinote paskyrą iš šio įrenginio, ar iš visų įrenginių su „Outlook“.  
+
+- **delete_scope** – seka, ar šis veiksmas buvo susijęs su asmens panaikinimu tik šiame įrenginyje, ar visuose įrenginiuose, jei taikoma. 
+
+- **enabled_state** – ar tinkamai sukonfigūruotas automatinis atsakymas, kontaktų įrašymas ir išorinių vaizdų blokavimo parametrai  
+
+- **enabled_state** – ar įgalinta su veiksmu susijusi būsena
+
+- **notification_state** – nurodo, kokio tipo ženklelių skaičiaus pageidavo vartotojas, t. y. nėra ženklelių, tik reikšmingiausi gautieji ir t. t.
+
+- **server_type** – panašiai kaip auth_type, nurodo, kokio tipo paskyrą turite, kad galėtume geriau diagnozuoti problemas. Pavyzdžiai** – „Office365“, „Gmail“, „Outlook“
+
+- **server_type** – nurodo vidinio serverio tipą, kuris leidžia žinoti, ar kilo konkretaus serverio tipo problemų
+
+- **setting_properties** – seka ypatybių sąsają su parametro veiksmu 
+
+- **signature_setting** – nurodo, ar parametras buvo taikomas visoms paskyroms, ar atskirai paskyrai
+
+- **source** – nurodo, kas yra pranešimų šaltinis, jei taikoma, iš parametrų arba nustatymo netrukdyti
+
+- **state_changed_to** – skirta tikrinti, ar tinkamai sukonfigūruotas aplanko reikšmingiausi Gautieji įjungta/išjungta parametras 
+
+- **swipe_action** – skirta tikrinti, ar konfigūravote kokius nors braukimo veiksmus el. laiškų klasifikavimui, kad galėtumėte įsitikinti, kad šis nustatymas veikia tinkamai 
+
+- **swipe_action** – nurodo, ką vartotojas bandė daryti, t. y. pažymėti vėliavėle, naikinti, archyvuoti, kad galėtume nustatyti, kokio veiksmo vartotojas norėjo ir ar veiksmas pavyko. 
+
+- **swipe_direction** – skirta tikrinti, ar braukimo kryptys (kairė arba dešinė) sukonfigūruotos tinkamai
+
+- **swipe_direction** – nurodo, kokiu būdu vartotojas nustatė braukimo naudojimą, t. y. iš kairės į dešinę arba iš dešinės į kairę. Tai leidžia nustatyti, ar kilo problemų dėl konkrečios braukimo krypties.
+
+- **swipe_setting** – nurodo, jei taikoma, braukimo parametrų, susijusių su šiuo veiksmu, informaciją.
+
+- **ui_mode_setting** – pasirinktas vartotojo sąsajos režimas (tamsus, šviesus, sistemos numatytasis, mažai akumuliatoriaus energijos ir t. t.)
+
+#### <a name="sidebar_action"></a>sidebar_action
+
+Leidžia aptikti situacijas, kai gali būti neigiamas poveikis jūsų gebėjimui konfigūruoti programos parametrus, pvz., pranešimų parametrus, pagrindinę el. pašto paskyrą ir konfigūruoti el. pašto parašą.
+
+Bendri „Outlook Mobile“ duomenų laukai, skirti šiam įvykiui „iOS“ ir „Android“ įrenginyje:
+
+- **Account** – seka paskyrą ir jos duomenis, susietus su įvykiu, šių duomenų sekamos reikšmės yra bendrojoje OM lauko dokumentacijoje 
+
+- **action** – seka, kokio tipo juostos veiksmas įvyko, t. y. atmestas, pasirinktas žinyno mygtukas, el. pašto šoninė juosta ir t. t., 
+
+- **from_favorites** – seka, ar veiksmas ateina iš parankinių elemento 
+
+- **mail_folder_type** – kokio tipo aplankas buvo pasirinktas atliekant šoninės juostos veiksmą, jei toks buvo.
+
+- **sidebar_type** – seka tipą šoninės juostos, susietos su šiuo įvykiu, t. y. el. pašto arba kalendoriaus, kad galėtume užtikrinti, kad naršymas iš parankinių parametrų veikia tinkamai
+
+Renkami šių laukų duomenys: 
+
+- **account_type** – nurodo, kokio autentifikavimo tipo yra paskyra, t. y. „Gmail“, „Outlook“ ir t. t. 
+
+- **account_has_groups** – padeda užtikrinti, kad jei paskyroje yra grupių, jos yra sukonfigūruotos tinkamai
+
+- **calendar_accounts_count** – turimų kalendoriaus paskyrų skaičius, kad būtų galima užtikrinti tinkamą kalendoriaus paskyrų konfigūraciją 
+
+- **calendar_apps_count** – turimų kalendoriaus programų skaičius, kad būtų galima užtikrinti tinkamą kalendoriaus programų konfigūraciją 
+
+- **calendar_type** – turimo kalendoriaus tipas (Pagrindinis kalendorius, grupės kalendorius ir t. t.) 
+
+- **cid_type** – nurodo, kokio tipo yra paskyra, pvz., komercinė paskyra arba „Outlook.com“ paskyra.
+
+- **has_favorite_folders** – padeda užtikrinti tinkamą parankinių aplankų konfigūraciją 
+
+- **has_favorite_people** – padeda užtikrinti tinkamą parankinių žmonių / kontaktų konfigūraciją 
+
+- **has_group_calendar** – padeda užtikrinti tinkamą grupės kalendorių, jei tokių turite, konfigūraciją. 
+
+- **has_group_calendar_account** – padeda užtikrinti tinkamą grupės kalendorių, jei tokių turite, konfigūraciją. 
+
+- **has_group_toggled** – padeda užtikrinti tinkamą perjungiamų grupės kalendorių, jei tokių turite, konfigūraciją. 
+
+- **interesting_calendars_accounts_count** – turimų dominančių kalendoriaus paskyrų skaičius, kad būtų galima užtikrinti tinkamą dominančių kalendoriaus paskyrų konfigūraciją 
+
+- **mail_accounts_count** – bendras skaičius pašto paskyrų šoninėje juostoje, kad būtų galima užtikrinti tinkamą konfigūraciją 
+
+- **mail_folder_type** – aplanko, kurį bakstelėjo vartotojas, tipas, kad būtų galima užtikrinti tinkamą konfigūraciją. Tai gali būti aplankas Panaikinta, Pašto šiukšlės ar aplankas Išsiųsti. 
+
+- **mail_inbox_unread_count** – padeda užtikrinti, kad neskaitytų laiškų skaičius būtų rodomas ir sukonfigūruotas tinkamai 
+
+- **mail_subfolder_depth** – padeda užtikrinti, kad galime sėkmingai rodyti vartotojo pašto poaplankių konfigūracijas
+
 #### <a name="storeop"></a>StoreOp
 
 Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias teisių valdymo tarnybos licencijos operacijos problemas. 
@@ -5953,10 +6780,72 @@ Renkami šių laukų duomenys:
 
 - **RMS.Url** – teisių valdymo tarnybos serverio URL
 
+#### <a name="watchappv2"></a>watchAppV2
+
+Šis įvykis leidžia aptikti ir išspręsti galimas „Apple Watch“ galimybių problemas, pvz., pranešimų gavimą ir atsakymą į el. laiškus.
+
+Renkami šių laukų duomenys: 
+
+- **app_action** – nurodo tipus veiksmo, kurį vartotojas atliko su „Apple Watch“, pvz., archive_message, kad būtų galima nustatyti su tam tikru veiksmu susijusias problemas, pvz., nepavyko sėkmingai archyvuoti el. laiškų naudojant „Apple Watch“
+
+- **is_watch_app_installed** – nurodo, ar vartotojas įdiegė mūsų „Apple Watch“ programą savo įrenginyje
+
+- **is_complication_enabled** – nurodo, ar vartotojas įtraukė „Outlook“ į savo „Apple Watch“ ekraną, kad būtų galima aptikti su „Apple Watch“ ekranais susijusias problemas
+
+- **watch_os** – nurodo „Apple Watch“ operacinės sistemos versiją, kuri buvo įdiegta, kad būtų galima aptikti su konkrečiomis „Apple Watch“ operacinės sistemos versijomis susijusias problemas
+
 
 ### <a name="application-status-and-boot-subtype"></a>*Taikomosios programos būsena ir įkrovos potipis*
 
 Nustatymas, ar įvyko specifiniai funkcijų įvykiai, pvz., paleidimas ar sustabdymas, ir ar funkcija veikia.
+
+#### <a name="app_startup"></a>app_startup
+
+Šis įvykis leidžia mums aptikti ir išspręsti problemas, kai „Outlook“ paleidžiama lėtai arba nevisiškai, todėl vartotojams tampa sudėtinga naudoti mūsų programą.  Apima informaciją apie tam tikras įgalintas funkcijas ir kiek laiko buvo truko dalių paleistis.
+
+Renkami šių laukų duomenys: 
+
+- **attach_base_context_millis** – laikas tarp bazinio Context paleidimo ir onCreate() paleidimo
+
+- **device_ram_in_mb** – įrenginyje pasiekiamas RAM kiekis
+
+- **has_company_portal** – ar įdiegta įmonės portalo programa
+
+- **hx_okhttp_mode** – ar naujas el. pašto sinchronizavimo tarnybos komponentas naudoja „OKHttp“ HTTP pagrįstų tinklo užklausų siuntimui ir gavimui
+
+- **initial_activity_name** – „Android“ veikla, kuri paleido programą
+
+- **manufacturer** – įrenginio gamintojas
+
+- **model** – įrenginio modelis
+
+- **on_create_millis** – sugaištas laikas naudojant onCreate() metodą
+
+- **on_create_millis** – sugaištas laikas naudojant onResume() metodą
+
+- **time_until_attach** – laikas tarp klasės įkėlimo ir bazinio Context paleidimo
+
+- **total_millis** – bendras laikas nuo klasės įkėlimo pradžios iki „Android“ veiklos atnaujinimo užbaigimo
+
+#### <a name="boot_time"></a>boot_time 
+
+Šis įvykis leidžia nustatyti, kada įvyko kritinių programų klaidų, dėl kurių programa galėjo sugesti arba kilti rimtų problemų, pvz., aplanke Gauta rodomos tuščios eilutės. Šis įvykis renka informaciją, kuri leidžia skirstyti ir klasifikuoti problemas, kad būtų lengviau prioretizuoti problemų įtaką klientams.
+
+Renkami šių laukų duomenys:
+
+- **black_list_reason** – nurodo, ar yra priežasčių, kodėl turėtume nepaisyti šių duomenų. Keli pavyzdžiai: paleidimas dėl nuotolinio pranešimo ir paleidimas dėl foninio iškvietimo.
+
+- **step0_main** – nurodo, kiek laiko „Outlook“ užtruko pasiekti „pagrindinį“ veiksmą, kuris yra „Apple“ apibrėžtas veiksmas.
+
+- **step1_appWillFinishLaunching** – nurodo, kiek laiko trunka „Outlook“ pereiti iš „pagrindinio“ veiksmo į „appWillFinishLaunching“ veiksmą, kuris yra „Apple“ apibrėžtas veiksmas.
+
+- **step2_appDidFinishLaunching** – nurodo, kiek laiko trunka „Outlook“ pereiti iš „appWillFinishLaunching“ veiksmo į „appDidFinishLaunching“ veiksmą, kuris yra „Apple“ apibrėžtas veiksmas.
+
+- **step3_engineStarted** – nurodo, kiek laiko trunka „Outlook“ pereiti iš veiksmo „appDidFinishLaunching“ prie programos modulio paleidimo, kuris tvarko duomenų saugojimą ir sinchronizavimą.
+
+- **step4_runLoopFirstIdle** – nurodo, kiek laiko trunka „Outlook“ pereiti nuo veiksmo „engineStarted“ prie būsenos, kai nebėra papildomų darbų, kuriuos reikėtų baigti.
+
+- **total_time** – nurodo, kiek laiko trunka „Outlook“ baigti paleisties procesą.
 
 #### <a name="dnslookupop"></a>DnsLookupOp
 
@@ -6087,6 +6976,14 @@ Renkami šių laukų duomenys:
 - **RMS.Url** – teisių valdymo tarnybos serverio URL
 
 - **RMS.WinhttpCallbackStatus** – winhttp atskambinimo rezultato būsena
+
+#### <a name="initialized"></a>Initialized
+
+Leidžia analizuoti sąsajos, kuri leidžia mobiliosioms programėlėms gauti vartotojo ir privatumo parametrus iš „Office“ tarnybų, sveikatą, ir diagnozuoti ryšio ir privatumo parametrų tarnybos problemas.
+
+Renkami šių laukų duomenys:
+
+- **roamingSettingType** – identifikuoja vietą, iš kurios bandyta skaityti parametrus
 
 #### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
 
@@ -6428,7 +7325,7 @@ Renkami šių laukų duomenys:
 
 - **AppId** – taikomosios programos ID
 
-- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, "SharePoint", failų sistema ir t. t.)
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
 
 - **AppInstanceId** – taikomosios programos egzemplioriaus ID 
 
@@ -6550,7 +7447,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
 
-Signalas, naudojamas nurodyti, kad taikomoji programa „OneNote" veikia fone.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
+Signalas, naudojamas nurodyti, kad taikomoji programa „OneNote“ veikia fone.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
 
 Renkami šių laukų duomenys: jokių
 
@@ -7795,23 +8692,11 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_CharacterCount -** dokumento simbolių skaičius
-
-  - **Data\_CharactersWithSpaceCount -** dokumento simbolių ir tarpų skaičius
-
-  - **Data\_IsPageCountInProgress -** Skaičiuojami puslapiai
-
-  - **Data\_LineCount -** Dokumento eilučių skaičius
-
-  - **Data\_PageCount -** Dokumento puslapių skaičius
-
   - **Data\_ParagraphCount -** Dokumento pastraipų skaičius
 
   - **Data\_Play -** Ar tai pirmas kartas, kai „Word“ perskaito garsiai
 
   - **Data\_ViewKind -** Dokumento peržiūros tipas
-
-  - **Data\_WordCount -** Dokumento žodžių skaičius
 
 #### <a name="officewordaccessibilitylearningtoolsreadaloudstopreadaloud"></a>Office.Word.Accessibility.LearningTools.ReadAloud.StopReadAloud
 
@@ -7875,6 +8760,109 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 ### <a name="unexpected-application-exit-crash-subtype"></a>*Netikėtas taikomosios programos uždarymo (gedimas) potipis*
 
 Nenumatytas programų uždarymas ir programos būsena, kai taip nutinka.
+
+#### <a name="app_startup_reason"></a>app_startup_reason
+
+Šis įvykis leidžia aptikti ir išspręsti problemas, kai „Outlook“ užstrigo paleidžiant programą.  Šis įvykis apima informaciją apie tai, kodėl įvyko gedimas, kad galėtume greitai išspręsti problemą.
+
+Renkami šių laukų duomenys: 
+
+- **app_background_time** – trukmė, kaip ilgai programa buvo fone praeito seanso metu
+
+- **startup_reason_type** – nurodo, kodėl programa paleidžiama, tai nurodys, ar ji buvo priverstinai išjungta, ar buvo kitų priežasčių. 
+
+- **watch_status_info** – jei taikoma, seka toliau nurodytą informaciją. 
+
+  - **is_watch_app_installed** – nustato, ar vartotojas turi įdiegtą „Watch“ programą
+
+  - **is_watch_paired** – nustato, ar „iOS“ įrenginys susietas su laikrodžiu
+
+  - **is_watch_supported_and_active** – nurodo, ar seanso metu palaikomas „Watch“ ir yra aktyvus
+
+Šie laukai renkami tik „Outlook Mobile“, skirtoje „iOS“:
+
+- **clean_exit_reason** – žodžių eilutė, nurodanti, kodėl sustabdyta programa, jei taip įvyko
+
+- **is_agenda_user** – nurodo, ar vartotojas neseniai atidarė dienotvarkę, kas nurodo, ar mes rašote į diską paleisties metu
+
+- **is_watch_supported_and_active** – nurodo, ar seanso metu palaikomas „Watch“ ir yra aktyvus
+
+
+#### <a name="application_crash"></a>application_crash
+
+Naudojama kritiniams programų gedimams ir padeda rinkti informaciją apie tai, kodėl programa sugedo ir kaip išvengti gedimo.
+
+Renkami šių laukų duomenys: 
+
+- **android.hardware.** – (pvz., android.hardware.bluetooth) aparatinės įrangos konfigūravimo reikšmės, kurias teikia „Android“ platforma
+
+- **android.software.** – (pvz., android.software.device_admin) programinės įrangos konfigūravimo reikšmės, kurias teikia „Android“ platforma
+
+- **android_version** – įrenginio „Android“ versijos pavadinimas, kurį nurodo android.os.Build.VERSION#RELEASE
+
+- **application_package_name** – programos paketo pavadinimas, kurį nurodo android.content.Context#getPackageName()
+
+- **application_stack_trace** – gedimų dėklo sekimas
+
+- **application_version_code** – programos versijos kodas, kurį apibrėžė „Outlook“ programa
+
+- **application_version_name** – programos versijos pavadinimas, kurį apibrėžė „Outlook“ programa 
+
+- **com.** (pvz., com.google.android.feature.FASTPASS_BUILD, com.amazon.feature.PRELOAD, com.samsung.android.bio.face) gamintojo konfigūracijos reikšmės, kuras pateikė „Android“ platforma
+
+- **device_brand** – įrenginio prekės ženklas (gamintojas ar operatorius), kurį nurodo android.os.Build#BRAND
+
+- **device_ID** – įrenginio unikalusis identifikatorius (IMEI)
+
+- **device_manufacturer** – įrenginio gamintojas, kurį nurodo android.os.Build#MANUFACTURER
+
+- **device_model** – įrenginio modelis, kurį nurodo android.os.Build#MODEL
+
+- **device_name** – įrenginio pavadinimas, kurį nurodo android.os.Build#DEVICE
+
+- **device_total_memory** – numatytos bendrosios įrenginio atminties dydis, atsižvelgiant į failų sistemos statistiką.
+
+- **glEsVersion** – „OpenGL“ įdėtosios sistemos versijos raktas
+
+
+#### <a name="crash_event"></a>crash_event
+
+Leidžia aptikti ir ištaisyti situacijas, kai įvyksta kritiniai programų gedimai, ir padeda rinkti informaciją apie tai, kodėl programa sugedo ir kaip išvengti gedimo.
+
+Renkami šių laukų duomenys: 
+
+- **crashTime** – gedimo data ir laikas, padedantis atlikti tyrimą
+
+- **exceptionName** – išimties, kuri paskatino gedimą, pavadinimas, kad būtų galima atlikti tyrimą
+
+- **hasHx** – nurodo, kad paskyra naudoja mūsų naują sinchronizavimo tarnybą, kad būtų galima aptikti sinchronizavimo tarnybos sukeltas problemas
+
+- **incidentIdentifier** – unikalus gedimo ataskaitos ID, kad galėtume rasti atitinkamą problemą
+
+- **isAppKill** – padeda suprasti, ar programa buvo nutraukta arba uždaryta įrenginyje
+
+- **reportKey** – unikalusis programos diegimo ID, kad būtų galima atlikti tyrimą
+
+- **signal** – signalas, sukėlęs gedimą, kad galėtume išsamiau ištirti šį gedimą
+
+
+#### <a name="error"></a>Error
+
+Leidžia suprasti, kaip kyla mobiliųjų įrenginių programų gedimai bandant gauti privatumo parametrus iš serverio.
+
+Renkami šių laukų duomenys:
+
+- **correlationId** – unikalusis tarnybos ryšio identifikatorius, dėl kurios įvyko klaida, kad galėtume nustatyti galimas problemas
+
+- **errorCode** – identifikuoja susijusį klaidos kodą, gautą iš tarnybos, kuris gali būti naudojamas problemai diagnozuoti
+
+- **exceptionType** – klaidos, su kuria susidūrė biblioteka gaudama parametrą, tipas
+
+- **message** – identifikuoja iš tarnybos gautą klaidos pranešimą
+
+- **roamingSettingType** – identifikuoja vietą, iš kurios bandyta skaityti parametrus
+
+- **settingId** – parametras, kurį buvo bandoma gauti
 
 #### <a name="officeappdomainunhandledexceptionhandlerfailed"></a>Office.AppDomain.UnhandledExceptionHandlerFailed
 
@@ -8002,7 +8990,7 @@ Renkami šių laukų duomenys:
 
 - **AppId** – taikomosios programos ID
 
-- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, "SharePoint", failų sistema ir t. t.)
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
 
 - **AppInstanceId** – taikomosios programos egzemplioriaus ID 
 
@@ -8244,7 +9232,7 @@ Renkami šių laukų duomenys:
 
 Suaktyvinama atidarant makrokomandą (VBA) turintį failą įrenginyje, kuriame IT administratorius naudojo „Office“ programas kaip tarnybą (OAAS), ir kai „Office 365 ProPlus“ buvo suaktyvinta su įmonės licencija. Įvykis naudojamas suprasti makrokomandą (VBA) turinčių failų sveiktą pas nuomotoją ir palyginti su Office.Programmability.Telemetry.VbaTelemetryBreak, kuris seka klaidas VBA turinčiuose failuose. 
 
-Nepasirinkti jokie laikai.
+Nepasirinkti jokie laukai.
 
 #### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
@@ -8302,10 +9290,165 @@ Renkami šių laukų duomenys:
 
 - **Event Name** – Įvykio pavadinimas yra įvykio kategorija ir įvykio etiketė.
 
+#### <a name="telemetry_error"></a>telemetry_error
+
+Šis įvykis leidžia diagnozuoti ir išspręsti problemas, neleidžiančias generuoti ar išsiųsti būtinų diagnostinių duomenų. Šie įvykiai leidžia suprasti, ar trūksta svarbių duomenų, būtinų nustatyti saugos ar pagrindines programos veikimo problemas.
+
+Renkami šių laukų duomenys: 
+
+- **timer_name** – nurodo, kur vyksta telemetrijos problema, pvz., pašto dėžutės komponente arba kalendoriuje. Padeda aptikti ir išspręsti telemetrijos problemas, kylančias iš tam tikros programos dalies
+
+- **type** – nurodo laikmačio klaidos tipą, kad galėtume nustatyti, kada programa turi problemų, susijusių su diagnostinių telemetrijos duomenų siuntimu
+
+
+#### <a name="watchdog_anr"></a>watchdog_anr
+
+Būtina programų veiksmingumo klaidoms stebėti, kad būtų išvengta atvejų, kai programa nebeatsako, o ekranas tampa įšaldytas programoje (vadinama ANR, kai programa nereaguoja).
+
+Renkami šių laukų duomenys: 
+
+- **callstack** – kodo iškvietimo dėklas, kur įvyko ANR
+ 
+- **caused_restart** – ar programa turėjo būti paleista iš naujo dėl ANR
+ 
+- **duration** – kiek laiko įrenginys buvo užšaldytas
+ 
+- **id** – unikalusis ANR identifikatorius
+ 
+- **interval** – sukonfigūruota ANR suaktyvinimo ribinė vertė
+ 
+- **is_application_object_initialized** – ar ANR įvyko po to, kai programa buvo visiškai inicijuota
+ 
+- **last_known_is_in_foreground** -– ar programa vėliausiai buvo priekiniame plane, ar fone
+
 
 ### <a name="application-feature-performance-subtype"></a>*Taikomosios programos funkcijų našumo potipis*
 
 Prastas scenarijų, pvz., taikomosios programos paleidimas ar failo atidarymas, atsakymo laikas ar veikimas.
+
+#### <a name="android_frame_metrics"></a>android_frame_metrics
+
+Leidžia nustatyti ir pataisyti situacijas, kai mūsų „Android“ programos komponentai kelia veikimo problemų, pvz., jei netinkamai slenkamas aplankas Gauta.
+
+Renkami šių laukų duomenys: 
+
+- **animation_duration** – animacijos generavimo trukmė milisekundėmis
+
+- **command_issue_duration** – komandų pateikimo platformai trukmė milisekundėmis 
+
+- **draw_duration** – vartotojo sąsajos pateikimo trukmė milisekundėmis 
+
+- **input_handling_duration** – įvesties tvarkymo trukmė milisekundėmis 
+
+- **layout_measure_duration** – išdėstymo matavimo trukmė milisekundėmis
+
+- **origin** – programos komponentas, kuris matuojamas, pvz., kalendorius arba paštas
+
+- **sync_duration** – kadro sinchronizavimo trukmė milisekundėmis
+
+- **swap_buffers_duration** – buferių sukeitimo trukmė milisekundėmis
+
+- **total_duration** – bendra kadrų generavimo trukmė milisekundėmis
+
+- **unknown_delay** – delsos dėl nežinomų šaltinių trukmė, išskyrus aiškiai susektas trukmes
+
+#### <a name="cal_component"></a>cal_component
+
+Šis įvykis leidžia aptikti ir išspręsti problemas, kai yra įtariamas veikimo poveikis mūsų kalendoriaus vartotojo sąsajos komponentams, dėl kurio gali kilti kalendoriaus linkimo problemų.
+
+Renkami šių laukų duomenys: 
+
+- **account_counter** – seka skaičių paskyrų, susietų su kiekvienu kalendoriaus tipu, pvz., 2 skirta „Gmail“ kalendoriui, ir ar ši paskyra naudoja mūsų naują sinchronizavimo tarnybą
+
+- **component_name** – nurodo kalendoriaus komponento pavadinimą, pvz., Dienotvarkės rodinį arba Dienos rodinį, kad galėtume aptikti tam tikras problemas, darančias įtaką konkrečiam kalendoriaus komponentui.
+
+- **display_frame_data** – seka laiką, sugaištą rodant kiekvieną 60 kadrų, kad būtų galima nustatyti, ar yra veikimo problemų. 
+
+- **orientation** – nurodo, ar įrenginys buvo stačias, ar gulsčias, kad galėtume aptikti veikimo problemas, kurios daro įtaką tam tikrai įrenginio padėčiai.
+
+- **view_duration** – nurodo kaip ilgai užtruko generuoti įvairius vartotojo sąsajos kalendoriaus komponentus, kad būtų galima aptikti veikimo problemas, darančias įtaką kalendoriaus patirčiai
+
+#### <a name="conversation_load_time"></a>conversation_load_time
+
+Šis įvykis leidžia nustatyti ir išspręsti problemas, kylančias dėl el. pašto pokalbių įkėlimo, kad būtų galima užtikrinti numatytą el. laiškų įkėlimą.
+
+Renkami šių laukų duomenys: 
+
+- **cid_type** – nurodo, kokio tipo paskyrai priklauso CID
+
+- **time** – nurodo, kiek laiko užtrunka el. pašto pokalbio įkėlimas.
+
+#### <a name="core_data_migration"></a>core_data_migration
+
+Leidžia nustatyti ir pataisyti situacijas, kai įvyksta įrenginio el. pašto duomenų naujinimo į naujesnę versiją klaida.
+
+Renkami šių laukų duomenys:
+
+- **db_size_megabytes** – seka pagrindinės duomenų bazės dydį, suapvalintą iki artimiausių 25 megabaitų, ir daugiausia 500 megabaitų
+
+- **db_wal_size_megabytes** – seka pagrindinės duomenų bazės dydį, kai pagrindinės saugyklos failas yra suapvalintas iki artimiausio 1 MB, ir daugiausia 10 MB
+
+- **free_space_megabytes** – seka pasiekiamos laisvos vietos kiekį talpyklomis po 10, 100, 1000, 10 000 ir 100 000. 
+
+- **migration_duration_seconds** – seka perkėlimo trukmę, suapvalintą iki vieno iš šių laiko tarpsnių – 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180 (180 ir daugiau rodoma kaip 180)
+
+#### <a name="core_data_performance"></a>core_data_performance
+
+Leidžia nustatyti ir pataisyti situacijas, kai įrenginyje saugomi el. pašto duomenys kelia problemų.
+
+Renkami šių laukų duomenys:
+
+- **Caller** – seka objekto pavadinimą, kuris iškviečia įrašymo operaciją
+
+- **db_size_megabytes** – seka pagrindinės duomenų bazės dydį, suapvalintą iki artimiausių 25 megabaitų, ir daugiausia 500 megabaitų
+
+- **duration** – seka, kiek laiko užtrunka operacijai baigti
+
+- **entity** – seka objekto pavadinimą, kuris iškvietė įrašymo operaciją
+
+- **operation**-neapdorota operacijos vertė: įrašyti, iškviesti arba „užblokuota skaitymo rašymo eilė“
+
+#### <a name="inbox_component"></a>inbox_component
+
+Šis įvykis leidžia aptikti ir išspręsti problemas, kurios gali trikdyti gautų laiškų vartotojo sąsajos komponentų veikimą ir gali būti neįkeliami ar netinkamai veikti el. pašto pranešimai, pseudoportretas, skaityta / neskaityta būsenos.
+
+Renkami šių laukų duomenys: 
+
+- **above_40fps** – kadrų skaičius virš 40 fps
+
+- **above_50fps** – kadrų skaičius virš 50 fps
+
+- **above_55fps** – kadrų skaičius virš 55 fps
+
+- **account_counter** – kiekvieno įrenginyje esančio paskyros tipo skaičius, pvz., „Office 365“ paskyra = 1 paskyra, „Outlook.com“ paskyra = 1 paskyra.
+
+- **ad_not_shown_reason** – priežastis, kodėl nerodomi skelbimai
+
+- **ad_shown** – ar skelbimas buvo rodomas (jei įjungti skelbimai)
+
+- **age** – asmens amžius (naudojamas patvirtinti skelbimų amžiaus apribojimų atitiktį)
+
+- **component_name** – filtruojant aktyvaus komponento/rodinio pavadinimas
+
+- **has_hx** – ar įrenginys turi bent vieną HX (mūsų nauja el. pašto sinchronizavimo tarnyba) paskyrą
+
+- **has_subscription** – ar įrenginys turi skelbimų prenumeratą
+
+- **is_all_accounts_inbox** – ar dabartinis aplankas Gauta yra aplankas „visos paskyros“
+
+- **is_current_account** – ar dabartinė aktyvi paskyra yra skelbimų paskyra
+
+- **load_error_code** – klaidos kodas įkeliant skelbimus
+
+- **network_error_code** – tinklo klaidos kodas, kai prašoma skelbimų
+
+- **orientation** – ekrano padėtis įvykio metu (stačias arba gulsčias)
+
+- **sub_error_type** – išsamus klaidos tipas
+
+- **total_count** – bendras rodomų kadrų skaičius pagal komponentą
+
+- **view_duration** – kiek laiko vartotojas peržiūrėjo komponentą
 
 #### <a name="initial_page_landing"></a>Initial_page_landing 
  
@@ -8313,7 +9456,7 @@ Prastas scenarijų, pvz., taikomosios programos paleidimas ar failo atidarymas, 
  
 Renkami šių laukų duomenys: 
 
-- **Page** – ši funkcija naudojama patirties tipą, kurią vartotojai pirmiausia mato, kai pereina į mūsų puslapį. Galimos reikšmės yra „bandomoji versija“, „praleisti“, "iš karto", „iš anksto sugrupuota“, „prenumerata“ ir t. t.
+- **Page** – ši funkcija naudojama patirties tipą, kurią vartotojai pirmiausia mato, kai pereina į mūsų puslapį. Galimos reikšmės yra „bandomoji versija“, „praleisti“, „iš karto“, „iš anksto sugrupuota“, „prenumerata“ ir t. t.
 
 - **storeExperience** – naudojama nustatyti, ar vartotojas turi teisę matyti saugyklos SDK patirtį.
 
@@ -8398,6 +9541,50 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys: 
 
 - **Error** – šis parametras susideda iš klaidos pranešimo, grąžinto klaidos objekto.
+
+#### <a name="mail_filter_component"></a>mail_filter_component
+
+Šis įvykis leidžia aptikti ir išspręsti problemas, kurios gali trikdyti laiškų filtravimo patirtį ir gali būti neįkeliami ar netinkamai rodomi filtrai.
+
+Renkami šių laukų duomenys: 
+
+- **above_40fps** – kadrų skaičius virš 40 fps
+ 
+- **above_50fps** – kadrų skaičius virš 50 fps
+ 
+- **above_55fps** – kadrų skaičius virš 55 fps
+ 
+- **account_counter** – kiekvieno įrenginyje esančio paskyros tipo skaičius, pvz., „Office 365“ paskyra = 1 paskyra, „Outlook.com“ paskyra = 1 paskyra.
+ 
+- **ad_not_shown_reason** – priežastis, kodėl nerodomi skelbimai
+ 
+- **ad_shown** – ar skelbimas buvo rodomas (jei įjungti skelbimai)
+ 
+- **age** – asmens amžius (naudojamas patvirtinti skelbimų amžiaus apribojimų atitiktį)
+ 
+- **component_name** – filtruojant aktyvaus komponento/rodinio pavadinimas
+ 
+- **folder_type** – filtruojamo aplanko tipas (pvz., Gauta, Šiukšliadėžė, ne sistemos)
+ 
+- **has_hx** – ar įrenginys turi bent vieną HX (nauja el. pašto sinchronizavimo tarnyba) paskyrą
+ 
+- **has_subscription** – ar įrenginys turi skelbimų prenumeratą
+ 
+- **is_all_accounts_inbox** – ar dabartinis aplankas Gauta yra aplankas „visos paskyros“
+ 
+- **is_current_account** – ar dabartinė aktyvi paskyra yra skelbimų paskyra
+ 
+- **load_error_code** – klaidos kodas įkeliant skelbimus
+ 
+- **network_error_code** – tinklo klaidos kodas, kai prašoma skelbimų
+ 
+- **orientation** – ekrano padėtis įvykio metu (stačias arba gulsčias)
+ 
+- **sub_error_type** – išsamus klaidos tipas
+ 
+- **total_count** – bendras rodomų kadrų skaičius pagal komponentą
+ 
+- **view_duration** – kiek laiko vartotojas peržiūrėjo komponentą
 
 #### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
@@ -8905,9 +10092,127 @@ Renkami šių laukų duomenys:
 
   - **Data\_WasSuccessful: bool -** „True“, jei atidaryti pavyko
 
+#### <a name="onenotesyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted
+
+Šis kritinis signalas naudojamas siekiant užtikrinti, kad vartotojui prisijungus prie „OneNote“ „Android“ programos, bloknotai būtų tinkamai parengti ir juos būtų galima sėkmingai pasiekti. Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai
+
+Renkami šių laukų duomenys: 
+
+- **AppSuspendedDuringEvent** – pateikia Bulio logiką, kad būtų galima nurodyti, ar programa buvo laikinai sustabdyta pateikimo metu
+
+- **NetworkConnection** – naudojamo įrenginio tinklo ryšio tipas
+
+- **NetworkDataExchange** – įrašo baitų skaičių, kuriais buvo apsikeista pateikiant.
+
+- **ServerType** – pateikia serverio, siūlančio tarnybą, tipą
+
+- **TimeTakenInMilliSeconds** – pateikia laiką, kiek truko visas pateikimas milisekundėmis
+
+#### <a name="onenotesyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted
+
+Šis kritinis signalas naudojamas siekiant užtikrinti, kad vartotojui prisijungus prie „OneNote“ „Android“ programos, bloknotai būtų tinkamai parengti ir juos būtų galima sėkmingai pasiekti.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai
+
+Renkami šių laukų duomenys: 
+
+- **NetworkConnection** – naudojamo įrenginio tinklo ryšio tipas
+
+- **ServerType** – pateikia serverio, siūlančio tarnybą, tipą
+
+#### <a name="perf_event"></a>perf_event
+
+Naudojama stebėti galimą neigiamą poveikį dėl skirtingų programos dalių įkėlimo, pvz., siekiant užtikrinti kuo spartesnį gautų laiškų aplanko įkėlimą pirmą kartą atidarant programą.
+
+Renkami šių laukų duomenys: 
+
+- **app_start_show_message_list** – tai reiškia, kad kilo programos paleisties problemų, dėl kurių ilgiau užtruko aplanko Gauta pranešimų sąrašo įkėlimas
+
+- **event_type** – nurodo tipą veikimo įvykio, dėl kurio kilo problema, kad galėtume nustatyti su tam tikru tipu susijusias problemas.   
+
+- **extra_params** – čia kūrėjas gali įtraukti papildomų parametrų, kad galėtume pateikti daugiau informacijos apie tai, kas galėjo sukelti šią veikimo problemą, t. y. kada šis veiksmas buvo pradėtas, baigtas ir t. t. 
+
+- **total_time_elapsed** – nurodo, kiek laiko truko įvykis, kad galėtume įvertinti problemos rimtumą
+
+#### <a name="performance_record"></a>performance_record
+
+Leidžia nustatyti ir pataisyti situacijas, kai programos atminties ir CPU naudojimas tampa kritiškai didelis, dėl ko gali sulėtėti įrenginys
+
+Renkami šių laukų duomenys: 
+
+- **category** – nurodo, ar programa tuo metu buvo priekiniame plane, ar fone. Galimos reikšmės yra priekinis planas ir fonas.
+
+- **cpu_usage** – nurodo, kiek CPU naudojo programa, kad turėtume su kuo palyginti ir suprasti neigiamą įtaką veikimui
+
+- **is_watch_app_installed** – nurodo, ar vartotojas šiuo metu naudoja „Apple Watch“ ir ar ji įdiegta, kad būtų galima suprasti neigiamą įtaką dėl „Watch“.
+
+- **is_watch_paired** – nurodo, ar vartotojas šiuo metu naudoja „Apple Watch“ ir ar ji susieta su įrenginiu, kad būtų galima suprasti neigiamą įtaką dėl „Watch“
+
+- **is_watch_supported_and_active** – nurodo, ar vartotojas šiuo metu naudoja „Apple Watch“ ir ar ji aktyvi, kad būtų galima suprasti neigiamą įtaką dėl „Watch“.
+
+- **memoAry_used_percentage** – nurodo, kiek procentų atminties naudojo programa, kad turėtume su kuo palyginti ir suprasti neigiamą įtaką veikimui
+
+- **memory_used** – nurodo, kiek atminties naudojo programa, kad turėtume su kuo palyginti ir suprasti neigiamą įtaką veikimui
+
+
 ### <a name="application-activity-error-subtype"></a>*Taikomosios programos veiklos klaidos potipis*
 
 Funkcijos ar vartotojo patirties veikimo klaidos.
+
+#### <a name="assertion"></a>assertion
+
+Šis įvykis leidžia nustatyti, kada įvyko kritinių programų klaidų, dėl kurių programa galėjo sugesti arba kilti rimtų problemų, pvz., aplanke Gauta rodomos tuščios eilutės.
+
+Renkami šių laukų duomenys:
+
+- **count** – bendras su klaida susijusių elementų skaičius; pvz., kalendorių, kuriuose yra klaidų, skaičius
+
+- **has_hx** – nurodo, kad paskyra naudoja mūsų naują sinchronizavimo tarnybą, kad būtų galima aptikti sinchronizavimo tarnybos sukeltas problemas
+
+- **host_name** – tarnybinio serverio pavadinimas, kuris buvo susijęs su klaida, kad būtų galima aptikti su tam tikru serveriu susijusias problemas
+
+- **host_type** – serverio, kuris buvo susijęs su klaida, tipas, kad būtų galima aptikti su tam tikru serverio tipu susijusias problemas
+
+- **message** – pasirinktinis pranešimas apie teiginį, kuris naudojamas problemai diagnozuoti 
+
+- **origin** – klaidos kodo kilmė, kuri padeda nustatyti su tam tikra kodo dalimi susijusias problemas
+
+- **stacktrace** – rietuvės pėdsakas, kur įvyko teiginys, padedantis mums aptikti su tam tikra kodo dalimi susijusias problemas
+
+- **type** – įvykusios teiginio klaidos tipas, pvz., null_folder_name, compose_selected_null_account, kuris padeda nustatyti su tam tikra kodo dalimi susijusias problemas
+
+#### <a name="edit_contact_error"></a>edit_contact_error
+
+Leidžia nustatyti ir pataisyti situacijas, kai klaidos įvyksta bandant peržiūrėti arba redaguoti kontaktus naudojant programą.
+
+Renkami šių laukų duomenys: 
+
+- **errorType** – įvykusios klaidos tipas, kad galėtume diagnozuoti problemą
+
+- **field** – kontakto laukas, kurį vartotojas bandė redaguoti, kad būtų galima diagnozuoti problemą
+
+- **version** – mūsų naudojamos kontaktinės kortelės tarnybos versija, kad būtų galima diagnozuoti problemą
+
+#### <a name="error_report"></a>error_report
+
+Šis įvykis leidžia aptikti kritines programos klaidas, kad galėtume išvengti problemų, dėl kurių programa gali užstrigti arba neleisti skaityti el. laiškų. 
+
+Renkami šių laukų duomenys: 
+
+- **client-request-ID** – kliento užklausos, dėl kurios įvyko klaida, identifikatorius
+ 
+- **date** – užklausos, dėl kurios įvyko klaida, datos žymė
+
+- **error** – klaidos tipas, pvz., get_mailbox_location_failed
+ 
+- **error_body** – klaidos pranešimo tekstas
+ 
+- **is_x_mailbox_anchor_set** – ar užklausai buvo nustatyta ypatybė X-AnchorMailbox
+ 
+- **reason** – klaidos priežastis, t. y. klaidos pranešimas
+ 
+- **request-ID** – serverio užklausos, dėl kurios įvyko klaida, identifikatorius
+ 
+- **source** – klaidos šaltinis OM infrastruktūroje, paprastai vienas iš BE arba FE
+
 
 #### <a name="officeairspacebackendwin32graphicsdriversofthang"></a>Office.AirSpace.Backend.Win32.GraphicsDriverSoftHang 
 
@@ -8931,7 +10236,7 @@ Renkami šių laukų duomenys:
 
 - **PreviousIdentityState** – nurodo paskyros būseną, pvz., baigėsi seansas. 
 
-- **"SignInResultCode"** – nurodo raginimo prisijungti baigimo rezultato kodą.
+- **SignInResultCode** – nurodo raginimo prisijungti baigimo rezultato kodą.
 
 - **UseCache** – nurodo, ar mes primygtinai raginome vartotoją dar kartą pateikti slaptažodį.
 
@@ -8959,7 +10264,7 @@ Renkami šių laukų duomenys:
 
 - **DocUserId** – vartotojo ID iš MS autentifikavimo sluoksnio
 
-- **"DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = „Live ID“, 2 = OrgId, 3 = SSPI; 4 = ADAL
+- **DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = „Live ID“, 2 = OrgId, 3 = SSPI; 4 = ADAL
 
 - **DurationInMs** – failo operacijos užbaigimui skirtas laikas milisekundėmis
 
@@ -9143,7 +10448,7 @@ Renkami šių laukų duomenys:
 
 - **PPTFileSaveFailHresult** – nepavykusio įrašymo PPT Hresult
 
-- **"PPTFileSaveFailTag** – PPT žymė nepavykusiam įrašymui
+- **PPTFileSaveFailTag** – PPT žymė nepavykusiam įrašymui
 
 - **State** – failo atidarymo būsenos išvardijimas. 
 
@@ -9235,7 +10540,7 @@ Renkami šių laukų duomenys:
 
 - **DocUserId** – vartotojo ID iš MS autentifikavimo sluoksnio
 
-- **"DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = LiveId, 2 = OrgId, 3 = SSPI; 4 = ADAL
+- **DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = LiveId, 2 = OrgId, 3 = SSPI; 4 = ADAL
 
 - **DurationInMs** – failo operacijos užbaigimui skirtas laikas milisekundėmis
 
@@ -9319,7 +10624,7 @@ Renkami šių laukų duomenys:
 
 - **CountryCode** – kliento šalies kodas, nusiųstas į DSC kliento atsiskaitymo užklausai
 
-- **"GoPremiumEntryPoint"** – įvedimo vieta, skirta pirkimui suaktyvinti 
+- **GoPremiumEntryPoint** – įvedimo vieta, skirta pirkimui suaktyvinti 
 
 - **IsActivateExistingSubscription** – Bulio logika, rodanti, ar buvo esama prenumerata, kuri buvo aktyvinta
 
@@ -9559,7 +10864,7 @@ Renkami šių laukų duomenys:
 
 - **PreviousIdentityState** – nurodo paskyros būseną, pvz., baigėsi seansas. 
 
-- **"SignInResultCode"** – nurodo raginimo prisijungti baigimo rezultato kodą.
+- **SignInResultCode** – nurodo raginimo prisijungti baigimo rezultato kodą.
 
 - **UseCache** – nurodo, ar mes primygtinai raginome vartotoją dar kartą pateikti slaptažodį.
 
@@ -9906,6 +11211,20 @@ Renkami šių laukų duomenys:
 
 - **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
 
+#### <a name="save_error"></a>save_error
+
+Leidžia nustatyti ir pataisyti situacijas, kai mėginant įrašyti failą įvyko klaida.  Seka klaidas, įvykstančias dėl gedimų įrašant failą, įskaitant aprašomąjį klaidos pranešimą, kuris padės išspręsti problemą.
+
+Renkami šių laukų duomenys: 
+
+- **error** – klaidos, kuri įvyko siekiant aptikti ir išspręsti su tam tikru klaidos tipu susijusias problemas, tipas
+
+- **file_type** – vartotojo bandyto įrašyti failo tipas (pvz.,. doc)
+
+- **origin** – iš kur buvo bandoma įrašyti failą (pvz., iš el. laiško), kad galėtume aptikti problemą, susijusią su failo įrašymu iš tam tikros programos vietos
+
+- **token_type** – atpažinimo ženklo tipas, naudojamas autentifikuoti paskyrą, kad būtų galima įrašyti failą, kad galėtume nustatyti autentifikavimo problemas, susijusias su failo įrašymais
+
 
 ## <a name="device-connectivity-and-configuration-data-events"></a>Įrenginių jungiamumo ir konfigūracijos duomenų įvykiai
 
@@ -9917,6 +11236,124 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 ### <a name="device-connectivity-and-configuration-subtype"></a>*Įrenginių jungiamumo ir konfigūracijos potipis*
 
 Tinklo ryšio būsena ir įrenginio parametrai, tokie kaip atmintis.
+
+#### <a name="application_did_receive_memory_warning"></a>application_did_receive_memory_warning
+
+Šis įvykis siunčiamas, kai „Apple“ nurodo mums, kad programai trūksta atminties. Nurodo, kad kilo problemų su įrenginio atminties valdymu.
+
+Renkami šių laukų duomenys: 
+
+- **current_memory_used** – nurodo, kiek atminties naudoja programa tada, kai jai pritrūko atminties.
+
+- **current_memory_used_percentage** – nurodo, kokią atminties procentinę dalį naudoja programa iš visos atminties tuo metu, kai programai pritrūko atminties.
+
+- **currentVC** – nurodo rodinį, kuris naudojamas tuo metu, kai programai pritrūko atminties.
+
+- **has_hx** – nurodo, kad paskyra naudoja mūsų naują sinchronizavimo tarnybą, kad būtų galima aptikti sinchronizavimo tarnybos sukeltas problemas
+
+- **is_watch_app_installed** – nurodo, ar vartotojas šiuo metu naudoja „Apple Watch“ ir ar ji įdiegta, kad būtų galima suprasti neigiamą įtaką dėl „Watch“.
+
+- **is_watch_paired** – nurodo, ar vartotojas šiuo metu naudoja „Apple Watch“ ir ar ji susieta su įrenginiu, kad būtų galima suprasti neigiamą įtaką dėl „Watch“
+
+- **is_watch_supported_and_active** – nurodo, ar vartotojas šiuo metu naudoja „Apple Watch“ ir ar ji aktyvi, kad būtų galima suprasti neigiamą įtaką dėl „Watch“.
+
+- **rn_initialized** – nurodo, ar tuo metu, kai programai pritrūko atminties, buvo inicijuota „React Native“.
+
+- **running_time** – nurodo laiką, kurį programa praleido veikdama, kai jai pritrūko atminties.
+
+#### <a name="conversation_memory_leak"></a>conversation_memory_leak
+
+Leidžia aptikti situacijas, kai mūsų el. pašto pokalbių rodinys verčia naudoti daugiau atminties jūsų įrenginyje, negu numatyta.
+
+Renkami šių laukų duomenys:
+
+- Nerenkami jokie laukai arba įtraukti duomenys. Renkami tik žurnalai, jei yra atminties nutekėjimas, susijęs su pokalbio gija.
+
+#### <a name="core_data_corruption"></a>core_data_corruption
+
+Leidžia aptikti situacijas, kai negalime rodyti el. pašto ar kalendoriaus, nes sugadinta vieta, kurioje saugome jūsų el. paštą jūsų įrenginyje.
+
+Renkami šių laukų duomenys:
+
+- **errorSource** – nurodo, ar gauta iš įrašymo ar sukūrimo veiksmo
+
+- **sqlError** – skaitinis klaidos kodas, nurodytas https://www.sqlite.org/c3ref/c_abort.html
+
+#### <a name="core_data_corruption_user_reset"></a>core_data_corruption_user_reset
+
+Leidžia mums aptikti situacijas, kai panaikinote arba iš naujo nustatėte savo paskyrą mūsų programoje ir tai sukėlė įrenginyje saugomų el. pašto duomenų gedimą.
+
+Renkami šių laukų duomenys:
+
+- **errorSource** – nurodo, kur įvyko gedimas įrašant ar kuriant
+
+#### <a name="core_data_diagnostics"></a>core_data_diagnostics 
+
+Leidžia nustatyti ir pataisyti situacijas, kai el. pašto saugykla naudoja per daug įrenginio saugyklos vietos.
+
+Renkami šių laukų duomenys:
+
+- **db_size_megabytes** – seka pagrindinės duomenų bazės dydį, suapvalintą iki artimiausių 25 megabaitų, ir daugiausia 500 megabaitų
+
+#### <a name="general_properties_log"></a>general_properties_log
+
+Šis įvykis renka informaciją, kuri leidžia skirstyti ir klasifikuoti „Outlook“ programos problemas, susijusias su pritaikymo neįgaliesiems ir įrenginio parametrais.  Šis skirstymas į kategorijas būtinas tam, kad būtų galima nustatyti problemų poveikį klientams.
+
+Toliau nurodyti laukai renkami tik „iOS“:
+
+- **bold_text** – nurodo, ar įrenginyje įjungtas paryškintasis tekstas, kad būtų galima nustatyti su paryškintu tekstu susijusias problemas
+
+- **closed_captioning** – nurodo, ar vartotojas įjungė paslėptuosius titrus savo įrenginyje, kad padėtų mums aptikti su paslėptaisiais titrais susijusias problemas
+
+- **darker_system_colors** – nurodo, ar vartotojas įjungė sistemos spalvų patamsėjimą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **gray_scale** – nurodo, ar vartotojas įrenginyje įjungė pustonius, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **guided_access** – nurodo, ar vartotojas įrenginyje įjungė vadovaujamą prieigą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **invert_colors** – nurodo, ar vartotojas įrenginyje įjungė spalvų pakeitimo parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **mono_audio** – nurodo, ar vartotojas įrenginyje įjungė monofoninį garsą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **reduce_motion** – nurodo, ar vartotojas įrenginyje įjungė sumažintą judėjimą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **reduce_transparency** – nurodo, ar vartotojas įrenginyje įjungė skaidrumo sumažinimo parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **speak_screen** – nurodo, ar vartotojas įrenginyje įjungė monofoninį garsą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **speak_selection** – nurodo, ar vartotojas įrenginyje įjungė kalbėjimo pasirinkimą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **switch_control** – nurodo, ar vartotojas įrenginyje įjungė jungiklio valdymą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **voice_over** – nurodo, ar vartotojas įrenginyje įjungė „VoiceOver“, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+Toliau nurodyti laukai renkami tik „Android“:
+
+- **braille** – nurodo, ar vartotojas įrenginyje įjungė spalvų pakeitimo parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **caption** – nurodo, ar vartotojas įjungė paslėptuosius titrus savo įrenginyje, kad padėtų mums aptikti su paslėptaisiais titrais susijusias problemas
+
+- **color_inversion** – nurodo, ar vartotojas įrenginyje įjungė spalvų pakeitimo parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **high_contrast** – nurodo, ar vartotojas įrenginyje įjungė didelio kontrasto parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **large_text** – nurodo, ar įrenginyje įjungtas didelio teksto parametras, kad būtų galima nustatyti su dideliu tekstu susijusias problemas
+
+- **oem_preinstall** – nurodo, ar programa buvo iš anksto įdiegta įrenginyje (taikoma tik „Samsung“ įrenginiams)
+
+- **supported_abis** – nurodo, kokio tipo programos dvejetaines sąsajas (ABIs) palaiko įrenginio platforma, kad būtų galima nustatyti su šiuo parametru susijusias problemas
+
+- **switch_access** – nurodo, ar vartotojas įrenginyje įjungė prieigos valdymą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **talkback** – nurodo, ar vartotojas įrenginyje įjungė „TalkBack“, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+#### <a name="low_storage_warning"></a>low_storage_warning
+
+Parametras būtinas siekiant stebėti, ar programa staiga užima didžiąją dalį jūsų įrenginio saugyklos dėl didelio atminties naudojimo nurodant, kad įrenginyje liko nedaug saugyklos vietos
+
+Renkami šių laukų duomenys: 
+
+- **free_bytes** – įrenginyje likusios laisvos saugyklos vietos kiekis
 
 #### <a name="officeairspaceairspacelocalblocklistdriverupdated"></a>Office.AirSpace.AirSpaceLocalBlocklistDriverUpdated
 
