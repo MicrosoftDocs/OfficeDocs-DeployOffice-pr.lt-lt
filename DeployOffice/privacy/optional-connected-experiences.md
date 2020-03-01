@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: 3cba95a89c0a1f108485565101d10deea5a70a38
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
+ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917694"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42340904"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -59,7 +59,7 @@ Pastaba. Toliau aprašytu privatumo parametru nevaldomos funkcijos, kurias naudo
 
 ### <a name="help--contact-support"></a>Žinynas > Kreipkitės į palaikymo tarnybą
 
-Jei naudojate „Outlook“, skirtą „iOS“ ir „Android“, galite pranešti apie triktis ir susisiekti su mūsų palaikymo komanda eidami į **Parametrai** > **Žinynas ir atsiliepimai** > **Kreipkitės į palaikymo tarnybą**. Šias funkcijas teikia „HelpShift“ tarnyba, todėl bus taikomos „HelpShift“ [paslaugų teikimo sąlygos](https://www.helpshift.com/legal/terms/) ir [privatumo politika](https://www.helpshift.com/legal/privacy/).
+Jei naudojate „Outlook“, skirtą „iOS“ ir „Android“, galite pranešti apie triktis ir susisiekti su mūsų palaikymo komanda eidami į **Parametrai** > **Žinynas ir atsiliepimai** > **Kreipkitės į palaikymo tarnybą**. Norint naudoti šią funkciją, reikia „Microsoft“ priklausančios tarnybos, vadinamos „PowerLift“. Taikomos [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [„Microsoft“ privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygos.
 
 ### <a name="help--suggest-a-feature"></a>Žinynas > Pasiūlyti funkciją
 
