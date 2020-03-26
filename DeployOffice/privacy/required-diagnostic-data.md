@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: bd9a5754a8741ee3cc96bf843c59f8f509bc1738
-ms.sourcegitcommit: de34e0fff15c3bd099df452d8f4771398f9dfaf6
+ms.openlocfilehash: 065fb887fe0af4bb68576310c3ceb4842b163bf1
+ms.sourcegitcommit: 95aa5a2587e7333dfbb2ab0d4d898789645a4275
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42265471"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42946192"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -34,7 +34,7 @@ Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, apt
 
 Šie diagnostikos duomenys, susiję su „Office“ kliento programine įranga, naudojama kompiuteriuose, kuriuose įdiegta operacinė sistema „Windows“, renkami ir siunčiami „Microsoft“. Kai kurie diagnostikos duomenys yra privalomi, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums privalomuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
 
-***Būtinieji diagnostiniai duomenys*** yra minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
+***Būtinieji diagnostikos duomenys*** yra minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
 
 Būtinieji diagnostikos duomenys padeda nustatyti „Office“ problemas, kurios gali būti susiję su įrenginiu arba programinės įrangos konfigūracija. Pavyzdžiui, jie gali padėti nustatyti, ar programos „Office“ funkcija sugenda dažniau konkrečioje operacinės sistemos versijos su naujai įdiegtomis funkcijomis, ar išjungus tam tikras „Office“ funkcijas. Būtini diagnostikos duomenys padeda aptikti, nustatyti ir išspręsti šias problemas greičiau, kad būtų sumažintas poveikis vartotojams arba organizacijoms.
 
@@ -142,7 +142,7 @@ Informacija apie vartotojų sutikimą dėl diagnostikos duomenų ir prisijungus 
 
   - **UserContentDependentState** – nurodo, ar vartotojas pasirinko įjungti prijungus naudojamas funkcijas, analizuojančias turinį
 
-  - **UserContentDependentStateSourceLocation** – nurodo, kaip vartotojas pasirinko prijungus naudojamų funkcijų, analizuojančių turinį, įjungimą arba išjungimą
+  - **UserContentDependentStateSourceLocation** – nurodo, kaip vartotojas pasirinko prisijungus naudojamų funkcijų, analizuojančių turinį, įjungimą arba išjungimą
 
   - **UserContentDependentStateConsentTime** – nurodo, kada vartotojas pasirinko prijungus naudojamų funkcijų, analizuojančių turinį, įjungimą arba išjungimą. Data bus rodoma kaip žmonėms skirta data arba mašininio šifravimo data, kuri atrodo kaip didelis skaičius.
 
@@ -252,7 +252,7 @@ Informacijos apie įdiegtą taikomąją programą, iš kurios buvo renkami įvyk
 
 Šioje kategorijoje yra šie laukai:
 
-  - **Architecture** – taikomosios programos architektūra. Leiskite mums klasifikuoti klaidas, kurios gali būti susijusios su taikomosios programos architektūra.
+  - **Architecture** – taikomosios programos architektūra. Leidžia mums klasifikuoti klaidas, kurios gali būti susijusios su taikomosios programos architektūra.
 
   - **Click2RunPackageVersion** – paketo spustelėkite ir naudokitės, įdiegusio taikomąją programą, versijos numeris. Leidžia mums nustatyti, kokia diegimo programos versija buvo naudojama diegti „Office“, kad galėtume identifikuoti susijusias problemas.
 
@@ -382,7 +382,7 @@ Informacija apie taikomąją programą, kurią pagrindinis kompiuteris naudoja k
 
   - **Id** – unikalus identifikatorius, kurį įdėtoji taikomoji programa priskyrė pagrindinio kompiuterio taikomajai programai.
 
-  - **SessionId** – pagrindinio kompiuterio seanso visuotinis unikalus identifikatorius.
+  - **SessionId** – pagrindinio kompiuterio seanso visuotinis unikalusis identifikatorius.
 
   - **Versija** – pagrindinio kompiuterio pirminės vykdomosios programos versijos identifikatorius.
 
@@ -519,7 +519,7 @@ Informacija apie proceso seansą.
 
 - **UserInfo_IdType** – vartotojo paskyros tipą nurodanti eilutė
 
-- **UserInfo_OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje.
+- **UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje.
 
 - **UserInfo_OtherId** – nepirminių pseudoniminių identifikatorių, atitinkančių vartotojo paskyras, sąrašas.
 
@@ -623,7 +623,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotefirstrunfirstrun"></a>Office.OneNote.FirstRun.FirstRun
 
-Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai galėtų sėkmingai paleisti ir paleisti „OneNote“ pirmą kartą.  Telemetrija renkama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai galėtų sėkmingai paleisti ir paleisti „OneNote“ pirmą kartą.  Telemetrija renkama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti programos pirmą kartą, suaktyvinamas didelės svarbos incidentas.
 
 - **AfterOneDriveFrozenAccountError** – nurodo klaidą iš „OneDrive“, kai paskyra yra pristabdyta.
 
@@ -638,7 +638,7 @@ Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai galėt�
 #### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
 
 Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai („Microsoft“ paskyra) gali sėkmingai paleisti ir naudoti „OneNote“ pirmą kartą.
-Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti programos pirmą kartą, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
 
@@ -664,7 +664,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotefirstrunfirstrunfororgid"></a>Office.OneNote.FirstRun.FirstRunForOrgId
 
-Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji įmonės vartotojai (AAD/ORGID) galėtų sėkmingai paleisti ir vykdyti „OneNote“ pirmą kartą.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji įmonės vartotojai (AAD/ORGID) galėtų sėkmingai paleisti ir vykdyti „OneNote“ pirmą kartą.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti programos pirmą kartą, suaktyvinamas didelės svarbos incidentas.
 
 - **Attempt** – kiek kartų turi būti bandoma paleisti pirmą kartą.
 
@@ -712,7 +712,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_GetFileStreamFromPackageSuccess –** sėkmingi paketo perskaitymo bandymai
 
-  - **Data\_GetFileStreamSuccess -** nėra disko arba konfigūravimo problemų, neleidžiančių skaityti failų srautą
+  - **Data\_GetFileStreamSuccess –** nėra disko arba konfigūravimo problemų, neleidžiančių skaityti failų srautą
 
   - **Data\_GetRelativePathsFailed –** santykinis kelias nenurodo pasiekiamos vietos
 
@@ -748,7 +748,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_VisioSKU**:**integer** – „0“ – standartinis SKU, o „1“ profesionalus SKU
 
-#### <a name="onenoteapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated
+#### <a name="onenoteapponenotelaunchednonactivated-previous-name-officeonenoteandroidapponenotelaunchednonactivated"></a>OneNote.App.OneNoteLaunchedNonActivated *(ankstesnis pavadinimas)*, Office.OneNote.Android.App.OneNoteLaunchedNonActivated
 
 Įrašo taikomosios programos aktyvinimo būsenos informaciją.  Duomenys stebimi, kad galėtume nustatyti aktyvinimo problemų šuolius. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis.
 
@@ -756,7 +756,7 @@ Renkami šių laukų duomenys:
 
 - **INSTALL_LOCATION** – nurodo, ar taikomoji programa yra iš anksto įdiegta, ar atsisiųsta iš parduotuvės
 
-#### <a name="onenoteresetstatus"></a>OneNote.ResetStatus 
+#### <a name="onenoteresetstatus-previous-name-officeonenoteandroidresetstatus"></a>OneNote.ResetStatus *(ankstesnis pavadinimas)*, Office.OneNote.Android.ResetStatus
 
 Signalas, naudojamas įrašyti visas problemas, iškilusias naudotojui bandant nustatyti iš naujo taikomąją programą.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, susijusias su paleidimu iš naujo. 
 
@@ -770,7 +770,7 @@ Renkami šių laukų duomenys:
 
 - **Pass** – nurodo, ar nustatymas iš naujo pavyko
 
-#### <a name="onenotesigninsignincompleted"></a>OneNote.SignIn.SignInCompleted 
+#### <a name="onenotesigninsignincompleted-previous-name-officeonenoteandroidsigninsignincompleted"></a>OneNote.SignIn.SignInCompleted *(ankstesnis pavadinimas)*, Office.OneNote.Android.SignIn.SignInCompleted
 
 Kritinis signalas, naudojamas norint įsitikrinti, ar prisijungimas buvo sėkmingas. Telemetrija renkama siekiant užtikrinti kritinės regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai
 
@@ -790,7 +790,7 @@ Renkami šių laukų duomenys:
 
 - **SignInMode** – prisijungimas, prisiregistravimas, automatinis prisijungimas arba pagreitintas prisijungimas.
 
-#### <a name="onenotesigninsigninstarted"></a>OneNote.SignIn.SignInStarted 
+#### <a name="onenotesigninsigninstarted-previous-name-officeonenoteandroidsigninsigninstarted"></a>OneNote.SignIn.SignInStarted *(ankstesnis pavadinimas)*, Office.OneNote.Android.SignIn.SignInStarted
 
 Signalas, naudojamas rodyti visas problemas, iškilusias naudojant pranešimų juostą.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, atsiradusias naudojant pranešimų juostą.
 
@@ -1010,7 +1010,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilityvbatelemetrydeclare"></a>Office.Extensibility.VBATelemetryDeclare 
 
-Renka informaciją apie Win32 API iškvietimą VBA sprendimuose. Naudojamas suprasti VBA ir naudojimo sąveiką, bei papildyti saugos tyrimus.
+Renka informaciją apie „Win32“ API iškvietimą VBA sprendimuose. Naudojamas suprasti VBA ir naudojimo sąveiką, bei papildyti saugos tyrimus.
 
 Renkami šių laukų duomenys:
 
@@ -1341,6 +1341,22 @@ Renkami šių laukų duomenys:
  
 - **total_file_accounts** – failų paskyrų skaičius veiksmo atlikimo metu
 
+#### <a name="account_lifecycle"></a>account_lifecycle
+
+Šis įvykis renkamas siekiant užtikrinti tinkamą paskyros konfigūracijos veikimą ir naudojamas, kad būtų galima stebėti paskyros kūrimo sveikatą, galimybes įtraukti naujų el. pašto paskyrų ir stebėti paskyros dalinius atkūrimus.
+
+Renkami šių laukų duomenys: 
+
+- **action** – veiksmo, kuris buvo atliktas su paskyra, tipas, pvz., įtraukimas, pašalinimas arba nustatymas iš naujo
+
+#### <a name="add_new_account_step"></a>add_new_account_step
+
+Šis įvykis leidžia mums nustatyti vartotojo progresą naujos paskyros kūrimo formoje.  Jis nurodo, ar vartotojas perėjo prie kito veiksmo, ar išėjo.  Mums reikia šios informacijos, kad galėtume nustatyti, ar yra veiksmų, kuriuos atlikdami vartotojai išeina, ir užtikrinti, kad jie sėkmingai sukurtų paskyrą. 
+
+Renkami šio lauko duomenys: 
+
+- **OTAddAccountCurrentStep** – gali turėti tokias reikšmes: profile_form, redirect_mobile_check, mobile_check_success
+
 #### <a name="app_error"></a>app_error
 
 Stebi kritinių programų klaidas, kad galėtume išvengti problemų, dėl kurių programa gali užstrigti arba neleisti skaityti el. laiškų.
@@ -1425,7 +1441,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="calendar_action"></a>calendar_action
 
-Naudojama stebėti bet kokį galimą neigiamą poveikį jūsų gebėjimui atlikti pagrindinius kalendoriaus veiksmus, pvz., kurti ar redaguoti įvykius.  Įvykis taip pat gali apimti ypatybių pavadinimų seką ir nurodyta, ar jie buvo pakeisti. Pvz., „title_changed“, „online_meeting_changed“ ir „description_changed“ yra ypatybės pavadinimai, kurie įtraukti, kad padėtų mums suprasti, ar yra kokių nors su tam tikromis ypatybėmis susijusių problemų.
+Naudojama stebėti bet kokį galimą neigiamą poveikį jūsų gebėjimui atlikti pagrindinius kalendoriaus veiksmus, pvz., kurti ar redaguoti įvykius.  Įvykis taip pat gali apimti ypatybių pavadinimų seką ir nurodyta, ar jie buvo pakeisti. Pvz., „title_changed“, „online_meeting_changed“ ir „description_changed“ yra ypatybių pavadinimai, kurie įtraukti, kad padėtų mums suprasti, ar yra kokių nors su tam tikromis ypatybėmis susijusių problemų.
 
 Renkami šių laukų duomenys: 
 
@@ -1545,6 +1561,8 @@ Renkami šių laukų duomenys:
 
 - **see_all_contacts_selected_count** – seka, kiek kartų buvo pasirinkta „peržiūrėti visus kontaktus“ bendro paieškos seanso metu
 
+- **subtab_type** – seka, kur vartotojas pasirinkto rezultatą ir iš kurio rezultatų skirtuko
+
 - **top_mail_result_selected_count** – seka, kiek kartų vartotojas pasirenka jam pateiktus populiariausius rezultatus. 
 
 #### <a name="compose_mail_accessory"></a>compose_mail_accessory
@@ -1588,6 +1606,16 @@ Renkami šių laukų duomenys:
 - **origin** – kur juodraštis buvo inicijuotas, pvz., laiško informacija, kurti.
  
 - **thread_id** – pokalbio juodraščio, su kuriuo jis yra susietas, gijos ID
+
+#### <a name="drag_and_drop"></a>drag_and_drop
+
+Šis įvykis leidžia mums nustatyti, ar nuvilkimo veiksmas buvo sėkmingas, ar ne.  Jis naudojamas siekiant užtikrinti, kad nuvilkimo funkcija veiktų tinkamai tarp programų tiek paliekant įvykį „Outlook“, tiek nuvelkat įvykį iš „Outlook“.  Turėdami šiuos duomenis galime užtikrinti, kad veiksmai su kitomis programomis būtų atliekami, kaip numatyta.
+
+Renkami šių laukų duomenys: 
+
+- **action** – nuvilkimo arba palikimo veiksmas
+
+- **location** – nuvilkimo veiksmo atveju galėsime žinoti, iš kurios vietos vartotojas pradėjo vilkti elementą.  Palikimo veiksmo atveju galėsime žinoti, kur vartotojas paliko nuvilktą failą. 
 
 #### <a name="drawer_event"></a>drawer_event
 
@@ -2053,6 +2081,8 @@ Renkami šių laukų duomenys:
 
 - **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
 
+- **RMS.PL.KeyType** – reikšmės „Single“ arba „Double“. Nurodo, ar PL apsaugoti buvo naudota vieno, ar dviejų raktų apsauga.
+
 - **RMS.RACType** –teisių paskyros sertifikato tipas
 
 - **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
@@ -2102,7 +2132,6 @@ Renkami šių laukų duomenys:
 - **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
 
 - **RMS.StatusCode** – API apibrėžtas scenarijaus ID
-
 
 #### <a name="mail_action"></a>mail_action
 
@@ -2254,6 +2283,8 @@ Renkami šių laukų duomenys:
 
 - **Data_AppDuration** – taikomosios programos apdorojimo trukmė atliekant failo atidarymo operaciją. 
 
+- **Data_AppWarmUpGain** – įgyta programos paleidimo trukmė dėl dalinio programos paleidimo iš anksto.
+
 - **Data_BootDuration** – programos paleidimo trukmė atliekant failo atidarymo procesą.
 
 - **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
@@ -2334,6 +2365,23 @@ Renkami šių laukų duomenys:
 
 - **Data_TimeSplitMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme, pradžios laiko žyma ir trukme. 
 
+#### <a name="office_android_earlytelemetry_expansionfilesavailability"></a>Office_Android_EarlyTelemetry_ExpansionFilesAvailability
+
+Įgaliname papildomus „Android Package Kit“ (APK) failus, skirtus „Office“ mobiliųjų įrenginių programai. Papildomi APK failai yra pridėtiniai išteklių failai, kuriuos „Android“ programų kūrėjai gali paskelbti kartu su programa. Siekdami suprasti papildomų failų patikimumą, užregistruojame reikšmę, nurodančią, ar papildomi failai pasiekiami, ar ne, per kiekvieną paleidimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_ExpansionFilesAvailable** – Bulio logikos reikšmė, kuri nurodo, ar papildomi APK failai pasiekiami įrenginyje paleidžiant programą.
+
+#### <a name="office_android_earlytelemetry_expansionfilesdownloader"></a>Office_Android_EarlyTelemetry_ExpansionFilesDownloader
+
+Įgaliname papildomus „Android Package Kit“ (APK) failus, skirtus „Office“ mobiliųjų įrenginių programai. Papildomi APK failai yra pridėtiniai išteklių failai, kuriuos „Android“ programų kūrėjai gali paskelbti kartu su programa.  Siekdami suprasti papildomų failų atsisiuntimo mechanizmo patikimumą, užregistruojame reikšmę, nurodančią, ar galime sėkmingai atsisiųsti papildomus failus.
+
+Renkami šių laukų duomenys: 
+
+- **Data_DownloadSuccess** – Bulio logikos reikšmė, nurodanti, ar papildomi APK failai atsisiųsti sėkmingai, kai bandome juos atsisiųsti per programos paleidimą.
+
+
 #### <a name="office_android_intune_intunecompliancerequest"></a>Office_Android_Intune_IntuneComplianceRequest
 
 Šis įvykis renkamas „Office“ programoms, kuriose veikia „Android“, įskaitant „Office Mobile“, „Word“, „Excel“, „PowerPoint“ ir „OneNote“. Įvykis nurodo mėginimą prisijungti prie „Intune“ licencijuotos organizacijos paskyros, kur organizacijos administratorius sukonfigūravo strategiją, kad būtų galima taikyti sąlyginę prieigą prie programų. Jis naudojamas norint sužinoti skaičių galutinių vartotojų, kurie bando naudoti programas pagal šią strategijos konfigūraciją, ir yra suderintas su kitu įvykiu Office_Android_Intune_IntuneComplianceStatus, siekiant užtikrinti sukonfigūruotos strategijos vykdymą. 
@@ -2348,7 +2396,7 @@ Renkami šių laukų duomenys:
 
 - **Data_ComplianceStatus** – nurodo programos suderinamumo būseną prisijungiant su sėkmingo prisijungimo arba klaidos kodu.
   - -1 – Nežinoma klaida
-  - 0 – Programa suderinama su organizacijos strategijomis
+  -    0 – Programa suderinama su organizacijos strategijomis
   - 1 – Programa nesuderinama su organizacijos strategijomis
   - 2 – Su tarnyba susijusios klaidos
   - 3 – Su tinklu susijusios klaidos
@@ -2541,7 +2589,7 @@ Renkami šių laukų duomenys:
 
 - **DataSource_Name** – prijungto duomenų šaltinio pavadinimas
 
-- **Activity_Name** = „ConnectDevice“ veiklos pavadinimas
+- **Activity_Name** – „ConnectDevice“ veiklos pavadinimas
 
 - **Activity_CV** = ID, skirtas nustatyti įvykius ryšio seanso metu
 
@@ -2569,7 +2617,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_docs_apple_docsuxiossaveasthroughfilemenu"></a>Office_Docs_Apple_DocsUXiOSSaveAsThroughFileMenu 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma operacija Įrašyti kaip, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo operacijos informaciją, pvz., vietų kategorijas.  Operacija Įrašyti kaip vykdoma, kai vartotojas sukuria naują failą ir įrašo jį pirmą kartą arba išsaugo esamo failo kopiją naujoje vietoje.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašomas, kai vykdoma operacija Įrašyti kaip, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo operacijos informaciją, pvz., vietų kategorijas.  Operacija „įrašyti kaip“ vykdoma, kai vartotojas sukuria naują failą ir įrašo jį pirmą kartą arba išsaugo esamo failo kopiją naujoje vietoje.
 
 Renkami šių laukų duomenys:
 
@@ -2579,7 +2627,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_docs_apple_docsuxmacatmentioninsertedatmention"></a>Office_Docs_Apple_DocsUXMacAtMentionInsertedAtMention 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kai vartotojas „@“ pamini kitą vartotoją ir yra naudojamas norint suprasti ir nustatyti vartotojo patirčių prioritetus, atsižvelgiant į tai, kaip vartotojai bendradarbiauja su kitais vartotojais.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašomas, kai vartotojas „@“ pamini kitą vartotoją ir yra naudojamas norint suprasti ir nustatyti vartotojo patirčių prioritetus, atsižvelgiant į tai, kaip vartotojai bendradarbiauja su kitais vartotojais.
 
 Renkami šių laukų duomenys:
 
@@ -2591,9 +2639,9 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-- **Data_ShareType** – užprogramuota eilutė, kurioje nurodoma, kokio tipo operacija buvo baigta, įskaitant, bet neapsiribojant operacijomis „kopijuoti saitą“, „daugiau taikomųjų programų“, „Teams“.
+- **Data_ShareType** – užprogramuota eilutė, kurioje nurodoma, kokio tipo operacija buvo baigta, įskaitant (bet tuo neapsiribojant) operacijas „kopijuoti saitą“, „daugiau programų“, „Teams“.
 
-- **Data_ShareWebViewMode** – užprogramuota eilutė, nurodanti, kokio tipo bendrinimo režimas buvo aktyvus, kai bendrinamas buvo baigtas, įskaitant, bet neapsiribojant „ManageAccess“, „AtMentions“, Bendrinti.
+- **Data_ShareWebViewMode** – užprogramuota eilutė, nurodanti, kokio tipo bendrinimo režimas buvo aktyvus, kai bendrinamas buvo baigtas, įskaitant (bet tuo neapsiribojant) „ManageAccess“, „AtMentions“, Bendrinti.
 
 #### <a name="office_docsui_collaboration_coauthorgalleryrowtapped"></a>Office_DocsUI_Collaboration_CoauthorGalleryRowTapped 
 
@@ -2621,7 +2669,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_docsui_docstage_docstagecreatenewfromtemplate"></a>Office_DocsUI_DocStage_DocStageCreateNewFromTemplate 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykio įrašai, nurodantys patirtį naują failą sukuriant naudojant funkciją Naujas iš šablono, ir naudojami siekiant geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų kūrimo informaciją.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašomas, kai sukuriamas naujas failas naudojant funkciją Naujas iš šablono, ir naudojamas siekiant geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų kūrimo informaciją.
 
 Renkami šių laukų duomenys:
 
@@ -2635,7 +2683,7 @@ Renkami šių laukų duomenys:
 
 - **Data_TemplateIndex** – vartotojui vizualiai rodomas šablono failo skaitinis indeksas.
 
-- **Data_TemplateType** – klasifikacija, padedanti atskirti šablono tipą, bet neapsiribojant šablonais „Online“, „Online search“ ar „Local“.
+- **Data_TemplateType** – klasifikacija, padedanti atskirti šablono tipą, įskaitant (bet tuo neapsiribojant) šablonus „Online“, „Online search“ ar „Local“.
 
 #### <a name="office_docsui_docstage_recommendedopen"></a>Office_DocsUI_DocStage_RecommendedOpen
 
@@ -2647,7 +2695,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_docsui_fileoperations_docsuifileopenmacrequired"></a>Office_DocsUI_FileOperations_DocsUIFileOpenMacRequired
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“ ir pirmaisiais keturiais plėtinio simboliais.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“ ir pirmaisiais keturiais plėtinio simboliais.
 
 Renkami šių laukų duomenys:
 
@@ -2668,6 +2716,8 @@ Renkami šių laukų duomenys:
 - **Data_ClickOrigin** – eilutė, rodanti, saito dalį, kurią vartotojas spustelėjo „iOS Outlook“, kad atidaryti failą „Office“ programoje.
 
 - **Data_ClickTime** – „Unix“ laikotarpis, kai vartotojas spustelėjo saitą „iOS Outlook“, kad atidaryti failą programoje „Office“.
+
+- **Data_ClosePreviouslyOpenedMarkers** – eilutės reikšmė, fiksuojanti laiką tarp tam tikrų funkcijų iškvietimų, pateikiama formatu su funkcijos ID ir trukme.
 
 - **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
 
@@ -2753,7 +2803,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_docsui_fileoperations_openfilewithreason"></a>Office_DocsUI_FileOperations_OpenFileWithReason 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“ ir kurioje taikomosios programos vietoje naudotojas pateikė prašymą atidaryti failą.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“ ir kurioje programos vietoje naudotojas pateikė prašymą atidaryti failą.
 
 Renkami šių laukų duomenys:
 
@@ -2767,7 +2817,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_docsui_fileoperations_savetourl"></a>Office_DocsUI_FileOperations_SaveToURL
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma operacija „įrašyti kaip“, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo operacijos informacija, pvz., vietinėmis kategorijomis ir pirmaisiais keturiais plėtinio simboliais.  Operacija „įrašyti kaip“ vykdoma, kai vartotojas sukuria naują failą ir įrašo jį pirmą kartą arba išsaugo esamo failo kopiją naujoje vietoje.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašomas, kai vykdoma operacija „įrašyti kaip“, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo operacijos informacija, pvz., vietinėmis kategorijomis ir pirmaisiais keturiais plėtinio simboliais.  Operacija „įrašyti kaip“ vykdoma, kai vartotojas sukuria naują failą ir įrašo jį pirmą kartą arba išsaugo esamo failo kopiją naujoje vietoje.
 
 Renkami šių laukų duomenys:
 
@@ -2795,7 +2845,7 @@ Renkami šių laukų duomenys:
 
 - **Data_FileType** – pirmi keturi esamo failo plėtinio simboliai.
 
-- **Data_InDocStage** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis rodoma iš dokumentų galerijos ar dokumento lango.
+- **Data_InDocStage** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis rodoma iš dokumentų galerijos, ar dokumento lango.
 
 - **Data_IsDocumentOpened** – Bulio logika, nurodanti, ar taip pat atidarytas esamas dokumentas, kuriame rodoma papildomo pardavimo patirtis.
 
@@ -2823,11 +2873,11 @@ Renkami šių laukų duomenys:
 
 - **Data_IsSheetModal** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis buvo pateikta modališkai.
 
-- **Data_LocationServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+- **Data_LocationServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
 - **Data_UploadAction** – užprogramuota eilutė, nurodanti, ar nusiuntimas buvo perkėlimo, ar kopijavimo operacija.
 
-- **Data_UploadResult** – užprogramuota eilutė, nurodanti mėginimo nusiųsti rezultatą, įskaitant, bet neapsiribojant parametrais „Success“, „UserCancelledUpload“ ir „PreAuthFailed“.
+- **Data_UploadResult** – užprogramuota eilutė, nurodanti mėginimo nusiųsti rezultatą, įskaitant (bet tuo neapsiribojant) parametrus „Success“, „UserCancelledUpload“ ir „PreAuthFailed“.
 
 #### <a name="office_docsui_sharingui_copylinkoperation"></a>Office.Security.SecureReaderHost.OpenInOSR
 
@@ -2835,11 +2885,11 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-- **Data_ ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
 - **Data_LinkType** – užprogramuota eilutė, aprašanti kvietimo operacijos rūšį, pvz., „ViewOnly“ ir „ViewAndEdit“.
 
-- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš taikomosios programos vartotojo sąsajos, įskaitant, bet neapsiribojant „FileMenu“, „OpenTabShareActionMenu“ ar „RecentTabShareActionMenu“.
+- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš programos vartotojo sąsajos, įskaitant (bet tuo neapsiribojant) „FileMenu“, „OpenTabShareActionMenu“, „RecentTabShareActionMenu“.
 
 #### <a name="office_docsui_sharingui_docsuionedriveshare"></a>Office_DocsUI_SharingUI_DocsUIOneDriveShare 
 
@@ -2863,15 +2913,15 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-- **Data_ ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
 - **Data_InviteeCount** – bendras kontaktų, pakviestų prisijungti prie dokumento atliekant vieną kvietimo veiksmą, skaičius.
 
 - **Data_LinkType** – užprogramuota eilutė, aprašanti kvietimo operacijos rūšį, pvz., „ViewOnly“ ir „ViewAndEdit“.
 
-- **Data_MessageLength** – bendras išsiųsto pakvietimo pranešimo simbolių skaičius.
+- **Data_MessageLength** – bendras išsiųsto kvietimo pranešimo simbolių skaičius.
 
-- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš taikomosios programos vartotojo sąsajos, įskaitant, bet neapsiribojant „FileMenu“, „OpenTabShareActionMenu“ ar „RecentTabShareActionMenu“.
+- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš programos vartotojo sąsajos, įskaitant (bet tuo neapsiribojant) „FileMenu“, „OpenTabShareActionMenu“, „RecentTabShareActionMenu“.
 
 #### <a name="office_docsui_sharingui_sendacopyoperation"></a>Office_DocsUI_SharingUI_SendACopyOperation
 
@@ -2885,11 +2935,11 @@ Renkami šių laukų duomenys:
 
 - **Data_OperationType** – skaitinė reikšmė, nurodanti vykdomos kopijos siuntimo operacijos tipą, pvz., siųsti kopiją el. paštu arba nusiųsti kopiją naudojantis „Apple“ bendrinimo valdymo funkcija.
 
-- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+- **Data_ServiceType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
-- **Data_ShareFileType** – užprogramuotas eilutės aprašas, nurodantis bendrinamo objekto tipą, įskaitant, bet neapsiribojant „Dokumentas“, „PDF“ ar „Paveikslėlis“.
+- **Data_ShareFileType** – užprogramuotas eilutės aprašas, nurodantis bendrinamo objekto tipą, įskaitant (bet tuo neapsiribojant) „Dokumentas“, „PDF“, „Paveikslėlis“.
 
-- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš taikomosios programos vartotojo sąsajos, įskaitant, bet neapsiribojant „FileMenu“, „OpenTabShareActionMenu“ ar „RecentTabShareActionMenu“.
+- **Data_ShareScenario** – užprogramuota eilutė, aprašanti, ar failas buvo bendrintas iš programos vartotojo sąsajos, įskaitant (bet tuo neapsiribojant) „FileMenu“, „OpenTabShareActionMenu“, „RecentTabShareActionMenu“.
 
 - **Data_SharingService** – Bulio logika, nurodanti, ar failas buvo sukurtas, kai vartotojas ieškojo šablono.
 
@@ -2905,9 +2955,9 @@ Renkami šių laukų duomenys:
 
 - **Data_isLocalCopyOn** – Bulio logika, nurodanti, ar naudoti pasirinko saugoti dokumento vietinę kopiją, kuri buvo nusiųsta į debesį arba perkelti esamą dokumentą į debesį.
 
-- **Data_NewFileType** – naujos failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+- **Data_NewFileType** – naujos failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
-- **Data_OriginalFileType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
+- **Data_OriginalFileType** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
 - **Data_UploadButtonPressed** – Bulio logika, nurodanti, ar vartotojas pasirinko įkelti dabartinį dokumentą į vietą debesyje.
 
@@ -3033,7 +3083,11 @@ Renkami šių laukų duomenys:
 
 - **AppInfo.Version** – programos versija.
 
+- **bridgeWaitingTime** – metrika, naudojama diagnozuoti informacijos santraukos generavimo našumui.
+
 - **clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius.
+
+- **ClientTimeStamp** – laiko žyma, kada įvykis buvo užregistruotas kliente.
 
 - **clientType** – programa, kurioje veikia komponentas.
 
@@ -3057,17 +3111,14 @@ Renkami šių laukų duomenys:
 
 - **hostAppRing** – vartotojų, kuriems buvo paskirstyta programa, ratas.
 
-- **properties** – pateikiami kiekvieno įvykio surinkti papildomi metaduomenys.
-        
-  - **bridgeWaitingTime** – metrika, naudojama diagnozuoti informacijos santraukos generavimo našumui.
-    
+- **properties** – pateikiami kiekvieno įvykio surinkti papildomi metaduomenys. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
   - **ClientTimeStamp** – laiko žyma, kada įvykis buvo užregistruotas kliente.
-        
-  - **renderTime** – metrika, naudojama diagnozuoti informacijos santraukos generavimo našumui.
 
 - **publicEventName** – viešasis įvykio pavadinimas.  
 
 - **region** – informacijos santraukų tarnybos, prie kurios yra prisijungęs vartotojas, geografinis regionas. 
+
+- **renderTime** – metrika, naudojama diagnozuoti informacijos santraukos generavimo našumui.
 
 - **tenantAadObjectId** – visuotinis unikalusis vartotojo įmonės nuomotojo identifikatorius.
 
@@ -3262,7 +3313,7 @@ Renkami šių laukų duomenys:
 
   - **Data.IsStubFile –** dokumentas dar neįrašytas į debesies paslaugą
 
-  - **Data.IsSyncBackedStateDifferentThanOnLastOpen –** pasikeitė dokumento būsena, pakeitimai galėjo būti gauti kai dokumentas nebuvo atidarytas
+  - **Data.IsSyncBackedStateDifferentThanOnLastOpen –** pasikeitė dokumento būsena, pakeitimai galėjo būti gauti, kai dokumentas nebuvo atidarytas
 
   - **Data.isTaskCanceledAfterOpenComplete –** nebenaudojamas
 
@@ -3564,7 +3615,7 @@ Renkami šių laukų duomenys:
 
   - **Data.IsSyncBackedFile –** dokumentas yra aplanke, kuris atnaujinamas atliekant automatinį sinchronizavimą
 
-  - **Data.IsSyncBackedStateDifferentThanOnLastOpen –** pasikeitė dokumento būsena, pakeitimai galėjo būti gauti kai dokumentas nebuvo atidarytas
+  - **Data.IsSyncBackedStateDifferentThanOnLastOpen –** pasikeitė dokumento būsena, pakeitimai galėjo būti gauti, kai dokumentas nebuvo atidarytas
 
   - **Data.IsWorkingBranchAvailableOnOpen –** pakeitimų sekimo diagnostika, užtikrinanti, kad turėtume naujausią bendrinamo failo versiją
 
@@ -3988,7 +4039,7 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsVersion** – operacinės sistemos versija
 
-- **DeviceInfo_SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos
+- **DeviceInfo.SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos
 
 #### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
@@ -4178,6 +4229,67 @@ Renkami šių laukų duomenys:
 
   - **Data.Log** – pasirinktinis žurnalo pranešimas nurodo, ar pirminis tikrinimas pavyko
 
+#### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
+
+Įvykis renkamas naudojantis „Office“ programa, skirta „Android“. Jis įrašomas, kai vykdoma PDF failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal PDF failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad PDF failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti PDF failų operacijų veikimą.
+
+Renkami šių laukų duomenys:
+
+- **Data_Doc_FileOpSessionID** – dokumento seanso unikalusis ID
+
+- **Data_Doc_URLHash** – failo URL GUID
+
+- **Data_ErrorCode** – klaida, rodoma failo atidarymo trikčių / atsisiuntimo trikčių / atsisiuntimo atšaukimo atveju
+
+- **Data_ErrorMessage** – pranešimas, susijęs su klaidos kodu
+
+- **Data_FailureReason** – esant atidarymo trikčiai, nurodoma trikties priežastis.
+
+- **Data_FileLocation** – failo vieta, pvz., „Local“, „ODSP“, „iCloud“ ir pan.
+
+- **Data_FileOpenEntryPoint** – failo atidarymo įvesties taškas
+
+- **Data_FileSize** – failo, su kuriuo vykdoma operacija, dydis
+
+- **Data_OpenMode** – kokiu režimu buvo atidarytas PDF failas, pvz., 0: peržiūros režimas, 2: pasirašymo režimas
+
+- **Data_PageCount** – puslapių skaičius PDF faile.
+
+- **Data_PasswordProtected** – žyma, kuri nurodo, ar failas apsaugotas slaptažodžiu, ar ne.
+
+- **Data_ProviderApp** – dabartinė teikėjo programa tik failo aktyvinimo atveju  
+
+- **Data_ReadOnly** – žyma, kuri nurodo, ar failas yra tik skaitomas, ar ne.
+
+- **Data_Result** – vykdomos operacijos būsena, pvz., teisinga: pavyko, neteisinga: triktis
+
+- **Data_Type** – failo operacijos tipas (atidarymas, uždarymas arba įrašymas) 
+
+#### <a name="officeonenoteandroidappnavigationnavigationuistatechanged-onenoteappnavigationnavigationuistatechanged-previous-name"></a>Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(ankstesnis pavadinimas)*
+
+Šis įvykis renka kritinį signalą, naudojamą užtikrinti, kad „OneNote“ vartotojai galėtų sėkmingai naršyti programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
+
+Renkami šių laukų duomenys: 
+
+- **IS_SPANNED** – nurodo, ar programa veikia segmentuotu režimu. Registruojama konkrečiai sulenkiamų įrenginių atveju.
+
+- **NEW_STATE** – nurodo programų būseną iškart po naršymo veiksmo
+
+- **OLD_STATE** – nurodo programų būseną iškart prieš naršymo veiksmą
+
+#### <a name="officeonenoteandroidlenssdkofficelenslaunched-onenotelenssdkofficelenslaunched-previous-name"></a>Office.OneNote.Android.LensSDK.OfficeLensLaunched, OneNote.LensSDK.OfficeLensLaunched *(ankstesnis pavadinimas)*
+
+Šis įvykis renka kritinį signalą, naudojamą siekiant užtikrinti sėkmingą „OfficeLens“ paleidimą.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
+
+Renkami šių laukų duomenys: 
+
+- **CAPTURE_MODE** – nurodo, kokiu režimu buvo paleista „OfficeLens“.  Jis gali būti numatytasis, redagavimo, greitojo įterpimo arba vaizdo įrašo importavimo.
+
+- **ERROR_CODE** – nurodo paleidimo klaidos kodą, jei paleidžiant įvyko klaida.
+
+- **IMAGE_COUNT** – nurodo padarytų nuotraukų skaičių
+
+- **LAUNCH_REASON** – nurodo „OfficeLens“ paleidimo procesą. Tai gali būti atlikta užrakto ekrane arba per fotoaparato ar galerijos parinktis, priklijuojamuose lapeliuose arba „OneNote“ drobėje ir pan.
 
 #### <a name="officeonenotecanvasinkinkstrokelogger"></a>Office.OneNote.Canvas.Ink.InkStrokeLogger 
 
@@ -4207,7 +4319,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotenavigationcreatepage"></a>Office.OneNote.Navigation.CreatePage
 
-Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti puslapius programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti puslapio, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti puslapius programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti puslapio, suaktyvinimas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
 
@@ -4232,7 +4344,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotenavigationcreatesection"></a>Office.OneNote.Navigation.CreateSection
 
-Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti sekcijas programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti puslapio, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti sekcijas programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti puslapio, suaktyvinimas didelės svarbos incidentas.
 
 Renkami toliau apibūdintų laukų duomenys
 
@@ -4247,7 +4359,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 #### <a name="officeonenotenavigationnavigate"></a>Office.OneNote.Navigation.Navigate
 
-Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą naršyti tarp puslapių programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali naršyti, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą naršyti tarp puslapių programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali naršyti, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
 
@@ -4276,7 +4388,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotenotebookmanagementcreatenotebook"></a>Office.OneNote.NotebookManagement.CreateNotebook
 
-Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti bloknotus programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti bloknotų, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą kurti bloknotus programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti bloknotų, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
     
@@ -4285,7 +4397,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotenotebookmanagementopennotebook"></a>Office.OneNote.NotebookManagement.OpenNotebook
 
-Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą atidaryti bloknotus programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali atidaryti bloknotų, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas stebėti „OneNote“ vartotojų gebėjimą atidaryti bloknotus programoje „OneNote“.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali atidaryti bloknotų, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
 
@@ -4294,7 +4406,7 @@ Renkami šių laukų duomenys:
     
 #### <a name="officeonenotesearchsearch"></a>Office.OneNote.Search.Search
 
-Kritinio signalo ID, naudojamas stebėti „OneNote“ vartotojų gebėjimą rasti informaciją tūkstančiuose puslapių ir bloknotų.   Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali rasti informacijos įvairiuose bloknotuose, tai gali lemti didelės svarbos incidentą.
+Kritinio signalo ID, naudojamas stebėti „OneNote“ vartotojų gebėjimą rasti informaciją tūkstančiuose puslapių ir bloknotų.   Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali rasti informacijos įvairiuose bloknotuose, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
 
@@ -4325,7 +4437,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotestickynotesnotecreated-on-ios-onenotestickynotesnotecreated-on-android"></a>Office.OneNote.StickyNotes.NoteCreated („iOS“), OneNote.StickyNotes.NoteCreated („Android“)
 
-Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, tai gali lemti didelės svarbos incidentą.
+Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
 
@@ -4338,7 +4450,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeonenotestickynotesnoteviewed-on-ios-onenotestickynotesnoteviewed-on-android"></a>Office.OneNote.StickyNotes.NoteViewed („iOS“), OneNote.StickyNotes.NoteViewed („Android“)
 
-Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, tai gali lemti didelės svarbos incidentą.
+Tai kritinis signalas, naudojamas stebėti priklijuojamų lapelių galimybę kurti pastabas programoje.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali sukurti pastabos, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
 
@@ -4434,7 +4546,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 #### <a name="officeonenotesystemapplifecycleapplaunch"></a>Office.OneNote.System.AppLifeCycle.AppLaunch
 
-Kritinis signalas, naudojamas užtikrinti, kad „OneNote“ vartotojai gali sėkmingai paleisti taikomąją programą. Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti taikomosios programos mūsų efektyvumo lange, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas užtikrinti, kad „OneNote“ vartotojai gali sėkmingai paleisti taikomąją programą. Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti programos mūsų efektyvumo lange, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys: jokių
 
@@ -4487,7 +4599,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookdesktopstorescreatenewstore"></a>Office.Outlook.Desktop.Stores.CreateNewStore
 
-Renka naujos parduotuvės (tipo ir versijos) sukūrimo rezultatą, bei rezultato kodą. Aktyviai stebime šį įvykį, kad sekti sveikatą vartotojo galimybės sinchronizuoti ir saugoti el. paštą kompiuteryje, archyvuoti el. laiškus (PST) ar naudoti „Groups“.
+Renka naujos parduotuvės (tipo ir versijos) sukūrimo rezultatą, bei rezultato kodą. Aktyviai stebime šį įvykį, sekdami vartotojo galimybės sinchronizuoti ir saugoti el. paštą kompiuteryje, archyvuoti el. laiškus (PST) ar naudoti „Groups“ sveikatą.
 
 Renkami šių laukų duomenys:
 
@@ -4499,7 +4611,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookmacaccountaddworkflow"></a>Office.Outlook.Mac.AccountAddWorkflow
 
-Paskyros įtraukimo į programą „Outlook“ rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
+Paskyros įtraukimo į programą „Outlook“ rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad nebūtų didelio trikčių skaičiaus padidėjimo. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
 
 Renkami šių laukų duomenys:
 
@@ -4516,7 +4628,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookmacaccountonboardingflow"></a>Office.Outlook.Mac.AccountOnboardingFlow
 
-Paskyros įtraukimo į programą „Outlook“, naudojant naujas paskyros konfigūravimo funkcijas, rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
+Paskyros įtraukimo į programą „Outlook“, naudojant naujas paskyros konfigūravimo funkcijas, rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad nebūtų didelio trikčių skaičiaus padidėjimo. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
 
 Renkami šių laukų duomenys:
 
@@ -4547,7 +4659,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookmacdeleteaccountusage"></a>Office.Outlook.Mac.DeleteAccountUsage
 
-Paskyros naikinimo programoje „Outlook“ rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
+Paskyros naikinimo programoje „Outlook“ rezultatas. Duomenys yra stebimi siekiant užtikrinti, kad nebūtų didelio trikčių skaičiaus padidėjimo. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. Siekiame pagerinti šį sėkmingo atlikimo procentą su kiekviena versija. 
 
 Renkami šių laukų duomenys:
 
@@ -4915,7 +5027,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_DurationUAEOnSaveStartedMs:long –** laikas, skirtas nežinomai taikomajai programai išjungti įrašymo metu
 
-  - **Data\_EnsureSaveTransactionTimeMS:long –** laikas, skirtas įrašymo operacijos sukūrimui užtikrinti, jeigu jos nėra
+  - **Data\_EnsureSaveTransactionTimeMS:long –** laikas, skirtas įrašymo operacijos sukūrimui užtikrinti, jei jos nėra
 
   - **Data\_FailureComponent:long –** iš anksto nustatytų verčių, dėl kurių komponentų įvyko šio protokolo triktis, rinkinys (Conflict, CSI, Internal ir kt.)
 
@@ -6480,7 +6592,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ViewKind-** „Word“ rodinio tipas
 
-#### <a name="onenotecanvaspageopened"></a>OneNote.Canvas.PageOpened 
+#### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(ankstesnis pavadinimas)*, Office.OneNote.Android.Canvas.PageOpened
 
 Signalas, naudojamas įrašyti kai puslapis yra atidarytas.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, susijusias su puslapio atidarymu programoje „OneNote“.
 
@@ -6490,13 +6602,13 @@ Renkami šių laukų duomenys:
 
 - **TIME_TAKEN_IN_MS** – laikas, skirtas puslapiui atidaryti
 
-#### <a name="onenotecapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken
+#### <a name="onenotecapturenewnotenewnotetaken-previous-name-officeonenoteandroidcapturenewnotenewnotetaken"></a>OneNote.Capture.NewNote.NewNoteTaken *(ankstesnis pavadinimas)*, Office.OneNote.Android.Capture.NewNote.NewNoteTaken
 
 Šis signalas naudojamas siekiant užtikrinti, kad vartotojui prisijungus prie „OneNote“ „Android“ programos, bloknotai būtų tinkamai parengti ir vartotojas sėkmingai sukurtų naują pastabą.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai.
 
 Nepasirinkti jokie papildomi laukai.
 
-#### <a name="onenotemessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked 
+#### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(ankstesnis pavadinimas)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
 Signalas, naudojamas rodyti visas problemas, iškilusias naudojant pranešimų juostą.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, atsiradusias naudojant pranešimų juostą.
 
@@ -6587,6 +6699,18 @@ Renkami šių laukų duomenys:
 - **origin** – iš kur buvo bandoma įrašyti failą (pvz., iš el. laiško), kad galėtume aptikti problemą, susijusią su failo įrašymu iš tam tikros programos vietos
 
 - **token_type** – atpažinimo ženklo tipas, naudojamas autentifikuoti paskyrą, kad būtų galima įrašyti failą, kad galėtume nustatyti autentifikavimo problemas, susijusias su failo įrašymais
+
+#### <a name="search_subtab_selected"></a>search_subtab_selected
+
+Šis įvykis mums leidžia stebėti objekto tipo elementus (visus, paštą, kontaktus ir kalendorių), kuriuos vartotojai naudoja, kai ieško, kad galėtume užtikrinti tinkamą ieškos filtrų mechanizmų veikimą.
+
+Renkami šių laukų duomenys:
+
+- **properties_general** – bendrosios ypatybės, kurias renka visi „Aria“ įvykiai
+
+- **selected_reason** – pasirenkamo tipo elemento priežastis, kuri gali būti viena iš šių trijų reikšmių: tap_on_header, tap_on_see_all, enter_search_mode
+
+- **subtab_type** – pasirinktas tipo elementas, kuris gali būti vienas iš šių keturių reikšmių: visi, paštas, kontaktas, įvykis.
 
 #### <a name="send_message"></a>send_message
 
@@ -6786,7 +6910,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys: 
 
-- **app_action** – nurodo tipus veiksmo, kurį vartotojas atliko su „Apple Watch“, pvz., archive_message, kad būtų galima nustatyti su tam tikru veiksmu susijusias problemas, pvz., nepavyko sėkmingai archyvuoti el. laiškų naudojant „Apple Watch“
+- **app_action** – nurodo veiksmo, kurį vartotojas atliko su „Apple Watch“, pvz., archive_message, tipus, kad būtų galima nustatyti su tam tikru veiksmu susijusias problemas, pvz., nepavyko sėkmingai archyvuoti el. laiškų naudojant „Apple Watch“
 
 - **is_watch_app_installed** – nurodo, ar vartotojas įdiegė mūsų „Apple Watch“ programą savo įrenginyje
 
@@ -6873,7 +6997,7 @@ Renkami šių laukų duomenys:
 
 - **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
 
-- **RMS.NoOfDomainsSearched** – ieškotų domenų skaičius  
+- **RMS.NoOfDomainsSearched** – ieškotų domenų skaičius    
 
 - **RMS.NoOfDomainsSkipped** – praleistų domenų skaičius 
 
@@ -6886,6 +7010,22 @@ Renkami šių laukų duomenys:
 - **RMS.ServerType** – teisių valdymo tarnybos tipas 
 
 - **RMS.StatusCode** – operacijos rezultato būsenos kodas
+
+#### <a name="first_visible"></a>first_visible
+
+Šis įvykis leidžia mums nustatyti, kada vartotojas pirmą kartą tikslingai paleido programą. Šis įvykis reikalingas siekiant užtikrinti sėkmingą programos darbą originaliosios įrangos gamintojo (OĮG) versijose.
+
+Renkami šių laukų duomenys:
+
+- **is_oem** – lauko sekimas, kuris nurodo, ar programa paleista OĮG variante
+
+- **is_system_install** – laukas, sekantis iš anksto įdiegto ypatybių failo, kuris nurodo, kad tai OĮG įdiegtis, buvimą 
+
+- **manufacturer** – įrenginio gamintojas
+
+- **model** – įrenginio modelis
+
+- **systemFlagSet** – „Android“ sistemos žymė (ApplicationInfo.FLAG_SYSTEM), kuri nurodo, ar programa buvo įdiegta kaip įrenginio sistemos atvaizdo dalis
 
 #### <a name="getuserop"></a>GetUserOp
 
@@ -7047,9 +7187,9 @@ Renkami šių laukų duomenys:
 
   - **Data\_APIInitTime:integer -** Laikas, skirtas inicijuoti „Visio API“ moduliui
 
-  - **Data\_AppSizeHeight –** Prideda**-** lango dydžio aukštį
+  - **Data\_AppSizeHeight –** prideda**-** lango dydžio aukštį
 
-  - **Data\_AppSizeWidth –** Prideda**-** lango dydžio plotį
+  - **Data\_AppSizeWidth –** prideda**-** lango dydžio plotį
 
   - **Data\_AppURL -** Papildinio URL; Registruoja parduotuvėje esančio papildinio visą URL ir ne parduotuvėje esančio papildinio URL domeną
 
@@ -7345,9 +7485,9 @@ Renkami šių laukų duomenys:
 
 - **TotalTime** – bendras praleistas laikas
 
-#### <a name="onenoteappappbootcomplete"></a>OneNote.App.AppBootComplete 
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete"></a>OneNote.App.AppBootComplete *(ankstesnis pavadinimas)*, Office.OneNote.Android.App.AppBootComplete 
 
-Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai („Microsoft“ paskyra) gali sėkmingai paleisti ir naudoti „OneNote“ pirmą kartą.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai.  Jei vartotojai negali paleisti pirmą kartą, tai gali lemti didelės svarbos incidentą.
+Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai („Microsoft“ paskyra) gali sėkmingai paleisti ir naudoti „OneNote“ pirmą kartą.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai.  Jei vartotojai negali paleisti programos pirmą kartą, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys: 
 
@@ -7385,7 +7525,9 @@ Renkami šių laukų duomenys:
 
 - **IS_COLD_BOOT** – nurodo, ar taikomoji programa paleidžiama, kai taikomoji programa neveikė fone
 
-- **IS_FIRST_LAUNCH** – nurodo, ar įrenginyje taikomoji programa buvo paleista pirmą kartą 
+- **IS_FIRST_LAUNCH** – nurodo, ar įrenginyje taikomoji programa buvo paleista pirmą kartą
+
+- **IS_FOLDABLE_TYPE** – nurodo, ar įrenginys yra sulenkiamas
 
 - **IS_PHONE** – nurodo, ar įrenginys yra telefonas arba planšetinis kompiuteris
 
@@ -7445,23 +7587,27 @@ Renkami šių laukų duomenys:
  
 - **USER_INTERACTED_DURING_EVENT** – nurodo, ar vartotojas sąveikavo paleidimo metu
 
-#### <a name="onenoteapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground 
+#### <a name="onenoteapponenoteappforeground-previous-name-officeonenoteandroidapponenoteappforeground"></a>OneNote.App.OneNoteAppForeground *(ankstesnis pavadinimas)*, Office.OneNote.Android.App.OneNoteAppForeground
 
 Signalas, naudojamas nurodyti, kad taikomoji programa „OneNote“ veikia fone.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
 
 Renkami šių laukų duomenys: jokių
 
-#### <a name="onenoteapplaunch"></a>OneNote.AppLaunch
+#### <a name="onenoteapplaunch-previous-name-officeandroidearlytelemetryapplaunch"></a>OneNote.AppLaunch *(ankstesnis pavadinimas)*, Office.Android.EarlyTelemetry.AppLaunch
 
 Kritinis signalas, naudojamas užtikrinti, kad „OneNote“ vartotojai gali sėkmingai paleisti taikomąją programą.  Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. 
 
 Renkami šių laukų duomenys: 
+
+- **ANDROID_SDK_VERSION** – užfiksuoja „Android“ SDK versiją
 
 - **FirstLaunchTime** – įrašo laiką, kai taikomoji programa buvo pirmą kartą paleista
 
 - **InstallLocation** – nurodo, ar taikomoji programa yra iš anksto įdiegta, ar atsisiųsta iš parduotuvės
 
 - **is_boot_completed_ever** – nurodo, ar taikomoji programa anksčiau buvo sėkmingai paleista įrenginyje
+
+- **IS_DARK_MODE_ENABLED** – Bulio logikos reikšmė, kuri nurodo, ar įjungtas tamsusis programos režimas, ar ne
 
 - **NewOneNoteUser** – nustatyto, ar vartotojas yra naujas vartotojas
 
@@ -7482,7 +7628,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookmacmacolkactivationstate"></a>Office.Outlook.Mac.MacOLKActivationState
 
-Renka informaciją apie taip, kaip „Outlook“ aktyvinama, tokią kaip prenumeratos arba bendrosios licencijos. Duomenys yra stebimi siekiant užtikrinti, kad triktyse nebūtų matomi realizavimo keliai. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. 
+Renka informaciją apie taip, kaip „Outlook“ aktyvinama, tokią kaip prenumeratos arba bendrosios licencijos. Duomenys yra stebimi siekiant užtikrinti, kad nebūtų didelio trikčių skaičiaus padidėjimo. Taip pat analizuojame duomenis, kad rastume tobulintinas sritis. 
 
 Renkami šių laukų duomenys:
 
@@ -7532,7 +7678,7 @@ Renkami šių laukų duomenys:
 
   - **Data_CorrelationId -** GUID, kurį ProtocolHandler perdavė programai „PowerPoint“ telemetrijai susieti. ProtocolHandler yra atskiras procesas, kuris tvarko „Office“ saitus, skirtus OS.
 
-  - **Data\_CppUncaughtExceptionCount:long -** Nepriimtos vietinės išimtys, kai veikla buvo vykdoma
+  - **Data\_CppUncaughtExceptionCount:long –** veiklos veikimo metu neaptiktos vietinės išimtys
 
   - **Data\_CreateDocumentTimeMS -** Metodo CreateDocumentTimeMS vykdymo trukmė milisekundėmis
 
@@ -7548,27 +7694,27 @@ Renkami šių laukų duomenys:
 
   - **Data\_DetermineFileType -** Metodo DetermineFileType vykdymo trukmė milisekundėmis
 
-  - **Data\_Doc\_AccessMode:long -** Kaip buvo atidarytas šis dokumentas (tik skaityti / skaityri ir rašyti)
+  - **Data\_Doc\_AccessMode:long –** kaip buvo atidarytas šis dokumentas (tik skaityti / skaityti ir rašyti)
 
-  - **Data\_Doc\_AssistedReadingReasons:long -** Iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
+  - **Data\_Doc\_AssistedReadingReasons:long –** iš anksto apibrėžtų reikšmių, nurodančių dokumento atidarymo pagalbiniu skaitymo režimu priežastis, rinkinys
 
   - **Data_Doc_AsyncOpenKind:long** – nurodo, ar debesies dokumento talpykloje esanti versija buvo atidaryta, ir kuri asinchroninio atnaujinimo logika buvo naudojama.
 
-  - **Data\_Doc\_ChunkingType:long -** Kaip dokumentas saugomas programoje „SharePoint“
+  - **Data\_Doc\_ChunkingType:long –** kaip dokumentas saugomas programoje „SharePoint“
 
-  - **Data\_Doc\_EdpState:long -** Įmonės duomenų apsaugos dokumento būsena
+  - **Data\_Doc\_EdpState:long –** dokumento įmonės duomenų apsaugos būsena
 
-  - **Data\_Doc\_Ext:string -** Dokumento plėtinys
+  - **Data\_Doc\_Ext:string –** dokumento plėtinys
 
-  - **Data\_Doc\_Extension:string -** Dokumento plėtinys
+  - **Data\_Doc\_Extension:string –** dokumento plėtinys
 
-  - **Data\_Doc\_FileFormat:long -** Iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
+  - **Data\_Doc\_FileFormat:long –** iš anksto nustatytų failo formato reikšmių rinkinys (detalesnis nei plėtinio)
 
-  - **Data\_Doc\_Fqdn:string – -** Vieta, kurioje saugomas dokumentas (SharePoint.com, live.net) galima tik „Office 365“ domenams
+  - **Data\_Doc\_Fqdn:string – ** vieta, kurioje saugomas dokumentas (SharePoint.com, live.net), galima tik „Office 365“ domenams
 
-  - **Data\_Doc\_FqdnHash:string – -** Dokumento saugojimo vietos maiša
+  - **Data\_Doc\_FqdnHash:string – ** dokumento saugojimo vietos maiša
 
-  - **Data\_Doc\_IdentityTelemetryId:string – -** Unikalus vartotojo GUID
+  - **Data\_Doc\_IdentityTelemetryId:string – ** unikalusis vartotojo GUID
 
   - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, kuris buvo naudojamas veiksmui su bendrinamais dokumentais
 
@@ -7578,49 +7724,49 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IsCloudCollabEnabled:bool –** teisinga, jeigu HTTP antraštė „IsCloudCollabEnabled“jau buvo gauta iš PARINKČIŲ užklausos.
 
-  - **Data\_Doc\_IsIncrementalOpen:bool –** Ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
+  - **Data\_Doc\_IsIncrementalOpen:bool –** ar dokumentas buvo atidarytas palaipsniui (nauja funkcija, kuri atidaro dokumentą be būtinybės atsisiųsti visą dokumentą)
 
-  - **Data\_Doc\_IsOcsSupported:bool –** Ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
+  - **Data\_Doc\_IsOcsSupported:bool –** ar dokumentas palaiko redagavimą vienu metu, naudojant naują OCS paslaugą
 
-  - **Data\_Doc\_IsOpeningOfflineCopy:bool –** Ar dokumentas atidarytas iš vietinės talpyklos?
+  - **Data\_Doc\_IsOpeningOfflineCopy:bool –** ar dokumentas atidarytas iš vietinės talpyklos?
 
-  - **Data\_Doc\_IsSyncBacked:bool –** Ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
+  - **Data\_Doc\_IsSyncBacked:bool –** ar dokumentas atidarytas iš aplanko, naudojančio „OneDrive“ taikomosios programos sinchronizavimo atsarginei kopijai
 
-  - **Data\_Doc\_Location:long –** Iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
+  - **Data\_Doc\_Location:long –** iš anksto apibrėžtų dokumento saugojimo vietos reikšmių rinkinys (Local, SharePoint, WOPI, Network ir kt.)
 
-  - **Data\_Doc\_LocationDetails:long –** Iš anksto apibrėžtų išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
+  - **Data\_Doc\_LocationDetails:long –** iš anksto apibrėžtų išsamesnės vietos informacijos reikšmių rinkinys (Temp folder, Downloads folder, One Drive Documents, One Drive Pictures ir kt.)
 
-  - **Data\_Doc\_NumberCoAuthors:long –** Bendraautorių skaičius dokumento atidarymo metu
+  - **Data\_Doc\_NumberCoAuthors:long –** bendraautorių skaičius dokumento atidarymo metu
 
   - **Data\_Doc\_PasswordFlags:long –** iš anksto apibrėžtų dokumento užšifravimo slaptažodžiu reikšmių rinkinys (None, Password to read, Password to edit)
 
-  - **Data\_Doc\_ReadOnlyReasons:long –** Iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
+  - **Data\_Doc\_ReadOnlyReasons:long –** iš anksto apibrėžtų dokumento žymėjimo tik skaityti reikšmių rinkinys (Locked on server, final document, password protected to edit ir kt.)
 
-  - **Data\_Doc\_ResourceIdHash:string –** Debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+  - **Data\_Doc\_ResourceIdHash:string –** debesyje saugomų dokumentų išteklių identifikatoriaus maiša
 
   - **Data_Doc_RtcType** – nurodo, kaip buvo nustatytas realaus laiko kanalas (RTC) dabartiniam failui (išjungtas, nepalaikomas, pagal pageidavimą, visada įjungta, ir t. t.).
 
-  - **Data\_Doc\_ResourceIdHash:string –** Debesyje saugomų dokumentų išteklių identifikatoriaus maiša
+  - **Data\_Doc\_ResourceIdHash:string -** Debesyje saugomų dokumentų maišos išteklių identifikatorius
 
-  - **Data\_Doc\_ServerProtocol:long –** Iš anksto apibrėžtų protokolo naudojimo kreipimuisi į serverį reikšmių rinkinys (Http, „Cobalt“, WOPI ir kt.)
-
+  - **Data\_Doc\_ServerProtocol:long –** iš anksto apibrėžtų protokolo naudojimas kreiptis į serverį reikšmių rinkinys (Http, „Cobalt“, WOPI ir kt.)
+ 
   - **Data\_Doc\_ServerType:long –** iš anksto apibrėžtų serverio tipo reikšmių rinkinys („SharePoint“, „DropBox“ ar WOPI)
 
-  - **Data\_Doc\_ServerVersion:long -** Ar serveris pagrįstas „Office14“, „Office15“ arba „Office 16“?
+  - **Data\_Doc\_ServerVersion:long –** ar serveris pagrįstas „Office14“, „Office15“ arba „Office 16“?
 
-  - **Data\_Doc\_SessionId:long –** Generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+  - **Data\_Doc\_SessionId:long -** Generuotas GUID, kuris identifikuoja dokumento egzempliorių to paties seanso metu
 
   - **Data\_Doc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
 
-  - **Data\_Doc\_SizeInBytes:long –** Dokumento dydis baitais
+  - **Data\_Doc\_SizeInBytes:long –** dokumento dydis baitais
 
   - **Data\_Doc\_SpecialChars:long –** šablonas, nurodantis specialiuosius dokumento URL arba kelio simbolius
 
-  - **Data\_Doc\_StorageProviderId:string –** Eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
+  - **Data\_Doc\_StorageProviderId:string –** eilutė, nurodanti dokumento saugyklos teikėją, pvz., „DropBox“
 
-  - **Data\_Doc\_StreamAvailability:long –** Iš anksto apibrėžtų dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
+  - **Data\_Doc\_StreamAvailability:long –** iš anksto apibrėžtų dokumentų srauto būsenos reikšmių rinkinys (available, permanently disabled, not available)
 
-  - **Data\_Doc\_UrlHash:string –** Debesyje saugomų dokumentų visų URL maiša
+  - **Data\_Doc\_UrlHash:string –** debesyje saugomų dokumentų viso URL maiša
 
   - **Data\_Doc\_UsedWrsDataOnOpen:bool –** „True“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
 
@@ -7644,7 +7790,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ExecutionCount -** Kiek kartų buvo įvykdytas IncOpen protokolas
 
-  - **Data\_FailureComponent:long -** Iš anksto nustatytų verčių, dėl kurių komponentų įvyko šio protokolo triktis, rinkinys (Conflict, CSI, Internal ir kt.)
+  - **Data\_FailureComponent:long –** iš anksto nustatytų verčių, dėl kurių komponentų įvyko šio protokolo triktis, rinkinys (Conflict, CSI, Internal ir kt.)
 
   - **Data\_FailureReason:long –** iš anksto nustatytų reikšmių, nurodančių trikties priežastis, rinkinys (FileIsCorrupt, BlockedByAntivirus ir kt.)
 
@@ -7710,7 +7856,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_IsMultiOpen -** Ar mes palaikome kelių dokumentų atidarymus?
 
-  - **Data\_IsOCS -** Ar dokumentas OCS režimu yra paskutinės žinomos būsenos
+  - **Data\_IsOCS –** ar dokumentas OCS režimu yra paskutinės žinomos būsenos
 
   - **Data\_IsODPFile -** Ar dokumentas yra „Open Document“ formato, kurį naudoja „OpenOffice.org“
 
@@ -7731,6 +7877,10 @@ Renkami šių laukų duomenys:
   - **Data\_NotRequiredExcludedParts -** Suglaudintų dalių, kurios nėra reikalingos pirmo vaizdo generavimo ir išskyrimo metu, bendras skaičius
 
   - **Data\_NotRequiredExcludedPartsSize -** Suglaudintų dalių, kurios nėra reikalingos pirmo vaizdo generavimo ir išskyrimo metu, bendras skaičius
+
+  - **Data_OngoingBlockingOpenCount –** tai šiuo metu veikiančių blokuojamų atvirųjų protokolų skaičius.
+  
+  - **Data_OngoingOpenCount –** tai šiuo metu veikiančių atvirųjų protokolų skaičius.
 
   - **Duomenų\_OpenCompleteFailureHR -** Rezultatas, kodėl nepavyko OpenComplete protokolas
 
@@ -7963,11 +8113,11 @@ Renkami šių laukų duomenys:
 
 #### <a name="officesystemsessionhandoff"></a>Office.System.SessionHandoff
 
-Nurodo, kad dabartinis „Office“ seansas yra perdavimo seansas. Tai reiškia, kad vartotojo prašymo atidaryti dokumentą tvarkymas perduodamas į tos pačios taikomosios programos jau veikiantį egzempliorių.
+Nurodo, kad dabartinis „Office“ seansas yra perdavimo seansas. Tai reiškia, kad vartotojo prašymo atidaryti dokumentą tvarkymas perduodamas į tos pačios programos jau veikiantį egzempliorių.
 
 Renkami toliau apibūdintų laukų duomenys.
 
-- **ParentSessionId** – ID seanso, kuris perims vartotojų užklausos tvarkymą.
+- **ParentSessionId** – seanso, kuris perims vartotojų užklausos tvarkymą, ID.
 
 #### <a name="officetelemetryengineisprelaunch"></a>Office.TelemetryEngine.IsPreLaunch
 
@@ -8283,7 +8433,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_BytesSynchronous -** Baitų (suglaudintų) skaičius, kuriuos privalome turėti prieš pradėdami atidaryti failą
 
-  - **Data\_BytesUnknown -** Baitų skaičius dokumentų dalyse, kurių nesitikėjome rasti.
+  - **Data\_BytesUnknown –** baitų skaičius dokumentų dalyse, kurių nesitikėjome rasti.
 
   - **Data\_Doc\_AccessMode -** Dokumentas yra skirtas tik skaityti / redaguoti
 
@@ -8377,7 +8527,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_MoveFlightEnabled -** Ar įjungta perkėlimo testavimo funkcija
 
-  - **Data\_PartsUnknown -** Dokumentų dalių, iš kurių nepavyko gauti duomenų, skaičius
+  - **Data\_PartsUnknown –** dokumentų dalių, iš kurių nepavyko gauti duomenų, skaičius
 
   - **Data\_RecoverableFailureInitiationLocationTag -** Unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti
 
@@ -9272,11 +9422,11 @@ Renkami šių laukų duomenys:
 
 - **ReportingOSVerStr** – operacinės sistemos versija
 
-- **SessionBuildNumber** – sugedusios taikomosios programos versija
+- **SessionBuildNumber** – sugedusios programos versija
 
 - **SessionIDSMatch** – Bulio logika, skirta patvirtinti, ar ataskaitos seanso ID yra toks pat, kaip ir paimtas MERP
 
-- **SessionVersion** – sugedusios taikomosios programos versija – **StackHash** – sugedusios taikomosios programos dėklo -pėdsako maiša
+- **SessionVersion** – sugedusios programos versija – **StackHash** – sugedusios programos dėklo pėdsako maiša
 
 - **UAEType** – išvardijimas, suteikiantis mums informacijos apie įvykusios gedimo tipą
 
@@ -9406,7 +9556,7 @@ Renkami šių laukų duomenys:
 
 - **entity** – seka objekto pavadinimą, kuris iškvietė įrašymo operaciją
 
-- **operation**-neapdorota operacijos vertė: įrašyti, iškviesti arba „užblokuota skaitymo rašymo eilė“
+- **operation** – neapdorota operacijos vertė: įrašyti, iškviesti arba „užblokuota skaitymo ir rašymo eilė“
 
 #### <a name="inbox_component"></a>inbox_component
 
@@ -9462,7 +9612,7 @@ Renkami šių laukų duomenys:
 
 - **stringVariant** – ši funkcija naudojama norint nustatyti vartotojų matomų eilučių tipą, kai jie pereina į mūsų puslapį. Atminkite, kad bet kuriame puslapyje, pvz., „bandomoji versija“, vartotojas gali matyti kitas eilutes. Tai priklauso nuo to, ar jie yra įsidiegę senesnę „Office“ versiją, arba jei anksčiau suaktyvino programą „Office“. Galimi šios ypatybės išvardijimai yra „LegacyUpsell“, „OfficeOpened“, „Default“, „YesIntent“, „NoIntent“ ir t. t.
 
-- **windowsBuildType** – tai naudojama norint stebėti naudotojo naudojamo „WindowsBuildType“ tipą. i.e. „RS4“, „RS5“, „RS19H1“, „Vibranium“ ir t. t. Kadangi mūsų patirtys dažniausiai orientuojasi į skirtingus „WindowsBuildTypes“ tipus, ši ypatybė yra gyvybiškai svarbi norint atskirti išvestis. 
+- **windowsBuildType** – tai naudojama norint stebėti naudotojo naudojamo „WindowsBuildType“ tipą. T. y. „RS4“, „RS5“, „RS19H1“, „Vibranium“ ir t. t. Kadangi mūsų patirtys dažniausiai taikomos pagal skirtingus „WindowsBuildTypes“ tipus, ši ypatybė yra gyvybiškai svarbi norint atskirti išleidimus. 
 
 #### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
 
@@ -9523,6 +9673,86 @@ Renkami šių laukų duomenys:
 - **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
 
 - **RMS.ServerType** – teisių valdymo tarnybos tipas 
+
+- **RMS.StatusCode** – pateikto rezultato būsenos kodas
+
+- **RMS.TemplatesCount** – šablonų skaičius
+
+- **RMS.TokenProvided** – nurodo, ar pateikiama žymė kaip API iškvietimo įvestis 
+
+- **RMS.UserProvided** – nurodo, ar pateikiamas vartotojas kaip API iškvietimo įvestis 
+
+- **UserInfo.UserObjectId** – vartotojo objekto ID
+
+#### <a name="ipcpgetkey"></a>IpcpGetKey
+
+Renkama, kai vartotojas bando atidaryti IRM (informacijos teisių valdymas) apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpGetKey API iškvietimo metu.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo.ClientHierarchy** – kliento hierarchija, kuri nurodo programos paleidimus gamybos aplinkoje arba kūrėjo aplinkoje
+
+- **AppInfo.Name** – programos pavadinimas.
+
+- **AppInfo.Version** – programos versija
+
+- **iKey** – registravimo tarnybos serverio ID
+
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
+
+- **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
+
+- **RMS.ConnectionMode** – ryšio režimas tarp teisių valdymo tarnybos kliento ir serverio: prisijungęs ar neprisijungęs
+
+- **RMS.ContentId** dokumento turinio ID
+
+- **RMS.Duration** – bendras API iškvietimo baigimo laikas
+
+- **RMS.DurationWithoutExternalOps** – bendrasis laikas atėmus išorinių operacijų laiką, pvz., tinklo delsą.
+
+- **RMS.ErrorCode** – klaidos kodas, kurį pateikia API iškvietimas, jei tokių yra
+
+- **RMS.EulId** – galutinio vartotojo licencijos ID
+
+- **RMS.EulProvided** – nurodo, ar pateikiama galutinio vartotojo licencija kaip API iškvietimo įvestis
+
+- **RMS.GuestTenant** – vartotojo svečio nuomotojo ID 
+
+- **RMS.GuestTenant** – vartotojo namų nuomotojo ID
+
+- **RMS.HttpCall** – nurodo, ar yra HTTP operacija
+
+- **RMS.Identity.ExtranetUrl** – vartotojo teisių valdymo tarnybos ekstraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.IntranetUrl** – vartotojo teisių valdymo tarnybos intraneto URL, gautas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.Identity.Status** – pirmas kartas, kai buvo gautas teisių paskyros sertifikatas iš serverio arba buvo atnaujintas teisių paskyros sertifikatas 
+
+- **RMS.Identity.Type** – vartotojo paskyros tipas, pvz., „Windows“ paskyra arba tiesioginė paskyra
+
+- **RMS.Identity.UserProvided** – nurodo, ar pateiktas vartotojo el. pašto adresas gaunant naują teisių paskyros sertifikatą iš serverio
+
+- **RMS.IssuerId** – teisių valdymo tarnybos serverio, kuris išduoda teisių paskyros sertifikatą, ID 
+
+- **RMS.KeyHandle** – rakto valdymo programos atminties adresas
+
+- **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
+
+- **RMS.PL.ExtranetUrl** – ekstraneto URL publikavimo licencijoje
+
+- **RMS.PL.IntranetUrl** – intraneto URL publikavimo licencijoje
+
+- **RMS.PL.KeyType** – reikšmė „Single“ arba „Double“ nurodo, ar PL apsaugoti buvo naudota vieno, ar dviejų raktų apsauga
+
+- **RMS.RACType** –teisių paskyros sertifikato tipas
+
+- **RMS.Result** – API iškvietimo sėkmė arba nesėkmė
+
+- **RMS.ScenarioId** – API apibrėžtas scenarijaus ID
+
+- **RMS.SDKVersion** – teisių valdymo tarnybos kliento versija
+
+- **RMS.ServerType** – teisių valdymo tarnybos tipas
 
 - **RMS.StatusCode** – pateikto rezultato būsenos kodas
 
@@ -9943,11 +10173,11 @@ Renkami šių laukų duomenys:
 
   - **InterruptionMessageId** – ar paleidimas buvo pertrauktas dialogo lango, prašančio naudotojo atlikti įvestį, dialogo lango ID.
 
-  - **Totalworkingsetmb** – proceso darbinio paketo atminties kiekis megabaitais.
+  - **TotalWorkingSetMB** – proceso darbinio rinkinio atminties kiekis megabaitais.
 
-  - **VirtualSetMB** – proceso paketo atminties kiekis megabaitais. (tik „MacOS“/ „iOS“)
+  - **VirtualSetMB** – proceso virtualiojo rinkinio atminties kiekis megabaitais. (tik „MacOS“/ „iOS“)
 
-  - **Workingsetpeakmb** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
+  - **WorkingSetPeakMB** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
 
@@ -10092,7 +10322,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_WasSuccessful: bool -** „True“, jei atidaryti pavyko
 
-#### <a name="onenotesyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted
+#### <a name="onenotesyncprovisioningcompleted-previous-name-officeonenoteandroidsyncprovisioningcompleted"></a>OneNote.Sync.ProvisioningCompleted *(ankstesnis pavadinimas)*, Office.OneNote.Android.Sync.ProvisioningCompleted
 
 Šis kritinis signalas naudojamas siekiant užtikrinti, kad vartotojui prisijungus prie „OneNote“ „Android“ programos, bloknotai būtų tinkamai parengti ir juos būtų galima sėkmingai pasiekti. Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai
 
@@ -10108,7 +10338,7 @@ Renkami šių laukų duomenys:
 
 - **TimeTakenInMilliSeconds** – pateikia laiką, kiek truko visas pateikimas milisekundėmis
 
-#### <a name="onenotesyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted
+#### <a name="onenotesyncprovisioningstarted-previous-name-officeonenoteandroidsyncprovisioningstarted"></a>OneNote.Sync.ProvisioningStarted *(ankstesnis pavadinimas)*, Office.OneNote.Android.Sync.ProvisioningStarted
 
 Šis kritinis signalas naudojamas siekiant užtikrinti, kad vartotojui prisijungus prie „OneNote“ „Android“ programos, bloknotai būtų tinkamai parengti ir juos būtų galima sėkmingai pasiekti.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai
 
@@ -10663,6 +10893,22 @@ Renkami šių laukų duomenys:
 - **ErrorAt** – žymės vertė: informacija apie vietą, kur įvyko klaida
 
 - **ExceptionErrorMessage** – daugiažodis klaidos pranešimas
+
+#### <a name="office_android_earlytelemetry_expansionfileserrors"></a>Office_Android_EarlyTelemetry_ExpansionFilesErrors
+
+Papildomi „Android Package Kit“ (APK) failai, skirti „Office“ mobiliųjų įrenginių programai, yra pridėtiniai išteklių failai, kuriuos „Android“ programų kūrėjai gali paskelbti kartu su programa. Siekdami padaryti papildomų failų atsisiuntimo mechanizmą patikimesnį, registruojame klaidų, įvykusių atsisiunčiant arba skaitant atsisiųstus papildomus failus, priežastis.
+
+Renkami šių laukų duomenys:
+
+- **Data_ClassName** – tekstas, nurodantis išeitinio kodo failo pavadinimą.
+
+- **Data_ErrorMessage** – tekstas, nurodantis operaciją, kurią vykdant įvyko triktis.
+
+- **Data_ExceptionMessage** – pasirinktinis teksto laukas, nurodantis išimties priežastį.
+
+- **Data_ExceptionType** – pasirinktinis teksto laukas, nurodantis išimties, gautos iš išeitinio kodo, pavadinimą.
+
+- **Data_MethodName** – tekstas, nurodantis išeitinio kodo metodo, kuriame įvyko klaida, pavadinimą.
 
 #### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
