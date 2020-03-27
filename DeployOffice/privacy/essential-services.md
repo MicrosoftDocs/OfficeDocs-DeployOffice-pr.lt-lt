@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: d5c5fc824e380741287f0393cdae947d1aabda2d
-ms.sourcegitcommit: 6f5af9a707a833b84202040f998361383f488d23
+ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
+ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42225000"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42939770"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -30,7 +30,7 @@ ms.locfileid: "42225000"
 >
 > Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
-„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Jei esate organizacijos administratorius, galite valdyti daugelį jums arba jūsų vartotojams pasiekiamų prisijungus naudojamų funkcijų, bet yra paslaugų, kurios yra būtinos, kad „Office“ veiktų, ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office“. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų su privatumu susijusios strategijos parametrų. Šiuos duomenis galite peržiūrėti naudodami diagnostikos duomenų peržiūros programą.
+„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Jei esate organizacijos administratorius, galite valdyti daugelį jums arba jūsų vartotojams pasiekiamų prisijungus naudojamų funkcijų, bet yra tarnybų, kurios yra būtinos, kad „Office“ veiktų, ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office“. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų su privatumu susijusios strategijos parametrų. Šiuos duomenis galite peržiūrėti naudodami diagnostikos duomenų peržiūros programą.
 
 Jei reikia daugiau informacijos, žr.:
 
@@ -38,7 +38,7 @@ Jei reikia daugiau informacijos, žr.:
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 - [„Office“ prisijungus naudojamos funkcijos](connected-experiences.md)
 
-Jei esate organizacijos administratorius, jus gali dominti šios temos:
+Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
 - [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
@@ -632,7 +632,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
 
-Ataskaitos apie naujo spustelėkite ir naudokitės naujinimo srauto būseną ("Repoman") ir, jei ji sėkmingai atsisiunčia ir pritaiko "Office" naujinimus.
+Ataskaitos apie naujo spustelėkite ir naudokitės naujinimo srauto būseną („Repoman“) ir ar ji sėkmingai atsisiunčia ir pritaiko „Office" naujinimus.
 
 Renkami šių laukų duomenys:
 
@@ -703,7 +703,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
@@ -737,7 +737,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -745,13 +745,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -773,19 +773,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -821,13 +821,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -849,19 +849,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -889,7 +889,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -897,13 +897,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -925,19 +925,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -965,7 +965,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -973,13 +973,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1001,19 +1001,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1049,13 +1049,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1077,19 +1077,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1125,13 +1125,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1153,19 +1153,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1201,13 +1201,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1229,19 +1229,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1277,13 +1277,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1305,19 +1305,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1353,13 +1353,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1381,19 +1381,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1429,13 +1429,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1457,19 +1457,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1497,7 +1497,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1505,13 +1505,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1533,19 +1533,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1581,13 +1581,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1609,19 +1609,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1649,7 +1649,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1657,13 +1657,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1685,19 +1685,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1725,7 +1725,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1733,13 +1733,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1761,19 +1761,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1801,7 +1801,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1809,13 +1809,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1837,19 +1837,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1877,7 +1877,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1885,13 +1885,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1913,19 +1913,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -1953,7 +1953,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1961,13 +1961,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -1989,19 +1989,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -2029,7 +2029,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -2037,13 +2037,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_AvailableVersion to –** kokią „Office“ versiją galima naujinti
 
@@ -2051,7 +2051,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
-  - **Duomenų\_CorruptionChecksOnly –** jei tik tikrinama dėl sugadinimo, o ne naujinama
+  - **Data\_CorruptionChecksOnly –** jei tik tikrinama dėl sugadinimo, o ne naujinama
 
   - **Data\_ErrorCode –** įvykusios klaidos kodas 
 
@@ -2075,19 +2075,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_PackageOperationSuccessful –** teisinga, jei sėkmingai užbaigta užduotis „Office“ pakete
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -2117,7 +2117,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -2125,13 +2125,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -2153,19 +2153,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -2193,7 +2193,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -2201,13 +2201,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_AvailableVersion -** į kokią „Office“ versiją galima naujinti
 
@@ -2237,19 +2237,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_PackageUpdateAvailable –** teisinga, jei yra nauja „Office“ versija
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -2285,13 +2285,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_AvailableVersion -** į kokią „Office“ versiją galima naujinti
 
@@ -2325,19 +2325,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_PipelineExitCode –** failų srauto pateiktas išėjimo kodas
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -2373,13 +2373,13 @@ Renkami šių laukų duomenys:
 
   - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
 
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
 
   - **Data\_16\_Version –** „Office 16“ versija 
 
   - **Data\_AddingFixedProducts –** įtraukiami produktai 
 
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
 
   - **Data\_CompletionState –** ar įvykdėme užduotį
 
@@ -2401,19 +2401,19 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+  - **Data\_ProductsToRemove –**  kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų rašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijus vykdomas, pvz., pašalinimas, diegimas iš naujo 
 
   - **Data\_SourceType –** kur yra šaltinis, pvz., CDN 
 
@@ -2446,9 +2446,9 @@ Teikia ataskaitą apie failo atsisiuntimo veiksmus, kad nustatytumėte operacijo
 
 - **CancelledJobs –** atšauktų užklausų skaičius seanse
 
-- **Prijungta –** ar susieta su šaltiniu
+- **Connected –** ar susieta su šaltiniu
 
-- **Klaidos kodas –** paskutinės klaidos kodas
+- **ErrorCode –** paskutinės klaidos kodas
 
 - **ErrorDetails –** paskutinės klaidos duomenys
 
@@ -2462,7 +2462,7 @@ Teikia ataskaitą apie failo atsisiuntimo veiksmus, kad nustatytumėte operacijo
 
 - **SourcePathNoFilePath – ** Pateikiamas tik http išteklio šaltinio kelias, vietinis failo kelias arba UNC kelias filtruojamas
 
-- **SucceededJobs –** atšauktų užklausų skaičius seanse
+- **SucceededJobs –** sėkmingų užklausų skaičius seanse
 
 - **TotalJobs –** bendras užklausų skaičius seanse
 
@@ -2513,13 +2513,13 @@ Renkami šių laukų duomenys:
 
 Praneša apie galutinio diegimo bandymo rezultatą
 
- - **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
+ - **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
 
  - **ErrorDetails –** eilutė, kuri aprašo vietą, kur įvyko neapdorota išimtis (funkcija, failas, eilutės numeris, papildomi parametrai, nustatyti naudojant „Thrower“)
 
  - **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
 
- - **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+ - **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
 
  - **ExitCode – **sveikoji reikšmė, susieta su „bootstrapper“ paleidimu, rodanti sėkmingus bandymus ir tam tikrų tipų triktis
 
@@ -2581,9 +2581,9 @@ Ataskaitos apie veiksmą, atskiriantį įvestį, renkamą naudojant CollectParam
 
 - **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti šalinami produkto/kultūros derinai
 
-- **SharedComputerLicensing –** buliaus logika nurodo, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
+- **SharedComputerLicensing –** bulio logikos reikšmė, nurodanti, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
 
-- **ShouldActivate –** buliaus logika nurodo, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
+- **ShouldActivate –** bulio logikos reikšmė, nurodanti, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
 
 - **ShouldUninstallCentennial –** Bulio logikos žymė, nurodanti, ar „Office“ produktų iš „Store“ įdiegtis turi būti pašalinta
 
@@ -2600,7 +2600,7 @@ Ataskaitos apie veiksmą, kuris skaito pažymėtą įvestį iš exe įdėtojo pa
 
 - **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
 
-- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
 
 ### <a name="officeclicktorununiversalbootstrappercollectparameters"></a>Office.ClickToRun.UniversalBootstrapper.CollectParameters
 
@@ -2660,9 +2660,9 @@ Praneša apie parametrus, naudojamus „Office“ įdiegčiai
 
 - **ProductsToAdd –** nuosekliai išdėstyta eilutė, nurodanti C2R klientą, kuriame turėtų būti šalinami produkto/kultūros derinai
 
-- **SharedComputerLicensing –** buliaus logika nurodo, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
+- **SharedComputerLicensing –** bulio logikos reikšmė, nurodanti, ar IT administratorius paprašė sąrankos, kad būtų galima naudoti funkciją „SharedComputerLicensing“
 
-- **ShouldActivate –** buliaus logika nurodo, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
+- **ShouldActivate –** bulio logikos reikšmė, nurodanti, ar IT administratorius paprašė automatinio licencijavimo aktyvinimo configuration.xml
 
 - **ShouldUninstallCentennial –** Bulio logikos žymė, nurodanti, ar „Office“ produktų iš „Store“ įdiegtis turi būti pašalinta
 
@@ -2674,23 +2674,23 @@ Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus
 
 - **AvailableClientVersionText –** eilutės reikšmė C2R kliento 16.0.xxxxx.yyyyy versijoje, rasta „Version Descriptor XML“, kuri naudojama nustatyti, ar šiuo metu įdiegtas C2R klientas turi būti atnaujintas
 
-- **CleanFireflyAction –** „tesinga“, jei „CleanFireFlyAction“ užduotis suplanuota vykdyti šį diegimą
+- **CleanFireflyAction –** „teisinga“, jei „CleanFireFlyAction“ užduotis suplanuota vykdyti šio diegimo metu
 
 - **CleanO15Action –** „teisinga“, jei „CleanO15Action“ užduotis suplanuota vykdyti šio diegimo metu
 
-- **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe. Galimybės: automatinis vykdymas, konfigūravimas, vartotojams, atsisiuntimas, žinynas, pakavimo programa
+- **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe. Galimybės: automatinis vykdymas, konfigūravimas, vartotojams, atsisiuntimas, žinynas, pakavimo programa
 
-- **DeliveryMechanism –** „FFNRoot“ guid, išgaunamas iš „Version Descriptor XML“ (įspaustas RDX), kuriame nurodoma, iš kokios auditorijos/kanalo gautas komponavimo šaltinis
+- **DeliveryMechanism –** „FFNRoot guid“, išgaunamas iš „Version Descriptor XML“ (įspaustas RDX), kuriame nurodoma, iš kokios auditorijos/kanalo gautas komponavimo šaltinis
 
 - **DownloadC2RClientAction –** „teisinga“, jei „DownloadC2RClientAction“ užduotis suplanuota vykdyti šio diegimo metu
 
-- **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
+- **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
 
 - **ErrorDetails –** eilutė, kuri aprašo vietą, kur įvyko neapdorota išimtis (funkcija, failas, eilutės numeris, papildomi parametrai, nustatyti naudojant „Thrower“)
 
 - **ErrorMessage –** eilutė, apibrėžta toje vietoje, kur buvo aptikta neapdorota išimtis, aprašanti gedimo pobūdį
 
-- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
+- **ErrorType –** eilutė, aprašanti neapdorotą išimties kategoriją
 
 - **ExitCode – **sveikoji reikšmė, susieta su „bootstrapper“ paleidimo fazės rezultatu, rodanti sėkmingus bandymus ir tam tikrų tipų triktis
 
@@ -2705,6 +2705,8 @@ Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus
 - **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
 
 ### <a name="officeserviceabilitymanagerinventoryaddonheartbeat"></a>Office.ServiceabilityManager.InventoryAddon.Heartbeat
+
+*[Šis įvykis buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 Šis įvykis naudojamas gauti standartinius meta duomenis kiekvieno Inventory priedo paleidimo metu, kuris yra dalis „Office“ aptarnavimo tvarkytuvo bei naudojamas „Office“ atsargų informacijai tuose kompiuteriuose, kur IT administratorius pasirinko dalyvauti. Specifinio intereso meta duomenys čia yra sesijos ID. Jie naudojami norint susieti kitus duomenis, saugomus kiekvieno nuomininko debesies tarnyboje. 
 
@@ -2726,7 +2728,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
-Šis įvykis užregistruojamas, kai nepavyksta iškviesti tinklo tarnybos iš Spustelėkite ir naudokitės aptarnavimo tvarkytuvo papildinio.
+Šis įvykis užregistruojamas, kai nepavyksta iškviesti tinklo tarnybos iš „Office“ aptarnavimo tvarkytuvo papildinio. Triktys gali būti dėl vidinių gedimų arba negalėjimo prisijungti prie tinklo tarnybos.
 
 Renkami šių laukų duomenys:
 
@@ -2735,6 +2737,8 @@ Renkami šių laukų duomenys:
 - **Correlation ID** – atsitiktiniu būdu sugeneruotas GUID, būdingas dabartiniam egzemplioriui, kuris siunčiamas į tinklo tarnybą kliento ir serverio iškvietimams susieti.
 
 - **ErrorInfo** – skaitinių klaidos kodų informacija, kurią pateikia „Office“ tinklo tarnybos iškvietimo API.
+
+- **ErrorMessage** – pranešimas, pateikiantis daugiau įžvalgų apie gedimą. Kiekviena klaidos tipas susiejamas su užprogramuota eilute; kai kurie klaidų tipai susiejami su galimai keliomis eilutėmis, atsižvelgiant į konkretų gedimo pobūdį.
 
 - **Function** – funkcija kode, iš kurios įvykdytas dabartinis iškvietimas.
 
@@ -3154,13 +3158,13 @@ Renkami šių laukų duomenys:
 - **Success** – nurodo, kad sėkmingai iškvietėme galiojantį įrenginio „Office“ susiejimą (PIN).
 
 - **Tag** – nurodo, kuriame etape nustojome ieškoti susiejimo. Galimos žymės:
-  - 0x03113809 Nėra interneto / tarnybos klaida patvirtinant PIN
-   - 0x0311380a PIN patvirtinimo klaida, išsiųsta su lauko PinValidationFailure reikšme
-  - 0x0310410f Būsena Pavyko, išsiųsta su lauko Success reikšme
-  - 0x0311380d Klaidos, kurias galima bandyti išspręsti pakartotinai (interneto problemos, nežinomos klaidos)
-  - 0x0311380e Klaidos, kurių negalima bandyti išspręsti pakartotinai (baigėsi susiejimo pasiūlymo laikas)
-  - 0x0311380f Kitos klaidos (nepavyko licencijuoti)
-  - 0x03104111 Nepavyko atpažinti „Office“ PIN; siunčiama su lauko PinValidationResult reikšme
+  - 0x03113809    Nėra interneto / tarnybos klaida patvirtinant PIN
+   - 0x0311380a    PIN patvirtinimo klaida, išsiųsta su lauko PinValidationFailure reikšme
+  - 0x0310410f    Būsena Pavyko, išsiųsta su lauko Success reikšme
+  - 0x0311380d    Klaidos, kurias galima bandyti išspręsti pakartotinai (interneto problemos, nežinomos klaidos)
+  - 0x0311380e    Klaidos, kurių negalima bandyti išspręsti pakartotinai (baigėsi susiejimo pasiūlymo laikas)
+  - 0x0311380f    Kitos klaidos (nepavyko licencijuoti)
+  - 0x03104111    Nepavyko atpažinti „Office“ PIN; siunčiama su lauko PinValidationResult reikšme
 
 - **WpkBindingFailure** – nurodo „Office“ PIN, skirto įrenginio WPK, gavimo klaidos kodą.
 
@@ -3183,10 +3187,10 @@ Renkami šių laukų duomenys:
 - **OExType** – klaidos tipas, kurį gauname, kai atmetamas prisijungimo dialogo langas.
 
 - **Tag** – nurodo, kuriame etape vartotojas išėjo iš AFO panaudojimo proceso. Galimos žymės:
-    - 0x0311380b Vartotojas atmetė prisijungimo dialogo langą panaudojimo dialogo lange
-    - 0x0311380c Nepavyko automatiškai įkelti tapatybės, kai vartotojas prisijungė panaudojimo dialogo lange
-    - 0x03113810 Nepavyko įkelti paskyros demografinės informacijos (šalies kodo, kalbos, valiutos, bandomojo pasiūlymo ir rinkodaros nuostatų)
-    - 0x03113805 Vartotojas atmetė prisijungimo dialogo langą prisijungimo dialogo lange
+    - 0x0311380b    Vartotojas atmetė prisijungimo dialogo langą panaudojimo dialogo lange
+    - 0x0311380c    Nepavyko automatiškai įkelti tapatybės, kai vartotojas prisijungė panaudojimo dialogo lange
+    - 0x03113810    Nepavyko įkelti paskyros demografinės informacijos (šalies kodo, kalbos, valiutos, bandomojo pasiūlymo ir rinkodaros nuostatų)
+    - 0x03113805    Vartotojas atmetė prisijungimo dialogo langą prisijungimo dialogo lange
     - 0x03113806 Nepavyko automatiškai įkelti tapatybės, kai vartotojas prisijungė prisijungimo dialogo lange
     - 0x03113807 Nepavyko automatiškai įkelti tapatybės
     - 0x03113811 Vartotojas uždarė prisijungimo / panaudojimo dialogo langą
@@ -3347,7 +3351,7 @@ Renkami šių laukų duomenys:
 
 Šis įvykis nurodo, kad įvyko klaidų prisijungiant prie MAU pagalbininko (komponento, kuris atlieka taikomųjų programų diegimą).  Šis įvykis žymi galimą MAU taikomosios programos sugadinimą. Įrenginys negalės įdiegti naujinimų.
 
-Renkami šių laukų duomenys: 
+Renkami šių laukų duomenys:    
 
 - **App** – taikomosios programos siuntimo procesas
 
@@ -8718,7 +8722,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="optinnotificationaction"></a>Optinnotificationaction
 
-Šis įvykis užregistruoja vartotojo atsaką į „opt-in“ dialogo langą, kad būtų galima naudoti tyliuosius naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis užregistruoja vartotojo atsaką į sutikimo pasirinkti dialogo langą, kad būtų galima naudoti tyliuosius naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -11282,6 +11286,8 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
+  - **BootCompleted –** buvo užbaigtas „Office“ įkrovimas gedimo metu.
+
   - **CrashedAppBuild –** paveikto proceso komponavimo versijos identifikatorius.
 
   - **CrashedAppMajor –** paveikto proceso pagrindinės versijos identifikatorius.
@@ -11298,6 +11304,8 @@ Renkami šių laukų duomenys:
 
   - **CrashedSessionInitTime –** paveikto proceso pradžios laikas.
 
+  - **CrashTime –** laikas, nurodantis, kada klientas netikėtai nutraukė.
+
   - **CrashType –** gedimo tipo skirstymo identifikatorius.
 
   - **DetectionTime –** netikėto išėjimo aptikimo laikas.
@@ -11305,6 +11313,12 @@ Renkami šių laukų duomenys:
   - **ExceptionAddress –** adresas programoje, kur įvyko triktis.
 
   - **ExceptionCode –** išimties skirstymo identifikatorius.
+
+  - **HandOff –** ar klientas sukūrė ir perleido „Office“ procesą naujam seansui.
+
+  - **HasEdit –** ar vartotojas redagavo dokumentą sugedusiame kliente.
+
+  - **HasOpen –** ar dokumentas buvo atidarytas sugedusiame kliente.
 
   - **HexCrashTag-** unikalus gedimo kodo identifikatorius.
 
@@ -11330,13 +11344,17 @@ Renkami šių laukų duomenys:
 
   - **ModuleSize –** modulio su klaida dydis baitais.
 
+  - **OfficeUILang –** „Office“ komponavimo versijos vartotojo sąsajos kalba.
+
   - **PreviousBuild –** anksčiau įdiegta komponavimo versija
+
+  - **SafeMode –** ar seansas buvo paleistas saugiuoju režimu.
 
   - **UAEOSEnvironment –** operacinės sistemos aplinkos identifikatorius.
 
   - **UninitLibletId –** unikalus nepavykusio gedimo komponento identifikatorius.
 
-  - **VerifyElseCrashTag –** programos gedimo vietos unikalusis identifikatorius.
+  - **VerifyElseCrashTag –** programos gedimo vietos unikalusis identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 ### <a name="officesystemungracefulapplicationexitdesktopappexit"></a>Office.System.UngracefulApplicationExit.DesktopAppExit
 
