@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 065fb887fe0af4bb68576310c3ceb4842b163bf1
-ms.sourcegitcommit: 95aa5a2587e7333dfbb2ab0d4d898789645a4275
+ms.openlocfilehash: fbb0e7b095becb664ff05fef67cd47f3360130b2
+ms.sourcegitcommit: 269825241b1fa1831655ff599c97d5afa85b3895
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42946192"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42983742"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -524,6 +524,122 @@ Informacija apie proceso seansą.
 - **UserInfo_OtherId** – nepirminių pseudoniminių identifikatorių, atitinkančių vartotojo paskyras, sąrašas.
 
 - **UserInfo_OtherIdType** – nepagrindinių paskyrų tipų sąrašas.
+
+## <a name="data-fields-that-are-common-for-outlook-mobile-events"></a>„Outlook Mobile“ įvykiams dažnai naudojami duomenų laukai
+
+„Outlook Mobile“ surenka įprastus kiekvieno iš mūsų įvykių laukus, kad galėtume užtikrinti, jog programa būtų atnaujinta, saugi ir funkcionuojanti. 
+
+Šie duomenų laukai dažniausiai naudojami visiems „Outlook“, skirtos „iOS“ ir „Android“, įvykiams.
+
+- **aad_tenant_id** – kliento nuomotojo ID, jei jis pasiekiamas
+
+- **account_cid** – pseudonimo identifikatorius, nurodantis dabartinį vartotoją
+
+- **account_domain** – paskyros domeno vardas
+
+- **account_puid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius.
+
+- **account_type** – seka paskyros tipą, pvz., „Office 365“, „Google Cloud Cache“, Outlook.com ir t.t.
+
+- **action** – įvykio veiksmo pavadinimas (pvz., archyvuoti,naikinti ir t.t.), kad galėtume aptikti specifinių veiksmų, kurių imtasi, problemą
+
+- **ad_id** – unikalus reklamavimo identifikatorius
+
+- **app_version** – naujausia taikomosios programos versija, kuri padės mums aptikti tam tikros taikomosios programos versijos triktis
+
+- **AppInfo.ETag** – unikalus jūsų funkcijų išleidimo valdymo identifikatorius, padedantis nustatyti, kurios triktys veikia tam tikras paleistas funkcijas
+
+- **AppInfo.Language** – šiuo metu nustatyti įrenginio kalbos parametrai, kurie padės mums aptikti tam tikromis kalbomis kylančias triktis
+
+- **AppInfo. version** – naujausia taikomosios programos versija, kuri padės mums aptikti triktis, kurios veikia tam tikras taikomųjų programų versijas
+
+- **customer_type** – nurodo kliento tipą (vartotoją, komercinę, trečiąją šalį ir t. t.), padedantį nustatyti tam tikrų klientų tipų triktis.
+
+- **device_category** – nurodo, kokio tipo įrenginys (telefonas, planšetinis kompiuteris ir t. t.), kad būtų lengviau aptikti įrenginio kategorijos tam tikras triktis
+
+- **DeviceInfo.Id** – unikalus įrenginio identifikatorius, kuris padės mums aptikti įrenginio specifines triktis
+
+- **DeviceInfo.Make** – įrenginio, pvz., „Apple“, „Samsung“ ir t.t., markė, kuri padės aptikti specifines įrenginio triktis
+
+- **DeviceInfo.Model** – įrenginio modelis (t. y. „iPhone 6s“), kuris padės mums aptikti įrenginio modelio tam tikras triktis
+
+- **DeviceInfo.NetworkType** – naudojamas esamas įrenginių tinklas (WiFi, mobilusis ir t.t.), kuris padės mums aptikti įrenginio tinklo tam tikras triktis
+
+- **DeviceInfo.OsBuild** – dabartinės OS komponavimo versija, padedanti mums aptikti konkrečias OS komponavimo versijas veikiančias triktis
+
+- **DeviceInfo.OsName** – OS pavadinimas (pvz., „iOS“), kurie padės mums aptikti tam tikroms platformoms būdingas triktis
+
+- **DeviceInfo.OsBuild** – dabartinės OS komponavimo versija, padedanti mums aptikti konkrečias OS komponavimo versijas veikiančias triktis
+
+- **DeviceInfo.SDKUid** – įrenginio unikalusis identifikatorius (panašus į DeviceInfo.Id)
+
+- **EventInfo.InitId** – ID, naudojamas kaip sekos, skirtos įvykių užsakymui mūsų telemetrijos sraute, nustatymas, kad būtų galima nustatyti pagrindinės srauto problemos priežastį
+
+- **EventInfo.SdkVersion** – SDK versija, kurią naudojame siųsti telemetriją, padedanti nustatyti pagrindinės vamzdyno problemos priežastį
+
+- **EventInfo. Sequence** – seka yra skirta įvykių užsakymams per mūsų telemetrijos srautą, kad galėtume nustatyti pagrindinės srauto problemos priežastį
+
+- **EventInfo.Source** – parodo, kokią kodo dalį atsiuntė įvykis, kad galėtume nustatyti priežastį, dėl kurios kyla problemų
+
+- **EventInfo.Time** – laikas ir data, kada renginys buvo išmetamas iš įrenginio, kad mūsų sistemos galėtų sėkmingai valdyti ateinančius įvykius
+
+- **eventpriority** – telemetrijos įvykių prioritetas, lyginant su kitais įvykiais, kad mūsų sistemos galėtų sėkmingai valdyti ateinančius įvykius
+
+- **first_launch_date** – pirmą kartą paleidus programą, tai padės mums suprasti, kada atsirado pirmoji problema
+
+- **hashed_email** – pseudonimo identifikatorius, nurodantis dabartinio vartotojo el. paštą
+
+- **is_first_session** – seka, ar tai yra pirmasis taikomosios programos seansas
+
+- **origin** – veiksmo inicijacija. Pvz., pranešimo žymėjimas kaip perskaityto gali būti gaunamas iš pranešimų sąrašo arba pranešimo apie naują el. laišką, todėl tai padeda mums aptikti triktis, pagrįstas veiksmų inicijavimu
+
+- **PipelineInfo.AccountId** – pseudonimo identifikatorius, nurodantis dabartinį vartotoją.
+
+- **PipelineInfo.ClientCountry** – dabartinė įrenginio šalis, kad būtų aptiktos šaliai ar regionui specifinės triktys ar nepasiekiamumas
+
+- **PipelineInfo.ClientIp** – IP adresas, kuriuo įrenginys yra prijungtas prie ryšio trikčių derinimo
+
+- **PipelineInfo.IngestionTime** – laiko žyma, kai vyksta mūsų telemetrijos failų įdėjimas šiam renginiui
+
+- **Session.Id** – unikalus taikomosios programos seanso identifikatorius, padedantis nustatyti su seansu susijusias triktis
+
+- **Seansas. ImpressionId** – unikalus funkcijų išleidimo valdymo identifikatorius, siekiant užtikrinti, kad funkcijos būtų sėkmingai išleistos visiems vartotojams ir įrenginiams
+
+- **ui_mode** – ar vartotojas apšvietimo, ar tamsos režimu, padeda mums klasifikuoti UX klaidas, naudojant tamsų režimą
+
+- **UserInfo.Language** – vartotojo kalba, padedanti derinti teksto vertimo triktis
+
+- **UserInfo.TimeZone** – vartotojo laiko juosta, padedanti šalinti kalendoriaus triktis
+
+
+Be to, šie laukai dažniausiai naudojami visiems „Outlook“, skirtos „iOS“, įvykiams.
+
+- **cloud** – kai pašto dėžutė yra šio įrenginio paskyroje ir padeda aptikti konkretaus pašto dėžutės debesies, pvz., „Office 365“ ar GCC, debesies problemą.
+
+- **DeviceInfo.NetworkProvider** – įrenginio tinklo teikėjas (t.y. „Verizon“)
+
+- **gcc_restrictions_enabled**-praneša mums, jei GCC apribojimai buvo taikomi programėlei, kad galėtume užtikrinti, kad mūsų GCC klientai saugiai naudoja mūsų programą
+
+- **office_session_id** – unikalus ID, kuriuo sekama prijungtų „Office“ tarnybų seansas, kad būtų lengviau aptikti „Office“ paslaugų integravimą programoje „Outlook“, pvz., „Word“
+
+- **state** – ar taikomoji programa buvo aktyvi, kai šis įvykis buvo nusiųstas, kad būtų lengviau aptikti aktyvios arba neaktyvios taikomųjų programų triktis
+
+
+Be to, šie laukai dažniausiai naudojami visiems „Outlook“, skirtos „Android“, įvykiams.
+
+- **DeviceInfo.NetworkCost** – įrenginių, kurių būsena atitinka WiFi/Cellular/roaming būseną, kad būtų lengviau aptikti įrenginių tinklo triktis, nurodymas
+
+- **is_app_in_duo_split_view_mode** – tai praneš mums, kad taikomoji programa buvo rodoma Duo ekrano režimu.  Ši ypatybė nustatyta tik Duo (tik „Android“) įrenginiams.
+
+- **is_dex_mode_enabled** – ar „Samsung DeX Mode“ įgalinta „Samsung“ įrenginiuose, norint aptikti DeX režimu būdingas triktis
+
+- **is_sliding_drawer_enabled** – ar slankiojo stalčiaus sąsajos įgalintos, padeda aptikti slankiojo stalčiaus sąsajos triktis
+
+- **orientation** – fizinė ekrano padėtis (stačias/gulsčias), padedanti aptikti įrenginio padėties būdingus dalykus
+
+- **os_arch** – įrenginio operacinė sistema, kuri padeda aptikti įrenginio veikimo sistemoms būdingus dalykus
+
+- **process_bitness** proceso bitų skaičius (32 arba 64 bit), kad galėtų aptikti problemas, kurios būdingos įrenginio bitų skaičiui
 
 ## <a name="software-setup-and-inventory-data-events"></a>Programinės įrangos sąrankos ir inventoriaus duomenų įvykiai
 
@@ -2981,7 +3097,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilitycatalogexchangeprocessmanifest"></a>Office.Extensibility.Catalog.ExchangeProcessManifest
 
-Duomenys apie O365 nuomotojo administratoriaus priskirto papildinio atskiros deklaracijos tvarkymą. Naudojamas klientų problemoms analizuoti ir klientų sėkmės diagramoms kurti.
+Duomenys apie „Office 365“ nuomotojo administratoriaus priskirto papildinio atskiros deklaracijos tvarkymą. Naudojamas klientų problemoms analizuoti ir klientų sėkmės diagramoms kurti.
  
 Renkami šių laukų duomenys:
 
@@ -3694,7 +3810,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_firstrun_apple_activationresult"></a>Office_FirstRun_Apple_ActivationResult
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis, kad išsiaiškintume „O365“ prenumeratos aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa (FRE), srautas taikomojoje programoje, pirkimas ir t. t.).
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas mūsų taikomosios programos aktyvinimo srauto sveikatai stebėti. Renkame duomenis, kad išsiaiškintume „Office 365“ prenumeratos aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa (FRE), srautas taikomojoje programoje, pirkimas ir t. t.).
 
 Renkami šių laukų duomenys:
 
@@ -3706,7 +3822,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_firstrun_apple_activationstatus"></a>Office_FirstRun_Apple_ActivationStatus
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas išsiaiškinti „O365“ prenumeratos aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa, srautas taikomojoje programoje, pirkimas ir t. t.). Renkame duomenis, kuriuose yra aktyvinimo tipas, srauto tipas (FRE/DocStage/pirkimas) ir „Office“ licencijavimo tarnybos ID.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas išsiaiškinti „Office 365“ prenumeratos aktyvinimo rezultatus kartu su aktyvinimui naudojamu srautu (pirmojo sistemos paleidimo programa, srautas taikomojoje programoje, pirkimas ir t. t.). Renkame duomenis, kuriuose yra aktyvinimo tipas, srauto tipas (FRE/DocStage/pirkimas) ir „Office“ licencijavimo tarnybos ID.
 
 Renkami šių laukų duomenys:
 
@@ -7157,7 +7273,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidandroidoffice16bootlatency"></a>Office.Android.AndroidOffice16BootLatency
 
-Svarbu užfiksuoti programos veikimo metriką, atsižvelgiant į taikomosios programos atsakymo laiką nuo paleidimo.  „Microsoft“ šią funkciją naudoja fiksuoti laiką, skirtą taikomajai programai reaguoti ir aptikti scenarijus, kurie gali veikti paleidimo laiką WXP programose.
+Svarbu užfiksuoti programos veikimo metriką, atsižvelgiant į taikomosios programos atsakymo laiką nuo paleidimo.  „Microsoft“ šią funkciją naudoja fiksuoti laiką, skirtą taikomajai programai reaguoti ir aptikti scenarijus, kurie gali veikti paleidimo laiką programose „Word“, „Excel“ ar „PowerPoint“.
 
 Renkami šių laukų duomenys:
 
@@ -7403,7 +7519,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_SchemeMgrStartupTime:integer -** Laikas, kurio reikia schemos tvarkytuvui inicijuoti 
 
-  - **Data\_SDX\_AssetId -** TIK parduotuvės papildiniams. OMEX suteikia papildiniams AssetId, kai jie siunčiami parduotuvę
+  - **Data\_SDX\_AssetId -** TIK parduotuvės papildiniams. OMEX suteikia papildiniams AssetId, kai jie siunčiami į parduotuvę
 
   - **Data\_SDX\_BrowserToken -** Identifikatorius, kuris yra naršyklės talpykloje
 
@@ -9818,7 +9934,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidandroidofficelaunchtolandingpagelatency"></a>Office.Android.AndroidOfficeLaunchToLandingPageLatency
 
-Svarbu užfiksuoti programos veikimo metriką, atsižvelgiant į taikomosios programos atsakymo laiką nuo paleidimo.  „Microsoft“ šią funkciją naudoja fiksuoti laiką, skirtą taikomajai programai reaguoti ir aptikti scenarijus, kurie gali veikti paleidimo laiką WXP programose.
+Svarbu užfiksuoti programos veikimo metriką, atsižvelgiant į taikomosios programos atsakymo laiką nuo paleidimo.  „Microsoft“ šią funkciją naudoja fiksuoti laiką, skirtą taikomajai programai reaguoti ir aptikti scenarijus, kurie gali veikti paleidimo laiką programose „Word“, „Excel“ ar „PowerPoint“.
 
 Renkami šių laukų duomenys:
  
@@ -10474,7 +10590,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidandroidappdocsfileoperationends"></a>Office.Android.AndroidAppDocsFileOperationEnds
 
-Tik „Android“ skirtų svarbių dokumentų („AppDocs“) telemetrijos duomenys, skirti baigiamosioms operacijoms naujas failas / atidaryti / įrašyti kaip. Ši funkcija fiksuoja šių „AppDocs“ operacijų klaidų kodus.  „Microsoft“ šią funkciją naudoja klaidoms įvairiose failų operacijose ir tiksliam sluoksniui, kuriame įvyko WXP taikomųjų programų triktis, nustatyti.
+Tik „Android“ skirtų svarbių dokumentų („AppDocs“) telemetrijos duomenys, skirti baigiamosioms operacijoms naujas failas / atidaryti / įrašyti kaip. Ši funkcija fiksuoja šių „AppDocs“ operacijų klaidų kodus.  „Microsoft“ šią funkciją naudoja klaidoms įvairiose failų operacijose ir tiksliam sluoksniui, kuriame įvyko „W/X/P“ taikomųjų programų triktis, nustatyti.
 
 Renkami šių laukų duomenys:
 
@@ -10566,7 +10682,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidandroidfileasyncsavestatus"></a>Office.Android.AndroidFileAsyncSaveStatus
 
-Fiksuoja failo asinchroninio įrašymo būsenos duomenis ir įvairius skirtingų komponentų klaidų kodus.  „Microsoft“ naudoja šiuos duomenis, kad galėtų išanalizuoti, ar nėra vartotojo duomenų praradimo taikomojoje programoje įrašant failus WXP programose.
+Fiksuoja failo asinchroninio įrašymo būsenos duomenis ir įvairius skirtingų komponentų klaidų kodus.  „Microsoft“ naudoja šiuos duomenis, kad galėtų išanalizuoti, ar nėra vartotojo duomenų praradimo taikomojoje programoje įrašant failus „Word“, „Excel“ ar „PowerPoint“ programose.
 
 Renkami šių laukų duomenys:
 
@@ -10582,7 +10698,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidandroidfileopenreliability"></a>Office.Android.AndroidFileOpenReliability
 
-Tai fiksuoja failo atidarymo būsenos duomenis ir įvairius klaidų kodus, kad nustatyti tikėtinas failo atidarymo triktis ir palyginti su triktimis, kurių nesitikima, bei nurodyti pranešančio kodo dalį.  „Microsoft“ naudoja šiuos duomenis, kad išanalizuotų failų atidarymo trikčių priežastis ir apskaičiuotų kritinę metriką, pvz., failų atidarymo sėkmės rodiklį programose WXP.
+Tai fiksuoja failo atidarymo būsenos duomenis ir įvairius klaidų kodus, kad nustatyti tikėtinas failo atidarymo triktis ir palyginti su triktimis, kurių nesitikima, bei nurodyti pranešančio kodo dalį.  „Microsoft“ naudoja šiuos duomenis, kad išanalizuotų failų atidarymo trikčių priežastis ir apskaičiuotų kritinę metriką, pvz., failų atidarymo sėkmės rodiklį programose „Word“, „Excel: arba „PowerPoint“.
 
 Renkami šių laukų duomenys:
 
@@ -10630,7 +10746,7 @@ Renkami šių laukų duomenys:
 
 - **ProviderFileSize** – užfiksuotas failo dydis atidarant failą per failo aktyvinimą
 
-- **Stae** – failo atidarymo būsenos išvardijimas
+- **State** – failo atidarymo būsenos išvardijimas.
 
 - **UriScheme** – URL schema
 
@@ -10646,7 +10762,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidandroidfilesavestatus"></a>Office.Android.AndroidFileSaveStatus
 
-Svarbu užfiksuoti failo asinchroninio įrašymo būsenos duomenis ir įvairius skirtingų komponentų klaidų kodus.  „Microsoft“ naudoja šiuos duomenis, kad galėtų išanalizuoti, ar nėra vartotojo duomenų praradimo taikomojoje programoje įrašant failus WXP programose.
+Svarbu užfiksuoti failo asinchroninio įrašymo būsenos duomenis ir įvairius skirtingų komponentų klaidų kodus.  „Microsoft“ naudoja šiuos duomenis, kad galėtų išanalizuoti, ar nėra vartotojo duomenų praradimo taikomojoje programoje įrašant failus „Word“, „Excel“ ar „PowerPoint“ programose.
 
 Renkami šių laukų duomenys:
 
@@ -10750,7 +10866,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidappdocsfileoperationends"></a>Office.Android.AppDocsFileOperationEnds
 
-Tik „Android“ skirtų svarbių dokumentų („AppDocs“) telemetrijos duomenys, skirti baigiamosioms operacijoms naujas failas / atidaryti / įrašyti kaip. Ši funkcija fiksuoja šių „AppDocs“ operacijų klaidų kodus.  „Microsoft“ šią funkciją naudoja klaidoms įvairiose failų operacijose ir tiksliam sluoksniui, kuriame įvyko WXP taikomųjų programų triktis, nustatyti.
+Tik „Android“ skirtų svarbių dokumentų („AppDocs“) telemetrijos duomenys, skirti baigiamosioms operacijoms naujas failas / atidaryti / įrašyti kaip. Ši funkcija fiksuoja šių „AppDocs“ operacijų klaidų kodus.  „Microsoft“ šią funkciją naudoja klaidoms įvairiose failų operacijose ir tiksliam sluoksniui, kuriame įvyko „W/X/P“ taikomųjų programų triktis, nustatyti.
 
 Renkami šių laukų duomenys:
 
@@ -10820,7 +10936,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
 
-Dvejetainės konvertavimo klaidos telemetrija, skirta funkcijai Spausdinti ir bendrinti kaip PDF.  „Microsoft“ šią funkciją naudoja, BCS konvertavimo WXP programose trikčių vietoms nustatyti.
+Dvejetainės konvertavimo klaidos telemetrija, skirta funkcijai Spausdinti ir bendrinti kaip PDF.  „Microsoft“ šią funkciją naudoja, BCS konvertavimo „Word“, „Excel“ ar „PowerPoint“ programose trikčių vietoms nustatyti.
 
 Renkami šių laukų duomenys:
 
@@ -10844,7 +10960,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
 
-Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos WXP taikomojoje programoje, nustatyti.
+Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos programose „Word“, „Excel“ ar „PowerPoint“, nustatyti.
 
 Renkami šių laukų duomenys:
 
@@ -10886,7 +11002,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
 
-Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos WXP taikomojoje programoje, nustatyti.
+Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos programose „Word“, „Excel“ ar „PowerPoint“, nustatyti.
 
 Renkami šių laukų duomenys:
 
@@ -11076,7 +11192,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidlicenseactivationfailure"></a>Office.Android.LicenseActivationFailure
 
-Kritinės klaidos telemetrija, skirta sekti triktis aktyvinant „O365“ paskyrų licencijas „W/X/P“ programose.  „Microsoft“ šią funkciją naudoja įsigytos „O365“ licencijos aktyvinimo trikčiai išanalizuoti.
+Kritinės klaidos telemetrija, skirta sekti triktis aktyvinant „Office 365“ paskyrų licencijas „W/X/P“ programose.  „Microsoft“ šią funkciją naudoja įsigytos „Office 365“ licencijos aktyvinimo trikčiai išanalizuoti.
 
 Renkami šių laukų duomenys:
 
