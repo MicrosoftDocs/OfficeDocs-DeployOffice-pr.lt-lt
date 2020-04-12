@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: 0c48bd091998e12603e09fcc9b6ce42207e2d95b
-ms.sourcegitcommit: d07de5b2fc7ea02171b84ff34bf4db9686683ed5
+ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42340904"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166274"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -63,7 +63,7 @@ Jei naudojate „Outlook“, skirtą „iOS“ ir „Android“, galite pranešt
 
 ### <a name="help--suggest-a-feature"></a>Žinynas > Pasiūlyti funkciją
 
-Pasiūlyti funkciją yra funkcija, kurią naudodami galite pateikti idėjų apie „Outlook“ naudojimą. Jūsų pasiūlymai pateikiami tiesiai trečiosios šalies paslaugų teikėjui „UserVoice“. Jei teikiate idėjas naudodamiesi parinktimi Pasiūlyti funkciją, taikomos „UserVoice“ [paslaugų teikimo sąlygos](https://outlook.uservoice.com/tos) ir [privatumo politika](https://outlook.uservoice.com/tos#privacy-policy).
+Pasiūlyti funkciją yra funkcija, kurią naudodami galite pateikti idėjų apie „Outlook“ ar „Excel“ naudojimą. Jūsų pasiūlymai pateikiami tiesiai trečiosios šalies paslaugų teikėjui „UserVoice“. Jei teikiate idėjas naudodamiesi parinktimi Pasiūlyti funkciją, taikomos „UserVoice“ [paslaugų teikimo sąlygos](https://outlook.uservoice.com/tos) ir [privatumo politika](https://outlook.uservoice.com/tos#privacy-policy).
 
 ### <a name="insert-online-video"></a>Internetinio vaizdo įrašo įterpimas
 

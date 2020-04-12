@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 6dc32a1456402624ab28e0acbe9c3ef85b6add9d
-ms.sourcegitcommit: 41232c8500173289b94a025044166f1d1e91e870
+ms.openlocfilehash: 8939bb1f3a3be8cf256f3bd6912abc95c8b09d2a
+ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917604"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43166364"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -44,6 +44,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | ----------- | ------------------ |
 | 3D Maps\*    | [Darbo su trimačiais žemėlapiais pradžia](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automatinis alternatyvusis tekstas   | [Viskas, ką turite žinoti apie efektyvaus alternatyviojo teksto rašymą](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+| Duomenų tipai                  | [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktavimo funkcija  | [Diktavimas balsu naudojant „Office“](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Rengyklė    | [Rengyklė yra jūsų rašymo asistentas](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Idėjos     | [Idėjos programoje „Excel“](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -77,7 +78,6 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 | ------------- | ------------- |
 | Kalendoriaus programos| [Kas yra kalendoriaus programos?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Debesies šriftai                 | [Debesies šriftai programų pakete „Office“](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| Duomenų tipai                  | [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | DUK |„Outlook“, skirtoje „iOS“ ir „Android“, pasirinkę **Parametrai** > **Žinynas ir atsiliepimai** > **DUK**, būsite perkelti į [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Rankraščio efektai                 | [Piešimas ir rašymas rašikliu „Office“](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Piktogramų įterpimas                | [Piktogramų įterpimas programų pakete „Microsoft Office“](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
@@ -109,7 +109,6 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 | ------------- | ------------- |
 | @paminėjimas | [@paminėjimas komentaruose norint pažymėti kurį nors asmenį](https://support.office.com/article/644bf689-31a0-4977-a4fb-afe01820c1fd) |
 |Idėjų telkimo diagrama („Visio“)|[Idėjų telkimo diagramos kūrimas](https://support.office.com/article/642706c0-7e63-463b-8aa8-a9aa67367989)|
-| Pokalbis | [Efektyvesnis bendradarbiavimas naudojant pokalbio funkciją programų pakete „Microsoft Office“](https://support.office.com/article/1ecc6c7f-0b02-4baa-b9d9-c9d67023bedd)  |
 | Jau greitai („Outlook“)  |[Jau greitai](https://support.office.com/article/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Kreiptis į palaikymo tarnybą („Outlook“) | Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje|
 | Pasirinktinis importavimas („Visio“)  | [Duomenų importavimas į figūras brėžinyje](https://support.office.com/article/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
@@ -152,7 +151,7 @@ Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organiza
 > [!NOTE]
 > Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
-Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams Daugiau informacijos apie šių politikos parametrų naudojimą ieškokite šiuose straipsniuose: 
+Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams. Daugiau informacijos apie šių politikos parametrų naudojimą ieškokite šiuose straipsniuose: 
 
 - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
