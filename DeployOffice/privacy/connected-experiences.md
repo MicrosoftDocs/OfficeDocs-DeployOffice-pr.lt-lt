@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 8939bb1f3a3be8cf256f3bd6912abc95c8b09d2a
-ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
+ms.openlocfilehash: bcf28caae666900deacbd0effe83a2fae383c41d
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166364"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992998"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
 > [!IMPORTANT]
 > Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Office 365 ProPlus“ ir „Office 365 Business“
-> - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
+> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
+> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
+> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
 >
 > Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 >
@@ -48,7 +49,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | Diktavimo funkcija  | [Diktavimas balsu naudojant „Office“](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 | Rengyklė    | [Rengyklė yra jūsų rašymo asistentas](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
 | Idėjos     | [Idėjos programoje „Excel“](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-| Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „Office 365“ programą „PowerPoint“](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Automatiniai aprašai ir subtitrai |  [Pristatymas naudojant tikralaikius automatinius aprašus programoje „PowerPoint“](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | Žemėlapio diagrama\*    | [Žemėlapio diagramos kūrimas](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
@@ -119,16 +120,16 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 | Reikšmingiausi gautieji („Outlook“) |[Reikšmingiausi gautieji programoje „Outlook“](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Informacijos teisių valdymas |[Informacijos teisių valdymas programų pakete „Office“](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | „LinkedIn“ kontakto kortelė |[„LinkedIn“ ir „Microsoft“ paskyrų susiejimas](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
+| „Office“ papildiniai\* | [Papildinių diegimo valdymas „Microsoft 365“ administravimo centre](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | „Office“ atsiliepimai |[Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | „Office“ palaikymo tarnyba (susisiekite su mumis) |Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje |
-| „Office 365“ papildiniai\* | [„Office 365“ papildinių diegimo valdymas „Microsoft 365“ administravimo centre](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
 | Organizacijos schema („Visio“) |[„Visio“ organizacijos schemos kūrimas](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
 | „Outlook Social Connector“ | [„Outlook Social Connector“ įjungimas](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | „Outlook UserVoice“\* | [Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
 | Naujausi dokumentai |[Failų atidarymas per meniu Failas](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | CV kūrimo pagalbinė priemonė\* |[Parašykite geriausią gyvenimo aprašymą padedami „LinkedIn“ ir CV kūrimo pagalbinės priemonės](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Patalpų ieškiklis („Outlook“)|[Kaip valdyti patalpų ieškiklį programoje „Outlook“](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-| Saugieji saitai |[„Office 365“ ATP saugieji saitai](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
+| Saugieji saitai |[ATP saugieji saitai](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
 | Slaptumo žymos |[Slaptumo žymų pritaikymas dokumentams ir el. laiškams programų pakete „Office“](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Bendrinimas  |[Dokumento bendrinimas („Excel“)](https://support.office.com//article/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Dokumento bendrinimas („PowerPoint“)](https://support.office.com//article/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Dokumento bendrinimas („Word“)](https://support.office.com//article/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Bendrinama su manimi |[Pasižiūrėkite, kokius failus su jumis bendrina kiti](https://support.office.com/article/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
@@ -153,7 +154,7 @@ Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organiza
 
 Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams. Daugiau informacijos apie šių politikos parametrų naudojimą ieškokite šiuose straipsniuose: 
 
-- [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
@@ -164,7 +165,7 @@ Net jei išjungsite šias prisijungus naudojamas funkcijas, kai kurios „Office
 
 ## <a name="related-topics"></a>Susijusios temos
 
-- [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
+- [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
 - [Reikalingi „Office“ tarnybų duomenys](required-service-data.md)
 - [Pagrindinės „Office“ tarnybos](essential-services.md)
