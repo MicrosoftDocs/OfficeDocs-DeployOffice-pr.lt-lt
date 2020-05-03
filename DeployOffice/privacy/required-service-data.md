@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Leidžia „Office“ administratoriams apžvelgti privalomuosius tarnybų duomenis, kurie renkami apie „Office“ prijungtąsias funkcijas.
 hideEdit: true
-ms.openlocfilehash: b4cc25ae1c2a34082bff623ad630db664050effb
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: 4b5008d1750de655601dafaa381502e708f9f9d6
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067183"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992745"
 ---
 # <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys 
 
 > [!IMPORTANT]
 > Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Office 365 ProPlus“ ir „Office 365 Business“
-> - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
+> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
+> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
+> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
 >
 > Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
@@ -64,8 +65,8 @@ Jei reikia daugiau informacijos, žr.:
 
 Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
-- [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
-- [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
+- [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)

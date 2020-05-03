@@ -13,20 +13,21 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 2d285e2e0494b08e6d17a0a72bd8465e6c8edce7
-ms.sourcegitcommit: 2b494bb428a3a1b837376c0ab9ef9c2357e3165f
+ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42939770"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992845"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
 > [!IMPORTANT]
 > Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Office 365 ProPlus“ ir „Office 365 Business“
-> - „Office 365 Personal“, „Office 365 Home“ arba kitos „Office“ versijos, kurios yra „Office 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
+> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
+> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
+> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
+> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
 >
 > Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 
@@ -40,8 +41,8 @@ Jei reikia daugiau informacijos, žr.:
 
 Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
-- [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
-- [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
+- [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
@@ -490,7 +491,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_PrereqFailure\_Type** – įvykusi būtinųjų sąlygų triktis, pvz., nepalaikoma operacinė sistema
 
-  - **Data\_ProductReleaseId** – diegiamas produktas, pvz., „Office 365 ProPlus“
+  - **Data\_ProductReleaseId** – diegiamas produktas, pvz., „Microsoft 365“ programos įmonėms
 
 ### <a name="officeclicktoruncorruptioncheck"></a>Office.ClickToRun.CorruptionCheck
 
@@ -588,7 +589,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_OfficeVersion** – sistemos, kurioje įdiegtas „Office“, versija
 
-  - **Data\_Sku** – įdiegtas SKU, pvz., Office 365 ProPlus.en-us
+  - **Data\_Sku** – įdiegtas SKU, t. y. „Microsoft 365“ programos įmonėms
 
   - **Data\_SqmMachineID** – unikalusis kompiuterio ID, kurį naudoja „Windows SQM Data“\_SusClientID – kompiuterio „Office“ naujinimo identifikatoriaus
 
@@ -628,7 +629,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_PrereqFailure\_Type –** įvykusi būtinosios sąlygos triktis
 
-  - **Data\_ProductReleaseId –** diegiamas produktas, pvz., „Office 365 ProPlus“
+  - **Data\_ProductReleaseId –** diegiamas produktas, pvz., „Microsoft 365“ programos įmonėms
 
 ### <a name="officeclicktorunrepomanlogger"></a>Office.ClickToRun.RepomanLogger
 
@@ -3061,6 +3062,8 @@ Renkami šių laukų duomenys:
 - **UserDismissed** – nurodo, ar vartotojas atmetė dialogo langą ir nepasirinko įsigyti „Office“ arba jo išbandyti; tokiu atveju bus pradėtas atidėjimo laikotarpis arba produktas veiks sumažinto funkcionalumo režimu
 
 ### <a name="officelicensingpurchase"></a>Office.Licensing.Purchase 
+
+*[Šis įvykis buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 Yra eksperimentas, kuris suteikia vartotojui galimybę bandyti nustatyti „Office“ automatinį paleidimą tiesiai iš programos, nepaliekant programos konteksto. Tai praneša apie sėkmingą to eksperimento įvykdymą arba triktį kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
 
@@ -6144,6 +6147,8 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
+- **AppID** – taikomosios programos, kurioje įvyko atsisiuntimo klaida, identifikatorius.
+
 - **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
 - **AppVersionLong** – taikomosios programos versija
@@ -6160,6 +6165,8 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
 
+- **Error** – atsisiuntimo metu pastebėta klaida.
+
 - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
 
 - **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
@@ -6168,13 +6175,15 @@ Renkami šių laukų duomenys:
 
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – įtraukti atsisiunčiamo naujinimo ir aptiktos klaidos pavadinimai.
+- **Payload** – įtraukti atsisiunčiamo naujinimo ir aptiktos klaidos pavadinimai. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
 
 - **SessionId** – seanso identifikatorius
+
+- **UpdateID** – atsisiunčiamo taikomosios programos naujinimo identifikatorius.
 
 
 ### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
@@ -6184,6 +6193,8 @@ Sėkmingas paketo failo atsisiuntimas. Užregistruojame atnaujinimo maršrutą. 
 Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
+
+- **AppID** – taikomosios programos identifikatorius.
 
 - **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
@@ -6216,6 +6227,8 @@ Renkami šių laukų duomenys:
 - **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
 
 - **SessionId** – seanso identifikatorius
+
+- **UpdateID** – atsisiųsto naujinimo identifikatorius.
 
 
 ### <a name="fba_checkforupdate"></a>fba_checkforupdate
@@ -6324,6 +6337,8 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
 
+- **Error** – turi OS statusą („Apple“ būsenos kodas), atspindinčią paleisties būseną.
+
 - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
 
 - **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
@@ -6332,7 +6347,7 @@ Renkami šių laukų duomenys:
 
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – turi OS statusą („Apple“ būsenos kodas), atspindinčią paleisties būseną.
+- **Payload** – turi OS statusą („Apple“ būsenos kodas), atspindinčią paleisties būseną. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
@@ -6340,6 +6355,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
+- **Success** – Bulio logikos eilutė, nurodanti, ar buvo sėkmingai paleistas MAU demono procesas.
 
 ### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
 
@@ -6636,6 +6652,8 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
+- **AppID** – taikomosios programos identifikatorius.
+
 - **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
 - **AppVersionLong** – taikomosios programos versija
@@ -6652,6 +6670,8 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
 
+- **Error** – informacija apie klaidą, įvykusią paleidžiant taikomąją programą po naujinimo.
+
 - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
 
 - **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
@@ -6660,7 +6680,7 @@ Renkami šių laukų duomenys:
 
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir taikomosios programos, kuri bus paleista, pavadinimą.
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir taikomosios programos, kuri bus paleista, pavadinimą. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
     
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
     
@@ -6759,6 +6779,8 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
+- **AppID** – taikomosios programos identifikatorius.
+
 - **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
 - **AppVersionLong** – taikomosios programos versija
@@ -6775,6 +6797,8 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
 
+- **Error** – klaidos, įvykusios taikomosios programos nutraukimo metu, informacija.
+
 - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
 
 - **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
@@ -6783,13 +6807,15 @@ Renkami šių laukų duomenys:
 
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir taikomosios programos paketo ID. Taip pat gali turėti klaidos eilutę, jei „Microsoft AutoUpdate“ nustato, kad taikomoji programa vis dar veikia, nors nutraukimo įvykis buvo gautas.
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir taikomosios programos paketo ID. Taip pat gali turėti klaidos eilutę, jei „Microsoft AutoUpdate“ nustato, kad taikomoji programa vis dar veikia, nors nutraukimo įvykis buvo gautas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
 
 - **SessionId** – seanso identifikatorius
+
+- **UpdateID** – taikomosios programos naujinimo identifikatorius.
 
 
 ### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
@@ -6882,6 +6908,8 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
+- **AppID** – taikomosios programos identifikatorius.
+
 - **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
 - **AppVersionLong** – taikomosios programos versija
@@ -6898,6 +6926,8 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
 
+- **Error** – klaidos, įvykusios taikomosios programos naujinimo atsisiuntimo metu, informacija.
+
 - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
 
 - **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
@@ -6906,13 +6936,17 @@ Renkami šių laukų duomenys:
 
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir naujinimo pavadinimą.
+- **Payload** – turi identifikatorių, kuris naudojamas sekti naujinimo veiklą ir naujinimo pavadinimą. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
 
 - **SessionId** – seanso identifikatorius
+
+- **UpdateID** – taikomosios programos naujinimo identifikatorius.
+
+- **UpdateName** – taikomosios programos naujinimo pavadinimas.
 
 
 ### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
@@ -10550,6 +10584,8 @@ Renkami šių laukų duomenys:
 
   - **InstallMethod** – ar į dabartinę „Office“ komponavimo versiją buvo atnaujinta, ji buvo įdiegta atšaukus keitimus, ar tai nauja įdiegtis.
 
+  - **OfficeArchitectureText** – „Office“ produkto architektūra kaip eilutė (pvz., x86, ARM).
+
   - **PreviousBuild** – „Office“ versija, į kurią ši komponavimo versija buvo atnaujinta arba kuri buvo įdiegta atšaukus keitimus.
 
   - **State** – būsena, į kurią pakeistas seansas.
@@ -11286,6 +11322,8 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
+  - **AddinExecution –** vėliavėlė, kuri nurodo, ar papildinys buvo vykdomas ir neužbaigtas netinkamo išėjimo iš taikomosios programos metu.
+
   - **BootCompleted –** buvo užbaigtas „Office“ įkrovimas gedimo metu.
 
   - **CrashedAppBuild –** paveikto proceso komponavimo versijos identifikatorius.
@@ -11343,6 +11381,8 @@ Renkami šių laukų duomenys:
   - **ModuleOffset –** poslinkis baitais nuo bazinio adreso, kur įvyko triktis.
 
   - **ModuleSize –** modulio su klaida dydis baitais.
+
+  - **OfficeArchitectureText –** „Office“ produkto architektūra kaip eilutė (pvz., x86, ARM).
 
   - **OfficeUILang –** „Office“ komponavimo versijos vartotojo sąsajos kalba.
 
