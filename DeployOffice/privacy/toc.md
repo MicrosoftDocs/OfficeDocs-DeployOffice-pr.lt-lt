@@ -1,4 +1,4 @@
-# „Office 365 ProPlus“ privatumas
+# „Microsoft 365“ programų skirtų įmonėms privatumas
 
 ## [Privatumo valdiklių apžvalga](overview-privacy-controls.md)
 
