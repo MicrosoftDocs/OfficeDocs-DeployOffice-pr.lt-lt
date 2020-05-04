@@ -1,5 +1,5 @@
 ---
-title: „Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus
+title: „Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo kontrolės mechanizmus "Office 365 ProPlus" naudojant strategijos parametrus.
+description: Suteikia informacijos „Office“ administratoriams apie tai, kaip valdyti privatumo kontrolės mechanizmus „Microsoft 365“ programose skirtose įmonėms (anksčiau vadintos „Office 365 ProPlus“) naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: ee02079595157af2fea8883069a640b90ff962d2
-ms.sourcegitcommit: 6a091ca7e72cd7ce97793ebd0fdcfa2a6fa1a098
+ms.openlocfilehash: 284b9b8a2b0231f5079e34ec2b09e35dfd0d07ca
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42687217"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43992940"
 ---
-# <a name="use-policy-settings-to-manage-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus
+# <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus
 
-„Microsoft“ yra įsipareigojusi suteikti jums informaciją ir jums reikalingus valdiklius, kad galėtumėte priimti sprendimus, susijusius su jūsų duomenų rinkimu ir naudojimu, kai naudojatės „Office 365 ProPlus“.
+„Microsoft“ yra įsipareigojusi suteikti jums reikiamą informaciją ir valdiklius, kad galėtumėte pasirinkti, kaip renkami ir naudojami jūsų duomenys, kai naudojate „Microsoft 365“ programas skirtas įmonėms (anksčiau vadintos „Office 365 ProPlus“).
 
-Nauji strategijos parametrai, pradedant nuo „Office 365 ProPlus“ 1904 versijos, leis jums nustatyti parametrus, susijusius su:
+Nauji strategijos parametrai, pradedant nuo „Microsoft 365“ programų įmonėms 1904 versijos, leis jums nustatyti parametrus, susijusius su:
 
 - ***Diagnostikos duomenimis*** apie „Office“ kliento naudojamą programinę įrangą, kurie renkami ir siunčiami „Microsoft“.
 
@@ -50,9 +50,9 @@ Toliau pateikiami penki naujos strategijos parametrai:
 
 Jei naudojate grupės strategijos valdymo įrankį, šie strategijos parametrai yra įrankio srityje Vartotojo konfigūracija\\Politikos\\Administravimo šablonai\\„Microsoft Office 2016“\\Privatumas\\ Patikimumo centras.
 
-Šie nauji strategijos parametrai taip pat bus taikomi „Project“ ir „Visio“ kompiuterio versijoms, kurios įtrauktos į kai kuriuos prenumeratos planuos, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą. Jie taip pat taikomi „Office 365 Business“.
+Šie nauji strategijos parametrai taip pat bus taikomi „Project“ ir „Visio“ kompiuterio versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., „Project“ 5 planas arba „Visio“ 2 planas. Jie taip pat gali būti naudojami su „Microsoft 365“ programomis verslui (anksčiau vadintos „Office 365 Business“)
 
-Yra ir keletas esamų strategijos parametrų, kurie nebebus taikomi „Office 365 ProPlus“, taip pat keli vartotojo sąsajos (UI) keitimai privatumo parametruose, apie kuriuos turėtumėte žinoti, nes vartotojai gali pastebėti šiuos pakeitimus ir klausti apie juos.
+Yra ir keletas esamų strategijos parametrų, kurie nebebus taikomi „Microsoft 365“ programos skirtoms įmonėms, taip pat keli vartotojo sąsajos (UI) keitimai privatumo parametruose, apie kuriuos turėtumėte žinoti, nes vartotojai gali pastebėti šiuos pakeitimus ir klausti apie juos.
 
 Kaip ir bet kuriuos naujus strategijos parametrus, atidžiai patikrinkite juos apribotoje, kontroliuojamoje aplinkoje, kad prieš įdiegiant platesniam naudojimui savo organizacijoje užtikrintumėte, jog jie turės norimą efektą.
 
@@ -74,14 +74,14 @@ Jei išjungsite arba nekonfigūruosite šio strategijos parametro, pasirinktinia
 
 Daugiau informacijos apie diagnostikos duomenis, žr.:
 
-- [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
+- [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
 - [Būtinieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="policy-settings-for-connected-experiences"></a>Strategijos parametrai, skirti prisijungus naudojamoms funkcijoms
 
-„Office 365 ProPlus“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
+„Microsoft 365“ programos įmonėms susideda iš kliento programinės įrangos programos ir bendrų patirčių sukurtų tam, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
 Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos funkcijos pasiekiamos vartotojams, kai jie dirba „Office“ programose. Taigi, pateikėme jums keturis naujus strategijos parametrus:
 
@@ -90,11 +90,11 @@ Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos f
 - Leisti „Office“ naudoti pasirinktines, papildomas prisijungus naudojamas funkcijas 
 - Leisti „Office" naudoti prisijungus naudojamas funkcijas
 
-Jei nekonfigūruosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos. Tai suteikia jūsų vartotojams visų funkcijų ir funkcionalumo pasiekiamumą per „Office 365 ProPlus“. Tačiau suprantame, kad gali tekti išjungti kai kurias arba visas prisijungus naudojamas funkcijas, kad jos atitiktų tam tikrus jūsų organizacijos reikalavimus.
+Jei nekonfigūruosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos. Tai suteikia jūsų vartotojams visų funkcijų ir funkcionalumo pasiekiamumą per „Microsoft 365“ programas įmonėms. Tačiau suprantame, kad gali tekti išjungti kai kurias arba visas prisijungus naudojamas funkcijas, kad jos atitiktų tam tikrus jūsų organizacijos reikalavimus.
 
 Jei nuspręsite kai kurių tipų prisijungus naudojamas funkcijas padaryti nepasiekiamas vartotojams, šių funkcijų juostelės arba meniu komandos bus rodoma pilkos arba vartotojai gaus klaidos pranešimą, kai bandys jas naudoti. Tokiu atveju jokie[reikalingi tarnybų duomenys](required-service-data.md)apie prisijungus naudojamas funkcijas nebus siunčiami „Microsoft“.
 
-Vartotojai negalės pasirinkti, ar šios prisijungus naudojamos funkcijos yra įjungtos, ar išjungtos „Office 365 ProPlus“, jei jie prisijungę prie „Office“ naudodami organizacijos kredencialus, kurie kartais vadinami darbo arba mokymo įstaigos paskyra.
+Vartotojai negalės pasirinkti, ar šios prisijungus naudojamos funkcijos yra įjungtos, ar išjungtos „Microsoft 365“ programose įmonėms, jei jie prisijungę prie „Office“ naudodami organizacijos kredencialus, kurie kartais vadinami darbo arba mokymo įstaigos paskyra.
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Prisijungus naudojamų funkcijų, kurios analizuoja turinį, strategijos parametras
 
@@ -114,7 +114,7 @@ Pastaba: jei išjungsite strategijos parametrą *Leisti „Office“ naudoti pri
 
 ### <a name="policy-setting-for-optional-connected-experiences"></a>Strategijos parametrai pasirinktinėms prisijungus naudojamoms funkcijoms
 
-Be anksčiau minėtų prisijungus naudojamų funkcijų, kurios įtrauktos į „Office 365 ProPlus“, yra pasirinktinių prisijungus naudojamų funkcijų, kurias galite padaryti pasiekiamas vartotojams besinaudojantiems organizacijos paskyra. Pavyzdžiui, „LinkedIn“ CV kūrimo pagalbinės priemonės funkcijos programoje „Word“ arba trimačių žemėlapių funkcija programoje „Excel“, kuri naudoja „Bing“. Daugiau pavyzdžių rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md).
+Be anksčiau minėtų prisijungus naudojamų funkcijų, kurios įtrauktos į „Microsoft 365“ programas įmonėms, yra pasirinktinių prisijungus naudojamų funkcijų, kurias galite padaryti pasiekiamas vartotojams besinaudojantiems organizacijos paskyra. Pavyzdžiui, „LinkedIn“ CV kūrimo pagalbinės priemonės funkcijos programoje „Word“ arba trimačių žemėlapių funkcija programoje „Excel“, kuri naudoja „Bing“. Daugiau pavyzdžių rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md).
 
 Šios prisijungus naudojamos funkcijos skiriasi, nes jos neaptariamos jūsų organizacijos komerciniame susitarime su „Microsoft“. Pasirinktinėms prisijungus naudojamoms funkcijoms, kurias „Microsoft“ siūlo tiesiogiai vartotojams, taikoma [„Microsoft“ paslaugų teikimo sutartis](https://www.microsoft.com/servicesagreement), o ne [Internetinių paslaugų teikimo sąlygos](https://www.microsoft.com/licensing/product-licensing/products). Kai kuriais atvejais, per šias pasirinktines prisijungus naudojamas funkcijas teikiamas trečiosios šalies turinys ar funkcionalumas, todėl taip pat gali būti taikomos kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md).
 
@@ -138,7 +138,7 @@ Atkreipkite dėmesį, kad yra viena išimtis: Strategijos parametru *Leisti naud
 
 ### <a name="policy-setting-for-most-connected-experiences"></a>Strategijos parametras daugumai prisijungus naudojamoms funkcijoms
 
-Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams per „Office 365 ProPlus“, galite naudoti strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas*. Jei išjungsite strategijos parametrą, šių tipų prisijungus naudojamos funkcijos nebus pasiekiamos vartotojams:
+Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams per „Microsoft 365“ programas įmonėms, galite naudoti strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas*. Jei išjungsite strategijos parametrą, šių tipų prisijungus naudojamos funkcijos nebus pasiekiamos vartotojams:
 
 - Funkcijos, kurios analizuoja turinį
 - Funkcijos, kurios atsisiunčia internetinį turinį
@@ -150,13 +150,13 @@ Net jei išjungsite šį strategijos parametrą, kai kurios „Office“ funkcij
 
 ## <a name="existing-policy-settings-that-are-replaced-by-new-policy-settings"></a>Esami strategijos parametrai, kurie pakeičiami naujais strategijos parametrais
 
-Yra du esami strategijos parametrai, kurie nebebus taikomi „Office 365 ProPlus“, pradedant nuo 1904 versijos. Tai yra šie strategijos parametrai:
+Yra du esami strategijos parametrai, kurie nebebus taikomi „Microsoft 365“ programose įmonėms, pradedant nuo 1904 versijos. Tai yra šie strategijos parametrai:
 
 - **Siųsti asmeninę informaciją**, kurią galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\“Microsoft Office 2016“\\Privatumas\\Patikimumo centras.
 
 - **Interneto turinio parinktys**, kurias galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft Office 2016“\\Įrankiai | Funkcijos | Bendra | Tarnybos pasirinkimai \\Internetinis turinys.
 
-Pradedant nuo 1904 versijos, šių dviejų esamų strategijos parametrų konfigūravimas neturės poveikio „Office 365 ProPlus“. Jie nebebus taikomi, nes jų funkcijos keičiamos šiais naujais strategijos parametrais:
+Pradedant nuo 1904 versijos, šių dviejų esamų strategijos parametrų konfigūravimas neturės poveikio „Microsoft 365“ programoms įmonėms. Jie nebebus taikomi, nes jų funkcijos keičiamos šiais naujais strategijos parametrais:
 
 - Leisti „Office" naudoti prisijungus naudojamas funkcijas, kurios analizuoja turinį
 - Leisti „Office" naudoti prisijungus naudojamas funkcijas, kurios parsiunčia internetinį turinį
@@ -183,7 +183,7 @@ Paprastai, kai vienas strategijos parametrų sukonfigūruotas įjungti konkreči
 
 ## <a name="privacy-related-changes-to-the-office-ui"></a>Privatumo pakeitimai „Office“ vartotojo sąsajai
 
-„Office 365 ProPlus“ vartotojo sąsaja turi keletą pakeitimų, susijusių su privatumu, kuriuos vartotojai gali pastebėti ir apie juos klausti. Šie pakeitimai yra naujų privatumo kontrolės mechanizmų ir strategijos parametrų, pradedamų taikyti nuo 1904 versijos, tiesioginis rezultatas.
+„Microsoft 365“ programų įmonėms vartotojo sąsaja turi keletą pakeitimų, susijusių su privatumu, kuriuos vartotojai gali pastebėti ir apie juos klausti. Šie pakeitimai yra naujų privatumo kontrolės mechanizmų ir strategijos parametrų, pradedamų taikyti nuo 1904 versijos, tiesioginis rezultatas.
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Dialogo langas apie pasirinktines prisijungus naudojamas funkcijas
 
