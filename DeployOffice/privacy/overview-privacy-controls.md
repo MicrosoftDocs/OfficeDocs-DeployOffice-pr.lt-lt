@@ -1,5 +1,5 @@
 ---
-title: „Office 365 ProPlus“ privatumo valdiklių apžvalga
+title: „Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
@@ -13,20 +13,20 @@ ms.collection:
 ms.custom:
 - Ent_Office_ProPlus
 - Ent_Office_Privacy
-description: „Office“ administratoriams skirta „Office 365 ProPlus“ privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
+description: „Office“ administratoriams skirtų „Microsoft 365“ programų įmonėms ( anksčiau vadintų „Office 365 ProPlus“) privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: 784bbf08626e6dc8571c416a74511c9f5feeceec
-ms.sourcegitcommit: acb22296532bbfdfcad4dc1e7162f812997fbdd1
+ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38067358"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993095"
 ---
-# <a name="overview-of-privacy-controls-for-office-365-proplus"></a>„Office 365 ProPlus“ privatumo valdiklių apžvalga
+# <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga
 
-„Microsoft“ yra įsipareigojusi suteikti jums reikiamą informaciją ir valdiklius, kad galėtumėte pasirinkti, kaip renkami ir naudojami jūsų duomenys, kai naudojate „Office 365 ProPlus“.
+„Microsoft“ yra įsipareigojusi suteikti jums reikiamą informaciją ir valdiklius, kad galėtumėte pasirinkti, kaip renkami ir naudojami jūsų duomenys, kai naudojate „Microsoft 365“ programas įmonėms (anksčiau vadintas „Office 365 ProPlus“).
 
-Pradedant „Office 365 ProPlus“ 1904 versija (kuri buvo išleista mėnesinių naujinimų kanale 2019 m. balandžio mėn. 29 d.), jums bus pasiekiami nauji, atnaujinti ir patobulinti toliau nurodytų sričių privatumo valdikliai:
+Pradedant „Microsoft 365“ programų įmonėms 1904 versija, jums bus pasiekiami nauji, atnaujinti ir patobulinti toliau nurodytų sričių privatumo valdikliai:
 - ***Diagnostikos duomenų***, kurie renkami ir siunčiami „Microsoft“, apie organizacijos „Windows“ kompiuteriuose naudojamą „Office“ kliento programinę įrangą.
 - ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
@@ -36,20 +36,20 @@ Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos el
 > - Šie keitimai taikomi „Access“, „Excel“, „OneNote“, „Outlook“, „PowerPoint“, „Publisher“ ir „Word“.
 > - Šie keitimai taikomi ir toliau nurodytiems produktams:
 >   - „Office for Mac“ (16.28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
->   - 1904 ar vėlesnėms „Project“ ir „Visio“ kompiuterio versijoms, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., planą „Project Online Professional“ arba „Visio Online“ 2 planą.
-> - Šie privatumo valdikliai įtraukti į pusmetinių naujinimų kanalo (tikslinio) 1908 versiją, kuri buvo išleista 2019 m. rugsėjo 10 d. Tikimasi, kad jie bus prieinami ir 2020 m. sausio mėn. pusmetinių naujinimų kanale.
+>   - „Project“ ir „Visio“ kompiuterio 1904 ar vėlesnės versijos, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
+> - Šie privatumo valdikliai įtraukti į pusmetinių naujinimų kanalo (tikslinio) ir pusmetinio naujinimo kanalo 1908 ar vėlesnę versiją.
 > - Šie privatumo valdikliai pasiekiami 2.30 ir vėlesnėse „Excel“, „OneNote“, „PowerPoint“ ir „Word“ versijose, skirtose „iOS“, taip pat 1.17 ir vėlesnėse „Visio“ peržiūros programos, skirtos „iOS“, versijose.
 > - Šie privatumo valdikliai pasiekiami 16.0.12226.10000 ir vėlesnėse „Excel“, „PowerPoint“ ir „Word“, skirtų „Android“, versijose, taip pat 16.0.12228.20004 ir vėlesnėse „OneNote“, skirtos „Android“, versijose.
 > - Dauguma internetinės „Office“ programų naudoja naująjį privatumo valdiklį, skirtą [pasirinktinėms prijungtosioms funkcijoms](optional-connected-experiences.md). Minėtos programos yra šios: internetinė „Excel“, internetinė „OneNote“, „PowerPoint“ žiniatinkliui, internetinė „Visio“ ir internetinė „Word“. Norėdami konfigūruoti atitinkamą [strategijos parametrą](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences), galite naudoti [„Office“ debesies strategijos tarnybą](../overview-office-cloud-policy-service.md).
-> - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
+> - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ (ir „Microsoft 365“) klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
 
-## <a name="diagnostic-data-sent-from-office-365-proplus-to-microsoft"></a>Diagnostikos duomenys, siunčiami „Microsoft“ iš „Office 365 ProPlus“
+## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Diagnostikos duomenys, siunčiami „Microsoft“ iš „Microsoft 365“ programų įmonėms.
 
-Diagnostikos duomenys naudojami siekiant apsaugoti ir atnaujinti „Office“, aptikti, diagnozuoti ir spręsti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
+Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir spręsti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
 Šie diagnostikos duomenys apie  organizacijos „Windows“ kompiuteriuose naudojamą „Office“ kliento programinę įrangą renkami ir siunčiami „Microsoft“.
 
-Yra trijų lygių „Office 365 ProPlus“ diagnostikos duomenys, iš kurių galite rinktis.
+Yra trijų lygių „Microsoft 365“ programų įmonėms diagnostikos duomenys, iš kurių galite rinktis:
 
 - **Būtinieji.** Minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
 
@@ -73,15 +73,15 @@ Jei reikia daugiau informacijos, žr.:
 
 - [Būtinieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
-- [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
 - [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-## <a name="connected-experiences-for-office-365-proplus"></a>„Office 365 ProPlus“ prisijungus naudojamos funkcijos
+## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms prijungtosios funkcijos
 
-„Office 365 ProPlus“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
+„Microsoft 365“ programos įmonėms susideda iš kliento programinės įrangos programos ir bendrų patirčių sukurtų tam, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
 Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos funkcijos pasiekiamos vartotojams, kai jie dirba „Office“ programose. Kaip organizacijos administratorius galėsite keisti strategijos parametrus ir pasirinkti, ar vartotojams bus pasiekiamos toliau išvardytų tipų prisijungus naudojamos funkcijos.
 
@@ -100,14 +100,14 @@ Vartotojai negalės pasirinkti, ar šios prisijungus naudojamos funkcijos yra į
 Jei reikia daugiau informacijos, žr.:
 
 - [„Office“ prisijungus naudojamos funkcijos](connected-experiences.md)
-- [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
 
-## <a name="optional-connected-experiences-for-office-365-proplus"></a>Pasirinktinės „Office 365 ProPlus“ prisijungus naudojamos funkcijos
+## <a name="optional-connected-experiences-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms pasirinktinės prijungtosios funkcijos
 
-Be pirmiau minėtų prisijungus naudojamų funkcijų, kurios įtrauktos į „Office 365 ProPlus“, yra pasirinktinių prisijungus naudojamų funkcijų, kurias galite padaryti pasiekiamas vartotojams naudojantis organizacijos paskyra. Pavyzdžiui, „LinkedIn“ CV kūrimo pagalbinės priemonės funkcijos programoje „Word“ arba trimačių žemėlapių funkcija programoje „Excel“, kuri naudoja „Bing“.
+Be anksčiau minėtų prisijungus naudojamų funkcijų, kurios įtrauktos į „Microsoft 365“ programas įmonėms, yra pasirinktinių prisijungus naudojamų funkcijų, kurias galite padaryti pasiekiamas vartotojams besinaudojantiems organizacijos paskyra. Pavyzdžiui, „LinkedIn“ CV kūrimo pagalbinės priemonės funkcijos programoje „Word“ arba trimačių žemėlapių funkcija programoje „Excel“, kuri naudoja „Bing“.
 
 Tai pasirinktinės prisijungus naudojamos funkcijos, kurioms galioja ne jūsų organizacijos komercinė sutartis su „Microsoft“, o atskiros sąlygos. Pasirinktinėms prisijungus naudojamoms funkcijoms, kurias „Microsoft“ siūlo tiesiogiai vartotojams, taikoma [„Microsoft“ paslaugų teikimo sutartis](https://www.microsoft.com/servicesagreement), o ne [internetinių paslaugų teikimo sąlygos](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -118,7 +118,7 @@ Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekia
 Jei reikia daugiau informacijos, žr.:
 
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
-- [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+- [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
@@ -143,9 +143,9 @@ Jei nuspręsite vartotojams nepadaryti pasiekiamos prisijungus naudojamų funkci
 
 Daugiau informacijos žr. [„Office“ reikalingi tarnybų duomenys](required-service-data.md).
 
-## <a name="essential-services-for-office-365-proplus"></a>Pagrindinės „Office 365 ProPlus“ paslaugos
+## <a name="essential-services-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms pagrindinės paslaugos
 
-Taip pat yra paslaugų, kurios yra būtinos, kad „Office 365 ProPlus“ veiktų ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office 365 ProPlus“. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų strategijos parametrų.
+Taip pat yra paslaugų, kurios yra būtinos, kad „Office 365“ programos įmonėms veiktų ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office 365“ programomis įmonėms. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų strategijos parametrų.
 
 Daugiau informacijos žr. [Pagrindinės „Office“ paslaugos](essential-services.md).
 
