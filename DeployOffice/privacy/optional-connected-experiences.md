@@ -13,20 +13,20 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: 9cfbae596b686e2be484756b848514d4c36108df
-ms.sourcegitcommit: 2475f3c2a61baf298a52c0bcdb0e7c9b9c0407ac
+ms.openlocfilehash: ecfe38bc6dbedd57ff1eb2ab4851c8e4dddab730
+ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43166274"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43993225"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
-Jei turite darbo arba mokymo įstaigos paskyrą, jūsų organizacijos administratorius galbūt suteikė jums galimybę pasiekti vieną arba daugiau debesų technologija pagrįstų paslaugų (dar vadinamų pasirinktinėmis prisijungus naudojamomis funkcijomis) naudojant „Office 365 ProPlus“ programas. Šios debesų technologija pagrįstos paslaugos yra pasirinktinės. Ar jas naudoti, sprendžiate jūs. Jos jums teikiamos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygas. Kai kuriais atvejais gali būti taikomos ir kitos sąlygos. Šiame straipsnyje išvardytos debesų technologijos pagrindu veikiančios paslaugos, išsamiau paaiškintos jų naudojimo sąlygos ir paaiškinta, kaip galite jas bet kada išjungti arba įjungti.
+Jei turite darbo arba mokymo įstaigos paskyrą, jūsų organizacijos administratorius galbūt suteikė jums galimybę pasiekti vieną arba daugiau debesų technologija pagrįstų paslaugų (dar vadinamų pasirinktinėmis prisijungus naudojamomis funkcijomis) naudojant „Office“ programas, pavyzdžiui, „Word“, „Excel“, kurios yra įtrauktos į „Microsoft 365“ programas įmonėms (anksčiau vadintas „Office 365 ProPlus“). Šios debesų technologija pagrįstos paslaugos yra pasirinktinės. Ar jas naudoti, sprendžiate jūs. Jos jums teikiamos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygas. Kai kuriais atvejais gali būti taikomos ir kitos sąlygos. Šiame straipsnyje išvardytos debesų technologijos pagrindu veikiančios paslaugos, išsamiau paaiškintos jų naudojimo sąlygos ir paaiškinta, kaip galite jas bet kada išjungti arba įjungti.
 
 > [!NOTE]
 > Jei esate administratorius, žr. toliau pateiktus straipsnius, kad sužinotumėte, kaip suteikti arba uždrausti galimybę vartotojams pasiekti pasirinktines prisijungus naudojamas paslaugas:
-> - [„Office 365 ProPlus“ privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
+> - [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 > - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 > - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 > - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
@@ -39,7 +39,7 @@ Svarbu žinoti, kad šioms pasirinktinėms debesų technologija pagrįstoms pasl
 
 ## <a name="experiences-that-rely-on-bing"></a>Funkcijos, kurios naudoja „Bing“
 
-Kai kurios debesų technologija pagrįstos paslaugos naudoja „Microsoft Bing“. „Microsoft Bing“ yra atskira organizacija nuo „Office 365 ProPlus“ ir ją „Microsoft“ valdo nepriklausomai nuo „Office 365 ProPlus“. „Office 365 ProPlus“ programų funkcijos, kuriose naudojama „Bing“, yra [trimačiai žemėlapiai](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [žemėlapio diagramos](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [internetinių paveikslėlių įterpimas](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [internetinių 3D modelių įterpimas](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [„PowerPoint“ funkcija „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Tyrėjas](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) ir [išmanioji ieška](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Kai kurios debesų technologija pagrįstos paslaugos naudoja „Microsoft Bing“. „Microsoft Bing“ yra atskiras verslas, atskirtas nuo „Microsoft 365“ programų įmonėms“, todėl ir valdoma nepriklausomai nuo „Microsoft“ valdomų „Microsoft 365“ programų įmonėms. „Office“, įtrauktoje į „Microsoft 365“ programas įmonėms, taikomųjų programų funkcijos, kuriose naudojama „Bing“, yra [trimačiai žemėlapiai](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [žemėlapio diagramos](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [internetinių paveikslėlių įterpimas](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [internetinių 3D modelių įterpimas](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [„PowerPoint“ funkcija „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Tyrėjas](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) ir [išmanioji ieška](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
 
 Funkcijos, kurias „Bing“ siūlo „Outlook“, skirtoje „iOS“ ir „Android“:
 
@@ -47,11 +47,11 @@ Funkcijos, kurias „Bing“ siūlo „Outlook“, skirtoje „iOS“ ir „Andr
 - **Įdomūs kalendoriai:**   galite [prenumeruoti](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) kalendorius apie savo mėgstamas sporto komandas ar televizijos laidas.
 
 
- Šios „Bing“ grindžiamos funkcijos jums licencijuotos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) sąlygas ir joms taikomas [privatumo patvirtinimas](https://privacy.microsoft.com/). Bet kokios ieškos užklausos, kurias pateikiate „Office 365 ProPlus“ organizacijai naudodami šias paslaugas, siunčiamos į „Microsoft Bing“. „Bing“ organizacija jų nesusieja su jumis.
+ Šios „Bing“ grindžiamos funkcijos jums licencijuotos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) sąlygas ir joms taikomas [privatumo patvirtinimas](https://privacy.microsoft.com/). Bet kokios ieškos užklausos, kurias pateikiate „Office 365“ programoms įmonėms organizacijai naudodami šias paslaugas, siunčiamos į „Microsoft Bing“. „Bing“ organizacija jų nesusieja su jumis.
 
 ## <a name="experiences-that-rely-on-linkedin"></a>Funkcijos, kurios naudoja „LinkedIn“
 
-[CV kūrimo pagalbinė priemonė](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) yra „Word“ funkcija, kuri naudoja „LinkedIn“. Ji suteikia idėjų rašant gyvenimo aprašymą. „LinkedIn“ yra kita įmonė, kuri priklauso „Microsoft“. Jei naudojate CV kūrimo pagalbinę priemonę, taikomos [„LinkedIn“ vartotojo sutarties ir privatumo politikos](https://www.linkedin.com/legal/user-agreement) sąlygos kartu su [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygomis. Bet kokios ieškos užklausos, kurias pateikiate „Office 365 ProPlus“ organizacijai naudodami šias paslaugas, siunčiamos į „LinkedIn“. „LinkedIn“ organizacija jų nesusieja su jumis. Jums nereikia turėti „LinkedIn“ paskyros, kad galėtumėte naudotis šia debesų technologija pagrįsta paslauga.
+[CV kūrimo pagalbinė priemonė](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a) yra „Word“ funkcija, kuri naudoja „LinkedIn“. Ji suteikia idėjų rašant gyvenimo aprašymą. „LinkedIn“ yra kita įmonė, kuri priklauso „Microsoft“. Jei naudojate CV kūrimo pagalbinę priemonę, taikomos [„LinkedIn“ vartotojo sutarties ir privatumo politikos](https://www.linkedin.com/legal/user-agreement) sąlygos kartu su [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygomis. Bet kokios ieškos užklausos, kurias pateikiate „Microsoft 365“ programoms įmonėms organizacijai naudodami šias paslaugas, siunčiamos į „LinkedIn“. „LinkedIn“ organizacija jų nesusieja su jumis. Jums nereikia turėti „LinkedIn“ paskyros, kad galėtumėte naudotis šia debesų technologija pagrįsta paslauga.
 
 Pastaba. Toliau aprašytu privatumo parametru nevaldomos funkcijos, kurias naudojant jums reikia susieti savo „LinkedIn“ paskyrą su savo „Microsoft“ darbo arba mokymo įstaigos paskyra. Informacijos apie šių tipų funkcijas (pvz., „LinkedIn“ informacijos rodymą „Outlook“ [profilio kortelėje](https://support.office.com/article/e80f931f-5fc4-4a59-ba6e-c1e35a85b501)) žr. [„LinkedIn“ ir „Microsoft“ paskyrų susiejimas](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381).
 
@@ -91,23 +91,23 @@ Programos „Outlook“ [orų prognozės juostoje](https://support.office.com/ar
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kaip nustatyti, ar administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas
 
-Norėdami nustatyti, ar administratorius suteikė jums galimybę pasiekti kokias nors pasirinktines prisijungus naudojamas funkcijas „Office 365 ProPlus“ programoje „Windows“ įrenginyje, eikite į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus**. Jei administratorius jums nesuteikė valdymo, matysite pranešimą „Organizacijos administratorius valdo jūsų privatumo parametrus ir nusprendė išjungti pasirinktines prisijungus naudojamas funkcijas“.
+Norėdami nustatyti, ar administratorius suteikė jums galimybę pasiekti kokias nors pasirinktines prisijungus naudojamas funkcijas „Office“ taikomosiose programose, įtrauktose į „Microsoft 365“ programas įmonėms, „Windows“ įrenginyje, eikite į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus**. Jei administratorius jums nesuteikė valdymo, matysite pranešimą „Organizacijos administratorius valdo jūsų privatumo parametrus ir nusprendė išjungti pasirinktines prisijungus naudojamas funkcijas“.
 
 Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
 ## <a name="your-privacy-settings"></a>Jūsų privatumo parametrai
 
-Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas „Office 365 ProPlus“ programoje „Windows“ įrenginyje, galite bet kada eiti į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkti **Valdyti parametrus** norėdami valdyti parametrus. Įjungę turėsite galimybę naudoti šiame straipsnyje aprašytas paslaugas, kai to norėsite. Išjungus jos bus nepasiekiamos.
+Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas „Office“ taikomosiose programose, įtrauktose į „Microsoft 365“ programas įmonėms, „Windows“ įrenginyje, galite eiti į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus**, kad galėtumėte valdyti parametrus bet kuriuo metu. Įjungę turėsite galimybę naudoti šiame straipsnyje aprašytas paslaugas, kai to norėsite. Išjungus jos bus nepasiekiamos.
 
 Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
 ## <a name="diagnostic-data"></a>Diagnostikos duomenys
 
-Kai naudojate bet kurias šiame straipsnyje aprašytas pasirinktines debesų technologija pagrįstas paslaugas, „Microsoft“ gali rinkti diagnostikos duomenis (pvz, naudojimo duomenis, klaidų ir veikimo duomenis) apie funkcijos veikimą ją naudojant. Šiuose diagnostikos duomenyse gali būti „asmeninių duomenų“, kaip apibrėžta Europos BDAR 4 straipsnyje.Visi diagnostikos duomenys, kuriuos „Microsoft“ renka naudojant „Office 365 ProPlus“ programas ir paslaugas, yra pseudoniminiai, kaip apibrėžta ISO/IEC 19944:2017 standarte (8.3.3 skyriuje).
+Kai naudojate bet kurias šiame straipsnyje aprašytas pasirinktines debesų technologija pagrįstas paslaugas, „Microsoft“ gali rinkti diagnostikos duomenis (pvz, naudojimo duomenis, klaidų ir veikimo duomenis) apie funkcijos veikimą ją naudojant. Šiuose diagnostikos duomenyse gali būti „asmeninių duomenų“, kaip apibrėžta Europos BDAR 4 straipsnyje.Visi diagnostikos duomenys, kuriuos „Microsoft“ renka naudojant „Microsoft 365“ programas įmonėms ir paslaugas, yra pseudoniminiai, kaip apibrėžta ISO/IEC 19944:2017 standarte (8.3.3 skyriuje).
 
 
 ## <a name="related-topics"></a>Susijusios temos
 
-- [„Office 365 ProPlus“ privatumo valdiklių apžvalga](overview-privacy-controls.md)
+- [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
 - [Reikalingi „Office“ tarnybų duomenys](required-service-data.md)
 - [Paskyros privatumo parametrai](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
