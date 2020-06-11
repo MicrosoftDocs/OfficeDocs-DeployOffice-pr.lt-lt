@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirtų „Microsoft 365“ programų įmonėms ( anksčiau vadintų „Office 365 ProPlus“) privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: e22388cb73a539e13f67163bf0b0e949b10be349
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993095"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663542"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga
 
@@ -37,7 +37,7 @@ Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos el
 > - Šie keitimai taikomi ir toliau nurodytiems produktams:
 >   - „Office for Mac“ (16.28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
 >   - „Project“ ir „Visio“ kompiuterio 1904 ar vėlesnės versijos, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
-> - Šie privatumo valdikliai įtraukti į pusmetinių naujinimų kanalo (tikslinio) ir pusmetinio naujinimo kanalo 1908 ar vėlesnę versiją.
+> - Šie privatumo valdikliai įtraukti į pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) ir pusmetinių įmonėms skirtų naujinimų kanalo 1908 ar vėlesnę versiją.
 > - Šie privatumo valdikliai pasiekiami 2.30 ir vėlesnėse „Excel“, „OneNote“, „PowerPoint“ ir „Word“ versijose, skirtose „iOS“, taip pat 1.17 ir vėlesnėse „Visio“ peržiūros programos, skirtos „iOS“, versijose.
 > - Šie privatumo valdikliai pasiekiami 16.0.12226.10000 ir vėlesnėse „Excel“, „PowerPoint“ ir „Word“, skirtų „Android“, versijose, taip pat 16.0.12228.20004 ir vėlesnėse „OneNote“, skirtos „Android“, versijose.
 > - Dauguma internetinės „Office“ programų naudoja naująjį privatumo valdiklį, skirtą [pasirinktinėms prijungtosioms funkcijoms](optional-connected-experiences.md). Minėtos programos yra šios: internetinė „Excel“, internetinė „OneNote“, „PowerPoint“ žiniatinkliui, internetinė „Visio“ ir internetinė „Word“. Norėdami konfigūruoti atitinkamą [strategijos parametrą](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences), galite naudoti [„Office“ debesies strategijos tarnybą](../overview-office-cloud-policy-service.md).

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 33f4c32c64713e63c02db95b93fc0295e2decb62
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
+ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992845"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44663181"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -2528,9 +2528,9 @@ Praneša apie galutinio diegimo bandymo rezultatą
 
 Ataskaitos apie veiksmą, atskiriantį įvestį, renkamą naudojant CollectParameters
 
-- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinio)
+- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) arba pusmetinių įmonėms skirtų naujinimų kanalo.
 
-- **ChannelId –** sveikasis skaičius, reiškiantis pažymėto naujinimo/diegimo kanalo išvardijimo reikšmes (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinis, neleistinas)
+- **ChannelID –** sveikasis skaičius, nurodantis pasirinkto naujinimo/diegimo kanalo išvardijimo reikšmę. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra), pusmetinių įmonėms skirtų naujinimų kanalo arba netinkamo.
 
 - **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe.
 
@@ -2607,9 +2607,9 @@ Ataskaitos apie veiksmą, kuris skaito pažymėtą įvestį iš exe įdėtojo pa
 
 Praneša apie parametrus, naudojamus „Office“ įdiegčiai
 
-- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinio)
+- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) arba pusmetinių įmonėms skirtų naujinimų kanalo.
 
-- **ChannelId –** sveikasis skaičius, reiškiantis pažymėto naujinimo/diegimo kanalo išvardijimo reikšmes (kas mėnesį, „Insiders Slow“, „Insiders Fast“, kas pusmetį, pusmečio tikslinis, neleistinas)
+- **ChannelID –** sveikasis skaičius, nurodantis pasirinkto naujinimo/diegimo kanalo išvardijimo reikšmę. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra), pusmetinių įmonėms skirtų naujinimų kanalo arba netinkamo.
 
 - **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe. Galimybės: automatinis vykdymas, konfigūravimas, vartotojams, atsisiuntimas, žinynas, pakavimo programa
 
