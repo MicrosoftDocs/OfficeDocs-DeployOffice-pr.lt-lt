@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: f08061e77e5757d61108e2eb4539986b90902bef
-ms.sourcegitcommit: 06da4eff4b399367017fc68fadb13df29e577e64
+ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
+ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43998834"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811478"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -623,7 +623,9 @@ Be to, šie laukai dažniausiai naudojami visiems „Outlook“, skirtos „iOS�
 
 - **DeviceInfo.NetworkProvider** – įrenginio tinklo teikėjas (t.y. „Verizon“)
 
-- **gcc_restrictions_enabled**-praneša mums, jei GCC apribojimai buvo taikomi programėlei, kad galėtume užtikrinti, kad mūsų GCC klientai saugiai naudoja mūsų programą
+- **gcc_restrictions_enabled** – parodo, jei GCC apribojimai buvo taikomi programėlei, kad galėtume užtikrinti, kad mūsų GCC klientai saugiai naudoja mūsų programą
+ 
+- **multi_window_mode** – parodo, ar vartotojas, naudojantis „iPad“ naudoja kelis langus, kad galėtume nustatyti problemas, susijusias su kelių langų naudojimu.
 
 - **office_session_id** – unikalus ID, kuriuo sekama prijungtų „Office“ tarnybų seansas, kad būtų lengviau aptikti „Office“ paslaugų integravimą programoje „Outlook“, pvz., „Word“
 
@@ -657,8 +659,22 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 
 ### <a name="office-setup-and-inventory-subtype"></a>*„Office“ sąranka ir inventoriaus potipis*
 
-Įdiegtas produktas ir versija, bei diegimo būsena.
+Įdiegtas produktas ir versija bei diegimo būsena.
 
+#### <a name="add_sso_account"></a>add_sso_account
+
+Tai praneš „Microsoft“ apie sėkmingą arba nesėkmingą vartotojo paskyros įtraukimą naudojant bendrąją autentifikaciją (SSO).
+
+Renkami šių laukų duomenys: 
+
+- **account_type** – paskyros, pridėtos naudojant SSO, tipas.
+
+- **action_origin** – iš kur buvo sukurtas šis įvykis. (pvz., reikšmės: sso_drawer, sso_add_account, sso_add_account_prompt, sso_settings, sso_oobe).
+
+- **provider** – tiekėjo programinės įrangos paketo, skirto SSO, identifikatorius.
+
+- **state** – dabartinė paskyros būsena (reikšmės pavyzdys: FAILED (nepavyko), PENDING (laukiama), ADDED (įtraukta) ir t. t.)
+ 
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
 Taikoma visoms „win32“ taikomosioms programoms. Padeda suprasti „Office“ paketo naujinimo proceso būseną (sėkmingai ar nesėkmingai atliktas, bei pateikiama klaidų informacija)
@@ -1249,6 +1265,34 @@ Renkami šių laukų duomenys:
 
 Dokumento, funkcijos ir papildinio sąlygos, kurios gali pažeisti saugą, įskaitant produkto parengimą naujinti.
 
+#### <a name="office_appguard_createcontainer"></a>Office_AppGuard_CreateContainer
+
+Renkame klaidų kodus ir informaciją, ar konteineris jau egzistavo, ar ne. Taip pat renkame nustatymo iš naujo įvykio klaidų kodus tam atvejui, jeigu nepavyktų sukurti konteinerio pirmuoju bandymu. Duomenys bus naudojami nustatyti procentą kartų, kai sėkmingai sukūrėme konteinerį „Office Application Guard“ programų paleidimui. Duomenys taip pat leis „Microsoft“ nustatyti ir iš sukurto konteinerio pašalinti klaidų kodus.
+
+Renkami šių laukų duomenys:
+
+- **ErrorCode1** – konteinerio nustatymo klaidos kodo tipas.  
+
+- **ErrorCode2** – klaidos kodas iš kūrimo vykdymo. 
+
+- **ErrorCode3** – papildomas klaidos kodas. 
+
+- **Id** – konteinerio kūrimo unikalus identifikatorius (GUID).
+
+- **ResetError** – Klaidos kodas, rodomas bandant nustatyti konteinerį iš naujo po nepavykusio bandymo.
+
+- **ResetErrorCode1** – konteinerio nustatymo klaidos kodo tipas po nustatymo iš naujo komandos. 
+
+- **ResetErrorCode2** – klaidos kodas iš kūrimo vykdymo po nustatymo iš naujo komandos.
+
+- **ResetErrorCode3** – papildomas klaidos kodas po nustatymo iš naujo komandos.
+
+- **ResetErrorType** – klaidos, paleidimo iš naujo metu, tipas: Creation (kūrimas), Preparing File (failo ruošimas) arba Launch (paleidimas).
+
+- **WarmBoot** – nustato, ar konteineris jau sukurtas, ar ne.
+
+
+
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
 
 Seka kai konkretus klasės identifikatorius („Flash“, „Silverlight“ ir kt.) aktyvuojamas programoje „Office“. Naudojamas sekti „Flash“, „Silverlight“ ir „Shockwave“ valdiklių blokavimą galutiniams vartotojams.
@@ -1684,7 +1728,15 @@ Renkami šių laukų duomenys:
 
 - **subtab_type** – seka, kur vartotojas pasirinkto rezultatą ir iš kurio rezultatų skirtuko
 
-- **top_mail_result_selected_count** – seka, kiek kartų vartotojas pasirenka jam pateiktus populiariausius rezultatus. 
+- **top_mail_result_selected_count** – seka, kiek kartų vartotojas pasirenka jam pateiktus populiariausius rezultatus.
+
+- **ui_reload_result_count** – fiksuoja vartotojo sąsajos perkrovimo laiką, dėl rezultatų rinkinio naujinimo (atitinkamos užklausos metu)
+
+- **ui_reload_result_time** – fiksuoja visą laiką, paleistą vartotojo sąsajos perkrovimui, dėl rezultatų rinkinio naujinimo (atitinkamos užklausos metu)
+
+- **ui_reload_status_count** – fiksuoja vartotojo sąsajos perkrovimo laiką, dėl būsenos naujinimo (atitinkamos užklausos metu)
+
+- **ui_reload_status_time** – fiksuoja visą laiką, paleistą vartotojo sąsajos perkrovimui, dėl būsenos naujinimo (atitinkamos užklausos metu)
 
 #### <a name="compose_mail_accessory"></a>compose_mail_accessory
 
@@ -3320,6 +3372,118 @@ Renkami šių laukų duomenys:
 - **version** – informacijos santraukos kliento versija.
 
 
+#### <a name="officefeedbacksurveyfloodgateclientsurveytracked"></a>Office.Feedback.Survey.FloodgateClient.SurveyTracked
+
+Seka, kada įrenginys, atitinkantis reikalavimus apklausai, paleidžia programą. Naudojama įvertinti apklausos vartotojo pasirinkimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
+#### <a name="officefeedbacksurveyfloodgateclienttriggermet"></a>Office.Feedback.Survey.FloodgateClient.TriggerMet
+
+Seka, kada įrenginys atitiko reikalavimus, kad jam būtų rodoma apklausa. Naudojama įvertinti apklausos suaktyvinimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
+#### <a name="officefeedbacksurveyfloodgateclientuserselected"></a>Office.Feedback.Survey.FloodgateClient.UserSelected
+
+Seka, kada įrenginys pasirenkamas apklausai. Naudojama įvertinti apklausos vartotojo pasirinkimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
+#### <a name="officefeedbacksurveyuiandroid"></a>Office.Feedback.Survey.UI.Android
+
+„Android“ įrenginyje seka, kada vartotojas įrenginyje sąveikauja su apklausos paraginimu ir apklausos vartotojo sąsaja. Naudojama įvertinti visapusę apklausos funkcijos būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
+#### <a name="officefeedbacksurveyuiios"></a>Office.Feedback.Survey.UI.IOS
+
+„iOS“ įrenginyje seka, kada vartotojas įrenginyje sąveikauja su apklausos paraginimu ir apklausos vartotojo sąsaja. Naudojama įvertinti visapusę apklausos funkcijos būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
+#### <a name="officefeedbacksurveyuimac"></a>Office.Feedback.Survey.UI.Mac
+
+„Mac“ įrenginyje seka, kada vartotojas įrenginyje sąveikauja su apklausos paraginimu ir apklausos vartotojo sąsaja. Naudojama įvertinti visapusę apklausos funkcijos būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
+#### <a name="officefeedbacksurveyuiwin32"></a>Office.Feedback.Survey.UI.Win32
+
+„Win32“ įrenginyje seka, kada vartotojas įrenginyje sąveikauja su apklausos paraginimu ir apklausos vartotojo sąsaja. Naudojama įvertinti visapusę apklausos funkcijos būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
+#### <a name="officefeedbacksurveyuiwin32toast"></a>Office.Feedback.Survey.UI.Win32.Toast
+
+Seka, kai rodomas apklausos raginimas. Naudojama įvertinti apklausos paraginimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys:
+
+- **ExpirationTimeUTC** – data / laikas, kad pasibaigs apklausos galiojimas
+
+- **SurveyName** – rodomos apklausos pavadinimas
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **UniqueId** – ID, nustatyti atskirai telemtrijos daliai
+
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
 Leidžia mums žinoti, ar failas iš FIO sluoksnio atidarytas sėkmingai. Naudojama funkcijos sveikatai užtikrinti ir stebėti.
@@ -4060,6 +4224,81 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
 - **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
+
+#### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
+
+Registruojama, kai vartotojas uždaro išplėstą asmeninę kortelę. Naudojama stebėti kritines tiesioginių asmeninių kortelių uždarymo klaidų dažnumo anomalijas.
+
+Renkami šių laukų duomenys:
+
+- **AppInfo_Id** – valdančiosios programos pavadinimas
+
+- **AppInfo_Version** – valdančiosios programos versija
+
+- **Data.appContextId** – atsitiktine tvarka generuojamas ID, naudojamas identifikuoti skirtingas tos pačios programos paskyras
+
+- **Data.AppInfo.Name** naudojamos tarnybos pavadinimas (profilio kortelė)
+
+- **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
+
+- **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
+
+- **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
+
+- **Data.clientType** – įrenginio, kuriame veikia programa, tipas, pvz., „Outlook_Win32“
+
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., „LivePersonaCardRenderedAction“
+
+- **Data.exportName** vartotojo veiksmo įvykio žmonėms perskaitomas pavadinimas, pvz., „ClosedExpandedPersonaCard“
+
+- **Data.exportType** – BDAR eksportavimo užklausos įvykio kategorija
+
+- **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
+
+- **Data.OTelJS.Version** – OTel registravimo priemonės versija
+
+- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+
+   - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
+   - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
+   - **ClientTimeStamp** – laikas, kada įvyko įvykis „Unix“ epochos metu
+   - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas 
+   - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+   - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+   - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
+
+- **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis
+
+- **Data.userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.Id dublikatas)
+
+- **Data.UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius 
+
+- **Data.UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje.
+
+- **Data.userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius(Data.UserInfo.MsaId dublikatas)
+
+- **Data.version** – tarnybos versija (profilio kortelė)
+
+- **DeviceInfo_Id** – įrenginio visuotinis unikalusis identifikatorius
+
+- **DeviceInfo_Make** – operacinės sistemos prekės ženklas
+
+- **DeviceInfo_Model** – įrenginio modelis
+
+- **DeviceInfo.NetworkCost** – nurodo tinklo kainą / tipą (apskaičiuotas, apskaičiuotas virš savikainos ir kt.)
+
+- **DeviceInfo_OsName** – įrenginio OS pavadinimas
+
+- **DeviceInfo_OsVersion** – operacinės sistemos versija
+
+- **PipelineInfo.ClientCountry** – siuntėjo šalies kodas, pagrįstas netvarkytu kliento IP adresu.
+
 
 #### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
@@ -6796,6 +7035,14 @@ Renkami šių laukų duomenys:
 
   - **Data\_ViewKind-** „Word“ rodinio tipas
 
+#### <a name="onenoteappnavigationratingreminderdialogshown"></a>OneNote.App.Navigation.RatingReminderDialogShown
+
+Kritinis signalas, naudojamas pamatuoti vertinimo priminimo paleidimo logikos veiksmingumą. Šis dialogo langas rodomas, kai vartotojas atitiko visas sąlygas, kad matytų vertinimo priminimą ( aktyvių dienų skaičių, ar anksčiau vertinta, ar ne ir t. t.) Naudojama užtikrinti vertinimo priminimo paleidimo logiką. Jei vartotojai mato šį dialogo langą, mes gausime galimybę gauti atsiliepimus iš klientų tinkamu metu ir pagerinti programos būklę.
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
 #### <a name="onenotecanvaspageopened-previous-name-officeonenoteandroidcanvaspageopened"></a>OneNote.Canvas.PageOpened *(ankstesnis pavadinimas)*, Office.OneNote.Android.Canvas.PageOpened
 
 Signalas, naudojamas įrašyti kai puslapis yra atidarytas.  Telemetrija naudojama stebėti, aptikti ir išspręsti problemas, susijusias su puslapio atidarymu programoje „OneNote“.
@@ -6999,6 +7246,8 @@ Renkami šių laukų duomenys:
 - **enabled_state** – ar tinkamai sukonfigūruotas automatinis atsakymas, kontaktų įrašymas ir išorinių vaizdų blokavimo parametrai  
 
 - **enabled_state** – ar įgalinta su veiksmu susijusi būsena
+
+- **in_app_language** – pasirinkta programos kalba, eilutės tipas (numatytoji, EN-US, FA, RU ir t. t.)  
 
 - **notification_state** – nurodo, kokio tipo ženklelių skaičiaus pageidavo vartotojas, t. y. nėra ženklelių, tik reikšmingiausi gautieji ir t. t.
 
@@ -7579,7 +7828,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Location:integer -** Vietą failo, iš kurio buvo atidaryta 0 vietos, 1, tinklo, 2, „SharePoint“, 3 – žiniatinklio
 
-  - **Data\_MasterCount:integer -** Ruošiniai skaičius diagramoje
+  - **Data\_MasterCount:integer -** Ruošinių skaičius diagramoje
 
   - **Data\_MaxCoauthUsers:integer -** Maksimalus vartotojų skaičius, bendradarbiavusių bet kuriuo seansų Filesystem, Registry, First Party, SDX metu
 
@@ -7717,7 +7966,7 @@ Renkami šių laukų duomenys:
 
 - **UsesSharedRuntime** – nurodo, ar taikomoji programa naudoja „sharedRuntime“.
 
-#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete"></a>OneNote.App.AppBootComplete *(ankstesnis pavadinimas)*, Office.OneNote.Android.App.AppBootComplete 
+#### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(ankstesnis pavadinimas)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
 Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai („Microsoft“ paskyra) gali sėkmingai paleisti ir naudoti „OneNote“ pirmą kartą.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai.  Jei vartotojai negali paleisti programos pirmą kartą, suaktyvinamas didelės svarbos incidentas.
 
