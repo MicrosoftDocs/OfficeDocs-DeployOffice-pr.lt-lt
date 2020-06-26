@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 74d827255ddbedb42cbe242229140d2c8eafea66
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
+ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663181"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800396"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -2719,13 +2719,22 @@ Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus
 
 Renkami šių laukų duomenys:
 
+- **ActionDetail**-papildoma informacija apie klaidos laiką.
+   - Jei HTTP užklausa pavyksta, ActionDetail bus 0.
+   - Jei laukas Rezultatas nėra tinkamas (t. y. ne 0), vadinasi užklausa nėra išsiųsta, šis laukas užregistruos vidinės klaidos kodą, kuris yra toks pat, kaip laukas Rezultatas.
+   - Jei rezultatų laukas yra tinkamas (t. y. 0), vadinasi HTTP atsako kodas > = 300, jis užregistruos HTTP atsako kodą (pvz., 404).
+
+- **Result** – skaitiniai klaidų kodai, kuriuos pateikia „Office“ tinklo tarnybos iškvietimo API. – pvz., 3 reikštų, kad kilo problemų inicijuojant HTTP antraštes.
+
+- **Type** – papildoma tipo informacija. Atsargų atveju ši informacija nurodo siunčiamą srautą, pvz., pilną arba tik delta pokyčius. 
+
 -  **WebCallSource** – išvardijimo reikšmė (nurodyta kaip sveikasis skaičius), nurodanti aptarnavimo tvarkytuvo papildiniui, koks buvo iškvietimo šaltinis:
    - Atsargos: 0
    - Atsargų konfigūracija: 1
    - Atsargų strategija: 2
    - Atsargų tinklo būsena: 3
-
-- **Result** – skaitiniai klaidų kodai, kuriuos pateikia „Office“ tinklo tarnybos iškvietimo API.
+   - Priežiūros tvarkytuvas: 4
+   - Valdymo galimybės: 5
 
 ### <a name="officeserviceabilitymanagerwebservicefailure"></a>Office.ServiceabilityManager.WebserviceFailure
 
@@ -3143,6 +3152,8 @@ Telemetrijos veikla stebi sėkmės ir nesėkmės taškus ieškant susiejimo. Tai
 
 Renkami šių laukų duomenys:
 
+- **DexShouldRetry** – signalas, kad įvyko bandymo iš naujo problema (nėra interneto arba neveikia serveriai)
+
 - **GenuineTicketFailure** – nurodo trikties HRESULT, kai bandoma gauti įrenginio „Windows“ autentišką leidimą / produkto kodą (WPK).
 
 - **PinValidationFailure** – nurodo, kodėl nepavyko PIN patvirtinimo procesas. Galimos klaidos:
@@ -3177,13 +3188,27 @@ Sėkmingai gavus galiojantį „Office“ PIN, skirtą įrenginiui, kuriame iš 
 
 Renkami šių laukų duomenys:
 
-- **ActionCreateAccount** – vartotojas pasirinko sukurti paskyrą.
+- **ActionActivate** – signalas, kad vartotojas spustelėjo mygtuką „Aktyvinti“.
 
-- **ActionSignIn** – vartotojas pasirinko prisijungti.
+- **ActionChangeAccount** – signalas, kad vartotojas spustelėjo hipersaitą „Naudoti kitą paskyrą“.
 
-- **DialogRedemption** – rodomas AFO panaudojimo dialogo langas.
+- **ActionCreateAccount** – signalas, kad vartotojas spustelėjo mygtuką „Kurti paskyrą“.
 
-- **DialogSignIn** – rodomas AFO prisijungimo dialogo langas.
+- **ActionSignIn** – signalas, kad vartotojas spustelėjo mygtuką „Prisijungti“.
+
+- **CurrentView** – vartotojo uždaryto dialogo lango tipas.
+
+- **DialogEULA** – signalas, kad parodėme „Patvirtinti EULA“ dialogo langą. 
+
+- **DialogRedemption** – signalas, kad parodėme AFO padengimo dialogo langą.
+
+- **DialogSignIn** – signalas, kad parodėme AFO prisijungimo dialogo langą.
+
+- **EmptyRedemptionDefaults** – signalas, kad nepavyko gauti numatytosios padengimo informacijos.
+ 
+- **GetRedemptionInfo** – signalas, kad bandome gauti demografinę informaciją apie PIN padengimą.
+
+- **MalformedCountryCode** – signalas, kad šalies kodas, būtinas PIN padengimui, yra netinkamai suformuotas.
 
 - **OExDetails** – klaidos informacija, kurią gauname, kai atmetamas prisijungimo dialogo langas.
 
@@ -3199,6 +3224,14 @@ Renkami šių laukų duomenys:
     - 0x03113811 Vartotojas uždarė prisijungimo / panaudojimo dialogo langą
     - 0x03113812 Vartotojas uždarė sutikimo su GVLS dialogo langą
     - 0x03113808 Vartotojas sutiko su GVLS
+    - 0x03113811 Vartotojas uždarė dialogo langą
+    - 0x2370e3a0 Vartotojas uždarė dialogo langą
+    - 0x2370e3c1 Eiti į žiniatinklį siekiant padengti PIN
+    - 0x2370e3a1 Eiti į žiniatinklį siekiant padengti PIN
+    - 0x2370e3c0 Dialogo lango sekos ciklas dėl vartotojo grįžimo ir perėjimo į priekį dialogo langų sraute
+    - 0x2370e3a3 Vartotojas spustelėjo hipersaitą „Ne dabar“, todėl buvo praleistas AFO pasiūlymas tame seanse
+    - 0x2370e3a2 Vartotojas spustelėjo hipersaitą „Niekada šito man nerodyti“, todėl buvo išjungtas AFO pasiūlymas
+
 
 - **UseInAppRedemption** – nurodo, ar vartotojai išlaikomi programoje ir gali panaudoti PIN joje, ar siunčiami į žiniatinklį, kad panaudotų iškviestą PIN (iš anksto įvestą).
 
@@ -3230,7 +3263,7 @@ Renkami šių laukų duomenys:
 
 - **HasConnectivity** – nurodo, ar vartotojas turi interneto ryšį. Jei ryšio nėra, vartotojas gali naudoti atidėjimo licenciją penkias dienas arba produktas gali veikti sumažinto funkcionalumo režimu
 
-- **InAppTrialPurchase** – nurodo, ar įgalintas variantas paleidžiant „Store“ pirkimo SDK, kad būtų užfiksuoti PI ir įsigyta bandomoji versija programoje
+- **InAppTrialPurchase** – nurodo, ar įgalintas variantas paleidžiant „Store“ pirkimo SDK, kad būtų užfiksuoti PI ir įsigyta bandomoji versija programoje *[Šis laukas pašalintas iš dabartinių „Office“ komponavimo versijų, tačiau vis dar gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **IsRS1OrGreater** – nurodo, ar OS versija yra naujesnė nei RS1, ar ne, nes „Store“ pirkimo SDK turi būti naudojamas, tik jei OS versija yra naujesnė nei RS1
 
@@ -3238,15 +3271,15 @@ Renkami šių laukų duomenys:
 
 - **OEMSendToWebForTrial** – nurodo, ar variantas yra įgalintas, kad vartotojai būtų siunčiami į žiniatinklį gauti bandomajai versijai
 
-- **StoreErrorConditions** – nurodo įvairias sąlygas, kurioms esant galėjo įvykti „Store“ pirkimo SDK triktis
+- **StoreErrorConditions** – nurodo įvairias sąlygas, kuriomis galėjo nepavykti atlikti SDK pirkimo parduotuvėje *[Šis laukas pašalintas iš dabartinių „Office“ komponavimo versijų, tačiau vis dar gali būti rodomas senesnėse komponavimo versijose.]*
 
-- **StoreErrorHResult** – nurodo „Store“ pirkimo SDK pateiktą klaidos kodą
+- **StoreErrorHResult** – nurodo klaidos kodą, pateiktą atliekant SDK pirkimą parduotuvėje *[Šis laukas pašalintas iš dabartinių „Office“ komponavimo versijų, tačiau vis dar gali būti rodomas senesnėse komponavimo versijose.]*
 
-- **StorePurchaseStatusResult** – nurodo „Store“ pirkimo SDK iškvietimo rezultatą ir ar vartotojas įsigijo, ar ne. Tai padės nustatyti, ar vartotojas turi gauti licenciją naudoti „Office“
+- **StorePurchaseStatusResult** – nurodo „Store“ pirkimo SDK iškvietimo rezultatą ir ar vartotojas įsigijo, ar ne. Tai padės nustatyti, ar vartotojas turi gauti licenciją naudoti „Office“*[Šis laukas pašalintas iš dabartinių „Office“ komponavimo versijų, tačiau vis dar gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **Tag** – naudojama nurodant, iš kurios kodo vietos įvykis buvo išsiųstas
 
-- **UserSignedInExplicitly** – nurodo, ar vartotojas tiesiogiai prisijungė. Tokiu atveju jis nukreipiamas į žiniatinklį, kad gautų bandomąją versiją
+- **UserSignedInExplicitly** – nurodo, ar vartotojas prisijungė tiesiogiai, tokiu atveju nukreiptume vartotojus į bandomosios versijos svetainę *[Šis laukas pašalintas iš dabartinių „Office“ komponavimo versijų, tačiau vis dar gali būti rodomas senesnėse komponavimo versijose.]*
 
 ### <a name="officelicensingusegracekey"></a>Office.Licensing.UseGraceKey
 
