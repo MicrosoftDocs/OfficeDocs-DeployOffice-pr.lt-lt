@@ -13,12 +13,11 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 4ec1ffef4b8bc0e82a7a1ce96061a9c715636bea
-ms.sourcegitcommit: 7adeab733277e6ed3eafddcc1d4df20e2743a752
-ms.translationtype: HT
+ms.openlocfilehash: ed42864d90c0ec8f50e28248720ffc8c2f569713
+ms.sourcegitcommit: 85c6ac9351a9305b774fb2a63cb895f952b433d6
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44930404"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048542"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -37,7 +36,7 @@ ms.locfileid: "44930404"
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Prisijungus naudojamos funkcijos, kurios analizuoja turinį
 
-Prisijungus naudojamos funkcijos, kurios analizuoja turinį, yra funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir pan. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba „Word“ rengyklė.
+Prisijungus naudojamos funkcijos, kurios analizuoja turinį, yra funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir pan. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba vertyklė.
 
 Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizuoja turinį, sąrašas, taip pat saitų, kur galite rasti daugiau informacijos apie jas.
 
@@ -47,7 +46,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | Automatinis alternatyvusis tekstas   | [Viskas, ką turite žinoti apie efektyvaus alternatyviojo teksto rašymą](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 | Duomenų tipai                  | [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktavimo funkcija  | [Diktavimas balsu naudojant „Office“](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-| Rengyklė    | [Rengyklė yra jūsų rašymo asistentas](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)  |
+|Rengyklė|[Rengyklė yra jūsų rašymo asistentas](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Idėjos     | [Idėjos programoje „Excel“](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
@@ -60,6 +59,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | Publikavimas „Microsoft Stream“    | [Pateikties pavertimas vaizdo įrašu](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Tyrimai*\*   | [Tyrimų paslaugų pridėjimas arba keitimas](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Vizitinės kortelės nuskaitymas|  [Kontaktų įtraukimas „Outlook“, skirtoje „Android“, nuskaitant arba bakstelėjant](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|*Panašumų tikrintuvas*\* („Editor“ funkcija)|[Tikrinkite savo dokumento panašumą į internetinius šaltinius](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Išmanioji ieška*\*   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Teminė ieška „Word“ (įtraukimas iš failų)   | [Reikiamo turinio radimas ir panaudojimas, neišeinant iš „Word“](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
