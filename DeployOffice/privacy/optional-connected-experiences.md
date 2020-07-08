@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: ecfe38bc6dbedd57ff1eb2ab4851c8e4dddab730
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: d5de9a7a1eb2f2a825feb28798e8f0d195476696
+ms.sourcegitcommit: 9e44d65a5d59339df7d6a2f1116462c0fb774f83
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43993225"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068704"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -39,7 +39,7 @@ Svarbu žinoti, kad šioms pasirinktinėms debesų technologija pagrįstoms pasl
 
 ## <a name="experiences-that-rely-on-bing"></a>Funkcijos, kurios naudoja „Bing“
 
-Kai kurios debesų technologija pagrįstos paslaugos naudoja „Microsoft Bing“. „Microsoft Bing“ yra atskiras verslas, atskirtas nuo „Microsoft 365“ programų įmonėms“, todėl ir valdoma nepriklausomai nuo „Microsoft“ valdomų „Microsoft 365“ programų įmonėms. „Office“, įtrauktoje į „Microsoft 365“ programas įmonėms, taikomųjų programų funkcijos, kuriose naudojama „Bing“, yra [trimačiai žemėlapiai](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [žemėlapio diagramos](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [internetinių paveikslėlių įterpimas](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [internetinių 3D modelių įterpimas](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [„PowerPoint“ funkcija „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Tyrėjas](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) ir [išmanioji ieška](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044). 
+Kai kurios debesų technologija pagrįstos paslaugos naudoja „Microsoft Bing“. „Microsoft Bing“ yra atskiras verslas, atskirtas nuo „Microsoft 365“ programų įmonėms“, todėl ir valdoma nepriklausomai nuo „Microsoft“ valdomų „Microsoft 365“ programų įmonėms. „Office“, įtrauktoje į „Microsoft 365“ programas įmonėms, taikomųjų programų funkcijos, kuriose naudojama „Bing“, yra [trimačiai žemėlapiai](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030), [žemėlapio diagramos](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b), [internetinių paveikslėlių įterpimas](https://support.office.com/article/3C51EDF4-22E1-460A-B372-9329A8724344), [internetinių 3D modelių įterpimas](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a), [„PowerPoint“ funkcija „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224), [Tyrėjas](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f), [išmanioji ieška](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) ir [panašumų tikrintuvas](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) („Editor“ funkcija).
 
 Funkcijos, kurias „Bing“ siūlo „Outlook“, skirtoje „iOS“ ir „Android“:
 
