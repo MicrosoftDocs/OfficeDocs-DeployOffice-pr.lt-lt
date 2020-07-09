@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: d5de9a7a1eb2f2a825feb28798e8f0d195476696
-ms.sourcegitcommit: 9e44d65a5d59339df7d6a2f1116462c0fb774f83
+ms.openlocfilehash: 729329eeaa301cbb7bda61c0ec8d08ec9124729f
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068704"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087790"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -45,7 +45,7 @@ Funkcijos, kurias „Bing“ siūlo „Outlook“, skirtoje „iOS“ ir „Andr
 
 - **Vietos pasiūlymai:**   kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, lauke Vieta taip pat bus nurodomas visas adresas.
 - **Įdomūs kalendoriai:**   galite [prenumeruoti](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) kalendorius apie savo mėgstamas sporto komandas ar televizijos laidas.
-
+- **Kelionės laikas kortelėje „Up Next“:** Jūsų ateinantis įvykis bus apibendrintas el. pašto aplanko Gauta viršuje esančioje kortelėje [„Up Next“](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Programoje „Outlook“ skirtoje „Android“, šiai funkcijai reikalinga „Bing Maps“, kad būtų pateiktas numatomas kelionės laikas.
 
  Šios „Bing“ grindžiamos funkcijos jums licencijuotos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) sąlygas ir joms taikomas [privatumo patvirtinimas](https://privacy.microsoft.com/). Bet kokios ieškos užklausos, kurias pateikiate „Office 365“ programoms įmonėms organizacijai naudodami šias paslaugas, siunčiamos į „Microsoft Bing“. „Bing“ organizacija jų nesusieja su jumis.
 
@@ -83,6 +83,10 @@ Kai naudojate „Office“ parduotuvę, pačios parduotuvės svetainės naudojim
 
 > [!NOTE]
 > Tyrimų funkcija skiriasi nuo paslaugos Tyrėjas. Naujesnėse „Office“ versijose kartu su tyrimų funkcija pasiekiama paslauga Tyrėjas. Tyrėjas yra naujesnė paslauga, kuri naudoja „Bing“, ir ji aptarta dalyje [Funkcijos, naudojančios „Bing“](#experiences-that-rely-on-bing).
+
+### <a name="travel-time-in-up-next-in-outlook-for-ios"></a>Kelionės laikas kortelėje „Up Next“, esančioje „Outlook“ skirtoje „iOS“
+
+Programoje „Outlook“ skirtoje „iOS“ jūsų ateinantis įvykis bus apibendrintas el. pašto aplanko Gauta viršuje esančioje kortelėje [„Up Next“](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Šiai funkcijai reikia „Apple“ priklausančios paslaugos, vadinamos „Apple Maps“, kad būtų pateiktas numatomas kelionės laikas. Taikomos „Apple Maps“ [naudojimo sąlygos](https://www.apple.com/legal/internet-services/maps/) ir „Apple“ [privatumo strategija](https://www.apple.com/legal/privacy).
 
 ### <a name="weather-bar-in-outlook"></a>Orų prognozės juosta programoje „Outlook“
 

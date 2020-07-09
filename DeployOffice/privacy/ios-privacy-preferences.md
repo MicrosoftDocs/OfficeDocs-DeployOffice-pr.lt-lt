@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo parametrus „iOS“ įrenginiuose.
 hideEdit: true
-ms.openlocfilehash: 40fc1ec1f5b2abc587e1b5224dc7fe0a5a656f33
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: 6465a5b5e2103070170bdec8cd64b8bc044d46a3
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992114"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087855"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas
 
@@ -33,7 +33,9 @@ Daugiau informacijos apie diagnostikos duomenis ir prijungtąsias funkcijas žr.
 
 Šie nuostatų parametrai taikomi šioms programoms:
 - 2.30 ir naujesnės versijos „Word“, skirtai „iOS“, „Excel“, skirtai „iOS“, ir „PowerPoint“, skirtai „iOS“.
-- 16.30 ir naujesnės versijos „OneNote“, skirtai „iOS“.
+- 4.30.0 ir naujesnės „Outlook“, skirtos „iOS“, versijos.
+- 16.30 ir naujesnės „OneNote“, skirtos „iOS“, versijos.
+- 11.19.11 ir naujesnės „OneDrive“, skirtos „iOS“, versijos.
 - 1.17 ir naujesnės versijos „Visio“ peržiūros programai, skirtai „iOS“.
 
 > [!NOTE]
@@ -60,6 +62,8 @@ Kai nusiųsite į įrenginį, konfigūravimo žodynas bus rodomas po `com.apple.
 > - Leisti „Office" naudoti prisijungus naudojamas funkcijas, kurios analizuoja turinį
 > - Leisti „Office" naudoti prisijungus naudojamas funkcijas, kurios parsiunčia internetinį turinį
 > - Leisti „Office“ naudoti pasirinktines, papildomas prisijungus naudojamas funkcijas 
+>
+> „Outlook“ skirtos „iOS“ ir „OneDrive“ skirtos „iOS: privatumo parametrai gali būti konfigūruojami tik naudojant „Office“ debesies strategijos tarnybą.
 >
 > Daugiau informacijos apie „Office“ debesies strategijų tarnybos naudojimą rasite straipsnyje [„Office“ debesies strategijų tarnybos apžvalga](../overview-office-cloud-policy-service.md).
 
