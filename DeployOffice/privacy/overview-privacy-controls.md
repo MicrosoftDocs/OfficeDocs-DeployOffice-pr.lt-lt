@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirtų „Microsoft 365“ programų įmonėms ( anksčiau vadintų „Office 365 ProPlus“) privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: 134f7470354796679c9a8c69fac8dd2559302b72
-ms.sourcegitcommit: f8201a088d2b160b6fcec2342e11be0e9ba3d189
+ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44663542"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087690"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga
 
@@ -85,7 +85,7 @@ Jei reikia daugiau informacijos, žr.:
 
 Suprantame, kad galite norėti pasirinkti, kokių tipų prisijungus naudojamos funkcijos pasiekiamos vartotojams, kai jie dirba „Office“ programose. Kaip organizacijos administratorius galėsite keisti strategijos parametrus ir pasirinkti, ar vartotojams bus pasiekiamos toliau išvardytų tipų prisijungus naudojamos funkcijos.
 
-- **Funkcijos, kurios analizuoja turinį.** Funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir pan. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba „Word“ rengyklė.
+- **Funkcijos, kurios analizuoja turinį.** Funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir pan. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba vertyklė.
 
 - **Funkcijos, kurios atsisiunčia turinį.** Funkcijos, kurias naudodami galite ieškoti internetinio turinio ir jį atsisiųsti, įskaitant šablonus, vaizdus, 3D modelius, vaizdo įrašus ir pagalbinę medžiagą, kad patobulintumėte dokumentus. Pavyzdžiui, „Office“ šablonai arba „PowerPoint“ funkcija „QuickStarter“.
 

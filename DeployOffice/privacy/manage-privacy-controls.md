@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia informacijos „Office“ administratoriams apie tai, kaip valdyti privatumo kontrolės mechanizmus „Microsoft 365“ programose skirtose įmonėms (anksčiau vadintos „Office 365 ProPlus“) naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: ca076099be15a5a4cd19ac7c99660bfe26de8eed
-ms.sourcegitcommit: edd1190877db7996206147ad1d691fd8e84f23b1
+ms.openlocfilehash: 5f9cafff0f7baf12ed8f0f57d7561bc356fbb98b
+ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44589032"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087213"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus
 
@@ -40,7 +40,7 @@ Toliau pateikiami penki naujos strategijos parametrai:
 - Leisti „Office“ naudoti pasirinktines, papildomas prisijungus naudojamas funkcijas 
 - Leisti „Office" naudoti prisijungus naudojamas funkcijas
 
-Šie strategijos parametrai gali būti įdiegti naudojant arba grupės strategiją, arba [„Office“ debesies strategijos tarnybą](https://docs.microsoft.com/DeployOffice/overview-office-client-policy-service). Jei naudojate grupės strategiją, turite atsisiųsti naujausius administravimo šablonų failus (ADMX/ADML) iš [„Microsoft“ atsisiuntimo centro](https://www.microsoft.com/download/details.aspx?id=49030).
+Šie strategijos parametrai gali būti įdiegti naudojant arba grupės strategiją, arba [„Office“ debesies strategijos tarnybą](../overview-office-client-policy-service.md). Jei naudojate grupės strategiją, turite atsisiųsti naujausius administravimo šablonų failus (ADMX/ADML) iš [„Microsoft“ atsisiuntimo centro](https://www.microsoft.com/download/details.aspx?id=49030).
 
 > [!NOTE]
 > - Informaciją apie „Office for Mac“ privatumo valdiklių valdymą žr. [Nuostatų naudojimas siekiant valdyti „Office for Mac“ privatumo valdiklius](mac-privacy-preferences.md).
@@ -98,7 +98,7 @@ Vartotojai negalės pasirinkti, ar šios prisijungus naudojamos funkcijos yra į
 
 ### <a name="policy-setting-for-connected-experiences-that-analyze-your-content"></a>Prisijungus naudojamų funkcijų, kurios analizuoja turinį, strategijos parametras
 
-Tai funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir panašių funkcijų. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba „Word“ Redaktorius. Išsamesnį prisijungus naudojamų funkcijų sąrašą žr. [Prisijungus naudojamos funkcijos naudojant „Office“](connected-experiences.md).
+Tai funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir panašių funkcijų. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba vertyklė. Išsamesnį prisijungus naudojamų funkcijų sąrašą žr. [Prisijungus naudojamos funkcijos naudojant „Office“](connected-experiences.md).
 
 Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams, galite naudoti strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios analizuoja turinį*. Jei nekonfigūruosite šių strategijos parametrų, šios prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
