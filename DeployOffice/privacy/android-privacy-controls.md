@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Pateikiama informacija „Office“ administratoriams, kaip valdyti „Office“ privatumo parametrus „Android“ įrenginiuose.
 hideEdit: true
-ms.openlocfilehash: 38d68df0d3a12e6858568906a60973bad9d76709
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: 6086ecd1b2cd55bbf6cb4577879714f1d20a2f93
+ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
 ms.translationtype: HT
 ms.contentlocale: lt-LT
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087891"
+ms.locfileid: "45092126"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijų parametrus
 
@@ -35,11 +35,7 @@ Daugiau informacijos apie diagnostikos duomenis ir prisijungus naudojamas funkci
 - 4.1.71 ir naujesnės „Outlook“, skirtos „Android“, versijos.
 - 16.0.12228.20004 ir naujesnės „OneNote“, skirtos „Android“, versijos.
 - 5.47 ir naujesnės „OneDrive“, skirtos „Android“, versijos.
-
-> [!NOTE]
->- Šie strategijų parametrai taip pat taikomi 16.0.12130.20272 ir naujesnėms [„Office“ mobiliųjų įrenginių programos](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/Introducing-Office-Your-new-go-to-mobile-app-for-getting-work/ba-p/977172), skirtos „Android“, viešosios peržiūros versijoms.
->- Naudojant „Office“ mobiliųjų įrenginių programos, skirtos „Android“, viešosios peržiūros versiją, bus renkami gedimų žurnalai, kuriuose tam tikromis aplinkybėmis gali būti turinio.
->- Jei nerimaujate dėl duomenų rinkimo, kai naudojate „Office“ mobiliųjų įrenginių programos, skirtos „Android“, viešosios peržiūros versiją, informuokite savo vartotojus neprisijungti prie programos naudojant darbo ar mokymo įstaigų paskyras.
+- 16.0.12430.20254 ir naujesnės programėlės „Office“, skirtos „Android“, versijos.
 
 ## <a name="policy-settings-available-for-office-on-android-devices"></a>„Office“ strategijų parametrai „Android“ įrenginiuose
 

@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Mac
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti privatumo parametrus „iOS“ įrenginiuose.
 hideEdit: true
-ms.openlocfilehash: 6465a5b5e2103070170bdec8cd64b8bc044d46a3
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: ac8b3428734649981f20a82be2f0793c857e09ee
+ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
 ms.translationtype: HT
 ms.contentlocale: lt-LT
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087855"
+ms.locfileid: "45092162"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-on-ios-devices"></a>„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas
 
@@ -37,6 +37,7 @@ Daugiau informacijos apie diagnostikos duomenis ir prijungtąsias funkcijas žr.
 - 16.30 ir naujesnės „OneNote“, skirtos „iOS“, versijos.
 - 11.19.11 ir naujesnės „OneDrive“, skirtos „iOS“, versijos.
 - 1.17 ir naujesnės versijos „Visio“ peržiūros programai, skirtai „iOS“.
+- 2.34 ir naujesnės programėlės „Office“, skirtos „iOS“, versijos.
 
 > [!NOTE]
 > Informaciją apie panašius „Office“ parametrus „macOS“ kompiuteriuose žr. [„Office“ privatumo valdiklių valdymas „macOS“ įrenginiuose naudojant nuostatas](mac-privacy-preferences.md).
