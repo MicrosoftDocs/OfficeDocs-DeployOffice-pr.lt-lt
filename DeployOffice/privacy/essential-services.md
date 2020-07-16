@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: a73cfa56d6da769e1ced46e58054e55419bb36e8
-ms.sourcegitcommit: fc906d2163687242e98fd1719055038758068424
+ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
+ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800396"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117208"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -2851,11 +2851,13 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingfullvalidation"></a>Office.Licensing.FullValidation 
 
-Renkama kiekviename seanse, kuriame pranešama kompiuterio licencijavimo būsena ir vartotojo matomos klaidos, dėl kurių jis negali naudoti programos. Šis įvykis nurodo, ar vartotojo kompiuterio sveikata gera, ar ne. Šio įvykio anomalijų aptikimo funkcija nurodo, ar netinkamą vartotojo elgseną kelia veikimo suprastėjimas. Tai taip pat svarbu diagnozuojant vartotojo problemas ir stebint sistemos sveikatą
+Renkama kiekviename seanse, kuriame pranešama kompiuterio licencijavimo būsena ir vartotojo matomos klaidos, dėl kurių jis negali naudoti programos. Šis įvykis nurodo, ar vartotojo kompiuterio sveikata gera, ar ne. Šio įvykio anomalijų aptikimo funkcija nurodo, ar netinkamą vartotojo elgseną kelia veikimo suprastėjimas, ar aktyvinimo mechanizmas. Tai taip pat svarbu diagnozuojant vartotojo problemas ir stebint sistemos sveikatą.
 
 Renkami šių laukų duomenys:
 
   - **Acid** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui 
+  
+  - **ActivationAttributes** – vartotojo naudojamo aktyvinimo mechanizmo tipas.
 
   - **IsSessionLicensing** – ar šiuo metu vykdomas bendrai naudojamo kompiuterio aktyvinimo režimas, ar ne 
 
@@ -10458,6 +10460,27 @@ Renkami šių laukų duomenys:
 
  - **Data_EventId** – kodas, nurodantis vartotojo pasirinktą diagnostikos duomenų rinkimo nuostatą.
 
+### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
+
+Įvykį sukelia sklandus „Office“ klientų programų, tokių kaip, tačiau neapsiribojant „Word“, „Excel“, „PowerPoint“ ir „Outlook“, nutraukimas. „Office“ klientų produktų būklei įvertinti naudojame sklandų išėjimą iš programos. Tai yra verslui svarbus signalas, kurį naudoja „Office“ inžinieriai, siekdami užtikrinti produkto stabilumą.
+
+Renkami šių laukų duomenys:
+
+- **AppBuild** – paveikto proceso komponavimo versijos identifikatorius.
+- **AppMajor** – paveikto proceso pagrindinės versijos identifikatorius.
+- **AppMinor** – paveikto proceso papildomos versijos identifikatorius.
+- **AppRevision** – paveikto proceso komponavimo versijos identifikatorius.
+- **BootCompleted** – ar „Office“ procesas baigė įkrovą.
+- **DetectionTime** – netikėto išėjimo aptikimo laikas.
+- **ecsETag** – proceso eksperimento identifikatorius.
+- **HasEdit** – ar „Office“ proceso metu buvo atliekamas dokumento redagavimas.
+- **HasOpen** – ar „Office“ proceso metu buvo atidaromas dokumentas.
+- **InstallMethod** – ar į dabartinę „Office“ komponavimo versiją buvo atnaujinta, ji buvo įdiegta atšaukus keitimus, ar tai nauja įdiegtis.
+- **OfficeUILang** – „Office“ proceso kalba.
+- **PreviousBuild** – anksčiau įdiegta komponavimo versija.
+- **SafeMode** – ar „Office“ procesas buvo vykdomas saugiuoju režimu.
+- **SessionId** – proceso unikalusis identifikatorius.
+- **SessionInitTime** – paveikto proceso pradžios laikas.
 
 ### <a name="officesystemidentitychanged"></a>Office.System.IdentityChanged
 
