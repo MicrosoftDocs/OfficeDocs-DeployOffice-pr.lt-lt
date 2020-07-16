@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: d3acec4d3e2b1758ca991dd9bec0a551e9ebfab7
-ms.sourcegitcommit: 5c82507780e8f46c01c951135419546b7b9dad52
+ms.openlocfilehash: 6e5ea5a865acb893c92af12e68e7815fcf2fee65
+ms.sourcegitcommit: 5a4d3419d5ff4c8008ad3cf894a8f03ec170504b
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811478"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45128574"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -1291,6 +1291,36 @@ Renkami šių laukų duomenys:
 
 - **WarmBoot** – nustato, ar konteineris jau sukurtas, ar ne.
 
+#### <a name="office_appguard_launchfile"></a>Office_AppGuard_LaunchFile
+
+Šis įvykis nurodo programos apsaugos failo paleidimo vykdymą. Mes galėsime nustatyti, kiek procentų mūsų sėkmingai paleidome „Word“, „Excel“ arba „PowerPoint“ failus ir nepavykusių bandymų klaidų kodus.
+
+Renkami šių laukų duomenys:
+
+- **AppId** – identifikuoja, kuri programa pradedama.
+
+- **DetachedDuration** – identifikuoja bendrą sulietų veiksmų laiką. 
+
+- **ErrorCode1** – konteinerio nustatymo klaidos kodo tipas.  
+
+- **ErrorCode2** – klaidos kodas iš kūrimo vykdymo. 
+
+- **ErrorCode3** – papildomas klaidos kodas. 
+
+- **FileId**" – unikalus identifikatorius (GUID), kuris buvo grąžintas iš „Window“ API paleidus failą.
+
+- **ID** – unikalusis identifikatorius (GUID), skirtas paleisti ir sukurti failą. Šis ID naudojamas susieti įvykius iš „Office“ ir „Windows“.
+
+- **ResetError** – Klaidos kodas, rodomas bandant nustatyti konteinerį iš naujo po nepavykusio bandymo.
+
+- **ResetErrorCode1** – konteinerio nustatymo klaidos kodo tipas po nustatymo iš naujo komandos. 
+
+- **ResetErrorCode2** – klaidos kodas iš kūrimo vykdymo po nustatymo iš naujo komandos.
+
+- **ResetErrorCode3** – papildomas klaidos kodas po nustatymo iš naujo komandos.  
+
+- **ResetErrorType** – klaidos tipas: kūrimas, failo paruošimas arba paleidimas.
+
 
 
 #### <a name="officesecurityactivationfilterclsidactivated"></a>Office.Security.ActivationFilter.CLSIDActivated
@@ -1747,6 +1777,11 @@ Renkami šių laukų duomenys:
 - **action** – nurodo veiksmą, kurį buvo bandyta atlikti registruojant veiksmą. Kai kurie pavyzdžiai apima failo pridėjimą ir didesnio parinkčių kiekio pateikimą.
 
 - **icon_name** - nurodo piktogramos, kuri buvo rodoma registruojant veiksmą, pavadinimą.
+ 
+- **Origin** – mums nurodo veiksmo kilmę. Galimos reikšmės yra quick_reply ir full_screen.
+
+- **toolbar_type** – Praneškite mums apie įrankių juostos tipą, kuris pateikiamas puslapyje kurti. Galimos reikšmės yra compose_actions ir formatavimas.
+
 
 #### <a name="conversation_view_action"></a>conversation_view_action
 
@@ -1761,6 +1796,8 @@ Renkami šių laukų duomenys:
 - **suggested_reply_char_count** – nurodo, kiek simbolių siūloma pateiktame atsakyme (jei galima), kad galėtume nustatyti su pasiūlymais susijusius nesklandumus
 
 - **suggested_reply_click_pos** – nurodo, kurioje padėtyje buvo sugeneruotas pateiktas atsakymas (jei galima), kad galėtume nustatyti konkretaus pasiūlymo nesklandumus
+
+- **suggested_reply_type** – nurodo šio veiksmo siūlomo atsakymo tipą. Galimos reikšmės yra text, send_avail ir create_meeting.
 
 - **use_default_quick_reply_mode** – nurodo, ar buvo naudojamas numatytasis spartaus atsakymo režimas, kad galėtume nustatyti problemas, susijusias su el. pašto spartaus atsakymo patirtimi
 
@@ -2508,6 +2545,8 @@ Renkami šių laukų duomenys:
 
 - **Data_BootDuration** – programos paleidimo trukmė atliekant failo atidarymo procesą.
 
+- **Data_ClosePreviouslyOpenedMarkers** – kai kuriuose failų atidarymo scenarijuose, prieš pradedant dabartinį dokumentą, uždaromas anksčiau atidarytas dokumentas. Šis laikotarpis tarp kai kurių operacijų, vykstančių šiuo atveju, užfiksuotas eilutės reikšmė, kurioje yra formatas \<functionId>\<functionValue>\<functionId>\<functionValue>
+
 - **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
 
 - **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
@@ -2574,6 +2613,8 @@ Renkami šių laukų duomenys:
 
 - **Data_ErrorId_Tag** – kodo žymė, padedanti rasti klaidos vietą
 
+- **Data_FileOpenFlowMarkers** – prieš pradedant procesą, reikia atlikti tam tikrą išankstinį apdorojimą. Šį laiką, kada buvo atliktas šis paruošiamasis apdorojimas, fiksuojama eilutės reikšmė, kurios formatas \<functionId>\<functionValue>\<functionId>\<functionValue>...
+
 - **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę. 
 
 - **Data_InitializationReason** – išvardijimas, rodantis kaip failas atidaromas, pvz., iš kurio vartotojo sąsajos elemento, paleistas kitos programos ir t. t.
@@ -2581,6 +2622,8 @@ Renkami šių laukų duomenys:
 - **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
 
 - **Data_OfficeMobileInitReason** – išvardijimas, nurodantis atidaryto failo įvesties vietą. 
+
+- **Data_RenderToInSpaceDuration** – trukmė tarp atvaizdavimo pabaigos ir silueto / drobės animacijos.
 
 - **Data_SilhouetteDuration** – failo atidarymo generavimo trukmė.
 
@@ -2723,6 +2766,681 @@ Renkama tik kai „Office“ telemetrijos ataskaitų sritis yra įgalinta galuti
 Renkami šių laukų duomenys:
 
   - **Data.CollectionTime** – laiko žyma, kai buvo užregistruotas gedimo įvykis
+
+#### <a name="office_appdocs_appdocs_operationopenfrommrubypath"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+
+Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programos ID, kai ji nėra žinoma prieš operacijos pabaigą.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – „CanContinue“ būsena prieš iškviečiant pradžios apdorojimo programą.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – Išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokaliai arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_DocumentInputCurrency** – operacijos naudojamas dokumento įvesties tipas.
+
+- **Data_DocumentOperation_AppId** – išvardijimo reikšmė, vaizduojanti programos ID.
+
+- **Data_DocumentOperation_EndEventId** – žymė, nurodanti, kur operacija buvo baigta.
+
+- **Data_DocumentOperation_EndReason** – išvardijimo reikšmė, vaizduojanti galutinę priežastį.
+
+- **Data_DocumentOperation_IsReinitialized** – iš naujo inicijuojamas jau atidarytas dokumentas.
+
+- **Data_DocumentOperation_ParamsFlags** – išvardijimo vėliavėlės, naudojamos operacijai vykdyti.
+
+- **Data_DocumentOperation_TelemetryReason** – atidaryto įvykio įeities taško išvardijimo reprezentacija. Pvz., atidaryti iš MRU arba naršyti, aktyvinti failą ir t.t.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – tai paskirties vykdymo kontekstas, toks pats kaip ir iš atidaryto konteksto.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_IsNameMissingInUrl** – nurodo, ar pavadinimas nebuvo išanalizuotas iš URL.
+
+- **Data_IsPathMissingForLocalFile** – nurodo, ar tai vietinis failas be maršruto.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – nurodo, ar atidarymui palaikomas nepakuojamas saitas.
+
+- **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
+
+- **OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+
+- **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
+
+- **Data_StopwatchDuration** – bendras įvykio laikas.
+
+- **Data_UnpackLinkHint** – išvardijimas, atspindintis galimą vartotojo veiksmą pagal išpakuojamą saitą.
+
+- **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
+
+#### <a name="office_appdocs_appdocs_operationopenfrommrubyurl"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+
+Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją. 
+
+Renkami šių laukų duomenys:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programos ID, kai ji nėra žinoma prieš operacijos pabaigą.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – „CanContinue“ būsena prieš iškviečiant pradžios apdorojimo programą.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – Išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokaliai arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_DocumentInputCurrency** – operacijos naudojamas dokumento įvesties tipas.
+
+- **Data_DocumentOperation_AppId** – išvardijimo reikšmė, vaizduojanti programos ID.
+
+- **Data_DocumentOperation_EndEventId** – žymė, nurodanti, kur operacija buvo baigta.
+
+- **Data_DocumentOperation_EndReason** – išvardijimo reikšmė, vaizduojanti galutinę priežastį.
+
+- **Data_DocumentOperation_IsReinitialized** – iš naujo inicijuojamas jau atidarytas dokumentas.
+
+- **Data_DocumentOperation_ParamsFlags** – išvardijimo vėliavėlės, naudojamos operacijai vykdyti.
+
+- **Data_DocumentOperation_TelemetryReason** – atidaryto įvykio įeities taško išvardijimo reprezentacija. Pvz., atidaryti iš MRU arba naršyti, aktyvinti failą ir t.t.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – tai paskirties vykdymo kontekstas, toks pats kaip ir iš atidaryto konteksto.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_IsNameMissingInUrl** – nurodo, ar pavadinimas nebuvo išanalizuotas iš URL.
+
+- **Data_IsPathMissingForLocalFile** – nurodo, ar tai vietinis failas be maršruto.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – nurodo, ar atidarymui palaikomas nepakuojamas saitas.
+
+- **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
+
+- **Data_OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+
+- **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
+
+- **Data_StopwatchDuration** – bendras įvykio laikas.
+
+- **Data_UnpackLinkHint** – išvardijimas, atspindintis galimą vartotojo veiksmą pagal išpakuojamą saitą.
+
+- **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
+
+
+#### <a name="office_appdocs_appdocs_operationopenfrompath"></a>Office_AppDocs_AppDocs_OperationOpenFromPath
+
+Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programos ID, kai ji nėra žinoma prieš operacijos pabaigą.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – „CanContinue“ būsena prieš iškviečiant pradžios apdorojimo programą.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – Išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokaliai arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_DocumentInputCurrency** – operacijos naudojamas dokumento įvesties tipas.
+
+- **Data_DocumentOperation_AppId** – išvardijimo reikšmė, vaizduojanti programos ID.
+
+- **Data_DocumentOperation_EndEventId** – žymė, nurodanti, kur operacija buvo baigta.
+
+- **Data_DocumentOperation_EndReason** – išvardijimo reikšmė, vaizduojanti galutinę priežastį.
+
+- **Data_DocumentOperation_IsReinitialized** – iš naujo inicijuojamas jau atidarytas dokumentas.
+
+- **Data_DocumentOperation_ParamsFlags** – išvardijimo vėliavėlės, naudojamos operacijai vykdyti.
+
+- **Data_DocumentOperation_TelemetryReason** – atidaryto įvykio įeities taško išvardijimo reprezentacija. Pvz., atidaryti iš MRU arba naršyti, aktyvinti failą ir t.t.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – tai paskirties vykdymo kontekstas, toks pats kaip ir iš atidaryto konteksto.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_IsNameMissingInUrl** – nurodo, ar pavadinimas nebuvo išanalizuotas iš URL.
+
+- **Data_IsPathMissingForLocalFile** – nurodo, ar tai vietinis failas be maršruto.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – nurodo, ar atidarymui palaikomas nepakuojamas saitas.
+
+- **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
+
+- **Data_OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+
+- **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
+
+- **Data_StopwatchDuration** – bendras įvykio laikas.
+
+- **Data_UnpackLinkHint** – išvardijimas, atspindintis galimą vartotojo veiksmą pagal išpakuojamą saitą.
+
+- **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
+
+#### <a name="office_appdocs_appdocs_operationopenfromprotocolhandler"></a>Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+
+Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš kitos programos naudojant protokolų apdorojimo sąsają, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programos ID, kai ji nėra žinoma prieš operacijos pabaigą.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – „CanContinue“ būsena prieš iškviečiant pradžios apdorojimo programą.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – Išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokaliai arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_DocumentInputCurrency** – operacijos naudojamas dokumento įvesties tipas.
+
+- **Data_DocumentOperation_AppId** – išvardijimo reikšmė, vaizduojanti programos ID.
+
+- **Data_DocumentOperation_EndEventId** – žymė, nurodanti, kur operacija buvo baigta.
+
+- **Data_DocumentOperation_EndReason** – išvardijimo reikšmė, vaizduojanti galutinę priežastį.
+
+- **Data_DocumentOperation_IsReinitialized** – iš naujo inicijuojamas jau atidarytas dokumentas.
+
+- **Data_DocumentOperation_ParamsFlags** – išvardijimo vėliavėlės, naudojamos operacijai vykdyti.
+
+- **Data_DocumentOperation_TelemetryReason** – atidaryto įvykio įeities taško išvardijimo reprezentacija. Pvz., atidaryti iš MRU arba naršyti, aktyvinti failą ir t.t.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – tai paskirties vykdymo kontekstas, toks pats kaip ir iš atidaryto konteksto.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_IsNameMissingInUrl** – nurodo, ar pavadinimas nebuvo išanalizuotas iš URL.
+
+- **Data_IsPathMissingForLocalFile** – nurodo, ar tai vietinis failas be maršruto.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – nurodo, ar atidarymui palaikomas nepakuojamas saitas.
+
+- **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
+
+- **Data_OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+
+- **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
+
+- **Data_StopwatchDuration** – bendras įvykio laikas.
+
+- **Data_UnpackLinkHint** – išvardijimas, atspindintis galimą vartotojo veiksmą pagal išpakuojamą saitą.
+
+- **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
+
+#### <a name="office_appdocs_appdocs_operationopenfromshell"></a>Office_AppDocs_AppDocs_OperationOpenFromShell
+
+Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš apvalkalo, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programos ID, kai ji nėra žinoma prieš operacijos pabaigą.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – „CanContinue“ būsena prieš iškviečiant pradžios apdorojimo programą.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – Išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokaliai arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_DocumentInputCurrency** – operacijos naudojamas dokumento įvesties tipas.
+
+- **Data_DocumentOperation_AppId** – išvardijimo reikšmė, vaizduojanti programos ID.
+
+- **Data_DocumentOperation_EndEventId** – žymė, nurodanti, kur operacija buvo baigta.
+
+- **Data_DocumentOperation_EndReason** – išvardijimo reikšmė, vaizduojanti galutinę priežastį.
+
+- **Data_DocumentOperation_IsReinitialized** – iš naujo inicijuojamas jau atidarytas dokumentas.
+
+- **Data_DocumentOperation_ParamsFlags** – išvardijimo vėliavėlės, naudojamos operacijai vykdyti.
+
+- **Data_DocumentOperation_TelemetryReason** – atidaryto įvykio įeities taško išvardijimo reprezentacija. Pvz., atidaryti iš MRU arba naršyti, aktyvinti failą ir t.t.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – tai paskirties vykdymo kontekstas, toks pats kaip ir iš atidaryto konteksto.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_IsNameMissingInUrl** – nurodo, ar pavadinimas nebuvo išanalizuotas iš URL.
+
+- **Data_IsPathMissingForLocalFile** – nurodo, ar tai vietinis failas be maršruto.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – nurodo, ar atidarymui palaikomas nepakuojamas saitas.
+
+- **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
+
+- **Data_OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+
+- **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
+
+- **Data_StopwatchDuration** – bendras įvykio laikas.
+
+- **Data_UnpackLinkHint** – išvardijimas, atspindintis galimą vartotojo veiksmą pagal išpakuojamą saitą.
+
+- **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
+
+
+#### <a name="office_appdocs_appdocs_operationopenfromurl"></a>Office_AppDocs_AppDocs_OperationOpenFromUrl
+
+Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš URL, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programos ID, kai ji nėra žinoma prieš operacijos pabaigą.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – „CanContinue“ būsena prieš iškviečiant pradžios apdorojimo programą.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – Išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokaliai arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_DocumentInputCurrency** – operacijos naudojamas dokumento įvesties tipas.
+
+- **Data_DocumentOperation_AppId** – išvardijimo reikšmė, vaizduojanti programos ID.
+
+- **Data_DocumentOperation_EndEventId** – žymė, nurodanti, kur operacija buvo baigta.
+
+- **Data_DocumentOperation_EndReason** – išvardijimo reikšmė, vaizduojanti galutinę priežastį.
+
+- **Data_DocumentOperation_IsReinitialized** – iš naujo inicijuojamas jau atidarytas dokumentas.
+
+- **Data_DocumentOperation_ParamsFlags** – išvardijimo vėliavėlės, naudojamos operacijai vykdyti.
+
+- **Data_DocumentOperation_TelemetryReason** – atidaryto įvykio įeities taško išvardijimo reprezentacija. Pvz., atidaryti iš MRU arba naršyti, aktyvinti failą ir t.t.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – tai paskirties vykdymo kontekstas, toks pats kaip ir iš atidaryto konteksto.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_IsNameMissingInUrl** – nurodo, ar pavadinimas nebuvo išanalizuotas iš URL.
+
+- **Data_IsPathMissingForLocalFile** – nurodo, ar tai vietinis failas be maršruto.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – nurodo, ar atidarymui palaikomas nepakuojamas saitas.
+
+- **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
+
+- **Data_OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+
+- **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
+
+- **Data_StopwatchDuration** – bendras įvykio laikas.
+
+- **Data_UnpackLinkHint** – išvardijimas, atspindintis galimą vartotojo veiksmą pagal išpakuojamą saitą.
+
+- **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
+
 
 #### <a name="office_apple_activateperpetual"></a>Office_Apple_ActivatePerpetual
 
@@ -4225,6 +4943,99 @@ Renkami šių laukų duomenys:
 
 - **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
 
+#### <a name="officelivepersonacardconfigurationsetaction"></a>Office. LivePersonaCard. ConfigurationSetAction
+
+Registruojame, kada vartotojas yra programoje, kuri įkelia asmens kortelę, tikintis, kad vartotojas atidarys „Live“ asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai įkelta. 
+
+Renkami šių laukų duomenys: 
+
+- **Data.accountType** – ar vartotojas priklauso organizacijai ar vartotojui
+
+- **Data.appContextId** – atsitiktine tvarka generuojamas ID, naudojamas identifikuoti skirtingas tos pačios programos paskyras
+
+- **Data.AppInfo.Name** – naudojamos tarnybos pavadinimas (profilio kortelė)
+
+- **Data.AppInfo_Id** – valdančiosios programos pavadinimas
+
+- **Data.AppInfo_Version** – valdančiosios programos versija
+
+- **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
+
+- **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
+
+- **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
+
+- **Data.clientType** – įrenginio, kuriame veikia programa, tipas
+
+- **Data.contextType** – iš kokio konteksto (programos) buvo paleista kortelė
+
+- **Data.ecsConfigIds** – kortelėje įgalintų funkcijų versijų identifikatoriai
+
+- **Data.ecsTagId** – funkcijų žymės ID
+
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., „LivePersonaCardRenderedAction“
+
+- **Data.eventpriority** – įvykio siuntimo prioriteto išvardijimo reikšmė.
+
+- **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
+
+- **Data.flights** – kortelėje įgalintos funkcijos
+
+- **Data.fromCache** – ar duomenys buvo surinkti iš atminties
+
+- **Data.hasFinePointer** – ar įrenginys turi pelės žymiklio galimybę
+
+- **Data.hasHoverEvents** – ar įrenginys turi pelės laikymo galimybę
+
+- **Data.immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+
+- **Data.offlineResolved** – ar duomenys buvo surinkti neprisijungus
+
+- **Data.OTelJS.Version** – OTel registravimo priemonės versija
+
+- **Data.personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.properties** – papildomi kiekvieno įvykio duomenys renkami taip: *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
+
+  - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas
+  - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
+  - **ClientTimeStamp** – laikas programoje, kada buvo užregistruotas įvykis
+  - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas
+
+  - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+
+- **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
+
+- **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis
+
+- **Data.userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.Id dublikatas)
+
+- **Data.UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
+
+- **Data.UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
+
+- **Data.userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.MsaId dublikatas)
+
+- **Data.version** – tarnybos versija (profilio kortelė)
+
+- **Data.workloadCulture** – valdančiojoje programoje nustatyta kultūra
+
+- **DeviceInfo_Id** – įrenginio visuotinis unikalusis identifikatorius
+
+- **DeviceInfo_Make** – operacinės sistemos prekės ženklas
+
+- **DeviceInfo_Model** – įrenginio modelis
+
+- **DeviceInfo_OsName** – įrenginio OS pavadinimas
+
+- **DeviceInfo_OsVersion** – operacinės sistemos versija
+
+- **DeviceInfo.SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos
+
 #### <a name="officelivepersonacarduseractionsclosedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedExpandedPersonaCard
 
 Registruojama, kai vartotojas uždaro išplėstą asmeninę kortelę. Naudojama stebėti kritines tiesioginių asmeninių kortelių uždarymo klaidų dažnumo anomalijas.
@@ -4253,19 +5064,22 @@ Renkami šių laukų duomenys:
 
 - **Data.exportType** – BDAR eksportavimo užklausos įvykio kategorija
 
+- **Data.externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+
 - **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
+
+- **Data.immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
 
 - **Data.OTelJS.Version** – OTel registravimo priemonės versija
 
-- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+- **Data.personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.properties** – papildomi kiekvieno įvykio duomenys renkami taip: *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
    - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
    - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
    - **ClientTimeStamp** – laikas, kada įvyko įvykis „Unix“ epochos metu
    - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas 
-   - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
-   - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
-   - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
 
 - **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
 
@@ -4324,20 +5138,24 @@ Renkami šių laukų duomenys:
 
 - **Data.clientType** – įrenginio, kuriame veikia programa, tipas
 
-- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., LivePersonaCardRenderedAction
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., „LivePersonaCardRenderedAction“
+
+- **Data.externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu.
 
 - **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
 
+- **Data.immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+
 - **Data.OTelJS.Version** – OTel registravimo priemonės versija
 
-- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+- **Data.personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.properties** – papildomi kiekvieno įvykio duomenys renkami taip: *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
+
   - **ClientTimeStamp** – laikas programoje, kada buvo užregistruotas įvykis
   - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas
   - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
   - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas
-  - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
-  - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
-  - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
 
 - **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
 
@@ -4361,102 +5179,6 @@ Renkami šių laukų duomenys:
 
 - **Event_ReceivedTime** – renginio registravimo tarnyboje laikas
 
-#### <a name="officelivepersonacarduseractionsconfigurationsetaction"></a>Office.LivePersonaCard.UserActions.ConfigurationSetAction
-
-Registruojame, kada vartotojas yra programoje, kuri įkelia asmens kortelę, tikintis, kad vartotojas atidarys „Live“ asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai įkelta. 
-
-Renkami šių laukų duomenys: 
-
-- **Data.appContextId** – atsitiktine tvarka generuojamas ID, naudojamas identifikuoti skirtingas tos pačios programos paskyras
-
-- **Data.AppInfo.Name** – naudojamos tarnybos pavadinimas (profilio kortelė)
-
-- **Data.AppInfo_Id** – valdančiosios programos pavadinimas
-
-- **Data.AppInfo_Version** – valdančiosios programos versija
-
-- **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
-
-- **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
-
-- **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
-
-- **Data.clientType** – įrenginio, kuriame veikia programa, tipas
-
-- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., „LivePersonaCardRenderedAction“
-
-- **Data.eventpriority** – įvykio siuntimo prioriteto išvardijimo reikšmė.
-
-- **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
-
-- **Data.OTelJS.Version** – OTel registravimo priemonės versija
-
-- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
-
-  - **accountType** – ar vartotojas priklauso organizacijai ar vartotojui
-
-  - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas
-
-  - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
-
-  - **ClientTimeStamp** – laikas programoje, kada buvo užregistruotas įvykis
-
-  - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas
-
-  - **contextType** – iš kokio konteksto (programos) buvo paleista kortelė
-
-  - **ecsConfigIds** – kortelėje įgalintų funkcijų versijų identifikatoriai
-
-  - **ecsTagId** – funkcijų žymės ID
-
-  - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
-
-  - **flights** – kortelėje įgalintos funkcijos
-
-  - **fromCache** – ar duomenys buvo surinkti iš atminties
-
-  - **hasFinePointer** – ar įrenginys turi pelės žymiklio galimybę
-
-  - **hasHoverEvents** – ar įrenginys turi pelės laikymo galimybę
-
-  - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
-
-  - **offlineResolved** – ar duomenys buvo surinkti neprisijungus
-
-  - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
-
-- **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
-
-- **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
-
-- **Data.type** – užregistruoto įvykio tipas, pvz., sekimas, klaida, įvykis
-
-- **Data.userAadObjectId** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.Id dublikatas)
-
-- **Data.UserInfo.Id** – įmonės „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
-
-- **Data.UserInfo.MsaId** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius
-
-- **Data.UserInfo.OMSTenantId** – nuomotojas, su kuriuo yra susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
-
-- **Data.userPuid** – vartotojo „Microsoft“ paskyros visuotinis unikalusis vartotojo identifikatorius (Data.UserInfo.MsaId dublikatas)
-
-- **Data.version** – tarnybos versija (profilio kortelė)
-
-- **Data.workloadCulture** – valdančiojoje programoje nustatyta kultūra
-
-- **DeviceInfo_Id** – įrenginio visuotinis unikalusis identifikatorius
-
-- **DeviceInfo_Make** – operacinės sistemos prekės ženklas
-
-- **DeviceInfo_Model** – įrenginio modelis
-
-- **DeviceInfo_OsName** – įrenginio OS pavadinimas
-
-- **DeviceInfo_OsVersion** – operacinės sistemos versija
-
-- **DeviceInfo.SDKUid** – unikaliai identifikuoja įrenginį iš telemetrijos SDK perspektyvos
-
 #### <a name="officelivepersonacarduseractionsopenedexpandedpersonacard"></a>Office.LivePersonaCard.UserActions.OpenedExpandedPersonaCard
 
 Registruojama, kai vartotojas atidaro išplėstą asmeninę kortelę. Naudojama stebėti kritines tiesioginių asmeninių kortelių klaidų dažnumo anomalijas.
@@ -4477,9 +5199,13 @@ Renkami šių laukų duomenys:
 
 - **Data.clientCorrelationId** – programos seanso visuotinis unikalusis identifikatorius
 
+- **Data.clientScenario** – nustatyti programos funkciją, iš kurios buvo atidaryta asmens kortelė
+
 - **Data.clientType** – įrenginio, kuriame veikia programa, tipas
 
-- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., LivePersonaCardRenderedAction
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., „LivePersonaCardRenderedAction“
+
+- **Data.externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu.
 
 - **Data.exportName** vartotojo veiksmo įvykio žmonėms perskaitomas pavadinimas, pvz., OpenedPersonaCard
 
@@ -4487,31 +5213,25 @@ Renkami šių laukų duomenys:
 
 - **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
 
+- **Data.hasPersonalInsightRing** – „Office“ arba „LinkedIn“ įžvalgos gali būti prieinamos vartotojui
+
 - **Data.hostAppRing** – žiedas, kuriuo buvo išplatinta programa
+
+- **Data.immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
 
 - **Data.OTelJS.Version** – OTel registravimo priemonės versija
 
-- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
+- **Data.personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.properties** – papildomi kiekvieno įvykio duomenys renkami taip: *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
   - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
-
   - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
-
-  - **clientScenario** – nustatyti programos funkciją, iš kurios buvo atidaryta asmens kortelė
-
   - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas 
 
-  - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
-
-  - **hasPersonalInsightRing** – „Office“ arba „LinkedIn“ įžvalgos gali būti prieinamos vartotojui
-
-  - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
-
-  - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
-
-  - **section** – aktyvi išplėstos kortelės sekcija
-
 - **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
+
+- **Data.section** – aktyvi išplėstos kortelės sekcija
 
 - **Data.tenantAadObjectId** – nuomotojas, su kuriuo susieta vartotojo prenumerata. Leidžia mums klasifikuoti problemas ir nustatyti, ar problema yra plačiai paplitusi, ar izoliuota atskirų nuomotojų grupėje
 
@@ -4556,6 +5276,8 @@ Renkami šių laukų duomenys:
 
 - **Data.AppInfo.Name** naudojamos tarnybos pavadinimas (profilio kortelė)
 
+- **Data.bandwidthEstimateMbps** – efektyvios dažnių juostos apskaičiavimas Mbps
+
 - **Data.cardCorrelationId** – asmeninės kortelės visuotinis unikalusis identifikatorius
 
 - **Data.cardPersonaCorrelationId** – kortelėje rodomo konkretaus asmens visuotinis unikalusis identifikatorius
@@ -4570,11 +5292,26 @@ Renkami šių laukų duomenys:
 
 - **Data.exportType** – BDAR eksportavimo užklausos įvykio kategorija
 
+- **Data.externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
+
 - **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
 
 - **Data.hostAppRing** – žiedas, kuriuo buvo išplatinta programa
 
+- **Data.immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
+
 - **Data.OTelJS.Version** – OTel registravimo priemonės versija
+
+- **Data.personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
+
+- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+
+    - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
+    - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
+    - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas 
+    - **networkEffectiveType** – tinklo ryšio efektyvus tipas, pvz., slow-2g Online, skirtas identifikuoti, ar vartotojas yra prisijungęs prie interneto asmeninės kortelės rodymo metu
+    - **networkType** – naudojamo įrenginio tinklo ryšio tipas
+    - **roundTripEstimateMs** – dabartinio ryšio pirmyn ir atgal numatomas efektyvus laikas milisekundėmis
 
 - **Data.region** – profilio kortelės vidinės tarnybos, prie kurios vartotojas yra prisijungęs, geografinis regionas
 
@@ -4596,34 +5333,11 @@ Renkami šių laukų duomenys:
 
 - **Data.viewType** – apibrėžia rodomos profilio kortelės tipą
 
+- **Data.wasOpenedAsCompactCard** – naudojama identifikuoti, jeigu kortelė iš pradžių buvo atidaryta kompaktiniame rodinyje
+
 - **NetworkCost** – nurodo tinklo kainą / tipą (apskaičiuotas, apskaičiuotas virš savikainos ir kt.)
 
 - **NetworkCountry** – siuntėjo šalies kodas, pagrįstas netvarkytu kliento IP adresu.
-
-- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys.
-
-    - **bandwidthEstimateMbps** – efektyvios dažnių juostos apskaičiavimas Mbps
-
-    - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
-
-    - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
-
-    - **consumerCorrelationId** pirmiau esančio Data.clientCorrelationId dublikatas 
-
-    - **externalAppSessionCorrelationId** – programos visuotinis unikalusis identifikatorius, skirtas identifikuoti visas asmenines korteles, atidarytas to paties antrinio seanso metu
-
-    - **immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
-
-    - **networkEffectiveType** – tinklo ryšio efektyvus tipas, pvz., slow-2g Online, skirtas identifikuoti, ar vartotojas yra prisijungęs prie interneto asmeninės kortelės rodymo metu
-
-    - **networkType** – naudojamo įrenginio tinklo ryšio tipas
-
-    - **personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
-
-    - **roundTripEstimateMs** – dabartinio ryšio pirmyn ir atgal numatomas efektyvus laikas milisekundėmis
-
-    - **wasOpenedAsCompactCard** – naudojama identifikuoti, jeigu kortelė iš pradžių buvo atidaryta kompaktiniame rodinyje
-
 
 #### <a name="officemanageabilityclient-fetchpolicyprechecks"></a>Office.Manageability.Client Fetch.PolicyPreChecks
 
@@ -5699,6 +6413,10 @@ Renkami šių laukų duomenys:
 - **Data_StopwatchDuration:long** – visas veiklos laikas
 
 - **Data_TypeOfSaveDialog:long** – iš anksto apibrėžtas dialogo reikšmių rinkinys (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG ir t. t.)
+
+- **Data_WaitForSaveOrMergeSuccess:bool** – Įrašyti kaip pavyko, laukiama fono įrašymo arba suliejimo.
+ 
+- **Data_WaitForSaveOrMergeTimeout:long** – Įrašyti kaip laikas baigėsi, laukiama fono įrašymo arba suliejimo.
 
 - **DstDoc** – nauja dokumento vieta 
 
@@ -7057,7 +7775,9 @@ Renkami šių laukų duomenys:
 
 Šis signalas naudojamas siekiant užtikrinti, kad vartotojui prisijungus prie „OneNote“ „Android“ programos, bloknotai būtų tinkamai parengti ir vartotojas sėkmingai sukurtų naują pastabą.  Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai.
 
-Nepasirinkti jokie papildomi laukai.
+Renkami šių laukų duomenys:
+
+- Nėra
 
 #### <a name="onenotemessagebarmessagebarclicked-previous-name-officeonenoteandroidmessagebarmessagebarclicked"></a>OneNote.MessageBar.MessageBarClicked *(ankstesnis pavadinimas)*, Office.OneNote.Android.MessageBar.MessageBarClicked
 
@@ -7134,6 +7854,8 @@ Renkami šių laukų duomenys:
 - **recent_message_id** – naujausio pokalbio pranešimo ID
 
 - **suggested_reply_state** – šio pokalbio siūlomų atsakymų būsena (nepasiekiama, pasiekiama, rodoma, naudojama arba atmesta)
+
+- **suggested_reply_types** – nurodo siūlomo atsakymo tipą ir skaičių. Tai žodynas. Pvz., {tekstas: 2, send_avail: 1}.
   
 - **total_count** – bendras rodomų kadrų skaičius pagal komponentą
  
@@ -7198,6 +7920,8 @@ Renkami šių laukų duomenys:
 - **source_inbox** – nurodo šaltinio aplanko Gauta tipą nuorodos pranešimui, 
 
 - **suggested_reply_state** – fiksuoja šiam laiškui siūlomo atsakymo būseną, t. y. nepasiekiama, pasiekiama, rodoma, naudojama arba atmesta
+
+- **suggested_reply_types**: nurodo tipą ir siūlomo atsakymo kiekį, kuris rodomas/naudojamas šiam išsiųstiems el. laiškams. Tai žodynas. Pvz., {tekstas: 2, send_avail: 1}.
 
 - **suggestions_requested** – nurodo, kiek išmaniojo rašymo pasiūlymų prašoma
 
@@ -7419,6 +8143,8 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
 - **black_list_reason** – nurodo, ar yra priežasčių, kodėl turėtume nepaisyti šių duomenų. Keli pavyzdžiai: paleidimas dėl nuotolinio pranešimo ir paleidimas dėl foninio iškvietimo.
+
+- **step_premain** – mums nurodo, kiek laiko trunka „Outlook“, kad pereitumėte iš vartotojo bakstelėję piktogramą step0_main, kuris yra šiame dokumente apibrėžtas pagrindinis veiksmas.
 
 - **step0_main** – nurodo, kiek laiko „Outlook“ užtruko pasiekti „pagrindinį“ veiksmą, kuris yra „Apple“ apibrėžtas veiksmas.
 
@@ -7965,6 +8691,16 @@ Renkami šių laukų duomenys:
 - **TotalTime** – bendras praleistas laikas
 
 - **UsesSharedRuntime** – nurodo, ar taikomoji programa naudoja „sharedRuntime“.
+
+#### <a name="officeofficemobilefirstrunsetup"></a>Office.OfficeMobile.FirstRunSetup
+
+Pirmą kartą paleidus programą po įdiegimo, bus suaktyvintas šis reguliarių pranešimų įvykis. Tai padės nustatyti diegimus ir automatinius miš senesnių programos versijų ir leis nustatyti klaidas automatiniame naujinime, įskaitant bibliotekos įkėlimus ir išplėtimo/kalbos paketo atsisiuntimo triktis.
+
+Renkami šių laukų duomenys:
+
+- **IsFlightAssigned** – Boolean reikšmė nustatanti, ar vartotojas buvo iš bet kurios iš dalies paskirtos skrydžio grupės, kuri gali suaktyvinti tam tikras funkcijas.
+
+- **IsFRELoadSuccessful** – sveikasis skaičius, nurodantis rezultatų būseną
 
 #### <a name="onenoteappappbootcomplete-previous-name-officeonenoteandroidappappbootcomplete-officeandroidearlytelemetryappbootcomplete"></a>OneNote.App.AppBootComplete *(ankstesnis pavadinimas)*, Office.OneNote.Android.App.AppBootComplete, Office.Android.EarlyTelemetry.AppBootComplete
 
@@ -9484,6 +10220,8 @@ Renkami šių laukų duomenys:
 
 - **isAppKill** – padeda suprasti, ar programa buvo nutraukta arba uždaryta įrenginyje
 
+- **is_crashloop** – padeda mums suprasti, ar gedimas gali būti gedimų ciklas.
+
 - **reportKey** – unikalusis programos diegimo ID, kad būtų galima atlikti tyrimą
 
 - **signal** – signalas, sukėlęs gedimą, kad galėtume išsamiau ištirti šį gedimą
@@ -9646,6 +10384,8 @@ Renkami šių laukų duomenys:
 - **IsDebug** – nurodo, ar seansas yra derinimo seansas
 
 - **"IsPreload**" – nurodo, ar papildinys yra iš anksto įkeltas, kad būtų pagerintas aktyvinimas.
+
+- **IsWdagContainer** – nurodo, ar „Windows“ sargybos konteineryje vykdomas papildinys.
 
 - **NumberOfAddinsActivated** – suaktyvintas papildinių skaitiklis
 
@@ -9934,6 +10674,15 @@ Renkami šių laukų duomenys:
 - **Exception** – Išimties iškvietimų rietuvė
 
 - **Event Name** – Įvykio pavadinimas yra įvykio kategorija ir įvykio etiketė.
+
+#### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetry-safebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry. SafeBootResetCrashCounterOnAppSuspend
+
+Kritinis signalas siunčiamas naujo atkūrus gedimų skaitiklį, prieš paleidžiant saugos įkrovos dialogo langą. Šis žymiklis būtinas norint stebėti ir diagnozuoti programos sveikatą. Saugos įkrovos dialogo langas rodomas, kai programa sugenda keletą kartų nepertraukiamai. Jis suteikia vartotojui galimybę iš naujo nustatyti programą. Šis žymiklis padės išsiaiškinti, ar „Safe Boot“ dialogo langas nebuvo rodomas vartotojui nepaisant paleidiklio kriterijų. 
+
+Renkami šių laukų duomenys:
+
+- Nėra
+
 
 #### <a name="telemetry_error"></a>telemetry_error
 
@@ -10724,9 +11473,17 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-- **ResumeRehearsingCount** – skaičius, kiek kartų vartotojas spustelėjo tęsti repeticijas
+- **CritiqueSummary** – santrauka, kokius skaičius pamatė visi kritikos vartotojai.
 
-- **PauseRehearsingCount** – skaičius, kiek kartų vartotojas spustelėjo pristabdyti repeticijas
+- **PauseRehearsingCount** – skaičius, kiek kartų vartotojas spustelėjo pristabdyti repeticijas.
+
+- **RehearsalInitTime** repeticijos inicijavimo trukmė.
+
+- **ResumeRehearsingCount** – skaičius, kiek kartų vartotojas spustelėjo tęsti repeticijas.
+
+- **Sessionid** – tai kalbos pagrindinių durų seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
+
+- **SlideshowViewLoadTime** – skaidrių demonstracijos įkėlimo laikas.
 
 
 #### <a name="officepowerpointpptandroidrehearseviewerrors"></a>Office.PowerPoint.PPT.Android.RehearseView.Errors
@@ -10746,6 +11503,10 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
+- **PageURL:string**– tai URL puslapyje, kurį galime naudoti, kad nustatytumėte, ar seansas buvo sėkmingas, ar įvyko klaida.
+
+- **Sessionid:string** – tai kalbos pagrindinių durų seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
+
 - **SummaryPageLoadTime:int** – laikas (milisekundėmis), kurio prireikė norint įkelti suvestinės puslapį. Tai apima naudingosios apkrovos kūrimo laiką 
 
 
@@ -10756,6 +11517,44 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
  - Nėra
+
+#### <a name="officepowerpointrehearsalsessionmetrics"></a>Office.PowerPoint.Rehearsal.SessionMetrics 
+
+Įvykis paleidžiamas, kai kalbėjimo seansas sustabdomas pranešėjo pagalbinei priemonei. Šis įvykis padeda mums užfiksuoti kai kurią metriką repeticijos seanse pranešėjo pagalbinėje priemonėje. Tai padės išlaikyti aukštą paslaugos kokybę šiai funkcijai.
+
+Renkami šių laukų duomenys:
+
+- **AuthDurationInMs** – tai yra laikas milisekundėmis, kai naudojamas autentifikavimas (atnaujinti autentifikavimo atpažinimo ženklą).
+
+- **AuthError** – tai aprašo įvyko autentifikavimo klaidą (jei įvyko).
+
+- **AvgFragmentLatencyInMs** – tai vidutinis tinklo kalbos pranešimų kelionės pirmyn ir atgal laikas.
+
+- **ConnectDurationInMs** – tai laikas, kai seansas baigs jungimąsi per milisekundes. 
+
+- **FirstAudioDelayInMs** – tai laikas, per kurį turi būti gaunami pirmieji garsiniai duomenys.
+
+- **InitMediaCaptureLayerDurationInMs** – tai laikas, per kurį turi būti inicijuotas medijos/garso fiksavimo sluoksnio inicijavimas.
+
+- **LocallyDroppedMessageCount** – tai bendras pranešimų, kurie buvo išmesti vietoje, skaičius.
+
+- **OpenFrontDoorConnectionDurationInMs** – tai laikas milisekundėmis, kuris buvo paimtas norint atidaryti ryšį su „FrontDoor“ tarnyba.
+
+- **SendAdaptationTextDurationInMs** – tai laikas, kai į tarnybą siunčiamas adaptacijos tekstas.
+
+- **ServiceDroppedMessageCount** – tai bendras tarnybos išmestų pranešimų skaičius.
+
+- **SessionId** – tai kalbos „Frontdoor“ seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
+
+- **SpeechClientResultEventsWithTimestamps** – tai klaidų kodų, gautų kartu su laiko ženklais, kurie gali padėti taisyti, masyvas.
+
+- **SpeechHResultsWithTimestamps** – tai klaidų kodų, gautų kartu su laiko ženklais, kurie gali padėti atlikti derinimą, masyvas.
+
+- **StartSpeechCaptureDurationInMs** – tai laikas milisekundėmis, kol pradedama kalbėjimo fiksavimo funkcija.
+
+- **TotalMessageCount** – tai bendras į tarnybą siunčiamų garsinių pranešimų skaičius.
+
+- **WebSocketConnectDurationInMs** – tai laikas, kai reikia baigti naudoti interneto lizdą.
 
 
 #### <a name="officeuxofficeinsidercanshowofficeinsiderslab"></a>Office.UX.OfficeInsider.CanShowOfficeInsiderSlab
@@ -11499,6 +12298,18 @@ Renkami šių laukų duomenys:
 - **Data_ExceptionType** – pasirinktinis teksto laukas, nurodantis išimties, gautos iš išeitinio kodo, pavadinimą.
 
 - **Data_MethodName** – tekstas, nurodantis išeitinio kodo metodo, kuriame įvyko klaida, pavadinimą.
+
+#### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
+
+Šis įvykis fiksuoja visas klaidas, kylančias „Android“ registro prieigos metu. Šie įvykio duomenys padeda mums suprasti vartotojo klaidas ir padaryti registro funkciją patikimesnę.
+
+Renkami šių laukų duomenys:
+
+- **App** – programos siuntimo procesas.
+
+- **AppVersionLong** – programos versija.
+
+- **Data_StackTrace** – klaidos rietuvės pėdsakas.
 
 #### <a name="officeandroidearlytelemetrysharedlibraryloadersearchandloadlibraryerror"></a>Office.Android.EarlyTelemetry.SharedLibraryLoadersearchAndloadLibraryError 
 
