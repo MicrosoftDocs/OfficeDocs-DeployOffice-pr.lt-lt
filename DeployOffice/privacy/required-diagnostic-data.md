@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 6e5ea5a865acb893c92af12e68e7815fcf2fee65
-ms.sourcegitcommit: 5a4d3419d5ff4c8008ad3cf894a8f03ec170504b
+ms.openlocfilehash: 6638ac773e4b39f17648161421548f445d2194e7
+ms.sourcegitcommit: 0654f421d001168605f936dc54c9ee0a26fca844
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45128574"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45156049"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -2767,7 +2767,7 @@ Renkami šių laukų duomenys:
 
   - **Data.CollectionTime** – laiko žyma, kai buvo užregistruotas gedimo įvykis
 
-#### <a name="office_appdocs_appdocs_operationopenfrommrubypath"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByPath
+#### <a name="office_docs_appdocs_operationopenfrommrubypath"></a>Office_Docs_AppDocs_OperationOpenFromMruByPath
 
 Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
@@ -2869,7 +2869,7 @@ Renkami šių laukų duomenys:
 
 - **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
 
-- **OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+- **Data_OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
 
 - **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
 
@@ -2879,7 +2879,7 @@ Renkami šių laukų duomenys:
 
 - **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
 
-#### <a name="office_appdocs_appdocs_operationopenfrommrubyurl"></a>Office_AppDocs_AppDocs_OperationOpenFromMruByUrl
+#### <a name="office_docs_appdocs_operationopenfrommrubyurl"></a>Office_Docs_AppDocs_OperationOpenFromMruByUrl
 
 Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją. 
 
@@ -2992,7 +2992,7 @@ Renkami šių laukų duomenys:
 - **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
 
 
-#### <a name="office_appdocs_appdocs_operationopenfrompath"></a>Office_AppDocs_AppDocs_OperationOpenFromPath
+#### <a name="office_docs_appdocs_operationopenfrompath"></a>Office_Docs_AppDocs_OperationOpenFromPath
 
 Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
@@ -3104,7 +3104,7 @@ Renkami šių laukų duomenys:
 
 - **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
 
-#### <a name="office_appdocs_appdocs_operationopenfromprotocolhandler"></a>Office_AppDocs_AppDocs_OperationOpenFromProtocolHandler
+#### <a name="office_docs_appdocs_operationopenfromprotocolhandler"></a>Office_Docs_AppDocs_OperationOpenFromProtocolHandler
 
 Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš kitos programos naudojant protokolų apdorojimo sąsają, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
@@ -3216,7 +3216,7 @@ Renkami šių laukų duomenys:
 
 - **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
 
-#### <a name="office_appdocs_appdocs_operationopenfromshell"></a>Office_AppDocs_AppDocs_OperationOpenFromShell
+#### <a name="office_docs_appdocs_operationopenfromshell"></a>Office_Docs_AppDocs_OperationOpenFromShell
 
 Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš apvalkalo, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
@@ -3329,7 +3329,7 @@ Renkami šių laukų duomenys:
 - **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
 
 
-#### <a name="office_appdocs_appdocs_operationopenfromurl"></a>Office_AppDocs_AppDocs_OperationOpenFromUrl
+#### <a name="office_docs_appdocs_operationopenfromurl"></a>Office_Docs_AppDocs_OperationOpenFromUrl
 
 Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš URL, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
