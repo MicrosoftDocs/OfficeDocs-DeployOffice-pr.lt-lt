@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: f9010fcc04540073dde219dc765e1811aa8a42e5
-ms.sourcegitcommit: 7b24028ab20d4f43dbca85cea2617398b36a3180
+ms.openlocfilehash: 1485ef7bdcfdf945ba2c9dd0e751cbe6b84dde5c
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45117208"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683238"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -10425,6 +10425,140 @@ Renkami toliau apibūdintų laukų duomenys
 Renkami šių laukų duomenys:
  
 - **ErrorMsg** – klaidos pranešimas, atitinkantis triktį.
+
+### <a name="onenotestorageconnectivitychanged"></a>OneNote.Storage.ConnectivityChanged
+
+Įvykis registruoja, ar vartotojas turi interneto ryšį, ar ne. Tai naudojama norint susieti kitas sinchronizavimo sveikatos charakteristikos metrikas, leidžiant mums nepaisyti įvykių, kurie įvyksta, kai vartotojas neturi interneto ryšio, nes nesitikime, kad mūsų paslaugos gaištis yra priimtina be interneto ryšio. Tai leidžia mums apskaičiuoti tikslų seansų skaičių mūsų metrikai klientams (kiekvienam nuomotojui, kiekvienam sektoriui). Tai taip pat naudojama filtruoti klaidų ataskaitas, nes yra daug sinchronizavimo klaidų, kurios, tikėtina, įvyktų be tinklo ryšio, bet tai pateisina tyrimą kitu atveju.
+
+Negavę šių duomenų negalėsime tiksliai stebėti mūsų produktų produktyvumo arba nustatyti, ar tikėtina, kad vartotojas patiria klaidų, ar reikės atlikti tolesnį tyrimą.
+
+Renkami šių laukų duomenys:
+
+- **"InternetConnectivityNowAvailable"** – jei ryšio būsena buvo pakeista, kad dabar būtų internete
+
+### <a name="onenotestoragelegacyinboundlatency"></a>OneNote.Storage.LegacyInboundLatency
+
+Kritiniu signalu, kuris naudojamas gaunamoms sinchronizavimo operacijoms, kurios tiesiogiai bendrauja su „SharePoint“, įskaitant koreliacijos informaciją, kad galėtume stebėti ir tirti duomenų įkėlimo į mūsų tarnybą rezultatus. Šis signalas renkamas tik blogiausiam atsisiuntimo našumui per paskutines 300 sekundžių („Microsoft“ konfigūruojamas sekundžių skaičius priklausomai nuo paslaugos produktyvumo ir būklės).
+
+Tai naudojama siekiant užtikrinti tarnybos sveikatą, leidžiant mums matyti, kurie nuomotojai patiria nepriimtinai lėtą duomenų gavimą į mūsų tarnybą, informaciją apie duomenis, kuriuos jie įkelia, kai patiria lėtą informacijos gavimą, ir kaip plačiai ši gaišties problema paplitusi nuomotojuje. Be to, tai naudojama pranešti apie tarnybų sveikatą ir veikimo rezultatus mūsų klientams, kad būtų galima išmatuoti tendencijas per tam tikrą laiką ir automatiškai spręsti problemas, susijusias su gamybos mažinimu. Neturėdami šių duomenų, negalėsime užtikrinti tinkamo atsisiuntimo vykdymo, kai vartotojas sinchronizuoja pakeitimus iš „SharePoint“ į savo kompiuterį.
+
+Renkami šių laukų duomenys: 
+
+- **Iseducationnotebook** - Bulio logika nurodanti, ar bloknotas yra švietimo įstaigos bloknotas
+
+- **NotebookId** - šio nusiuntimo bloknoto ID 
+
+- **TimeToConfirmSyncedWithServerInMs** - laikas milisekundėmis, kurį truko įkėlimas
+
+### <a name="onenotestoragelegacyoutboundlatency"></a>OneNote.Storage.LegacyOutboundLatency
+
+Kritinis signalas, kuris naudojamas gaunamoms sinchronizavimo operacijoms, kurios tiesiogiai bendrauja su „SharePoint“, įskaitant koreliacijos informaciją, kad galėtume stebėti ir tirti duomenų įkėlimo į mūsų tarnybą rezultatus. Šis signalas renkamas tik blogiausiam atsisiuntimo našumui per paskutines 300 sekundžių („Microsoft“ konfigūruojamas sekundžių skaičius priklausomai nuo paslaugos produktyvumo ir būklės).
+
+Tai naudojama siekiant užtikrinti tarnybos sveikatą, leidžiant mums matyti, kurie nuomotojai patiria nepriimtinai lėtą duomenų siuntimą iš mūsų tarnybos, informaciją apie duomenis, kuriuos jie įkelia, kai patiria lėtą informacijos gavimą, ir kaip plačiai ši gaišties problema paplitusi nuomotojuje. Be to, tai naudojama pranešti apie tarnybų sveikatą ir veikimo rezultatus mūsų klientams, kad būtų galima išmatuoti tendencijas per tam tikrą laiką ir automatiškai pranešti apie problemas, susijusias su gamybos mažinimu. Neturėdami šių duomenų, negalėsime užtikrinti tinkamo veikimo, kai vartotojas sinchronizuoja pakeitimus iš „SharePoint“ į savo kompiuterį. 
+
+Renkami šių laukų duomenys: 
+
+- **Iseducationnotebook** - Bulio logika nurodanti, ar bloknotas yra švietimo įstaigos bloknotas
+
+- **NotebookId** - šio nusiuntimo bloknoto ID 
+
+- **TimeToConfirmSyncedWithServerInMs** - laikas milisekundėmis, kurį truko įkėlimas
+
+### <a name="onenotestoragerealtimefiledataobjectdownload"></a>OneNote.Storage.RealTime.FileDataObjectDownload 
+
+Kritinis signalas, naudojamas veikimui sekti, kai vartotojas gauna duomenų objekto failą (t. y. įdėtasis failas arba atvaizdas), atsisiųstą tiesiai iš mūsų tarnybos, o ne kaip sinchronizavimo operacijos dalį puslapyje, sekcijoje ar bloknote. Šis signalas renkamas tik blogiausiam atsisiuntimo našumui per paskutines 300 sekundžių („Microsoft“ konfigūruojamas sekundžių skaičius priklausomai nuo paslaugos produktyvumo ir būklės).
+
+Tai naudojama siekiant užtikrinti tarnybos sveikatą ir veikimą, nes mes galime matyti, kurie nuomotojai patiria nepageidautinai lėtą duomenų atsisiuntimą iš mūsų tarnybos, ir apie tai, kaip plačiai paplitusi nuomotojuje gaišties problema, bei pranešti apie savo elgseną per tam tikrą laiką, kad galėtume išmatuoti tarnybos našumo tendencijas. Pastebėję nepriimtiną failo objekto gaištį, taip pat naudosime šiuos duomenis susieti tai su kitais signalais apie šį objektą iš kliento ir tarnybos, kad patobulintume savo atsiuntimo procesą. Taip pat išskaidome duomenis atsižvelgdami į failų objekto plėtinį, kuris buvo atsisiųstas, atsižvelgiant į tai, ar šis failas yra įdėtasis mūsų drobėje (pvz., vaizde), ar tai nėra įdėtasis failas (pvz., tekstinis dokumentas). Negavę šių duomenų negalėsime stebėti šių atsisiuntimų veiklos
+
+Renkami šių laukų duomenys: 
+
+- **FileSizeInBytes** – atsisiunčiamo failo dydis baitais 
+
+- **Isimage** - Bulio logika nustatyti, ar atsisiųstą failą sudaro plėtinys, kuris atitinka iš dalies nustatytą įprastų vaizdo formatų sąrašą (.bmp, .emf, .gif, .jpe, .jpeg, .jpg, .png), kuriame rodomas įdėtasis drobės vaizdas
+
+- **TimeToDownload** – kiek laiko užtrunka sėkmingai atsisiųsti FDO iš mūsų blob saugyklos į įrenginį 
+
+### <a name="onenotestoragerealtimewebsocketdownload"></a>OneNote.Storage.RealTime.WebSocketDownload
+
+Kritinis signalas, kuris naudojamas gaunamoms sinchronizavimo operacijoms, kurios tiesiogiai bendrauja su „SharePoint“, įskaitant koreliacijos informaciją, kad galėtume stebėti ir tirti duomenų atsiuntimo iš mūsų tarnybos (onenote.com) rezultatus. Šis signalas renkamas tik blogiausiam atsisiuntimo našumui per paskutines 300 sekundžių („Microsoft“ konfigūruojamas sekundžių skaičius priklausomai nuo paslaugos produktyvumo ir būklės).
+
+Tai naudojama siekiant užtikrinti tarnybos sveikatą, leidžiant mums matyti, kurie nuomotojai patiria nepriimtinai lėtą duomenų gavimą iš mūsų tarnybos, informaciją apie duomenis, kuriuos siuntė, kai patyrė lėtą informacijos gavimą, ir kaip plačiai ši gaišties problema paplitusi nuomotojuje. Be to, tai naudojama pranešti apie tarnybų sveikatą ir veikimo rezultatus mūsų klientams, kad būtų galima išmatuoti tendencijas per tam tikrą laiką ir automatiškai pranešti apie problemas, susijusias su gamybos mažinimu. 
+
+Jei pastebėsime netinkamą sekcijos ar bloknoto gaištį, taip pat naudosime šiuos duomenis susieti ją su kitais signalais iš kliento ar tarnybos apie tą patį dokumentą, kad identifikuotume našumo regresiją ir galėtume teikti geresnę patirtį.
+
+Negavę šių duomenų negalėsime stebėti mūsų tarnybos šio aspekto našumo arba serverio keitimų poveikio, kurie gali būti reikalingi dėl naudojimo ar kitų faktorių.
+
+Renkami šių laukų duomenys:
+
+- **DeviceSessionId** - Įrenginio sesijos ID
+
+- **Iseducationnotebook** - Bulio logika nurodanti, ar bloknotas yra švietimo įstaigos bloknotas
+
+- **IsHierarchyResource** - Bulio logika, nurodanti, ar šaltinis yra hierarchijos šaltinis
+
+- **NotebookId** - šio nusiuntimo bloknoto ID 
+
+- **ResourceId** - nusiunčiamo ištekliaus ID
+
+- **SectionId** - šio nusiuntimo sekcijos ID 
+
+- **ServerSessionId** - šio nusiuntimo serverio sesijos ID 
+
+- **TimeToConfirmSyncedWithServerInMs** - laikas milisekundėmis tarp vartotojo perėjimo į puslapį ir replikavimo rietuvės, kuri patvirtina, kad puslapis sinchronizuojamas su serveriu.
+
+- **TimeToFirstUpdateInMs** - laikas milisekundėmis tarp sinchronizavimo modulio, kuris pradeda gavimo repliką ir replikavimo operaciją, pasiekiamą sinchronizuojant su serverio būsena.
+
+### <a name="onenotestoragerealtimewebsocketupload"></a>OneNote.Storage.RealTime.WebSocketUpload
+
+Kritinis signalas, kuris naudojamas siunčiamoms sinchronizavimo operacijoms, kurios tiesiogiai bendrauja su „SharePoint“, įskaitant koreliacijos informaciją, kad galėtume stebėti ir tirti duomenų nusiuntimo į mūsų tarnybas (onenote.com) rezultatus.
+
+Tai naudojama siekiant užtikrinti tarnybos sveikatą, leidžiant mums matyti, kurie nuomotojai patiria nepriimtinai lėtą duomenų siuntimą iš mūsų tarnybos, informaciją apie duomenis, kuriuos jie įkelia, kai patiria lėtą informacijos gavimą, ir kaip plačiai ši gaišties problema paplitusi nuomotojuje. Be to, tai naudojama pranešti apie tarnybų sveikatą ir veikimo rezultatus mūsų klientams, kad būtų galima išmatuoti tendencijas per tam tikrą laiką ir automatiškai pranešti apie problemas, susijusias su gamybos mažinimu. Taip pat naudosime šiuos duomenis sekti patobulinimų, kuriuos atliekame savo klientams ir tarnyboms, poveikį ir efektyvumą. 
+
+Jei pastebėsime netinkamą sekcijos ar bloknoto gaištį, taip pat naudosime šiuos duomenis susieti ją su kitais signalais iš kliento ar tarnybos apie tą patį dokumentą, kad identifikuotume našumo regresiją ir galėtume teikti geresnę patirtį.
+
+Negavę šių duomenų negalėsime stebėti mūsų tarnybos šio aspekto našumo arba serverio keitimų poveikio, kurie gali būti reikalingi dėl naudojimo ar kitų faktorių.
+
+Renkami šių laukų duomenys: 
+
+- **DeviceSessionId** - Įrenginio sesijos ID
+
+- **Iseducationnotebook** - Bulio logika nurodanti, ar bloknotas yra švietimo įstaigos bloknotas
+
+- **IsHierarchyResource** - Bulio logika, nurodanti, ar šaltinis yra hierarchijos šaltinis
+
+- **IsWorstTime** - Bulio logika, nurodanti, ar laikas yra reguliarus nusiuntimo įvykis, ar blogiausias mūsų matytas laikas šiame kliente per paskutines 300 sekundžių (sekundžių skaičius gali būti konfigūruojamas „Microsoft“ priklausomai nuo tarnybos našumo ir būsenos).
+
+- **NotebookId** - šio nusiuntimo bloknoto ID 
+
+- **RecommendedPutIntervalInMs** - laikas, kurį tarnyba praneš klientui, kaip jos rekomenduotą intervalą
+
+- **ResourceId** - nusiunčiamo ištekliaus ID
+
+- **SectionId** - šio nusiuntimo sekcijos ID 
+
+- **SenderRequestId** - siuntėjo, atliekančio nusiuntimą, ID
+
+- **ServerSessionId** - šio nusiuntimo serverio sesijos ID 
+
+- **UploadNonSuspendedTimeInMs** - laikas milisekundėmis, kurį truko nusiuntimas, išskyrus laiką, kai programa buvo laikinai sustabdyta
+
+- **UploadTimeInMs** - laikas milisekundėmis, kurį iš tikrųjų truko įkėlimas
+
+- **WaitTimeInMs** - laikas per millseconds tarp nusiuntimo prašymo ir nusiuntimo pradžios
+
+- **WebUrl** - nusiuntimo WebUrl (prisijungus kaip PiiWz)
+
+### <a name="onenotestoragesynchealth"></a>OneNote.Storage.SyncHealth
+
+Kritinis signalas, kuris naudojamas sekti klaidas ir išimtis, kurios įvyko sinchronizavimo rietuvėje „OneNote“ kliente, leidžiantis mums stebėti ir sušvelninti šias nenumatytas sąlygas.
+
+Tai naudojama užtikrinant tarnybos sveikatą, nes leidžia mums matyti klientų klaidų ataskaitas beveik realiuoju laiku, o tai leidžia mums atsakyti į sinchronizavimo problemas, kai jos iškyla. Tai taip pat naudojama norint nustatyti, kaip plačiai paplitusi problema, ir kaip smarkiai skiriasi, kai klaidos žymė yra susieta su kliento kodu, kad būtų identifikuojamas gedimo šaltinis. Mes taip pat pateikiame šiuos duomenis, kad gautumėte informacijos apie mūsų našumą bei mūsų klientų ir tarnybų patobulinimų įtaką ir efektyvumą. Jei neturime šių duomenų, mes negalime aktyviai reaguoti į klaidas, esančias mūsų sinchronizavimo tarnyboje be klientų eskalavimo.
+
+Renkami šių laukų duomenys: 
+
+- **Service** – Sinchronizavimo tarnyba, kurią naudojo klientas, kai įvyko klaida (pasenusi versija arba šiuolaikinis sinchronizavimas)
+
+- **Tag** – žymė (identifikuojanti reikšmė), vaizduojanti klaidą, su kurią klientas susidūrė sinchronizavimo operacijos metu
 
 ### <a name="onenotesynccreatenotebookfailed"></a>OneNote.Sync.CreateNotebookFailed
  
