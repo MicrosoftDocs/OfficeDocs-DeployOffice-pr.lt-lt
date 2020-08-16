@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 6638ac773e4b39f17648161421548f445d2194e7
-ms.sourcegitcommit: 0654f421d001168605f936dc54c9ee0a26fca844
+ms.openlocfilehash: 777c0bdb8651a046022e8078820870b67e99f2f7
+ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45156049"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46683274"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -650,6 +650,13 @@ Be to, šie laukai dažniausiai naudojami visiems „Outlook“, skirtos „Andr
 
 - **process_bitness** proceso bitų skaičius (32 arba 64 bit), kad galėtų aptikti problemas, kurios būdingos įrenginio bitų skaičiui
 
+- **webview_kernel_version**: įrenginio „Chromium“ branduolio „WebView“ versija, kuri padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
+
+- **webview_package_name**: įrenginio paketo pavadinimas, kuris padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
+
+- **webview_package_version**: įrenginio paketo versija, kuri padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
+
+
 ## <a name="software-setup-and-inventory-data-events"></a>Programinės įrangos sąrankos ir inventoriaus duomenų įvykiai
 
 Toliau pateikiami šios kategorijos duomenų potipiai:
@@ -923,7 +930,7 @@ Renkami šių laukų duomenys:
 
 - **Provider Package ID** – automatinio prisijungimo atveju
 
-- **Result** – Succeeded (pavyko), Failed (nepavyko), Unknown (nežinoma), Cancelled (atšaukta)
+- **Rezultatas** – Pavyko, Nepavyko, Nežinoma, Atšaukta
 
 - **ServerType** – pateikia serverio, siūlančio tarnybą, tipą 
 
@@ -1572,9 +1579,9 @@ Renkami šių laukų duomenys:
 
 - **error_type** – įvykusios klaidos tipas. Kai kurie pavyzdžiai apima juodraščio įrašymą, juodraščio siuntimą ir debesies failo klaidas.
 
-- **exrule** – išplėstinės taisyklės reikšmė (taikoma tik paskyros pasikartojimo klaidoms)
+- **exdate** -išplėstinės taisyklės data (taikoma tik paskyros pasikartojimo klaidoms) *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
-- **exdate** – išplėstinės taisyklės data (taikoma tik paskyros pasikartojimo klaidoms)
+- **exrule** – išplėstinės taisyklės reikšmė (taikoma tik paskyros pasikartojimo klaidoms) *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **has_attachments** – nurodo, ar juodraštis, kuriame įvyko klaida, turi priedų, jei taikoma.
 
@@ -1586,13 +1593,13 @@ Renkami šių laukų duomenys:
 
 - **is_recoverable** – nurodo, ar klaida gali būti ištaisyta, ar tai yra neištaisoma klaida.
 
-- **rdate** – pasikartojimo taisyklės data (taikoma tik paskyros pasikartojimo klaidoms) 
+- **rdate** – pasikartojančios taisyklės data (taikoma tik paskyros pasikartojimo klaidoms) *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
-- **rrule** – pati pasikartojimo taisyklė (taikoma tik paskyros pasikartojimo klaidoms) 
+- **rrule** – pati pasikartojanti taisyklė (taikoma tik paskyros pasikartojimo klaidoms) *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
-- **rrule_error_message** – pasikartojimo taisyklės sintaksės klaidos pranešimas (taikoma tik paskyros pasikartojimo klaidoms)
+- **rrule_error_message** – pasikartojančios taisyklės analizės klaidos pranešimas (taikoma tik paskyros pasikartojimo klaidoms) *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
-- **rrule_error_type** – pasikartojimo taisyklės sintaksės klaidos tipas (taikoma tik paskyros pasikartojimo klaidoms)
+- **rrule_error_type** – pasikartojančios taisyklės analizės klaidos tipas (taikoma tik paskyros pasikartojimo klaidoms) *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **status_code** – įvykusios klaidos būsenos kodas. Padeda mums suprasti klaidos priežastį.
 
@@ -1664,6 +1671,8 @@ Renkami šių laukų duomenys:
 
 - **is_all_day** – naudojama kartu su „meeting_duration“ siekiant nurodyti, ar susitikimas vyksta visą dieną. Padeda suprasti, ar yra kokių nors problemų, susijusių su veiksmais, atliekamais visą dieną vykstančių susitikimų metu. 
 
+- **is_location_permission_granted** – ar vartotojas suteikė taikomosios programos sistemos vietos teises. Jei suteikiamas vietos leidimas, taikomoji programa gali pateikti papildomą naudingumo informaciją vartotojo sąsajoje. Žinodami, ar suteikiamas leidimas naudoti vietą, turėsime galimybę sužinoti, kaip dažnai vartotojams rodoma papildoma naudingumo informacija.
+
 - **is_organizer** – padeda suprasti, ar organizatorius gali tinkamai redaguoti ir kurti susitikimus. 
 
 - **is_recurring** – padeda suprasti, ar kyla problemų, konkrečiai paveikiančių pasikartojančius susitikimus. 
@@ -1714,27 +1723,23 @@ Renkami šių laukų duomenys:
 
 Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui atlikti pagrindines ieškos funkcijas, pvz., ieškoti el. laiškų, kontaktų ar įvykių.
 
-Renkami šių laukų duomenys:  
+Toliau nurodyti laukai renkami „Android“ ir „Android“: 
 
 - **account_switcher_action_type** – šis veiksmų tipas seka, ar vartotojas naudojo paskyros perjungiklį paprastam aptikimui, ar nusprendė perjungti paskyrą
 
-- **action** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas.
-
 - **action_type** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas. 
-
-- **answer_result_selected_count** – seka, kiek kartų ieška buvo „sėkminga“, t. y. ar vartotojas rado pageidaujamą žmogų? Sukūrė el. laišką? Pažymėjo laišką? 
-
-- **contact_result_in_full_list_selected_count** – seka, kiek kartų vartotojas paprašė „peržiūrėti visus kontaktus“ visame sąraše ir jis buvo pasirinktas bendro paieškos seanso metu
-
-- **contact_result_selected_count** – seka, kiek kontakto rezultatų buvo pasirinkta bendro paieškos seanso metu
-
-- **conversation_result_selected_count** – seka, kiek pokalbių buvo pasirinkta bendro paieškos seanso metu
 
 - **entrance_type** – nustato, kaip vartotojas pradėjo ieškos užklausą: ieškos skirtuke, naudodamas nulinę užklausą, ieškos antraštę ar ieškos rezultatą. 
 
 - **has_contact_results** – nurodo, ar kontakto rezultatai rodomi ieškos užklausoje
 
 - **include_deleted** – ar ieškos rezultatuose rodomos panaikintos parinktys 
+
+- **is_ics_external_data** – fiksuoja, ar įtrauktas įvykis yra vidinis (pvz.,  įtraukta į „Outlook“ į „Outlook“ kalendorių) ar išorinis (t. y. įtraukta iš kitos el. pašto programos, pvz., iš „Gmail“ į „Outlook“ kalendorių).
+
+- **is_network_fully_connected** – užuominai apie neprisijungus atliktos paieškos priežastį gauti. Jei tinklas yra prijungtas ir ieška neprijungta, priežastis greičiausiai bus serverio skirtojo laiko pabaiga
+
+- **is_offline_search** – ar ieškos seanse yra autonominė ieška, pagrįsta HX grąžintais ieškos rezultatais
 
 - **re_enter_search_tab** – Bulio funkcija, skirta nurodyti, ar vartotojas perjungė skirtukus prieš pasirinkdamas ieškos rezultatą
 
@@ -1744,11 +1749,29 @@ Renkami šių laukų duomenys:
 
 - **search_origin** – kaip buvo pradėta ieška, t. y. naudojant balso asistentą, „Cortana“, klaviatūros įvestį ir pan. 
 
+- **search_scope** – eilutė, nurodanti, kokio tipo paskyroje vartotojas atliko iešką (t. y. „Exchange“, „Gmail“ ir t. t.), ar ji buvo atliekama visose paskyrose. 
+
+- **search_suggestion_type** – nurodo, kas slypi už ieškos pasiūlymo, t. y. yra rašybos korekcija? Atsižvelgiant į retrospektyvą? Automatinis užbaigimas?
+
 - **search_request_reason** – nurodo priežastį, kodėl iš programos buvo išsiųsta ieškos užklausa, taip nurodant komponento ar vartotojo veiksmą, kuris sukėlė iešką.
 
 - **search_result_filter_type** – nurodo, kokio tipo filtras buvo pritaikytas paieškai: rodyti visus ar tik priedus
 
-- **search_scope** – eilutė, nurodanti, kokio tipo paskyroje vartotojas atliko iešką (t. y. „Exchange“, „Gmail“ ir t. t.), ar ji buvo atliekama visose paskyrose. 
+Toliau nurodyti laukai renkami „Outlook Mobile“ „iOS“ programose. 
+
+- **action** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas.
+
+- **answer_result_selected_count** – seka, kiek kartų ieška buvo „sėkminga“, t. y. ar vartotojas rado pageidaujamą žmogų? Sukūrė el. laišką? Pažymėjo laišką? 
+
+- **contact_result_in_full_list_selected_count** – seka, kiek kartų vartotojas paprašė „peržiūrėti visus kontaktus“ visame sąraše ir jis buvo pasirinktas bendro paieškos seanso metu
+
+- **contact_result_selected_count** – seka, kiek kontakto rezultatų buvo pasirinkta bendro paieškos seanso metu
+
+- **conversation_result_selected_count** – seka, kiek pokalbių buvo pasirinkta bendro paieškos seanso metu
+
+- **mail_requests_count** – seka, kiek pašto ieškos užklausų buvo išsiųstos kombinuotos ieškos seanse
+
+- **people_filter_selected_contacts_count** – seka, kiek kontaktų buvo pasirinkta žmonių filtruose
 
 - **search_session_ended_type** – nurodo, kur buvo baigta ieška, nes ji buvo atšaukta arba atnaujinta užklausa
 
@@ -1792,6 +1815,10 @@ Renkami šių laukų duomenys:
 - **contains_mention** – nurodo, ar pokalbyje buvo naudojamas @ paminėjimas, kad galėtume nustatyti problemas su paminėjimais laiškuose
 
 - **conversation_type** – nurodo, kokio tipo el. laiško rodinys buvo generuotas, pvz., vieno laiško rodinys ar kelių laiškų rodinys. Padeda nustatyti problemas, susijusias su konkrečiu laiško tipu jūsų el. pašto pokalbių rodinyje.
+
+- **reaction_origin** – nurodo mums kilmę įvykio, kur vartotojas reagavo 
+
+- **reaction_type** – nurodo mums vartotojo reakcijos tipą
 
 - **suggested_reply_char_count** – nurodo, kiek simbolių siūloma pateiktame atsakyme (jei galima), kad galėtume nustatyti su pasiūlymais susijusius nesklandumus
 
@@ -2615,6 +2642,8 @@ Renkami šių laukų duomenys:
 
 - **Data_FileOpenFlowMarkers** – prieš pradedant procesą, reikia atlikti tam tikrą išankstinį apdorojimą. Šį laiką, kada buvo atliktas šis paruošiamasis apdorojimas, fiksuojama eilutės reikšmė, kurios formatas \<functionId>\<functionValue>\<functionId>\<functionValue>...
 
+- **Data_FirstPartyProviderApp** – jei failas atidarytas naudojant „Word“, „Excel“, „PowerPoint“ arba „Office“ taikomąsias programas iš kitos „Microsoft“ taikomosios programos, čia fiksuojamas teikėjo taikomosios programos pavadinimas.
+
 - **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę. 
 
 - **Data_InitializationReason** – išvardijimas, rodantis kaip failas atidaromas, pvz., iš kurio vartotojo sąsajos elemento, paleistas kitos programos ir t. t.
@@ -2766,6 +2795,124 @@ Renkama tik kai „Office“ telemetrijos ataskaitų sritis yra įgalinta galuti
 Renkami šių laukų duomenys:
 
   - **Data.CollectionTime** – laiko žyma, kai buvo užregistruotas gedimo įvykis
+
+#### <a name="office_appdocs_appdocs_documentoperation"></a>Office_AppDocs_AppDocs_DocumentOperation
+
+Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo operacija (kurti / atidaryti / įrašyti / eksportuoti / kt.), naudojami suprasti ir nustatyti prioritetus, pagrįstus vartotojo patirtimi pagal failo atidarymo operacijos informaciją.
+
+Renkami šių laukų duomenys:
+
+- **Data_AppIdForReportEndBeforeAppKnown** – programos ID, kai ji nėra žinoma prieš operacijos pabaigą.
+
+- **Data_CanContinueFromOnBeforeOperationBegins** – „CanContinue“ būsena prieš iškviečiant pradžios apdorojimo programą.
+
+- **Data_DetachedDuration** – įvykio atsiejimo proceso trukmė. 
+
+- **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
+
+- **Data_Doc_AsyncOpenKind** – išvardijimas, rodantis, kokio tipo asinchroninis srautas naudojamas failui atidaryti.
+
+- **Data_Doc_ChunkingType** – Išvardijimas, rodantis failo segmentavimo algoritmą.
+
+- **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
+
+- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+
+- **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio pagrindinio kompiuterio pavadinimą.
+
+- **Data_Doc_IdentityTelemetryId** – vartotojo tapatybės, naudojamos atidarymui, vienpusė maiša.
+
+- **Data_Doc_InitializationScenario** – išvardijimas, rodantis išsamius failo atidarymo operacijos scenarijaus tipus.
+
+- **Data_Doc_IOFlags** – išvardijimas, rodantis failo atidarymo operacijos įvesties ir išvesties žymes, pvz., ar failas yra talpykloje.
+
+- **Data_Doc_IsCloudCollabEnabled** – ar šiam failui įgalintas bendradarbiavimas debesyje.
+
+- **Data_Doc_IsIncrementalOpen** – ar failas buvo atidarytas naudojant papildantįjį atidarymą.
+
+- **Data_Doc_IsOcsSupported** – ar failas palaiko „Office“ bendradarbiavimo tarnybą.
+
+- **Data_Doc_IsOpeningOfflineCopy** – ar failas atidaromas iš autonominėje talpykloje laikomos kopijos.
+
+- **Data_Doc_IsPrefetched** – ar failas buvo paimtas iš anksto prieš atidarymo operacijos atlikimą.
+
+- **Data_Doc_IsSyncBacked** – ar debesies failas yra lokaliai ir ar sinchronizuojamas su serveriu.
+
+- **Data_Doc_Location** – išvardijimas, rodantis failo vietą, pvz., lokaliai arba debesyje.
+
+- **Data_Doc_ReadOnlyReasons** – išvardijimas, rodantis failo priežastį tik skaityti.
+
+- **Data_Doc_ResourceIdHash** – GUID, unikaliai identifikuojantis failo serverio išteklių ID.
+
+- **Data_Doc_RtcType** – išvardijimas, rodantis failo naudojamą realaus laiko kanalo (RTC) tipą.
+
+- **Data_Doc_FqdnHash** – GUID, kuris unikaliai identifikuoja serverio dokumento ID.
+
+- **Data_Doc_ServerProtocol** – išvardijimas, rodantis debesies failo serverio protokolą.
+
+- **Data_Doc_ServerType** – išvardijimas, rodantis debesies failo serverio tipą.
+
+- **Data_Doc_ServerVersion** – išvardijimas, rodantis debesies failo serverio versiją.
+
+- **Data_Doc_SessionId** – sveikasis skaičius, padidėjantis 1 kiekvieną kartą, kai seanso metu atliekama failo atidarymo operacija.
+
+- **Data_Doc_SharePointServiceContext** – eilutė, naudojama susieti kliento ir serverio žurnalus, paprastai tai yra ID tipas.
+
+- **Data_Doc_SizeInBytes** – dokumento dydis baitais.
+
+- **Data_Doc_SpecialChars** – išvardijimas, rodantis URL failo specialųjį simbolį.
+
+- **Data_Doc_UrlHash** – GUID, kuris unikaliai identifikuoja failo URL.
+
+- **Data_Doc_UsedWrsDataOnOpen** – ar failas buvo atidarytas palaipsniui naudojant iš anksto talpykloje saugomus WRS duomenis.
+
+- **Data_Doc_WopiServiceId** – eilutė, rodanti iš kurios tarnybos yra WOPI (žiniatinklio taikomosios programos atviro platformos sąsajos protokolas) failas.
+
+- **Data_DocumentInputCurrency** – operacijos naudojamas dokumento įvesties tipas.
+
+- **Data_DocumentOperation_AppId** – išvardijimo reikšmė, vaizduojanti programos ID.
+
+- **Data_DocumentOperation_EndEventId** – žymė, nurodanti, kur operacija buvo baigta.
+
+- **Data_DocumentOperation_EndReason** – išvardijimo reikšmė, vaizduojanti galutinę priežastį.
+
+- **Data_DocumentOperation_IsReinitialized** – iš naujo inicijuojamas jau atidarytas dokumentas.
+
+- **Data_DocumentOperation_isTargetECBeginEC** – tai paskirties vykdymo kontekstas, toks pats kaip ir atidarymo šaltinio kontekstas.
+
+- **Data_DocumentOperation_ParamsFlags** – išvardijimo vėliavėlės, naudojamos operacijai vykdyti.
+
+- **Data_DocumentOperation_TelemetryReason** – atidaryto įvykio įeities taško išvardijimo reprezentacija. Pvz., atidaryti iš MRU arba naršyti, aktyvinti failą ir t.t.
+
+- **Data_InclusiveMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, kuri apima papildomų funkcijų iškvietimų trukmę.
+
+- **Data_Measurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme ir trukme, neapimančia papildomų funkcijų iškvietimų trukmės.
+
+- **Data_InitializationReason** – tam tikros operacijos priežasties išvardijimas. Pvz., atidaryti iš URL arba vietinio failo kelio, sukurti naudojant failų parinkiklį, kopijuoti į failo maršrutą, eksportuoti į URL ir t. t.
+
+- **Data_IsDisambiguateCsiNetworkConnectivityErrorEnabled**.
+
+- **Data_IsNameMissingInUrl** – nurodo, ar pavadinimas nebuvo išanalizuotas iš URL.
+
+- **Data_IsPathMissingForLocalFile** – nurodo, ar tai vietinis failas be maršruto.
+
+- **Data_IsUnpackedLinkSupportedForOpen** – nurodo, ar atidarymui palaikomas nepakuojamas saitas.
+
+- **Data_LinksOpenRightScenario** – išvardijimo reikšmė, kuri nurodo, kaip atidaryti tinkamą scenarijų.
+
+- **Data_OpEndEventId** – žymė, nurodanti, kur iš tikrųjų baigėsi operacija.
+
+- **Data_OperationType** – skaičiuojamas bendrojo tipo operacijos vaizdas. Pvz., kurti, atidaryti, kopijuoti, įrašyti ir kt.
+
+- **Data_RelatedPrevOpTelemetryReason** – operacija, susijusi su ankstesne operacija.
+
+- **Data_StopwatchDuration** – bendras įvykio laikas.
+
+- **Data_UnpackLinkHint** – išvardijimas, atspindintis galimą vartotojo veiksmą pagal išpakuojamą saitą.
+
+- **Data_UnpackLinkPromptResult** – išvardijimas, žymintis saito išpakavimo raginimą.
 
 #### <a name="office_docs_appdocs_operationopenfrommrubypath"></a>Office_Docs_AppDocs_OperationOpenFromMruByPath
 
@@ -5296,6 +5443,8 @@ Renkami šių laukų duomenys:
 
 - **Data.feature** – naudojama grupuoti įvairius tos pačios funkcijos įvykius (profilio kortelė)
 
+- **Data.hasPersonalInsightRing** – „Office“ arba „LinkedIn“ įžvalgos gali būti prieinamos vartotojui
+
 - **Data.hostAppRing** – žiedas, kuriuo buvo išplatinta programa
 
 - **Data.immersiveProfileCorrelationId** – išplėstinio profilio peržiūros seanso visuotinis unikalusis identifikatorius
@@ -5361,11 +5510,13 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_officemobile_pdfviewer_pdffileopenmeasurements"></a>Office_OfficeMobile_PdfViewer_PdfFileOpenMeasurements
 
-Šis įvykis renkamas „Union iOS“, jis fiksuoja, kada failas atidaromas. Mes renkame šiuos duomenis, kad būtų užtikrintas tinkamas visų failų, esančių programoje, atidarymas. 
+Šis įvykis renkamas „Office“ programai, jis fiksuoja, kada failas atidaromas. Mes renkame šiuos duomenis, kad būtų užtikrintas tinkamas visų failų, esančių programoje, atidarymas. 
 
 Renkami šių laukų duomenys:
 
 - **"Data_Doc_ActivationFQDN** – teikėjo taikomosios programos, skirtos failo suaktyvinimo scenarijui, domeno vardas (registruojama tik 1-osios šalies taikomosios programos informacija).
+
+- **Data_Doc_CreateTelemetryReason** – telemetrijos priežastys kurti PDF. (pvz., Kurti iš nuskaitymo, naudojant veiksmą „paveikslėlis į PDF“ , „dokumentas į PDF“ ir t. t.)
 
 - **Data_Doc_DownloadDurationms** – laikas, per kurį atsisiunčiamas PDF debesies failas.
 
@@ -5402,11 +5553,17 @@ Renkami šių laukų duomenys:
 
 - **Data_FailureReason** – esant atidarymo trikčiai, nurodoma trikties priežastis.
 
+- **Data_FileGUID** – bendrasis failo, kuris yra atsitiktinai sugeneruotas, identifikatorius
+
 - **Data_FileLocation** – failo vieta, pvz., „Local“, „ODSP“, „iCloud“ ir pan.
 
 - **Data_FileOpenEntryPoint** – failo atidarymo įvesties taškas
 
 - **Data_FileSize** – failo, su kuriuo vykdoma operacija, dydis
+
+- **Data_NetworkRequestErrorResponse** – tinklo klaidų atsakas atitinka klaidos kodą.
+
+- **Data_NetworkRequestStage** – klaidų lygis atsisiunčiant debesies PDF failus.
 
 - **Data_OpenMode** – kokiu režimu buvo atidarytas PDF failas, pvz., 0: peržiūros režimas, 2: pasirašymo režimas
 
@@ -5421,6 +5578,43 @@ Renkami šių laukų duomenys:
 - **Data_Result** – vykdomos operacijos būsena, pvz., teisinga: pavyko, neteisinga: triktis
 
 - **Data_Type** – failo operacijos tipas (atidarymas, uždarymas arba įrašymas) 
+
+#### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
+
+Įvykis renkamas naudojantis „Office“ programa, skirta „ iOS“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad PDF failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą. 
+
+- **Data_Doc_FileOpSessionID** – dokumento seanso unikalusis ID. 
+
+- **Data_Doc_URLHash** – failo URL GUID 
+
+- **Data_ErrorCode** – klaida, rodoma failo atidarymo trikčių / atsisiuntimo trikčių / atsisiuntimo atšaukimo atveju 
+
+- **Data_ErrorMessage** – pranešimas, susijęs su klaidos kodu 
+
+- **Data_FailureReason** – esant atidarymo trikčiai, nurodoma trikties priežastis. 
+
+- **Data_FileGUID** – bendrasis failo, kuris yra atsitiktinai sugeneruotas, identifikatorius
+
+- **Data_FileLocation** – failo vieta („Local“, „ODSP“, „iCloud“ ir pan.) 
+
+- **Data_FileOpenEntryPoint** – failo atidarymo įvesties taškas 
+
+- **Data_FileSize** – failo, su kuriuo vykdoma operacija, dydis 
+
+- **Data_OpenMode** – kokiu režimu buvo atidarytas PDF failas (0: peržiūros režimas, 2: pasirašymo režimas) 
+
+- **Data_PageCount** – puslapių skaičius PDF faile.
+
+- **Data_PasswordProtected** – žyma, kuri nurodo, ar failas apsaugotas slaptažodžiu, ar ne. 
+
+- **Data_ProviderApp** – dabartinė teikėjo programa tik failo aktyvinimo atveju  
+
+- **Data_ReadOnly** – žyma, kuri nurodo, ar failas yra tik skaitomas, ar ne.
+
+- **Data_Result** – vykdomos operacijos būsena (teisinga: pavyko, neteisinga: triktis) 
+
+- **Data_Type** – failo operacijos tipas (atidarymas, uždarymas arba įrašymas)
+
 
 #### <a name="officeonenoteandroidappnavigationnavigationuistatechanged-onenoteappnavigationnavigationuistatechanged-previous-name"></a>Office.OneNote.Android.App.Navigation.NavigationUIStateChanged, OneNote.App.Navigation.NavigationUIStateChanged *(ankstesnis pavadinimas)*
 
@@ -5926,7 +6120,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_fLifeguarded:bool –** ar kada dokumentui buvo naudojama apsauginė funkcija (funkcija, automatiškai taisanti dokumento klaidas nepranešant vartotojui)?
 
-  - **Data\_IsDocAutoSaveable:bool –** ar pateiktis gali būti automatiškai įrašoma?
+  - **Data\_IsDocAutoSaveable:bool -** Ar pateiktis įrašoma automatiškai?
 
   - **Data\_IsDocDirty:bool –** ar pristatyme yra dar neįrašytų pakeitimų?
 
@@ -7925,7 +8119,7 @@ Renkami šių laukų duomenys:
 
 - **suggestions_requested** – nurodo, kiek išmaniojo rašymo pasiūlymų prašoma
 
-- **suggestions_results** – išmaniojo rašymo pasiūlymų rezultatas, t. y. priimtas, atmestas
+- **suggestions_results** – išmaniojo rašymo pasiūlymų rezultatas, t. y. accepted, rejected
 
 - **suggestions_returned** – nurodo, kiek išmaniojo rašymo pasiūlymų pateikta iš serverio
 
@@ -8692,7 +8886,7 @@ Renkami šių laukų duomenys:
 
 - **UsesSharedRuntime** – nurodo, ar taikomoji programa naudoja „sharedRuntime“.
 
-#### <a name="officeofficemobilefirstrunsetup"></a>Office.OfficeMobile.FirstRunSetup
+#### <a name="officeofficemobilefrefirstrunsetup"></a>Office.OfficeMobile.FRE.FirstRunSetup
 
 Pirmą kartą paleidus programą po įdiegimo, bus suaktyvintas šis reguliarių pranešimų įvykis. Tai padės nustatyti diegimus ir automatinius miš senesnių programos versijų ir leis nustatyti klaidas automatiniame naujinime, įskaitant bibliotekos įkėlimus ir išplėtimo/kalbos paketo atsisiuntimo triktis.
 
@@ -10185,7 +10379,7 @@ Renkami šių laukų duomenys:
 
      - „java“ – jei gedimas įrašytas taikomųjų programų sluoksnyje.
 
-     - vietinis – jei gedimas buvo įrašytas į taikomosios programos sluoksnį. 
+     - „native “ – jei gedimas buvo įrašytas į taikomosios programos virtinį sluoksnį. 
 
      - neesminis – jei gedimas buvo įrašytas į bet kokios funkcijos derinimą. Taikomoji programa nesugenda, bet nusiųs neesminius gedimų žurnalus, kurie padės atlikti funkcijos derinimą.
 
@@ -11474,6 +11668,8 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
 - **CritiqueSummary** – santrauka, kokius skaičius pamatė visi kritikos vartotojai.
+
+- **ExitEventCode** – kodas, skirtas nustatyti, pagal kurį scenarijų vartotojas išeina iš repeticijos seanso, nesvarbu, ar tai buvo klaidos scenarijus, ar sėkmingas išėjimas. 
 
 - **PauseRehearsingCount** – skaičius, kiek kartų vartotojas spustelėjo pristabdyti repeticijas.
 
@@ -12993,6 +13189,12 @@ Toliau nurodyti laukai renkami tik „Android“:
 - **switch_access** – nurodo, ar vartotojas įrenginyje įjungė prieigos valdymą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
 
 - **talkback** – nurodo, ar vartotojas įrenginyje įjungė „TalkBack“, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **webview_kernel_version**: įrenginio „Chromium“ branduolio „WebView“ versija, kuri padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
+
+- **webview_package_name**: įrenginio paketo pavadinimas, kuris padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
+
+- **webview_package_version**: įrenginio paketo versija, kuri padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
 
 #### <a name="low_storage_warning"></a>low_storage_warning
 
