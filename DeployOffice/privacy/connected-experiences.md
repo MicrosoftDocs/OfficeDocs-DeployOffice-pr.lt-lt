@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: dec86a00fb6037976f29668534d59b4f99fb9093
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: ed9198f19bcd3ed7dcf11014ed46016fb7121dd6
+ms.sourcegitcommit: cdb47c4dc3297a8ad70112a084ebd1f5028e2c07
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46682921"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46896275"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -43,30 +43,31 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 
 | **Pavadinimas**   | **Daugiau informacijos**   |
 | ----------- | ------------------ |
-| *3D Maps*\*    | [Darbo su trimačiais žemėlapiais pradžia](https://support.office.com/article/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
-| Automatinis alternatyvusis tekstas   | [Viskas, ką turite žinoti apie efektyvaus alternatyviojo teksto rašymą](https://support.office.com/article/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
-| Duomenų tipai                  | [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.office.com/article/61a33056-9935-484f-8ac8-f1a89e210877)   |
-| Diktavimo funkcija  | [Diktavimas balsu naudojant „Office“](https://support.office.com/article/d4fd296e-8f15-4168-afec-1f95b13a6408) |
-|„Editor<sup>1</sup>“ |[Rengyklė yra jūsų rašymo asistentas](https://support.office.com/article/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
-| Idėjos     | [Idėjos programoje „Excel“](https://support.office.com/article/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-| Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.office.com/article/0740dec3-6291-4c1f-8baa-011d18449919) |
-| Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.office.com/article/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
-| Automatiniai aprašai ir subtitrai |  [Pristatymas naudojant tikralaikius automatinius aprašus programoje „PowerPoint“](https://support.office.com/article/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
-| *Žemėlapio diagrama*\*    | [Žemėlapio diagramos kūrimas](https://support.office.com/article/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
-| Žemėlapiai papildinyje „Power View“   | [Žemėlapiai papildinyje „Power View“](https://support.office.com/article/8A9B2AF3-A055-4131-A327-85CC835271F7) |
-| „Office“ pristatymo paslauga  | [„PowerPoint“ pateikties transliavimas internetu nuotolinei auditorijai](https://support.office.com/article/25330108-518e-44be-a281-e3d85f784fee)    |
-| „PowerPoint“ dizaino įrankis   | [Profesionalių skaidrių maketų kūrimas naudojant „PowerPoint“ dizaino įrankį](https://support.office.com/article/53c77d7b-dc40-45c2-b684-81415eac0617)   |
+| *3D Maps*\*    | [Darbo su trimačiais žemėlapiais pradžia](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| Automatinis alternatyvusis tekstas   | [Viskas, ką turite žinoti apie efektyvaus alternatyviojo teksto rašymą](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
+|Diagramų rekomendacijos (internetinė „Excel“)|[Kurti diagramą su rekomenduojamomis diagramomis](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
+| Duomenų tipai                  | [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+| Diktavimo funkcija  | [Diktuokite dokumentus „Word“](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+|Rengyklė<sup>1</sup> |[„Microsoft“ rengyklė patikrina gramatiką ir daugiau dokumentuose, pašte ir žiniatinklyje](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
+| Idėjos     | [Idėjos programoje „Excel“](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
+| Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
+| Automatiniai aprašai ir subtitrai |  [Pristatymas naudojant tikralaikius automatinius aprašus programoje „PowerPoint“](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
+| *Žemėlapio diagrama*\*    | [Žemėlapio diagramos kūrimas programoje „Excel“](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
+| Žemėlapiai papildinyje „Power View“   | [Žemėlapiai papildinyje „Power View“](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
+| „Office“ pristatymo paslauga  | [„PowerPoint“ pateikties transliavimas internetu nuotolinei auditorijai](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
+| „PowerPoint“ dizaino įrankis   | [Profesionalių skaidrių maketų kūrimas naudojant „PowerPoint“ dizaino įrankį](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 | Publikavimas „Power BI“   | [„Excel“ turinio publikavimas „Power BI“](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
-| Publikavimas „Microsoft Stream“    | [Pateikties pavertimas vaizdo įrašu](https://support.office.com/article/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| *Tyrimai*\*   | [Tyrimų paslaugų pridėjimas arba keitimas](https://support.office.com/article/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
-| Vizitinės kortelės nuskaitymas|  [Kontaktų įtraukimas „Outlook“, skirtoje „Android“, nuskaitant arba bakstelėjant](https://support.office.com/article/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+| Publikavimas „Microsoft Stream“    | [Pateikties pavertimas vaizdo įrašu](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
+| *Tyrimai*\*   | [Tyrimų paslaugų pridėjimas arba keitimas](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
+| Vizitinės kortelės nuskaitymas|  [Kontaktų įtraukimas „Outlook“, skirtoje „Android“, nuskaitant arba bakstelėjant](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |*Panašumų tikrintuvas*\* („Editor“ funkcija)|[Tikrinkite savo dokumento panašumą į internetinius šaltinius](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
-| *Išmanioji ieška*\*   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.office.com/article/debf2083-5ac0-4739-8667-ae2467bec044) |
+| *Išmanioji ieška*\*   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
-| Teminė ieška „Word“ (įtraukimas iš failų)   | [Reikiamo turinio radimas ir panaudojimas, neišeinant iš „Word“](https://support.office.com/article/860118fc-1f61-41f6-922f-40084a284658)   |
+| Teminė ieška „Word“ (įtraukimas iš failų)   | [Reikiamo turinio radimas ir panaudojimas, neišeinant iš „Word“](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Transkripcija |[Įrašų transkribavimas](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
-| Transformavimas į tinklalapį   | [„Word“ dokumento transformavimas į „Sway“ tinklalapį](https://support.office.com/article/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
-| Vertyklė   | [Teksto vertimas į kitą kalbą](https://support.office.com/article/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
+| Transformavimas į tinklalapį   | [„Word“ dokumento transformavimas į „Sway“ tinklalapį](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
+| Vertyklė   | [Teksto vertimas į kitą kalbą](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
 <sup>1</sup> pagrindinės „Editor“ funkcijos išlieka pasiekiamos, net jei nesate prisijungę prie interneto. Tos pačios pagrindinės funkcijos taip pat išlieka pasiekiamos, net jei nusprendžiate išjungti susietų patirčių naudojimą, kuris analizuoja turinį.  Abiem atvejais, duomenys apie „Editor“ naudojimą „Microsoft“ nesiunčiami.
 
@@ -82,25 +83,25 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 | **Pavadinimas**      | **Daugiau informacijos**  |
 | ------------- | ------------- |
 | Kalendoriaus programos| [Kas yra kalendoriaus programos?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
-| Debesies šriftai                 | [Debesies šriftai programų pakete „Office“](https://support.office.com/article/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
+| Debesies šriftai                 | [Debesies šriftai programų pakete „Office“](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
 | DUK |„Outlook“, skirtoje „iOS“ ir „Android“, pasirinkę **Parametrai** > **Žinynas ir atsiliepimai** > **DUK**, būsite perkelti į [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
-| Rankraščio efektai                 | [Piešimas ir rašymas rašikliu „Office“](https://support.office.com/article/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
-| Piktogramų įterpimas                | [Piktogramų įterpimas programų pakete „Microsoft Office“](https://support.office.com/article/e2459f17-3996-4795-996e-b9a13486fa79)   |
-| „Microsoft Forms“ įterpimas      | [Formos ar apklausos įterpimas į „PowerPoint“](https://support.office.com/article/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
-| *Internetinių 3D modelių įterpimas*\*     | [Būkite kūrybingi naudodami 3D modelius](https://support.office.com/article/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
-| *Internetinių paveikslėlių įterpimas*\*      | [Paveikslėlių įterpimas](https://support.office.com/article/3c51edf4-22e1-460a-b372-9329a8724344)  |
-| *Internetinio vaizdo įrašo įterpimas*\*     | [Vaizdo įrašo įterpimas iš „YouTube“ ar kitos svetainės](https://support.office.com/article/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
-| *Įdomūs kalendoriai*\*| „Outlook“, skirtoje „iOS“ ir „Android“, [prenumeruokite kalendorių](https://www.osupportweb.com/a/outlook-mobile/?s=feature-walkthroughs&f=where-do-i-go-on-outlook-to-subscribe-to-an-interesting-calendar&p=all) apie savo mėgstamas sporto komandas ar televizijos laidas. |
+| Rankraščio efektai                 | [Piešimas ir rašymas rašikliu „Office“](https://support.microsoft.com/office/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
+| Piktogramų įterpimas                | [Piktogramų įterpimas programų pakete „Microsoft Office“](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)   |
+| „Microsoft Forms“ įterpimas      | [Formos ar apklausos įterpimas į „PowerPoint“](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
+| *Internetinių 3D modelių įterpimas*\*     | [Būkite kūrybingi naudodami 3D modelius](https://support.microsoft.com/office/ec5feb79-b0af-47f6-a885-151fcc88ac0a)   |
+| *Internetinių paveikslėlių įterpimas*\*      | [Paveikslėlių įterpimas](https://support.microsoft.com/office/3c51edf4-22e1-460a-b372-9329a8724344)  |
+| *Internetinio vaizdo įrašo įterpimas*\*     | [Vaizdo įrašo įterpimas iš „YouTube“ ar kitos svetainės](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
+| *Įdomūs kalendoriai*\*| „Outlook“, skirtoje „iOS“ ir „Android“, [prenumeruokite kalendorių](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) apie savo mėgstamas sporto komandas ar televizijos laidas. |
 | *Vietos pasiūlymai*\* | Kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, „Outlook“, skirtos „iOS“ ir „Android“, lauke Vieta taip pat bus nurodomas visas adresas. |
 | Žemėlapiai išsamioje įvykio informacijoje | Žinokite, kur reikia nuvykti, naudodamiesi [žemėlapiais](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all), pateikiamais įvykio informacijoje programoje „Outlook“, skirtoje „iOS“ ir „Android“. |
 | „Office“ žinynas                 | Kai pasirenkate **Žinynas** > **Žinynas** juostelėje arba paspaudžiate F1 „Office“ programoje   |
-| Internetinių figūrų ieška („Visio“) | [Daugiau figūrų ir šablonų rinkinių](https://support.office.com/article/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
-| *„PowerPoint“ funkcija „QuickStarter“*\*     | [Temos nagrinėjimas naudojant „PowerPoint“ funkciją „QuickStarter“](https://support.office.com/article/4784f273-0b2c-456c-9c89-24e5b977c224) |
-| *Tyrėjas*\*    | [Programoje „Word“ lengvai ieškokite informacijos, susijusios su dokumentu](https://support.office.com/article/1728f286-8702-4d72-8169-ab7677ca0e1f) |
-| Ką norite daryti    | [Spartesnis darbas su funkcija Ką norite daryti](https://support.office.com/article/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
-| Šablonai  | [Nemokamų, iš anksto sukurtų šablonų atsisiuntimas](https://support.office.com/article/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
+| Internetinių figūrų ieška („Visio“) | [Daugiau figūrų ir šablonų rinkinių](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
+| *„PowerPoint“ funkcija „QuickStarter“*\*     | [Temos nagrinėjimas naudojant „PowerPoint“ funkciją „QuickStarter“](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
+| *Tyrėjas*\*    | [Programoje „Word“ lengvai ieškokite informacijos, susijusios su dokumentu](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
+| Ką norite daryti    | [Spartesnis darbas su funkcija Ką norite daryti](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
+| Šablonai  | [Nemokamų, iš anksto sukurtų šablonų atsisiuntimas](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Numatomas kelionės laikas kortelėje „Up Next“*\*|Kai pasirenkate leisti „Outlook“ skirtai „iOS“ ir „Android“ pasiekti jūsų vietą, numatomas jūsų kelionės laikas iki kito įvykio bus įtrauktas į [„Up Next“](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) kortelę, esančią aplanko Gauta viršuje.|
-| *Orų prognozės juosta*\* („Outlook“)| [Kalendoriuje nurodyto miesto, kuriam juostoje skelbiama orų prognozė, keitimas](https://support.office.com/article/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+| *Orų prognozės juosta*\* („Outlook“)| [Kalendoriuje nurodyto miesto, kuriam juostoje skelbiama orų prognozė, keitimas](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
 >\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“ * strategijos nustatymą.
@@ -113,35 +114,35 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 
 | **Pavadinimas**      | **Daugiau informacijos**  |
 | ------------- | ------------- |
-| @paminėjimas | [@paminėjimas komentaruose norint pažymėti kurį nors asmenį](https://support.office.com/article/644bf689-31a0-4977-a4fb-afe01820c1fd) |
-|Idėjų telkimo diagrama („Visio“)|[Idėjų telkimo diagramos kūrimas](https://support.office.com/article/642706c0-7e63-463b-8aa8-a9aa67367989)|
-| Jau greitai („Outlook“)  |[Jau greitai](https://support.office.com/article/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
+| @paminėjimas | [@paminėjimas komentaruose norint pažymėti kurį nors asmenį](https://support.microsoft.com/office/644bf689-31a0-4977-a4fb-afe01820c1fd) |
+|Idėjų telkimo diagrama („Visio“)|[Idėjų telkimo diagramos kūrimas](https://support.microsoft.com/office/642706c0-7e63-463b-8aa8-a9aa67367989)|
+| Jau greitai („Outlook“)  |[Jau greitai](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Kreiptis į palaikymo tarnybą („Outlook“) | Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje|
-| Pasirinktinis importavimas („Visio“)  | [Duomenų importavimas į figūras brėžinyje](https://support.office.com/article/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
-| Duomenų praradimo prevencijos (DLP) strategijos patarimai |[DLP strategijų pranešimų siuntimas el. paštu ir patarimų rodymas](https://docs.microsoft.com/office365/securitycompliance/use-notifications-and-policy-tips)  |
-| Duomenų vizualizavimo priemonė („Visio“) |[Duomenų vizualizavimo priemonės diagramos kūrimas](https://support.office.com/article/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
-| „Flow“ kūrimas („Visio“)  | [„Microsoft Flow“ kūrimas programoje „Visio“](https://support.office.com/article/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
-| Išorinis sąrašas („Outlook“) |[Išorinio sąrašo prijungimas prie „Outlook“](https://support.office.com/article/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
-| Reikšmingiausi gautieji („Outlook“) |[Reikšmingiausi gautieji programoje „Outlook“](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
-| Informacijos teisių valdymas |[Informacijos teisių valdymas programų pakete „Office“](https://support.office.com/Article/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
-| „LinkedIn“ kontakto kortelė |[„LinkedIn“ ir „Microsoft“ paskyrų susiejimas](https://support.office.com/article/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *„Office“ papildiniai*\* | [Papildinių diegimo valdymas „Microsoft 365“ administravimo centre](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins) |
-| „Office“ atsiliepimai |[Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
+| Pasirinktinis importavimas („Visio“)  | [Duomenų importavimas į figūras brėžinyje](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
+| Duomenų praradimo prevencijos (DLP) strategijos patarimai |[DLP strategijų pranešimų siuntimas el. paštu ir patarimų rodymas](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)  |
+| Duomenų vizualizavimo priemonė („Visio“) |[Duomenų vizualizavimo priemonės diagramos kūrimas](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
+| „Flow“ kūrimas („Visio“)  | [Automatinės darbo eigos kūrimas programoje „Visio“](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
+| Išorinis sąrašas („Outlook“) |[Išorinio sąrašo prijungimas prie „Outlook“](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
+| Reikšmingiausi gautieji („Outlook“) |[Reikšmingiausi gautieji programoje „Outlook“](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
+| Informacijos teisių valdymas |[Atidaryti failą, kuriame yra apribotų teisių](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
+| „LinkedIn“ kontakto kortelė |[„LinkedIn“ naudojimas „Microsoft“ programose ir paslaugose](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
+| *„Office“ papildiniai*\* | [Papildinius diekite administravimo centre](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
+| „Office“ atsiliepimai |[Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | „Office“ palaikymo tarnyba (susisiekite su mumis) |Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje |
-| Organizacijos schema („Visio“) |[„Visio“ organizacijos schemos kūrimas](https://support.office.com/article/abb3dd17-2692-439f-9945-3a015767d96a)  |
-| „Outlook Social Connector“ | [„Outlook Social Connector“ įjungimas](https://support.office.com/article/255447E8-82CD-48E7-9B79-1DD8721A2907) |
-| *„Outlook UserVoice“*\* | [Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.office.com/article/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
-| Naujausi dokumentai |[Failų atidarymas per meniu Failas](https://support.office.com/article/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
-| *CV kūrimo pagalbinė priemonė*\* |[Parašykite geriausią gyvenimo aprašymą padedami „LinkedIn“ ir CV kūrimo pagalbinės priemonės](https://support.office.com/article/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
+| Organizacijos schema („Visio“) |[Organizacijos schemos kūrimas programoje „Visio“](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)  |
+| „Outlook Social Connector“ | [„Outlook Social Connector“ įjungimas](https://support.microsoft.com/office/255447E8-82CD-48E7-9B79-1DD8721A2907) |
+| *„Outlook UserVoice“*\* | [Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+| Naujausi dokumentai |[Failų atidarymas per meniu Failas](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
+| *CV kūrimo pagalbinė priemonė*\* |[Naudokitės CV kūrimo pagalbinė priemone ir „LinkedIn“, kad sukurtumėte puikių CV](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Patalpų ieškiklis („Outlook“)|[Kaip valdyti patalpų ieškiklį programoje „Outlook“](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-| Saugieji saitai |[ATP saugieji saitai](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)  |
-| Slaptumo žymos |[Slaptumo žymų pritaikymas dokumentams ir el. laiškams programų pakete „Office“](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
-| Bendrinimas  |[Dokumento bendrinimas („Excel“)](https://support.office.com//article/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Dokumento bendrinimas („PowerPoint“)](https://support.office.com//article/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Dokumento bendrinimas („Word“)](https://support.office.com//article/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
-| Bendrinama su manimi |[Pasižiūrėkite, kokius failus su jumis bendrina kiti](https://support.office.com/article/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
-| „SharePoint“ svetainės pašto dėžutė („Outlook“)|[Svetainės pašto dėžutės rodymas arba slėpimas programoje „Outlook“](https://support.office.com/article/A9C4B8C7-A1A9-43C0-BD05-7513CA092863)  |
-|Laiko planavimo juostos importavimas ir eksportavimas („Visio“)|[Laiko planavimo juostos duomenų importavimas ir eksportavimas programose „Visio“ir „Project“](https://support.office.com/article/bc09becb-8c77-49b1-8e47-af3cf8cb7242)|
-| Versijų istorija |[Ankstesnių „Office“ failų versijų peržiūra](https://support.office.com/article/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
-| Jums išvykus |[Pranešimų gavimas, kai komandos nariai atnaujina jūsų bendrinamą failą](https://support.office.com/article/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
+| Saugieji saitai |[ATP saugieji saitai](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
+| Slaptumo žymos |[Slaptumo žymų pritaikymas dokumentams ir el. laiškams „Office“ programose](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
+| Bendrinimas  |[„Excel“ darbaknygės bendrinimas su kitais](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Pateikties bendrinimas („PowerPoint“)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Dokumento bendrinimas („Word“)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
+| Bendrinama su manimi |[Pasižiūrėkite, kokius failus su jumis bendrina kiti](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |
+| „SharePoint“ svetainės pašto dėžutė („Outlook“)|[Svetainės pašto dėžutės rodymas arba slėpimas programoje „Outlook“](https://support.microsoft.com/office/A9C4B8C7-A1A9-43C0-BD05-7513CA092863#__toc341877075)  |
+|Laiko planavimo juostos importavimas ir eksportavimas („Visio“)|[Laiko planavimo juostos duomenų importavimas ir eksportavimas programose „Visio“ir „Project“](https://support.microsoft.com/office/bc09becb-8c77-49b1-8e47-af3cf8cb7242)|
+| Versijų istorija |[Ankstesnių „Office“ failų versijų peržiūra](https://support.microsoft.com/office/5c1e076f-a9c9-41b8-8ace-f77b9642e2c2)  |
+| Jums išvykus |[Pranešimų gavimas, kai komandos nariai atnaujina jūsų bendrinamą failą](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
 >\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“ * strategijos nustatymą.
@@ -174,4 +175,4 @@ Net jei išjungsite šias prisijungus naudojamas funkcijas, kai kurios „Office
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
 - [Reikalingi „Office“ tarnybų duomenys](required-service-data.md)
 - [Pagrindinės „Office“ tarnybos](essential-services.md)
-- [Paskyros privatumo parametrai](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
+- [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
