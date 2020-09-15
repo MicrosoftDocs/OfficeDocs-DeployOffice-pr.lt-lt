@@ -15,14 +15,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirtų „Microsoft 365“ programų įmonėms ( anksčiau vadintų „Office 365 ProPlus“) privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: f5a957d57a7c8f95503091f456aef5a9c1e0fca7
-ms.sourcegitcommit: f441b1a5f8853c0941b3e23c7781c89abf0be641
+ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087690"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440558"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga
+
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašas, žr. [„Office“ produktų privatumo valdiklius](products-versions-privacy-controls.md).
 
 „Microsoft“ yra įsipareigojusi suteikti jums reikiamą informaciją ir valdiklius, kad galėtumėte pasirinkti, kaip renkami ir naudojami jūsų duomenys, kai naudojate „Microsoft 365“ programas įmonėms (anksčiau vadintas „Office 365 ProPlus“).
 
@@ -31,17 +34,6 @@ Pradedant „Microsoft 365“ programų įmonėms 1904 versija, jums bus pasieki
 - ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
 Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos elementų ir strategijos parametrų.
-
-> [!IMPORTANT]
-> - Šie keitimai taikomi „Access“, „Excel“, „OneNote“, „Outlook“, „PowerPoint“, „Publisher“ ir „Word“.
-> - Šie keitimai taikomi ir toliau nurodytiems produktams:
->   - „Office for Mac“ (16.28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
->   - „Project“ ir „Visio“ kompiuterio 1904 ar vėlesnės versijos, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
-> - Šie privatumo valdikliai įtraukti į pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) ir pusmetinių įmonėms skirtų naujinimų kanalo 1908 ar vėlesnę versiją.
-> - Šie privatumo valdikliai pasiekiami 2.30 ir vėlesnėse „Excel“, „OneNote“, „PowerPoint“ ir „Word“ versijose, skirtose „iOS“, taip pat 1.17 ir vėlesnėse „Visio“ peržiūros programos, skirtos „iOS“, versijose.
-> - Šie privatumo valdikliai pasiekiami 16.0.12226.10000 ir vėlesnėse „Excel“, „PowerPoint“ ir „Word“, skirtų „Android“, versijose, taip pat 16.0.12228.20004 ir vėlesnėse „OneNote“, skirtos „Android“, versijose.
-> - Dauguma internetinės „Office“ programų naudoja naująjį privatumo valdiklį, skirtą [pasirinktinėms prijungtosioms funkcijoms](optional-connected-experiences.md). Minėtos programos yra šios: internetinė „Excel“, internetinė „OneNote“, „PowerPoint“ žiniatinkliui, internetinė „Visio“ ir internetinė „Word“. Norėdami konfigūruoti atitinkamą [strategijos parametrą](manage-privacy-controls.md#policy-setting-for-optional-connected-experiences), galite naudoti [„Office“ debesies strategijos tarnybą](../overview-office-cloud-policy-service.md).
-> - Šiuos naujus ir patobulintus privatumo valdiklius įdiegsime ir papildomuose „Office“ klientuose, įskaitant „Teams“ ir mūsų mobiliųjų įrenginių programas. Daugiau informacijos apie šiuos keitimus pateiksime ateinančiais mėnesiais. Ir toliau tobulinsime visus „Office 365“ (ir „Microsoft 365“) klientus ir paslaugas atsižvelgdami į jūsų atsiliepimus.
 
 ## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Diagnostikos duomenys, siunčiami „Microsoft“ iš „Microsoft 365“ programų įmonėms.
 
@@ -77,7 +69,7 @@ Jei reikia daugiau informacijos, žr.:
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
-- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 ## <a name="connected-experiences-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms prijungtosios funkcijos
 
@@ -113,7 +105,7 @@ Tai pasirinktinės prisijungus naudojamos funkcijos, kurioms galioja ne jūsų o
 
 Kadangi šioms pasirinktinėms prisijungus naudojamoms paslaugoms taikomos atskiros sąlygos, jas valdote atskirai nuo pirmiau minėtų prisijungus naudojamų paslaugų. Kaip organizacijos administratorius galėsite naudodami strategijos parametrą pasirinkti, ar padaryti šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas (kaip grupę) vartotojams. Jei nekonfigūruosite šio strategijos parametro, šios pasirinktinės prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
-Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę dalyje eidami į [privatumo parametrų dialogo langą](https://support.office.com/article/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vartotojai turės šią pasirinkimo galimybę, tik jei jie bus prisijungę prie „Office“ naudodami organizacijos kredencialus (kartais vadinamus darbo arba mokymo įstaigos paskyra), o ne prisijungę naudodami savo asmeninį el. pašto adresą.
+Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę dalyje eidami į [privatumo parametrų dialogo langą](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vartotojai turės šią pasirinkimo galimybę, tik jei jie bus prisijungę prie „Office“ naudodami organizacijos kredencialus (kartais vadinamus darbo arba mokymo įstaigos paskyra), o ne prisijungę naudodami savo asmeninį el. pašto adresą.
 
 Jei reikia daugiau informacijos, žr.:
 
@@ -122,30 +114,19 @@ Jei reikia daugiau informacijos, žr.:
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
+- [Strategijos parametrų naudojimas „Office“ internetinėms programėlėms valdyti](office-web-privacy-controls.md)
 
 ## <a name="required-service-data-for-connected-experiences"></a>Reikalingi prisijungus naudojamų funkcijų tarnybų duomenys
 
-Reikalingi tarnybų duomenys yra duomenys, kurie įgalina šių debesų technologija pagrįstų prisijungus naudojamų funkcijų veikimą, leidžia jas apsaugoti ir užtikrinti, kad jos veiktų, kaip numatyta. Reikalingus tarnybų duomenis sudaro trijų tipų informacija.
+Kai naudojate prisijungus naudojamas funkcijas, duomenys siunčiami ir apdorojami „Microsoft“, kad šios funkcijos galėtų būti jums teikiamos. Šie duomenys yra labai svarbūs, nes ši informacija leidžia pristatyti šias debesų technologijos pagrindu veikiančias funkcijas. Nurodome šiuos duomenis kaip būtinuosius tarnybos duomenis.
 
-- **Kliento turinys** – turinys, kurį sukuriate naudodami „Office“, pvz., „Word“ dokumente įvestas tekstas.
-- **Funkciniai duomenys**, kurie apima informaciją, kurios riekia, kad prisijungus naudojama funkcija galėtų atlikti užduotį, pvz., programos konfigūracijos informacija.
-- **Tarnybos diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Šie duomenys glaudžiai susiję su prisijungus naudojama paslauga, todėl jie atskirti nuo būtinųjų arba pasirinktinių diagnostikos duomenų lygių.
-
-Kad geriau suprastumėte reikalingus tarnybų duomenis, pateikiame pavyzdinį scenarijų, kuriame naudojamas „PowerPoint“ dizaino įrankis – prisijungus naudojama funkcija, kurią pasitelkę galite kurti pateikties skaidres. „PowerPoint“ dizaino įrankis patobulina skaidres automatiškai generuodamas dizaino idėjas, iš kurių galite rinktis. Kai keliate turinį į skaidrę, dizaino įrankis veikia fone, kad pritaikytų turinį prie profesionalių maketų.
-
-Privalomieji tarnybos duomenys, kurie siunčiami „Microsoft“, kad ši prijungtoji funkcija veiktų, gali apimti nurodytuosius toliau.
-
-- *Kliento turinį*, kuris yra tekstas arba vaizdai, kuriuos įtraukiate į skaidrę.
-- *Funkcinius duomenis*, pvz., informaciją, kurioje skaidrėje dirbate, ir jos maketą.
-- *Paslaugos diagnostikos duomenis*, pvz., įvykius, kurie pasako mums, ar dizaino idėja buvo tinkamai pritaikyta skaidrėje ir ar paslauga buvo tinkamai iškviesta.
-
-Jei nuspręsite vartotojams nepadaryti pasiekiamos prisijungus naudojamų funkcijų kategorijos, kuri apima „PowerPoint“ dizaino įrankį, funkcija bus išjungta ir jokie iš šių reikalingų tarnybų duomenų mums siunčiami nebus.
+Būtinieji tarnybos duomenys gali apimti informaciją, susijusią su prisijungus naudojamos funkcijos veikimu, kurios reikia, kad pagrindinės paslaugos būtų apsaugotos, atnaujintos ir veiktų tinkamai. Jei pasirinksite naudoti prisijungus naudojamą funkciją, kuri analizuoja jūsų turinį, pvz., versti programoje „Word“, jūsų įvestas ir dokumente išverstas tekstas taip pat išsiunčiamas ir apdorojamas, kad būtų galima naudoti prisijungus naudojamą funkciją. Būtinieji tarnybos duomenys taip pat gali apimti informaciją, kurios riekia, kad prisijungus naudojama funkcija galėtų atlikti užduotį, pvz., „Office“ programos konfigūracijos informacija.
 
 Daugiau informacijos žr. [„Office“ reikalingi tarnybų duomenys](required-service-data.md).
 
 ## <a name="essential-services-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms pagrindinės paslaugos
 
-Taip pat yra paslaugų, kurios yra būtinos, kad „Office 365“ programos įmonėms veiktų ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office 365“ programomis įmonėms. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų strategijos parametrų.
+Taip pat yra paslaugų, kurios yra būtinos, kad „Microsoft 365“ programos įmonėms veiktų ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office 365“ programomis įmonėms. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų strategijos parametrų.
 
 Daugiau informacijos žr. [Pagrindinės „Office“ paslaugos](essential-services.md).
 

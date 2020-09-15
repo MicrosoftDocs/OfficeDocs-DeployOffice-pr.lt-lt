@@ -13,30 +13,23 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 81694daded27994d5026d923acd36302a79acc9f
-ms.sourcegitcommit: 5fc8194df704f79d340d9e8872a03ab2b0ebc62b
+ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815329"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440497"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
-> [!IMPORTANT]
-> Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
-> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
-> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
->
-> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašas, žr. [„Office“ produktų privatumo valdiklius](products-versions-privacy-controls.md).
 
-„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Jei esate organizacijos administratorius, galite valdyti daugelį jums arba jūsų vartotojams pasiekiamų prisijungus naudojamų funkcijų, bet yra tarnybų, kurios yra būtinos, kad „Office“ veiktų, ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office“. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų su privatumu susijusios strategijos parametrų. Šiuos duomenis galite peržiūrėti naudodami diagnostikos duomenų peržiūros programą.
+„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Jei esate organizacijos administratorius, galite valdyti daugelį jums arba jūsų vartotojams pasiekiamų prisijungus naudojamų funkcijų, bet yra tarnybų, kurios yra būtinos, kad „Office“ veiktų, ir kurių išjungti negalima. Pavyzdžiui, licencijavimo paslauga, kuri patvirtina, kad turite reikiamą licenciją naudotis „Office“. Reikalingi tarnybų duomenys apie šias tarnybas yra renkami ir siunčiami „Microsoft“, nepaisant jokių kitų jūsų sukonfigūruotų su privatumu susijusios strategijos parametrų.
 
 Jei reikia daugiau informacijos, žr.:
 
 - [Reikalingi „Office“ tarnybų duomenys](required-service-data.md)
-- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
 - [„Office“ prisijungus naudojamos funkcijos](connected-experiences.md)
 
 Jei esate organizacijos administratorius, galbūt jus domina šios temos:
@@ -46,6 +39,7 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
+- [Strategijos parametrų naudojimas „Office“ internetinėms programėlėms valdyti](office-web-privacy-controls.md)
 
 ## <a name="list-of-essential-services-for-office"></a>Pagrindinių „Office“ paslaugos sąrašas 
 
@@ -60,7 +54,7 @@ Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 |[Microsoft AutoUpdate (MAU)](#microsoft-autoupdate-mau-events)|„Microsoft AutoUpdate“ (MAU) yra technologija, naudojama „Microsoft“ programoms, kurios gaminamos MacOS, pvz., „Office“, atnaujinti. MAU aptiks, kada reikia naujinti „Office“, atsiųs naujinimus, įskaitant saugos naujinimus, ir juos įdiegs.|
 |[„OneNote“ sinchronizavimas](#onenote-sync-events)|„OneNote“, skirta „Mac“, palaiko tik internete laikomus „OneDrive“ arba „SharePoint Online“ bloknotus. „OneNote“ skirta „Mac“ nuolat sinchronizuoja visas vartotojo pastabas su „OneDrive“ arba „SharePoint Online“. Tai suteikia vartotojams galimybę atidaryti, peržiūrėti ir redaguoti bloknotus visuose savo įrenginiuose, kad jie visada būtų atnaujinti.
  [Paslaugų konfigūravimas](#services-configuration-events)  | Paslaugų konfigūravimo paslauga suteikia galimybę naujinti „Office“ konfigūracijos parametrus ir įgalinti arba išjungti kliento funkcijas. Ji iškviečiama kaskart paleidus „Office“ programą ir suteikia informacijos apie kitas „Office“ konfigūracijas ir paslaugas. Paslaugų konfigūravimo paslauga taip pat valdo, kurios paslaugos laikomos pagrindinėmis paslaugomis.  |
-| [Telemetrija ](#telemetry-events)  | Naudojant telemetrijos paslaugą renkami diagnostikos duomenys iš „Office“ programų. Ji suteikia galimybę rinkti „Office“ sugeneruotus diagnostikos duomenis (tiek būtinuosius, tiek pasirinktinius). Ji taip pat atsakinga už reikalingų „Office“ tarnybų diagnostikos duomenų dalies rinkimą.  |
+| [Telemetrija ](#telemetry-events)  | Naudojant telemetrijos paslaugą renkami diagnostikos duomenys iš „Office“ programų. Ji suteikia galimybę rinkti „Office“ sugeneruotus diagnostikos duomenis (tiek būtinuosius, tiek pasirinktinius). Ji taip pat atsakinga už būtinųjų „Office“ tarnybų duomenų dalies rinkimą.  |
 
 ## <a name="events-and-data-fields-for-essential-services-for-office"></a>Pagrindinių „Office“ paslaugų įvykiai ir duomenų laukai
 
@@ -70,9 +64,6 @@ Tolesniuose skyriuose pateikiama ši informacija:
 - Kiekvieno įvykio aprašas
 - Kiekvieno įvykio duomenų laukų sąrašas
 - Kiekvieno duomenų lauko aprašas
-
-Šiuos įvykius galite peržiūrėti naudodami diagnostikos duomenų peržiūros programą.
-
 
 
 ## <a name="authentication-events"></a>Autentifikavimo įvykiai
@@ -3175,7 +3166,7 @@ Renkami šių laukų duomenys:
 
 - **Tag** – nurodo, kuriame etape nustojome ieškoti susiejimo. Galimos žymės:
   - 0x03113809    Nėra interneto / tarnybos klaida patvirtinant PIN
-   - 0x0311380a    PIN patvirtinimo klaida, išsiųsta su lauko PinValidationFailure reikšme
+  - 0x0311380a    PIN patvirtinimo klaida, išsiųsta su lauko PinValidationFailure reikšme
   - 0x0310410f    Būsena Pavyko, išsiųsta su lauko Success reikšme
   - 0x0311380d    Klaidos, kurias galima bandyti išspręsti pakartotinai (interneto problemos, nežinomos klaidos)
   - 0x0311380e    Klaidos, kurių negalima bandyti išspręsti pakartotinai (baigėsi susiejimo pasiūlymo laikas)
@@ -4578,7 +4569,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-- **App** – taikomosios programos siuntimo procesas
+- **App** – programos įvykio siuntimo procesas
 
 - **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
@@ -11226,7 +11217,7 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
-- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+- **AppInfo_Language** – kalba, kuria veikia programa
 
 - **AppVersionLong** – taikomosios programos versija
 
@@ -14567,7 +14558,7 @@ Renkami šių laukų duomenys:
 
 ## <a name="services-configuration-events"></a>Paslaugų konfigūravimo įvykiai
 
-Tarnybų konfigūravimo paslauga nerenka būtinųjų tarnybų diagnostikos duomenų įvykių.
+Tarnybų konfigūravimo paslauga nerenka būtinųjų tarnybų duomenų įvykių.
 
 ## <a name="telemetry-events"></a>Telemetrijos įvykiai
 

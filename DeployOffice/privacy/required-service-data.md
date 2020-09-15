@@ -13,76 +13,66 @@ ms.custom:
 - Ent_Office_Privacy
 description: Leidžia „Office“ administratoriams apžvelgti privalomuosius tarnybų duomenis, kurie renkami apie „Office“ prijungtąsias funkcijas.
 hideEdit: true
-ms.openlocfilehash: 4b5008d1750de655601dafaa381502e708f9f9d6
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: faa3507708b4768ee3b2b0f51257273c31ad2de7
+ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992745"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47440180"
 ---
-# <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys 
+# <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys
 
-> [!IMPORTANT]
-> Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
-> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
-> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
->
-> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašas, žr. [„Office“ produktų privatumo valdiklius](products-versions-privacy-controls.md).
 
-„Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
+„Office“ sudaro kliento programinės įrangos programos ir [prisijungus naudojamos funkcijos](connected-experiences.md), kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ verslui saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
-Privalomieji tarnybų duomenys yra labai svarbūs, nes jie įgalina šių debesų technologija pagrįstų prijungtųjų funkcijų veikimą, leidžia jas apsaugoti ir užtikrinti, kad klientams jos veiktų, kaip numatyta. Privalomuosius tarnybų duomenis sudaro trijų tipų informacija.
+Kai naudojate prisijungus naudojamas funkcijas, duomenys siunčiami ir apdorojami „Microsoft“, kad šios funkcijos galėtų būti jums teikiamos. Šie duomenys yra labai svarbūs, nes ši informacija leidžia pristatyti šias debesų technologijos pagrindu veikiančias funkcijas. Nurodome šiuos duomenis kaip būtinuosius tarnybos duomenis.
 
-- **Kliento turinys** – turinys, kurį sukuriate naudodami „Office“, pvz., „Word“ dokumente įvestas tekstas; naudojamas kartu su prisijungus naudojamomis funkcijomis.
-- **Funkciniai duomenys** apima informaciją, kurios reikia, kad prijungtoji funkcija galėtų atlikti užduotį, pvz., programos konfigūracijos informacija.
-- **Tarnybos diagnostikos duomenys** – duomenys, kurių reikia, kad tarnyba būtų apsaugota, atnaujinta ir veiktų, kaip numatyta. Kadangi šie duomenys glaudžiai susiję su prijungtosiomis funkcijomis, jie atskirti nuo privalomųjų arba pasirinktinių diagnostikos duomenų lygių.
+Būtinieji tarnybos duomenys gali apimti informaciją, susijusią su prisijungus naudojamos funkcijos veikimu, kurios reikia, kad pagrindinės paslaugos būtų apsaugotos, atnaujintos ir veiktų tinkamai. Jei pasirinksite naudoti prisijungus naudojamą funkciją, kuri analizuoja jūsų turinį, pvz., versti programoje „Word“, jūsų įvestas ir dokumente išverstas tekstas taip pat išsiunčiamas ir apdorojamas, kad būtų galima naudoti prisijungus naudojamą funkciją. Būtinieji tarnybos duomenys taip pat gali apimti informaciją, kurios riekia, kad prisijungus naudojama funkcija galėtų atlikti užduotį, pvz., „Office“ programos konfigūracijos informacija.
 
-## <a name="example-of-required-service-data-for-a-connected-experience"></a>Prijungtosios funkcijos privalomųjų tarnybos duomenų pavyzdys
+## <a name="example-of-required-service-data-for-a-connected-experience"></a>Prisijungus naudojamų funkcijų būtinųjų tarnybos duomenų pavyzdys
 
-Kad geriau suprastumėte privalomuosius tarnybos duomenis, pateikiame pavyzdinį scenarijų, kuriame naudojamas „PowerPoint“ dizaino įrankis – prijungtoji funkcija, padedanti kurti pateikties skaidres. „PowerPoint“ dizaino įrankis patobulina skaidres automatiškai generuodamas dizaino idėjas, iš kurių galite rinktis. Kai keliate turinį į skaidrę, dizaino įrankis veikia fone, kad pritaikytų turinį prie profesionalių maketų.
+Naudoti „PowerPoint“ dizaino įrankį kaip kitą pavyzdį norint parodyti būtinuosius tarnybos duomenis, kuriuos „Microsoft“ siunčia prisijungus naudojamos funkcijos. „PowerPoint“ dizaino įrankis patobulina skaidres automatiškai generuodamas dizaino idėjas, iš kurių galite rinktis. Kai keliate turinį į skaidrę, dizaino įrankis veikia fone, kad pritaikytų turinį prie profesionalių maketų.
 
-Privalomieji tarnybos duomenys, kurie siunčiami „Microsoft“, kad ši prijungtoji funkcija veiktų, gali apimti nurodytuosius toliau.
+Būtinieji tarnybos duomenys, kuriuos „PowerPoint“ dizaino įrankis siunčia „Microsoft“, gali apimti šią informaciją:
+- Tekstas arba vaizdai, kuriuos įtraukėte į skaidrę.
+- Kurioje skaidrėje dirbate ir skaidrės maketą.
+- Ar dizaino idėja buvo tinkamai pritaikyta jūsų skaidrėje.
+- Ar sąveika tarp „PowerPoint“ ir dizaino įrankio tarnybos vykdoma kaip tikėtasi.
 
-- *Kliento turinį*, kuris yra tekstas arba vaizdai, kuriuos įtraukiate į skaidrę.
-- *Funkcinius duomenis*, pvz., informaciją, kurioje skaidrėje dirbate, ir jos maketą.
-- *Paslaugos diagnostikos duomenis*, pvz., įvykius, kurie pasako mums, ar dizaino idėja buvo tinkamai pritaikyta skaidrėje ir ar paslauga buvo tinkamai iškviesta.
+Šie būtinieji tarnybos duomenys padeda užtikrinti, kad „PowerPoint“ dizaino įrankis tinkamai veikia.
 
-## <a name="view-and-manage-required-service-data"></a>Privalomųjų tarnybos duomenų peržiūra ir valdymas
+## <a name="manage-required-service-data"></a>Būtinųjų tarnybos duomenų valdymas
 
-Tarnybų diagnostikos duomenis galite matyti naudodami diagnostikos duomenų peržiūros programą. Daugiau informacijos žr. [Tarnybų diagnostikos duomenų įvykių pavyzdžiai](#examples-of-events-for-service-diagnostic-data).
+Suteikiame jums galimybę pasirinkti, kokių tipų prisijungus naudojamas funkcijas norite naudoti „Office“ programose. Nuo to priklauso, kokie privalomieji tarnybų duomenys siunčiami „Microsoft“. Pavyzdžiui, diktavimas programoje „Word“ yra viena iš prisijungus naudojamų funkcijų, kurios analizuoja jūsų turinį. Jei pasirinksite išjungti prisijungus naudojamą funkciją, kuri analizuoja turinį, „Microsoft“ nebus siunčiami jokie būtinieji diktavimo programoje „Word“ tarnybos duomenys, šio įrankio nebus galima naudoti. Jei reikia daugiau informacijos, žr. [Pasirinkite, ar galima naudoti šias prisijungus naudojamas funkcijas](connected-experiences.md#choose-whether-these-connected-experiences-are-available-to-use).
 
-Suteikiame jums galimybę pasirinkti, kokių tipų prijungtąsias funkcijas norite naudoti „Office“ programose. Nuo to priklauso, kokie privalomieji tarnybų duomenys mums siunčiami. Pavyzdžiui, „PowerPoint“ dizaino įrankis yra viena iš prijungtųjų funkcijų, kurios analizuoja jūsų turinį. Jei pasirinksite išjungti prijungtąją funkciją, kuri analizuoja turinį, mums nebus siunčiami jokie privalomieji „PowerPoint“ dizaino įrankio tarnybos duomenys, nes „PowerPoint“ dizaino įrankio nebus galima naudoti.
+Būtinieji tarnybos duomenys yra atskirti nuo būtinųjų arba pasirenkamųjų [diagnostinių duomenų](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft), kurie yra susiję su informacija apie „Office“ programinės įrangos naudojimą jūsų įrenginyje. Todėl privatumo parametrai, kuriuos pasirinkote būtiniesiems ar pasirinktiniams diagnostikos duomenims, nepaveiks, ar būtinieji tarnybos duomenys siunčiami „Microsoft“.
 
-Taip pat renkami ir įmonei „Microsoft“ siunčiami pagrindinių „Office“ tarnybų, pvz., licencijavimo tarnybos, kuri patvirtina, kad turite tinkamą licenciją naudoti „Office“, privalomieji tarnybų duomenys. Šie pagrindinių tarnybų duomenys siunčiami neatsižvelgiant į kitus su privatumu susijusius parametrus, kuriuos sukonfigūravote.
+Taip pat renkami ir įmonei „Microsoft“ siunčiami [pagrindinių „Office“ tarnybų](essential-services.md), pvz., licencijavimo tarnybos, kuri patvirtina, kad turite tinkamą licenciją naudoti „Office“, būtinieji tarnybų duomenys. Jei esate organizacijos administratorius ir galite valdyti daugelį jums arba jūsų vartotojams pasiekiamų prisijungus naudojamų funkcijų, yra tarnybų, kurios yra būtinos, kad „Office“ veiktų, ir kurių išjungti negalima. Duomenys, skirti pagrindinėms tarnyboms, visada siunčiami ir tvarkomi „Microsoft“, kai naudojate „Office“, neatsižvelgiant į tai, kaip sukonfigūruoti kiti su privatumu susiję parametrai.
 
-Jei reikia daugiau informacijos, žr.:
+Būtinieji tarnybos duomenys pasiekiami naudojant duomenų paslaugų užklausas (DSRs). Daugiau informacijos ieškokite [„Microsoft" privatumo nuostatose](https://privacy.microsoft.com/privacystatement) ir [„Office 365“ duomenų subjekto užklausose, skirtose GDPR ir CCMA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
 
-- [„Office“ prijungtosios funkcijos](connected-experiences.md)
-- [Pagrindinės „Office“ tarnybos](essential-services.md)
-- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
-
-Jei esate organizacijos administratorius, galbūt jus domina šios temos:
+Jei esate organizacijos administratorius ir norite valdyti prisijungus naudojamas funkcijas, žr. šiuos straipsnius:
 
 - [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
 - [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
+- [Strategijos parametrų naudojimas „Office“ internetinėms programėlėms valdyti](office-web-privacy-controls.md)
 
-## <a name="examples-of-events-for-service-diagnostic-data"></a>Tarnybų diagnostikos duomenų įvykių pavyzdžiai
+## <a name="categories-of-required-service-data"></a>Būtinųjų tarnybos duomenų kategorijos
 
-Tarnybos diagnostikos duomenys rodomi diagnostikos duomenų peržiūros programoje ir yra skirstomi į tas pačias kategorijas, kurios taikomos privalomiesiems ir pasirinktiniams diagnostikos duomenims. Pavyzdžiui, *produktų ir tarnybų naudojimas* ar *produktų ir tarnybų našumas*.
+Būtinieji tarnybos duomenys skirstomi į šias kategorijas:
 
-Tarnybos diagnostikos duomenų įvykiai suteikia mums reikiamą informaciją apie tai, ar prijungtoji funkcija veikia taip, kad tikisi klientas. Pavyzdžiui, ar tarnyba, kurią naudoja prijungtoji funkcija, buvo paleista sėkmingai ir prireikus ją buvo galima pasiekti, ar naudojant tarnybą kilo klaidų ar kitų netikėtų problemų (gedimų), bei tarnybos reagavimas ir našumas.
+- turima programinė įranga ir jos sąranka
+- produktų ir tarnybų naudojimas
+- produktų ir tarnybų našumas
+- įrenginio ryšiai ir konfigūracija
 
-Šioje lentelėje pateikiama keletas tarnybos diagnostikos duomenų pavyzdžių.
+Naudojant šių kategorijų informaciją „Microsoft“ gali įvertinti, ar prisijungus naudojama funkcija ar esminė tarnyba yra saugi, atnaujinta ir veikia kaip tikėtasi.
 
-| **Pavadinimas**      | **Aprašas**    |
-| ---------- | --------------------- |
-| Office.Excel.Coauth.SaveXrr     | Įvykis, suaktyvintas programoje „Excel“ naudojant bendradarbiavimo tarnybą, kuris pateikia išsamią informaciją apie atskirus pakeitimus, kurie įrašomi į pakeitimų žurnalą. Jis vykdo gaišties stebėjimą ir nurodo „Excel“ klaidas, susijusias su bendradarbiavimu  |
-| Office.Excel.Coauth.CloseWorkbook  | Įvykis, suaktyvintas programoje „Excel“ naudojant bendradarbiavimo tarnybą, kuris praneša, kai uždaroma darbaknygė. To reikia norint nustatyti, ar yra pakartotinio įkėlimo ir automatinio atnaujinimo klaidų. Šis įvykis matuoja bendradarbiavimo tarnybų veiksmų sėkmę.   |
-| Office.Security.OCX.NonTrustedEncounter    | „Office“ programose (įskaitant „Word“, „Excel“, „Outlook“, „PowerPoint“ ir „Visio“) suaktyvinamas įvykis, kai vartotojas atidaro nepatikimą dokumentą su „ActiveX“ valdikliu. Jis naudojamas siekiant plačiai įvertinti „ActiveX“ valdiklių, įdėtų „Office“ dokumentuose, naudojimą ir imtis rizikos sumažinimo veiksmų kilus saugos incidentui.  |
-| Office.Security.UrlReputation.GetUrlReputation | „Office“ programose (įskaitant „Word“, „Excel“, „PowerPoint“, „Visio“ ir „Publisher“) suaktyvinamas įvykis, kuris seka saugiųjų saitų iškvietimus. Jis naudojamas siekiant užtikrinti, kad saugiųjų saitų tarnyba veiktų tinkamai, ir diagnozuoti kilusias problemas.  |
-| Office.Voice.VoiceManager.StreamingAudio   | „Office“ programose (įskaitant „Word“, „Outlook“ ir „PowerPoint“) suaktyvinamas įvykis, kuris suteikia informacijos apie garso transliacijos sveikatą kalbos tarnybai. Jame yra informacijos apie garso srauto dydį ir visas klaidas, kurios galėjo kilti. Ši informacija naudojama stebint tarnybos sveikatą ir diagnozuojant visas problemas, apie kurias galėjo pranešti klientai. |
+Pvz., produktų ir paslaugų produktyvumo kategorijoje gali būti nenumatytų problemų (gedimų), prastų atsakymų laikų arba veikimo klaidų, arba funkcionalumo klaidų.
+
+Produktų ir paslaugų naudojimo kategorijai informacija gali būti renkama, nurodant, ar tarnyba, kurią naudojo prisijungus naudojamos funkcijos, pradėjo veikti sėkmingai ir buvo pasiekiama, kai reikėjo.
