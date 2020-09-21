@@ -13,23 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 777c0bdb8651a046022e8078820870b67e99f2f7
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: 5772f8b3c105f56833a34f12f7d0e212fc4d55c5
+ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46683274"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47941000"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
-> [!IMPORTANT]
-> Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
-> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
-> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
->
-> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašas, žr. [Galimi „Office“ produktų privatumo valdikliai](products-versions-privacy-controls.md).
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
@@ -42,7 +36,7 @@ Būtinieji diagnostikos duomenys padeda nustatyti „Office“ problemas, kurios
 Daugiau informacijos apie diagnostikos duomenis, žr.:
 
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
-- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
 Jei esate organizacijos administratorius, galbūt jus domina šios temos:
 
@@ -237,9 +231,9 @@ Informacija, padėsianti suprasti sėkmingus veiksmus su įvykių rinkiniu.
 
   - **CV** – reikšmė, nurodanti ryšį tarp veiklų ir antrinių veiklų. Leidžia mums atkurti ryšį tarp įdėtųjų veiklų.
 
-  - **Duration** – laikas, reikalingas vykdyti veiklai. Leidžia mums nustatyti veikimo problemas, neigiamai veikiančias vartotojo patirtį.
+  - **Duration** – laikas, reikalingas vykdyti veiklai. Leidžia mums nustatyti veikimo problemas, neigiamai veikiančias vartotojo funkcijas.
 
-  - **Result**.**Code** – taikomosios programos nustatytas kodas, skirtas identifikuoti pateiktus rezultatus. Leidžia mums nustatyti konkretesnę pateikto sutrikimo informaciją, pvz., trikties kodą, naudojamą problemoms klasifikuoti ir šalinti.
+  - **Result**.**Code** – taikomosios programos nustatytas kodas, skirtas identifikuoti pateiktą rezultatą. Leidžia mums nustatyti konkretesnę pateikto sutrikimo informaciją, pvz., trikties kodą, naudojamą problemoms klasifikuoti ir šalinti.
 
   - **Result.Tag** – sveikųjų skaičių žymė, nurodanti kode vietą, kurioje buvo sugeneruotas rezultatas. Leidžia mums aiškiai nustatyti kodo vietą, kurioje buvo sugeneruotas rezultatas, įgalinantis klasifikuoti triktis.
 
@@ -365,7 +359,7 @@ Konkretaus įvykio informacija, įskaitant jo unikalų identifikatorių seanse.
 
   - **RuleVersion** – duomenis generavusios taisyklės identifikatorius, jeigu jie buvo sugeneruoti taisyklės. Leidžia mums nustatyti dalies duomenų šaltinį, kad galėtume patvirtinti ir tvarkyti įvykių parametrus.
 
-  - **SampleRate** – indikatorius, nurodantis koks vartotojų procentas siunčia šią informacijos dalį. Tai leidžia mums atlikti statistinę duomenų analizę ir nereikia, kad dažniausius naudojamus duomenų elementus siųstų visi vartotojai.
+  - **SampleRate** – indikatorius, nurodanti koks vartotojų procentas siunčia šį duomenų fragmentą. Tai leidžia mums atlikti statistinę duomenų analizę ir nereikia, kad dažniausius naudojamus duomenų elementus siųstų visi vartotojai.
 
   - **SchemaVersion** – schemos versija, naudojama generuoti diagnostikos duomenis. Būtina valdyti iš kliento siunčiamus duomenis. Taip užtikrina kiekvieno kliento siunčiamų duomenų pokyčius per tam tikrą laiką.
 
@@ -417,7 +411,7 @@ Informacija apie proceso seansą.
 
   - **SamplingMethod** – būdas, naudojamas nustatyti pavyzdžių rinkimo strategijai. Leidžia mums suprasti, kokie duomenys gaunami iš seanso.
 
-  - **Sequence** – unikalus skaitinis seanso identifikatorius. Leidžia analizuoti seansų eiliškumą nustatyti, kokiu atveju galėjo įvykti problema.
+  - **Sequence** – unikalus skaitinis seanso identifikatorius. Leidžia analizuoti seansų eiliškumą, kad nustatyti, kokiu atveju galėjo įvykti problema.
 
   - **Start** – procesas seanso įkrovos trukmė. Leidžia mums nustatyti seanso pradžios laiką.
 
@@ -450,7 +444,7 @@ Informacija apie proceso seansą.
 
 - **Activity_DetachedDurationInMicroseconds** – laikas, kai veikla yra laukimo būsenoje ir neatliekama jokio realaus darbo, bet laikas vis tiek įskaitomas į bendrą veiklos laiką.
 
-- **Activity_DurationInMicroseconds** – laikas, kai veikla buvo vykdoma. Leidžia mums nustatyti veikimo problemas, neigiamai veikiančias vartotojo patirtį.
+- **Activity_DurationInMicroseconds** – laikas, kai veikla buvo vykdoma. Leidžia mums nustatyti veikimo problemas, neigiamai veikiančias vartotojo funkcijas.
 
 - **Activity_Expiration** – skaitinio formato data, nurodanti, kada šis įvykis nebebus siunčiama iš klientų
 
@@ -592,7 +586,7 @@ Informacija apie proceso seansą.
 
 - **eventpriority** – telemetrijos įvykių prioritetas, lyginant su kitais įvykiais, kad mūsų sistemos galėtų sėkmingai valdyti ateinančius įvykius
 
-- **first_launch_date** – pirmą kartą paleidus programą, tai padės mums suprasti, kada atsirado pirmoji problema
+- **first_launch_date** – pirmą kartą paleidus programą, tai padės mums suprasti, kada pirmą kartą atsirado problema
 
 - **hashed_email** – pseudonimo identifikatorius, nurodantis dabartinio vartotojo el. paštą
 
@@ -784,6 +778,7 @@ Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai galėt�
 #### <a name="officeonenotefirstrunfirstrunformsa"></a>Office.OneNote.FirstRun.FirstRunForMSA
 
 Kritinis signalas, naudojamas siekiant užtikrinti, kad nauji vartotojai („Microsoft“ paskyra) gali sėkmingai paleisti ir naudoti „OneNote“ pirmą kartą.
+
 Telemetrija naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Jei vartotojai negali paleisti programos pirmą kartą, suaktyvinamas didelės svarbos incidentas.
 
 Renkami šių laukų duomenys:
@@ -1024,7 +1019,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Informacija apie sėkmingą arba nesėkmingą „Office 365“ nuomotojo administratoriui priskirtų papildinių poreikį atnaujintiems duomenims. Naudota sveikatos metrikoms, diagramoms ir kliento problemų analizei. ExchangeGetLastUpdate visada bus paleista įkrovos metu kaip dalis pagrindinio kompiuterio kodo ir nustatys, ar buvo vartotojui pakeistos papildinio užduotys. Jei taip, tuomet osf.DLL bus įkeltas, kad galėtume iškviesti ExchangeGetEntitlements gauti konkrečius priskyrimus (ir ExchangeGetManifests bus iškviestas, kad būtų gauti visos naujos reikalingos deklaracijos).  ExchangeGetEntitlements (ir ExchangeGetManifests) gali taip pat būti iškviestos pagal poreikį, kai jau veikia pagrindinio kompiuterio taikomoji programa. Norima, kad nebūtų įkeltas didelis DLL, jei mums jis nereikalingas. Jeigu nepavyksta pirmasis tarnybos kvietimas, be šio įvykio nurodyto lauke Privaloma, negalėtume pasakyti, ar vartotojai negali gauti jiems priskirtų papildinių. Tai taip pat yra pagrindinis įspėjimas dėl galimų bet kokių autentifikavimo problemų, su kuriomis galime susidurti kreipdamiesi į savo paslaugą.
+Informacija apie sėkmingą arba nesėkmingą „Office 365“ nuomotojo administratoriui priskirtų papildinių poreikį atnaujintiems duomenims. Naudota sveikatos metrikoms, diagramoms ir kliento problemų analizei. ExchangeGetLastUpdate visada bus paleista įkrovos metu kaip dalis pagrindinio kompiuterio kodo ir nustatys, ar buvo vartotojui pakeistos papildinio užduotys. Jei taip, tuomet osf.DLL bus įkeltas, kad galėtume iškviesti ExchangeGetEntitlements ir gauti konkrečius priskyrimus (ir ExchangeGetManifests bus iškviestas, kad būtų gautos visos naujos reikalingos deklaracijos).  ExchangeGetEntitlements (ir ExchangeGetManifests) gali taip pat būti iškviestos pagal poreikį, kai jau veikia pagrindinio kompiuterio taikomoji programa. Norima, kad nebūtų įkeltas didelis DLL, jei mums jis nereikalingas. Jeigu nepavyksta pirmasis tarnybos kvietimas, be šio įvykio nurodyto lauke Privaloma, negalėtume pasakyti, ar vartotojai negali gauti jiems priskirtų papildinių. Tai taip pat yra pagrindinis įspėjimas dėl galimų bet kokių autentifikavimo problemų, su kuriomis galime susidurti kreipdamiesi į savo paslaugą.
 
 Renkami šių laukų duomenys:
 
@@ -1300,7 +1295,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_appguard_launchfile"></a>Office_AppGuard_LaunchFile
 
-Šis įvykis nurodo programos apsaugos failo paleidimo vykdymą. Mes galėsime nustatyti, kiek procentų mūsų sėkmingai paleidome „Word“, „Excel“ arba „PowerPoint“ failus ir nepavykusių bandymų klaidų kodus.
+Šis įvykis nurodo „Application Guard“ paleidimo failo vykdymą. Mes galėsime nustatyti, kiek procentų mūsų sėkmingai paleidome „Word“, „Excel“ arba „PowerPoint“ failus ir nepavykusių bandymų klaidų kodus.
 
 Renkami šių laukų duomenys:
 
@@ -2657,6 +2652,16 @@ Renkami šių laukų duomenys:
 - **Data_SilhouetteDuration** – failo atidarymo generavimo trukmė.
 
 - **Data_TimeSplitMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme, pradžios laiko žyma ir trukme. 
+
+#### <a name="officeandroiddocsuipaywallcontrolskuchoosertoggled"></a>Office.Android.DocsUI.PaywallControl.SkuChooserToggled
+
+Telemetrijos naudojimas, kad būtų galima peržiūrėti, kiek kartų vartotojas pereina per skirtingus SKU prieš bandydamas įsigyti. Naudojamas suprasti SKU parinkiklio naudojimą ir optimizuoti pirkimo programoje funkcijas būsimose versijose.
+
+Renkami šių laukų duomenys:
+
+- **EventDate** – įvykio įvykimo laiko žyma 
+
+- **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
 
 #### <a name="office_android_earlytelemetry_expansionfilesavailability"></a>Office_Android_EarlyTelemetry_ExpansionFilesAvailability
 
@@ -4206,7 +4211,6 @@ Renkami šių laukų duomenys:
 - **hostAppRing** – vartotojų, kuriems buvo paskirstyta programa, ratas.
 
 - **properties** – pateikiami kiekvieno įvykio surinkti papildomi metaduomenys. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
-  - **ClientTimeStamp** – laiko žyma, kada įvykis buvo užregistruotas kliente.
 
 - **publicEventName** – viešasis įvykio pavadinimas.  
 
@@ -5090,6 +5094,57 @@ Renkami šių laukų duomenys:
 
 - **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
 
+#### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
+
+Šis kritinė naudojimo telemetrija surenkama, kai vartotojui rodomas mokamos prieigos prie informacijos valdiklis, ir naudojama norint suprasti vartotojo įsigijimo programoje funkcijas ir optimizuoti būsimas versijas.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas)
+
+- **isFRE** – Bulio logika – ar rodome pirmojo vykdymo funkcijas ar įprastą vartotojo sąsają?
+
+#### <a name="officeiospaywallpaywallstats"></a>Office.iOS.Paywall.Paywall.Stats
+
+Šie seansu pagrįsti metaduomenys renkami, kai vartotojui rodoma mokamos prieigos prie informacijos vartotojo sąsaja, sąveikos trukmė ir ar buvo mėginama įsigyti, ar jis buvo sėkmingas arba nesėkmingas.  Duomenys naudojami visų mokėjimo funkcijų naudojimui ir derinimui suprasti, įsigijimo programoje funkcijoms optimizuoti ir trikčių diagnostikai būsimose versijose.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+
+- **isFRE** – Bulio logika – ar rodome pirmojo vykdymo funkcijas ar įprastą vartotojo sąsają?
+
+- **status** – eilutė – išėjimo iš mokamos prieigos prie informacijos būsena. Pvz., „initiated“ (inicijuota), „paymentDone“ (mokėjimas atliktas), „provisionFailed“ (parengimas nepavyko)
+
+- **userDuration** – dvigubas – vartotojo praleisto mokomoje prieigoje prie informacijos trukmė milisekundėmis
+
+#### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
+
+Šis įvykis renka funkcijas ir taikomąsias programas, kurias vartotojas išplečia iš elemento „Žr. daugiau pranašumų“, ir praleisto laiko trukmę.  Duomenys naudojami norint suprasti ypatybės „žr. visus pranašumus“ naudojimą, kad būtų galima dar labiau optimizuoti būsimųjų versijų naudojimo funkcijas.
+
+Renkami šių laukų duomenys:
+
+- **appsExpanded** – eilutė - kableliu atskirtų tarnybų arba taikomųjų programų, kurioms pranašumai buvo išskleisti, sąrašas.
+
+- **productId** – eilutė – vartotojo žiūrimo produkto „App Store“ ID, kuriam siūloma daugiau naudų
+
+- **userDuration** – dvigubas – vartotojo praleisto naudų ekrane trukmė milisekundėmis.
+
+#### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
+
+Ši naudojimo telemetrija renkama, kad galima būtų matyti, kaip vartotojas įėjo į SKU parinkiklį, kiek laiko vartotojas praleidžia SKU parinkiklio ekrane ir kodėl išėjo iš SKU parinkiklio.  Duomenys naudojami suprasti SKU parinkiklio naudojimą ir optimizuoti pirkimo programoje funkcijas būsimose versijose.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+
+- **exitReason** – String – išėjimo iš SKU parinkiklio priežastis. Pvz., „BuyButton“ (pirkimo mygtukas), „CloseButton“ (uždarymo mygtukas)
+
+- **isFRE** – Bulio logika – ar rodome pirmojo vykdymo funkcijas ar įprastą vartotojo sąsają?
+
+- **userDuration** – dvigubas – vartotojo praleisto SKU parinkiklyje trukmė milisekundėmis
+
+
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office. LivePersonaCard. ConfigurationSetAction
 
 Registruojame, kada vartotojas yra programoje, kuri įkelia asmens kortelę, tikintis, kad vartotojas atidarys „Live“ asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai įkelta. 
@@ -5541,7 +5596,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="office_officemobile_pdfviewer_pdffileoperations"></a>Office_OfficeMobile_PdfViewer_PdfFileOperations
 
-Įvykis renkamas naudojantis „Office“ programa, skirta „Android“. Jis įrašomas, kai vykdoma PDF failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal PDF failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad PDF failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti PDF failų operacijų veikimą.
+Įvykis renkamas naudojantis „Office“ programa, skirta „Android“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad PDF failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą.
 
 Renkami šių laukų duomenys:
 
@@ -5584,8 +5639,6 @@ Renkami šių laukų duomenys:
 Įvykis renkamas naudojantis „Office“ programa, skirta „ iOS“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad PDF failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą. 
 
 - **Data_Doc_FileOpSessionID** – dokumento seanso unikalusis ID. 
-
-- **Data_Doc_URLHash** – failo URL GUID 
 
 - **Data_ErrorCode** – klaida, rodoma failo atidarymo trikčių / atsisiuntimo trikčių / atsisiuntimo atšaukimo atveju 
 
@@ -8139,7 +8192,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="settings_action"></a>settings_action
 
-Leidžia aptikti situacijas, kai gali būti neigiamas poveikis jūsų gebėjimui konfigūruoti programos parametrus, pvz., pranešimų parametrus, pagrindinę el. pašto paskyrą ir konfigūruoti el. pašto parašą.
+Šis įvykis surenka konfigūravimo informaciją dalyje Parametrai. Duomenys leidžia aptikti situacijas, kai gali būti neigiamas poveikis vartotojo gebėjimui konfigūruoti programos parametrus, pvz., pranešimų parametrus, pagrindinę el. pašto paskyrą ir konfigūruoti el. pašto parašą.
 
 Renkami šių laukų duomenys: 
 
@@ -8149,49 +8202,44 @@ Renkami šių laukų duomenys:
 
 - **auth_type** – paskyros naudojamas autentifikavimo tipas, kad suprastume, kurį vidinės sistemos sinchronizavimo sluoksnį naudojame ir būtų galima diagnozuoti problemas 
 
-- **auth_type** – nurodo vidinio autentifikavimo tipą, kuris leidžia žinoti, ar kilo konkretaus paskyros tipo problemų
-
-- **badge_count_state** – nurodo, kokio tipo ženklelių skaičiaus pageidavo vartotojas, t. y. nėra ženklelių, tik reikšmingiausi gautieji ir t. t. 
-
 - **changed_folder** – fiksuoja, ar buvo pakeistas aplankas, kad galėtume diagnozuoti problemas. 
-
-- **changed_folder** – nustato, ar šis veiksmas buvo archyvuotas, suplanuotas, ar kitas veiksmas.
 
 - **delete_scope** – paskyros naikinimo metu, ar panaikinote paskyrą iš šio įrenginio, ar iš visų įrenginių su „Outlook“.  
 
-- **delete_scope** – seka, ar šis veiksmas buvo susijęs su asmens panaikinimu tik šiame įrenginyje, ar visuose įrenginiuose, jei taikoma. 
-
 - **enabled_state** – ar tinkamai sukonfigūruotas automatinis atsakymas, kontaktų įrašymas ir išorinių vaizdų blokavimo parametrai  
 
-- **enabled_state** – ar įgalinta su veiksmu susijusi būsena
+- **notification_action** – skirta tikrinti, ar konfigūravote kokius nors pranešimų veiksmus el. laiškų klasifikavimui, kad galėtumėte įsitikinti, jog šis nustatymas veikia tinkamai 
 
-- **in_app_language** – pasirinkta programos kalba, eilutės tipas (numatytoji, EN-US, FA, RU ir t. t.)  
+- **notification_action_number** – kad būtų galima patikrinti, ar jūsų pranešimų veiksmai (pirmas veiksmas arba antras veiksmas) yra tinkamai sukonfigūruoti
 
-- **notification_state** – nurodo, kokio tipo ženklelių skaičiaus pageidavo vartotojas, t. y. nėra ženklelių, tik reikšmingiausi gautieji ir t. t.
+- **server_type** – panašiai kaip auth_type, nurodo, kokio tipo paskyrą turite, kad galėtume geriau diagnozuoti problemas.  Pavyzdžiai: „Office365“, „Gmail“, „Outlook“
 
-- **server_type** – panašiai kaip auth_type, nurodo, kokio tipo paskyrą turite, kad galėtume geriau diagnozuoti problemas. Pavyzdžiai** – „Office365“, „Gmail“, „Outlook“
+- **setting_properties** – seka ypatybių sąsają su parametro veiksmu, aprašytu toliau: 
+   - **alternate_app_icon_setting** – pasirinkta alternatyvi taikomosios programos piktograma (šviesi, tamsi)
+   - **auth_type** – nurodo vidinio autentifikavimo tipą, kuris leidžia žinoti, ar kilo konkretaus paskyros tipo problemų
+   - **badge_count_state** – nurodo, kokio tipo ženklelių skaičiaus pageidavo vartotojas, t. y. nėra ženklelių, tik reikšmingiausi gautieji ir t. t. 
+   - **changed_folder** – nustato, ar šis veiksmas buvo archyvuotas, suplanuotas, ar kitas veiksmas.
+   - **delete_scope** – seka, ar šis veiksmas buvo susijęs su asmens panaikinimu tik šiame įrenginyje, ar visuose įrenginiuose, jei taikoma. 
+  - **enabled_state** – ar įgalinta su veiksmu susijusi būsena
+  - **in_app_language** – pasirinkta programos kalba, eilutės tipas (numatytoji, EN-US, FA, RU ir t. t.)
+  - **notification_action_setting** – nurodo, jei taikoma, pranešimo veiksmo parametrų, susijusių su šiuo veiksmu, informaciją.
+    - **notification_action** – nurodo, ką vartotojas bandė daryti, t. y. pažymėti vėliavėle, naikinti, archyvuoti, kad galėtume nustatyti, kokio el. laiško veiksmo vartotojas norėjo pranešime ir ar veiksmas pavyko. 
+    - **notification_action_number** – nurodo, kuris veiksmo numeris (du iš trijų veiksmų yra tinkinami) buvo priskirtas pranešimų veiksmui, t. y. pirmas veiksmas, antras veiksmas. Tai leidžia nustatyti, ar kilo problemų dėl konkretaus veiksmo.
+   - **notification_state** – nurodo, kokio tipo ženklelių skaičiaus pageidavo vartotojas, t. y. nėra ženklelių, tik reikšmingiausi gautieji ir t. t.
+   - **server_type** – nurodo vidinio serverio tipą, kuris leidžia žinoti, ar kilo konkretaus serverio tipo problemų
+   - **source** – nurodo, kas yra pranešimų šaltinis, jei taikoma, iš parametrų arba nustatymo netrukdyti
+   - **swipe_setting** – nurodo, jei taikoma, braukimo parametrų, susijusių su šiuo veiksmu, informaciją.
+     - **swipe_action** – nurodo, ką vartotojas bandė daryti, t. y. pažymėti vėliavėle, naikinti, archyvuoti, kad galėtume nustatyti, kokio veiksmo vartotojas norėjo ir ar veiksmas pavyko. 
+     - **swipe_direction** – nurodo, kokiu būdu vartotojas nustatė braukimo naudojimą, t. y. iš kairės į dešinę arba iš dešinės į kairę. Tai leidžia nustatyti, ar kilo problemų dėl konkrečios braukimo krypties.
+   - **ui_mode_setting** – pasirinktas vartotojo sąsajos režimas (tamsus, šviesus, sistemos numatytasis, mažai akumuliatoriaus energijos naudojantis ir t. t.)
+   - **signature_setting** – nurodo, ar parametras buvo taikomas visoms paskyroms, ar atskirai paskyrai
 
-- **server_type** – nurodo vidinio serverio tipą, kuris leidžia žinoti, ar kilo konkretaus serverio tipo problemų
+- **state_changed_to** – skirta tikrinti, ar tinkamai sukonfigūruotas aplanko reikšmingiausi Gautieji įjungta / išjungta parametras 
 
-- **setting_properties** – seka ypatybių sąsają su parametro veiksmu 
-
-- **signature_setting** – nurodo, ar parametras buvo taikomas visoms paskyroms, ar atskirai paskyrai
-
-- **source** – nurodo, kas yra pranešimų šaltinis, jei taikoma, iš parametrų arba nustatymo netrukdyti
-
-- **state_changed_to** – skirta tikrinti, ar tinkamai sukonfigūruotas aplanko reikšmingiausi Gautieji įjungta/išjungta parametras 
-
-- **swipe_action** – skirta tikrinti, ar konfigūravote kokius nors braukimo veiksmus el. laiškų klasifikavimui, kad galėtumėte įsitikinti, kad šis nustatymas veikia tinkamai 
-
-- **swipe_action** – nurodo, ką vartotojas bandė daryti, t. y. pažymėti vėliavėle, naikinti, archyvuoti, kad galėtume nustatyti, kokio veiksmo vartotojas norėjo ir ar veiksmas pavyko. 
+- **swipe_action** – skirta tikrinti, ar konfigūravote kokius nors braukimo veiksmus el. laiškų klasifikavimui, kad galėtumėte įsitikinti, jog šis nustatymas veikia tinkamai 
 
 - **swipe_direction** – skirta tikrinti, ar braukimo kryptys (kairė arba dešinė) sukonfigūruotos tinkamai
 
-- **swipe_direction** – nurodo, kokiu būdu vartotojas nustatė braukimo naudojimą, t. y. iš kairės į dešinę arba iš dešinės į kairę. Tai leidžia nustatyti, ar kilo problemų dėl konkrečios braukimo krypties.
-
-- **swipe_setting** – nurodo, jei taikoma, braukimo parametrų, susijusių su šiuo veiksmu, informaciją.
-
-- **ui_mode_setting** – pasirinktas vartotojo sąsajos režimas (tamsus, šviesus, sistemos numatytasis, mažai akumuliatoriaus energijos ir t. t.)
 
 #### <a name="sidebar_action"></a>sidebar_action
 
@@ -10960,6 +11008,24 @@ Renkami šių laukų duomenys:
 
 - **view_duration** – nurodo kaip ilgai užtruko generuoti įvairius vartotojo sąsajos kalendoriaus komponentus, kad būtų galima aptikti veikimo problemas, darančias įtaką kalendoriaus patirčiai
 
+#### <a name="contact_action"></a>contact_action
+
+Šis įvykis paleidžiamas atliekant skirtingus veiksmus su kontaktais – peržiūrint, naujinant ir naikinant kontaktus, taip pat peržiūrint kontaktų sąrašą. Jis naudojamas nustatyti, ar yra kokių nors efektyvumo regresijų, susijusių su kontaktais.
+
+Renkami šių laukų duomenys: 
+
+- **accounts_with_filters** – paskyrų, kurių filtrai taikomi kontaktų sąrašui, skaičius
+
+- **action** – veiksmas, kuris buvo atliktas, pvz., kontakto peržiūra
+ 
+- **duration_initial_view_load** – trukmė nuo rodinio atidarymo iki pirminio kontaktų sąrašo įkėlimo
+
+- **duration_show_contacts** – trukmė nuo rodinio atidarymo, kad kontaktų sąraše būtų rodomi kontaktai
+ 
+- **total_contacts** – kontaktų, kuriems netaikomi filtrai, skaičius
+ 
+- **total_filtered_contacts** – kontaktų, kuriems taikomi filtrai, skaičius
+
 #### <a name="conversation_load_time"></a>conversation_load_time
 
 Šis įvykis leidžia nustatyti ir išspręsti problemas, kylančias dėl el. pašto pokalbių įkėlimo, kad būtų galima užtikrinti numatytą el. laiškų įkėlimą.
@@ -11541,6 +11607,16 @@ Renkami šių laukų duomenys:
 
 - **TypeId** – GUID, skirtas sąsajai, kuriai šis metodas iškviečiamas
 
+#### <a name="officeiospaywallfailedscreenretrybuttontap"></a>Office.iOS.Paywall.FailedScreen.RetryButtonTap
+
+Ši naudojimo telemetrija renkama, kad būtų galima žinoti kada nepavyko įsigyti / parengti / aktyvinti ir vartotojas palietė mygtuką „Kartoti“.  Naudojamas norint diagnozuoti triktis pirkimo klaidų scenarijams, dėl kurių teko kartoti veiksmą ir pagerinti proceso patikimumą.
+
+Renkami šių laukų duomenys:
+
+- **failureReason** – eilutė – nurodo dėl kurios klaidos vartotojas kartojo. Pvz., „provisioningFailed“ (parengimas nepavyko), „purchaseFailed“ (įsigijimas nepavyko), „activationFailed“ (aktyvinimas nepavyko).
+
+- **productid** – eilutė – produkto „App Store“ ID, dėl kurio vartotojas kartoja nepavykusią užklausą
+
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -11663,13 +11739,23 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
 
-Šis įvykis paleidžiamas po repeticijos seanso sustabdymo. Kartu su „Office.PowerPoint.PPT.Android.RehearseView.StartSession“ tai bus pirmasis bet kokių gedimų arba klaidų, su kuriomis susiduria vartotojas, indikatorius.
+Šis įvykis reiškia, kad vartotojas sustabdė kartojimo seansą. Kartu su „Office.PowerPoint.PPT.Android.RehearseView.StartSession“ tai bus pirmasis bet kokių gedimų arba klaidų, su kuriomis susiduria vartotojas, indikatorius.
 
 Renkami šių laukų duomenys:
+
+- **ConnectionCreationTime** – tarnybų ryšiams kurti reikalingas laikas.
+
+- **CountDownAlertTime** – laikas, kuriam buvo rodomas atgalinės atskaitos įspėjimas.
+
+- **CountdownInitTime–** – laikas tarp skaidrių demonstravimo užbaigimo ir atgalinės atskaitos pradėjimo.
 
 - **CritiqueSummary** – santrauka, kokius skaičius pamatė visi kritikos vartotojai.
 
 - **ExitEventCode** – kodas, skirtas nustatyti, pagal kurį scenarijų vartotojas išeina iš repeticijos seanso, nesvarbu, ar tai buvo klaidos scenarijus, ar sėkmingas išėjimas. 
+
+- **FRETime** – laikas nuo FRE ekrano pradėjimo rodyti iki atmetimo, inicijuoto vartotojo. 
+
+- **MicrophonePermissionTime** – laikas, kurį buvo rodomas mikrofono įspėjimas iki vartotojas pasirinko vieną iš parinkčių.
 
 - **PauseRehearsingCount** – skaičius, kiek kartų vartotojas spustelėjo pristabdyti repeticijas.
 
@@ -11677,7 +11763,7 @@ Renkami šių laukų duomenys:
 
 - **ResumeRehearsingCount** – skaičius, kiek kartų vartotojas spustelėjo tęsti repeticijas.
 
-- **Sessionid** – tai kalbos pagrindinių durų seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
+- **Sessionid** – tai kalbos pagrindinių durų seanso ID. Tai naudojama derinti paslaugų žurnalus.
 
 - **SlideshowViewLoadTime** – skaidrių demonstracijos įkėlimo laikas.
 
@@ -11730,7 +11816,7 @@ Renkami šių laukų duomenys:
 
 - **FirstAudioDelayInMs** – tai laikas, per kurį turi būti gaunami pirmieji garsiniai duomenys.
 
-- **InitMediaCaptureLayerDurationInMs** – tai laikas, per kurį turi būti inicijuotas medijos/garso fiksavimo sluoksnio inicijavimas.
+- **InitMediaCaptureLayerDurationInMs** – tai laikas, per kurį turi būti inicijuotas medijos / garso fiksavimo sluoksnis.
 
 - **LocallyDroppedMessageCount** – tai bendras pranešimų, kurie buvo išmesti vietoje, skaičius.
 
@@ -12403,6 +12489,25 @@ Renkami šių laukų duomenys:
 
 - **UriScheme** – URL schema
 
+#### <a name="officeandroidauthaceerrors"></a>Office.Android.AuthACEErrors
+
+Šis įvykis naudoja „Microsoft“ paskyrą (MSA), kad nustatytų, kuris vartotojas bando prisijungti prie taikomosios programos, ir kuri tuo metu iš minimų telemetrijų įjungiama kaip nepavykusio bandymo dalis.  
+
+Šis įvykis padeda atlikti MSA prisijungimo klaidų platinimo analizę, kuri padeda suprasti, kodėl MSA prisijungimo srauto užbaigimas yra nesėkmingas.
+
+Renkami šių laukų duomenys:
+
+- **ExceptionsName** – nurodo išimčių klases pagal išimčių žymas, kurios pateikiamos prisijungimo prie „Microsoft“ paskyros srauto metu.
+
+- **ExceptionsTag** – nurodo, kurios srauto išimtys kartu įvyksta MSA prisijungimo sraute.
+
+- **IDCRLACEErrorCode** – pateikia klaidos kodą, atsirandantį MSA prisijungimo srauto metu. Skirtingi klaidų kodai, paminėti %SRCROOT%\identity\coreapi\public\IdentityData.h
+
+- **IDCRLAuthenticationStatusErrorCode** – nurodo „Microsoft“ paskyros (MSA) neteisingos autentifikavimo būsenos klaidų kodus.
+
+- **IDCRLUserInteractionMissingError** – nurodo, ar prisijungimo prie „Microsoft“ paskyros (MSA) srautas buvo iškviestas su showUI žyme kaip klaidingas rezultatas.
+
+
 #### <a name="officeandroidbcserrors"></a>Office.Android.BCS.Errors
 
 Dvejetainės konvertavimo klaidos telemetrija, skirta funkcijai Spausdinti ir bendrinti kaip PDF.  „Microsoft“ šią funkciją naudoja, BCS konvertavimo „Word“, „Excel“ ar „PowerPoint“ programose trikčių vietoms nustatyti.
@@ -12494,6 +12599,37 @@ Renkami šių laukų duomenys:
 - **Data_ExceptionType** – pasirinktinis teksto laukas, nurodantis išimties, gautos iš išeitinio kodo, pavadinimą.
 
 - **Data_MethodName** – tekstas, nurodantis išeitinio kodo metodo, kuriame įvyko klaida, pavadinimą.
+
+#### <a name="office_android_earlytelemetry_extractionerror"></a>Office_Android_EarlyTelemetry_ExtractionError
+
+Kad sumažintumėte „Android“ skirtų „Office“ programėlių dydį, glaudiname galutinio paketo resursus. Vykdymo metu pirmiausia išskleidžiame šiuos išteklius ir tik tada naudojame. Kartais išskleidimo metu įvyksta nenumatytų klaidų, dėl kurių programėlė sugenda. 
+
+Šio įvykio metu renkame tam tikrą diagnostinę informaciją, susijusią su išskleidimu, pvz., išskleidžiamo ištekliaus pavadinimą, kelią iki išskleidimo vietos ir t. t., laisvą vietą diske ir pan. Šie duomenys renkami tik tada, kai yra išskleidimo klaidų.
+
+Mes naudojame šiuos duomenis norėdami suprasti išskleidimo triktis ir pagerinti mūsų programėlių naudojimo patirtį.
+
+Renkami šių laukų duomenys:
+
+- **Data_ArchiveName** – išskleidžiamo ištekliaus pavadinimas.
+
+- **Data_ArchivePath** – kelias iki vietos, kurioje laikinai talpinamas išteklius.
+
+- **Data_ArchiveSizeKB** – išskleidžiamo ištekliaus dydis.
+ 
+- **Data_ClassName** – failo pavadinimas ištekliaus kode, kuriame įvyko klaida.
+
+- **Data_ErrorDetail** – tekstas, pateikiantis išsamesnę informaciją apie klaidos priežastį, pvz., klaidos kodą ir t. t.
+
+- **Data_ErrorMessage** – tekstas, aprašantis išskleidimo metu aptiktos klaidos tipą.
+
+- **Data_ExtractionDestinationPath** – kelias iki vietos, kurioje išteklius turi būti įrašytas po išskleidimo.
+
+- **Data_FreeDiskSpaceMB** – diske esančio laisvos disko vietos kiekis, išmatuotas megabaitais. 
+
+- **Data_ItemToExtract** – išskleidžiamo ištekliaus pavadinimas.
+
+- **Data_MethodName** – metodo pavadinimas ištekliaus kode, kuriame įvyko klaida.
+
 
 #### <a name="office_android_earlytelemetry_registryerrors"></a>Office_Android_EarlyTelemetry_RegistryErrors
 
