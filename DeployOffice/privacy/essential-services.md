@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 8b4c473736bfe19edffde227be009dd2555852df
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
+ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440497"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47941036"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -426,6 +426,461 @@ Renkami šių laukų duomenys:
   - **Wamapi** – identifikuoja, kuri WAM API iškviesta
 
   - **Wamtelemetrybatch** – šiuo metu nenaudojamas. Ateityje leis WAM komponentui pateikti papildomą informaciją, susijusią su autentifikavimo įvykiu.
+
+
+### <a name="officematsoneauthactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.ActionMicrosoftOfficeWin32
+
+„Microsoft“ autentifikavimo telemetrijos sistemos (MATS) įvykiai renkami, kai „Office“ bando gauti autentifikavimo atpažinimo ženklą (tyliai arba pateikdamas raginimus). Kai bandymas gauti nepavyksta, įtraukiama klaidos informacija. Šie įvykiai padeda vartotojams išvengti netinkamos autentifikavimo būsenos:
+
+1) Nustatant, ar klientai gali sėkmingai gauti paslaugos autentifikavimo atpažinimo ženklą, ar jų autentifikavimo būsena yra netinkama.
+
+2) Įvertinant, ar kliente arba paslaugose padaryti keitimai lėmė kritinį vartotojo autentifikavimo patirties ir patikimumo suprastėjimą.
+
+3) Kai įvyksta triktis, šie signalai perduoda svarbius trikties kodus iš atsakingo komponento („Office“ kliento kodo, autentifikavimo bibliotekų arba tarnybų), kuriuos galima naudoti nustatant, diagnozuojant ir mažinant poveikį.
+
+4) Šie signalai siunčiami į įvairias parengimo pateikti ir sveikatos stebėjimo programas, kurios suaktyvina įspėjimus, kad mūsų inžinieriai galėtų greitai imtis problemos sprendimo ir būtų greičiau sumažinta kritinių trikčių rizika.
+
+Renkami šių laukų duomenys:
+
+- **Accounttype** – paskyros, naudojamos šiame autentifikavimo įvykiui, tipas, pvz., vartotojo arba organizacijos.
+
+- **Actionname** – aiškus šio įvykio pavadinimas, jei jis buvo pateiktas.
+
+- **Actiontype** – nurodo naudojamos autentifikavimo bibliotekos tipą.
+
+- **Appaudience** – ar programa sukurta vidiniam, ar išoriniam naudojimui
+
+- **Appforcedprompt** – ar programa perrašė talpyklą ir priverstinai parodė raginimą
+
+- **Appname** – programos, kurią naudojant autentifikuojama, pavadinimas
+
+- **Appver** – programos, kurią naudojant identifikuojama, versija
+
+- **Askedforcreds** – ar programa paprašė vartotojo įvesti kredencialus atliekant šį veiksmą
+
+- **Authoutcome** – ar autentifikavimo bandymas pavyko, nepavyko, ar buvo atšauktas
+
+- **Blockingprompt** – ar programa pateikė raginimą, reikalaujantį vartotojo sąveikos
+
+- **Correlationid** – identifikatorius, naudojamas prijungti informaciją apie šį atskirą įvykį prie tarnybų duomenų
+
+- **Count** – bendras agreguotų veiksmų, pateiktų šiame viename duomenų įvykyje, skaičius.
+
+- **Devicenetworkstate** – įrenginys, prijungtas prie interneto.
+
+- **Deviceprofiletelemetryid** – anoniminis įrenginio ID, naudojamas įrenginio autentifikavimo patirties ir patikimumo matavimui.
+
+- **Duration** – kiek laiko truko autentifikavimas
+
+- **duration_max** – maksimali bet kurio iš agreguotų įvykių trukmė
+
+- **duration_min** – minimali bet kurio iš agreguotų įvykių trukmė
+
+- **duration_sum** – visų agreguotų įvykių trukmės suma
+
+- **endtime** – kada baigtas autentifikavimo įvykis
+
+- **error** – klaidos kodas, jei autentifikavimas nepavyko
+
+- **errordescription** – trumpas klaidos aprašas
+
+- **errorsource** – ar klaida įvyko iš paslaugos, autentifikavimo bibliotekos, ar programos
+
+- **eventtype** – ar šis įvykis praneša apie autentifikavimo duomenų elementą arba duomenų kokybės klaidos įvykį. Naudojamas duomenų kokybei matuoti.
+
+- **from_cache** – Bulio logikos, nurodančios, ar įrašas yra iš WAM pagrindinio podėlio, ar priedo
+
+- **hasadaltelemetry** – nurodo, ar „Azure Active Directory“ autentifikavimo biblioteka (ADAL) pateikė telemetriją šiam įvykiui.
+
+- **Identityservice** – ar buvo iškviesta „Microsoft“ tarnybos paskyra (MSA), ar „Azure Active Directory“ (AAD) paslauga
+
+- **Interactiveauthcontainer** – kokio tipo raginimas buvo parodytas
+
+- **Issilent** – ar buvo rodomas raginimas arba ar tai buvo tylus (fono) autentifikavimo įvykis.
+
+- **Microsoft_ADAL_adal_version** – „Azure Active Directory“ autentifikavimo bibliotekos (ADAL) versija
+
+- **Microsoft_ADAL_api_error_code** – šio autentifikavimo bandymo klaidos kodas, perduotas autentifikavimo bibliotekos
+
+- **Microsoft_ADAL_api_id** – iškviesta šio autentifikavimo bandymo API
+
+- **Microsoft_ADAL_application_name** – taikomosios programos / proceso, naudojančio ADAL, pavadinimas.
+
+- **Microsoft_ADAL_application_version** – taikomosios programos, naudojančios ADAL, pavadinimas.
+
+- **Microsoft_ADAL_authority** – „Azure Active Directory“ tarnybos, atsakingos už vartojo autentifikavimą, URL
+
+- **Microsoft_ADAL_authority_type** – vartotojo / „Microsoft“ paslaugų teikimo sutartis (MSA) ar organizacijos / „Azure Active Directory“ (AAD); šiuo metu visada AAD
+
+- **Microsoft_ADAL_authority_validation_status** – nurodo, ar autentifikavimas baigtas paslaugos pusėje
+
+- **Microsoft_ADAL_broker_app** – nurodo, ar ADAL naudojo autentifikavimo tvarkytuvę
+
+- **Microsoft_ADAL_broker_app_used** – nurodo tvarkytuvės pavadinimą (pvz., „Windows“ paskyros tvarkytuvė)
+
+- **Microsoft_ADAL_broker_version** – nurodo tvarkytuvės versiją (jei naudojama)
+
+- **Microsoft_ADAL_cache_event_count** – ADAL įvykdytų podėlio įvykių skaičius gaunant atpažinimo ženklą
+
+- **Microsoft_ADAL_cache_event_count_max** – jei šis signalas yra agreguotas, didžiausias bet kurio iš sutelktų įvykių podėlio įvykių skaičius.
+
+- **Microsoft_ADAL_cache_event_count_min** – jei šis signalas yra agreguotas, mažiausias vieno iš agreguotų įvykių podėlio įvykių skaičius.
+
+- **Microsoft_ADAL_cache_event_count_sum** – jei šis signalas yra agreguotas, visų agreguotų įvykių podėlio įvykių suma.
+
+- **Microsoft_ADAL_cache_read_count** – kiek kartų API skaitė iš disko podėlio. Pateikiamas, jei skaityta bent vieną kartą
+
+- **Microsoft_ADAL_cache_read_error_count** – kiek kartų nepavyko nuskaityti disko podėlį. Pateikiamas, jei buvo bent viena klaida
+
+- **Microsoft_ADAL_cache_read_last_error** – ADAL klaidos kodas. Pateikiamas, jei buvo bent viena skaitymo klaida.
+
+- **Microsoft_ADAL_cache_read_last_system_error** – sistemos klaidos kodas.  Pateikiamas, jei buvo bent viena skaitymo klaida
+
+- **Microsoft_ADAL_cache_write_count** – kiek kartų API rašė į disko podėlį. Pateikiamas, jei rašyta bent vieną kartą
+
+- **Microsoft_ADAL_cache_write_error_count** – kiek kartų nepavyko įrašyti į disko podėlį. Pateikiamas, jei buvo bent viena klaida
+
+- **Microsoft_ADAL_cache_write_last_error** – ADAL klaidos kodas. Pateikiamas, jei buvo bent viena rašymo klaida
+
+- **Microsoft_ADAL_cache_write_last_system_error** – sistemos klaidos kodas. Pateikiamas, jei buvo bent viena rašymo klaida
+
+- **Microsoft_ADAL_client_id** – „Azure Active Directory“ taikomosios programos ID maiša
+
+- **Microsoft_ADAL_device_id** – ADAL sugeneruotas vietinio įrenginio ID.
+
+- **Microsoft_ADAL_error_domain** – domenas / komponentas, kuris sugeneravo klaidos kodą.
+
+- **Microsoft_ADAL_error_protocol_code** – „OAuth“ protokolo klaidos kodas, grąžintas tarnybos, įrašytos ADAL.
+
+- **Microsoft_ADAL_extended_expires_on_setting** – ar atpažinimo ženklo egzistavimo laikotarpis pailgintas (teisinga arba klaidinga).
+
+- **Microsoft_ADAL_http_event_count** – ADAL sugeneruotų HTTP užklausų skaičius.
+
+- **Microsoft_ADAL_idp** – ADAL naudojamas tapatybės teikėjas (idP).
+
+- **Microsoft_ADAL_network_event_count** – ADAL atliktų tinklo iškvietimų skaičius
+
+- **Microsoft_ADAL_http_event_count_max** – jei šis signalas agreguotas, maks. ADAL atliktų http iškvietimų skaičius
+
+- **Microsoft_ADAL_http_event_count_min** – jei šis signalas agreguotas, min. ADAL atliktų http iškvietimų skaičius
+
+- **Microsoft_ADAL_http_event_count_sum** – jei šis signalas agreguotas, ADAL atliktų http iškvietimų suma
+
+- **Microsoft_ADAL_network_event_count_max** – jei šis signalas yra agreguotas, bet kurio agreguoto įvykio maks. ADAL atliktų tinklo iškvietimų skaičius.
+
+- **Microsoft_ADAL_network_event_count_min** – jei šis signalas yra agreguotas, bet kurio agreguoto įvykio min. ADAL atliktų tinklo iškvietimų skaičius.
+
+- **Microsoft_ADAL_network_event_count_sum** – jei šis signalas yra agreguotas, visų ADAL atliktų tinklo iškvietimų suma.
+
+- **Microsoft_ADAL_is_silent_ui** – nurodo, ar ADAL parodė vartotojo sąsają (raginimą) (teisinga arba klaidinga)
+
+- **Microsoft_ADAL_is_successfull** – nurodo, ar ADAL API pavyko (teisinga arba klaidinga) (MacOS)
+
+- **Microsoft_ADAL_is_successful** – nurodo, ar ADAL API pavyko (teisinga arba klaidinga)
+
+- **Microsoft_ADAL_logging_pii_enabled** – nurodo, ar įgalintas visas ADAL registravimo žurnale režimas (teisinga arba klaidinga). Šie duomenys registruojami tik vietoje; jie neperduodami telemetrijoje
+
+- **Microsoft_ADAL_ntlm** – nurodo, ar ADAL naudojo bazinį autentifikavimą (NTLM) (teisinga arba klaidinga).
+
+- **Microsoft_ADAL_oauth_error_code** – „OAuth“ protokolo klaidos kodas, kurį pateikė tarnyba.
+
+- **Microsoft_ADAL_prompt_behavior** – tinklo parametras (prisijungta / neprisijungta), perduotas į paslaugą, siekiant nurodyti, ar galima rodyti vartotojo sąsają.
+
+- **Microsoft_ADAL_request_id** – ADAL į tarnybą perduotos užklausos operacinis GUID
+
+- **Microsoft_ADAL_response_code** – tinklo atsako kodas iš tarnybos
+
+- **Microsoft_ADAL_response_time** – per kiek laiko tarnyba grąžina ADAL.
+
+- **Microsoft_ADAL_response_time_max** – jei signalas yra agreguotas, maksimalus laikas, per kurį API atsakė ADAL iš bet kurio iš agreguotų įvykių.
+
+- **Microsoft_ADAL_response_time_min** – jei signalas yra agreguotas, minimalus laikas, per kurį tarnyba atsakė į ADAL, iš bet kurio iš agreguotų įvykių
+
+- **Microsoft_ADAL_response_time_sum** – jei signalas yra agreguotas, laiko, per kurį API atsakė ADAL iš visų agreguotų įvykių, suma.
+
+- **Microsoft_ADAL_rt_age** – atnaujinimo atpažinimo ženklo terminas
+
+- **Microsoft_ADAL_server_error_code** – serverio pateiktas klaidos kodas
+
+- **Microsoft_ADAL_server_sub_error_code** – serverio pateiktas antrinis klaidos kodas, padedantis išsiaiškinti, kodėl nepavyko įvykdyti užklausos
+
+- **Microsoft_ADAL_spe_info** – nurodo, ar vartotojas naudojo „Secure Production Enterprise“ vidinį ratą (tik „Microsoft“ darbuotojai) (teisinga arba klaidinga).
+
+- **Microsoft_ADAL_spe_ring** – nurodo, ar vartotojas naudojo „Secure Production Enterprise“ vidinį ratą (tik „Microsoft“ darbuotojai) (teisinga arba klaidinga)
+
+- **Microsoft_ADAL_start_time** – ADAL API iškvietimo pradžios laikas
+
+- **Microsoft_ADAL_status** – bendro ADAL iškvietimo būsena (pavyko / nepavyko)
+
+- **Microsoft_ADAL_stop_time** – ADAL API iškvietimo užbaigimo laikas
+
+- **Microsoft_ADAL_telemetry_pii_enabled** – nurodo, ar įgalintas visas ADAL telemetrijos režimas (teisinga arba klaidinga). Pavadinimas yra neteisingas, nes neperduodama PII / EUII
+
+- **Microsoft_ADAL_tenant_id** – GUID, identifikuojantis nuomotoją, kuriam priklauso autentifikuotas vartotojas
+
+- **Microsoft_ADAL_token_acquisition_from_context** – apibūdina ADAL veikimo būdą pagal atpažinimo ženklus autentifikavimo kontekste
+
+- **Microsoft_ADAL_token_frt_status** – atnaujinimo atpažinimo ženklo būsena: ar jis buvo išbandytas, nėra būtinas, nerastas arba panaikintas.
+
+- **Microsoft_ADAL_token_mrrt_status** – MultiResourceRefreshToken būsena: ar jis buvo išbandytas, nėra būtinas, nerastas arba panaikintas.
+
+- **Microsoft_ADAL_token_rt_status** – atnaujinimo atpažinimo ženklo būsena: ar jis buvo išbandytas, nėra būtinas, nerastas arba panaikintas.
+
+- **Microsoft_ADAL_token_type** – atnaujinimo atpažinimo ženklas (RT) arba kelių išteklių atnaujinimo atpažinimo ženklas (MRRT)
+
+- **Microsoft_ADAL_ui_event_count** – vartotojui rodomų raginimų skaičius. Galėjo būti tylūs
+
+- **Microsoft_ADAL_user_cancel** – ar vartotojo sąsajos langas buvo atšauktas (teisinga arba klaidinga)
+
+- **Microsoft_ADAL_x_ms_request_id** – papildomas užklausos ID, kurį ADAL pateikė tarnybai tinklo antraštėje.
+
+- **Microsoft_ADAL_x_client_cpu** – informacija apie įrenginio CPU struktūrą
+
+- **Microsoft_ADAL_x_client_os** – įrenginio OS versija.
+
+- **Microsoft_ADAL_x_client_sku** – įrenginio OS SKU pavadinimas.
+
+- **Microsoft_ADAL_x_client_ver** – ADAL bibliotekos versija.
+
+- **MSAL_all_error_tags**– visų „Microsoft“ autentifikavimo bibliotekos (MSAL) autentifikavimo srauto perdavimo metu įvykusių klaidų žymos.
+
+- **MSAL_api_error_code** – jei MSAL aptinka klaidą, kilusią iš OS, platformos klaidų kodai yra saugomi čia.
+
+- **MSAL_api_error_context** – eilutė, kurioje yra papildoma žmonėms skaityti skirta informacija apie paskutinę MSAL klaidą. 
+
+- **MSAL_api_error_tag** – unikali kodo vietos, kuriame įvyko ši klaida, eilutė.
+
+- **MSAL_api_name** – MSAL aukščiausio lygio API, iškviestos pradėti šį autentifikavimo srautą, pavadinimas.
+
+- **MSAL_api_status_code** – būsenos, kurią MSAL grąžino šiam autentifikavimo srauto rezultatui, kodas.
+
+- **MSAL_auth_flow** – veiksmai, kuriuos MSAL bandė atlikti šio autentifikavimo srauto metu (AT, PRT, LRT, FRT, ART, IRT). Atskirta vertikaliu brūkšniu „|“, kad būtų lengviau analizuoti.
+
+- **MSAL_auth_flow_last_error** – klaidos kodas, kurį gavome iš serverio nuo 2-o iki paskutinio „AuthFlow“ elemento. (Pvz.,: jei AuthFlow = "PRT|LRT", PRT klaida būtų elemente AuthFlowLastError).
+
+- **MSAL_authority_type** – ar ši užklausa buvo vartotojui: AAD, išorinė arba MSA.
+
+- **MSAL_broker_app_used** – ar šiame autentifikavimo sraute buvo naudojama tvarkytuvės taikomoji programa.
+
+- **MSAL_client_id** – kvietimo taikomosios programos kliento ID
+
+- **MSAL_correlation_id** – unikalus šio įvykio GUID, naudojamas norint sujungti kliento, serverio ir programų žurnalo veiksmus.
+
+- **MSAL_delete_token** – atpažinimo ženklų, kurie buvo panaikinti iš podėlio šio autentifikavimo srauto metu, sąrašas.
+
+- **MSAL_http_call_count** – autentifikavimo srauto metu MSAL atliktų HTTP kvietimų skaičių.
+
+- **MSAL_is_successful** – ar autentifikavimo srautas pavyko.
+
+- **MSAL_last_http_response_code** – jei MSAL atliko vieną ar kelis HTTP kvietimus, tai yra paskutinis gautas HTTP atsakymo kodas.
+
+- **MSAL_msal_version** – MSAL versijos eilutė, formatas X.X.X+(„OneAuth“, „vietinis“ arba atlikti maišą).
+
+- **MSAL_read_token** – atpažinimo ženklai, kurie buvo nuskaityti iš podėlio (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = nuskaitytas pasibaigęs AT, bet atmestas]).
+
+- **MSAL_read_token_last_error** – jei MSAL nuskaitant iš podėlio įvyko klaida, informaciją saugome čia. (Pvz.: disko skaitymo klaida kilo iš OS, „MacOS“ „Keychain“ sistemos klaida).
+
+- **MSAL_request_duration** – kiek laiko truko užklausa nuo MSAL aukščiausio lygio API iškvietimo iki rezultato pateikimo.
+
+- **MSAL_request_id** – paskutinio kvietimo, kurį atlikome „Microsoft“ saugos atpažinimo ženklų tarnybai, užklausos ID.
+
+- **MSAL_server_error_code** – su „Microsoft“ susijęs saugos atpažinimo ženklų tarnybos skaitmeninis klaidos kodas, jei jį gavome.
+
+- **MSAL_server_spe_ring** – „Microsoft“ saugos atpažinimo ženklų tarnybos „Secure Production Enterprise“ žiedo informacija, jei ją gavome.
+
+- **MSAL_server_suberror_code** – su „Microsoft“ susijęs saugos atpažinimo ženklo tarnybos antrinės klaidos kodo eilutė, jei ją gavome.
+
+- **MSAL_start_time** – MSAL užklausos paleidimo aukščiausio lygio viešajame API laikas.
+
+- **MSAL_stop_time** – MSAL užklausos apdorojimo užbaigimo ir rezultato grąžinimo užklausą pateikusiajam laikas.
+
+- **MSAL_tenant_id** – „Microsoft“ GUID, identifikuojantis nuomotoją, kuriame yra vartotojas.
+
+- **MSAL_ui_event_count** – MSAL ekrane rodomų vartotojo sąsajos raginimų skaičius.
+
+- **MSAL_wam_telemetry** – JSON eilutės WAM telemetrijos duomenų paketas, kuris bus išanalizuotas ir konvertuotas į šio dokumento laukus, kurie gaunami iš WAM.
+
+- **MSAL_was_request_throttled** – teisinga, jei MSAL apribojo šį prašymą ir neleido jam patekti į tinklą. Jei tai visada teisinga, užklausos taikomojoje programoje greičiausiai yra susidaręs ciklas.
+
+- **MSAL_write_token** – atpažinimo ženklai, kurie buvo įrašyti į podėlį (AT, ART, FRT, LRT, IRT, PRT, EAT [EAT = nuskaitytas pasibaigęs AT, bet atmestas]).
+
+- **MSAL_write_token_last_error** – jei MSAL įrašant į podėlį įvyko klaida, informaciją saugome čia. (Pvz.: disko skaitymo klaida kilo iš OS, „MacOS“ „Keychain“ sistemos klaida).
+
+- **oneauth_api** – iškviesta šio autentifikavimo bandymo „OneAuth“ API.
+
+- **oneauth_transactionuploadid** – GUID, nurodantis atskirą užklausą į „OneAuth“ API.
+
+- **oneauth_version** – „OneAuth“ SDK versija.
+
+- **Platform** – OS platforma (0: „Windows“ kompiuteris, 1: „Android“, 2: „iOS“, 3: „MacOS“, 4: UWP)
+
+- **Promptreasoncorrelationid** – koreliacijos identifikatorius, kuris gali būti naudojamas norint rasti ankstesnį autentifikavimo įvykį, naudojamą paaiškinti, kodėl vartotojas buvo paragintas autentifikuotis.
+
+- **Resource** – išteklius, kuriam prašoma atpažinimo ženklo.
+
+- **Scenarioid** – vienam scenarijui gali priklausyti keli įvykiai, pvz., scenarijus gali įtraukti naują paskyrą, bet vykstant tam scenarijui pateikiami keli raginimai. Šis identifikatorius įgalina susijusių įvykių koreliaciją.
+
+- **Scenarioname** – taikomosios programos scenarijaus, kuriam buvo reikalingas autentifikavimas, pavadinimas, pvz., pirmoji sistemos įkrova, licencijavimo patikra ir t. t.
+
+- **Scope** – aprėptis, kuriai prašoma atpažinimo ženklo.
+
+- **Sdkver** – „Microsoft“ autentifikavimo telemetrijos sistemos bibliotekos versija, naudojama šiems duomenims kurti
+
+- **Sessionid** – sistemos įkrovos seanso identifikatorius
+
+- **Starttime** – laikas, kada prasidėjo autentifikavimo įvykis.
+
+- **Tenantid** – GUID, identifikuojantis nuomotoją, kuriam priklauso autentifikuotas vartotojas (ne ADAL atvejais)
+
+- **Uploadid** – šio įvykio unikalusis GUID, naudojamas dublikatams naikinti
+
+- **wamapi** – identifikuoja užklausiamo „Windows“ žiniatinklio paskyros valdymo (WAM) API
+
+- **wamtelemetrybatch** – šiuo metu nenaudojamas. Ateityje leis WAM komponentui pateikti papildomą informaciją, susijusią su autentifikavimo įvykiu
+
+- **WAM_account_join_on_end** – paskyros prisijungimo būsena WAM operacijos pabaigoje.  Galimos reikšmės: „primary“, „secondary“, „not_joined“
+
+- **WAM_account_join_on_start** – paskyros prisijungimo būsena WAM operacijos pradžioje.  Galimos reikšmės: „primary“, „secondary“, „not_joined“
+
+- **WAM_api_error_code** – jei klaidos atsaką gavote iš AAD WAM priedo, bus šis laukas ir jame bus klaidos kodas
+
+- **WAM_authority** – eilutė, kurioje yra tarnybos URL – tai turėtų būti login.windows.net naudotas pabaigos taškas
+
+- **WAM_broker_version** – yra, jei buvo naudojamas WAM, tai yra tvarkytuvės versijos eilutė
+
+- **WAM_cache_event_count** – operacijos WAM podėlio įvykių skaičius
+
+- **WAM_client_id** – tarnybų duomenis sujungiantis identifikatorius, jis identifikuoja kliento taikomąją programą.
+
+- **WAM_correlation_id** – identifikatorius, jungiantis įvykius su tarnybų duomenimis
+
+- **WAM_device_join** – įrenginio prisijungimo būsena; galimos reikšmės yra „aadj“, „haadj“
+
+- **WAM_network_event_count** – yra, jei įvyko bent vienas tinklo kvietimas; tinklo kvietimų į tarnybą, skirtų tai WAM operacijai, skaičius
+
+- **WAM_network_status** – yra, jei įvyko bent vienas tinklo kvietimas, kuriame būtų pateikiamas HTTP klaidos kodas, jei tinklo užklausa nepavyko.
+
+- **WAM_idp** – nurodo, ar buvo naudojamas WAM vartotojo ar organizacijos autentifikavimo priedas.
+
+- **WAM_is_cached** – nurodo, ar WAM pateiktas atsakymas buvo gautas iš podėlio.
+
+- **WAM_oauth_error_code** – pateikiamas klaidos kodas, kurį pateikė tarnyba, kaip „OAuth“ protokolo dalį.
+
+- **WAM_prompt_behavior** – nurodo, ar šį raginimą pateikė programa, arba, ar ši užklausa gali praleisti raginimą, jei ji gali būti autentifikuota tyliai.
+
+- **WAM_provider_id** – nurodo „Microsoft“ pabaigos tašką, skirtą autentifikavimo scenarijui naudojamai institucijai.
+
+- **WAM_redirect_uri** – peradresavimo URI registruotas „Azure Active Directory“ taikomojoje programoje.
+
+- **WAM_resource** – išteklius, kuriam prašoma atpažinimo ženklo.
+
+- **WAM_server_error_code** – tarnybos į WAM pateiktas klaidos kodas.
+
+- **WAM_server_sub_code** – papildomas klaidos kodas, naudojamas siekiant toliau išskaidyti tarnybos pateiktas gedimo priežastis.
+
+- **WAM_silent_code** – klaidos kodas, atsiradęs WAM vykdant vidinį automatinį bandymą prieš pateikiant raginimą vartotojui.
+
+- **WAM_silent_mats** – nenaudojamas.
+
+- **WAM_silent_message** – klaidos pranešimas, susietas su WAM vidiniu automatiniu bandymu prieš pateikiant raginimą vartotojui.
+
+- **WAM_silent_status** – WAM vidinis automatinis bandymas prieš pateikiant raginimą vartotojui (pavyko / nepavyko).
+
+- **WAM_tenant_id** – nuomotojo, kuriam priklauso patvirtintas AAD vartotojas, identifikatorius, jei jį grąžino tarnyba
+
+- **WAM_ui_visible** – pateikiamas, jei vartotojui bent vienas vartotojo sąsajos langas buvo parodytas kaip teisingas arba klaidingas
+
+- **WAM_x_ms_clitelem** – pateikiamas, jei tarnyba pateikia antraštę „x-ms-clitelem“
+
+
+### <a name="officematsoneauthtransactionmicrosoftofficewin32"></a>Office.MATS.OneAuth.TransactionMicrosoftOfficeWin32
+
+„Microsoft“ autentifikavimo telemetrijos sistemos (MATS) įvykiai renkami, kai „Office“ bando gauti autentifikavimo atpažinimo ženklą (tyliai arba pateikdamas raginimus). Šis įvykis yra vieno ar kelių ActionMicrosoftOffice pirminis įvykis, suteikiantis galimybę kartu sugrupuoti susijusius įvykius. Šie įvykiai padeda vartotojams išvengti netinkamos autentifikavimo būsenos:
+
+1) Nustatant, ar klientai gali sėkmingai gauti paslaugos autentifikavimo atpažinimo ženklą, ar jų autentifikavimo būsena yra netinkama.
+
+2) Įvertinant, ar kliente arba paslaugose padaryti keitimai lėmė kritinį vartotojo autentifikavimo patirties ir patikimumo suprastėjimą.
+
+3) Kai įvyksta triktis, šie signalai perduoda svarbius trikties kodus iš atsakingo komponento („Office“ kliento kodo, autentifikavimo bibliotekų arba tarnybų), kuriuos galima naudoti nustatant, diagnozuojant ir mažinant poveikį.
+
+4) Šie signalai siunčiami į įvairias parengimo pateikti ir sveikatos stebėjimo programas, kurios suaktyvina įspėjimus, kad mūsų inžinieriai galėtų greitai imtis problemos sprendimo ir būtų greičiau sumažinta kritinių trikčių rizika.
+
+Renkami šių laukų duomenys:
+
+- **Actiontype** – „oneauthtransaction“ yra vienintelė reikšmė.
+
+- **Appaudience** – taikymo auditorija („Automation“, „Preproduction“ arbaq „Production“)
+
+- **Appname** – taikomosios programos pavadinimas
+
+- **Appver** – taikomosios programos versija
+
+- **Authoutcome** – ar autentifikavimo bandymas pavyko, nepavyko, ar buvo atšauktas
+
+- **Correlationid** – identifikatorius, naudojamas prijungti informaciją apie šį atskirą įvykį prie tarnybų duomenų
+
+- **Count** – kiek kartų įvyko klaida
+
+- **Devicenetworkstate** – įrenginio tinklo būsena
+
+- **Deviceprofiletelemetryid** – įrenginio profilio telemetrijos ID (eilutė, kurią naudoja MATS konkrečiam įrenginiui identifikuoti)
+
+- **duration_max** – maksimali šiame signale agreguotų operacijų trukmė, išreikšta milisekundėmis.
+
+- **duration_min** – minimali šiame signale agreguotų operacijų trukmė, išreikšta milisekundėmis.
+
+- **duration_sum** – šiame signale agreguotų operacijų trukmių suma, išreikšta milisekundėmis.
+
+- **Endtime** – „OneAuth“ operacijos pabaigos laikas.
+
+- **Error** – „OneAuth“ būsenos kodas.
+
+- **Eventtype** – įvykio tipas
+
+- **Issilent** – klaidinga, jei vartotojo sąsaja buvo rodoma; teisinga tai buvo fone vykstantis įvykis.
+
+- **oneauth_api** – nurodo, „OneAuth“ viešąjį API, kuris buvo iškviestas.
+
+- **oneauth_Domain** – jei API iškvietimas sukėlė klaida, tai yra šios klaidos sistemos domenas.
+
+- **oneauth_ErrorCode** – klaidos kodas, žymintis „OneAuth“ vidinės klaidos būseną. Keičia seną oneauth_errortag lauką.
+
+- **oneauth_errortag** – skaitinis identifikatorius kodo eilutei, atsakingai už klaidos generavimą.
+
+- **oneauth_ExecutionFlow** – žymų sekos, identifikuojančios kodo kelią, naudotą šio API iškvietimui.
+
+- **oneauth_internalerror** – klaidos kodas, žymintis „OneAuth“ vidinės klaidos būseną.
+
+- **oneauth_ServerErrorCode** – serverio klaida grąžinta į „OneAuth“ baigiant šį API kvietimą, jei tokia įvyko.
+
+- **oneauth_SystemErrorCode** – sistemos klaida grąžinta į „OneAuth“ baigiant šį API kvietimą, jei tokia įvyko.
+
+- **oneauth_Tag** – „OneAuth“ žymė, nurodanti galutinę vietą kode, pasiektą baigus šį API kvietimą.
+
+- **oneauth_transactionuploadid** – nurodo atsitiktinai sugeneruotą vidinį GUID, kuris susiejamas su tam tikru „OneAuth“ API iškvietimu.
+
+- **oneauth_version** – „OneAuth“ SDK versija.
+
+- **Platform** – OS platforma (0: Win32, 1: „Android“, 2: „iOS“, 3: „MacOS“, 4: „WinRT“
+
+- **Scenarioname** – scenarijaus, kuriam būtinas autentifikavimas, pavadinimas, nurodytas kviečiančios taikomosios programos.
+
+- **Schemaver** – schemos versija
+
+- **Sdkver** –MATS sdk versija
+
+- **Sessionid** – seanso ID
+
+- **severityError** – svarba
+
+- **starttime** – „OneAuth“ operacijos pradžios laikas.
+
+- **Timestamp** – laiko žyma
+
+- **Type** – klaidos tipas
+
+- **Uploaded** – unikalus šio konkretaus įvykio identifikatorius, skirtas išvengti apgaulės.
+
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
@@ -2794,6 +3249,101 @@ Renkami šių laukų duomenys:
 
 ## <a name="licensing-events"></a>Licencijavimo įvykiai
 
+### <a name="officeandroiddocsuipaywallcontrolautoredeempendingpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.AutoRedeemPendingPurchaseResult
+
+Kritinė inžinerinė telemetrija, skirta registruoti automatiniams mėginimams panaudoti laukiančius vartotojo pirkimus. Produkto telemetrija naudojama norint suderinti pirkimo operacijos informaciją su „Microsoft“ komercijos sistema, kad būtų galima įgalinti susietas prenumeratos privilegijas.
+
+Renkami šių laukų duomenys:
+
+- **EventDate** – įvykio įvykimo laiko žyma 
+
+- **Result** – sveikasis skaičius, žymintis operacijos išvardijimo rezultatą. 
+
+- **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
+
+### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
+
+Kritinis telemetrijos naudojimas, kai vartotojui rodomas mokamos prieigos prie informacijos valdiklis. Naudojamas suprasti įsigijimo programoje vartotojo patirtį ir optimizuoti tą pačią arba būsimas versijas.
+
+Renkami šių laukų duomenys:
+
+- **EventDate** – įvykio įvykimo laiko žyma 
+
+- **IsModeFRE** – Bulio logikos, nurodančios patirties tipą, papildomo pardavimo dialogo langą arba SKU parinkiklį
+
+- **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
+
+### <a name="officeandroiddocsuipaywallcontrolpurchasebuttonclicked"></a>Office.Android.DocsUI.PaywallControl.PurchaseButtonClicked
+
+Kritinis naudojimas telemetrija, kad galima būtų žinoti, kada vartotojas spusteli mygtuką Pirkti. Naudojamas nustatyti vartotojų, bandančių įsigyti prenumeratą taikomojoje programoje, naudojimo modelį ir konvertavimo metriką.
+
+Renkami šių laukų duomenys:
+
+- **EventDate** – įvykio įvykimo laiko žyma
+
+- **IsDefaultSku** – Bulio logikos, nurodančios, ar vartotojas bando įsigyti SKU, kuris buvo parodytas pirmas / numatytasis
+
+- **ProductID** – eilutė, nurodanti, kurią prenumeratą vartotojas bando įsigyti kaip sukonfigūruotą parduotuvėje
+
+- **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
+
+### <a name="officeandroiddocsuipaywallcontrolpurchaseresult"></a>Office.Android.DocsUI.PaywallControl.PurchaseResult
+
+Kritinė inžinerinė telemetrija, skirta registruoti pirkimo bandymo rezultatą, kurį neautomatiškai inicijavo vartotojas. Produkto telemetrija naudojama norint suderinti pirkimo operacijos informaciją su „Microsoft“ komercijos sistema, kad būtų galima įgalinti susietas prenumeratos privilegijas.
+
+Renkami šių laukų duomenys:
+
+- **EventDate** – įvykio įvykimo laiko žyma 
+
+- **IsModeFre** – Bulio logikos, nurodančios, ar pirkimas buvo atliktas naudojant papildomo pardavimo FRE ekraną arba SKU parinkiklį
+
+- **Result** – sveikasis skaičius, žymintis operacijos išvardijimo rezultatą.
+
+- **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
+
+
+### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
+
+Renkame šią naudojimo telemetriją norėdami sužinoti, kiek laiko vartotojas praleidžia ekrane „Rodyti daugiau pranašumų“.  Duomenys naudojami norint suprasti ypatybės „žr. daugiau pranašumų“ naudojimą, kad būtų galima dar labiau optimizuoti būsimųjų versijų naudojimo funkcijas.
+
+Renkami šių laukų duomenys:
+
+- **Duration** – ilgasis sveikasis skaičius, nurodantis laiką, kurį vartotojas praleido ekrane „Rodyti visas funkcijas“, išreikštas milisekundėmis
+
+- **EventDate** – įvykio įvykimo laiko žyma 
+
+- **MostExplored** – sveikasis skaičius, nurodantis daugiausia kartų „M365“ taikomųjų programų ir jų funkcijų sąraše perjungto elemento rodyklę.
+
+- **SessionID** – globaliai unikalus identifikatorius (GUID), kad galima būtų sujungti įvykius pagal seansą
+
+### <a name="officeandroiddocsuipaywallcontrolskuchooseranalytics"></a>Office.Android.DocsUI.PaywallControl.SkuChooserAnalytics
+
+Naudojimo telemetrija, skirta sužinoti, kiek laiko vartotojas praleidžia SKU parinkiklio ekrane. Naudojimo telemetrija, skirta sužinoti, kiek laiko vartotojas praleidžia Sku parinkiklio ekrane.
+
+Renkami šių laukų duomenys:
+
+- **Duration** – ilgasis sveikasis skaičius, nurodantis laiką, kurį vartotojas praleido Sku parinkiklio ekrane, išreikštas milisekundėmis
+
+- **EventDate** – įvykio įvykimo laiko žyma
+
+- **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
+
+
+### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Kritinė naudojimo telemetrija renkama, kad būtų galima nustatyti, kada vartotojas baksteli mygtuką Įsigyti / pirkti.  Duomenys naudojami nustatyti vartotojų, bandančių įsigyti prenumeratą taikomojoje programoje, naudojimo modelį ir konvertavimo metriką.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+
+- **isDefaultSKU** – Bulio logikos – jei vartotojas įsigyja mūsų jiems rekomenduotą produktą, kuris rodomas pagal numatytuosius parametrus.
+
+- **productId** – eilutė – „App Store“ produkto ID, kuriam vartotojas paspaudė mygtuką Pirkti
+
+- **toggleCount** – sveikasis skaičius – kiek kartų vartotojas dabartinio mokamos prieigos prie informacijos seanso metu perjungė tarp žiūrimų įvairių produktų, prieš bakstelėdamas mygtuką Pirkti.
+
+
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
 Renkami, kai vartotojas licencijuojamas ir sutinka su dabartinės licencijos GVLS
@@ -2834,7 +3384,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Renkama, kai rodome galiojimo pabaigos dialogo langą vartotojui, kuriame sakoma, kad licencijos galiojimas baigėsi. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
+Informacija renkama, kai vartotojui rodome galiojimo laiko pabaigos dialogo langą, kuriame nurodoma, kad jų licencija pasibaigė. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
 
 Renkami šių laukų duomenys:
 
@@ -2923,7 +3473,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-Jei matome problemų dėl aktyvinimo darbo eigos, suaktyviname licencijos vediklį ir išsiunčiame šį signalą, kad tai nurodytume. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
+Jei pastebime problemų su aktyvinimo darbo eiga, paleidžiame licencijos vediklį ir siunčiame šį signalą, kad nurodytumėte tą patį. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
 
 Renkami šių laukų duomenys:
 
@@ -2955,7 +3505,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingloadidentityticket"></a>Office.Licensing.LoadIdentityTicket
 
-Bandant licencijuoti įrenginį programa bando įkelti vartotojo tapatybę, kad galėtų sužinoti, ar jis turi teisę naudoti „Office“, ar ne. Šis įvykis praneša apie sėkmingą įvykdymą arba triktį kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
+Bandant licencijuoti įrenginį programa bando įkelti vartotojo tapatybę, kad galėtų sužinoti, ar jis turi teisę naudoti „Office“, ar ne. Šis įvykis praneša apie sėkmingą arba nepavykusį to paties elemento įvykdymą kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
 
 Renkami šių laukų duomenys:
 
@@ -2991,7 +3541,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingnulvalidationfullvalidation"></a>Office.Licensing.Nul.Validation.FullValidation 
 
-Renkama kiekviename įrenginio, kuriam taikomas šiuolaikinis licencijavimo procesas, seanse. Pranešama kompiuterio licencijavimo būsena ir vartotojo matomos klaidos, dėl kurių jis negali naudoti programos. Šis įvykis nurodo, ar vartotojo kompiuterio sveikata šiuolaikiniame licencijavimo procese yra gera. Šio įvykio anomalijų aptikimo funkcija nurodo, ar netinkamą vartotojo elgseną kelia veikimo suprastėjimas. Tai taip pat svarbu diagnozuojant vartotojo problemas ir stebint sistemos sveikatą.
+Renkama kiekviename įrenginio, kuriam taikomas šiuolaikinis licencijavimo procesas, seanse. Ji pranešama kompiuterio licencijavimo būseną ir vartotojo matomas klaidas, dėl kurių jis negali naudoti taikomosios programos. Šis įvykis nurodo, ar vartotojo kompiuterio sveikata gera šiuolaikiniame licencijavimo procese. Šio įvykio anomalijų aptikimo funkcija nurodo, ar netinkamą vartotojo elgseną kelia veikimo suprastėjimas. Tai taip pat svarbu diagnozuojant vartotojo problemas ir stebint sistemos sveikatą.
 
 Renkami šių laukų duomenys:
 
@@ -3067,7 +3617,7 @@ Renkami šių laukų duomenys:
 
 *[Šis įvykis buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
-Yra eksperimentas, kuris suteikia vartotojui galimybę bandyti nustatyti „Office“ automatinį paleidimą tiesiai iš programos, nepaliekant programos konteksto. Tai praneša apie sėkmingą to eksperimento įvykdymą arba triktį kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
+Yra eksperimentas, kuris suteikia vartotojui galimybę bandyti ir nustatyti „Office“ automatinį paleidimą tiesiai iš taikomosios programos, nepaliekant taikomosios programos konteksto. Tai praneša apie sėkmingą to eksperimento įvykdymą arba triktį kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
 
 Renkami šių laukų duomenys:
 
@@ -3075,7 +3625,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingsearchforsessiontoken"></a>Office.Licensing.SearchForSessionToken
 
-Bendrai naudojamo kompiuterio režimo atveju bandome ieškoti seanso atpažinimo ženklo kompiuteryje. Tai leidžia vartotojui naudoti programą. Šis įvykis praneša apie sėkmingą scenarijaus įvykdymą arba triktį kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
+Bendrai naudojamo kompiuterio režimo atveju bandome ieškoti seanso atpažinimo ženklo kompiuteryje. Tai leidžia vartotojui naudoti programą. Šis įvykis praneša apie sėkmingą arba nepavykusį scenarijaus vykdymą kartu su klaidos kodu. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą.
 
 Renkami šių laukų duomenys:
 
@@ -3139,7 +3689,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingtelemetryflowsearchforbindingresult"></a>Office.Licensing.TelemetryFlow.SearchForBindingResult
 
-OĮG parduoda įrenginius, kuriuose yra „Office“ (vienų metų prenumerata arba nuolatinė licencija).  Už šiuos „Office“ produktus sumokama, kai klientas įsigyja įrenginį. Įrenginiai, sukonfigūruoti naudojant konkretų registro raktą (OOBEMode: OEMTA), gali turėti „Office“ susiejimą.  Kai paleidžiame „Office“ tokiuose įrenginiuose, atliekame tarnybos patikras, kad sužinotume, ar „Office“ susiejimas atitinka įrenginį.
+OĮG parduoda įrenginius, kuriuose yra „Office“ (vienų metų prenumerata arba nuolatinė licencija).  Už šiuos „Office“ produktus sumokama, kai klientas įsigyja įrenginį. Kompiuteriai, sukonfigūruoti naudojant konkretų registro raktą (OOBEMode: OEMTA), gali turėti „Office“ susiejimą.  Kai paleidžiame „Office“ tokiuose įrenginiuose, atliekame tarnybos patikras, kad sužinotume, ar „Office“ susiejimas atitinka įrenginį.
 
 Telemetrijos veikla stebi sėkmės ir nesėkmės taškus ieškant susiejimo. Taip siekiame užtikrinti, kad įrenginiai, kurie turi susiejimą, galėtų sėkmingai jį iškviesti ir kad mūsų paslaugos būtų geros būsenos.  Ši veikla nestebi įrenginių, kurie, kaip nustatoma atlikus tarnybos patikras, neturi susiejimų.
 
@@ -4113,7 +4663,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
 
-Šis įvykis reiškia, kad tikrinant, ar yra naujinimų, nerasta jokių naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+Šis įvykis nurodo, kad tikrinant naujinimus nebuvo rasta naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
 Renkami šių laukų duomenys:
 
@@ -4569,7 +5119,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-- **App** – programos įvykio siuntimo procesas
+- **App** – taikomosios programos siuntimo procesas
 
 - **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
@@ -7688,7 +8238,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
 
-Šis įvykis registruoja, ar visos programos buvo uždarytos prieš diegimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja, ar visos taikomosios programos buvo uždarytos prieš diegimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -7737,7 +8287,7 @@ Renkami šių laukų duomenys:
 
 - **AppID** – taikomosios programos identifikatorius.
 
-- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+- **AppInfo_Language** – kalba, kuria veikia programa
 
 - **AppVersionLong** – taikomosios programos versija
 
@@ -8021,6 +8571,8 @@ Renkami šių laukų duomenys:
 
 - **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
 
+- **ScreenLocked** – nurodo, ar atsisiuntimas pradedamas esant užrakintam ekranui
+
 - **SessionId** – seanso identifikatorius
 
 
@@ -8151,6 +8703,8 @@ Renkami šių laukų duomenys:
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **ScreenLocked** – nurodo, ar atsisiuntimas pradedamas esant užrakintam ekranui
 
 - **SessionId** – seanso identifikatorius
 
@@ -11217,7 +11771,7 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
-- **AppInfo_Language** – kalba, kuria veikia programa
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
 - **AppVersionLong** – taikomosios programos versija
 
@@ -14562,13 +15116,60 @@ Tarnybų konfigūravimo paslauga nerenka būtinųjų tarnybų duomenų įvykių.
 
 ## <a name="telemetry-events"></a>Telemetrijos įvykiai
 
+### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+
+„Microsoft“ tai naudoja, kad gautų vartotojo pirkinių funkcijų, sėkmės ir klaidų sveikatos būklę, kad užtikrintų tinkamas investicijas siekiant pagerinti klientų pirkimo funkcijas mobiliesiems įrenginiams skirtose platformose.
+
+Renkami šių laukų duomenys:
+
+- **OperationTimeInMs** – laikas, skirtas pirkimo operacijai atlikti (ilga trukmė – milisekundėmis)
+
+- **PaywallOperationResult** – pavyko / klaidos kodas / atšaukta vartotojo (išvardijimas / sveikasis skaičius – baigtinis)
+
+- **PaywallOperationType** – mokamos prieigos prie informacijos operacijos tipas (išvardijimas / sveikasis skaičius – baigtinis)
+
+
 ### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
 
 Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas stebėti mūsų telemetrijos pasirenkamo srauto pirmojo vykdymo patirties būseną. Mes renkame kodą, nurodantį vartotojo pasirinktą diagnostikos duomenų rinkimo parinktį.
 
 Renkami šių laukų duomenys:
 
- - **Data_EventId** – kodas, nurodantis vartotojo pasirinktą diagnostikos duomenų rinkimo nuostatą.
+- **Data_EventId** – kodas, nurodantis vartotojo pasirinktą diagnostikos duomenų rinkimo nuostatą.
+
+### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Produkto telemetrija naudojama norint suderinti pirkimo operacijos informaciją su „Microsoft“ komercijos sistema, kad būtų galima įgalinti susietas prenumeratos privilegijas. Naudojamas siekiant palengvinti operacijų registravimą ir prenumeratos parengimą, jei reikėtų peržiūrėti vėliau ar atlikti vidinį derinimą.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+
+- **failureReason** – eilutė – įtraukiama, kai būsena yra „triktis“. Nurodomas klaidos atsakas, pateikiamas RFS parengimo atsako.
+
+- **productId** – eilutė – produkto „App Store“ ID, kuriam buvo pateikta užklausa
+
+- **status** – eilutė – sėkmė arba triktis, nurodanti, ar užklausa pavyko, ar nepavyko
+
+
+### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
+
+Duomenys renkami kaip kritinė inžinerinė telemetrija, skirta registruoti pirkimo bandymo rezultatą, kurį neautomatiškai inicijavo vartotojas. Produkto telemetrija naudojama norint suderinti pirkimo operacijos informaciją su „Microsoft“ komercijos sistema, kad būtų galima įgalinti susietas prenumeratos privilegijas.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+
+- **failureReason** – eilutė – įtraukiama, kai būsena yra „triktis“. Nurodomas klaidos atsakas, pateikiamas „App Store“ atsako.
+
+- **productId** – eilutė – tik „MakePurchase“, „PendingPurchase“, „App Store“ produkto ID, kuriam užklausa buvo sukurta.
+
+- **productsCount** – sveikasis skaičius – tik „ProductsFetch“, produktų skaičius, grąžintas „Store“.
+
+- **requestType** – eilutė – „StoreKit“ užklausos tipas. Pvz., „ProductsFetch“, „PendingPurchase“
+
+- **status** – eilutė – sėkmė arba triktis, nurodanti, ar užklausa pavyko, ar nepavyko
+
 
 ### <a name="officesystemgracefulexitgracefulappexitdesktop"></a>Office.System.GracefulExit.GracefulAppExitDesktop
 
