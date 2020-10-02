@@ -13,25 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: ed9198f19bcd3ed7dcf11014ed46016fb7121dd6
-ms.sourcegitcommit: cdb47c4dc3297a8ad70112a084ebd1f5028e2c07
+ms.openlocfilehash: 3e44c9c20bed531f46390c91a41ce559cabc9e72
+ms.sourcegitcommit: 25a0925e7caf8fbb53e6757e8a65126eb2c9da65
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46896275"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338190"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
-> [!IMPORTANT]
-> Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
-> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
-> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
->
-> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
->
-> Ši informacija bus taikoma „Outlook“, skirtos „iOS“ ir „Android“, versijai, kurią tikimasi išleisti 2020 m. sausio mėn. pabaigoje.
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašas, žr. [Galimi „Office“ produktų privatumo valdikliai](products-versions-privacy-controls.md).
 
 „Office“ sudaro kliento programinės įrangos programos ir prisijungus naudojamos funkcijos, kurios sukurtos, kad galėtumėte kurti, bendrauti ir bendradarbiauti efektyviau. Prisijungus naudojamų funkcijų pavyzdžiai yra „OneDrive“ saugomo dokumento redagavimas su kitais arba „Word“ dokumento turinio vertimas į kitą kalbą.
 
@@ -46,21 +38,26 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | *3D Maps*\*    | [Darbo su trimačiais žemėlapiais pradžia](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Automatinis alternatyvusis tekstas   | [Viskas, ką turite žinoti apie efektyvaus alternatyviojo teksto rašymą](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Diagramų rekomendacijos (internetinė „Excel“)|[Kurti diagramą su rekomenduojamomis diagramomis](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
-| Duomenų tipai                  | [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+|Mokomųjų bloknotų priedai („OneNote“)|[Darbo su „OneNote“ mokomaisiais bloknotais pradžia: nurodymai mokytojams](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
+| Duomenų tipai| [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 | Diktavimo funkcija  | [Diktuokite dokumentus „Word“](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Rengyklė<sup>1</sup> |[„Microsoft“ rengyklė patikrina gramatiką ir daugiau dokumentuose, pašte ir žiniatinklyje](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Idėjos     | [Idėjos programoje „Excel“](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
+|Mokomieji įrankiai|[Mokomieji įrankiai](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 | Automatiniai aprašai ir subtitrai |  [Pristatymas naudojant tikralaikius automatinius aprašus programoje „PowerPoint“](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | *Žemėlapio diagrama*\*    | [Žemėlapio diagramos kūrimas programoje „Excel“](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Žemėlapiai papildinyje „Power View“   | [Žemėlapiai papildinyje „Power View“](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | „Office“ pristatymo paslauga  | [„PowerPoint“ pateikties transliavimas internetu nuotolinei auditorijai](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
+|„PivotTable“ rekomendacijos (internetinė „Excel“)|[„PivotTable“ kūrimas siekiant analizuoti darbalapio duomenis](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576#OfficeVersion=Web)|
 | „PowerPoint“ dizaino įrankis   | [Profesionalių skaidrių maketų kūrimas naudojant „PowerPoint“ dizaino įrankį](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
+|Pranešėjo pagalbinė priemonė („PowerPoint“)|[Repetuoti pristatymą su pranešėjo pagalbine priemone](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publikavimas „Power BI“   | [„Excel“ turinio publikavimas „Power BI“](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
 | Publikavimas „Microsoft Stream“    | [Pateikties pavertimas vaizdo įrašu](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
 | *Tyrimai*\*   | [Tyrimų paslaugų pridėjimas arba keitimas](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Vizitinės kortelės nuskaitymas|  [Kontaktų įtraukimas „Outlook“, skirtoje „Android“, nuskaitant arba bakstelėjant](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
+|Bendrinamas pranešimas|[Pranešimų gavimas, kai komandos nariai atnaujina jūsų bendrinamą failą](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Panašumų tikrintuvas*\* („Editor“ funkcija)|[Tikrinkite savo dokumento panašumą į internetinius šaltinius](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Išmanioji ieška*\*   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
@@ -129,12 +126,14 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 | *„Office“ papildiniai*\* | [Papildinius diekite administravimo centre](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
 | „Office“ atsiliepimai |[Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | „Office“ palaikymo tarnyba (susisiekite su mumis) |Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje |
-| Organizacijos schema („Visio“) |[Organizacijos schemos kūrimas programoje „Visio“](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)  |
+| Organizacijos schema („Visio“) |[Organizacijos schemos kūrimas programoje „Visio“](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
 | „Outlook Social Connector“ | [„Outlook Social Connector“ įjungimas](https://support.microsoft.com/office/255447E8-82CD-48E7-9B79-1DD8721A2907) |
 | *„Outlook UserVoice“*\* | [Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11) |
+|„PivotDiagram“ („Visio“)|[„PivotDiagram“ kūrimas programoje „Visio“](https://support.microsoft.com/office/0d061d05-60b5-4549-b301-4d0b37625a4c)|
 | Naujausi dokumentai |[Failų atidarymas per meniu Failas](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | *CV kūrimo pagalbinė priemonė*\* |[Naudokitės CV kūrimo pagalbinė priemone ir „LinkedIn“, kad sukurtumėte puikių CV](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Patalpų ieškiklis („Outlook“)|[Kaip valdyti patalpų ieškiklį programoje „Outlook“](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
+|Saugūs dokumentai|[Saugūs dokumentai](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Saugūs dokumentai „Microsoft 365 E5“](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
 | Saugieji saitai |[ATP saugieji saitai](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
 | Slaptumo žymos |[Slaptumo žymų pritaikymas dokumentams ir el. laiškams „Office“ programose](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Bendrinimas  |[„Excel“ darbaknygės bendrinimas su kitais](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Pateikties bendrinimas („PowerPoint“)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Dokumento bendrinimas („Word“)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
@@ -156,7 +155,8 @@ Jei esate prisijungę naudodami „Microsoft“ paskyrą, atidarykite „Office�
 Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organizacijos administratorius nuspręs, ar šios prisijungus naudojamos funkcijos jums pasiekiamos. Nematysite jokių šių prisijungus naudojamų funkcijų pasirinkimo galimybių dalyje **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus**.
 
 > [!NOTE]
-> Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
+> - Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
+> - Daugiau informacijos žr. [Paskyros privatumo parametruose](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams. Daugiau informacijos apie šių politikos parametrų naudojimą ieškokite šiuose straipsniuose: 
 
@@ -169,10 +169,9 @@ Jei nuspręsite išjungti kai kurių tipų prisijungus naudojamas funkcijas, ši
 
 Net jei išjungsite šias prisijungus naudojamas funkcijas, kai kurios „Office“ funkcijos ir toliau veiks, pvz., bus sinchronizuojama jūsų „Outlook“ pašto dėžutė ir veiks „Teams“ bei „Skype“ verslui. Taip pat yra rinkinys paslaugų, kurios būtinos, kad veiktų „Office“, ir kurių išjungti negalima, pvz., licencijavimo paslauga, kuri patvirtina, kad turite tinkamą licenciją naudotis „Office“.
 
-## <a name="related-topics"></a>Susijusios temos
+## <a name="related-articles"></a>Susiję straipsniai
 
 - [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
 - [Reikalingi „Office“ tarnybų duomenys](required-service-data.md)
 - [Pagrindinės „Office“ tarnybos](essential-services.md)
-- [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)
