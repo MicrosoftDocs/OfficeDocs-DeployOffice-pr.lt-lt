@@ -13,23 +13,17 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia „Office“ administratoriams informacijos apie pasirinktinius diagnostikos duomenis naudojant „Office“, įskaitant keletą įvykių pavyzdžių.
 hideEdit: true
-ms.openlocfilehash: 6769c7a0bf254b5a33f92c5410ec517b7d568d8e
-ms.sourcegitcommit: 721c6d39465a5b0ab8e32b876c2e74bb5aaf4b81
+ms.openlocfilehash: 2183863e1f7050d7d6ba838b639debf2b53ac9bd
+ms.sourcegitcommit: e1e4c309d62d0708404b7838c96416ce89f1b8b7
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46683173"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328327"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Pasirinktiniai „Office“ diagnostikos duomenys
 
-> [!IMPORTANT]
-> Šiame straipsnyje pateikta informacija taikoma 1904 arba naujesnės versijos „Office“ kliento programinei įrangai, įdiegtai „Windows“ kompiuteryje:
-> - „Microsoft 365“ programos įmonėms (anksčiau vadintos „Office 365 ProPlus“)
-> - „Microsoft 365“ programos verslui (anksčiau vadintos „Office 365 Business“)
-> - „Microsoft 365 Personal“, „Microsoft 365 Family“ ar kitoms „Office“ versijoms, kurios yra „Microsoft 365“ prenumeratos dalis.
-> - „Project“ ir „Visio“ kompiuterio taikomosioms programoms, pateikiamoms su kai kuriais prenumeratų planais, pvz., „Project“ 5 planas arba „Visio“ 2 planas.
->
-> Ši informacija taip pat taikoma „Office“, skirto „Mac“ (16,28 arba vėlesnės versijos) programoms: „Excel“, „Outlook“, „OneNote“, „PowerPoint“ ir „Word“.
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašas, žr. [Galimi „Office“ produktų privatumo valdikliai](products-versions-privacy-controls.md).
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
@@ -41,12 +35,12 @@ Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, būtinieji d
 
 Pasirinktinių diagnostikos duomenų pavyzdžiai yra duomenys, kuriuos renkame apie figūras, kurias vartotojai įterpia į „Word“ dokumentus, kad galėtume teikti geresnes parinktis, bei duomenys, kuriuos renkame apie tai, per kiek laiko „PowerPoint“ skaidrė pasirodo jūsų ekrane, kad galėtume pagerinti veikimą, jei jis lėtas.
 
-Daugiau informacijos apie diagnostikos duomenis, žr.:
+Daugiau informacijos apie diagnostikos duomenis, žr. straipsniuose:
 
 - [Privalomieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
-- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.office.com/article/cf761ce9-d805-4c60-a339-4e07f3182855)
+- [Diagnostikos duomenų peržiūros programos naudojimas su „Office“](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855)
 
-Jei esate organizacijos administratorius, galbūt jus domina šios temos:
+Jei esate organizacijos administratorius, galbūt jus domina šie straipsniai:
 
 - [„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga](overview-privacy-controls.md)
 - [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
