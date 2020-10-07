@@ -21,3 +21,4 @@
 ### [Reikalingi tarnybų duomenys](required-service-data.md)
 
 ## [Būtinosios tarnybos](essential-services.md)
+## [Produkte teikiamos rekomendacijos](in-product-recommendations.md)
