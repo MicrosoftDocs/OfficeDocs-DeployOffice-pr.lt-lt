@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: ed550129f7d3aef9e340456b5ee2d09f85c18b07
-ms.sourcegitcommit: b4e08427f3e30a134fcbf86257bab5bf05a5ee82
+ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
+ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47941036"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367466"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -3312,7 +3312,7 @@ Renkami šių laukų duomenys:
 
 - **EventDate** – įvykio įvykimo laiko žyma 
 
-- **MostExplored** – sveikasis skaičius, nurodantis daugiausia kartų „M365“ taikomųjų programų ir jų funkcijų sąraše perjungto elemento rodyklę.
+- **MostExplored** – sveikasis skaičius, žymintis labiausiai perjungto elemento indeksą „Microsoft 365“ programų ir jų funkcijų sąraše
 
 - **SessionID** – globaliai unikalus identifikatorius (GUID), kad galima būtų sujungti įvykius pagal seansą
 
@@ -3844,7 +3844,7 @@ Renkami šių laukų duomenys:
 
 ## <a name="microsoft-autoupdate-mau-events"></a>„Microsoft AutoUpdate“ (MAU) įvykiai
 
-### <a name="additionalappinfo_invalidpreference"></a>additionalappinfo_invalidpreference
+### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo_invalidpreference
 
 Šis įvykis praneša apie neleistiną nuostatų rinkinį, rodantį daugiau informacijos, susijusios su produkto tarnybos pabaiga. Naudojame šią informaciją, kad patartume klientams nustatyti tinkamas nuostatas, kad matytumėte papildomą informaciją.
  
@@ -3882,7 +3882,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="appdelegate_launch"></a>appdelegate_launch
+### <a name="appdelegatelaunch"></a>appdelegate_launch
 
 Šis įvykis nurodo, kad įvyko mėginimas įjungti taikomąją programą. Užregistruojame jo rezultatą (nesėkmė arba sėkmė). Šis įvykis naudojamas nustatyti atvejus, kai MAU nepavyksta paleisti
 
@@ -3923,7 +3923,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="appdelegate_terminate"></a>appdelegate_terminate
+### <a name="appdelegateterminate"></a>appdelegate.terminate
 
 Šis įvykis reiškia, kad įvyko sklandus išėjimas iš programos. Naudojame šį įvykį, kad atskirtume sklandžius išėjimus iš programos nuo nesklandžių.
 
@@ -3964,7 +3964,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="appinstall_connecttoxpc"></a>appinstall_connecttoxpc
+### <a name="appinstallconnecttoxpc"></a>appinstall.connecttoxpc
 
 Šis įvykis nurodo, kad įvyko klaidų prisijungiant prie MAU pagalbininko (komponento, kuris atlieka taikomųjų programų diegimą).  Šis įvykis žymi galimą MAU taikomosios programos sugadinimą. Įrenginys negalės įdiegti naujinimų.
 
@@ -4004,7 +4004,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="appinstall_logscanned"></a>appinstall_logscanned
+### <a name="appinstalllogscanned"></a>appinstall.logscanned
 
 Šis įvykis naudojamas nustatyti, ar žurnalo failas sėkmingai apdorotas. Šis įvykis naudojamas aptikti ir šalinant triktis, kylančias diegiant taikomąją programą. 
  
@@ -4044,7 +4044,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="appregistry_config"></a>appregistry_config
+### <a name="appregistryconfig"></a>appregistry.config
 
 Šis įvykis praneša apie visas klaidas, su kuriomis susidūrė įkėlimo programos registro informacija. Mes naudojame šią ataskaitą, kad patartumėte IT administratoriams tinkamą kliento programų registracijų nustatymo formatą.
  
@@ -4084,7 +4084,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="appregistry_info"></a>appregistry_info
+### <a name="appregistryinfo"></a>appregistry.info
 
 Šis įvykis nurodo, kad programa paleista. Naudojame šį įvykį, kad pateiktumėte taikomųjų programų, kurioms MAU gali valdyti naujinimus, kopijų skaičių, taip pat jų versiją ir diegimo vietą (numatytoji ar kita).
 
@@ -4125,7 +4125,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="appregistry_remove"></a>appregistry_remove
+### <a name="appregistryremove"></a>appregistry.remove
 
 Šis įvykis nurodo, kad buvo bandoma pašalinti taikomąją programą iš MAU tvarkomų taikomųjų programų sąrašo. Šį įvykį naudojame norėdami patvirtinti, kad tik MAU išleistos taikomosios programos tvarkomos per MAU (čia neturi būti „AppStore“ taikomųjų programų).
 
@@ -4166,7 +4166,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="catalog_errorsignature"></a>catalog_errorsignature
+### <a name="catalogerrorsignature"></a>catalog.errorsignature
 
 Šis įvykis nurodo, kad naujinant įvyko klaida atliekant kodo ženklo tikrinimą, atsirado antrinis failas.  Bet koks nepavykęs antrinio failo kodo ženklo tikrinimas turėtų būti laikomas negaliojančiu.
 
@@ -4206,9 +4206,9 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="cloningtask_begin"></a>cloningtask_begin
+### <a name="cloningtaskbegin"></a>cloningtask.begin
 
-Šis įvykis nurodo klonavimo užduoties pradžią prieš programų naujinimą. Šis įvykis naudojamas kartu su „cloningtask_status“ įvykiu, kad būtų galima nustatyti klonavimo nesėkmes, siekiant nustatyti, ar klonavimo funkcija turėtų būti ribojama skirtinguose auditorijos kanaluose.
+Šis įvykis nurodo klonavimo užduoties pradžią prieš programų naujinimą. Šis įvykis naudojamas kartu su „cloningtask.status“ įvykiu, kad būtų galima nustatyti klonavimo nesėkmes, siekiant nustatyti, ar klonavimo funkcija turėtų būti ribojama skirtinguose auditorijos kanaluose.
  
 Renkami šių laukų duomenys:
 
@@ -4249,7 +4249,7 @@ Renkami šių laukų duomenys:
 - **UpdateID** – naujinimo identifikatorius.
 
 
-### <a name="cloningtask_helpertoolconnection"></a>cloningtask_helpertoolconnection
+### <a name="cloningtaskhelpertoolconnection"></a>cloningtask.helpertoolconnection
 
 Šis įvykis įrašo problemas naudojant diegimą su klonavimu (t. y., jei nesugebame prisijungti prie pagalbininko, kad būtų pritaikytas naujinimas, arba prisijungiame tačiau pagalbininkas negali taikyti naujinimo). Jei gauname pranešimą apie įrašą, tai reiškia, kad įdiegti klonuojant nepavyko ir dabar reikės grįžti į vietinį naujinimą.
 
@@ -4289,7 +4289,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="cloningtask_status"></a>cloningtask_status
+### <a name="cloningtaskstatus"></a>cloningtask.status
 
 Šis įvykis nurodo klonavimo proceso būseną, kai reikia atnaujinti programą. Šis įvykis naudojamas norint nustatyti sėkmės dažnį ir klaidų, dėl kurių kilo trikčių, tipus. Šis įvykis naudojamas nustatyti, ar klonavimo funkcija turėtų būti ribojama skirtinguose auditorijos kanaluose.
 
@@ -4335,7 +4335,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – naujinimo identifikatorius.
 
-### <a name="cloningtask_status_finish"></a>cloningtask_status_finish
+### <a name="cloningtaskstatusfinish"></a>cloningtask.status.finish
 
 Šis įvykis praneša apie „klonavimo“ užduoties baigimą. Šis įvykis yra naujinimų ataskaitos dalis ir jį naudojame, kad nustatytumėte programų naujinimų sveikatą.
  
@@ -4376,7 +4376,7 @@ Renkami šių laukų duomenys:
 - **UpdateID** – naujinimo identifikatorius.
 
 
-### <a name="configuration_channel"></a>configuration_channel
+### <a name="configurationchannel"></a>configuration.channel
 
 Šis įvykis fiksuoja bandymus perjungti kanalus (auditorijos grupę) MAU.  Naudojame tai, kad registruotume bandymus ir jų rezultatus (sėkmės ar nesėkmės).
 
@@ -4417,7 +4417,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="configuration_metadata"></a>configuration_metadata
+### <a name="configurationmetadata"></a>configuration.metadata
 
 Šis įvykis užregistruojamas kaskart, kai pradedamas MAU. Tai MAU reguliarių pranešimų tipo įvykis
 
@@ -4457,7 +4457,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius.
 
-### <a name="configuration_systemversion"></a>configuration_systemVersion
+### <a name="configurationsystemversion"></a>configuration.systemVersion
 
 Šis įvykis nurodo, kad nepavyko nuskaityti sistemos versijos. Tai taip pat apima informaciją apie „Microsoft“ automatinius naujinimus (MAU), kuriuos pavyko surinkti iš sistemos. Šį įvykį naudojame norėdami nustatyti, ar MAU turėtų patenkinti nesėkmes. Atminkite, kad sistemos versija naudojama norint nustatyti, ar naujinimas gali būti pritaikytas kliento įrenginiui.
  
@@ -4497,7 +4497,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="controller_alertmanager_reinstallresponse"></a>controller_alertmanager_reinstallresponse
+### <a name="controlleralertmanagerreinstallresponse"></a>controller.alertmanager.reinstallresponse
 
 Šis įvykis reiškia, kad MAU nukrito į nenaudojamą/neatitaisomą būseną ir turi būti įdiegta iš naujo. Šis įvykis reiškia neatitaisomą klaidą, kai reikalingas vartotojo įsikišimas.
 
@@ -4538,7 +4538,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_alertmanager_tmpdiskfull"></a>controller_alertmanager_tmpdiskfull
+### <a name="controlleralertmanagertmpdiskfull"></a>controller.alertmanager.tmpdiskfull
 
 Šis įvykis nurodo, kad buvo aptikta nepakankama disko vieta. Negalėsime diegti naujinimų, nes diske nepakanka vietos.
 
@@ -4579,7 +4579,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_alertmanager_tmpdiskfullretry"></a>controller_alertmanager_tmpdiskfullretry
+### <a name="controlleralertmanagertmpdiskfullretry"></a>controller.alertmanager.tmpdiskfullretry
 
 Šis įvykis nurodo, kad buvo pradėtas mėginimas pabandyti įdiegti naujinimą, kai aptikta nepakankama disko vieta. Bandome diegti iš naujo po to, kai neįmanoma įdiegti naujinimų, nes nepakanka vietos diske.
 
@@ -4620,7 +4620,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
     
 
-### <a name="controller_alertmanager_tmpdiskfullretrycancel"></a>controller_alertmanager_tmpdiskfullretrycancel
+### <a name="controlleralertmanagertmpdiskfullretrycancel"></a>controller.alertmanager.tmpdiskfullretrycancel
 
 Šis įvykis nurodo, kad buvo pradėtas mėginimas pabandyti įdiegti naujinimą, kai aptikta nepakankama disko vieta. Naudojame šį įvykį, kad nustatytumėte, ar mūsų atsarginiai mechanizmai buvo pakankami, kad padėtų vartotojui per naujinimo procesą, kai aptikta nepakankama disko vieta.
 
@@ -4661,7 +4661,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_checkwindow_noupdatefoundok"></a>controller_checkwindow_noupdatefoundok
+### <a name="controllercheckwindownoupdatefoundok"></a>controller.checkwindow.noupdatefoundok
 
 Šis įvykis nurodo, kad tikrinant naujinimus nebuvo rasta naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
@@ -4703,7 +4703,7 @@ Renkami šių laukų duomenys:
 
     
 
-### <a name="controller_checkwindow_updatecheck"></a>controller_checkwindow_updatecheck
+### <a name="controllercheckwindowupdatecheck"></a>controller.checkwindow.updatecheck
 
 Šis įvykis nurodo, kad buvo tikrinama, ar yra naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
@@ -4744,7 +4744,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_checkwindow_updatecheckcancel"></a>controller_checkwindow_updatecheckcancel
+### <a name="controllercheckwindowupdatecheckcancel"></a>controller.checkwindow.updatecheckcancel
 
 Šis įvykis nurodo, kad buvo atšauktas naujinimų tikrinimo procesas (vartotojo arba sistemos). Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
@@ -4785,7 +4785,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_checkwindow_updatecheckcanceluser"></a>controller_checkwindow_updatecheckcanceluser
+### <a name="controllercheckwindowupdatecheckcanceluser"></a>controller.checkwindow.updatecheckcanceluser
 
 Šis įvykis nurodo, kad naujinimų tikrinimo procesas buvo atšauktas vartotojo.  Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
@@ -4826,7 +4826,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_checkwindow_updatesfound"></a>controller_checkwindow_updatesfound
+### <a name="controllercheckwindowupdatesfound"></a>controller.checkwindow.updatesfound
 
 Šis įvykis nurodo, kad tikrinant naujinimus buvo rasta naujinimų.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
 
@@ -4867,7 +4867,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_checkwindow_uptodate"></a>controller_checkwindow_uptodate
+### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
 Šis įvykis nurodo, kad tikrinant, ar yra naujinimų, jų nerasta, nes įrenginyje įdiegtos taikomosios programos yra atnaujintos.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
 
@@ -4908,7 +4908,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_applaunchwithpendingupdate"></a>controller_downloadwindow_applaunchwithpendingupdate
+### <a name="controllerdownloadwindowapplaunchwithpendingupdate"></a>controller.downloadwindow.applaunchwithpendingupdate
 
 Šis įvykis nurodo, kad paleista taikomoji programa, kuri yra naujinimo procese. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai. Turėtų būti neleidžiama gauti naujinimų atidarytoms programoms. Prieš naujinant programas reikia jas uždaryti.
 
@@ -4949,7 +4949,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_downloadwindow_closeapplicationdialog"></a>controller_downloadwindow_closeapplicationdialog
+### <a name="controllerdownloadwindowcloseapplicationdialog"></a>controller.downloadwindow.closeapplicationdialog
 
 Šis įvykis nurodo, kad paleista taikomoji programa, kuri yra naujinimo procese. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai. Turėtų būti neleidžiama gauti naujinimų atidarytoms programoms. Prieš naujinant programas reikia jas uždaryti.
 
@@ -4990,7 +4990,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_downloadwindow_curtasknull"></a>controller_downloadwindow_curtasknull
+### <a name="controllerdownloadwindowcurtasknull"></a>controller.downloadwindow.curtasknull
 
 Šis įvykis nurodo, kad bandant taikyti naujinimą įvyko netikėta klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
 
@@ -5031,7 +5031,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_downloadwindow_downloadcancel"></a>controller_downloadwindow_downloadcancel
+### <a name="controllerdownloadwindowdownloadcancel"></a>controller.downloadwindow.downloadcancel
 
 Šis įvykis nurodo, kad atsisiuntimo procesas atšauktas vartotojo.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
 
@@ -5072,7 +5072,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_downloadwindow_downloadfailed"></a>controller_downloadwindow_downloadfailed
+### <a name="controllerdownloadwindowdownloadfailed"></a>controller.downloadwindow.downloadfailed
 
 Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai.
 
@@ -5113,7 +5113,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_downloadwindow_downloadfailedok"></a>controller_downloadwindow_downloadfailedok
+### <a name="controllerdownloadwindowdownloadfailedok"></a>controller.downloadwindow.downloadfailedok
 
 Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida, ir apie tai pranešta vartotojui. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsisiųsti tinkamai, o klaidos atveju vartotojas gautų pranešimą.
 
@@ -5154,7 +5154,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_downloadpathmissing"></a>controller_downloadwindow_downloadpathmissing
+### <a name="controllerdownloadwindowdownloadpathmissing"></a>controller.downloadwindow.downloadpathmissing
 
 Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. Šis įvykis nurodo, kad trūksta atsisiuntimo URL.
 
@@ -5195,7 +5195,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_downloadtasknull"></a>controller_downloadwindow_downloadtasknull
+### <a name="controllerdownloadwindowdownloadtasknull"></a>controller.downloadwindow.downloadtasknull
 
 Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ buvo paprašyta pristabdyti/tęsti atsisiuntimą, bet negalėjo rasti atitinkamo atsisiuntimo tvarkytuvo.
 
@@ -5236,7 +5236,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_filesignaturenotverified"></a>controller_downloadwindow_filesignaturenotverified
+### <a name="controllerdownloadwindowfilesignaturenotverified"></a>controller.downloadwindow.filesignaturenotverified
 
 Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ negalėjo patikrinti, ar šį naujinimą publikavo „Microsoft". Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. 
 
@@ -5277,7 +5277,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_installcomplete"></a>controller_downloadwindow_installcomplete
+### <a name="controllerdownloadwindowinstallcomplete"></a>controller.downloadwindow.installcomplete
 
 Šis įvykis nurodo, kad visi „Microsoft AutoUpdate“ siūlomi naujinimai įdiegti. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi ir atsiunčiami tinkamai. 
 
@@ -5318,7 +5318,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_networkunavailablealert"></a>controller_downloadwindow_networkunavailablealert
+### <a name="controllerdownloadwindownetworkunavailablealert"></a>controller.downloadwindow.networkunavailablealert
 
 Šis įvykis nurodo, kad, atsisiunčiant naujinimus, nutrūko tinklo ryšys.  Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5359,7 +5359,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_downloadwindow_networkunavailablealertok"></a>controller_downloadwindow_networkunavailablealertok
+### <a name="controllerdownloadwindownetworkunavailablealertok"></a>controller.downloadwindow.networkunavailablealertok
 
 Šis įvykis nurodo, kad, atsisiunčiant naujinimus, nutrūko tinklo ryšys. Tai taip pat reiškia, kad vartotojui buvo pranešta apie šią klaidą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5400,7 +5400,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_downloadwindow_noconnectionok"></a>controller_downloadwindow_noconnectionok
+### <a name="controllerdownloadwindownoconnectionok"></a>controller.downloadwindow.noconnectionok
 
 Šis įvykis nurodo, kad, atsisiunčiant naujinimus, nutrūko tinklo ryšys. Tai taip pat reiškia, kad vartotojui buvo pranešta apie šią klaidą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5441,7 +5441,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_repairrequired"></a>controller_downloadwindow_repairrequired
+### <a name="controllerdownloadwindowrepairrequired"></a>controller.downloadwindow.repairrequired
 
 Šis įvykis nurodo, kad naujinimo procesas nepavyko. Jis taip pat nurodo, kad naujinimas buvo užbaigtas, bet „Microsoft AutoUpdate“ rado problemą su atnaujinta taikomąja programa ir reikia atlikti taisymą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5481,7 +5481,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="controller_downloadwindow_updateaborted"></a>controller_downloadwindow_updateaborted
+### <a name="controllerdownloadwindowupdateaborted"></a>controller.downloadwindow.updateaborted
 
 Šis įvykis nurodo, kad naujinimo procesas buvo nutrauktas. Jis taip pat nurodo, kad „Daemon“ jau vykdė naujinimą ir vartotojas spustelėjo „Gerai“, kad būtų nutrauktas atsisiuntimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5522,7 +5522,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_updatefailed"></a>controller_downloadwindow_updatefailed
+### <a name="controllerdownloadwindowupdatefailed"></a>controller.downloadwindow.updatefailed
 
 Šis įvykis reiškia, kad nepavyko atlikti vieno ar daugiau naujinimų iš dabartinio paketo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5563,7 +5563,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_updatesuccessful"></a>controller_downloadwindow_updatesuccessful
+### <a name="controllerdownloadwindowupdatesuccessful"></a>controller.downloadwindow.updatesuccessful
 
 Šis įvykis nurodo, kad visi dabartinio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5604,7 +5604,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_userpaused"></a>controller_downloadwindow_userpaused
+### <a name="controllerdownloadwindowuserpaused"></a>controller.downloadwindow.userpaused
 
 Šis įvykis nurodo, kad visi dabartinio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5645,7 +5645,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_downloadwindow_userresumed"></a>controller_downloadwindow_userresumed
+### <a name="controllerdownloadwindowuserresumed"></a>controller.downloadwindow.userresumed
 
 Šis įvykis nurodo, kad naujinimų atsisiuntimo procesas sėkmingai tęsiamas po pauzės. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5686,7 +5686,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_mainwindow_setautomaticdownloadinstall"></a>controller_mainwindow_setautomaticdownloadinstall
+### <a name="controllermainwindowsetautomaticdownloadinstall"></a>controller.mainwindow.setautomaticdownloadinstall
 
 Šis įvykis nurodo, kad įrenginys buvo įtrauktas į automatinio naujinimo režimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5727,7 +5727,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_mainwindow_setmanualchecking"></a>controller_mainwindow_setmanualchecking
+### <a name="controllermainwindowsetmanualchecking"></a>controller.mainwindow.setmanualchecking
 
 Šis įvykis nurodo, kad įrenginys buvo įtrauktas į rankinio naujinimo režimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5768,7 +5768,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_templateawindow_cancel"></a>controller_templateawindow_cancel
+### <a name="controllertemplateawindowcancel"></a>controller.templateawindow.cancel
 
 Šis įvykis reiškia, kad vartotojas pasirinko atšaukti arba nepaisyti pateikto įspėjimo pranešimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5809,7 +5809,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_templateawindow_enroll"></a>controller_templateawindow_enroll
+### <a name="controllertemplateawindowenroll"></a>controller.templateawindow.enroll
 
 Šis įvykis nurodo, kad vartotojas pasirinko stebėti pateiktą įspėjimo rekomendaciją. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5851,7 +5851,7 @@ Renkami šių laukų duomenys:
 
 
 
-### <a name="controller_templateawindow_install"></a>controller_templateawindow_install
+### <a name="controllertemplateawindowinstall"></a>controller.templateawindow.install
 
 Šis įvykis nurodo, kad vartotojas pasirinko stebėti pateiktą įspėjimo rekomendaciją, susijusią su programinės įrangos diegimo veiksmų inicijavimu. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5892,7 +5892,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_updatewindow_begindownloadingapps"></a>controller_updatewindow_begindownloadingapps
+### <a name="controllerupdatewindowbegindownloadingapps"></a>controller.updatewindow.begindownloadingapps
 
 Šis įvykis nurodo, kad naujinimų atsisiuntimas buvo pradėtas per naujinimo langą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5933,7 +5933,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_updatewindow_networkretry"></a>controller_updatewindow_networkretry
+### <a name="controllerupdatewindownetworkretry"></a>controller.updatewindow.networkretry
 
 Šis įvykis nurodo, kad atnaujinimo lape dėl tinklo gedimo buvo pradėtas mėginimas kartoti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
@@ -5974,7 +5974,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_updatewindow_networkretrycancel"></a>controller_updatewindow_networkretrycancel
+### <a name="controllerupdatewindownetworkretrycancel"></a>controller.updatewindow.networkretrycancel
 
 Šis įvykis reiškia, kad dėl tinklo gedimo nepavyko suaktyvinti mėginimo kartoti atnaujinimo lape. Šis įvykis nurodo, kad vartotojas pasirinko atšaukti naujinimus po to, kai gavo pranešimą, kad tinklas tampa nepasiekiamas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6015,7 +6015,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_updatewindow_networkunavailable"></a>controller_updatewindow_networkunavailable
+### <a name="controllerupdatewindownetworkunavailable"></a>controller.updatewindow.networkunavailable
 
 Šis įvykis nurodo, kad staiga nutrūko tinklo ryšys. Šis įvykis nurodo, kad serveris nepasiekiamas bandant atsisiųsti naujinimo paketą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6056,7 +6056,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_updatewindow_noupdateavailable"></a>controller_updatewindow_noupdateavailable
+### <a name="controllerupdatewindownoupdateavailable"></a>controller.updatewindow.noupdateavailable
 
 Šis įvykis reiškia, kad buvo ieškoma naujinimų, tačiau nepavyko rasti. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ nerasta prieinamų naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6097,7 +6097,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_updatewindow_noupdatestoselect"></a>controller_updatewindow_noupdatestoselect
+### <a name="controllerupdatewindownoupdatestoselect"></a>controller.updatewindow.noupdatestoselect
 
 Šis įvykis nurodo, kad įvyko klaida ir dėl to naujinimų sąrašas yra tuščias. Šis įvykis nurodo, kad „Microsoft AutoUpdate“ rodo tuščią atnaujinimo lapą. Tai neturėtų nutikti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6138,7 +6138,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="controller_updatewindow_updateavailable"></a>Controller_UpdateWindow_UpdateAvailable
+### <a name="controllerupdatewindowupdateavailable"></a>Controller.UpdateWindow.UpdateAvailable
 
 Šis įvykis reiškia, kad buvo ieškoma naujinimų, ir rasti naujinimai yra siūlomi. Šis įvykis naudojamas norint nustatyti, ar siūlomi naujinimai bus rodomi vartotojui, ar naujinimo blokavimas veikia taip, kaip numatyta. Šis įvykis naudojamas norint užtikrinti, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padės pašalinti klaidas.
  
@@ -6179,7 +6179,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="controller_updatewindow_updateavailablecancel"></a>controller_updatewindow_updateavailablecancel
+### <a name="controllerupdatewindowupdateavailablecancel"></a>controller.updatewindow.updateavailablecancel
 
 Šis įvykis nurodo, kad vartotojas atšaukė po to, kai parodytas naujinimų lapas su naujinimų sąrašu. Šis įvykis naudojamas paaiškinti priežastis, kodėl neatnaujinama (t. y. vartotojas mielai atšaukia). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6220,7 +6220,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadactor_pause"></a>downloadactor_pause
+### <a name="downloadactorpause"></a>downloadactor.pause
 
 Šis įvykis nurodo, kad vartotojas paskelbė prašymą pristabdyti atsisiuntimą. Šis įvykis naudojamas tam kad būtų paaiškintos neužbaigtų naujinimų priežastys. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6261,7 +6261,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadactor_redirect"></a>downloadactor_redirect
+### <a name="downloadactorredirect"></a>downloadactor.redirect
 
 Šis įvykis nurodo, kad atsisiuntimo agentas nukreiptas į galinį punktą, kuris nurodo atsisiuntimo užklausos URL peradresavimą. Šis įvykis naudojamas norint išaiškinti nepavykusį atsisiuntimą ir diagnozuoti tarpinio serverio triktis. Jis taip pat gali padėti diagnozuoti priežastis, kodėl vartotojai diegia senesnes versijas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6302,7 +6302,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="downloadactor_resume"></a>downloadactor_resume
+### <a name="downloadactorresume"></a>downloadactor.resume
 
 Šis įvykis nurodo, kad vartotojas paskelbė prašymą tęsti pristabdytą atsisiuntimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6343,7 +6343,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadactor_resumeerror"></a>downloadactor_resumeerror
+### <a name="downloadactorresumeerror"></a>downloadactor.resumeerror
 
 Šis įvykis nurodo, kad vartotojas paskelbė prašymą tęsti pristabdytą atsisiuntimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6384,7 +6384,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="downloadactor_status"></a>downloadactor_status
+### <a name="downloadactorstatus"></a>downloadactor.status
 
 Šis įvykis registruoja bandymus iškviesti antrinius failus ir jų rezultatą (sėkmę arba nesėkmę). Norime žinoti, kai yra iškviečiami antriniai failai ir paketai. Netinkamas iškviestas failas gali nurodyti komponavimo versijos/antrinio failo problemą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6425,7 +6425,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_configuration"></a>downloadmanifest_configuration
+### <a name="downloadmanifestconfiguration"></a>downloadmanifest.configuration
 
 Šis įvykis praneša klaidą „Microsoft“ automatinio naujinimo (MAU) konfigūracijoje su pasirinktiniais serverio nustatymais nuostatose arba galinių punktų aprašuose, kur yra įdiegti MAU komponentai. Šis įvykis naudojamas patariant IT administratoriams nustatyti teisingus deklaracijos serverio pabaigos taškus.
  
@@ -6464,7 +6464,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_downloadcatalogfail"></a>downloadmanifest_downloadcatalogfail
+### <a name="downloadmanifestdownloadcatalogfail"></a>downloadmanifest.downloadcatalogfail
 
 Šis įvykis įvyko atsisiuntimo klaida. Užregistruojamas failas, kurio atsisiųsti nepavyko. Norime žinoti, kai yra iškviečiami antriniai failai ir paketai. Nepavykus atsisiųsti deklaracijos, gali būti rodomas kaip komponavimo versijos antrinio failo generavimo triktis arba kaip CDN konfigūracijos klaida, arba kaip kliento konfigūravimo klaida, arba kaip tinklo klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6505,7 +6505,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="downloadmanifest_downloadcatalogsuccess"></a>downloadmanifest_downloadcatalogsuccess
+### <a name="downloadmanifestdownloadcatalogsuccess"></a>downloadmanifest.downloadcatalogsuccess
 
 Šis įvykis nurodo, kad failas sėkmingai atsisiųstas. Nepavykus atsisiųsti deklaracijos, gali būti rodomas kaip komponavimo versijos antrinio failo generavimo triktis arba kaip CDN konfigūracijos klaida, arba kaip kliento konfigūravimo klaida, arba kaip tinklo klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6546,7 +6546,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_downloadfail"></a>downloadmanifest_downloadfail
+### <a name="downloadmanifestdownloadfail"></a>downloadmanifest.downloadfail
 
 Šis įvykis nurodo, kad įvyko atsisiuntimo klaida. Užregistruojamas deklaracijos arba paketo failas, kurio nepavyko atsisiųsti, taip pat pateikiama klaidos informacija. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6587,7 +6587,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_downloadfromurl"></a>downloadmanifest_downloadfromurl
+### <a name="downloadmanifestdownloadfromurl"></a>downloadmanifest.downloadfromurl
 
 Šis įvykis reiškia, kad pradėtas katalogo failo atsisiuntimas. Užregistruojame URL, iš kurio atsisiunčiamas katalogo failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6628,7 +6628,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_downloading"></a>downloadmanifest_downloading
+### <a name="downloadmanifestdownloading"></a>downloadmanifest.downloading
 
 Šis įvykis reiškia, kad pradėtas katalogo failo atsisiuntimas. Užregistruojame URL, iš kurio atsisiunčiamas katalogo failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6669,7 +6669,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_downloadsuccess"></a>downloadmanifest_downloadsuccess
+### <a name="downloadmanifestdownloadsuccess"></a>downloadmanifest.downloadsuccess
 
 Šis įvykis reiškia, kad XML ir katalogo failo atsisiuntimas buvo sėkmingas. Užregistruojame URL, iš kurio atsisiunčiamas failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6710,7 +6710,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="downloadmanifest_downloadurl"></a>downloadmanifest_downloadurl
+### <a name="downloadmanifestdownloadurl"></a>downloadmanifest.downloadurl
 
 Šis įvykis reiškia, kad įvyko užklausa atsisiųsti failą. Užregistruojame URL, iš kurio atsisiunčiamas failas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6751,7 +6751,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_filenameerror"></a>downloadmanifest_filenameerror
+### <a name="downloadmanifestfilenameerror"></a>downloadmanifest.filenameerror
 
 Šis įvykis nurodo, kad įvyko netikėta klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6792,7 +6792,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_invalidhash"></a>downloadmanifest_invalidhash
+### <a name="downloadmanifestinvalidhash"></a>downloadmanifest.invalidhash
 
 Šis įvykis žymi, kad mūsų failų saugos patikra nepavyko. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6833,7 +6833,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_missingdaemon"></a>downloadmanifest_missingdaemon
+### <a name="downloadmanifestmissingdaemon"></a>downloadmanifest.missingdaemon
 
 Šis įvykis žymi, kad vartotojas bandė patikrinti, ar yra naujinimų, ir pastebėjome, kad MAU trūko pagrindinio komponento („Daemon“). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6874,7 +6874,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_signatureerror"></a>downloadmanifest_signatureerror
+### <a name="downloadmanifestsignatureerror"></a>downloadmanifest.signatureerror
 
 Šis įvykis nurodo, kad kodo parašo patvirtinimas nepavyko dėl paketo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6915,7 +6915,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmanifest_status"></a>downloadmanifest_status
+### <a name="downloadmanifeststatus"></a>downloadmanifest.status
 
 Šis įvykis registruoja apibendrintą bandymų/gedimų, kurie buvo atlikti vykstant deklaracijos ir paketų failų atsisiuntimo procese, agregavimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6956,7 +6956,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmgr_downloadend"></a>downloadmgr_downloadend
+### <a name="downloadmgrdownloadend"></a>downloadmgr.downloadend
 
 Šis įvykis užregistruoja žymę, nurodančią, kad atsisiuntimo procesas buvo užbaigtas pats. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -6997,7 +6997,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="downloadmgr_downloadstart"></a>downloadmgr_downloadstart
+### <a name="downloadmgrdownloadstart"></a>downloadmgr.downloadstart
 
 Šis įvykis registruoja naujinimą, kuris bus atsisiųstas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -7037,7 +7037,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="downloadtask_downloadbegin"></a>downloadtask_downloadbegin
+### <a name="downloadtaskdownloadbegin"></a>downloadtask.downloadbegin
 
 Šis įvykis nurodo programos naujinimo atsisiuntimo veiklos pradžią. Šis įvykis yra naujinimų ataskaitos dalis ir jį naudojame, kad nustatytumėte programų naujinimų sveikatą.
  
@@ -7086,7 +7086,7 @@ Renkami šių laukų duomenys:
 - **UpdateVersion** – programos versija po atnaujinimo
 
 
-### <a name="downloadtask_downloadfailure"></a>downloadtask_downloadfailure
+### <a name="downloadtaskdownloadfailure"></a>downloadtask.downloadfailure
 
 Šis įvykis užregistruoja, kad atsisiunčiant paketo failą įvyko klaida. Užregistruojame atnaujinimo maršrutą ir klaidą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -7133,7 +7133,7 @@ Renkami šių laukų duomenys:
 - **UpdateID** – atsisiunčiamo taikomosios programos naujinimo identifikatorius.
 
 
-### <a name="downloadtask_downloadsuccess"></a>downloadtask_downloadsuccess
+### <a name="downloadtaskdownloadsuccess"></a>downloadtask.downloadsuccess
 
 Sėkmingas paketo failo atsisiuntimas. Užregistruojame atnaujinimo maršrutą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -7177,7 +7177,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – atsisiųsto naujinimo identifikatorius.
 
-### <a name="downloadtask_updatertypeerror"></a>downloadtask_updatertypeerror
+### <a name="downloadtaskupdatertypeerror"></a>downloadtask.updatertypeerror
 
 Šis įvykis praneša apie atnaujinimo failo klaidą atsisiųstame deklaracijos faile. Šis įvykis naudojamas pranešti apie deklaracijos failą savininkui, kad būtų pataisyta klaida.
  
@@ -7221,7 +7221,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateURL** – naujinimo paketo, kurį reikia pritaikyti, URL
 
-### <a name="downloadtask_urlerror"></a>downloadtask_urlerror
+### <a name="downloadtaskurlerror"></a>downloadtask.urlerror
 
 Šis įvykis praneša apie URL klaidą atsisiųstame deklaracijos faile. Šis įvykis naudojamas pranešti apie deklaracijos failą savininkui, kad būtų pataisyta klaida.
  
@@ -7263,7 +7263,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateURL** – naujinimo paketo, kurį reikia pritaikyti, URL
 
-### <a name="fba_changelastupdate"></a>fba_changelastupdate
+### <a name="fbachangelastupdate"></a>fba.changelastupdate
 
 Šis įvykis praneša, kai „Microsoft“ automatinis naujinimas (MAU) patikrina, ar yra naujinimų. Šis įvykis naudojamas norint derinti, kai konkrečiam įrenginiui nepasiūloma atnaujinti per ilgesnį laikotarpį.
 
@@ -7302,7 +7302,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_checkforupdate"></a>fba_checkforupdate
+### <a name="fbacheckforupdate"></a>fba.checkforupdate
 
 Šis įvykis nurodo, kad procesas fone tikrina, ar yra naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -7343,7 +7343,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_checkforupdateskip"></a>fba_checkforupdateskip
+### <a name="fbacheckforupdateskip"></a>fba.checkforupdateskip
 
 Šis įvykis nurodo, kad fono procesas praleido naujinimą dėl MAU GUI atidarymo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -7384,7 +7384,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_forceinstallmsgsent"></a>fba_forceinstallmsgsent
+### <a name="fbaforceinstallmsgsent"></a>fba.forceinstallmsgsent
 
 Šis įvykis nurodo, kad iš vartotojo sąsajos pradedamas priverstinis atnaujinimas. Šis įvykis yra piltuvėlio dalis, kuris naudojamas nustatyti priverstinio naujinimo funkcijos sveikatą.
 
@@ -7422,7 +7422,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_forceupdatecheck"></a>fba_forceupdatecheck
+### <a name="fbaforceupdatecheck"></a>fba.forceupdatecheck
 
 Šis įvykis nurodo, kad naujinimo patikra yra priverstinė. Šis įvykis naudojamas norint nustatyti priverstinių atnaujinimo patikrinimų, kurie įvyksta ne įprastu metu, patikros ciklą.
 
@@ -7462,7 +7462,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_guiappopen"></a>fba_guiappopen
+### <a name="fbaguiappopen"></a>fba.guiappopen
 
 Šis įvykis nurodo, kad vartotojo sąsaja pradedama naudoti automatinio tikrinimo režimu, nes šiuo metu yra atidaryta programa, kuriai taikomas naujinimas. Šis įvykis naudojamas nustatyti, ar vartotojo sąsajos apimtis paleidžiama automatinių patikros režimu, kad būtų galima naudoti būsimas funkcijų kūrimas.
 
@@ -7502,7 +7502,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_installpending"></a>fba_installpending
+### <a name="fbainstallpending"></a>fba.installpending
 
 Šis įvykis nurodo, kad „Microsoft“ automatinis naujinimas (MAU) atsiuntė pranešimą apie laukiančius naujinimus. Šis įvykis naudojamas nustatant naujinimų, kurie inicijuojami iš vartotojų pranešimų, kiekį ir yra naudojamas siekiant pagerinti vartotojų patirtį mažinant pertraukimą vartotojams būsimuose leidimuose.
 
@@ -7542,7 +7542,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_launch"></a>fba_launch
+### <a name="fbalaunch"></a>fba.launch
 
 Šis įvykis nurodo „Microsoft Update“ pagalbinės priemonės pradžią, kai pradedamas naudoti metodas. Šis įvykis naudojamas nustatyti, ar „Microsoft Update“ asistentas veikia netinkamai.
 
@@ -7582,7 +7582,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_launchbyagent"></a>fba_launchbyagent
+### <a name="fbalaunchbyagent"></a>fba.launchbyagent
 
 Šis įvykis nurodo, kad „Microsoft Update“ asistentas buvo paleistas naudojant paleisties agentą. Šis įvykis naudojamas „Microsoft Update“ pagalbinės priemonės, kuri pradedama nuo vartotojo sąsajos ateities plėtrai, kiekiui nustatyti.
 
@@ -7622,7 +7622,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_launchfromprotocol"></a>fba_launchfromprotocol
+### <a name="fbalaunchfromprotocol"></a>fba.launchfromprotocol
 
 Šis įvykis nurodo, kad „Microsoft Update“ asistentas buvo paleistas naudojant URL protokolą. Šis įvykis naudojamas „Microsoft Update“ pagalbinės priemonės, kuri paleidžiama iš URL ateities plėtrai, kiekiui nustatyti.
 
@@ -7662,7 +7662,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_launchgui"></a>fba_launchgui
+### <a name="fbalaunchgui"></a>fba.launchgui
 
 Šis įvykis nurodo, kad „Microsoft Update“ asistentas bando įjungti grafinę vartotojo sąsają (GUI). Šis įvykis naudojamas nustatyti vartotojo sąsajos paleidimų, inicijuotų iš „Microsoft Update Assistant“, kiekį, kad būtų lengviau kurti būsimus pokyčius, pvz., sumažinti vartotojo trukdžius nuo dažno vartotojo sąsajos paleidimo.
 
@@ -7703,7 +7703,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_launchstatus"></a>fba_launchstatus
+### <a name="fbalaunchstatus"></a>fba.launchstatus
 
 Šis įvykis registruoja MAU „Daemon“ nesėkmes bandant paleisti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -7748,7 +7748,7 @@ Renkami šių laukų duomenys:
 - **Success** – Bulio logikos eilutė, nurodanti, ar buvo sėkmingai paleistas MAU demono procesas.
 
 
-### <a name="fba_mausilentupdate"></a>fba_mausilentupdate
+### <a name="fbamausilentupdate"></a>fba.mausilentupdate
 
 Šis įvykis nurodo, kad „Microsoft Update“ asistentas pradeda tyliai atnaujintus naujinimus. Šis įvykis naudojamas norint nustatyti, kokie naujinimai taikomi nenaudojant vartotojo įsikišimo, kad būtų lengviau valdyti vartotojų patirtį.
 
@@ -7788,7 +7788,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_moreinfofromappnotification"></a>fba_moreinfofromappnotification
+### <a name="fbamoreinfofromappnotification"></a>fba.moreinfofromappnotification
 
 Šis įvykis praneša informaciją apie registruotą taikomąją programą, kuri nukreipiama per „Microsoft“ automatinius naujinimus (MAU). Pvz., galutinių tarnybų pranešimai išstumiami per MAU pranešimą. Šis įvykis naudojamas nustatyti įrenginių, kurie rodo šį konkretų pranešimą, kiekį, kad būtų galima nustatyti informacijos sklaidos sėkmę.
 
@@ -7830,7 +7830,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_multipledaemon"></a>fba_multipledaemon
+### <a name="fbamultipledaemon"></a>fba.multipledaemon
 
 Šis įvykis nurodo, kad aptiktas kitas „Microsoft Update“ pagalbinės priemonės egzempliorius ir dabartinis egzempliorius bus nutrauktas. Naudosime šį įvykį, kad nustatytumėte įrenginių, kurie bando vykdyti kelis naujinimo pagalbinės priemonės egzempliorius, kiekį ir, jei reikia, sukurti sprendimo būdą.
 
@@ -7870,7 +7870,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_nofifyappclosed"></a>fba_nofifyappclosed
+### <a name="fbanofifyappclosed"></a>fba.nofifyappclosed
 
 Šis įvykis nurodo, kad „Microsoft Update“ asistentas siunčia pranešimą apie laukiančius naujinimus, nes nėra atidarytų programų ir naujinimai gali būti vykdomi netrukdant vartotojui. Šis įvykis naudojamas norint nustatyti, kokį kiekį naujinimų, kurie gali būti taikomi, reikia atlikti, tačiau tam reikia, kad vartotojas atliktų veiksmus. Šis įvykis naudojamas siekiant pagerinti vartotojų patirtį.
 
@@ -7910,7 +7910,7 @@ Renkami šių laukų duomenys:
     
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_nofifyappopen"></a>fba_nofifyappopen
+### <a name="fbanofifyappopen"></a>fba.nofifyappopen
 
 Šis įvykis nurodo, kad „Microsoft Update“ asistentas siunčia pranešimą apie laukiančius naujinimus, nes yra atidarytų užregistruotų programų ir naujinimai bus vykdomi uždarius programas.  Šį įvykį naudojame, kad nustatytumėte naujinimų, kuriems reikia vartotojo įsikišimo, kiekį.  Šis įvykis naudojamas siekiant pagerinti vartotojų patirtį.
 
@@ -7950,7 +7950,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_settimerfail"></a>fba_settimerfail  
+### <a name="fbasettimerfail"></a>fba.settimerfail  
 
 Šis įvykis nurodo, kad bandant nustatyti laikmatį nepavyko paleisti būsimo naujinimo. Šis įvykis itin svarbus, ir jį naudojame, kad nustatytumėte, ar nėra klaidų, ir jų sprendimo būdus, jei reikia.
 
@@ -7991,7 +7991,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_silentupdateoptin"></a>fba_silentupdateoptin
+### <a name="fbasilentupdateoptin"></a>fba.silentupdateoptin
 
 Šis įvykis reiškia, kad vartotojas renkasi tyliuosius naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8031,7 +8031,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fba_skipforcedupdate"></a>fba_skipforcedupdate
+### <a name="fbaskipforcedupdate"></a>fba.skipforcedupdate
 
 Šis įvykis nurodo, kad priverstinis naujinimų tikrinimas praleistas dėl atidaromų programų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8072,7 +8072,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_startforcedupdate"></a>fba_startforcedupdate
+### <a name="fbastartforcedupdate"></a>fba.startforcedupdate
 
 Šis įvykis nurodo, kad įvyko bandymas taikyti priverstinį naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8113,7 +8113,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_terminate"></a>fba_terminate
+### <a name="fbaterminate"></a>fba.terminate
 
 Šis įvykis reiškia, kad MAU „Daemon“ nutrauktas įprastai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8154,7 +8154,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fba_updatefound"></a>fba_updatefound
+### <a name="fbaupdatefound"></a>fba.updatefound
 
 Šis įvykis nurodo, kad MAU „Daemon“ rado siūlomų naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8195,7 +8195,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="fba_updatetimer"></a>fba_updatetimer
+### <a name="fbaupdatetimer"></a>fba.updatetimer
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ „Daemon“ procesas tapo aktyvus ir tikrina, ar yra naujinimų, kai po tam tikro laiko pabudo iš miego režimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8236,7 +8236,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_allappsclosed"></a>fbasilentupdate_allappsclosed
+### <a name="fbasilentupdateallappsclosed"></a>fbasilentupdate.allappsclosed
 
 Šis įvykis registruoja, ar visos taikomosios programos buvo uždarytos prieš diegimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8277,7 +8277,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_applaunchafterupdate"></a>fbasilentupdate_applaunchafterupdate
+### <a name="fbasilentupdateapplaunchafterupdate"></a>fbasilentupdate.applaunchafterupdate
 
 Šis įvykis registruoja bandymą atnaujinti taikomąją programą po tyliuoju naujinimu ir naujinimo režimu (klonas arba ne). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8322,7 +8322,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_applaunchwileinstalling"></a>fbasilentupdate_applaunchwileinstalling
+### <a name="fbasilentupdateapplaunchwileinstalling"></a>fbasilentupdate.applaunchwileinstalling
 
 Mes užregistruojame, kada buvo įdiegta programų paleistis, kai įdiegiate naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8363,7 +8363,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_appneedtoclose"></a>fbasilentupdate_appneedtoclose
+### <a name="fbasilentupdateappneedtoclose"></a>fbasilentupdate.appneedtoclose
 
 Užregistruojame, kada buvo pradėtas atnaujinimo procesas, ir matome, kad naujinama programa buvo atidaryta. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8404,7 +8404,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_appterminationeventreceived"></a>fbasilentupdate_appterminationeventreceived
+### <a name="fbasilentupdateappterminationeventreceived"></a>fbasilentupdate.appterminationeventreceived
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ gavo „Apple“ įvykį, informuojantį apie taikomosios programos nutraukimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8451,7 +8451,7 @@ Renkami šių laukų duomenys:
 - **UpdateID** – taikomosios programos naujinimo identifikatorius.
 
 
-### <a name="fbasilentupdate_clientsession"></a>FBASilentUpdate_ClientSession
+### <a name="fbasilentupdateclientsession"></a>FBASilentUpdate.ClientSession
 
 Šis įvykis naudojamas apskaičiuoti kritinio naujinimo sveikatos metriką „Microsoft“ automatiniam naujinimui (MAU). Šis įvykis leidžia mums nurodyti, kuris naujinimo seansas (atsisiųsti arba įdiegti) šiuo metu yra tvarkomas galiniame taške.
  
@@ -8492,7 +8492,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_codesignfailure"></a>fbasilentupdate_codesignfailure
+### <a name="fbasilentupdatecodesignfailure"></a>fbasilentupdate.codesignfailure
 
 Šis įvykis, kai naujinimas pritaikytas, užregistruoja koprojektinio patvirtinimo rezultatą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8533,7 +8533,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_download"></a>fbasilentupdate_download
+### <a name="fbasilentupdatedownload"></a>fbasilentupdate.download
 
 Šis įvykis nurodo, kad atsisiunčiamas naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8576,7 +8576,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_downloadfailed"></a>fbasilentupdate_downloadfailed
+### <a name="fbasilentupdatedownloadfailed"></a>fbasilentupdate.downloadfailed
 
 Šis įvykis reiškia, kad atsisiunčiant naujinimą įvyko klaida. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8625,7 +8625,7 @@ Renkami šių laukų duomenys:
 - **UpdateName** – taikomosios programos naujinimo pavadinimas.
 
 
-### <a name="fbasilentupdate_downloadinbackground"></a>fbasilentupdate_downloadinbackground
+### <a name="fbasilentupdatedownloadinbackground"></a>fbasilentupdate.downloadinbackground
 
 Šis įvykis nurodo, kad paleidome naujinimų rinkinį fone (užregistruojame atsisiunčiamų naujinimų skaičių). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8666,7 +8666,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_downloadingrepairupdate"></a>fbasilentupdate_downloadingrepairupdate
+### <a name="fbasilentupdatedownloadingrepairupdate"></a>fbasilentupdate.downloadingrepairupdate
 
 Šis įvykis nurodo, kad pradedame bandyti atsisiųsti pataisytą nepavykusį naujinimą. Užregistruojame versiją ir naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8709,7 +8709,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_duplicatedownloadattempted"></a>fbasilentupdate_duplicatedownloadattempted
+### <a name="fbasilentupdateduplicatedownloadattempted"></a>fbasilentupdate.duplicatedownloadattempted
 
 Šis įvykis nurodo, kad įvyko klaida. Vienu metu turėtų būti atsisiųsta po vieną konkrečios taikomosios programos naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8750,7 +8750,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_installattemptfailed"></a>fbasilentupdate_installattemptfailed
+### <a name="fbasilentupdateinstallattemptfailed"></a>fbasilentupdate.installattemptfailed
 
 Šis įvykis nurodo, kad nepavyko įdiegti naujinimo (versijos). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8791,7 +8791,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_installcomplete"></a>fbasilentupdate_installcomplete
+### <a name="fbasilentupdateinstallcomplete"></a>fbasilentupdate.installcomplete
 
 Šis įvykis nurodo, kad visi paketiniai naujinimai baigti diegti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8832,7 +8832,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_installed"></a>fbasilentupdate_installed
+### <a name="fbasilentupdateinstalled"></a>fbasilentupdate.installed
 
 Šis įvykis nurodo, kad buvo sėkmingai atliktas atskiras naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8873,7 +8873,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="fbasilentupdate_installing"></a>fbasilentupdate_installing
+### <a name="fbasilentupdateinstalling"></a>fbasilentupdate.installing
 
 Šis įvykis nurodo, kad buvo pradėtas atskiras naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -8913,7 +8913,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fbasilentupdate_installstatus"></a>fbasilentupdate_installstatus
+### <a name="fbasilentupdateinstallstatus"></a>fbasilentupdate.installstatus
 
 Šis įvykis praneša apie programos atnaujinimo užduoties būseną. Šis įvykis yra naujinimų ataskaitos dalis ir jį naudojame, kad nustatytumėte programų naujinimų sveikatą.
 
@@ -8963,7 +8963,7 @@ Renkami šių laukų duomenys:
 
 - **UpdatePkg** – pritaikyto naujinimo paketo pavadinimas
 
-### <a name="fbasilentupdate_notificationerror"></a>fbasilentupdate_notificationerror
+### <a name="fbasilentupdatenotificationerror"></a>fbasilentupdate.notificationerror
 
 Šis įvykis praneša, kad įvyko klaida bandant išsiųsti vartotojo pranešimą. Šis įvykis bus naudojamas norint derinti klaidų priežastis ir imtis korekcinių veiksmų.
 
@@ -9009,7 +9009,7 @@ Renkami šių laukų duomenys:
 
 - **Type** – pranešimo tipas
 
-### <a name="fbasilentupdate_notificationremoved"></a>fbasilentupdate_notificationremoved
+### <a name="fbasilentupdatenotificationremoved"></a>fbasilentupdate.notificationremoved
 
 Šis įvykis nurodo, kad užblokuotas naujinimas nebeblokuojamas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -9050,7 +9050,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_queueinstall"></a>fbasilentupdate_queueinstall
+### <a name="fbasilentupdatequeueinstall"></a>fbasilentupdate.queueinstall
 
 Šis įvykis nurodo, kad naujinimas bus įtrauktas į eilę tyliajam įdiegimui. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -9091,7 +9091,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_requiredappsclosed"></a>fbasilentupdate_requiredappsclosed
+### <a name="fbasilentupdaterequiredappsclosed"></a>fbasilentupdate.requiredappsclosed
 
 Užregistruojame, kai programa, kuri turi laukiantį naujinimą, yra uždaryta. Tai nurodo laiką, kada gali būti vykdomas tikrasis diegimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -9131,7 +9131,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fbasilentupdate_timerforapptermination"></a>FBASilentUpdate_TimerForAppTermination
+### <a name="fbasilentupdatetimerforapptermination"></a>FBASilentUpdate.TimerForAppTermination
 
 Šis įvykis naudojamas apskaičiuoti kritinio naujinimo sveikatos metriką „Microsoft“ automatiniam naujinimui (MAU). Šis įvykis leidžia mums sekti atidarytos programos nutraukimo įvykį ir jo atidarytos būsenos trukmę.
  
@@ -9171,7 +9171,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="fbasilentupdate_updateavailablenotification"></a>fbasilentupdate_updateavailablenotification
+### <a name="fbasilentupdateupdateavailablenotification"></a>fbasilentupdate.updateavailablenotification
 
 Šis įvykis nurodo, kad įjungtas pranešimas apie galimą atnaujinimą. Turi būti užtikrinta, kad, aptikus naujinimą, būtų paleidžiamas raginimas naujinti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -9212,7 +9212,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_userclicknotification"></a>fbasilentupdate_userclicknotification
+### <a name="fbasilentupdateuserclicknotification"></a>fbasilentupdate.userclicknotification
 
 Šiame įvykyje nurodomas vartotojo spustelėtas turinys pranešime, kuris, skirtas naujinimui, ir paleidžiama „Microsoft AutoUpdate GUI“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -9253,7 +9253,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_userselectinstalllater"></a>fbasilentupdate_userselectinstalllater
+### <a name="fbasilentupdateuserselectinstalllater"></a>fbasilentupdate.userselectinstalllater
 
 Šis įvykis nurodo, kad vartotojas pasirinko diegti vėliau, po to, kai parodomas pranešimas apie prieinamą naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -9294,7 +9294,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="fbasilentupdate_userselectinstallnow"></a>fbasilentupdate_userselectinstallnow
+### <a name="fbasilentupdateuserselectinstallnow"></a>fbasilentupdate.userselectinstallnow
 
 Šis įvykis nurodo, kad vartotojas pasirinko diegti dabar, po to, kai parodomas pranešimas apie prieinamą naujinimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -9334,7 +9334,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="gui_dashboardview_appisopendialog_display"></a>gui_dashboardview_appisopendialog_display 
+### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Šis įvykis nurodo, kad vartotojo sąsaja atidaro dialogo langą atidaro uždaryti programą, kad būtų galima tęsti jos naujinimą. Šis įvykis naudojamas nustatyti uždelstų naujinimų kiekį, kad būtų galima ateityje sumažinti trukdžius vartotojams.
 
@@ -9378,7 +9378,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateName** – naujinimo pavadinimas, kai jis rodomas atsiųstame deklaracijos faile
 
-### <a name="gui_dashboardview_appisopendialogbutton_clicked"></a>gui_dashboardview_appisopendialogbutton_clicked
+### <a name="guidashboardviewappisopendialogbuttonclicked"></a>gui.dashboardview.appisopendialogbutton.clicked
 
 Šis įvykis nurodo, ar programų naujinimas praleidžiamas, ar atliekamas dar vienas bandymas, kai rodomas dialogo langas atidaryti programą. Šis įvykis naudojamas nustatyti praleistų naujinimų kiekį, kad būtų galima ateityje sumažinti trukdžius vartotojams.
 
@@ -9424,7 +9424,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateName** – naujinimo pavadinimas, kai jis rodomas atsiųstame deklaracijos faile
 
-### <a name="gui_dashboardview_updateinprogressdialog_display"></a>gui_dashboardview_updateinprogressdialog_display
+### <a name="guidashboardviewupdateinprogressdialogdisplay"></a>gui.dashboardview.updateinprogressdialog.display
 
 Šis įvykis užregistruoja, ar vartotojams jau buvo rodomas dialogo langas, nurodantis, kad naujinimas jau vykdomas.
  
@@ -9462,7 +9462,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="gui_dashboardview_updatemodebutton_clicked"></a>gui_dashboardview_updatemodebutton_clicked
+### <a name="guidashboardviewupdatemodebuttonclicked"></a>gui.dashboardview.updatemodebutton.clicked
 
 Šis įvykis nurodo naujinimo režimą, pakeistą vartotojo sąsajos valdiklyje. Šis įvykis naudojamas nustatyti įrenginių, kurie pereis iš vieno režimo į kitą, kiekį, ir padeda nustatyti, kodėl klientai pereina nuo automatinių naujinimų. 
 
@@ -9502,7 +9502,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="gui_feedbackwindow_buttonclicked"></a>gui_feedbackwindow_buttonclicked
+### <a name="guifeedbackwindowbuttonclicked"></a>gui.feedbackwindow.buttonclicked
 
 Šis įvykis praneša apie tai, ar prieš pateikiant atsiliepimas pateikiamas, ar atšaukiamas. Šis įvykis naudojamas siekiant padėti nustatyti tam tikro leidimo versijoje siunčiamo grįžtamojo ryšio kiekį. Tai padeda anksti išskirti galimas triktis.
 
@@ -9542,7 +9542,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="gui_preferenceview_consentsheet_display"></a>gui_preferenceview_consentsheet_display
+### <a name="guipreferenceviewconsentsheetdisplay"></a>gui.preferenceview.consentsheet.display
 
 Šis įvykis nurodo, kad rodomas tam tikro kanalo sutikimo lapas, jei jis pasiekiamas. Šis įvykis naudojamas nustatyti įrenginių, kurie naujai įsiregistruos į tinkamą auditorijos kanalą, kiekį („Insider“ Sparčioji versija/„Insider“ Lėtoji versija). Mes taip pat naudojame šį įvykį, kad užtikrintumėte, jog sutikime esantis dialogo langas veikia, kad būtų galima rodyti naudojimo sąlygas vartotojams.
  
@@ -9582,7 +9582,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="gui_preferenceview_consentsheet_licenseerror"></a>gui_preferenceview_consentsheet_licenseerror
+### <a name="guipreferenceviewconsentsheetlicenseerror"></a>gui.preferenceview.consentsheet.licenseerror
 
 Šiame įvykių ataskaitose įvyko klaida bandant rodyti sutikimo dialogo langą. Šis įvykis yra labai svarbus ir yra naudojamas pašalinti visas dėl produkto pakeitimo kylančias triktis, jei taikoma.
 
@@ -9624,7 +9624,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="gui_preferenceview_switchchannel"></a>gui_preferenceview_switchchannel
+### <a name="guipreferenceviewswitchchannel"></a>gui.preferenceview.switchchannel
 
 Šis įvykis praneša apie perėjimą tarp vartotojo pasirinktų kanalų. Šis įvykis naudojamas siekiant padėti nustatyti, kodėl klientai pasirenka „Insider“ kanalus.  
 
@@ -9666,7 +9666,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="gui_updatemanager_applaunchduringupdate"></a>gui_updatemanager_applaunchduringupdate
+### <a name="guiupdatemanagerapplaunchduringupdate"></a>gui.updatemanager.applaunchduringupdate
 
 Šis įvykis praneša, kad programa buvo paleista, kol ji buvo atnaujinama, ir „Microsoft AutoUpdate“ nutraukia paleistą programą. Turėkite omenyje, kad atidarius programą naujinimo metu, gali įvykti programos gedimas. Šis įvykis naudojamas norint užtikrinti, kad naujinimo procesas neįtakojamas atidarytos programos, kol ji bus paruošta naudoti.
  
@@ -9710,7 +9710,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius.
 
-### <a name="gui_updatemanager_downloadupdateforapp"></a>gui_updatemanager_downloadupdateforapp
+### <a name="guiupdatemanagerdownloadupdateforapp"></a>gui.updatemanager.downloadupdateforapp
 
 Šis įvykis praneša apie atsisiuntimo užbaigimo būseną, skirtą naujinimui. Šis įvykis naudojamas siekiant užtikrinti naujinimo proceso ir takelio/adreso triktis.
 
@@ -9759,7 +9759,7 @@ Renkami šių laukų duomenys:
 - **UpdateName** – naujinimo pavadinimas.
 
 
-### <a name="gui_updatemanager_error"></a>gui_updatemanager_error
+### <a name="guiupdatemanagererror"></a>gui.updatemanager.error
 
 Šis įvykis praneša apie visas klaidas, aptiktas programos naujinimuose. Taip gali būti rodoma „Microsoft“ automatinio naujinimo (MAU) vykdymo sekos klaida.  Šią ataskaitą naudojame norėdami taikyti „MAU“ naujinimus, kad galėtumėte atsižvelgti į įprastus klaidų scenarijus.
 
@@ -9801,7 +9801,7 @@ Renkami šių laukų duomenys:
 
 - **Success** – Bulio logikos reikšmės eilutė, nurodanti, ar programa buvo sėkmingai išjungta.
 
-### <a name="gui_updatemanager_installcleanupforapp"></a>gui_updatemanager_installcleanupforapp
+### <a name="guiupdatemanagerinstallcleanupforapp"></a>gui.updatemanager.installcleanupforapp
 
 Šis įvykis nurodo, kad laikinieji failai, sukurti diegiant programą, sėkmingai išvalyti. Šis įvykis yra naujinimų ataskaitos dalis ir jį naudojame, kad nustatytumėte programų naujinimų sveikatą.
  
@@ -9846,7 +9846,7 @@ Renkami šių laukų duomenys:
 - **UpdateID** – naujinimo identifikatorius.
 
 
-### <a name="gui_updatemanager_installsuccessforapp"></a>gui_updatemanager_installsuccessforapp
+### <a name="guiupdatemanagerinstallsuccessforapp"></a>gui.updatemanager.installsuccessforapp
 
 Šis įvykis nurodo sėkmingą programos naujinimą. Šis įvykis yra naujinimo piltuvėlio dalis, kurią mes naudojame nustatyti naujinimo sveikatą.
  
@@ -9890,7 +9890,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – naujinimo identifikatorius.
 
-### <a name="gui_updatemanager_installupdateforapp"></a>gui_updatemanager_installupdateforapp
+### <a name="guiupdatemanagerinstallupdateforapp"></a>gui.updatemanager.installupdateforapp
 
 Šis įvykis nurodo programos naujinimo atsisiuntimo veiklos pradžią. Šis įvykis yra naujinimo piltuvėlio dalis, kurią mes naudojame nustatyti naujinimo sveikatą.
  
@@ -9932,7 +9932,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – naujinimo identifikatorius.
 
-### <a name="gui_updatemanager_queueinstallforapp"></a>gui_updatemanager_queueinstallforapp
+### <a name="guiupdatemanagerqueueinstallforapp"></a>gui.updatemanager.queueinstallforapp
 
 Šis įvykis nurodo programos naujinimo atsisiuntimo veiklos pradžią. Šis įvykis yra naujinimo piltuvėlio dalis, kurią mes naudojame nustatyti naujinimo sveikatą.
  
@@ -9974,7 +9974,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – naujinimo identifikatorius.
 
-### <a name="gui_updatemanager_relaunchapp"></a>gui_updatemanager_relaunchapp
+### <a name="guiupdatemanagerrelaunchapp"></a>gui.updatemanager.relaunchapp
 
 Šis įvykis registruoja, ar po naujinimų programos buvo sėkmingai paleistos.
  
@@ -10020,7 +10020,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateName** – naujinimo pavadinimas.
 
-### <a name="installdata_checkrunning"></a>installdata_checkrunning
+### <a name="installdatacheckrunning"></a>installdata.checkrunning
 
 Šis įvykis užregistruoja patikros tarp diegiamų programų rezultatus ir tai, ar bandymas bus vykdomas atsižvelgiant į atidarytą taikomąją programą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10061,7 +10061,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installdata_cleanup"></a>installdata_cleanup
+### <a name="installdatacleanup"></a>installdata.cleanup
 
 Paketiniai failai turi būti pašalinami po įdiegimo. Šis įvykis fiksuoja atvejus, kai nepašalinome jų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10102,7 +10102,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installedapp_invalidbundle"></a>installedapp_invalidbundle
+### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ negalėjo gauti paketo informacijos apie registruotą taikomąją programą tam tikru maršrutu. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10143,7 +10143,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installedapp_invalidpreference"></a>installedapp_invalidpreference
+### <a name="installedappinvalidpreference"></a>installedapp.invalidpreference
 
 Šis įvykis registruoja atvejus, kai vartotojo nuostatose yra neleistinas taikomosios programos įrašas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10184,7 +10184,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installedapp_nilbundleid"></a>installedapp_nilbundleid
+### <a name="installedappnilbundleid"></a>installedapp.nilbundleid
 
 Šis įvykis registruoja atvejus, kai taikomojoje programoje trūko paketo ID. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10225,7 +10225,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installedapp_nilbundlename"></a>installedapp_nilbundlename
+### <a name="installedappnilbundlename"></a>installedapp.nilbundlename
 
 Šis įvykis registruoja atvejus, kai taikomojoje programoje trūko paketo pavadinimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10266,7 +10266,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installedapp_sendcoreappleevent"></a>installedapp_sendcoreappleevent
+### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Šis įvykis nurodo, kad „Microsoft“ automatinis naujinimas (MAU) siunčia „Apple“ įvykį į registruotą programą, kad ją nutrauktų ir būtų tęsiamas laukiantis programos naujinimas. Šis įvykis šiuo metu naudojamas siekiant padėti plėtoti būsimą patobulinimą ir sumažinti trukdžius vartotojams naujinant. 
 
@@ -10317,7 +10317,7 @@ Renkami šių laukų duomenys:
 - **Success** – nurodo, ar konkreti programa pranešė apie sėkmingą operaciją
 
     
-### <a name="installstatus_codesign"></a>installstatus_codesign
+### <a name="installstatuscodesign"></a>installstatus.codesign
 
 Šis įvykis registruoja OS koprojektinių dvejetainių būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10358,7 +10358,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installstatus_daemon"></a>installstatus_daemon
+### <a name="installstatusdaemon"></a>installstatus.daemon
 
 Šis įvykis užregistruoja „Microsoft AutoUpdate“ „Daemon“ būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10399,7 +10399,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installstatus_helper"></a>installstatus_helper
+### <a name="installstatushelper"></a>installstatus.helper
 
 Šis įvykis užregistruoja „Microsoft AutoUpdate“ pagalbininko įrankio būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10440,7 +10440,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installupdatestask_applaunched"></a>installupdatestask_applaunched
+### <a name="installupdatestaskapplaunched"></a>installupdatestask.applaunched
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ aptiko užblokuoto naujinimo taikomųjų programų paleidimą, bet negalėjo rasti tinkamos diegimo programos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10481,7 +10481,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installupdatestask_applaunchwithpendingupdate"></a>installupdatestask_applaunchwithpendingupdate
+### <a name="installupdatestaskapplaunchwithpendingupdate"></a>installupdatestask.applaunchwithpendingupdate
 
 Šis įvykis nurodo „Microsoft AutoUpdate“ aptiktą taikomųjų programų paleidimą su laukiančiu naujinimu. Paleista taikomoji programa bus nutraukta. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10522,7 +10522,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installupdatestask_codesignverificationfail"></a>installupdatestask_codesignverificationfail
+### <a name="installupdatestaskcodesignverificationfail"></a>installupdatestask.codesignverificationfail
 
 Šis įvykis nurodo, kad nepavyko patikrinti „CodeSign“ taikomosios programos naujinimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10563,7 +10563,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_codesignverificationstart"></a>installupdatestask_codesignverificationstart
+### <a name="installupdatestaskcodesignverificationstart"></a>installupdatestask.codesignverificationstart
 
 Šis įvykis nurodo, kad prasidėjo „CodeSign“ taikomosios programos naujinimo patvirtinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10604,7 +10604,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_codesignverificationsuccess"></a>installupdatestask_codesignverificationsuccess
+### <a name="installupdatestaskcodesignverificationsuccess"></a>installupdatestask.codesignverificationsuccess
 
 Šis įvykis nurodo, kad „CodeSign“ taikomosios programos naujinimo patvirtinimas buvo sėkmingas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10645,7 +10645,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_failsilentinstall"></a>installupdatestask_failsilentinstall
+### <a name="installupdatestaskfailsilentinstall"></a>installupdatestask.failsilentinstall
 
 Šis įvykis registruoja nesėkmes taikant tyliuosius naujinimus ir, ar tai buvo klonuotas, ar reguliarus diegimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10686,7 +10686,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installupdatestask_multiplerelocatablepackage"></a>installupdatestask_multiplerelocatablepackage
+### <a name="installupdatestaskmultiplerelocatablepackage"></a>installupdatestask.multiplerelocatablepackage
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ nustatė keletą konkretaus naujinimo paketo taikomųjų programų įrašų egzempliorių atsisiųstoje deklaracijoje. Šis įvykis naudojamas norint užtikrinti, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padės pašalinti klaidas.
  
@@ -10727,7 +10727,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installupdatestask_removeclone"></a>installupdatestask_removeclone
+### <a name="installupdatestaskremoveclone"></a>installupdatestask.removeclone
 
 Šis įvykis nurodo, kad buvo pašalintas klonas. Pašaliname kloną, kai Diegimo klonuojant procesas baigtas, arba, kai pradedamas naujas procesas, o senesnė klonuota versija randama kompiuteryje. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10768,7 +10768,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_retryfail"></a>installupdatestask_retryfail
+### <a name="installupdatestaskretryfail"></a>installupdatestask.retryfail
 
 Šis įvykis nurodo, kad vykstant diegimo kartojimo procesui įvyko klaidų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10809,7 +10809,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Šis įvykis registruoja vidinio proceso ryšio klaidas (bendravimas su MAU pagalbininko įrankiu). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10850,7 +10850,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="installupdatestask_retryproxyerror"></a>installupdatestask_retryproxyerror
+### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
 Šis įvykis registruoja vidinio proceso ryšio klaidas (bendravimas su MAU pagalbininko įrankiu). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10892,7 +10892,7 @@ Renkami šių laukų duomenys:
 
     
 
-### <a name="installupdatestask_retryresponse"></a>installupdatestask_retryresponse
+### <a name="installupdatestaskretryresponse"></a>installupdatestask.retryresponse
 
 Šis įvykis registruoja nepavykusius bandymus iš naujo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10933,7 +10933,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_retrysuccess"></a>installupdatestask_retrysuccess
+### <a name="installupdatestaskretrysuccess"></a>installupdatestask.retrysuccess
 
 Šis įvykis po pakartotinio atnaujinimo užregistruoja sėkmingą naujinimo diegimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -10974,7 +10974,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_setreopengui"></a>installupdatestask_setreopengui
+### <a name="installupdatestasksetreopengui"></a>installupdatestask.setreopengui
 
 Šis įvykis nurodo, ar po sėkmingo įdiegimo buvo sukurtas pasirinkimas iš naujo atidaryti GUI. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11015,7 +11015,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="installupdatestask_updatestatus"></a>installupdatestask_updatestatus
+### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
 Šis įvykis praneša apie diegimo užduoties būseną. Šis įvykis yra naujinimo piltuvėlio dalis, kuris naudojamas nustatyti programų naujinimų sveikatą.
 
@@ -11069,8 +11069,58 @@ Renkami šių laukų duomenys:
 
 - **UpdatePkg** – pritaikyto naujinimo paketo pavadinimas
 
+### <a name="lifecycleperiodiccheck"></a>Lifecycle.periodiccheck
 
-### <a name="msupdate_cli_eventhandler"></a>msupdate_cli_eventhandler
+Šis įvykis reguliariai praneša apie „MicrosoftAutoUpdate“ proceso būseną. Konkrečiai, jis praneša apie tai, kokios likusios užduotys laukia atnaujinimo pagalbinės priemonės, ir vartotojo sąsajos ataskaitose nurodoma, ar procesas baigiamas dėl vartotojo neveikimo.  Šį įvykį naudojame norėdami nustatyti, kas neleidžia atnaujinimo pagalbinei priemonei baigti naujinimų ir nutraukimo ir ar vartotojo sąsajos nutraukiamos dėl vartotojo neveikimo.
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **dataCollectionDialog** – Bulio logika nurodo, ar procesas laukia vartotojo atsakymo duomenų rinkimo dialogo lange
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **forcedUpdateDialog** – Bulio logika nurodo, ar procesas laukia vartotojo atsakymo priverstinio naujinimo dialogo lange
+
+- **HowToCheck** – kaip tikrinti parametrus
+
+- **isBusy** – Bulio logika nurodo, ar procesas užimtas naudojant aktyvų naujinimą
+
+- **Isneaktyvus** – Bulio logika nurodo, ar procesas ilgą laiką laukė vartotojo veiksmų
+
+- **isWaiting** – Bulio logika nurodo, ar procesas laukia vartotojo atsakymo dėl pranešimo
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+- **SessionLength** – dabartinio proceso seanso trukmė sekundėmis
+
+
+### <a name="msupdateclieventhandler"></a>msupdate.cli.eventhandler
 
 Šis įvykis naudojamas norint apskaičiuoti įvairių „Microsoft“ automatinio naujinimo (MAU) komandų eilutės sąsajos API naudojimą.
 
@@ -11113,7 +11163,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="msupdate_cli_eventhandler_applyupdates_appids"></a>msupdate_cli_eventhandler_applyupdates_appids
+### <a name="msupdateclieventhandlerapplyupdatesappids"></a>msupdate.cli.eventhandler.applyupdates.appids
 
 Šis įvykis nurodo komandą CLI (kliento eilutės sąsaja), kad būtų taikomas naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11121,7 +11171,7 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
-- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
+- **AppInfo_Language** – kalba, kuria veikia programa
 
 - **AppVersionLong** – taikomosios programos versija
 
@@ -11154,7 +11204,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="msupdate_cli_eventhandler_config"></a>msupdate_cli_eventhandler_config
+### <a name="msupdateclieventhandlerconfig"></a>msupdate.cli.eventhandler.config
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo „Apple“ įvykį, kurį reikia konfigūruoti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11195,7 +11245,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="msupdate_cli_eventhandler_updates"></a>msupdate_cli_eventhandler_updates
+### <a name="msupdateclieventhandlerupdates"></a>msupdate.cli.eventhandler.updates
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ komandinės eilutės sąsajos modulis gavo „Apple“ įvykį, nurodantį sukurti naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11236,7 +11286,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="msupdate_monitor_progress_downloaded"></a>msupdate_monitor_progress_downloaded
+### <a name="msupdatemonitorprogressdownloaded"></a>msupdate.monitor.progress.downloaded
 
 Šis įvykis nurodo, kad naujinimai buvo atsiųsti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11277,7 +11327,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="msupdate_monitor_progress_failure"></a>msupdate_monitor_progress_failure
+### <a name="msupdatemonitorprogressfailure"></a>msupdate.monitor.progress.failure
 
 Šis įvykis užregistruoja eilėje esančių naujinimų, kurių nepavyko pritaikyti, sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11318,7 +11368,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="msupdate_monitor_progress_finished"></a>msupdate_monitor_progress_finished
+### <a name="msupdatemonitorprogressfinished"></a>msupdate.monitor.progress.finished
 
 Šis įvykis užregistruoja eilėje esančių naujinimų, kurie baigti diegti, sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11359,7 +11409,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="msupdate_monitor_progress_queued"></a>msupdate_monitor_progress_queued
+### <a name="msupdatemonitorprogressqueued"></a>msupdate.monitor.progress.queued
 
 Šis įvykis užregistruoja eilėje esančių naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -11441,7 +11491,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="sauforcedupdate_autodismiss"></a>sauforcedupdate_autodismiss
+### <a name="sauforcedupdateautodismiss"></a>sauforcedupdate.autodismiss
 
 Šis įvykis nurodo, kad rodomas dialogo langas priverstinai naujinti, išjungiamas dėl vartotojo neaktyvumo. Šis įvykis naudojamas nustatant priverstinių naujinimų, kurie vykdomi be vartotojų įvesties į rodomą pranešimą, kiekį. Šis įvykis naudojamas norint patobulinti vartotojo sąsają, kad būtų sumažinti trukdžiai.
 
@@ -11481,7 +11531,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_close"></a>sauforcedupdate_close
+### <a name="sauforcedupdateclose"></a>sauforcedupdate.close
 
 Šis įvykis nurodo, kad vartotojas pasirinko užbaigti priverstinio atnaujinimo dialogo langą. Šis įvykis naudojamas nustatant priverstinių naujinimų, atidėtų vartotojo veiksmų, kiekį. Šis įvykis naudojamas norint patobulinti vartotojo sąsają, kad būtų sumažinti trukdžiai. 
 
@@ -11521,7 +11571,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_completeautodismiss"></a>sauforcedupdate_completeautodismiss
+### <a name="sauforcedupdatecompleteautodismiss"></a>sauforcedupdate.completeautodismiss
 
 Šis įvykis nurodo, kad rodomas dialogo langas priverstinai naujinti iš termino funkcijos, išjungiamas dėl vartotojo neaktyvumo. Šis įvykis naudojamas nustatant priverstinių naujinimų, kurie vykdomi be vartotojų įvesties į rodomą pranešimą, kiekį. Šis įvykis naudojamas norint patobulinti vartotojo sąsają, kad būtų sumažinti trukdžiai termino funkcijai.
 
@@ -11561,7 +11611,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_completeclose"></a>sauforcedupdate_completeclose
+### <a name="sauforcedupdatecompleteclose"></a>sauforcedupdate.completeclose
 
 Šis įvykis nurodo sėkmingą priverstinio atnaujinimo baigimą. Šis įvykis naudojamas siekiant padėti nustatyti priverstinio atnaujinimo funkcijos sveikatą. 
 
@@ -11601,7 +11651,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_display"></a>sauforcedupdate_display
+### <a name="sauforcedupdatedisplay"></a>sauforcedupdate.display
 
 Šis įvykis nurodo, kad buvo rodomas priverstinio atnaujinimo dialogo langas.  Šis įvykis yra priverstinio naujinimo piltuvėlio dalis, kuris naudojamas nustatyti priverstinių programų naujinimų sveikatą.
 
@@ -11641,7 +11691,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_displayfinalhour"></a>sauforcedupdate_displayfinalhour
+### <a name="sauforcedupdatedisplayfinalhour"></a>sauforcedupdate.displayfinalhour
 
 Šis įvykis nurodo, kad buvo rodomas priverstinio atnaujinimo paskutinės valandos dialogo langas. Šis įvykis yra priverstinio naujinimo piltuvėlio dalis, kuris naudojamas nustatyti priverstinių naujinimų funkcijos sveikatą.
 
@@ -11681,7 +11731,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_done"></a>sauforcedupdate_done
+### <a name="sauforcedupdatedone"></a>sauforcedupdate.done
 
 Šis įvykis nurodo, kad priverstinis naujinimas sėkmingai atliktas. Šis įvykis yra priverstinio naujinimo piltuvėlio dalis, kuris naudojamas nustatyti priverstinių naujinimų funkcijos sveikatą. 
 
@@ -11721,7 +11771,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_enabled"></a>sauforcedupdate_enabled
+### <a name="sauforcedupdateenabled"></a>sauforcedupdate.enabled
 
 Šis įvykis paleidžiamas, kai „Microsoft“ automatinis naujinimas (MAU) nustato, kad taikomas priverstinis naujinimas.  Šis įvykis naudojamas nustatyti priverstinio atnaujinimo funkcijos sveikatą. 
 
@@ -11763,7 +11813,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_forcedupdatedismiss"></a>sauforcedupdate_forcedupdatedismiss
+### <a name="sauforcedupdateforcedupdatedismiss"></a>sauforcedupdate.forcedupdatedismiss
 
 Šis įvykis nurodo, kad rodomas dialogo langas paskutinė valanda priverstinai naujinti, išjungiamas dėl vartotojo neaktyvumo. Šis įvykis naudojamas nustatant priverstinių naujinimų, kurie vykdomi be vartotojų įvesties į rodomą pranešimą, kiekį. Šis įvykis naudojamas norint patobulinti vartotojo sąsają, kad būtų sumažinti trukdžiai. 
 
@@ -11803,7 +11853,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_forcequitandupdatenow"></a>sauforcedupdate_forcequitandupdatenow
+### <a name="sauforcedupdateforcequitandupdatenow"></a>sauforcedupdate.forcequitandupdatenow
 
 Šis įvykis nurodo vartotojo inicijuoto priverstinio naujinimo pradžią. Šis įvykis yra piltuvėlio dalis, kuris naudojamas nustatyti priverstinio naujinimo funkcijos sveikatą. 
 
@@ -11843,7 +11893,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius 
 
-### <a name="sauforcedupdate_forceterminate"></a>sauforcedupdate_forceterminate
+### <a name="sauforcedupdateforceterminate"></a>sauforcedupdate.forceterminate
 
 Šis įvykis nurodo priverstinio atnaujinimo pradžią, kai programa priverstinai nutraukiama.  Šis įvykis yra piltuvėlio dalis ir naudojamas nustatyti priverstinio naujinimo funkcijos sveikatą.
 
@@ -11883,7 +11933,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_quitandupdatenow"></a>sauforcedupdate_quitandupdatenow
+### <a name="sauforcedupdatequitandupdatenow"></a>sauforcedupdate.quitandupdatenow
 
 Šis įvykis nurodo, kad vartotojas pasirinko uždaryti programą ir pritaikyti naujinimą. Šis įvykis yra piltuvėlio dalis ir naudojamas nustatyti priverstinių programų naujinimų sveikatą. 
 
@@ -11923,7 +11973,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_snooze"></a>sauforcedupdate_snooze
+### <a name="sauforcedupdatesnooze"></a>sauforcedupdate.snooze
 
 Šis įvykis nurodo, kad vartotojas pasirinko atidėti priverstinį atnaujinimą. Šis įvykis yra piltuvėlio dalis, kuris naudojamas nustatyti priverstinio naujinimo funkcijos sveikatą. 
 
@@ -11963,7 +12013,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_terminate"></a>sauforcedupdate_terminate
+### <a name="sauforcedupdateterminate"></a>sauforcedupdate.terminate
 
 Šis įvykis nurodo priverstinio atnaujinimo pradžią, kai programa nutraukiama. Šis įvykis yra piltuvėlio dalis ir naudojamas nustatyti priverstinio naujinimo funkcijos sveikatą.
 
@@ -12003,7 +12053,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="sauforcedupdate_updatenow"></a>sauforcedupdate_updatenow
+### <a name="sauforcedupdateupdatenow"></a>sauforcedupdate.updatenow
 
 Šis įvykis nurodo, kad vartotojas pasirinko atnaujinti programą dabar.  Šis įvykis yra piltuvėlio dalis ir naudojamas nustatyti priverstinio naujinimo funkcijos sveikatą.
 
@@ -12085,7 +12135,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="update_applaunchdetected"></a>update_applaunchdetected
+### <a name="updateapplaunchdetected"></a>update.applaunchdetected
 
 Šis įvykis nurodo, kad programa buvo paleista, kai buvo vykdomas naujinimas. Šis įvykis naudojamas norint nustatyti atnaujinimo metu inicijuotų programų kiekį. Taip pat naudojamas norint pagerinti vartotojų patirtį būsimuose leidimuose.
 
@@ -12129,7 +12179,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius
 
-### <a name="update_appterminationreceived"></a>update_appterminationreceived
+### <a name="updateappterminationreceived"></a>update.appterminationreceived
 
 Šis įvykis nurodo, kad programa su blokuojamu naujinimu buvo nutraukta, ir, ar „Microsoft“ automatinis naujinimas (MAU) gali tęsti naujinimą. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą.
 
@@ -12175,7 +12225,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius
 
-### <a name="update_blockedappclosed"></a>update_blockedappclosed
+### <a name="updateblockedappclosed"></a>update.blockedappclosed
 
 Šis įvykis nurodo, kad MAU aptiko, jog programa su blokuojamu naujinimu buvo nutraukta ir gali tęsti naujinimą. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą. 
 
@@ -12219,7 +12269,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius
 
-### <a name="update_blockedinstallskip"></a>update_blockedinstallskip
+### <a name="updateblockedinstallskip"></a>update.blockedinstallskip
 
 Šis įvykis užregistruoja klaidą bandant praleisti programos naujinimą. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.  
 
@@ -12261,7 +12311,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="update_clientsession"></a>update_clientsession
+### <a name="updateclientsession"></a>update.clientsession
 
 Šis įvykis praneša, kai pasikeičia kliento įrenginio būsena, todėl „Microsoft Update asistentas pristabdo arba atnaujina naujinimo procesą. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą. 
 
@@ -12301,7 +12351,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="update_download_begin"></a>update_download_begin 
+### <a name="updatedownloadbegin"></a>update.download.begin 
 
 Šis įvykis nurodo programos naujinimo proceso pradžią. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą. 
 
@@ -12347,7 +12397,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateName** – naujinimo pavadinimas, kai jis rodomas atsiųstame deklaracijos faile
 
-### <a name="update_download_finish"></a>update_download_finish
+### <a name="updatedownloadfinish"></a>update.download.finish
 
 Šis įvykis nurodo, kad baigtas programos naujinimo atsisiuntimo etapas. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą.  
 
@@ -12393,7 +12443,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateName** – naujinimo pavadinimas, kai jis rodomas atsiųstame deklaracijos faile
 
-### <a name="update_downloadresume"></a>update_downloadresume
+### <a name="updatedownloadresume"></a>update.downloadresume
 
 Šis įvykis praneša apie klaidą bandant atnaujinti pristabdytą atsisiuntimo užduotį. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas. 
 
@@ -12437,7 +12487,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius
 
-### <a name="update_error"></a>update_error
+### <a name="updateerror"></a>update.error
 
 Šis įvykis praneša apie klaidą bandant atnaujinti užregistruotą programą.  Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas. 
 
@@ -12479,7 +12529,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="update_installcleanupforapp"></a>update_installcleanupforapp
+### <a name="updateinstallcleanupforapp"></a>update.installcleanupforapp
 
 Šis įvykis nurodo, kad naujinimas įdiegtas, o „Microsoft“ automatinis naujinimas (MAU) išvalomas.  Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą.
 
@@ -12523,7 +12573,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius
 
-### <a name="update_installupdateforapp"></a>update_installupdateforapp
+### <a name="updateinstallupdateforapp"></a>update.installupdateforapp
 
 Šis įvykis naudojamas norint pranešti apie programos naujinimo diegimo proceso pradžią. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą. 
 
@@ -12569,7 +12619,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateName** – naujinimo pavadinimas, kai jis rodomas atsiųstame deklaracijos faile
 
-### <a name="update_installupdateforapp_success"></a>update_installupdateforapp_success
+### <a name="updateinstallupdateforappsuccess"></a>update.installupdateforapp.success
 
 Šis įvykis praneša apie diegimo užduoties būseną. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą. 
 
@@ -12615,7 +12665,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius
 
-### <a name="update_installvariance"></a>Update_InstallVariance
+### <a name="updateinstallvariance"></a>Update.InstallVariance
 
 Šis įvykis naudojamas apskaičiuoti kritinio naujinimo sveikatos metriką „Microsoft“ automatiniam naujinimui (MAU). Šis įvykis leidžia mums nustatyti diegimo prioriteto funkcijos sėkmės metriką ir patikrinti funkcijos vientisumą.
  
@@ -12655,7 +12705,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="update_multipleappupdates"></a>update_multipleappupdates 
+### <a name="updatemultipleappupdates"></a>update.multipleappupdates 
 
 Šis įvykis nurodo keletą programų naujinimų, kurie vykdomi fone. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą.
 
@@ -12695,7 +12745,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="update_previousidnil"></a>update_previousidnil
+### <a name="updatepreviousidnil"></a>update.previousidnil
 
 Šis įvykis nurodo taisymo naujinimo paketą, kuris yra atsisiunčiamas, bet nėra ankstesnės atsisiuntimo informacijos. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas. 
 
@@ -12737,7 +12787,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="update_queueinstallforapp"></a>update_queueinstallforapp 
+### <a name="updatequeueinstallforapp"></a>update.queueinstallforapp 
 
 Šis įvykis nurodo, kad atsisiųstų naujinimų paketas buvo perkeltas į eilę, skirtą įdiegti.  Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą.
 
@@ -12783,7 +12833,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateName** – naujinimo pavadinimas, kai jis rodomas atsiųstame deklaracijos faile
 
-### <a name="update_relaunchafterupdate"></a>update_relaunchafterupdate 
+### <a name="updaterelaunchafterupdate"></a>update.relaunchafterupdate 
 
 Šis įvykis nurodo, kad programos naujinimas baigtas ir bus paleistas iš naujo. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą. 
 
@@ -12827,7 +12877,7 @@ Renkami šių laukų duomenys:
 
 - **UpdateID** – programos naujinimo identifikatorius
 
-### <a name="update_timerforapptermination"></a>update_timerforapptermination 
+### <a name="updatetimerforapptermination"></a>update.timerforapptermination 
 
 Šis įvykis nurodo paleisties pradžią/pabaigą tikrinant būsenos programą. Šis įvykis yra poroje ir yra naudojamas nustatyti, ar visi laikmačio objektai pašalinami atnaujinant programą.
 
@@ -12868,7 +12918,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatecore_appregistration"></a>updatecore_appregistration
+### <a name="updatecoreappregistration"></a>updatecore.appregistration
 
 Šis įvykis registruoja žurnale bandymus užregistruoti taikomąją programą ir rezultatą/priežastį. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -12909,7 +12959,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatecore_loadinglaunchagent"></a>updatecore_loadinglaunchagent
+### <a name="updatecoreloadinglaunchagent"></a>updatecore.loadinglaunchagent
 
 Šis įvykis nurodo, kad įkeliamas paleidimo agentas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -12949,7 +12999,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatecore_runnstaskcommand"></a>updatecore_runnstaskcommand
+### <a name="updatecorerunnstaskcommand"></a>updatecore.runnstaskcommand
 
 Šis įvykis praneša apie klaidą bandant vykdyti užduotį. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.  
 
@@ -12989,7 +13039,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatecore_server_connectionfail"></a>updatecore_server_connectionfail
+### <a name="updatecoreserverconnectionfail"></a>updatecore.server.connectionfail
 
 Šis įvykis registruoja klaidas, kurios gautos siekiant „CDN“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13029,7 +13079,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatecore_server_nullurl"></a>updatecore_server_nullurl
+### <a name="updatecoreservernullurl"></a>updatecore.server.nullurl
 
 Šis įvykis praneša apie klaidą, nurodančią, kad nepavyko pasiekti nurodyto serverio. Šis įvykis naudojamas, kad būtų galima nustatyti tinklo problemos sukeltas naujinimo triktis. 
 
@@ -13069,7 +13119,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatefilterhelper_cannotretrievebuilddate"></a>updatefilterhelper_cannotretrievebuilddate
+### <a name="updatefilterhelpercannotretrievebuilddate"></a>updatefilterhelper.cannotretrievebuilddate
 
 Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame, kad nepavyko gauti datos iš taikomosios programos metaduomenų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13110,7 +13160,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefilterhelper_invalidappid"></a>updatefilterhelper_invalidappid
+### <a name="updatefilterhelperinvalidappid"></a>updatefilterhelper.invalidappid
 
 Šis įvykis praneša apie klaidą, nurodančią, kad nerasta atitinkančių deklaracijos failų naudojant programos ID, gautą iš žiniatinklio atsakymo. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.
 
@@ -13150,7 +13200,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatefilterhelper_invalidappidfromwebservices"></a>updatefilterhelper_invalidappidfromwebservices
+### <a name="updatefilterhelperinvalidappidfromwebservices"></a>updatefilterhelper.invalidappidfromwebservices
 
 Šis įvykis praneša apie klaidą, nurodančią, programos ID, gautas iš žiniatinklio atsakymo, yra netinkamo formato. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.
 
@@ -13190,7 +13240,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatefilterhelper_invalidresponsefromupdatefiltering"></a>updatefilterhelper_invalidresponsefromupdatefiltering
+### <a name="updatefilterhelperinvalidresponsefromupdatefiltering"></a>updatefilterhelper.invalidresponsefromupdatefiltering
 
 Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame datą, kurios nėra programos metaduomenų dalyje. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13231,7 +13281,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefilterhelper_missingbuilddate"></a>updatefilterhelper_missingbuilddate
+### <a name="updatefilterhelpermissingbuilddate"></a>updatefilterhelper.missingbuilddate
 
 Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame datą, kurios nėra programos metaduomenų dalyje. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13272,7 +13322,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefilterhelper_updatebypassedoldage"></a>updatefilterhelper_updatebypassedoldage
+### <a name="updatefilterhelperupdatebypassedoldage"></a>updatefilterhelper.updatebypassedoldage
 
 Galime filtruoti atnaujinimus per MAU paslaugą tik tada, kai siūlomas naujinimas nėra senesnis už tam tikrą dienų skaičių. Čia užregistruojame tarnybą, kuri buvo apeinama dėl senos atnaujinimo datos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13313,7 +13363,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_check_error"></a>updatefinder_check_error
+### <a name="updatefindercheckerror"></a>updatefinder.check.error
 
 Šis įvykis praneša apie klaidą tikrinant, ar yra naujinimų. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas. 
 
@@ -13356,7 +13406,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
  
-### <a name="updatefinder_check_start"></a>updatefinder_check_start
+### <a name="updatefindercheckstart"></a>updatefinder.check.start
 
 Šis įvykis užregistruoja kaskart, kai inicijuojame tikrinimą dėl naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13397,7 +13447,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_check_status"></a>updatefinder_check_status
+### <a name="updatefindercheckstatus"></a>updatefinder.check.status
 
 Šis įvykis sujungia naujinimo operacijų patikros būseną (piltuvėlis nuo ieškos iki atsisiuntimo). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13438,7 +13488,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_check_updatefound"></a>updatefinder_check_updatefound
+### <a name="updatefindercheckupdatefound"></a>updatefinder.check.updatefound
 
 Užregistruojame, kai randama naujinimų tikrinant naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13479,7 +13529,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_check_updatenotfound"></a>updatefinder_check_updatenotfound
+### <a name="updatefindercheckupdatenotfound"></a>updatefinder.check.updatenotfound
 
 Užregistruojame, kai tikrinant, ar nėra naujinimų, jų nerandama. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13520,7 +13570,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_check_uptodate"></a>updatefinder_check_uptodate
+### <a name="updatefindercheckuptodate"></a>updatefinder.check.uptodate
 
 Užregistruojame, kai tikrinant, ar nėra naujinimų, jų nerandama, nes visos programos atnaujintos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13561,7 +13611,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_offerupdates_invalidappid"></a>updatefinder_offerupdates_invalidappid
+### <a name="updatefinderofferupdatesinvalidappid"></a>updatefinder.offerupdates.invalidappid
 
 Šis įvykis praneša apie klaidą bandant įvertinti, ar naujinimas yra taikytinas. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.  
 
@@ -13603,7 +13653,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatefinder_offerupdates_minoscheckfail"></a>updatefinder_offerupdates_minoscheckfail
+### <a name="updatefinderofferupdatesminoscheckfail"></a>updatefinder.offerupdates.minoscheckfail
 
 Užregistruojame, kai blokuojame naujinimą dėl „OS“ reikalavimų neatitikimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13643,7 +13693,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatefinder_offerupdates_missingtrigger"></a>updatefinder_offerupdates_missingtrigger
+### <a name="updatefinderofferupdatesmissingtrigger"></a>updatefinder.offerupdates.missingtrigger
 
 Šis įvykis praneša apie klaidą bandant įvertinti paleidiklius iš atsisiųstos programos naujinimo deklaracijos. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.  
 
@@ -13685,7 +13735,7 @@ Renkami šių laukų duomenys:
 
 - **Triggers** – paleidiklių žodynas, rastas manifeste
 
-### <a name="updatefinder_offerupdates_nullbundleforappid"></a>updatefinder_offerupdates_nullbundleforappid
+### <a name="updatefinderofferupdatesnullbundleforappid"></a>updatefinder.offerupdates.nullbundleforappid
 
 Šis įvykis nurodo, kad „Microsoft AutoUpdate“ negalėjo įkelti paketo informacijos apie taikomosios programos ID, nurodytą atsisiųstame deklaracijos faile. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13726,7 +13776,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_offerupdates_updaterulematched"></a>updatefinder_offerupdates_updaterulematched
+### <a name="updatefinderofferupdatesupdaterulematched"></a>updatefinder.offerupdates.updaterulematched
 
 Šis įvykis nurodo, kad buvo rastas taikomosios programos ir bazinės linijos naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13767,7 +13817,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="updatefinder_registeredapps"></a>updatefinder_registeredapps
+### <a name="updatefinderregisteredapps"></a>updatefinder.registeredapps
 
 Įregistruojame programas, kurios įdiegtos/registruotos/valdomos MAU. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13807,7 +13857,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatefinder_suite_invalidsuiteversion"></a>updatefinder_suite_invalidsuiteversion
+### <a name="updatefindersuiteinvalidsuiteversion"></a>updatefinder.suite.invalidsuiteversion
 
 Šis įvykis praneša apie klaidą bandant įvertinti, ar naujinimas yra taikytinas. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.
 
@@ -13847,7 +13897,7 @@ Renkami šių laukų duomenys:
 
 - **Suite** – nagrinėjamo paketo pavadinimas
 
-### <a name="updatefinder_suite_keyvaluemissing"></a>updatefinder_suite_keyvaluemissing
+### <a name="updatefindersuitekeyvaluemissing"></a>updatefinder.suite.keyvaluemissing
 
 Šis įvykis praneša klaidą bandant įtraukti programą į paketą. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.
 
@@ -13890,7 +13940,7 @@ Renkami šių laukų duomenys:
 - **Suite** – bus įtrauktas programų paketo pavadinimas
 
     
-### <a name="updatefinder_suite_missingcollateral"></a>updatefinder_suite_missingcollateral
+### <a name="updatefindersuitemissingcollateral"></a>updatefinder.suite.missingcollateral
 
 Programų paketo naujinimas – užregistruojame, kai nėra programų paketo atnaujinimo, nes nėra antrinio failo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13931,7 +13981,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_suite_staleversion"></a>updatefinder_suite_staleversion
+### <a name="updatefindersuitestaleversion"></a>updatefinder.suite.staleversion
 
 Programų paketo naujinimas – užregistruojame, kai programų paketo naujinimo nėra, nes bazinė versija yra per sena. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -13972,7 +14022,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_suite_updateapplicable"></a>updatefinder_suite_updateapplicable
+### <a name="updatefindersuiteupdateapplicable"></a>updatefinder.suite.updateapplicable
 
 Programų paketo naujinimas – užregistruojame, kai yra taikomas programų paketo naujinimas. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14013,7 +14063,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_suite_updatenotapplicabledefaultpath"></a>updatefinder_suite_updatenotapplicabledefaultpath
+### <a name="updatefindersuiteupdatenotapplicabledefaultpath"></a>updatefinder.suite.updatenotapplicabledefaultpath
 
 Programų paketo naujinimas – užregistruojame, kai programų paketo naujinimas nesiūlomas dėl to, kad ne visos paketo programos diegiamos po numatytuoju maršrutu. Užregistruojame pagrindinę versiją ir programų paketą „AppId“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14054,7 +14104,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="updatefinder_suite_updatenotapplicableversion"></a>updatefinder_suite_updatenotapplicableversion
+### <a name="updatefindersuiteupdatenotapplicableversion"></a>updatefinder.suite.updatenotapplicableversion
 
 Programų paketo naujinimas – užregistruojame, kai programų paketo naujinimas nesiūlomas dėl to, kad ne visos paketo programos yra tos pačios bazinės versijos. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14095,7 +14145,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_suite_updatenotoffered"></a>updatefinder_suite_updatenotoffered
+### <a name="updatefindersuiteupdatenotoffered"></a>updatefinder.suite.updatenotoffered
 
 Programų paketo naujinimas – užregistruojame, kada paketo naujinimas nesiūlomas dėl paketo dydžio, kuris yra didesnis nei atskirų naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14136,7 +14186,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatefinder_suite_updateoffered"></a>updatefinder_suite_updateoffered
+### <a name="updatefindersuiteupdateoffered"></a>updatefinder.suite.updateoffered
 
 Programų paketo naujinimas – užregistruojame, kai yra siūlomas programų paketo naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14177,7 +14227,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="updatemanager_checkupdate"></a>updatemanager_checkupdate
+### <a name="updatemanagercheckupdate"></a>updatemanager.checkupdate
 
 Šis įvykis registruoja „Microsoft AutoUpdate“ rastų naujinimų skaičių tikrinant, ar yra naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14218,7 +14268,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="updatemanager_updatespending"></a>updatemanager_updatespending
+### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
 Šis įvykis nurodo, kad naujinimai buvo rasti ir laukiama diegimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14258,7 +14308,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="updatestatus_codesign"></a>UpdateStatus_Codesign
+### <a name="updatestatuscodesign"></a>UpdateStatus.Codesign
 
 Šis įvykis praneša būseną iš codesign patikros, atliktos „Microsoft Update“ asistento įdiegus kliento programų naujinimus. Naudojame šį įvykį, kad užtikrintume, jog pateikėme paketus, kurie galioja ir atnaujins įdiegtą programą į naujausią versiją.
 
@@ -14308,7 +14358,7 @@ Renkami šių laukų duomenys:
 
 - **UpdatePkg** – pritaikyto naujinimo paketo pavadinimas
 
-### <a name="urlutilities_getmauinfo"></a>urlutilities_getmauinfo
+### <a name="urlutilitiesgetmauinfo"></a>urlutilities.getmauinfo
 
 Šis įvykis praneša apie klaidą bandant pasiekti „Microsoft“ automatinių naujinimų (MAU) programų paketą. Šis įvykis yra labai svarbus ir naudojamas tiriant praneštas klaidas.
 
@@ -14348,7 +14398,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
    
-### <a name="webservices_checkforsilentupdates"></a>webservices_checkforsilentupdates
+### <a name="webservicescheckforsilentupdates"></a>webservices.checkforsilentupdates
 
 Šis įvykis nurodo, kad buvo rasti tylaus atnaujinimo kandidatai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14389,7 +14439,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="webservices_deltaupdater"></a>webservices_deltaupdater
+### <a name="webservicesdeltaupdater"></a>webservices.deltaupdater
 
 Šis įvykis registruoja sąveiką tarp kliento kodo ir funkcijų vartų, kurie kontroliuoja, ar klientas turėtų leisti „Delta“ naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14430,7 +14480,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
 
 Užregistruojame klaidas, kylančias dėl netikėto webservice atsakymo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14471,7 +14521,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="webservices_serviceaction"></a>webservices_serviceaction
+### <a name="webservicesserviceaction"></a>webservices.serviceaction
 
 Užregistruojame klaidas, kylančias dėl netikėto webservice atsakymo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14512,7 +14562,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
-### <a name="webservices_serviceresponse"></a>webservices_serviceresponse
+### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
 Šis įvykis registruoja MAU tarnybos, atsakymo laiko ir klaidų užklausas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14553,7 +14603,7 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
     
-### <a name="webservices_silentupdate"></a>webservices_silentupdate
+### <a name="webservicessilentupdate"></a>webservices.silentupdate
 
 Užregistruojame užklausas, kad patikrintume, ar taikomos priverstinio naujinimo taisyklės, t. y. mes privalome perkelti vartotoją nuo N komponavimo versijos prie N + 1, nes kilo didelė problema. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14593,7 +14643,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="webservices_updatefiltering"></a>webservices_updatefiltering
+### <a name="webservicesupdatefiltering"></a>webservices.updatefiltering
 
 Šis įvykis nurodo, kad filtravimas yra atliekamas galiojančių naujinimų sąraše, naudojant žiniatinklio tarnybas. Šis įvykis naudojamas siekiant užtikrinti, kad programų blokai veiktų tinkamai, jei turėsime blokuoti naujinimą.
 
@@ -14633,7 +14683,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="webservices_webcontent"></a>webservices_webcontent
+### <a name="webserviceswebcontent"></a>webservices.webcontent
 
 Užregistruojame užklausas ir atsakymus, gautus į webservices. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
@@ -14673,7 +14723,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-### <a name="webservices_whatsnew"></a>webservices_whatsnew
+### <a name="webserviceswhatsnew"></a>webservices.whatsnew
 
 Šis įvykis paleidžiamas, kai „Microsoft“ automatinio naujinimo (MAU) užklausų žiniatinklio tarnybose veikia registruotųjų programų funkcija „Kas nauja“. Įvykis naudojamas funkcijos „Kas nauja“ sveikatai stebėti. 
 
@@ -15128,8 +15178,26 @@ Renkami šių laukų duomenys:
 
 - **PaywallOperationType** – mokamos prieigos prie informacijos operacijos tipas (išvardijimas / sveikasis skaičius – baigtinis)
 
+### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
 
-### <a name="office_firstrun_apple_telemetryoptin"></a>Office_FirstRun_Apple_TelemetryOptIn
+Seanso metaduomenys, kai vartotojui rodoma „Paywall“ vartotojo sąsaja. „Microsoft“ tai naudoja tam, kad pamatytų vartotojo kelionę ir suprastų, kokį įrenginį ir OS versijas vartotojas naudoja, kad padėtų priimti sprendimus dėl investicijų gerinant patirtį šiose srityse.
+
+Renkami šių laukų duomenys:
+
+- **Programos versija** – naudojamos programos versijos kodas
+
+- **Kliento ID** – anoniminis unikalus įrenginio identifikatorius be asmeninės informacijos (GUID / eilutė)
+
+- **Įvesties vieta** – unikalus kontekstinių arba pastovių įeities taškų, naudojančių programą, identifikatorius
+
+- **Yra planšetinis kompiuteris** – ar įrenginys rodo planšetinio kompiuterio UX
+
+- **OS versija** – įrenginio „Android“ OS versija
+
+- **Seanso ID** – GUID: unikalus „Paywall“ seanso identifikatorius
+
+
+### <a name="officefirstrunappletelemetryoptin"></a>Office.FirstRun.Apple.TelemetryOptIn
 
 Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas stebėti mūsų telemetrijos pasirenkamo srauto pirmojo vykdymo patirties būseną. Mes renkame kodą, nurodantį vartotojo pasirinktą diagnostikos duomenų rinkimo parinktį.
 
