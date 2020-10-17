@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: f200e22e639f2c89315c2f7fa2e9eab0367f86b1
-ms.sourcegitcommit: 1b12952b55f071b87026b49d372158209ed2e322
+ms.openlocfilehash: 7d9b2918983933ba4601ebce2b3930409001688d
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368645"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491514"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -356,6 +356,8 @@ Konkretaus įvykio informacija, įskaitant jo unikalų identifikatorių seanse.
   - **Flags** – informacija, naudojama keisti pateikiamo įvykio reagavimą. Naudojama valdyti pateikiamo įvykio traktavimą duomenų įkėlimo į „Microsoft“ tikslų atžvilgiu.
 
   - **Id** – unikalus įvykio identifikatorius. Leidžia mums unikaliai identifikuoti gautus įvykius.
+
+  - **Level** – nurodo įvykio tipą.
 
   - **Name** – įvykio pavadinimas. Leidžia nustatyti iš kliento išsiųstą įvykį.
 

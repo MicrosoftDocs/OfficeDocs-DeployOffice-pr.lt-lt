@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 2449c56af99d40bcc1a4a3f85575984da6af3252
-ms.sourcegitcommit: a8c69c9c02320edec51c3bd7bb8dce28fa737e47
+ms.openlocfilehash: 94f248d64c74cd6575b4039178270f62b3715d15
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367466"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491550"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -293,6 +293,12 @@ Renkami šių laukų duomenys:
 
   - **Duration** – kiek laiko truko autentifikavimas
 
+  - **Duration_Max** – jei šis signalas sujungiamas, ilgiausia bet kurio suvestinio įvykio trukmė.
+
+  - **Duration_Min** – jei šis signalas sujungiamas, trumpiausia bet kurio suvestinio įvykio trukmė.
+
+  - **Duration_Sum** – jei šis signalas sujungiamas, visų sudėtų įvykių trukmės suma.
+
   - **Endtime** – kada baigtas autentifikavimo įvykis
 
   - **Error** – klaidos kodas, jei autentifikavimas nepavyko
@@ -407,11 +413,19 @@ Renkami šių laukų duomenys:
 
   - **Microsoft\_ADAL\_user\_cancel** – ar vartotojo sąsajos langas buvo atšauktas (teisinga arba klaidinga).
 
+  - **Microsoft_ADAL_was_request_throttled** – TRUE/FALSE, nurodantis, ar šis įvykis buvo ribojamas pagal ADAL dėl per daug užklausų.
+ 
   - **Microsoft\_ADAL\_x\_ms\_request\_id** – papildomas užklausos ID, kurį ADAL pateikė paslaugai HTTP antraštėje.
 
   - **Platform** – „Win32“ / „WinRT“ / „Android“ / „iOS“ / „Mac“
 
+  - **Promptreasoncorrelationid** – raginimai, tai yra kito įvykio koreliacijos ID, kuriame paaiškinama, kodėl vartotojas gali matyti autentifikavimo raginimą.
+
+  - **Resource** – išteklius, kuriam vartotojas prašo atpažinimo ženklo, pvz., „Exchange“ arba „SharePoint“.
+
   - **Scenarioid** – GUID. Vienam scenarijui gali priklausyti keli įvykiai, pvz., scenarijus gali įtraukti naują paskyrą, bet vykstant tam scenarijui pateikiami keli raginimai. Šis ID įgalina sąsają.
+
+  - **Scenaroname** – scenarijaus, kuriam priklauso šis autentifikavimo įvykis, pavadinimas.
 
   - **Sessionid** – GUID, identifikuojantis įkrovos seansą
 
@@ -8287,7 +8301,7 @@ Renkami šių laukų duomenys:
 
 - **AppID** – taikomosios programos identifikatorius.
 
-- **AppInfo_Language** – kalba, kuria veikia programa
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
 - **AppVersionLong** – taikomosios programos versija
 
@@ -11171,7 +11185,7 @@ Renkami šių laukų duomenys:
 
 - **App** – taikomosios programos siuntimo procesas
 
-- **AppInfo_Language** – kalba, kuria veikia programa
+- **AppInfo_Language** – kalba, kuria veikia taikomoji programa
 
 - **AppVersionLong** – taikomosios programos versija
 

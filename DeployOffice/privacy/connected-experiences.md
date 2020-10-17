@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 3e44c9c20bed531f46390c91a41ce559cabc9e72
-ms.sourcegitcommit: 25a0925e7caf8fbb53e6757e8a65126eb2c9da65
+ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
+ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338190"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48491586"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -40,6 +40,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 |Diagramų rekomendacijos (internetinė „Excel“)|[Kurti diagramą su rekomenduojamomis diagramomis](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Mokomųjų bloknotų priedai („OneNote“)|[Darbo su „OneNote“ mokomaisiais bloknotais pradžia: nurodymai mokytojams](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Duomenų tipai| [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
+|Dizaino įrankis (internetinė „Word“)|[Dizaino įrankio naudojimas kuriant geresnius dokumentus](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
 | Diktavimo funkcija  | [Diktuokite dokumentus „Word“](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
 |Rengyklė<sup>1</sup> |[„Microsoft“ rengyklė patikrina gramatiką ir daugiau dokumentuose, pašte ir žiniatinklyje](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 | Idėjos     | [Idėjos programoje „Excel“](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
@@ -62,6 +63,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | *Išmanioji ieška*\*   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
 | Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
 | Teminė ieška „Word“ (įtraukimas iš failų)   | [Reikiamo turinio radimas ir panaudojimas, neišeinant iš „Word“](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
+|Teksto numatymas (redaktoriaus funkcija)|[Rašymas greičiau naudojant „Word“ teksto numatymą](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Transkripcija |[Įrašų transkribavimas](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transformavimas į tinklalapį   | [„Word“ dokumento transformavimas į „Sway“ tinklalapį](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Vertyklė   | [Teksto vertimas į kitą kalbą](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
