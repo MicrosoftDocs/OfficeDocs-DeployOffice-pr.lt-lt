@@ -13,29 +13,25 @@ ms.custom:
 - Ent_Office_Privacy
 description: Pateikiama informacija „Office“ administratoriams, kaip valdyti „Office“ privatumo parametrus „Android“ įrenginiuose.
 hideEdit: true
-ms.openlocfilehash: 6086ecd1b2cd55bbf6cb4577879714f1d20a2f93
-ms.sourcegitcommit: 81295dff0f2fa474f0db39fd40560e3a23fff32a
+ms.openlocfilehash: 2c1ecab42f31c85616faca42a5cb01b183a36087
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092126"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794449"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-office-on-android-devices"></a>„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijų parametrus
 
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašą žr. [Galimi „Office“ produktų privatumo valdikliai](products-versions-privacy-controls.md).
+
 Yra strategijų parametrų, skirtų „Office“ programoms „Android“ įrenginiuose, leidžiančių valdyti parametrus, susijusius su:
 
-- ***Diagnostikos duomenimis*** apie „Office“ kliento naudojamą programinę įrangą, kurie renkami ir siunčiami „Microsoft“.
+- ***Diagnostikos duomenimis** , kurie renkami ir siunčiami „Microsoft“, apie naudojamą „Office“ kliento programinę įrangą.
 
-- ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
+- _*_Prijungtosiomis funkcijomis_*_ , kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
-Daugiau informacijos apie diagnostikos duomenis ir prisijungus naudojamas funkcijas žr. [Privatumo valdiklių apžvalga](overview-privacy-controls.md).
-
-Šie strategijų parametrai taikomi šioms programoms:
-- 16.0.12228.20260 ir naujesnės „Word“, skirtos „Android“, „Excel“, skirtos „Android“, ir „PowerPoint“, skirtos „Android“, versijos.
-- 4.1.71 ir naujesnės „Outlook“, skirtos „Android“, versijos.
-- 16.0.12228.20004 ir naujesnės „OneNote“, skirtos „Android“, versijos.
-- 5.47 ir naujesnės „OneDrive“, skirtos „Android“, versijos.
-- 16.0.12430.20254 ir naujesnės programėlės „Office“, skirtos „Android“, versijos.
+Daugiau informacijos apie diagnostikos duomenis ir prijungtąsias funkcijas žr. [Privatumo valdiklių apžvalga](overview-privacy-controls.md).
 
 ## <a name="policy-settings-available-for-office-on-android-devices"></a>„Office“ strategijų parametrai „Android“ įrenginiuose
 
@@ -43,7 +39,7 @@ Toliau esančioje lentelėje nurodoma, kurie „Office“ strategijų parametrai
 
 > [!NOTE]
 >- Pateikta papildoma informacija apima „Office“ strategijų parametrus įrenginiuose, kuriuose veikia „Windows“. Tačiau ta pati informacija taikoma ir „Office“, kuris veikia „Android“ įrenginiuose, nes tai yra tie patys strategijų parametrai.
->- Strategijos parametras *Leisti „Office“ naudoti prisijungus naudojamas funkcijas*, kuris galimas „Office“ programose įrenginiuose, kuriuose veikia „Windows“, netaikomas „Office“ programoms „Android“ įrenginiuose. 
+>- Strategijos parametras „Leisti „Office“ naudoti prijungtąsias funkcijas“, kuris galimas „Office“ programose įrenginiuose, kuriuose veikia „Windows“, netaikomas „Office“ programoms „Android“ įrenginiuose. 
 
 
 |Strategijos parametro pavadinimas  |Papildoma informacija |

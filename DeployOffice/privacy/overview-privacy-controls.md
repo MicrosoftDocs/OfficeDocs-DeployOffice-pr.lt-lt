@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirtų „Microsoft 365“ programų įmonėms ( anksčiau vadintų „Office 365 ProPlus“) privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: f367550169e75d0f1dbb0726e947ce8797fb1003
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: f894db695caf8a6dfa56dd6db541d8b8fd4bd564
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440558"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794767"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga
 
@@ -30,8 +30,8 @@ ms.locfileid: "47440558"
 „Microsoft“ yra įsipareigojusi suteikti jums reikiamą informaciją ir valdiklius, kad galėtumėte pasirinkti, kaip renkami ir naudojami jūsų duomenys, kai naudojate „Microsoft 365“ programas įmonėms (anksčiau vadintas „Office 365 ProPlus“).
 
 Pradedant „Microsoft 365“ programų įmonėms 1904 versija, jums bus pasiekiami nauji, atnaujinti ir patobulinti toliau nurodytų sričių privatumo valdikliai:
-- ***Diagnostikos duomenų***, kurie renkami ir siunčiami „Microsoft“, apie organizacijos „Windows“ kompiuteriuose naudojamą „Office“ kliento programinę įrangą.
-- ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
+- ***Diagnostikos duomenų** , kurie renkami ir siunčiami „Microsoft“, apie „Office“ kliento programinę įrangą, veikiančią jūsų organizacijos vartotojo įrenginyje.
+- _*_Prijungtųjų funkcijų_*_ , kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
 Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos elementų ir strategijos parametrų.
 
@@ -39,11 +39,11 @@ Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos el
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir spręsti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
-Šie diagnostikos duomenys apie  organizacijos „Windows“ kompiuteriuose naudojamą „Office“ kliento programinę įrangą renkami ir siunčiami „Microsoft“.
+Šie diagnostikos duomenys renkami ir siunčiami „Microsoft“ apie „Office“ kliento programinę įrangą, veikiančią jūsų organizacijos vartotojo įrenginyje.
 
 Yra trijų lygių „Microsoft 365“ programų įmonėms diagnostikos duomenys, iš kurių galite rinktis:
 
-- **Būtinieji.** Minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
+- _ *Būtinieji* * Minimalūs duomenys, kurie yra būtini, kad „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
 
 - **Pasirinktiniai.** Papildomi duomenys, kurie padeda mums tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir spręsti kilusias problemas.
 
@@ -61,9 +61,9 @@ Vartotojai negalės pakeisti diagnostikos duomenų lygio savo įrenginiuose, jei
 
 Norėdami pamatyti, kokie diagnostikos duomenys siunčiami „Microsoft“, galite naudoti diagnostikos duomenų peržiūros programą, kurią galite nemokamai atsisiųsti ir įdiegti iš „Microsoft“ parduotuvės.
 
-Jei reikia daugiau informacijos, žr.:
+Daugiau informacijos žiūrėkite šiuose straipsniuose:
 
-- [Būtinieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
+- [Privalomieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
 - [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
@@ -89,7 +89,7 @@ Jei nuspręsite vartotojams nepadaryti pasiekiamų kai kurių tipų prisijungus 
 
 Vartotojai negalės pasirinkti, ar šios prisijungus naudojamos funkcijos yra įjungtos, ar išjungtos, jei jie prisijungę prie „Office“ naudodami organizacijos kredencialus, kurie kartais vadinami darbo arba mokymo įstaigos paskyra.
 
-Jei reikia daugiau informacijos, žr.:
+Daugiau informacijos žiūrėkite šiuose straipsniuose:
 
 - [„Office“ prisijungus naudojamos funkcijos](connected-experiences.md)
 - [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
@@ -107,7 +107,7 @@ Kadangi šioms pasirinktinėms prisijungus naudojamoms paslaugoms taikomos atski
 
 Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę dalyje eidami į [privatumo parametrų dialogo langą](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vartotojai turės šią pasirinkimo galimybę, tik jei jie bus prisijungę prie „Office“ naudodami organizacijos kredencialus (kartais vadinamus darbo arba mokymo įstaigos paskyra), o ne prisijungę naudodami savo asmeninį el. pašto adresą.
 
-Jei reikia daugiau informacijos, žr.:
+Daugiau informacijos žiūrėkite šiuose straipsniuose:
 
 - [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md)
 - [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
@@ -130,6 +130,6 @@ Taip pat yra paslaugų, kurios yra būtinos, kad „Microsoft 365“ programos �
 
 Daugiau informacijos žr. [Pagrindinės „Office“ paslaugos](essential-services.md).
 
-## <a name="related-topics"></a>Susijusios temos
+## <a name="related-articles"></a>Susiję straipsniai
 - [„Microsoft“ privatumas](https://privacy.microsoft.com/)
 - [„Windows“ privatumas](https://docs.microsoft.com/windows/privacy/)

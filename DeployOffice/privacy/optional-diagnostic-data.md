@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia „Office“ administratoriams informacijos apie pasirinktinius diagnostikos duomenis naudojant „Office“, įskaitant keletą įvykių pavyzdžių.
 hideEdit: true
-ms.openlocfilehash: 2183863e1f7050d7d6ba838b639debf2b53ac9bd
-ms.sourcegitcommit: e1e4c309d62d0708404b7838c96416ce89f1b8b7
+ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328327"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794809"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Pasirinktiniai „Office“ diagnostikos duomenys
 
@@ -27,9 +27,9 @@ ms.locfileid: "48328327"
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
-Šie diagnostikos duomenys, susiję su „Office“ kliento programine įranga, naudojama kompiuteriuose, kuriuose įdiegta operacinė sistema „Windows“, renkami ir siunčiami „Microsoft“. Kai kurie diagnostikos duomenys yra privalomi, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums privalomuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
+Šie diagnostikos duomenys renkami ir siunčiami „Microsoft“ apie „Office“ kliento programinę įrangą, veikiančią vartotojo įrenginyje. Kai kurie diagnostikos duomenys yra privalomi, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums privalomuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
 
-***Pasirinktiniai diagnostikos duomenys*** yra papildomi duomenys, kurie padeda mums tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir ištaisyti kilusias problemas.
+***Pasirinktiniai diagnostikos duomenys** _ yra papildomi duomenys, kurie padeda mums tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir ištaisyti kilusias problemas.
 
 Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, būtinieji diagnostikos duomenys taip pat bus įtraukti. Taip pat gali būti siunčiami „Office“ diagnostikos žurnalo failai, kuriuose yra informacijos, labai panašios į pasirinktinius diagnostikos duomenis. Daugiau informacijos apie šiuos žurnalo failus žr. [„Office“ diagnostinių žurnalų failų apžvalga](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf).
 
@@ -71,7 +71,7 @@ Toliau esančiose sekcijose pateikiamas kiekvienos kategorijos aprašas ir kiekv
 
 Šioje lentelėje pateikiami šios kategorijos įvykių pavyzdžiai ir šių įvykių aprašymas.
 
-| **Įvykio pavadinimas**   | **Įvykio aprašas**  |
+| _ *Įvykio pavadinimas**   | **Įvykio aprašas**  |
 | ---- | ---- |
 | Office.Extensibility.AppCommands.GetRibbonUpdatesForUserId | Šis įvykis nurodo, ar „Word“ sėkmingai atnaujina juostelę „Word“ vartotojo sąsajoje, kai vartotojas pakeičia savo tapatybę. Šį įvykį naudojame siekdami aptikti neteisingą sąranką ir kitas problemas, kurios gali turėti įtakos „Office“ vartotojo sąsajai. |
 | Office.Extensibility.AppCommands.AppCmdInstall   | Šis įvykis suteikia informacijos apie vartotojo įdiegtą „Office“ papildinį, įskaitant programos ID, operacinės sistemos versiją ir komponavimo versiją, informaciją, ar diegimas pavyko, ir diegimo trukmę.  |

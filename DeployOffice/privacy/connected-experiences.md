@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: ca3139f95f20392efce25bb00572c2973cec82db
-ms.sourcegitcommit: e2ba452c1e353fc388512d71c14b89d0928369c0
+ms.openlocfilehash: 2ffbac14694578fc1f5964cef2c92eea6d6a2172
+ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48491586"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794751"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -71,7 +71,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 <sup>1</sup> pagrindinės „Editor“ funkcijos išlieka pasiekiamos, net jei nesate prisijungę prie interneto. Tos pačios pagrindinės funkcijos taip pat išlieka pasiekiamos, net jei nusprendžiate išjungti susietų patirčių naudojimą, kuris analizuoja turinį.  Abiem atvejais, duomenys apie „Editor“ naudojimą „Microsoft“ nesiunčiami.
 
 > [!NOTE]
-> \*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“ * strategijos nustatymą.
+> \*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“* strategijos nustatymą.
 
 ## <a name="connected-experiences-that-download-online-content"></a>Prisijungus naudojamos funkcijos, kurios atsisiunčia internetinį turinį
 
@@ -83,7 +83,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 | ------------- | ------------- |
 | Kalendoriaus programos| [Kas yra kalendoriaus programos?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
 | Debesies šriftai                 | [Debesies šriftai programų pakete „Office“](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| DUK |„Outlook“, skirtoje „iOS“ ir „Android“, pasirinkę **Parametrai** > **Žinynas ir atsiliepimai** > **DUK**, būsite perkelti į [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
+| DUK |„Outlook“, skirtoje „iOS“ ir „Android“, pasirinkę **Parametrai** > **Žinynas ir atsiliepimai** > **DUK** , būsite perkelti į [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
 | Rankraščio efektai                 | [Piešimas ir rašymas rašikliu „Office“](https://support.microsoft.com/office/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Piktogramų įterpimas                | [Piktogramų įterpimas programų pakete „Microsoft Office“](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | „Microsoft Forms“ įterpimas      | [Formos ar apklausos įterpimas į „PowerPoint“](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
@@ -103,7 +103,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 | *Orų prognozės juosta*\* („Outlook“)| [Kalendoriuje nurodyto miesto, kuriam juostoje skelbiama orų prognozė, keitimas](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
->\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“ * strategijos nustatymą.
+>\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“* strategijos nustatymą.
 
 ## <a name="other-connected-experiences"></a>Kitos prisijungus naudojamos funkcijos
 
@@ -125,7 +125,7 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 | Reikšmingiausi gautieji („Outlook“) |[Reikšmingiausi gautieji programoje „Outlook“](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Informacijos teisių valdymas |[Atidaryti failą, kuriame yra apribotų teisių](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | „LinkedIn“ kontakto kortelė |[„LinkedIn“ naudojimas „Microsoft“ programose ir paslaugose](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *„Office“ papildiniai*\* | [Papildinius diekite administravimo centre](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) |
+| *„Office“ papildiniai*\* | [Papildinių peržiūra, valdymas ir diegimas „Office“ programose](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(vartotojams)* <br/> [Papildinių diegimas administravimo centre](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(administratoriams)* |
 | „Office“ atsiliepimai |[Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | „Office“ palaikymo tarnyba (susisiekite su mumis) |Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje |
 | Organizacijos schema („Visio“) |[Organizacijos schemos kūrimas programoje „Visio“](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -146,18 +146,18 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 | Jums išvykus |[Pranešimų gavimas, kai komandos nariai atnaujina jūsų bendrinamą failą](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)  |
 
 > [!NOTE]
->\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“ * strategijos nustatymą.
+>\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“* strategijos nustatymą.
 
 ## <a name="choose-whether-these-connected-experiences-are-available-to-use"></a>Pasirinkite, ar šias prisijungus naudojamas funkcijas galima naudoti
 
 Galite pasirinkti, ar galima naudoti tam tikrų tipų prisijungus naudojamas funkcijas, pvz., prisijungus naudojamas funkcijas, kurios atsisiunčia turinį. Pasirinkimo būdas priklauso nuo to, ar esate prisijungę prie „Office“ naudodami „Microsoft“ paskyrą, pvz., asmeninį outlook.com el. pašto adresą, ar naudodami darbo arba mokymo įstaigos paskyrą.
 
-Jei esate prisijungę naudodami „Microsoft“ paskyrą, atidarykite „Office“ programą, pvz., „Word“, ir eikite į **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus**. Dalyje **Prisijungus naudojamos funkcijos** galite pasirinkti, ar galima naudoti tam tikrų tipų prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį. Jei nepakeisite parametrų dalyje **Valdyti parametrus**, jums bus pasiekiamos visos prisijungus naudojamos funkcijos.
+Jei esate prisijungę naudodami „Microsoft“ paskyrą, atidarykite „Office“ programą, pvz., „Word“, ir eikite į **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus** . Dalyje **Prisijungus naudojamos funkcijos** galite pasirinkti, ar galima naudoti tam tikrų tipų prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį. Jei nepakeisite parametrų dalyje **Valdyti parametrus** , jums bus pasiekiamos visos prisijungus naudojamos funkcijos.
 
-Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organizacijos administratorius nuspręs, ar šios prisijungus naudojamos funkcijos jums pasiekiamos. Nematysite jokių šių prisijungus naudojamų funkcijų pasirinkimo galimybių dalyje **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus**.
+Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organizacijos administratorius nuspręs, ar šios prisijungus naudojamos funkcijos jums pasiekiamos. Nematysite jokių šių prisijungus naudojamų funkcijų pasirinkimo galimybių dalyje **Failas** > **Paskyra** > **Paskyros privatumas** > **Valdyti parametrus** .
 
 > [!NOTE]
-> - Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
+> - Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas** . Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 > - Daugiau informacijos žr. [Paskyros privatumo parametruose](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams. Daugiau informacijos apie šių politikos parametrų naudojimą ieškokite šiuose straipsniuose: 
