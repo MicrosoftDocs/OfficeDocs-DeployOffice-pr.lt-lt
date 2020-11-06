@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: c7593aed7e4bc6037bca6b84181c0434b2e27e30
-ms.sourcegitcommit: 288d54b2e6b463f67358f701ef0dd5424237f811
+ms.openlocfilehash: d0eea79f28d2c2f79991ac0d59ebb6a567fecb21
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322378"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931444"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -101,17 +101,23 @@ Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ program�
 
 Daugiau informacijos žr. [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
+> [!NOTE]
+> Jei jūsų organizacijos administratorius jums suteikė bendrojo licencijavimo „Office 2019“, „Project 2019“ arba „Visio 2019“ versiją, eikite į **Failas** > **Parinktys** > **Patikimumo centras** > **Patikimumo centro parametrai** > **Privatumo parinktys**. Čia turėtumėte matyti žymės langelį, kad **Įjungti pasirenkamą ryšį**. Jei šio žymės langelio nematote „Project 2019“ arba „Visio 2019“, pasirinkite **Privatumo parametrai...** tame **Patikimumo centro** dialogo lange. Tada turėtų būti rodomas dialogo langas **Privatumo parametrai** su žymės langeliu, kad būtų galima **Įgalinti pasirinktines sujungtas funkcijas**.
+
 ## <a name="your-privacy-settings"></a>Jūsų privatumo parametrai
 
-Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas „Office“ taikomosiose programose, įtrauktose į „Microsoft 365“ programas įmonėms, „Windows“ įrenginyje, galite eiti į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus**, kad galėtumėte valdyti parametrus bet kuriuo metu. Įjungę turėsite galimybę naudoti šiame straipsnyje aprašytas paslaugas, kai to norėsite. Išjungus jos bus nepasiekiamos.
+Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas „Office“ taikomosiose programose, įtrauktose į „Microsoft 365“ programas įmonėms, „Windows“ įrenginyje, galite eiti į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus** , kad galėtumėte valdyti parametrus bet kuriuo metu. Įjungę turėsite galimybę naudoti šiame straipsnyje aprašytas paslaugas, kai to norėsite. Išjungus jos bus nepasiekiamos.
 
 Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
 Daugiau informacijos žr. [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
+> [!NOTE]
+> Jei jūsų organizacijos administratorius jums suteikė bendrojo licencijavimo „Office 2019“, „Project 2019“ arba „Visio 2019“ versiją, eikite į **Failas** > **Parinktys** > **Patikimumo centras** > **Patikimumo centro parametrai** > **Privatumo parinktys**. Čia turėtumėte matyti žymės langelį, kad **Įjungti pasirenkamą ryšį**. Jei šio žymės langelio nematote „Project 2019“ arba „Visio 2019“, pasirinkite **Privatumo parametrai...** tame **Patikimumo centro** dialogo lange. Tada turėtų būti rodomas dialogo langas **Privatumo parametrai** su žymės langeliu, kad būtų galima **Įgalinti pasirinktines sujungtas funkcijas**.
+
 ## <a name="required-service-data"></a>Privalomieji paslaugų duomenys
 
-Kai naudojate bet kurias šiame straipsnyje aprašytas pasirinktines debesų technologija pagrįstas paslaugas, „Microsoft“ gali rinkti [privalomuosius paslaugų duomenis](required-service-data.md) (pvz, naudojimo duomenis, klaidų ir veikimo duomenis) apie funkcijos veikimą ją naudojant. Šiuose privalomuosiuose paslaugų duomenyse gali būti „asmeninių duomenų“, kaip apibrėžta Europos BDAR 4 straipsnyje.Visi privalomieji paslaugų duomenys, kuriuos „Microsoft“ renka naudojant „Microsoft 365“ programas įmonėms ir paslaugas, yra pseudoniminiai, kaip apibrėžta ISO/IEC 19944:2017 standarte (8.3.3 skyriuje).
+Kai naudojate bet kurias šiame straipsnyje aprašytas pasirinktines debesų technologija pagrįstas paslaugas, „Microsoft“ gali rinkti [privalomuosius paslaugų duomenis](required-service-data.md) (pvz, naudojimo duomenis, klaidų ir veikimo duomenis) apie funkcijos veikimą ją naudojant. Šiuose privalomuosiuose paslaugų duomenyse gali būti „asmeninių duomenų“, kaip apibrėžta Europos BDAR 4 straipsnyje. Visi privalomieji paslaugų duomenys, kuriuos „Microsoft“ renka naudojant „Microsoft 365“ programas įmonėms ir paslaugas, yra pseudoniminiai, kaip apibrėžta ISO/IEC 19944:2017 standarte (8.3.3 skyriuje).
 
 ## <a name="admin-controls-for-optional-connected-experiences"></a>Administratorių valdikliai, skirti pasirinktinėms prisijungus naudojamoms funkcijoms 
 

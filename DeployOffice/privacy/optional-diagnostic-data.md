@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia „Office“ administratoriams informacijos apie pasirinktinius diagnostikos duomenis naudojant „Office“, įskaitant keletą įvykių pavyzdžių.
 hideEdit: true
-ms.openlocfilehash: bcb9a8d4a886fefde3fbb42280183bf163b315c3
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: 7dc10c50baed0306e3e7fc6dd70e0d798a72d0bc
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794809"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931262"
 ---
 # <a name="optional-diagnostic-data-for-office"></a>Pasirinktiniai „Office“ diagnostikos duomenys
 
@@ -28,6 +28,9 @@ ms.locfileid: "48794809"
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir taisyti problemas, taip pat tobulinti produktus. Šie duomenys neapima vartotojo vardo ar el. pašto adreso, vartotojo failų turinio ar informacijos apie programas, nesusijusias su „Office“.
 
 Šie diagnostikos duomenys renkami ir siunčiami „Microsoft“ apie „Office“ kliento programinę įrangą, veikiančią vartotojo įrenginyje. Kai kurie diagnostikos duomenys yra privalomi, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums privalomuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
+
+> [!NOTE]
+> Jei naudojate „Office 2019“ arba „Office 2016“ versiją, kuri nesuteikia jums arba administratoriui galimybę pasirinkti, ar siųsti mums būtinuosius, ar pasirinktinius diagnostikos duomenis, bus siunčiami tik būtinieji diagnostikos duomenys. Pvz., jei naudojate „Office Professional Plus 2019“ arba „Office Standard 2016“, kuri neteikia šio pasirinkimo, bus siunčiami tik būtinieji diagnostikos duomenys. „Office 2013“ nesiunčia būtinųjų ar pasirinktinių diagnostikos duomenų. Daugiau informacijos apie tai, kurios „Office“ versijos suteikia šį pasirinkimą, žr. [„Office“ produktų](products-versions-privacy-controls.md)privatumo valdiklius.
 
 ***Pasirinktiniai diagnostikos duomenys** _ yra papildomi duomenys, kurie padeda mums tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir ištaisyti kilusias problemas.
 

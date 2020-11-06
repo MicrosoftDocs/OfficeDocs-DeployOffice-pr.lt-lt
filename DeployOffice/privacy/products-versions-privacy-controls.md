@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia informaciją apie tai, kurie „Office“ produktai ir versijos turi naujausius privatumo valdiklius.
 hideEdit: true
-ms.openlocfilehash: d6fc46501b2137f2f22cd30dad4a2168bc490360
-ms.sourcegitcommit: da41d41b443c8392c96e64a4d2fc674957abddf5
+ms.openlocfilehash: 8434891947997908bb4de61ad56606f8b4b59614
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47431956"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931190"
 ---
 # <a name="privacy-controls-available-for-office-products"></a>„Office“ produktams skirti privatumo valdikliai
 
@@ -42,7 +42,6 @@ Mūsų naujausi privatumo valdikliai pasiekiami šiuose „Office“ produktuose
 - Mažmeninės prekybos „Office 2019“ ir „Office 2016“ versijos, kurias galima įsigyti kaip vienkartinį pirkinį. Pavyzdžiui, „Office Professional 2019“ arba „Office Home & Student 2016“.
 - „Project“ ir „Visio“ kompiuterio versijos, kurios įtrauktos į kai kuriuos prenumeratos planus, pvz., „Project“ 5 planą arba „Visio“ 2 planą.
 - Mažmeninės prekybos „Project 2019“, „Project 2016“, „Visio 2019“ ir „Visio 2016“ versijos, kurias galima įsigyti kaip vienkartinį pirkinį.
-- Bendrojo licencijavimo „Project 2016“ ir „Visio 2016“ versijos, įdiegiamos naudojant „Spustėlęite ir naudokitės“, o ne diegiamos naudojant „Windows Installer“ (MSI). Pavyzdžiui „Project Professional 2016“ arba „Visio Standard 2016“.
 
 Tolesnėje lentelėje pateiktos „Windows“ įrenginių programos ir minimalios tų programų versijos, kuriose yra mūsų naujausi privatumo valdikliai.
 
@@ -74,6 +73,12 @@ Tolesnėje lentelėje pateiktos „Windows“ įrenginių programos ir minimalio
 Kai kurie „Office“ produktai gali neturėti tam tikrų tipų prijungtų funkcijų, todėl kai kurie privatumo valdikliai nebus teikiami.
 
 Norėdami sukonfigūruoti šiuos valdiklius savo vartotojams, kurie naudoja „Office“ „Windows“ įrenginiuose jūsų organizacijoje, galite naudoti grupės strategiją arba „Office“ debesies tarnybą. Daugiau informacijos žr. [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md).
+
+> [!NOTE]
+> „Leisti naudoti papildomas pasirinktines sujungtas funkcijas“ „Office“ yra palaikomas toliau pateiktame *bendrojo licencijavimo* „Office“, „Project“ ir „Visio“ versijoms.
+> - „Office 2019“, „Project 2019“ ir „Visio 2019“, kai jos sukonfigūruotos naudoti „PerpetualVL2019“ naujinimų kanalą. Tokiu atveju turite naudoti bent versiją 1808 (Komponavimo versija 10367.20048), kuri buvo išleista 2020 m. spalio 13 d.
+> - „Project 2019“ ir „Visio 2019“, kai jos sukonfigūruotos naudoti ne PerpetualVL2019 naujinimų kanalą. Pavyzdžiui, jei jos sukonfigūruotos naudoti dabartinį kanalą, mėnesinį įmonės kanalą arba pusmečio įmonės kanalą. Tokiu atveju turite naudoti bent versiją 1904.
+> - Bendrojo licencijavimo „Project 2016“ ir „Visio 2016“ versijos, įdiegiamos naudojant „Spustėkite ir naudokitės“, o ne diegiamos naudojant „Windows Installer“ (MSI). Tokiu atveju turite naudoti bent versiją 1904.
 
 ## <a name="office-on-mac-devices"></a>„Office“ „Mac“ įrenginiuose
 

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Suteikia informacijos „Office“ administratoriams apie tai, kaip valdyti privatumo kontrolės mechanizmus „Microsoft 365“ programose skirtose įmonėms (anksčiau vadintos „Office 365 ProPlus“) naudojant strategijos parametrus.
 hideEdit: true
-ms.openlocfilehash: f02714428dd580d79a3fc8f160b00d6df95c4237
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: 401cc5ca875dac28a5cda321a812e9b6c25289e5
+ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440245"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931226"
 ---
 # <a name="use-policy-settings-to-manage-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus
 
@@ -31,9 +31,9 @@ ms.locfileid: "47440245"
 
 Nauji strategijos parametrai, pradedant nuo „Microsoft 365“ programų įmonėms 1904 versijos, leis jums nustatyti parametrus, susijusius su:
 
-- ***Diagnostikos duomenimis*** apie „Office“ kliento naudojamą programinę įrangą, kurie renkami ir siunčiami „Microsoft“.
+- ***Diagnostikos duomenys** , kurie renkami ir siunčiami „Microsoft“, apie naudojamą „Office“ kliento programinę įrangą.
 
-- ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
+- _*_Prijungtosios funkcijos_*_ , kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
 Toliau pateikiami penki naujos strategijos parametrai:
 
@@ -64,15 +64,15 @@ Kaip ir bet kuriuos naujus strategijos parametrus, atidžiai patikrinkite juos a
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir spręsti problemas, taip pat tobulinti produktus.
 
-Norėdami pasirinkti, kokio dydžio diagnostikos duomenis siunčiami „Microsoft“, galite naudoti strategijos parametro parinktį *Konfigūruoti kliento programinės įrangos diagnostikos duomenų lygį, kuriuos „Office“ siunčia „Microsoft“ tarnybai*.
+Norėdami pasirinkti, kokio lygio diagnostikos duomenys siunčiami „Microsoft“, galite naudoti strategijos parametro parinktį Konfigūruoti kliento programinės įrangos diagnostikos duomenų lygį, kuriuos „Office“ siunčia „Microsoft“ tarnybai.
 
 Jei įgalinsite šį strategijos parametrą, galite pasirinkti, kokio lygio diagnostikos duomenys siunčiami „Microsoft“. Galimos parinktys: būtinieji, pasirinktiniai arba nė vieni.
 
-- ***Būtinieji.*** Minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
+- Jei pasirinksite * **Būtinieji** , „Microsoft“ siunčiami minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
 
-- ***Pasirinktiniai.*** Pasirinktinai duomenys, kurie padeda tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir išspręsti kilusias problemas. Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, būtinieji diagnostikos duomenys taip pat bus įtraukti.
+- Jei pasirinksite _*_Pasirinktiniai_*_ , „Microsoft“ siunčiami pasirinktinai duomenys, kurie padeda tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir išspręsti kilusias problemas. Jei pasirinksite siųsti mums pasirinktinius diagnostikos duomenis, būtinieji diagnostikos duomenys taip pat bus įtraukti.
 
-- ***Nė vieni.*** Jokie diagnostikos duomenys apie „Office“ kliento programinę įrangą, įdiegtą vartotojo įrenginyje, nerenkami ir nesiunčiami. „Microsoft“. Tačiau ši parinktis gerokai apriboja „Microsoft“ gebėjimą aptikti, diagnozuoti ir spręsti problemas, kurios gali kilti vartotojams naudojantis „Office“.
+- Jei pasirinksite _*_Nė vieni_*_ , jokie diagnostikos duomenys apie „Office“ kliento programinę įrangą, įdiegtą vartotojo įrenginyje, nerenkami ir nesiunčiami „Microsoft“. Tačiau ši parinktis gerokai apriboja „Microsoft“ gebėjimą aptikti, diagnozuoti ir spręsti problemas, kurios gali kilti vartotojams naudojantis „Office“.
 
 Jei išjungsite arba nekonfigūruosite šio strategijos parametro, pasirinktiniai ir būtinieji diagnostikos duomenys bus siunčiami „Microsoft“.
 
@@ -104,9 +104,9 @@ Vartotojai negalės pasirinkti, ar šios prisijungus naudojamos funkcijos yra į
 
 Tai funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir panašių funkcijų. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba vertyklė. Išsamesnį prisijungus naudojamų funkcijų sąrašą žr. [Prisijungus naudojamos funkcijos naudojant „Office“](connected-experiences.md).
 
-Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams, galite naudoti strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios analizuoja turinį*. Jei nekonfigūruosite šių strategijos parametrų, šios prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
+Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams, galite naudoti strategijos parametrą Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios analizuoja turinį*. Jei nekonfigūruosite šių strategijos parametrų, šios prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
-Pastaba: jei išjungsite strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas*, šios funkcijos, kurios analizuoja turinį, nebus prieinamos vartotojams.
+Pastaba: jei išjungsite strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas* , šios funkcijos, kurios analizuoja turinį, nebus prieinamos vartotojams.
 
 ### <a name="policy-setting-for-connected-experiences-that-download-online-content"></a>Strategijos parametras prisijungus naudojamoms funkcijoms, kurios atsisiunčia internetinį turinį
 
@@ -114,7 +114,7 @@ Tai funkcijos, kurias naudodami galite ieškoti ir atsisiųsti internetinį turi
 
 Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams, galite naudoti strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios atsisiunčia internetinį turinį*. Jei nekonfigūruosite šių strategijos parametrų, šios prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
-Pastaba: jei išjungsite strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas*, šios funkcijos, kurios atsisiunčia internetinį turinį, nebus prieinamos vartotojams.
+Pastaba: jei išjungsite strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas* , šios funkcijos, kurios atsisiunčia internetinį turinį, nebus prieinamos vartotojams.
 
 ### <a name="policy-setting-for-optional-connected-experiences"></a>Strategijos parametrai pasirinktinėms prisijungus naudojamoms funkcijoms
 
@@ -124,9 +124,12 @@ Be anksčiau minėtų prisijungus naudojamų funkcijų, kurios įtrauktos į „
 
 Norėdami kontroliuoti, ar tokių tipų prisijungus naudojamos funkcijos prieinamos vartotojams, galite naudoti strategijos parametrą *Leisti „Office“ naudoti papildomas pasirinktines prisijungus naudojamas funkcijas*. Jei nekonfigūruosite šio strategijos parametro, šios papildomos pasirinktinės prisijungus naudojamos funkcijos bus pasiekiamos vartotojams.
 
+> [!NOTE]
+> Norėdami taikyti *Leisti naudoti papildomas pasirinktines prijungtąsias funkcijas „Office“* strategijos parametrus, kad būtų galima naudoti „Office 2019“, „Project 2019“ arba „Visio 2019“ bendrojo licencijavimo versijas, turite naudoti grupės strategiją. Negalite naudoti „Office“ debesies strategijos tarnybos. Tai taikoma „Office 2019“, „Project 2019“ ir „Visio 2019“, kai jos sukonfigūruotos naudoti „PerpetualVL2019“ naujinimų kanalą.
+
 Net jei padarysite šias pasirinktines prisijungus naudojamas funkcijas pasiekiamas vartotojams, jie galės jas išjungti kaip grupę eidami į [privatumo parametrų dialogo langą](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b). Vartotojai turės šį pasirinkimą, tik jei jie bus prisijungę prie „Office“ naudodamiesi organizacijos kredencialais (kartais vadinamais darbo arba mokymo įstaigos paskyra), o ne naudodami savo asmeninį el. pašto adresą.
 
-Be to, kai kurios iš šių pasirinktinių prisijungus naudojamų funkcijų taip pat laikomos pasirinktinai naudojamomis funkcijomis, kurios analizuoja turinį arba atsisiunčia internetinį turinį. Pvz., Internetinių paveikslėlių įterpimas yra pasirinktinė prisijungus naudojama funkcija, kurią teikia „Microsoft Bing“, tačiau ji taip pat laikoma prisijungus naudojama funkcija, kuri atsisiunčia internetinį turinį. Taigi, jei išjungsite strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios atsisiunčia internetinį turinį*, strategijos parametras Internetinių paveikslėlių įterpimas nebus pasiekiamas vartotojams. Jis nebus pasiekiamas net jei įjungėte strategijos parametrą *Leisti "Office" naudoti papildomas pasirinktines prisijungus naudojamas funkcijas*. Daugiau informacijos apie tai, kurios prisijungus naudojamos funkcijos analizuoja turinį arba atsisiunčia internetinį turinį, žiūrėkite [Prisijungus naudojamos funkcijos „Office“](connected-experiences.md).
+Be to, kai kurios iš šių pasirinktinių prisijungus naudojamų funkcijų taip pat laikomos pasirinktinai naudojamomis funkcijomis, kurios analizuoja turinį arba atsisiunčia internetinį turinį. Pvz., Internetinių paveikslėlių įterpimas yra pasirinktinė prisijungus naudojama funkcija, kurią teikia „Microsoft Bing“, tačiau ji taip pat laikoma prisijungus naudojama funkcija, kuri atsisiunčia internetinį turinį. Taigi, jei išjungsite strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios atsisiunčia internetinį turinį* , strategijos parametras Internetinių paveikslėlių įterpimas nebus pasiekiamas vartotojams. Jis nebus pasiekiamas net jei įjungėte strategijos parametrą *Leisti "Office" naudoti papildomas pasirinktines prisijungus naudojamas funkcijas*. Daugiau informacijos apie tai, kurios prisijungus naudojamos funkcijos analizuoja turinį arba atsisiunčia internetinį turinį, žiūrėkite [Prisijungus naudojamos funkcijos „Office“](connected-experiences.md).
 
 Atkreipkite dėmesį, kad yra viena išimtis: Strategijos parametru *Leisti naudoti papildomas pasirinktines prisijungus naudojamas funkcijas „Office“* nevaldomos funkcijos, kurias naudojant jums reikia susieti savo „LinkedIn“ paskyrą su „Microsoft“ darbo arba mokymo įstaigos paskyra. Norėdami valdyti šių tipų funkcijas, pvz., „LinkedIn“ informacijos rodymą „Outlook“ [profilio kortelėje](https://support.microsoft.com/office/365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501), žr.[„LinkedIn“ ir „Microsoft“ programėlės ir paslaugos](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381) ir [„LinkedIn“ paskyros ryšių integravimas „Azure Active Directory“](https://docs.microsoft.com/azure/active-directory/users-groups-roles/linkedin-integration).
 
@@ -146,9 +149,9 @@ Net jei išjungsite šį strategijos parametrą, kai kurios „Office“ funkcij
 
 Yra du esami strategijos parametrai, kurie nebebus taikomi „Microsoft 365“ programose įmonėms, pradedant nuo 1904 versijos. Tai yra šie strategijos parametrai:
 
-- **Siųsti asmeninę informaciją**, kurią galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\“Microsoft Office 2016“\\Privatumas\\Patikimumo centras.
+- **Siųsti asmeninę informaciją** , kurią galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\“Microsoft Office 2016“\\Privatumas\\Patikimumo centras.
 
-- **Interneto turinio parinktys**, kurias galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft Office 2016“\\Įrankiai | Funkcijos | Bendra | Tarnybos pasirinkimai \\Internetinis turinys.
+- **Interneto turinio parinktys** , kurias galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft Office 2016“\\Įrankiai | Funkcijos | Bendra | Tarnybos pasirinkimai \\Internetinis turinys.
 
 Pradedant nuo 1904 versijos, šių dviejų esamų strategijos parametrų konfigūravimas neturės poveikio „Microsoft 365“ programoms įmonėms. Jie nebebus taikomi, nes jų funkcijos keičiamos šiais naujais strategijos parametrais:
 
@@ -157,7 +160,7 @@ Pradedant nuo 1904 versijos, šių dviejų esamų strategijos parametrų konfig�
 - Leisti „Office“ naudoti pasirinktines, papildomas prisijungus naudojamas funkcijas 
 - Leisti „Office" naudoti prisijungus naudojamas funkcijas
 
-Šie nauji strategijos parametrai suteiks tikslesnį kontrolės lygį nei du jau esami strategijos parametrai. Pvz., anksčiau, jei naudojote strategijos parametrą*Siųsti asmeninę informaciją*, „PowerPoint“ funkcija „QuickStarter“ ir išmanioji ieška bus išjungta. Tačiau dabar, su naujais strategijos parametrais naudojant strategijos parametrą*Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios analizuoja turinį*,norint išjungti šio tipo funkcijas, išjungiama tik išmanioji ieška. „PowerPoint“ funkcija „QuickStarter“ vis tiek bus pasiekiama vartotojams.
+Šie nauji strategijos parametrai suteiks tikslesnį kontrolės lygį nei du jau esami strategijos parametrai. Pvz., anksčiau, jei naudojote strategijos parametrą *Siųsti asmeninę informaciją* , „PowerPoint“ funkcija „QuickStarter“ ir išmanioji ieška bus išjungta. Tačiau dabar, su naujais strategijos parametrais naudojant strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas, kurios analizuoja turinį* ,norint išjungti šio tipo funkcijas, išjungiama tik išmanioji ieška. „PowerPoint“ funkcija „QuickStarter“ vis tiek bus pasiekiama vartotojams.
 
 Strategijos parametrai vis tiek rodomi įrankyje Grupės strategijos valdymas, nes jie vis tiek taikomi bendrojo licencijavimo versijose „Office 2016“ ir „Office 2019“, pvz., „Office Professional Plus 2019“.
 
@@ -165,13 +168,13 @@ Strategijos parametrai vis tiek rodomi įrankyje Grupės strategijos valdymas, n
 
 Kaip jūs tikriausiai jau žinote, šiuo metu kai kurie esamos strategijos parametrai leidžia jums kontroliuoti prisijungus naudojamas funkcijas. Toliau pateikiami keli esamų strategijos parametrų pavyzdžiai:
 
-- *„PowerPoint“ dizaino įrankio parinktys*, kurias galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft Office 2016“\\Įrankiai | Funkcijos | Bendra | Tarnybos pasirinkimai... \\„PowerPoint“ dizaino įrankis.
+- *„PowerPoint“ dizaino įrankio parinktys* , kurias galite rasti Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft Office 2016“\\Įrankiai | Funkcijos | Bendra | Tarnybos pasirinkimai... \\„PowerPoint“ dizaino įrankis.
 
 - *Išjungti „QuickStarter“* eikite į Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft“ „PowerPoint 2016“\\„PowerPoint“ parinktys\\Bendra
 
-- *Leisti „LinkedIn“ funkciją CV kūrimo pagalbinė priemonė*, eikite į Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft Word 2016“\\„Word“ parinktys\\Bendra
+- *Leisti „LinkedIn“ funkciją CV kūrimo pagalbinė priemonė* , eikite į Vartotojo konfigūracija\\Strategijos\\Administravimo šablonai\\„Microsoft Word 2016“\\„Word“ parinktys\\Bendra
 
- Norėdami išjungti atskiras prisijungus naudojamas funkcijas, vis dar galite naudoti šiuos esamus strategijos parametrus. Tačiau atminkite, kad jei naudojate vieną iš naujos strategijos parametrų, jis gali išjungti prisijungus naudojamą funkciją, kurią įjungėte naudodami kitą strategijos parametrą. Pvz., jei įjungiate strategijos parametrą*Leisti „LinkedIn“ funkciją CV kūrimo pagalbinė priemonė*, bet išjungiate strategijos parametrą*Leisti „Office“ naudoti prisijungus naudojamas funkcijas*, „LinkedIn“ funkcija CV kūrimo pagalbinė priemonė bus nepasiekiama vartotojams.
+ Norėdami išjungti atskiras prisijungus naudojamas funkcijas, vis dar galite naudoti šiuos esamus strategijos parametrus. Tačiau atminkite, kad jei naudojate vieną iš naujos strategijos parametrų, jis gali išjungti prisijungus naudojamą funkciją, kurią įjungėte naudodami kitą strategijos parametrą. Pvz., jei įjungiate strategijos parametrą *Leisti „LinkedIn“ funkciją CV kūrimo pagalbinė priemonė* , bet išjungiate strategijos parametrą *Leisti „Office“ naudoti prisijungus naudojamas funkcijas* , „LinkedIn“ funkcija CV kūrimo pagalbinė priemonė bus nepasiekiama vartotojams.
 
 Paprastai, kai vienas strategijos parametrų sukonfigūruotas įjungti konkrečią prisijungus naudojamą funkciją, kai tuo pačiu metu kitas strategijos parametras sukonfigūruotas išjungti šio tipo funkciją, tada ta konkreti funkcija vartotojams išjungiama.
 
@@ -181,17 +184,17 @@ Paprastai, kai vienas strategijos parametrų sukonfigūruotas įjungti konkreči
 
 ### <a name="dialog-about-optional-connected-experiences"></a>Dialogo langas apie pasirinktines prisijungus naudojamas funkcijas
 
-Jei pasirinkote teikti vartotojams [pasirinktines prisijungus naudojamas funkcijas](optional-connected-experiences.md), pirmą kartą vartotojams atidarius „Office“ programą, kuri jau bus atnaujintos 1904 ar vėlesnės versijos, pasirodys informacinis dialogo langas. Šis dialogo langas informuoja vartotojus, kad suteikėte jiems galimybę naudoti šias pasirinktines prisijungus naudojamas funkcijas, ir, kad norėdami pakeisti šį parametrą jie gali eiti į **Failas** > **Paskyra**  >  ** Paskyros privatumas**.
+Jei pasirinkote teikti vartotojams [pasirinktines prisijungus naudojamas funkcijas](optional-connected-experiences.md), pirmą kartą vartotojams atidarius „Office“ programą, kuri jau bus atnaujintos 1904 ar vėlesnės versijos, pasirodys informacinis dialogo langas. Šis dialogo langas informuoja vartotojus, kad suteikėte jiems galimybę naudoti šias pasirinktines prisijungus naudojamas funkcijas, ir, kad norėdami pakeisti šį parametrą jie gali eiti į **Failas** > **Paskyra**  >  **Paskyros privatumas**.
 
 ### <a name="privacy-settings-removed-from-the-office-ui"></a>Iš „Office“ vartotojo sąsajos pašalinti privatumo parametrai 
 
-Šie parametrai pašalinti iš: **Failas** > **Funkcijos** > **Patikimumo centras** > **Patikimumo centro parametrai...** > **Privatumo parinktys**:
+Šie parametrai pašalinti iš: **Failas** > **Funkcijos** > **Patikimumo centras** > **Patikimumo centro parametrai...** > **Privatumo parinktys** :
 
 - Gaukite dizainus, informaciją, rekomendacijas ir paslaugas leisdami „Office“ pasiekti ir tobulinti produktus pagal „Office“ turinį savo įrenginyje.
 
 - Leisti „Office“ prisijungti prie „Microsoft“ internetinių tarnybų, kad būtų galima teikti funkcijas, susijusias su jūsų naudojimu ir nuostatomis.
 
-Be to, pašalinama galimybė įgalinti „Office“ intelektualiąsias paslaugas dalyje**Failas** > **Funkcijos** > **Bendra**.
+Be to, pašalinama galimybė įgalinti „Office“ intelektualiąsias paslaugas dalyje **Failas** > **Funkcijos** > **Bendra**.
 
 Kaip jūsų organizacijos administratorius, dabar galite valdyti atitinkamus parametrus naudodami anksčiau minėtus naujos strategijos parametrus.
 
@@ -199,9 +202,9 @@ Kaip jūsų organizacijos administratorius, dabar galite valdyti atitinkamus par
 
 Toliau pateikiami nauji elementai, priskirti „Office“ vartotojo sąsajai:
 
-- Dalyje**Failas** > **Paskyra**, vartotojai matys naują parinktį **Paskyros privatumas** > **Valdyti nustatymus**. Dalyje **Valdyti nustatymus** vartotojai gali išjungti pasirinktines prisijungus naudojamas funkcijas, jei suteikėte jiems šią galimybę.
+- Dalyje **Failas** > **Paskyra** , vartotojai matys naują parinktį **Paskyros privatumas** > **Valdyti nustatymus**. Dalyje **Valdyti nustatymus** vartotojai gali išjungti pasirinktines prisijungus naudojamas funkcijas, jei suteikėte jiems šią galimybę.
 
-- Dalyje**Failas** > **Funkcijos** > **Patikimumo centras** > **Patikimumo centro parametrai...** > **Privatumo parinktys**, yra galimybė įgalinti [Diagnostikos duomenų ieškiklio](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) naudojimą įrenginyje.
+- Dalyje **Failas** > **Funkcijos** > **Patikimumo centras** > **Patikimumo centro parametrai...** > **Privatumo parinktys** , yra galimybė įgalinti [Diagnostikos duomenų ieškiklio](https://support.microsoft.com/office/cf761ce9-d805-4c60-a339-4e07f3182855) naudojimą įrenginyje.
 
  
 ## <a name="control-privacy-settings-by-editing-the-registry"></a>Valdykite privatumo parametrus redaguodami registrą
