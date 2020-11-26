@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: e8b54e50ca8fc080cf09b26d83f4b7f28bc81290
-ms.sourcegitcommit: 521da3465e94ca9d29f3c6f49b78dd5f952d9cc6
+ms.openlocfilehash: 97d334551743566bde549da4b3b4a2476255d248
+ms.sourcegitcommit: 1c635a2906afb601e7c92b3f48dde3d271d06105
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49088127"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367369"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -1534,7 +1534,7 @@ Renkami šių laukų duomenys:
  
 - **number_of_accounts** – bendras paskyrų, kuriose atliekamas veiksmas, skaičius
  
-- **rezultatas** - veiksmo rezultatas, pvz., sėkmingas, nepavyko.
+- **rezultatas** – veiksmo rezultatas, pvz., sėkmingas, nepavyko.
    
 - **server_type** – paskyros serverio tipas, panašus į account_type
  
@@ -1554,9 +1554,9 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys: 
 
-- **account_creation_source** – pasirinktinė ypatybė, kuri naudojama norint rasti ir diagnozuoti bet kokias triktis, kylančias kuriant paskyrą, kai veiksmo tipas yra „įtraukti“.  Galimos tokios reikšmės, kaip: vienkartinis prisijungimas (SSO), create_new_account, rankinis ir t. t.
+- **account_creation_source** – pasirinktinė ypatybė, kuri naudojama norint rasti ir diagnozuoti bet kokias triktis, kylančias kuriant paskyrą, kai veiksmo tipas yra „įtraukti“.  Galimos reikšmės, tokios kaip vienkartinis prisijungimas (SSO), create_new_account, rankinis ir t. t.
 
-- **action** - paskyroje atliekamas veiksmas, pvz., pridėti, pašalinti arba nustatyti iš naujo
+- **action** – paskyroje atliekamas veiksmas, pvz., pridėti, pašalinti arba nustatyti iš naujo
 
 #### <a name="addnewaccountstep"></a>add.new.account.step
 
@@ -5946,7 +5946,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 - **InitialReplicationInSession** – nurodo, ar dubliuojamas pirmasis bloknoto dubliavimas atidarius, ar ne
 
-- **IsBackgroundSync** – nurodo, ar tai fono sinchronizavimas ar ne
+- **IsBackgroundSync** – nurodo, ar tai foninis sinchronizavimas, ar ne
 
 - **IsCachedErrorSuppressed** – nurodo, ar talpyklinė klaida suglaudinta, ar ne
 
@@ -6576,7 +6576,7 @@ Renkami šių laukų duomenys:
 
 - **Data_DstDoc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-- **Data_DstDoc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
+- **Data_DstDoc_IOFlags:long** – šablonas, skirtas pateikto dokumento įvairioms susijusioms su IO (įvestis/išvestis) žymėms
 
 - **Data_DstDoc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
     
@@ -10504,7 +10504,7 @@ Renkami šių laukų duomenys:
 
 - **Data_AssistiveTouchRunning** – vėliavėlė, rodanti, ar šis parametras įgalintas
 
-- **Data_BoldTextEnabled** – vėliavėlė, rodanti ar šis parametras įjungtas
+- **Data_BoldTextEnabled** – vėliavėlė, rodanti, ar šis parametras įgalintas
 
 - **Data_CollectionTime** – vėliavėlė, rodanti, ar šis parametras įgalintas
 
