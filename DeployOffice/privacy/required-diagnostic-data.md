@@ -1534,7 +1534,7 @@ Renkami šių laukų duomenys:
  
 - **number_of_accounts** – bendras paskyrų, kuriose atliekamas veiksmas, skaičius
  
-- **rezultatas** – veiksmo rezultatas, pvz., sėkmingas, nepavyko.
+- **result** – veiksmo rezultatas, pvz., sėkmingas, nepavyko.
    
 - **server_type** – paskyros serverio tipas, panašus į account_type
  
@@ -1556,7 +1556,7 @@ Renkami šių laukų duomenys:
 
 - **account_creation_source** – pasirinktinė ypatybė, kuri naudojama norint rasti ir diagnozuoti bet kokias triktis, kylančias kuriant paskyrą, kai veiksmo tipas yra „įtraukti“.  Galimos reikšmės, tokios kaip vienkartinis prisijungimas (SSO), create_new_account, rankinis ir t. t.
 
-- **action** – paskyroje atliekamas veiksmas, pvz., pridėti, pašalinti arba nustatyti iš naujo
+- **action** – veiksmo, kuris buvo atliktas su paskyra, tipas, pvz., įtraukimas, pašalinimas arba nustatymas iš naujo
 
 #### <a name="addnewaccountstep"></a>add.new.account.step
 
@@ -2585,7 +2585,7 @@ Renkami šių laukų duomenys:
 
 - **Data_BootMarkers** – eilutės reikšmė, fiksuojanti laiką tarp tam tikrų funkcijų iškvietimų programos paleidimo metu, pateikiama formatu su funkcijos ID ir trukme.
 
-- **Data_ClosePreviouslyOpenedMarkers** – kai kuriuose failų atidarymo scenarijuose, prieš atidarant dabartinį dokumentą, uždaromas anksčiau atidarytas dokumentas. Šis laikotarpis tarp kai kurių operacijų, vykstančių šiuo atveju, užfiksuotas eilutės reikšmė, kurioje yra formatas \<functionId>\<functionValue>\<functionId>\<functionValue>
+- **Data_ClosePreviouslyOpenedMarkers** – kai kuriuose failų atidarymo scenarijuose, prieš pradedant dabartinį dokumentą, uždaromas anksčiau atidarytas dokumentas. Šis laikotarpis tarp kai kurių operacijų, vykstančių šiuo atveju, užfiksuotas eilutės reikšmė, kurioje yra formatas \<functionId>\<functionValue>\<functionId>\<functionValue>
 
 - **Data_Doc_AccessMode** – išvardijimas, rodantis failo prieigos režimą, pvz., tik skaityti, skaityti / rašyti.
 
@@ -2792,7 +2792,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeappcompatappcompatagentupload"></a>Office.AppCompat.AppCompat.AgentUpload
 
-Generuojama paleidžiant klientą, kai galutinis vartotojas įgalina „Office“ telemetrijos ataskaitų sritį.  Renka informaciją apie tai, kada „Office“ telemetrijos agentas įkelia duomenis į bendrinimo aplanką. Šis įvykis visų pirma naudojamas norint stebėti „Office“ telemetrijos agento sveikatą. Antrinė paskirtis yra įvertinti „Office“ telemetrijos ataskaitų srities naudojimą.
+Generuojama paleidžiant klientą, kai galutinis vartotojas įgalina „Office“ telemetrijos ataskaitų sritį.  Tenka informaciją, kai „Office“ telemetrijos agentas įkelia duomenis į bendrinimo aplanką. Šis įvykis visų pirma naudojamas norint stebėti „Office“ telemetrijos agento sveikatą. Antrinė paskirtis yra įvertinti „Office“ telemetrijos ataskaitų srities naudojimą.
 
 Renkami šių laukų duomenys:
 
@@ -3666,7 +3666,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeappleintune"></a>Office.Apple.InTune
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Renkame, ar dabartinis seansas yra "Intune" valdomas. Tai naudojama „Intune“ valdomuose seansuose greitai rikiuoti / filtruoti, bei suteikia mums galimybę ištirti galimas programos „Office, kuri vykdoma kaip „Intune“ valdoma taikomoji programa, triktis.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Renkame, ar dabartinis seansas yra „Intune“ valdomas. Tai naudojama „Intune“ valdomuose seansuose greitai rikiuoti / filtruoti, bei suteikia mums galimybę ištirti galimas programos „Office, kuri vykdoma kaip „Intune“ valdoma taikomoji programa, triktis.
 
 Renkami šių laukų duomenys:
 
@@ -3960,7 +3960,7 @@ Renkami šių laukų duomenys:
 
 - **Data_FileType** – pirmi keturi esamo failo plėtinio simboliai.
 
-- **Data_InDocStage** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis rodoma iš dokumentų galerijos, ar dokumento lango.
+- **Data_InDocStage** – Bulio logika, nurodanti, ar papildomo pardavimo patirtis rodoma iš dokumentų galerijos ar dokumento lango.
 
 - **Data_IsDocumentOpened** – Bulio logika, nurodanti, ar taip pat atidarytas esamas dokumentas, kuriame rodoma papildomo pardavimo patirtis.
 
@@ -5946,7 +5946,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 - **InitialReplicationInSession** – nurodo, ar dubliuojamas pirmasis bloknoto dubliavimas atidarius, ar ne
 
-- **IsBackgroundSync** – nurodo, ar tai foninis sinchronizavimas, ar ne
+- **IsBackgroundSync** – nurodo, ar tai fono sinchronizavimas ar ne
 
 - **IsCachedErrorSuppressed** – nurodo, ar talpyklinė klaida suglaudinta, ar ne
 
@@ -6170,7 +6170,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
 
-  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, kuris buvo naudojamas veiksmui su bendrinamais dokumentais
 
   - **Data\_Doc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
@@ -6306,7 +6306,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
 
-  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, kuris buvo naudojamas veiksmui su bendrinamais dokumentais
 
   - **Data\_Doc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
@@ -6430,7 +6430,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_IdentityTelemetryId:string –** unikalus vartotojo GUID
 
-  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
+  - **Data\_Doc\_IdentityUniqueId:string –** unikalus tapatybės identifikatorius, kuris buvo naudojamas veiksmui su bendrinamais dokumentais
 
   - **Data\_Doc\_IOFlags:long –** šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
@@ -6576,7 +6576,7 @@ Renkami šių laukų duomenys:
 
 - **Data_DstDoc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-- **Data_DstDoc_IOFlags:long** – šablonas, skirtas pateikto dokumento įvairioms susijusioms su IO (įvestis/išvestis) žymėms
+- **Data_DstDoc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
 - **Data_DstDoc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
     
@@ -6841,7 +6841,7 @@ Renkami šių laukų duomenys:
 
 - **Data_DstDoc_IdentityUniqueId:string** – unikalusis tapatybės identifikatorius, naudojamas veiksmui su bendrinamais dokumentais
 
-- **Data_DstDoc_IOFlags:long** – šablonas, skirtas pateikto dokumento įvairioms susijusioms su IO (įvestis/išvestis) žymėms
+- **Data_DstDoc_IOFlags:long** – šablonas įvairiems pateikto dokumento IO, susietiems su žymėmis
 
 - **Data_DstDoc_IrmRights:long** – iš anksto nustatytų reikšmių, nurodančių, kokio tipo informacijos teisių valdymas taikomas šiam dokumentui, rinkinys (Forward, Reply, SecureReader, Edit ir kt.)
 
@@ -7210,9 +7210,9 @@ Renkami šių laukų duomenys:
 
 - **Data.fileType** – „Word“ failo plėtinys
 
-- **Data.innerHeight"** – šoninės srities konteinerio aukštis
+- **Data.innerHeight“** – šoninės srities konteinerio aukštis
 
-- **Data.innerWidth"** – šoninės srities konteinerio plotis
+- **Data.innerWidth“** – šoninės srities konteinerio plotis
 
 - **Data.lookupSourceLang** – nenaudojama dokumentui versti
 
@@ -7317,7 +7317,7 @@ Renkami šių laukų duomenys:
 
 - **Data.eventActionType** – telemetrijos įvykio tipas
 
-- **Data.eventTagId"** – kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalusis identifikatorius
+- **Data.eventTagId“** – kodo eilutės, sukūrusios šį telemetrijos pranešimą, unikalusis identifikatorius
 
 - **Data.flights** – įgalinti testuojami variantai
 
@@ -7751,7 +7751,7 @@ Renkami šių laukų duomenys:
 
 - **Data_PartsUnknown** – dokumento dalių, iš kurių nepavyko gauti duomenų, skaičius 
 
-- **Data_RecoverableFailureInitiationLocationTag** – unikali kodo iškvietimo vietos žymė, naudojama nustatyti vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant 
+- **Data_RecoverableFailureInitiationLocationTag** – unikali kodo iškvietimo vietos žymė, naudojama vietai kode, kurioje stengiamės sutvarkyti failą prieš jį atidarant, identifikuoti 
 
 - **Data_RenameDisabledReason** – klaida, dėl kurios šiam dokumentui išjungiamas pervardijimas 
 
@@ -8475,7 +8475,7 @@ Renkami šių laukų duomenys:
    - **source** – nurodo, kas yra pranešimų šaltinis, jei taikoma, iš parametrų arba nustatymo netrukdyti
    - **swipe_setting** – nurodo, jei taikoma, braukimo parametrų, susijusių su šiuo veiksmu, informaciją.
      - **swipe_action** – nurodo, ką vartotojas bandė daryti, t. y. pažymėti vėliavėle, naikinti, archyvuoti, kad galėtume nustatyti, kokio veiksmo vartotojas norėjo ir ar veiksmas pavyko. 
-     - **swipe_direction** – nurodo, kokiu būdu vartotojas nustatė braukimo naudojimą, t. y. iš kairės į dešinę arba iš dešinės į kairę. Tai leidžia nustatyti ar kilo problemų dėl konkrečios braukimo krypties.
+     - **swipe_direction** – nurodo, kokiu būdu vartotojas nustatė braukimo naudojimą, t. y. iš kairės į dešinę arba iš dešinės į kairę. Tai leidžia nustatyti, ar kilo problemų dėl konkrečios braukimo krypties.
    - **temperature_unit_setting** - pasirinktos temperatūros matavimo vienetas, naudojamas orui 
    - **theme_color_setting** – vartotojo pasirinkta programos temos spalva 
    - **ui_mode_setting** – pasirinktas vartotojo sąsajos režimas (tamsus, šviesus, sistemos numatytasis, mažai akumuliatoriaus energijos naudojantis ir t. t.)
@@ -8939,7 +8939,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_SyncBackedType –** dokumento tipo indikatorius (vietinis arba pagrįstas tarnyba) 
 
-  - **Data\_Doc\_UrlHash:string –** debesyje saugomų dokumentų viso URL maiša
+  - **Data\_Doc\_UrlHash:string -** Debesyje saugomų dokumentų viso URL maiša
 
   - **Data\_DpiAwarenessTime:integer -** Laikas, kurio reikia įgalinti monitoriaus DPI informacijos surinkimo tarnybą 
 
@@ -9043,7 +9043,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Location:integer -** Vietą failo, iš kurio buvo atidaryta 0 vietos, 1, tinklo, 2, „SharePoint“, 3 – žiniatinklio
 
-  - **Data\_MasterCount:integer -** Ruošiniai skaičius diagramoje
+  - **Data\_MasterCount:integer -** Ruošinių skaičius diagramoje
 
   - **Data\_MaxCoauthUsers:integer -** Maksimalus vartotojų skaičius, bendradarbiavusių bet kuriuo seansų Filesystem, Registry, First Party, SDX metu
 
@@ -9129,7 +9129,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_WasSuccessful:bool -** „True“, jei įrašymas pavyko
 
-  - **Data\_WinLaunchTime:integer -** Laikas, per kurį paleista „Visio“ paleisties užduočių sritis ir kt.)
+  - **Data\_WinLaunchTime:integer -** Laikas, per kurį paleista „Visio“ įkrovos užduočių sritis ir kt.
 
   
 #### <a name="officeextensibilitysandboxodpactivationhanging"></a>Office.Extensibility.Sandbox.ODPActivationHanging
@@ -9140,7 +9140,7 @@ Renkami šių laukų duomenys:
 
 - **AppId** – taikomosios programos ID
 
-- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, "SharePoint", failų sistema ir t. t.)
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
 
 - **AppInstanceId** – taikomosios programos egzemplioriaus ID 
 
@@ -9606,7 +9606,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_PreviousDiscardFailed -** Nurodo, kad ankstesnis atidarymo / uždarymo bandymas dokumente tinkamai nepaleido visų atminčių
 
-  - **Data\_PreviousFailureHr -** Iš naujo atidarius tą patį dokumentą, koks buvo paskutinis trikties rezultatas
+  - **Data\_PreviousFailureHr -** Iš naujo atidarius tą patį dokumentą, koks buvo paskutinis nesėkmės rezultatas
 
   - **Data\_PreviousFailureTag -** Iš naujo atidarius tą patį dokumentą, kokia buvo paskutinės nesėkmės žyma (kodo vietos žymiklis)
 
@@ -10862,7 +10862,7 @@ Renkami šių laukų duomenys:
 
 - **AppId** – taikomosios programos ID
 
-- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, "SharePoint", failų sistema ir t. t.)
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
 
 - **AppInstanceId** – taikomosios programos egzemplioriaus ID 
 
@@ -11108,7 +11108,7 @@ Renkami šių laukų duomenys:
 
 Suaktyvinama atidarant makrokomandą (VBA) turintį failą įrenginyje, kuriame IT administratorius naudojo „Office“ programas kaip tarnybą (OAAS), ir kai „Microsoft 365“ programos įmonėms buvo suaktyvintos su įmonės licencija. Įvykis naudojamas suprasti makrokomandą (VBA) turinčių failų sveiktą pas nuomotoją ir palyginti su Office.Programmability.Telemetry.VbaTelemetryBreak, kuris seka klaidas VBA turinčiuose failuose. 
 
-Nepasirinkti jokie laikai.
+Nepasirinkti jokie laukai.
 
 #### <a name="officesystemsystemhealthungracefulappexitmacandios"></a>Office.System.SystemHealthUngracefulAppExitMacAndiOS
 
@@ -11255,7 +11255,7 @@ Renkami šių laukų duomenys:
 
 - **above_55rate** – kadrų sparta virš 55 fps
 
-- **account_counter** – stebi skaičių paskyrų, susietų su kiekvienu kalendoriaus tipu, pvz., 2 skirta „Gmail“ kalendoriui, ir ar ši paskyra naudoja mūsų naują sinchronizavimo paslaugą
+- **account_counter** – seka skaičių paskyrų, susietų su kiekvienu kalendoriaus tipu, pvz., 2 skirta „Gmail“ kalendoriui, ir ar ši paskyra naudoja mūsų naują sinchronizavimo tarnybą
 
 - **app_instance** – „Outlook“ yra 2 „Duo“ įvesties taškai, vienas – kalendoriui, o kitas – paštui. Abu gali būti paleisti greta kelių egzempliorių aplinkoje. Tai praneš mums, kuris egzempliorius pateiks šį pranešimą: pašto arba kalendoriaus
 
@@ -11383,7 +11383,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="initialpagelanding"></a>Initial.page.landing 
  
-Šis įvykis padeda sekti patirties tipą, kurią vartotojai patiria apsilankę mūsų programos puslapyje.  Šie duomenys naudojami norint nustatyti vartotojų srautą, nukreiptą į kiekvieną mūsų taikomosios programos patirtį ir taip pat padeda lengvai konsoliduoti eksperimentų rezultatus.
+Šis įvykis padeda sekti vartotojo matomą patirties tipą, kai vartotojai bus perkeliami į mūsų taikomosios programos puslapį.  Šie duomenys naudojami norint nustatyti vartotojų srautą, nukreiptą į kiekvieną mūsų taikomosios programos patirtį ir taip pat padeda lengvai konsoliduoti eksperimentų rezultatus.
  
 Renkami šių laukų duomenys: 
 
@@ -12459,7 +12459,7 @@ Renkami šių laukų duomenys:
 
 - **PreviousIdentityState** – nurodo paskyros būseną, pvz., baigėsi seansas. 
 
-- **"SignInResultCode"** – nurodo raginimo prisijungti baigimo rezultato kodą.
+- **SignInResultCode** – nurodo raginimo prisijungti baigimo rezultato kodą.
 
 - **UseCache** – nurodo, ar mes primygtinai raginome vartotoją dar kartą pateikti slaptažodį.
 
@@ -12487,7 +12487,7 @@ Renkami šių laukų duomenys:
 
 - **DocUserId** – vartotojo ID iš MS autentifikavimo sluoksnio
 
-- **"DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = „Live ID“, 2 = OrgId, 3 = SSPI; 4 = ADAL
+- **DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = „Live ID“, 2 = OrgId, 3 = SSPI; 4 = ADAL
 
 - **DurationInMs** – failo operacijos užbaigimui skirtas laikas milisekundėmis
 
@@ -12671,7 +12671,7 @@ Renkami šių laukų duomenys:
 
 - **PPTFileSaveFailHresult** – nepavykusio įrašymo PPT Hresult
 
-- **"PPTFileSaveFailTag** – PPT žymė nepavykusiam įrašymui
+- **PPTFileSaveFailTag** – PPT žymė nepavykusiam įrašymui
 
 - **State** – failo atidarymo būsenos išvardijimas. 
 
@@ -12763,7 +12763,7 @@ Renkami šių laukų duomenys:
 
 - **DocUserId** – vartotojo ID iš MS autentifikavimo sluoksnio
 
-- **"DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = LiveId, 2 = OrgId, 3 = SSPI; 4 = ADAL
+- **DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = LiveId, 2 = OrgId, 3 = SSPI; 4 = ADAL
 
 - **DurationInMs** – failo operacijos užbaigimui skirtas laikas milisekundėmis
 
@@ -12866,7 +12866,7 @@ Renkami šių laukų duomenys:
 
 - **CountryCode** – kliento šalies kodas, nusiųstas į DSC kliento atsiskaitymo užklausai
 
-- **"GoPremiumEntryPoint"** – įvedimo vieta, skirta pirkimui suaktyvinti 
+- **GoPremiumEntryPoint** – įvedimo vieta, skirta pirkimui suaktyvinti 
 
 - **IsActivateExistingSubscription** – Bulio logika, rodanti, ar buvo esama prenumerata, kuri buvo aktyvinta
 
@@ -13165,7 +13165,7 @@ Renkami šių laukų duomenys:
 
 - **PreviousIdentityState** – nurodo paskyros būseną, pvz., baigėsi seansas. 
 
-- **"SignInResultCode"** – nurodo raginimo prisijungti baigimo rezultato kodą.
+- **SignInResultCode** – nurodo raginimo prisijungti baigimo rezultato kodą.
 
 - **UseCache** – nurodo, ar mes primygtinai raginome vartotoją dar kartą pateikti slaptažodį.
 
@@ -13190,7 +13190,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeapplelicensingmacgetmachinestatuserrors"></a>Office.Apple.Licensing.Mac.GetMachineStatusErrors
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis surenka pateiktą klaidos kodą, bei periodiškai tikrina prenumeratos licencijos galiojimą. Klaidos kodas gali reikšti serverio nepasiekiamumą, bet taip pat licencijos galiojimo laiko pasibaigimą, kompiuterių skaičiaus limitą, neteisingą aparatūros ID ir t. t.  Šis įvykis naudojamas stebėti „Office“ licencijavimo tarnybos sveikatą, bei tirti įvykius, susijusius su kompiuterio prenumeratos valdymu.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis surenka pateiktą klaidos kodą, bei periodiškai tikrina prenumeratos licencijos galiojimą. Klaidos kodas gali reikšti serverio nepasiekiamumą, bet taip pat licencijos galiojimo laiko pasibaigimą, kompiuterių skaičiaus limitą, neteisingą aparatūros ID ir t. t. Šis įvykis naudojamas stebėti „Office“ licencijavimo tarnybos sveikatą, bei tirti įvykius, susijusius su kompiuterio prenumeratos valdymu.
 
 Renkami šių laukų duomenys:
 
@@ -13672,7 +13672,7 @@ Toliau nurodyti laukai renkami tik „Android“:
 
 - **theme_color** – pasirinktinė (pasirinkta vartotojo) temos spalva, kurią šiuo metu naudoja programa
 
-- **webview_kernel_version**: žiniatinklio rodinio „Chromium“ branduolio versija įrenginyje, kuri padės mums aptikti suderinamumo su žiniatinklio rodinio versija susijusias problemas.
+- **webview_kernel_version**: įrenginio „Chromium“ branduolio „WebView“ versija, kuri padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
 
 - **webview_package_name**: įrenginio paketo pavadinimas, kuris padės mums aptikti suderinamumo su „WebView“ versija susijusias problemas.
 
