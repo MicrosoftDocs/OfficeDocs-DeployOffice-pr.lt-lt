@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 03274656b30fe1e30e609ef32aa38947917a23cd
-ms.sourcegitcommit: 954510a42df092730412aa25cd8683f6a629537c
+ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
+ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49685837"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799143"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -425,7 +425,7 @@ Renkami šių laukų duomenys:
 
   - **Scenarioid** – GUID. Vienam scenarijui gali priklausyti keli įvykiai, pvz., scenarijus gali įtraukti naują paskyrą, bet vykstant tam scenarijui pateikiami keli raginimai. Šis ID įgalina sąsają.
 
-  - **Scenaroname** – scenarijaus, kuriam priklauso šis autentifikavimo įvykis, pavadinimas.
+  - **Scenarioname** – scenarijaus, kuriam priklauso šis autentifikavimo įvykis, pavadinimas.
 
   - **Sessionid** – GUID, identifikuojantis įkrovos seansą
 
@@ -588,7 +588,7 @@ Renkami šių laukų duomenys:
 
 - **Microsoft_ADAL_is_silent_ui** – nurodo, ar ADAL parodė vartotojo sąsają (raginimą) (teisinga arba klaidinga)
 
-- **Microsoft_ADAL_is_successfull** – nurodo, ar ADAL API pavyko (teisinga arba klaidinga) (MacOS)
+- **Microsoft_ADAL_is_successfull** – nurodo, ar ADAL API pavyko (teisinga arba klaidinga) (macOS)
 
 - **Microsoft_ADAL_is_successful** – nurodo, ar ADAL API pavyko (teisinga arba klaidinga)
 
@@ -670,7 +670,7 @@ Renkami šių laukų duomenys:
 
 - **MSAL_auth_flow** – veiksmai, kuriuos MSAL bandė atlikti šio autentifikavimo srauto metu (AT, PRT, LRT, FRT, ART, IRT). Atskirta vertikaliu brūkšniu „|“, kad būtų lengviau analizuoti.
 
-- **MSAL_auth_flow_last_error** – klaidos kodas, kurį gavome iš serverio nuo 2-o iki paskutinio „AuthFlow“ elemento. (Pvz.,: jei AuthFlow = "PRT|LRT", PRT klaida būtų elemente AuthFlowLastError).
+- **MSAL_auth_flow_last_error** – klaidos kodas, kurį gavome iš serverio nuo antro iki paskutinio „AuthFlow“ elemento. (Pvz.,: jei AuthFlow = "PRT|LRT", PRT klaida būtų elemente AuthFlowLastError).
 
 - **MSAL_authority_type** – ar ši užklausa buvo vartotojui: AAD, išorinė arba MSA.
 
@@ -726,7 +726,7 @@ Renkami šių laukų duomenys:
 
 - **oneauth_version** – „OneAuth“ SDK versija.
 
-- **Platform** – OS platforma (0: „Windows“ kompiuteris, 1: „Android“, 2: „iOS“, 3: „MacOS“, 4: UWP)
+- **Platform** – OS platforma (0: „Windows“ kompiuteris, 1: „Android“, 2: „iOS“, 3: „macOS“, 4: UWP)
 
 - **Promptreasoncorrelationid** – koreliacijos identifikatorius, kuris gali būti naudojamas norint rasti ankstesnį autentifikavimo įvykį, naudojamą paaiškinti, kodėl vartotojas buvo paragintas autentifikuotis.
 
@@ -823,7 +823,7 @@ Renkami šių laukų duomenys:
 
 - **Actiontype** – „oneauthtransaction“ yra vienintelė reikšmė.
 
-- **Appaudience** – taikymo auditorija („Automation“, „Preproduction“ arbaq „Production“)
+- **Appaudience** – taikymo auditorija („Automation“, „Preproduction“ arba „Production“)
 
 - **Appname** – taikomosios programos pavadinimas
 
@@ -875,7 +875,7 @@ Renkami šių laukų duomenys:
 
 - **oneauth_version** – „OneAuth“ SDK versija.
 
-- **Platform** – OS platforma (0: Win32, 1: „Android“, 2: „iOS“, 3: „MacOS“, 4: „WinRT“
+- **Platform** – OS platforma (0: Win32, 1: „Android“, 2: „iOS“, 3: „macOS“, 4: „WinRT“)
 
 - **Scenarioname** – scenarijaus, kuriam būtinas autentifikavimas, pavadinimas, nurodytas kviečiančios taikomosios programos.
 
@@ -2988,7 +2988,7 @@ Praneša apie galutinio diegimo bandymo rezultatą
 
 Ataskaitos apie veiksmą, atskiriantį įvestį, renkamą naudojant CollectParameters
 
-- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) arba pusmetinių įmonėms skirtų naujinimų kanalo.
+- **BitField –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo / atnaujinimo kanalo. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) arba pusmetinių įmonėms skirtų naujinimų kanalo.
 
 - **ChannelID –** sveikasis skaičius, nurodantis pasirinkto naujinimo/diegimo kanalo išvardijimo reikšmę. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra), pusmetinių įmonėms skirtų naujinimų kanalo arba netinkamo.
 
@@ -3067,7 +3067,7 @@ Ataskaitos apie veiksmą, kuris skaito pažymėtą įvestį iš exe įdėtojo pa
 
 Praneša apie parametrus, naudojamus „Office“ įdiegčiai
 
-- **Bitfield –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo/atnaujinimo kanalo. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) arba pusmetinių įmonėms skirtų naujinimų kanalo.
+- **BitField –** sveikoji BitField argumento reikšmė, nurodanti, ar reikia aiškaus diegimo / atnaujinimo kanalo. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra) arba pusmetinių įmonėms skirtų naujinimų kanalo.
 
 - **ChannelID –** sveikasis skaičius, nurodantis pasirinkto naujinimo/diegimo kanalo išvardijimo reikšmę. Pvz., beta versijos naujinimų kanalo, dabartinių naujinimų kanalo (peržiūra), dabartinių naujinimų kanalo, mėnesinių įmonėms skirtų naujinimų kanalo, pusmetinių įmonėms skirtų naujinimų kanalo (peržiūra), pusmetinių įmonėms skirtų naujinimų kanalo arba netinkamo.
 
@@ -3315,6 +3315,20 @@ Renkami šių laukų duomenys:
 
 - **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
 
+### <a name="officeandroiddocsuipaywallcontrolpurchasetokenredemptionresponse"></a>Office.Android.DocsUI.PaywallControl.PurchaseTokenRedemptionResponse
+
+*[Šis įvykis anksčiau buvo vadinamas Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse.]*
+
+Šio produkto telemetrija renkama vidinės operacijos statuso stebėjimui ir įrašymui, taip pat derinimo informacijai, kad būtų pagerintas patikimumas ir efektyvumas. „Microsoft“ naudoja šiuos duomenis analizei ir vidinės operacijos apdorojimo ir derinimo mechanizmų patikimumo ir efektyvumo gerinimui.
+
+Renkami šių laukų duomenys:
+
+- **MicrosoftPurchaseOrderId** - „Microsoft“ užsakymo ID atsiųstas Mažmeninės prekybos federacijos tarnybos (RFS) stebėjimo tikslams.
+
+- **ResponseCode** - HTTP atsako kodas (int)
+
+- **StatusCode** - RFS (mažmeninės prekybos federacijos tarnybos) atsako statuso kodas (RFS apibrėžtas išvard. int- ribotas)
+
 
 ### <a name="officeandroiddocsuipaywallcontrolseeallfeaturesanalytics"></a>Office.Android.DocsUI.PaywallControl.SeeAllFeaturesAnalytics
 
@@ -3343,22 +3357,26 @@ Renkami šių laukų duomenys:
 - **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
 
 
-### <a name="officeandroiddocsuiviewspurchasetokenredemptionresponse"></a>Office.Android.DocsUI.Views.PurchaseTokenRedemptionResponse
+### <a name="officeandroiddocsuiviewsdimeerror"></a>Office.Android.DocsUI.Views.DimeError
 
-Šio produkto telemetrija renkama vidinės operacijos statuso stebėjimui ir įrašymui, taip pat derinimo informacijai, kad būtų pagerintas patikimumas ir efektyvumas. „Microsoft“ naudoja šiuos duomenis analizei ir vidinės operacijos apdorojimo ir derinimo mechanizmų patikimumo ir efektyvumo gerinimui.
+Šis įvykis renkamas „Office“ programai, skirtai „Android“ (išleista „Huawei“ ir Kinijos parduotuvėse). Šis įvykis nurodo, kad bandymas įsigyti „Microsoft 365“ prenumeratą per „Dime“ (webURL, įkeltą į kliento žiniatinklio rodinį) nepavyko. Fiksuojami tik klaidų scenarijai. Šie įvykių duomenys yra tik klaidų duomenys ir yra naudojami siekiant užtikrinti „Dime“ pirkimo srauto sveikatą kliente.
 
 Renkami šių laukų duomenys:
 
-- **MicrosoftPurchaseOrderId** - „Microsoft“ užsakymo ID atsiųstas Mažmeninės prekybos federacijos tarnybos (RFS) stebėjimo tikslams.
+- **CorrelationID** – ID, kuris unikaliai identifikuoja „Dime“ pirkimo seansą.
 
-- **ResponseCode** - HTTP atsako kodas (int)
-
-- **StatusCode** - RFS (mažmeninės prekybos federacijos tarnybos) atsako statuso kodas (RFS apibrėžtas išvard. int- ribotas)
+- **ErrorReason** – nurodo įvykusios klaidos priežastį.
+  - 0 – nežinoma klaida
+  - 1 – internetas nepasiekiamas
+  - 2 – universalaus unikaliojo identifikatoriaus (UUID) tikrinimas nepavyko
+  - 3 – universalus unikalusis identifikatorius (UUID) neapibrėžtas arba tuščias
+  - 4 – „JavaScript“ įterpimo klaida, dėl kurios „Office“ programa, skirta „Android“, negali perduoti „authToken“ į „Dime“
+  - 5 – bazinis „WebURL“, įkeltas kliente, yra neleistinas
 
 
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
-Šis įvykis užfiksuoja duomenis, kurie padeda stebėti „Dime“ komponentų sveikatą. Duomenys naudojami stebėti ir įspėti apie „Dime“ pirkimo srauto sveikatą norint užtikrinti, kad jis veikia kaip ir numatyta. 
+Šis įvykis užfiksuoja duomenis, kurie padeda stebėti „Dime“ komponentų sveikatą. Pavyzdžiui, pirkimo programoje srautui, kai vartotojas pasirenka pirkti „Microsoft 365“ prenumeratą „Office“ programoje, skirtoje „Android“, arba įrenginiuose, kuriuose veikia „Windows“.
 
 Renkami šių laukų duomenys:
 
@@ -3410,23 +3428,23 @@ Renkami šių laukų duomenys:
 
 - **Data_QosLevel** - Svarba 0/1/2
 
-- **Data_SDX_AssetId** - Pristatytos aptarnavimo patirties (SDX) turinio talpinimo išteklio ID 
+- **Data_SDX_AssetId** - Pristatytos aptarnavimo patirties (SDX) turinio talpinimo „Win32“ ištekliaus ID 
 
-- **Data_SDX_BrowserToken** - Naršyklės atpažinimo ženklas
+- **Data_SDX_BrowserToken** - Naršyklės atpažinimo ženklas, skirtas „Win32“
 
-- **Data_SDX_HostJsVersion** - „JavaScript“ bibliotekos versija
+- **Data_SDX_HostJsVersion** - „JavaScript“ bibliotekos versija, skirta „Win32“
 
-- **Data_SDX_Id** - Pristatytos aptarnavimo patirties ID
+- **Data_SDX_Id** - Pristatytos aptarnavimo patirties ID, skirtas „Win32“
 
-- **Data_SDX_InstanceId** - SDX egzemplioriaus ID
+- **Data_SDX_InstanceId** - SDX egzemplioriaus ID, skirtas „Win32“
 
-- **Data_SDX_MarketplaceType** - SDX parduotuvės tipas
+- **Data_SDX_MarketplaceType** - SDX parduotuvės tipas, skirtas „Win32“
 
-- **Data_SDX_OfficeJsVersion** - „Office“ „JS“ versija
+- **Data_SDX_OfficeJsVersion** - „Office“ JS versija, skirta „Win32“
 
-- **Data_SDX_SessionId** - SDX seanso ID
+- **Data_SDX_SessionId** - SDX seanso ID, skirtas „Win32“
 
-- **Data_SDX_Version** - SDX versija
+- **Data_SDX_Version** - SDX versija, skirta „Win32“
 
 - **Data_TimestampUTC** - Įvykio laiko žyma
 
@@ -3459,7 +3477,7 @@ Renkami šių laukų duomenys:
 
   - **ACID** – GUID identifikatorius, nurodantis „Office“ produktą, kurio licencija suteikta vartotojui
 
-  - **DwEulaId** – GVLS, su kuriomis vartotojas ką tik sutiko, tipo skaitinis identifikatorius
+  - **DwEulaId** – GVLS, su kuria vartotojas sutiko, tipo skaitinis identifikatorius
 
 ### <a name="officelicensingactivation"></a>Office.Licensing.Activation 
 
@@ -9745,7 +9763,7 @@ Renkami šių laukų duomenys:
 
 - **Channel** – auditorijos pirmenybė
 
-- **ChannelName** – kanalas, kurio dialogo langas rodomas
+- **ChannelName** – kanalas, kuriame rodomas sutikimo dialogo langas
 
 - **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
 
@@ -15405,7 +15423,9 @@ Tarnybų konfigūravimo paslauga nerenka būtinųjų tarnybų duomenų įvykių.
 
 ## <a name="telemetry-events"></a>Telemetrijos įvykiai
 
-### <a name="officeandroiddocsuiviewspaywalloperationmetrics"></a>Office.Android.DocsUI.Views.PaywallOperationMetrics
+### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
+
+*[Šis įvykis anksčiau buvo vadinamas Office.Android.DocsUI.Views.PaywallOperationMetrics.]*
 
 „Microsoft“ tai naudoja, kad gautų vartotojo pirkinių funkcijų, sėkmės ir klaidų sveikatos būklę, kad užtikrintų tinkamas investicijas siekiant pagerinti klientų pirkimo funkcijas mobiliesiems įrenginiams skirtose platformose.
 
@@ -15417,7 +15437,9 @@ Renkami šių laukų duomenys:
 
 - **PaywallOperationType** – mokamos prieigos prie informacijos operacijos tipas (išvardijimas / sveikasis skaičius – baigtinis)
 
-### <a name="officeandroiddocsuiviewspaywallsessiondata"></a>Office.Android.DocsUI.Views.PaywallSessionData
+### <a name="officeandroiddocsuipaywallcontrolpaywallsessiondata"></a>Office.Android.DocsUI.PaywallControl.PaywallSessionData
+
+*[Šis įvykis anksčiau buvo vadinamas Office.Android.DocsUI.Views.PaywallSessionData.]*
 
 Seanso metaduomenys, kai vartotojui rodoma „Paywall“ vartotojo sąsaja. „Microsoft“ tai naudoja tam, kad pamatytų vartotojo kelionę ir suprastų, kokį įrenginį ir OS versijas vartotojas naudoja, kad padėtų priimti sprendimus dėl investicijų gerinant patirtį šiose srityse.
 
@@ -16898,8 +16920,6 @@ Renkami šių laukų duomenys:
   - **ErrorRuleVersion** – telemetrijos taisyklės, kuri sukėlė klaidą, versija
 
   - **WarningInfo** – įspėjimo diagnostikos informacijos numeris
-
-<!-- end list -->
 
   - **QueueFlushCount** – eilės išvalymų skaičius
 

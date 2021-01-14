@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 1c63598ee9a9744128ef30916d1457d4a02c9092
-ms.sourcegitcommit: 954510a42df092730412aa25cd8683f6a629537c
+ms.openlocfilehash: b7993abbca401d65cc99ed9fdd7960bae03e89a3
+ms.sourcegitcommit: c891622923aecf9afd3ba61e008501cb0c374b73
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49685873"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841724"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -67,7 +67,7 @@ Būtini diagnostikos duomenys suskirstyti į kategorijas ir duomenų potipius. S
 | | [„Office“ pritaikymo neįgaliesiems konfigūracija](#office-accessibility-configuration-subtype)  | „Office“ pritaikymo neįgaliesiems funkcijos       |
 | | [Privatumas](#privacy-subtype)| „Office“ privatumo parametrai|
 | **Produktų ir tarnybų veikimas**       | [Netikėtas taikomosios programos uždarymas (gedimas)](#unexpected-application-exit-crash-subtype)  | Nenumatytas programų uždarymas ir programos būsena, kai taip nutinka.    |
-|  | [Taikomosios programos funkcijų veikimas](#application-feature-performance-subtype)  | Prastas scenarijų, pvz., taikomosios programos paleidimas ar failo atidarymas, atsakymo laikas ar veikimas. |
+|  | [Taikomosios programos funkcijų veikimas](#application-feature-performance-subtype)  | Prastas scenarijų, pvz., programos paleidimo ar failo atidarymo, atsako laikas ar veikimas. |
 |  | [Taikomosios programos veiklos klaida](#application-activity-error-subtype)   | Funkcijos ar vartotojo patirties veikimo klaidos.  |
 | **Įrenginių jungiamumas ir konfigūracija** | [Įrenginių jungiamumas ir konfigūracija](#device-connectivity-and-configuration-subtype) | Tinklo ryšio būsena ir įrenginio parametrai, tokie kaip atmintis. |
 
@@ -193,13 +193,17 @@ Informacija apie proceso seansą. Šiam seansui visi laukų reikšmės nesikeič
 
   - **Flags** – žymių sekimo šablonas, taikomas visam seansui, dabartiniu metu orientuotam į pavyzdžių rinkimą ir diagnostikos duomenų parinktis. Leidžia kontroliuoti kaip nurodytas seansas elgiasi seanso generuojamų diagnostikos duomenų atžvilgiu.
 
+  - **HostAppName** – identifikuoja pagrindinės programos, kuri paleidžia antrinę programą, pavadinimą. Programos, pvz., „Office Mobile“ („Android“), gali paleisti „Word“, „Excel“ ir „PowerPoint“ antrines programas. Tokioms antrinėms programoms pagrindinė programa yra „OfficeMobile“
+
+  - **HostSessionId** – unikaliai identifikuoja antrinės programos pagrindinės programos seansą
+
   - **Id** – unikaliai identifikuoja nurodyto seanso duomenis. Leidžia mums nustatyti problemų poveikį vertinant veikiamų seansų skaičių ir ar yra bendrų šių seansų funkcijų.
 
   - **ImpressionId** – nurodo testuojamų variantų rinkinį, kurie veikia nurodytame seanse. Leidžia mums aptikti, kurie atskiri testuojami variantai veikia seanso metu, kad galėtume nustatyti, ar testuojamas variantas yra problemos šaltinis, veikiantis vartotojus.
 
   - **MeasuresEnabled** – žymė, nurodanti, ar vykdoma dabartinio seanso duomenų atranka. Leidžia mums nustatyti, kaip statistiškai įvertinti duomenis, surinktus iš nurodyto seanso.
 
-  - **SamplingClientIdValue** – kliento, naudoto nustatyti, ar jis yra pavyzdžių rinkimo dalis, ID. Leidžia mums nustatyti, kodėl į pavyzdžių rinkimą buvo arba nebuvo įtrauktas atskiras seansas.
+  - **SamplingClientIdValue** – kliento, naudojamo nustatyti, ar jis yra pavyzdžių atrankos dalis, ID. Leidžia mums nustatyti, kodėl į pavyzdžių rinkimą buvo arba nebuvo įtrauktas atskiras seansas.
   
  - **SubAppName** – skirta „Office Mobile“ programėlei, šis laukas atstovauja fone esančią programą, naudojamą atidaryti dokumentui. Pavyzdžiui, jeigu atidarote „Word“ dokumentą „Office“ programoje, šio lauko reikšmė bus „Word“.
 
@@ -359,7 +363,7 @@ Konkretaus įvykio informacija, įskaitant jo unikalų identifikatorių seanse.
 
   - **Level** – nurodo įvykio tipą.
 
-  - **Name** – įvykio pavadinimas. Leidžia nustatyti iš kliento išsiųstą įvykį.
+  - **Name** – įvykio pavadinimas. Leidžia identifikuoti įvykį, kuris buvo siunčiamas iš kliento.
 
   - **Rule** – duomenis generavusios taisyklės identifikatorius, jeigu jie buvo sugeneruoti taisyklės. Leidžia mums nustatyti dalies duomenų šaltinį, kad galėtume patvirtinti ir tvarkyti įvykių parametrus
 
@@ -377,7 +381,7 @@ Konkretaus įvykio informacija, įskaitant jo unikalų identifikatorių seanse.
 
   - **Source** – šaltinio srautas, naudotas duomenims įkelti. Būtinas stebėti visus mūsų nusiuntimo srautus bendrai sveikatai ir padėti identifikuoti įkėlimo srauto problemas. Tai leidžia stebėti atskirus nusiuntimo srautus, siekiant užtikrinti, kad jie ir toliau atitinka reikalavimus.
 
-  - **Time** – įvykio sugeneravimo kliente laikas. Leidžia mums sinchronizuoti ir patikrinti kliento sugeneruotų įvykių eiliškumą, bei nustatyti veikimo rodiklius vartotojo instrukcijoms. 
+  - **Time** – įvykio sugeneravimo kliente laikas. Leidžia mums sinchronizuoti ir patikrinti kliente sugeneruotų įvykių eiliškumą ir nustatyti veikimo metriką vartotojo instrukcijoms. 
 
 #### <a name="host"></a>Pagrindinis kompiuteris
 
@@ -460,9 +464,9 @@ Informacija apie proceso seansą.
 
 - **Activity_FailCount** – nurodo, kiek kartų ši veikla nepavyko
 
-- **Activity_Name** – trumpas įvykio pavadinimas. Leidžia nustatyti iš kliento išsiųstą įvykį.
+- **Activity_Name** – trumpas įvykio pavadinimas. Leidžia identifikuoti įvykį, kuris buvo siunčiamas iš kliento.
 
-- **Activity_Namespace** – įvykio vardų sritis. Leidžia suskirstyti įvykį į grupes.
+- **Activity_Namespace** – įvykio vardų sritis. Leidžia mums suskirstyti įvykį į grupes.
 
 - **Activity_Reason** – eilutė, nurodanti priežastį, dėl kurios veikla baigiasi su konkrečiu rezultatu.
 
@@ -470,7 +474,7 @@ Informacija apie proceso seansą.
 
 - **Activity_State** – žymė nurodanti, ar įvykis yra naudotojo veiklos pradžioje ar pabaigoje.
 
-- **Activity_SucceedCount** – nurodo, kiek kartų pavyko ši veikla.
+- **Activity_SucceedCount** – skaičius, kiek kartų pavyko ši veikla.
 
 - **ErrorCode** – nurodo klaidos kodą, jei jis yra.
 
@@ -498,7 +502,7 @@ Informacija apie proceso seansą.
 
 - **IsPremiumUser** – nurodo, ar vartotojas turi „Premium“ licenciją, ar ne
 
-- **Namespace** – įvykio vardų sritis. Leidžia suskirstyti įvykį į grupes.
+- **Namespace** – įvykio vardų sritis. Leidžia mums suskirstyti įvykį į grupes.
 
 - **Release_AppStore** – žymė, nurodanti, ar komponavimo versija gaunama iš programėlių parduotuvės, ar ne.
 
@@ -625,7 +629,7 @@ Informacija apie proceso seansą.
 
 Be to, šie laukai dažniausiai naudojami visiems „Outlook“, skirtos „iOS“, įvykiams.
 
-- **DeviceInfo.NetworkProvider** – įrenginio tinklo teikėjas (t.y. „Verizon“)
+- **DeviceInfo.NetworkProvider** – įrenginio tinklo teikėjas (pvz., „Verizon“)
 
 - **gcc_restrictions_enabled** – parodo, jei GCC apribojimai buvo taikomi programėlei, kad galėtume užtikrinti, kad mūsų GCC klientai saugiai naudoja mūsų programą
  
@@ -745,7 +749,7 @@ Renkami šių laukų duomenys:
 
 - **abFlights** – „NoNL:NoFlights“, kai funkcijų testavimo variantai nenustatyti. Kitu atveju „holdoutinfo=unknown“.
 
-- **AppSessionGuid** – konkrečios taikomosios programos seanso pradžios identifikatorius, naudojamas nuo proceso kūrimo pradžios ir iki proceso pabaigos. Jis yra suformuotas kaip standartinis 128 bitų GUID, tik sudarytas iš 4 dalių. Šios keturios dalys eilės tvarka yra (1) 32 bitų proceso ID (2) 16 bitų seanso ID (3) 16 bitų įkrovos ID (4) 64 bitų proceso sukūrimo laikas, išreikštas UTC 100 nsek.
+- **AppSessionGuid** – konkrečios taikomosios programos seanso pradžios identifikatorius, naudojamas nuo proceso kūrimo pradžios ir iki proceso pabaigos. Jis yra suformuotas kaip standartinis 128 bitų GUID, tik sudarytas iš keturių dalių. Šios keturios dalys eilės tvarka yra (1) 32 bitų proceso ID (2) 16 bitų seanso ID (3) 16 bitų įkrovos ID (4) 64 bitų proceso sukūrimo laikas, išreikštas UTC 100 nsek.
 
 - **appVersionBuild** – taikomosios programos komponavimo versijos numeris.
 
@@ -918,7 +922,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
-Seka, ar buvo atsisiųstas paketas dinaminei matomosios tinklalapio srities daliai. Laikoma taikomosios programinės įrangos konfigūracija, nes paketas turi būti sėkmingai atsisiųstas, kad įgalinti klientą generuoti tinkamą patirtį. Yra ypač kritinės vartotojo prenumeratoms, kur matomąją tinklalapio sritį naudojame informuoti vartotoją, kad licencija nebegalioja. Naudojamas sekti metaduomenis dinaminio turinio paketo, kurį atsisiuntė ir į talpyklą įkėlė produktas, taip pat operacijų, atliktų su paketu, rezultatus: nesėkmingus atsisiuntimus, negalimą išsipakavimą, nuolatines patikros triktis, sėkmingą kreipimąsi į talpyklą, paketo naudojimus ir atsisiuntimo šaltinius.
+Seka, ar buvo atsisiųstas paketas dinaminei matomosios tinklalapio srities daliai. Laikoma taikomosios programinės įrangos konfigūracija, nes paketas turi būti sėkmingai atsisiųstas, kad įgalinti klientą generuoti tinkamą patirtį. Yra ypač kritinės vartotojo prenumeratoms, kur matomąją tinklalapio sritį naudojame informuoti vartotoją, kad licencija nebegalioja. Naudojamas sekti metaduomenis dinaminio turinio paketo, kurį atsisiuntė ir į talpyklą įkėlė produktas, ir operacijų, atliktų su paketu, rezultatus: nesėkmingus atsisiuntimus, negalimą išsipakavimą, nuolatines patikros triktis, sėkmingą kreipimąsi į talpyklą, paketo naudojimus ir atsisiuntimo šaltinius.
 
 Renkami šių laukų duomenys:
 
@@ -1163,7 +1167,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilityvbatelemetrycomobjectinstantiated"></a>Office.Extensibility.VBATelemetryComObjectInstantiated
 
-Renka informaciją apie automatizavimo serverio iškvietimą arba klientą VBA sprendimuose. Naudota suprasti VBA ir Com objektų sąveiką.
+Renka informaciją apie automatizavimo serverio iškvietimą arba klientą VBA sprendimuose. Naudota suprasti VBA ir COM objektų sąveiką.
 
 Renkami šių laukų duomenys:
 
@@ -1251,21 +1255,42 @@ Renkami šių laukų duomenys:
 - **Status** – papildinio diegimo būsena
 
 
-#### <a name="officeprogrammabilityadd-insinternalsetconnectenterprise"></a>Office.Programmability.Add-ins.InternalSetConnectEnterprise
+#### <a name="officeprogrammabilityaddinsinternalsetconnectenterprise"></a>Office.Programmability.Addins.InternalSetConnectEnterprise
 
-Įvykis generuojamas, kai COM papildinys yra įkeltas į įmonės įrenginį. 
+Įvykis generuojamas, kai COM papildinys yra įkeltas į įmonės įrenginį. Naudojama „Office“ papildinių pritaikymo, veikimo ir patikimumo problemoms nustatyti. 
 
 Renkami šių laukų duomenys:
 
-  - **Activity Result** – sėkmingai užmegzto ryšio būsena
+  - **Activity Result** – ryšio sėkmingumo būsena *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
-  - **Add-inconnectFlag** – dabartinio įkėlimo veikimas
+  - **AddinconnectFlag** – nurodo įkėlimo veikseną 
 
-  - **Add-inId** – papildinio klasės ID
+  - **AddinDescriptionV2** – papildinio aprašas
 
-  - **Add-inTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
+  - **AddinFileNameV2** – papildinio failo vardas, be failo kelio
+
+  - **AddinFriendlyNameV2** – papildinio draugiškas vardas
+
+  - **Add-inId** – papildinio klasės ID *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+
+  - **AddinIdV2** – papildinio klasės ID
+
+  - **AddinProgIdV2** – papildinio programos ID
+
+ - **AddinProviderV2** – papildinio teikėjas
+
+  - **Add-inTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
+
+  - **AddinTimeDateStampV2** – papildinio laiko žyma iš DLL metaduomenų
+
+  - **AddinVersionV2** – papildinio versija
 
   - **IsBootInProgress** – ar „Office“ taikomoji programa šiuo metu perkraunama
+ 
+  - **LoadDuration** – papildinio įkėlimo trukmė
+  
+  - **LoadResult** – įkėlimo sėkmės būsena
+
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -1754,7 +1779,7 @@ Toliau nurodyti laukai renkami „Android“ ir „Android“:
 
 - **action_type** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas. 
 
-- **conversation_id** – unikalus kiekvieno ieškos seanso ID (t. y. kiekvieną kartą, kai vartotojas įveda ieškos lauką)
+- **conversation_id** – unikalus kiekvieno ieškos seanso ID (pvz., kiekvieną kartą, kai vartotojas įveda ieškos lauką)
 
 - **entrance_type** – nustato, kaip vartotojas pradėjo ieškos užklausą: ieškos skirtuke, naudodamas nulinę užklausą, ieškos antraštę ar ieškos rezultatą. 
 
@@ -1770,11 +1795,11 @@ Toliau nurodyti laukai renkami „Android“ ir „Android“:
 
 - **re_enter_search_tab** – Bulio funkcija, skirta nurodyti, ar vartotojas perjungė skirtukus prieš pasirinkdamas ieškos rezultatą
 
-- **result_selected_type** – su kokio tipo duomenimis, kurie buvo rodomi, sąveikavo vartotojas, t. y. peržiūrėjo visus kontaktus, pokalbius, įvykius ir t. t. 
+- **result_selected_type** – su kokio tipo duomenimis, kurie buvo rodomi, sąveikavo vartotojas, pvz., peržiūrėjo visus kontaktus, pokalbius, įvykius ir t. t. 
 
 - **search_conversation_result_data** – apima duomenis apie pokalbį, pasirinktą iš ieškos rezultatų, įskaitant paskyros tipą (HX, AC ir t. t.), nesvarbu, ar pranešimas yra debesies tarnyboje, ir ar rodomas puslapio poslinkis yra tas pats puslapis kaip pirmasis laiškas. 
 
-- **search_origin** – kaip buvo pradėta ieška, t. y. naudojant balso asistentą, „Cortana“, klaviatūros įvestį ir pan. 
+- **search_origin** – kaip buvo pradėta ieška, pvz., naudojant balso asistentą, „Cortana“, klaviatūros įvestį ir pan. 
 
 - **search_scope** – eilutė, nurodanti, kokio tipo paskyroje vartotojas atliko iešką (t. y. „Exchange“, „Gmail“ ir t. t.), ar ji buvo atliekama visose paskyrose. 
 
@@ -2257,7 +2282,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
 
@@ -2327,7 +2352,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
 
@@ -2697,6 +2722,21 @@ Renkami šių laukų duomenys:
 
 - **Data_TimeSplitMeasurements** – eilutės reikšmė, fiksuojanti laiką, sugaištą atliekant tam tikrus funkcijų iškvietimus. Pateikiama formatu: su funkcijos žyme, pradžios laiko žyma ir trukme. 
 
+#### <a name="officeandroiddocsuipaywallcontrolpresigninfre"></a>Office.Android.DocsUI.PaywallControl.PreSignInFRE
+
+*[Šis įvykis anksčiau vadinosi Office.DocsUI.PaywallControl.PreSignInFRE.]*
+ 
+Tai yra papildomo pardavimo kritinė naudojimo telemetrija pirmajame veikimo skyriuje neprijungtiems vartotojams. Šis įvykis užfiksuoja pirmą kartą vykdytą prisijungimo metriką. Duomenys bus naudojami norint pateikti įžvalgų apie išankstinį prisijungimą ir suprasti, ar vartotojas toliau eis į kitą vartotojo srauto etapą.
+ 
+Renkami šių laukų duomenys: 
+
+- **EventDate** – įvykio įvykimo laiko žyma  
+
+- **FunnelPoint** – Surašytuvas, nurodantis, kur vartotojas yra šiame eksperimento piltuve. Surašytuvas pasakys, ar vartotojas mato apdorojimą ir, ar išeina, ar ne.
+
+- **SessionID** – globaliai unikalus identifikatorius (GUID), kad galima būtų sujungti įvykius pagal seansą
+
+
 #### <a name="officeandroiddocsuipaywallcontrolskuchoosertoggled"></a>Office.Android.DocsUI.PaywallControl.SkuChooserToggled
 
 Telemetrijos naudojimas, kad būtų galima peržiūrėti, kiek kartų vartotojas pereina per skirtingus SKU prieš bandydamas įsigyti. Naudojamas suprasti SKU parinkiklio naudojimą ir optimizuoti pirkimo programoje funkcijas būsimose versijose.
@@ -2706,6 +2746,20 @@ Renkami šių laukų duomenys:
 - **EventDate** – įvykio įvykimo laiko žyma 
 
 - **SessionID** – GUID, skirtas sujungti įvykius pagal sesiją
+
+
+#### <a name="officeandroiddocsuipaywallcontroluserimageclicked"></a>Office.Android.DocsUI.PaywallControl.UserImageClicked 
+
+*[Šis įvykis anksčiau vadinosi Office.DocsUI.PaywallControl.UserImageClicked.]*
+ 
+Šis įvykis matuoja telemetrijos veiksmus, kad sužinotumėte, ar vartotojai bando atlikti veiksmą spustelėję vartotojo avatarą. Šie duomenys bus naudojami norint įvertinti, kiek vartotojų naudoja avataro piktogramą, kad įvertintų, ar reikia tolesnės pagalbos, kai bakstelėsite.
+ 
+Renkami šių laukų duomenys: 
+
+- **EventDate** – įvykio įvykimo laiko žyma  
+
+- **SessionID** – globaliai unikalus identifikatorius (GUID), kad galima būtų sujungti įvykius pagal seansą 
+
 
 #### <a name="officeandroidearlytelemetryexpansionfilesavailability"></a>Office.Android.EarlyTelemetry.ExpansionFilesAvailability
 
@@ -2893,7 +2947,7 @@ Renkami šių laukų duomenys:
 
 - **Data_Doc_EdpState** – išvardijimas, rodantis įmonės duomenų failo apsaugos būseną.
 
-- **Data_Doc_Ext** – pirmieji 4 failo plėtinio simboliai.
+- **Data_Doc_Ext** – pirmieji keturi failo plėtinio simboliai.
 
 - **Data_Doc_Fqdn** – failo serverio pagrindinio kompiuterio pavadinimas.
 
@@ -4004,30 +4058,6 @@ Renkami šių laukų duomenys:
 - **Data_SaveLocation** – failo vietos, pvz., „SharePoint“, „OneDrive“, „Local“, „WOPI“ ir t. t., abstraktus kategorizavimas, ir aiškus nurodymas, kad tai nėra faktinė failo vieta.
 
 - **Data_SaveOperationType** – skaitinė reikšmė, apibrėžta „Apple“ NSSaveOperationType reikšmių grupėje.
-
-
-#### <a name="officedocsuipaywallcontrolpresigninfre"></a>Office.DocsUI.PaywallControl.PreSignInFRE
- 
-Tai yra papildomo pardavimo kritinė naudojimo telemetrija pirmajame veikimo skyriuje neprijungtiems vartotojams. Šis įvykis užfiksuoja pirmą kartą vykdytą prisijungimo metriką. Duomenys bus naudojami norint pateikti įžvalgų apie išankstinį prisijungimą ir suprasti, ar vartotojas toliau eis į kitą vartotojo srauto etapą.
- 
-Renkami šių laukų duomenys: 
-
-- **EventDate** – įvykio įvykimo laiko žyma  
-
-- **FunnelPoint** – Surašytuvas, nurodantis, kur vartotojas yra šiame eksperimento piltuve. Surašytuvas pasakys, ar vartotojas mato apdorojimą ir, ar išeina, ar ne.
-
-- **SessionID** – globaliai unikalus identifikatorius (GUID), kad galima būtų sujungti įvykius pagal seansą
-
-
-#### <a name="officedocsuipaywallcontroluserimageclicked"></a>Office.DocsUI.PaywallControl.UserImageClicked 
- 
-Šis įvykis matuoja telemetrijos veiksmus, kad sužinotumėte, ar vartotojai bando atlikti veiksmą spustelėję vartotojo avatarą. Šie duomenys bus naudojami norint įvertinti, kiek vartotojų naudoja avataro piktogramą, kad įvertintų, ar reikia tolesnės pagalbos, kai bakstelėsite.
- 
-Renkami šių laukų duomenys: 
-
-- **EventDate** – įvykio įvykimo laiko žyma  
-
-- **SessionID** – globaliai unikalus identifikatorius (GUID), kad galima būtų sujungti įvykius pagal seansą 
 
 
 #### <a name="officedocsuisharinguicloudupsellshown"></a>Office.DocsUI.SharingUI.CloudUpsellShown 
@@ -5192,6 +5222,127 @@ Renkami šių laukų duomenys:
 
 - **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
 
+#### <a name="officelenslenssdkcloudconnectorlaunch"></a>Office.Lens.LensSdk.CloudConnectorLaunch
+
+Kai vartotojas apkarpo vaizdą ir bakstelėjimu patvirtina galutinį vaizdo pasirinkimą, kad būtų galima naudoti OCR, pasirenkamas šis įvykis.     
+Tai yra tarnybos vartotojo-su-užklausa įrašas, nes tarnyboje nėra vartotojo-su-tarnybos-užduotimi susiejimo. Vartotojo ID turi atitikti BDAR reikalavimus, nes tarnyba yra ne tiesiogiai pasiekiama vartotojams, o per klientus, ir identifikuoja bendrą žmonių, naudojančių tarnybą, skaičių, padedantį sekti vartotojų, naudojančių produktą, kiekį, taip pat nustatyti tendencijų pokyčius, padėti rasti ir pataisyti produkto problemas.
+
+Renkami šių laukų duomenys:
+
+- **CallType** – eilutė, skirta nustatyti, ar API skambutis buvo sinchroninis arba asinchroninis.
+
+- **CloudConnectorRequestId** – eilutė, kuri identifikuoja tarnybos užklausą, kuri buvo sukurta norint konvertuoti vaizdus naudojant tarnybą. 
+
+- **CloudConnectorTarget** – eilutė, kuri patvirtina, kokio tipo konvertavimą tarnyba atliks su vaizdais, pvz., konvertavimas į PDF, docx, tekstą ir t. t.
+
+- **CustomerId** – eilutė, identifikuojanti vartotoją, kuriam priklauso apdorojami vaizdai.
+
+- **CustomerType** – eilutė, kuri identifikuoja klientą kaip įmonę arba individualų vartotoją. Šis skirtumas turi įtakos atvaizdų, kurias klientas gali konvertuoti vienu metu, skaičiui (kvotai). 
+
+- **RelationId** – eilutė, kuri identifikuoja ryšį tarp „Lens“ ir tarnybos, kuri naudojama apdorojant failus.
+
+
+#### <a name="officelenslenssdkcloudconnectoruploaderror"></a>Office.Lens.LensSdk.CloudConnectorUploadError
+
+Naudojant Vaizdas į lentelę, kai vartotojas bakstelėja Bendrinti, Kopijuoti ar Atidaryti, vartotojo pateiktos lentelės pataisos bendrinamos su tarnyba, kad būtų patobulintas OCR. Šis įvykis surenkamas atsakius į tos tarnybos klaidą ir apima atitinkamus identifikatorius, skirtus spręsti įvairias tarnybos problemas. 
+
+Renkami šių laukų duomenys:
+
+- **CloudConnectorRequestId** – eilutės identifikatorius, skirtas susieti tarnybos užduotį su dabartine tarnybos užklausa, kurios tobulinimo duomenys buvo bendrinami.
+
+- **CorrelationId** – eilutė, kurioje yra dabartinio tarnybos užduoties egzemplioriaus identifikatorius.
+
+- **Reason** – eilutė, kurioje yra klaidos kodas ir klaidos aprašas.
+
+- **TargetType** – eilutė, identifikuojant tarnybos galinį punktą.
+
+- **TaskType** – eilutė, identifikuojant tarnybos skambučio ketinimą.
+
+
+#### <a name="officelenslenssdkcloudconnectoruploadsuccess"></a>Office.Lens.LensSdk.CloudConnectorUploadSuccess
+
+Naudojant Vaizdas į lentelę, kai vartotojas bakstelėja Bendrinti, Kopijuoti ar Atidaryti, vartotojo pateiktos lentelės pataisos bendrinamos su tarnyba, kad būtų patobulintas OCR. Šis įvykis surenkamas gavus sėkmingą tarnybos atsaką ir apima atitinkamus identifikatorius, skirtus šalinti proceso problemas. Jis taip pat padeda analizuoti paslaugų tobulinimo galimybių naudojimą.
+
+Renkami šių laukų duomenys:
+
+- **CloudConnectorRequestId** – eilutės identifikatorius, skirtas susieti tarnybos užduotį su dabartine tarnybos užklausa, kurios tobulinimo duomenys buvo bendrinami.
+
+- **CorrelationId** – eilutė, kurioje yra dabartinio tarnybos užduoties egzemplioriaus identifikatorius.
+
+- **TargetType** – eilutė, identifikuojant tarnybos galinį punktą.
+
+- **TaskType** – eilutė, identifikuojant tarnybos skambučio ketinimą.
+
+
+#### <a name="officelenslenssdkpermission"></a>Office.Lens.LensSdk.Permission
+
+Teisės yra svarbi funkcija, nes be jų vartotojas negali naudoti jokių „Lens“ funkcijų. Teisės stebimos siekiant suprasti vartotojo teisių suteikimo / atšaukimo įpročius. Kai vartotojas sąveikauja su mūsų programos dialogų dialogais, mes renkame tuos įvykius. Atsižvelgiant į vartotojų teisių priėmimo ir atmetimo tendencijas, mes identifikuojame funkcijų patobulinimus, kurie padeda vartotojams suprasti, kodėl teisės yra kritinės.
+
+Renkami šių laukų duomenys:
+
+- **Data_action** – apima reikšmes, pvz., CameraPermissionAllowed (arba Denied), StoragePermissionGranted (arba Denied), kurios padeda mums suprasti, ar vartotojas priėmė arba atmetė saugyklos ir kameros teises.
+
+- **Data_Action** – šis laukas padeda mums suprasti, kokio tipo teisės buvo paprašyta iš vartotojo, pvz., fotoaparato arba saugyklos
+
+- **Data_status** – apima reikšmes, pvz., Allowed, Denied ir DeniedForever, kurios padeda mums suprasti, ar vartotojas priėmė arba atmetė saugyklos ir kameros teises.
+
+
+#### <a name="officelenslenssdksavemedia"></a>Office.Lens.LensSdk.SaveMedia
+
+Šis įvykis iškviečiamas, kai vartotojas spustelėja mygtuką Atlikta ir įrašo vaizdus „Android“ ir „iOS“. Tai padeda išmatuoti vartotojo dalyvavimo lygį kiekybiškai įvertinant vartotojus, kurie įrašo vaizdus naudodami mūsų programą.
+
+Toliau nurodyti laukai renkami „Android“:
+
+- **Data_FileSizeAfterCleanUp** – failo dydis po to, kai jis išvalomas naudojant programą, kad suprastume, koks glaudinimas buvo pasiektas po valymo.
+
+- **Data_FileSizeAfterSave** – failo dydis po to, kai jį įrašo vartotojas, kad suprastume, koks glaudinimas buvo pasiektas po įrašymo.
+
+- **Data_FileSizeBeforeCleanUp** – failo dydį prieš jį išvalant programai, kad suprastume, kokio dydžio jis buvo užfiksuotas
+
+- **Data_Filter** – vaizdui pritaikytas filtras.
+
+- **Data_ImageHeightAfterCleanUp** – vaizdo aukštis po to, kai jį išvalė programa.
+
+- **Data_ImageHeightBeforeCleanUp** – vaizdo aukštis prieš tai, kai jį išvalė programa.
+
+- **Data_ImageWidthAfterCleanUp** – vaizdo plotis po to, kai jį išvalė programa.
+
+- **Data_ImageWidthBeforeCleanUp** – vaizdo plotis prieš tai, kai jį išvalė programa.
+
+- **Data_MediaId** – atvaizdų identifikatorius, skirtas stebėti operacijos sėkmę.
+
+- **Data_ProcessMode** – vartotojo režimas, kai jis įrašė vaizdą.
+
+- **Data_Source** – apibrėžia, iš kur gautas vaizdas, pvz., kamera, importuota iš galerijos ir t. t. 
+
+Toliau nurodyti laukai renkami tik „iOS“:
+
+- **Data_filter** – vaizdui pritaikytas filtras. 
+
+- **Data_imageDPI** – vaizdo sumažinimas, pritaikytas įrašytam vaizdo failui
+
+- **Data_imageSize** – vaizdo dydis vartotojui įrašius vaizdą
+
+- **Data_mediaId** – vaizdų identifikatorius, skirtas stebėti operacijos sėkmę.
+
+- **Data_mode** – vartotojo režimas, kai jis įrašė vaizdą.
+
+- **Data_sizeinPixel** – vaizdo dydis pikselių formatu
+
+- **Data_source** – apibrėžia, iš kur gautas vaizdas, pvz., kamera, importuota iš galerijos ir t. t. 
+
+
+#### <a name="officelenslenssdkserviceidmapping"></a>Office.Lens.LensSdk.ServiceIDMapping
+
+Šis įvykis fiksuojamas kai vaizdas sėkmingai įkeliamas į tarnybą. Tai reiškia, kad tarnyba atliks vieną ar daugiau užduočių, kad apdorotų vaizdą ir apims atitinkamus ID, kurie padės šalinti proceso nesklandumus. Jis taip pat padeda analizuoti skirtingų tarnybos funkcijų naudojimą.
+
+Renkami šių laukų duomenys:
+
+- **CloudConnectorRequestId** – eilutė, kuri identifikuoja tarnybos užklausą, kuri buvo sukurta norint konvertuoti vaizdus naudojant tarnybą.
+
+- **I2DserviceProcessID** – eilutė, identifikuojanti tarnybos užduotį, kurioje vykdoma konkreti antrinė užklausa 
+
+
 #### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
 
 Šis kritinė naudojimo telemetrija surenkama, kai vartotojui rodomas mokamos prieigos prie informacijos valdiklis, ir naudojama norint suprasti vartotojo įsigijimo programoje funkcijas ir optimizuoti būsimas versijas.
@@ -5586,7 +5737,7 @@ Renkami šių laukų duomenys:
 
 - **Data.clientType** – įrenginio, kuriame veikia programa, tipas.
 
-- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., LivePersonaCardRenderedAction
+- **Data.eventId** – įvykio pavadinimo identifikatorius, pvz., „LivePersonaCardRenderedAction“
 
 - **Data.exportName** vartotojo veiksmo įvykio žmonėms perskaitomas pavadinimas, pvz., OpenedPersonaCard
 
@@ -5667,9 +5818,9 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-- **"Data_Doc_ActivationFQDN** – teikėjo taikomosios programos, skirtos failo suaktyvinimo scenarijui, domeno vardas (registruojama tik 1-osios šalies taikomosios programos informacija).
+- **"Data_Doc_ActivationFQDN** – teikėjo taikomosios programos, skirtos failo suaktyvinimo scenarijui, domeno vardas (registruojama tik pirmosios šalies taikomosios programos informacija).
 
-- **Data_Doc_CreateTelemetryReason** – telemetrijos priežastys kurti PDF. (pvz., Kurti iš nuskaitymo, naudojant veiksmą „paveikslėlis į PDF“ , „dokumentas į PDF“ ir t. t.)
+- **Data_Doc_CreateTelemetryReason** – telemetrijos priežastys kurti PDF. (pvz., Kurti iš nuskaitymo, naudojant veiksmą „paveikslėlis į PDF“, „dokumentas į PDF“ ir t. t.)
 
 - **Data_Doc_DownloadDurationms** – laikas, per kurį atsisiunčiamas PDF debesies failas.
 
@@ -5694,7 +5845,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeofficemobilepdfviewerpdffileoperations-on-android"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations („Android“)
 
-Įvykis renkamas naudojantis „Office“ programa, skirta „Android“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad PDF failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą.
+Įvykis renkamas naudojantis „Office“ programa, skirta „Android“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad .pdf failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą.
 
 Renkami šių laukų duomenys:
 
@@ -5734,9 +5885,9 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeofficemobilepdfviewerpdffileoperations-on-ios"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations („iOS“)
 
-Įvykis renkamas naudojantis „Office“ programa, skirta „ iOS“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad PDF failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą. 
+Įvykis renkamas naudojantis „Office“ programa, skirta „ iOS“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad .pdf failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą. 
 
-- **Data_Doc_FileOpSessionID** – dokumento seanso unikalusis ID. 
+- **Data_Doc_FileOpSessionID** – dokumento seanso unikalusis ID 
 
 - **Data_ErrorCode** – klaida, rodoma failo atidarymo trikčių / atsisiuntimo trikčių / atsisiuntimo atšaukimo atveju 
 
@@ -6325,7 +6476,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_ServerVersion:long –** tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
 
-  - **Data\_Doc\_SessionId:long –** generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+  - **Data\_Doc\_SessionId:long -** Generuotas GUID, kuris identifikuoja dokumento egzempliorių to paties seanso metu
 
   - **Data\_Doc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalo koreliacijai
 
@@ -6461,7 +6612,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_ServerVersion:long –** tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
 
-  - **Data\_Doc\_SessionId:long –** generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+  - **Data\_Doc\_SessionId:long -** Generuotas GUID, kuris identifikuoja dokumento egzempliorių to paties seanso metu
 
   - **Data\_Doc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
 
@@ -6585,7 +6736,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_Doc\_ServerVersion:long –** tikrina, ar serveryje naudojama „Office14“, „Office15“ arba „Office 16“
 
-  - **Data\_Doc\_SessionId:long –** generuotas GUID, identifikuojantis dokumento egzempliorių to paties proceso seanso metu
+  - **Data\_Doc\_SessionId:long -** Generuotas GUID, kuris identifikuoja dokumento egzempliorių to paties seanso metu
 
   - **Data\_Doc\_SharePointServiceContext:string –** nepermatoma eilutė, paprastai GridManagerID.FarmID. Tinkanti kliento ir serverio įvykių žurnalų koreliacijai
 
@@ -7745,7 +7896,7 @@ Renkami šių laukų duomenys:
     
 - **Column** - Paskirtis
 
-- **DocUrlHash** – nuskaityto dokumento unikali dokumento id maiša
+- **DocUrlHash** – nuskaityto dokumento unikali dokumento ID maiša
 
 - **HasAccessibilityViolations** - stebi ar dokumente yra pritaikymo neįgaliesiems pažeidimų, kai sritis atidaroma
 
@@ -8457,7 +8608,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.Duration** – bendras operacijos baigimo laikas
 
@@ -8720,7 +8871,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.ContentId** – galutinio vartotojo licencijos turinio ID
 
@@ -8831,7 +8982,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.Duration** – bendras operacijos baigimo laikas
 
@@ -8887,7 +9038,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.ContentId** – turinio ID
 
@@ -8927,7 +9078,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.CallBackStatus** – autentifikavimo atskambinimo pateikto rezultato būsena
 
@@ -9115,7 +9266,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_DurationToCompleteInMilliseconds:double-** Trukmė milisekundėmis, kol atliekamas įrašymas
 
-  - **Data\_ErrorCode:int -** : 0, jei sėkminga, sveikasis skaičius – gedimo atveju
+  - **Data\_ErrorCode:int -** 0, jei sėkminga, sveikasis skaičius – gedimo atveju
 
   - **Data\_FailureReason:integer -** Asinchroninio įrašymo trikties priežastis
 
@@ -9333,6 +9484,37 @@ Renkami šių laukų duomenys:
 - **TotalTime** – bendras praleistas laikas
 
 - **UsesSharedRuntime** – nurodo, ar taikomoji programa naudoja „sharedRuntime“.
+
+#### <a name="officelenslenssdklaunchlens"></a>Office.Lens.LensSdk.LaunchLens
+
+Vartotojui paleidus „Lens“ vaizdams fiksuoti ar importuoti į kurią programą, paleidžiama „Lens“ SDK ir fiksuojamas šis įvykis. Paleidimo duomenys padeda nustatyti, kiek vartotojų / įrenginių paleidžia programą ir geriau suprasti funkcijų naudojimą. Tai padeda stebėti produkto vartotojų kiekius ir nustatyti tendencijų pokyčius, ieškoti ir taisyti produkto problemas.
+
+Renkami šių laukų duomenys:
+
+- **Data_isResumeSession** – ar programa paleista tęsiant, ar vartotojas paleido iš naujo. (Bulio logikos laukas) 
+
+- **Data_launchPerf** – skaičius, nurodantis laiką, kurį truko programos paleidimas („Android“)
+
+- **Data_LaunchWorkFlowItem** – laukas nurodo, ar programa paleista kameros ekrane ar redagavimo ekrane. 
+
+- **Data_mediaCompressionFactor** – koeficientas, pagal kurį vaizdai suglaudinti naudojant programą.
+
+- **Data_RecoveryMode** – Bulio logikos laukas, nurodantis, ar šis seansas buvo atkurtas po to, kai programa buvo nutraukta („Android“)
+
+- **IsDexModeEnabled** – Bulio logika, nurodanti, ar įrenginys palaiko „Samsung Dex“ funkcijas.
+
+- **IsEmbeddedLaunch** – Bulio logikos laukas, nurodantis, ar vartotojas paleido valdiklį vaizdo vaizde režimu.
+
+- **IsInterimCropEnabled** – Bulio logikos laukas, nurodantis, ar vartotojas pasirinko rankiniu būdu apkarpyti kiekvieną vaizdą.
+
+- **IsMultiWindowEnabled** – Bulio logikos laukas, nurodantis, ar galima paleisti programą padalintame ekrane.
+
+- **LaunchPerf** – skaičius, nurodantis laiką, kurį truko programos paleidimas („iOS“)
+
+- **RecoveryMode** – Bulio logikos laukas, nurodantis, ar šis seansas buvo atkurtas po to, kai programa buvo nutraukta („iOS“)
+
+- **SDKMode** – režimas, kuriuo buvo užfiksuoti vaizdai.
+
 
 #### <a name="officeofficemobileappactivationlaunch"></a>Office.OfficeMobile.AppActivation.Launch
 
@@ -9989,7 +10171,7 @@ Renkami šių laukų duomenys:
 
 - **OfficeProcessSessionStart** Siunčia pagrindinę informaciją į naują „Office“ seanso pradžią. Naudojamas norint suskaičiuoti unikalius seansus, matomus šiais įrenginiais. Jis naudojamas kaip pasikartojantis įvykis, kad užtikrintų, jog taikomoji programa paleista įrenginyje. Be to, tai yra svarbus visos programos patikimumo signalas
 
-- **ProgramosSeansoVedikl** – konkrečios taikomosios programos seanso pradžios identifikatorius, naudojamas nuo proceso kūrimo pradžios ir iki proceso pabaigos. Jis yra suformuotas kaip standartinis 128 bitų GUID, tik sudarytas iš 4 dalių. Šios keturios dalys eilės tvarka yra (1) 32 bitų proceso ID (2) 16 bitų seanso ID (3) 16 bitų įkrovos ID (4) 64 bitų proceso sukūrimo laikas, išreikštas UTC 100 nsek.
+- **ProgramosSeansoVedikl** – konkrečios taikomosios programos seanso pradžios identifikatorius, naudojamas nuo proceso kūrimo pradžios ir iki proceso pabaigos. Jis yra suformuotas kaip standartinis 128 bitų GUID, tik sudarytas iš keturių dalių. Šios keturios dalys eilės tvarka yra (1) 32 bitų proceso ID (2) 16 bitų seanso ID (3) 16 bitų įkrovos ID (4) 64 bitų proceso sukūrimo laikas, išreikštas UTC 100 nsek.
 
 - **processSessionId** - Atsitiktinai sugeneruotas žinynas, skirtas programos seansui identifikuoti 
 
@@ -10563,7 +10745,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.Duration** – bendras operacijos baigimo laikas
 
@@ -10601,7 +10783,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.Duration** – bendras operacijos baigimo laikas
 
@@ -10974,7 +11156,7 @@ Renkami šių laukų duomenys:
 
 Įvykis generuojamas, kai vartotojo „Office“ taikomųjų programų versijoje sugenda COM papildinys. 
 
-Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Microsoft 365“ programų įmonėms „pritaikymui“; po to papildinys naudojamas kituose įrankiuose, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Microsoft 365“ programų įmonėms versijomis, ir atitinkamai suplanuoti jų plėtotes. 
+Naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Microsoft 365“ programų įmonėms „pritaikymui“; po to papildinys naudojamas kituose įrankiuose, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Microsoft 365“ programų įmonėms versijomis, ir atitinkamai suplanuoti jų plėtotes. 
 
 Renkami šių laukų duomenys:
 
@@ -11006,7 +11188,7 @@ Renkami šių laukų duomenys:
 
 Įvykis generuojamas, kai COM papildinys sugenda įmonės „Office“ taikomųjų programų versijoje.
 
-Naudojimas: naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Microsoft 365“ programų įmonėms „pritaikymui“; po to papildinys naudojamas kituose įrankiuose, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Microsoft 365“ programų įmonėms versijomis, ir atitinkamai suplanuoti jų plėtotes. 
+Naudojama apskaičiuoti visuotiniam, su įmone nesusijusiam „Microsoft 365“ programų įmonėms „pritaikymui“; po to papildinys naudojamas kituose įrankiuose, pvz., „Readiness Toolkit“. Tai leidžia įmonės klientams patikrinti, ar jų organizacijose įdiegti papildiniai suderinami su naujausiomis „Microsoft 365“ programų įmonėms versijomis, ir atitinkamai suplanuoti jų plėtotes. 
 
 - **ScopeId** – taikoma dabartinės gijos apimtis
 
@@ -11256,6 +11438,38 @@ Renkami šių laukų duomenys:
 
   - **Version** – pertraukto seanso versija
 
+
+#### <a name="officeprogrammabilityaddinscomaddincrash"></a>Office.Programmability.Addins.COMAddInCrash 
+
+Įvykis generuojamas, kai sugenda COM papildinys. Naudojama „Office“ papildinių pritaikymo ir patikimumo problemoms nustatyti. 
+
+Renkami šių laukų duomenys:
+
+- **AddinConnectFlag** – nurodo įkėlimo veikseną  
+
+- **AddinDescriptionV2** – papildinio aprašas 
+
+- **AddinFileNameV2** – faktinio papildinio DLL pavadinimas. Neapima failo vietos.
+
+- **AddinFriendlyNameV2** – papildinio draugiškas vardas
+
+- **AddinIdV2** – papildinio klasės ID (CLSID)
+
+- **AddinProgIdV2** – papildinio programos ID 
+
+- **AddinProviderV2** – papildinio teikėjas 
+
+- **AddinTimeDateStampV2** – vykdymo laiko žyma
+
+- **AddinVersionV2** – papildinio versija 
+
+- **Interface** – gedimą sukėlusio papildinio COM sąsaja 
+
+- **LoadAttempts** – kiek kartų buvo bandoma įkelti prieš gedimą 
+
+- **Method** – papildinio, dėl kurio įvyko gedimas, COM metodas 
+
+
 #### <a name="officeprogrammabilitytelemetryaddincrash"></a>Office.Programmability.Telemetry.AddInCrash
 
 Įvykis generuojamas, kai įkeltas COM papildinys Ši informacija yra labai svarbi norint nustatyti, ar papildinys sukelia „Office“ programos gedimą. Jis naudojamas įvertinti visuotinio papildinio suderinamumą su „Office“ programomis.
@@ -11435,7 +11649,7 @@ Renkami šių laukų duomenys:
 
 - **account_counter** – seka skaičių paskyrų, susietų su kiekvienu kalendoriaus tipu, pvz., 2 skirta „Gmail“ kalendoriui, ir ar ši paskyra naudoja mūsų naują sinchronizavimo tarnybą
 
-- **app_instance** – „Outlook“ yra 2 „Duo“ įvesties taškai, vienas – kalendoriui, o kitas – paštui. Abu gali būti paleisti greta kelių egzempliorių aplinkoje. Tai praneš mums, kuris egzempliorius pateiks šį pranešimą: pašto arba kalendoriaus
+- **app_instance** – „Outlook“ yra du „Duo“ įvesties taškai, vienas – kalendoriui, o kitas – paštui. Abu gali būti paleisti greta kelių egzempliorių aplinkoje. Tai praneš mums, kuris egzempliorius pateiks šį pranešimą: pašto arba kalendoriaus
 
 - **component_name** – nurodo kalendoriaus komponento pavadinimą, pvz., Dienotvarkės rodinį arba Dienos rodinį, kad galėtume aptikti tam tikras problemas, darančias įtaką konkrečiam kalendoriaus komponentui.
 
@@ -11546,7 +11760,7 @@ Renkami šių laukų duomenys:
 
 - **age** – asmens amžius (naudojamas patvirtinti reklamos amžiaus apribojimų atitikimą) *[Šis laukas pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis dar gali būti senesnėse komponavimo versijose.]*
 
-- **app_instance** – „Outlook“ yra 2 „Duo“ įvesties taškai, vienas – kalendoriui, o kitas – paštui. Abu gali būti paleisti greta kelių egzempliorių aplinkoje. Tai praneš mums, kuris egzempliorius pateiks šį pranešimą: pašto arba kalendoriaus
+- **app_instance** – „Outlook“ yra du „Duo“ įvesties taškai, vienas – kalendoriui, o kitas – paštui. Abu gali būti paleisti greta kelių egzempliorių aplinkoje. Tai praneš mums, kuris egzempliorius pateiks šį pranešimą: pašto arba kalendoriaus
 
 - **component_name** – filtruojant aktyvaus komponento/rodinio pavadinimas
 
@@ -11602,7 +11816,7 @@ Renkami šių laukų duomenys:
 
 - **iKey** – registravimo tarnybos serverio ID
 
-- **RMS.ApplicationScenarioId** programos pateiktas scenarijaus ID
+- **RMS.ApplicationScenarioId** – programos pateiktas scenarijaus ID
 
 - **RMS.AuthCallbackProvided** – nurodo, ar pateikiamas autentifikavimo iškvietimas kaip API iškvietimo įvestis
 
@@ -11772,7 +11986,7 @@ Renkami šių laukų duomenys:
  
 - **age** – asmens amžius (naudojamas patvirtinti skelbimų amžiaus apribojimų atitiktį)
 
-- **app_instance** – „Outlook“ yra 2 „Duo“ įvesties taškai, vienas – kalendoriui, o kitas – paštui. Abu gali būti paleisti greta kelių egzempliorių aplinkoje. Tai praneš mums, kuris egzempliorius pateiks šį pranešimą: pašto arba kalendoriaus
+- **app_instance** – „Outlook“ yra du „Duo“ įvesties taškai, vienas – kalendoriui, o kitas – paštui. Abu gali būti paleisti greta kelių egzempliorių aplinkoje. Tai praneš mums, kuris egzempliorius pateiks šį pranešimą: pašto arba kalendoriaus
  
 - **component_name** – filtruojant aktyvaus komponento/rodinio pavadinimas
  
@@ -12285,7 +12499,7 @@ Renkami šių laukų duomenys:
 
 - **TotalWorkingSetMB** – proceso darbinio rinkinio atminties kiekis megabaitais.
 
-- **VirtualSetMB** – proceso virtualiojo rinkinio atminties kiekis megabaitais. (tik „MacOS“/ „iOS“)
+- **VirtualSetMB** – proceso virtualiojo rinkinio atminties kiekis megabaitais. (tik „macOS“/ „iOS“)
 
 - **WorkingSetPeakMB** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
 
@@ -12407,7 +12621,7 @@ Renkami šių laukų duomenys:
 
 - **SessionDurationInMs** – tai viso seanso trukmė, skaičiuojama nuo tada, kai vartotojas paspaudė pradėti, iki tada, kai vartotojas paspaudė baigti.
 
-- **SessionId** – tai kalbos „Frontdoor“ seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
+- **Sessionid** – tai kalbos pagrindinių durų seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
 
 - **SpeechClientResultEventsWithTimestamps** – tai klaidų kodų, gautų kartu su laiko ženklais, kurie gali padėti taisyti, masyvas.
 
@@ -12567,7 +12781,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="onenoteappsafebootdialogactiontaken-officeonenoteandroidsafebootdialogactiontaken-officeandroidearlytelemetrysafebootdialogactiontaken"></a>OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
 
-Kritinis signalas, naudojamas vartotojo atsakui sekti, kai jis mato saugos įkrovos dialogo langą. Saugaus paleidimo dialogo langas rodomas, kai nepavyksta paleisti pakartotinai. Vartotojas renkasi saugią paleistį, kad būtų galima sėkmingai paleisti programos duomenis. Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Vartotojas mato, kai susiduria su kritine įkrovos gedimo klaida. Ši informacija padės sekti, jei buvo išspręsta gedimo triktis ir ar vartotojas gali sėkmingai įjungti programą.
+Kritinis signalas, naudojamas vartotojo atsakui sekti, kai vartotojas mato saugos įkrovos dialogo langą. Saugaus paleidimo dialogo langas rodomas, kai nepavyksta paleisti pakartotinai. Vartotojas renkasi saugią paleistį, kad būtų galima sėkmingai paleisti programos duomenis. Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Vartotojas mato, kai susiduria su kritine įkrovos gedimo klaida. Ši informacija padės sekti, jei buvo išspręsta gedimo triktis ir ar vartotojas gali sėkmingai įjungti programą.
 
 Renkami šių laukų duomenys: 
 
@@ -12582,11 +12796,13 @@ Renkami šių laukų duomenys:
 
 - **app_start_show_message_list** – tai reiškia, kad kilo programos paleisties problemų, dėl kurių ilgiau užtruko aplanko Gauta pranešimų sąrašo įkėlimas
 
-- **average** – surenka iš naujo įkeliamas sumas pokalbio metu, padalytą pagal to pokalbio pranešimų kiekį.  
+- **average** – surenka pokalbio įkėlimų iš naujo skaičių, padalytą iš to pokalbio pranešimų skaičiaus.  
 
 - **event_type** – nurodo tipą veikimo įvykio, dėl kurio kilo problema, kad galėtume nustatyti su tam tikru tipu susijusias problemas.   
 
 - **extra_params** – čia kūrėjas gali įtraukti papildomų parametrų, kad galėtume pateikti daugiau informacijos apie tai, kas galėjo sukelti šią veikimo problemą, t. y. kada šis veiksmas buvo pradėtas, baigtas ir t. t. 
+
+-   **has_work_profile** – nurodo, ar programa veikia „Android“ darbo profilyje ar panašioje konfigūracijoje, kad būtų galima susieti veikimo analizę su tomis aplinkomis.
 
 - **profiling_summary** – teikia informaciją apie užduočių grupes, užduočių skaičių ir vidutinę jų laiką, kad būtų lengviau suprasti galimas tam tikrose srityse, kai programa įkeliama, regresijos sritis
 
@@ -12596,7 +12812,7 @@ Renkami šių laukų duomenys:
   - **hx_object_type** – pateikia matavimų duomenų planavimo objekto tipą.
   - **is_main_thread** – praneša mums, ar šis įvykis nurodo tik pagrindinio gijos įvykdymo laiką.
   - **record_count** – įrašų, kuriuos pateikia esamos saugyklos sluoksnio, skaičius.
-  - **aprėptis** – nurodo vartotojo sąsajos puslapį/komponentus, kuriems šis įvykis priklauso.
+  - **scope_name** – nurodo vartotojo sąsajos puslapį/komponentus, kuriems šis įvykis priklauso.
   - **average_cost_time_ns** – nurodo vidutinį išlaidų laiką, įvertintą nanosekundėmis. 
 
 - **total_time_elapsed** – nurodo, kiek laiko truko įvykis, kad galėtume įvertinti problemos rimtumą
@@ -12678,7 +12894,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys: 
 
-- **client-request-ID** – kliento užklausos, dėl kurios įvyko klaida, identifikatorius
+- **client-request-id** – kliento užklausos, dėl kurios įvyko klaida, identifikatorius
  
 - **date** – užklausos, dėl kurios įvyko klaida, datos žymė
 
@@ -13021,7 +13237,7 @@ Renkami šių laukų duomenys:
 
 - **DocUserId** – vartotojo ID iš MS autentifikavimo sluoksnio
 
-- **DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = LiveId, 2 = OrgId, 3 = SSPI; 4 = ADAL
+- **DocUserIdProvider** – išvardijimas, nurodantis vartotojo ID teikėją, 0 = nežinomas, 1 = „Live ID“, 2 = OrgId, 3 = SSPI; 4 = ADAL
 
 - **DurationInMs** – failo operacijos užbaigimui skirtas laikas milisekundėmis
 
