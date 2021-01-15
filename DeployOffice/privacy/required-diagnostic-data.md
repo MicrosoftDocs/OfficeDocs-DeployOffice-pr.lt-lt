@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: b7993abbca401d65cc99ed9fdd7960bae03e89a3
-ms.sourcegitcommit: c891622923aecf9afd3ba61e008501cb0c374b73
+ms.openlocfilehash: 6b099a73550f3a2c31147b9c7a5adb34dce6ff5f
+ms.sourcegitcommit: 9f4afc7525d1d4cb6fbc0feef721a8eaffc09048
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841724"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867460"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -11459,7 +11459,7 @@ Renkami šių laukų duomenys:
 
 - **AddinProviderV2** – papildinio teikėjas 
 
-- **AddinTimeDateStampV2** – vykdymo laiko žyma
+- **AddinTimeDateStampV2** – kompiliatoriaus laiko žyma
 
 - **AddinVersionV2** – papildinio versija 
 
