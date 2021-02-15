@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 8934226591ed83c630a1c98e5be70e521c93295e
-ms.sourcegitcommit: 862ffbcfc2d7c3722dddb5b008d7b68c9316c675
+ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799143"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242162"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -3466,6 +3466,14 @@ Renkami šių laukų duomenys:
 
 - **toggleCount** – sveikasis skaičius – kiek kartų vartotojas dabartinio mokamos prieigos prie informacijos seanso metu perjungė tarp žiūrimų įvairių produktų, prieš bakstelėdamas mygtuką Pirkti.
 
+### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
+
+Telemetrija naudojama sužinoti, kada vartotojas po sėkmingo apsipirkimo baksteli „Žr. visus pranašumus", kad pamatytų į ką tik įsigytą pirkinį įtrauktas taikomąsias programas ir funkcijas. Šie duomenys naudojam i siekiant padėti plėtoti būsimą patobulinimą ir sumažinti trukdžius vartotojams naujinant.
+
+Renkami šių laukų duomenys:
+
+- **productId** – eilutė – vartotojo žiūrimo produkto „App Store“ ID, kuriam siūlomos visos naudos
+
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
 
@@ -4332,7 +4340,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="catalogerrorsignature"></a>catalog.errorsignature
 
-Šis įvykis nurodo, kad naujinant įvyko klaida atliekant kodo ženklo tikrinimą, atsirado antrinis failas.  Bet koks nepavykęs antrinio failo kodo ženklo tikrinimas turėtų būti laikomas negaliojančiu.
+Šis įvykis pateikia ataskaitas apie įvairias su atsisiųstais failais susijusias problemas, įskaitant atsisiųsto failo tiekėjo parašo ir maišos reikšmės neatitikimą. Šį įvykį naudojame aptikti problemoms publikavimo deklaracijoje, skirtoje taikomosioms programoms.
 
 Renkami šių laukų duomenys:
 
@@ -4360,9 +4368,15 @@ Renkami šių laukų duomenys:
 
 - **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
 
+- **FileHash** – atsisiųsto failo maišos reikšmė
+
+- **FileName** – failo, kuriame aptiktas maišos vertės neatitikimas, pavadinimas
+
+- **HashInCatalog** – maišos reikšmės įrašas atitinkame katalogo faile
+
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – katalogo failo, kurio parašas neleistinas, pavadinimas. Skirtingas statinis tekstas aprašomo skirtingas klaidų sąlygas.
+- **Payload** – pateikia informaciją apie taikomąją programą, pranešusią apie problemą
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
@@ -7987,11 +8001,13 @@ Renkami šių laukų duomenys:
 
 - **HowToCheck** – kaip tikrinti parametrus
 
-- **Payload** – statinis tekstas
+- **Payload** – statinis tekstas *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **Reason** – statinis tekstas, nurodantis, kad tylusis naujinimas negali būti tęsiamas, nes atidaryta naudotojo sąsaja
 
 - **SessionId** – seanso identifikatorius
 
@@ -9392,6 +9408,8 @@ Renkami šių laukų duomenys:
 
 - **Channel** – auditorijos pirmenybė
 
+- **CustomNotification** – Bulio logikos, nurodančios, ar buvo naudojami pasirinktiniai pranešimai.
+
 - **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **DeviceID**– įrenginio identifikatorius.
@@ -9410,7 +9428,7 @@ Renkami šių laukų duomenys:
 
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – tekstas, nurodantis įvykio pobūdį.
+- **Payload** – tekstas, nurodantis įvykio pobūdį. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
@@ -10523,6 +10541,7 @@ Renkami šių laukų duomenys:
 
 - **Success** – nurodo, ar konkreti programa pranešė apie sėkmingą operaciją
 
+- **UpdateID** – naujinimo identifikatorius.
     
 ### <a name="installstatuscodesign"></a>installstatus.codesign
 
@@ -10577,7 +10596,11 @@ Renkami šių laukų duomenys:
 
 - **AppVersionLong** – taikomosios programos versija
 
+- **BundleReachable** – Bulio logikos, nurodančios, ar kilo problema bandant pasiekti „Microsoft“ automatinio naujinimo taikomosios programos paketą.
+
 - **Channel** – auditorijos pirmenybė
+
+- **Codesigned** – Bulio logikos, nurodančios, ar naujinimo asistento bendras projektas buvo atliktas teisingai.
 
 - **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
 
@@ -10595,9 +10618,11 @@ Renkami šių laukų duomenys:
 
 - **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
 
+- **Exists** – Bulio logikos, nurodančios, ar diske yra naujinimo asistentas.
+
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – nurodoma, ar „Daemon“ komponentas yra tikėtinoje vietoje ir ar jis koprojektinis.
+- **Payload** – nurodoma, ar „Daemon“ komponentas yra tikėtinoje vietoje ir ar jis koprojektinis. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
