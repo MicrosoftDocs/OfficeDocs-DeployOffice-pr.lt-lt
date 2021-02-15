@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 6b099a73550f3a2c31147b9c7a5adb34dce6ff5f
-ms.sourcegitcommit: 9f4afc7525d1d4cb6fbc0feef721a8eaffc09048
+ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
+ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49867460"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242198"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -29,7 +29,7 @@ Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, apt
 
 Šie diagnostikos duomenys renkami ir siunčiami „Microsoft“ apie „Office“ kliento programinę įrangą, veikiančią vartotojo įrenginyje. Kai kurie diagnostikos duomenys yra privalomi, o kiti – pasirinktiniai. Suteikiame jums galimybę pasirinkti, ar siųsti mums privalomuosius, ar pasirinktinius diagnostikos duomenis naudojant privatumo valdiklius, pvz., organizacijoms skirtus strategijos parametrus. Naudodami diagnostikos duomenų peržiūros programą galite matyti mums siunčiamus diagnostikos duomenis.
 
-***Būtinieji diagnostikos duomenys** _ yra minimalūs duomenys, kurie būtini, kad „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
+***Būtinieji diagnostikos duomenys*** yra minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
 
 Būtinieji diagnostikos duomenys padeda nustatyti „Office“ problemas, kurios gali būti susiję su įrenginiu arba programinės įrangos konfigūracija. Pavyzdžiui, jie gali padėti nustatyti, ar programos „Office“ funkcija sugenda dažniau konkrečioje operacinės sistemos versijos su naujai įdiegtomis funkcijomis, ar išjungus tam tikras „Office“ funkcijas. Būtini diagnostikos duomenys padeda aptikti, nustatyti ir išspręsti šias problemas greičiau, kad būtų sumažintas poveikis vartotojams arba organizacijoms.
 
@@ -57,7 +57,7 @@ Būtini diagnostikos duomenys suskirstyti į kategorijas ir duomenų potipius. S
 - Kiekvieno įvykio duomenų laukų sąrašas
 - Kiekvieno duomenų lauko aprašas
 
-| _ *Kategorija**       | **Duomenų potipis**| **Aprašas**    |
+| **Kategorija**       | **Duomenų potipis**| **Aprašas**    |
 | ---------- | ------------- | ---- |
 | **Programinės įrangos sąranka ir inventorius** | [„Office“ sąranka ir inventorius](#office-setup-and-inventory-subtype)   | Įdiegtas produktas ir versija, bei diegimo būsena.  |
 | | [„Office“ papildinio konfigūracija](#office-add-in-configuration-subtype)  | Programinės įrangos papildiniai ir jų parametrai.     |
@@ -1291,6 +1291,7 @@ Renkami šių laukų duomenys:
   
   - **LoadResult** – įkėlimo sėkmės būsena
 
+  - **"OfficeArchitecture** " – „Office“ kliento architektūra
 
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
@@ -5367,6 +5368,37 @@ Renkami šių laukų duomenys:
 
 - **userDuration** – dvigubas – vartotojo praleisto mokomoje prieigoje prie informacijos trukmė milisekundėmis
 
+
+#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
+
+Kritinė inžinerijos telemetrija su „Microsoft“ mažmeninės prekybos susiejimo tarnyba (RFS) skirta rinkti šiame įvykyje pateikiamą informaciją. RFS yra vidinė tarnyba, naudojama „Microsoft“, kad būtų atlikti įsigijimo kryžminė patikra. Duomenys naudojami gauti API skambučio į RFS sveikatos informacijai, nes tai padės suprasti bet kokių nesėkmių sėkmingų bandymų rodiklį ir pataisyti programines klaidas.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+
+- **failureReason** – eilutė – įtraukiama, kai būsena yra „nepavyko“. Nurodomas klaidos atsakas, pateikiamas RFS parengimo atsako.
+
+- **productId** – eilutė – produkto „App Store“ ID, kuriam buvo pateikta užklausa
+
+- **status** – eilutė – „pavyko“ arba „nepavyko“, nurodanti, ar užklausa pavyko, ar nepavyko
+
+
+#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
+
+Kritinė naudojimo telemetrija, kuri nurodo, kada vartotojas bakstelėja mygtuką „Įsigyti“ / „Pirkti“. Naudojamas nustatyti vartotojų, bandančių įsigyti prenumeratą taikomojoje programoje, naudojimo modelį ir konvertavimo metriką.
+
+Renkami šių laukų duomenys:
+
+- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+
+- **isDefaultSKU** – Bulio logikos – jei vartotojas įsigyja mūsų jiems rekomenduotą produktą, kuris rodomas pagal numatytuosius parametrus.
+
+- **productId** – eilutė – „App Store“ produkto ID, kuriam vartotojas paspaudė mygtuką „Pirkti“
+
+- **toggleCount** – sveikasis skaičius – kiek kartų vartotojas dabartinio mokamos prieigos prie informacijos seanso metu perjungė tarp žiūrimų įvairių produktų, prieš bakstelėdamas mygtuką „Pirkti“.
+
+
 #### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
 
 Šis įvykis renka funkcijas ir taikomąsias programas, kurias vartotojas išplečia iš elemento „Žr. daugiau pranašumų“, ir praleisto laiko trukmę.  Duomenys naudojami norint suprasti ypatybės „žr. visus pranašumus“ naudojimą, kad būtų galima dar labiau optimizuoti būsimųjų versijų naudojimo funkcijas.
@@ -5378,6 +5410,16 @@ Renkami šių laukų duomenys:
 - **productId** – eilutė – vartotojo žiūrimo produkto „App Store“ ID, kuriam siūloma daugiau naudų
 
 - **userDuration** – dvigubas – vartotojo praleisto naudų ekrane trukmė milisekundėmis.
+
+
+### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSched
+
+Telemetrijos naudojimas, skirtas parodyti, kiek kartų vartotojas pereina per skirtingus SKU prieš bandydamas įsigyti.
+
+Renkami šių laukų duomenys:
+
+- **productId**– eilutė – produkto, į kurio peržiūrą vartotojas ką tik perėjo iš SKU parinkiklio galimų produktų, „App Store“ ID.
+
 
 #### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
 
@@ -11469,6 +11511,7 @@ Renkami šių laukų duomenys:
 
 - **Method** – papildinio, dėl kurio įvyko gedimas, COM metodas 
 
+- **"OfficeArchitecture** " – „Office“ kliento architektūra
 
 #### <a name="officeprogrammabilitytelemetryaddincrash"></a>Office.Programmability.Telemetry.AddInCrash
 
