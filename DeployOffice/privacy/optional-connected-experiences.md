@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: d0eea79f28d2c2f79991ac0d59ebb6a567fecb21
-ms.sourcegitcommit: e64b8f2b7f92a3972d8dc83f47d84648fbe17370
+ms.openlocfilehash: ed197ed1cc8dd3c19d10a227510fe687da54d9c7
+ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931444"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597374"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -42,7 +42,7 @@ Funkcijos, kurias „Bing“ siūlo „Outlook“, skirtoje „iOS“ ir „Andr
 
 - **Vietos pasiūlymai:**   kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, lauke Vieta taip pat bus nurodomas visas adresas.
 - **Įdomūs kalendoriai:**   galite [prenumeruoti](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) kalendorius apie savo mėgstamas sporto komandas ar televizijos laidas.
-- **Kelionės laikas kortelėje „Up Next“:** Jūsų ateinantis įvykis bus apibendrintas el. pašto aplanko Gauta viršuje esančioje kortelėje [„Up Next“](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work). Programoje „Outlook“ skirtoje „Android“, šiai funkcijai reikalinga „Bing Maps“, kad būtų pateiktas numatomas kelionės laikas.
+- **Kelionės laikas kortelėje „Up Next“:** Jūsų ateinantis įvykis bus apibendrintas el. pašto aplanko Gauta viršuje esančioje kortelėje [„Up Next“](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). Programoje „Outlook“ skirtoje „Android“, šiai funkcijai reikalinga „Bing Maps“, kad būtų pateiktas numatomas kelionės laikas.
 
  Šios „Bing“ grindžiamos funkcijos jums licencijuotos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) sąlygas ir joms taikomas [privatumo patvirtinimas](https://privacy.microsoft.com/). Bet kokios ieškos užklausos, kurias pateikiate „Office 365“ programoms įmonėms organizacijai naudodami šias paslaugas, siunčiamos į „Microsoft Bing“. „Bing“ organizacija jų nesusieja su jumis.
 
@@ -106,7 +106,7 @@ Daugiau informacijos žr. [Paskyros privatumo parametrai](https://support.micro
 
 ## <a name="your-privacy-settings"></a>Jūsų privatumo parametrai
 
-Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas „Office“ taikomosiose programose, įtrauktose į „Microsoft 365“ programas įmonėms, „Windows“ įrenginyje, galite eiti į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus** , kad galėtumėte valdyti parametrus bet kuriuo metu. Įjungę turėsite galimybę naudoti šiame straipsnyje aprašytas paslaugas, kai to norėsite. Išjungus jos bus nepasiekiamos.
+Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas „Office“ taikomosiose programose, įtrauktose į „Microsoft 365“ programas įmonėms, „Windows“ įrenginyje, galite eiti į **Failas** > **Paskyra** > **Paskyros privatumas** ir pasirinkite **Valdyti parametrus**, kad galėtumėte valdyti parametrus bet kuriuo metu. Įjungę turėsite galimybę naudoti šiame straipsnyje aprašytas paslaugas, kai to norėsite. Išjungus jos bus nepasiekiamos.
 
 Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
