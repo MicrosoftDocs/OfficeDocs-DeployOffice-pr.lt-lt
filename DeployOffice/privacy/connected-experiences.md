@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: 8471214380e05fde406d0298dd70b10924f898ef
-ms.sourcegitcommit: 6cffc990cc0d883e2bc84eff12abad37807f9975
+ms.openlocfilehash: fe0d70bb03699af3b393de560234f9a1bb32c3c7
+ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50152773"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597338"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -63,7 +63,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 |Bendrinamas pranešimas|[Pranešimų gavimas, kai komandos nariai atnaujina jūsų bendrinamą failą](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Panašumų tikrintuvas*\* („Editor“ funkcija)|[Tikrinkite savo dokumento panašumą į internetinius šaltinius](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Išmanioji ieška*\*   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
-| Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://www.osupportweb.com/a/outlook-mobile/?p=all&s=feature-walkthroughs&f=what-are-suggested-replies)|
+| Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://support.microsoft.com/office/58517b93-946e-42d4-95d0-777aa5aa42a5) <br/> [Kaip generuojami siūlomi atsakymai?](https://support.microsoft.com/office/af9cfa57-4f4f-419f-b76d-bb305c3a9d4d)|
 | Teminė ieška „Word“ (įtraukimas iš failų)   | [Reikiamo turinio radimas ir panaudojimas, neišeinant iš „Word“](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Teksto numatymas (redaktoriaus funkcija)|[Rašymas greičiau naudojant „Word“ teksto numatymą](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
 |Transkripcija |[Įrašų transkribavimas](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
@@ -83,9 +83,9 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 
 | **Pavadinimas**      | **Daugiau informacijos**  |
 | ------------- | ------------- |
-| Kalendoriaus programos| [Kas yra kalendoriaus programos?](https://www.osupportweb.com/a/outlook-mobile/?p=android&s=getting-started-on-outlook&f=what-are-calendar-apps) |
+| Kalendoriaus programos| [Kas yra kalendoriaus programos?](https://support.microsoft.com/office/57f5ad1d-c364-4054-924e-c796b80f382b) |
 | Debesies šriftai                 | [Debesies šriftai programų pakete „Office“](https://support.microsoft.com/office/f7b009fe-037f-45ed-a556-b5fe6ede6adb)  |
-| DUK |„Outlook“, skirtoje „iOS“ ir „Android“, pasirinkę **Parametrai** > **Žinynas ir atsiliepimai** > **DUK**, būsite perkelti į [https://www.osupportweb.com/a/outlook-mobile](https://www.osupportweb.com/a/outlook-mobile).|
+| DUK |Kai pasirenkate **Parametrai** > **Žinynas ir atsiliepimai** > **DUK** programoje „Outlook for iOS“ ir „Android“, b8site nukreipti į [„Outlook for iOS“ žinyną](https://support.microsoft.com/article/4456b5ef-d20e-4e86-abee-c95f9eba26da) arba į [„Outlook for Android“ žinyną](https://support.microsoft.com/article/8ffeb4f6-b231-4b20-b36a-07e2bce0504b).|
 | Rankraščio efektai                 | [Piešimas ir rašymas rašikliu „Office“](https://support.microsoft.com/office/6D76C674-7F4B-414D-B67F-B3FFEF6CCF53)  |
 | Piktogramų įterpimas                | [Piktogramų įterpimas programų pakete „Microsoft Office“](https://support.microsoft.com/office/e2459f17-3996-4795-996e-b9a13486fa79)   |
 | „Microsoft Forms“ įterpimas      | [Formos ar apklausos įterpimas į „PowerPoint“](https://support.microsoft.com/office/1a316f81-9ea7-4bc2-bda0-024c0d780df1) |
@@ -94,14 +94,14 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 | *Internetinio vaizdo įrašo įterpimas*\*     | [Vaizdo įrašo įterpimas iš „YouTube“ ar kitos svetainės](https://support.microsoft.com/office/8340ec69-4cee-4fe1-ab96-4849154bc6db) |
 | *Įdomūs kalendoriai*\*| „Outlook“, skirtoje „iOS“ ir „Android“, [prenumeruokite kalendorių](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) apie savo mėgstamas sporto komandas ar televizijos laidas. |
 | *Vietos pasiūlymai*\* | Kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, „Outlook“, skirtos „iOS“ ir „Android“, lauke Vieta taip pat bus nurodomas visas adresas. |
-| Žemėlapiai išsamioje įvykio informacijoje | Žinokite, kur reikia nuvykti, naudodamiesi [žemėlapiais](https://www.osupportweb.com/a/outlook-mobile/?s=time-to-leave&f=how-can-i-choose-which-map-will-open-when-i-click-on-get-directions&p=all), pateikiamais įvykio informacijoje programoje „Outlook“, skirtoje „iOS“ ir „Android“. |
+| Žemėlapiai išsamioje įvykio informacijoje | „Outlook for iOS“ ir „Android“ įvykio išsamios informacijos puslapyje bus rodomas [žemėlapis](https://support.microsoft.com/office/0678bfde-9cb7-4beb-9581-712abfe2bb46), paremtas įvykio vietos informacija. |
 | „Office“ žinynas                 | Kai pasirenkate **Žinynas** > **Žinynas** juostelėje arba paspaudžiate F1 „Office“ programoje   |
 | Internetinių figūrų ieška („Visio“) | [Daugiau figūrų ir šablonų rinkinių](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | *„PowerPoint“ funkcija „QuickStarter“*\*     | [Temos nagrinėjimas naudojant „PowerPoint“ funkciją „QuickStarter“](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | *Tyrėjas*\*    | [Programoje „Word“ lengvai ieškokite informacijos, susijusios su dokumentu](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
 | Ką norite daryti    | [Spartesnis darbas su funkcija Ką norite daryti](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Šablonai  | [Nemokamų, iš anksto sukurtų šablonų atsisiuntimas](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
-|*Numatomas kelionės laikas kortelėje „Up Next“*\*|Kai pasirenkate leisti „Outlook“ skirtai „iOS“ ir „Android“ pasiekti jūsų vietą, numatomas jūsų kelionės laikas iki kito įvykio bus įtrauktas į [„Up Next“](https://www.osupportweb.com/a/outlook-mobile/?s=up-next&f=how-does-up-next-work) kortelę, esančią aplanko Gauta viršuje.|
+|*Numatomas kelionės laikas kortelėje „Up Next“*\*|Kai pasirenkate leisti „Outlook“ skirtai „iOS“ ir „Android“ pasiekti jūsų vietą, numatomas jūsų kelionės laikas iki kito įvykio bus įtrauktas į [„Up Next“](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) kortelę, esančią aplanko Gauta viršuje.<br/><br/> [Kas yra „Laikas palikti pranešimų“?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Orų prognozės juosta*\* („Outlook“)| [Kalendoriuje nurodyto miesto, kuriam juostoje skelbiama orų prognozė, keitimas](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 
 > [!NOTE]
