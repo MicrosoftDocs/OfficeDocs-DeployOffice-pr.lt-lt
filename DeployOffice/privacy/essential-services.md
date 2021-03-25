@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 7660e79628e31b17fb2b1c606378391419f15e8e
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
+ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242162"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51031991"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -3374,6 +3374,42 @@ Renkami šių laukų duomenys:
   - 5 – bazinis „WebURL“, įkeltas kliente, yra neleistinas
 
 
+### <a name="officeandroiddocsuiviewspremiumfeatureupsell"></a>Office.Android.DocsUI.Views.PremiumFeatureUpsell
+
+Šis įvykis užfiksuoja nemokamų vartotojų paspaudimus, kai jie nori peržiūrėti mokamos prieigos prie informacijos funkciją. Duomenys naudojami norint įvertinti vartotojų sąveiką su kontekstine papildomo pardavimo patirtimi ir suprasti funkcijas, kurioms vartotojas teikia pirmenybę, skatinančias juos pirkti prenumeratą. Tai padeda mums investuoti, kad pagerintume pageidaujamą įeities taškų rinkinį. 
+
+Renkami šių laukų duomenys:
+
+- **featureId** – TCID (įrankių juostos valdiklio identifikatorius) skirtas aukščiausios kokybės („Premium“) funkcijai
+
+- **featureName** – Aukščiausios kokybės („Premium“) funkcijos pavadinimas
+
+- **seePlanButtonClick** – Kiek kartų spustelėjama ant „Žr. plano mygtukus“, kai papildomai parduodama vartotojo sąsaja
+
+### <a name="officeappleiapreviewyoursubscriptionios"></a>Office.Apple.IAPReviewYourSubscriptioniOS
+
+Šis įvykis užfiksuoja seanso metaduomenis, kai vartotojui rodoma pirkimo programoje (IAP) vartotojo sąsaja ir mygtukai, su kuriais vėliau vartotojas sąveikauja. Šie duomenys naudojami mums padėti suprasti pirkimo srauto trintį ir palyginti jį su kitos pirkimo patirties piltuvėliu, kad suprastume, kuri patirtis yra geresnė vartotojui. 
+
+Renkami šių laukų duomenys:
+
+- **FlowType** – Sveikasis skaičius – Srautas iš ten, kur paleista IAP.
+
+- **Restore** – Eilutė – taisyklės žyma įrašoma, kai spustelėjamas atkūrimo mygtukas
+
+- **PremiumFeatures** – Eilutė – taisyklės žyma registruojama, kai spustelėjamas „PremiumFeatures“ mygtukas
+
+- **Product** – Eilutė – Vartotojų pasirinktas SKU
+
+
+### <a name="officeappleinapppurchasecontext"></a>Office.Apple.InAppPurchaseContext
+
+Šis įvykis įvertina kritinę naudojimo telemetriją pirkimo programos ekrano įeities taške. Duomenys padeda suprasti ir pagerinti vartotojo patirtį nustatant pageidaujamą įeities tašką pirkimo programoje.
+
+Renkami šių laukų duomenys:
+
+- **context** – Eilutė – Srautas, per kurį vartotojas pateko į pirkimo programoje puslapį
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Šis įvykis užfiksuoja duomenis, kurie padeda stebėti „Dime“ komponentų sveikatą. Pavyzdžiui, pirkimo programoje srautui, kai vartotojas pasirenka pirkti „Microsoft 365“ prenumeratą „Office“ programoje, skirtoje „Android“, arba įrenginiuose, kuriuose veikia „Windows“.
@@ -3452,6 +3488,16 @@ Renkami šių laukų duomenys:
 
 - **Data_UserAgent** - Antraštės žymės
 
+
+### <a name="officedocssharedpremiumfeaturemessagebar"></a>Office.Docs.Shared.PremiumFeatureMessageBar
+
+Šis įvykis renka nemokamų vartotojų bakstelėjimus ant aukščiausios kokybės („Premium“ funkcijos, rodomos mokamoje prieigoje prie informacijos. Duomenys naudojami norint suprasti funkcijų, su kuriomis vartotojai sąveikauja, kai jie konvertuojasi į mokamą vartotoją, rinkinį. Tai mums praneša apie pageidaujamus vartotojų įeities taškus ir pagerina vartotojo patirtį.
+
+Renkami šių laukų duomenys:
+
+- **featureId** – TCID (įrankių juostos valdiklio identifikatorius) skirtas aukščiausios kokybės („Premium“) funkcijai, kurį vartotojas bakstelėja
+
+
 ### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
 
 Kritinė naudojimo telemetrija renkama, kad būtų galima nustatyti, kada vartotojas baksteli mygtuką Įsigyti / pirkti.  Duomenys naudojami nustatyti vartotojų, bandančių įsigyti prenumeratą taikomojoje programoje, naudojimo modelį ir konvertavimo metriką.
@@ -3504,6 +3550,26 @@ Renkami šių laukų duomenys:
 Jei dėl kokios nors priežasties negalime automatiškai suaktyvinti licencijos, vartotojui parodomas aktyvinimo vediklis. Tai praneša, kad vartotojui rodomas vediklis. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
 
 Šis įvykis nerenka jokių laukų duomenų.
+
+### <a name="officelicensingbusbarcheckfordynamicbusbarexperiment"></a>Office.Licensing.BusBar.CheckForDynamicBusbarExperiment
+
+Šis įvykis suaktyvinamas vieną kartą kiekvienam licencijuojančios darbinės juostos tipui, kuris bus rodomas su dinaminiu darbinės juostos testuojamu variantu (tvarkymo grupė). Šis duomenų įvykis praneša, ar diske yra parengta ciklo programavimo platformos dinaminės darbinės juostos kampanija. Duomenys bus naudojami naujos ciklo programavimo platformos dinaminės licencijavimo darbinės juostos technologijos būklei įvertinti.
+
+Renkami šių laukų duomenys:
+
+- **DoesCampaignExist (bool)** – Nurodo, ar kampanija yra diske
+
+- **Type (int32)** – Nurodo licencijuojančios darbinės juostos tipą
+
+
+### <a name="officelicensingbusbarshowstashedbusbar"></a>Office.Licensing.BusBar.ShowStashedBusbar
+
+Šis įvykis suaktyvinamas, kai dinaminės ciklo programavimo platformos darbinės juostos rodyti nepavyksta, o vietoje jos reikia rodyti paslėptą statinę darbinę juostą. Šis duomenų įvykis bus naudojamas norint įsitikinti, ar atsarginis statinės darbinės juostos naudojimas yra sėkmingas.
+
+Renkami šių laukų duomenys:
+
+- **Type (int32)** – Nurodo licencijuojančios darbinės juostos tipą
+
 
 ### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
  
@@ -4014,6 +4080,17 @@ Renkami šių laukų duomenys:
  
 - **EnrollmentResult** – „Intune“ registracijos rezultatas
 
+### <a name="skuproductpricenullevent"></a>SKU.PRODUCT.PRICE.NULL.EVENT
+
+Šis įvykis naudojamas įvykiams užfiksuoti, siekiant įvertinti klaidos poveikį, dėl kurio vartotojai šiandien SKU parinkiklio ekrane vietoj kainos mato „Null“. Klaida bus diagnozuota toliau, siekiant nustatyti gedimo šalinimą. 
+
+Renkami šių laukų duomenys:
+
+- **PriceNotFound** – Kainos nerandamos iš parduotuvės.
+
+- **StoreNotInitilized** – Kai parduotuvė nėra sėkmingai inicijuota.
+
+
 ## <a name="microsoft-autoupdate-mau-events"></a>„Microsoft AutoUpdate“ (MAU) įvykiai
 
 ### <a name="additionalappinfoinvalidpreference"></a>additionalappinfo_invalidpreference
@@ -4215,6 +4292,49 @@ Renkami šių laukų duomenys:
 - **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
 
 - **SessionId** – seanso identifikatorius
+
+### <a name="appinstallxpcremoteobjecterror"></a>appinstall.xpcremoteobjecterror
+
+Šis įvykis praneša apie klaidą, rastą bandant prisijungti prie „Privileged Helper Tool“ naudojant XPC ryšį. Mes naudojame šį įvykį norėdami stebėti ir spręsti galimas MAU („Microsoft“ automatinis naujinimas) diegimo problemas.
+
+Renkami šių laukų duomenys:
+
+- **App** – programos siuntimo procesas
+
+- **AppID** – programos identifikatorius.
+
+- **AppInfo_Language** – kalba, kuria veikia programa
+
+- **AppVersionLong** – programos versija.
+
+- **Channel** – auditorijos nuostatos
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pateikiama informacija apie aptiktą tarpinio serverio klaidos pobūdį
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
 
 ### <a name="appregistryconfig"></a>appregistry.config
 
@@ -9559,6 +9679,50 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
+
+### <a name="guidashboardrowviewupdatestate"></a>gui.dashboardrowview.updatestate
+
+Šis įvykis praneša apie klaidą, rastą bandant rodyti programos informaciją MAU („Microsoft“ automatinis naujinimas) vartotojo sąsajoje. Mes naudojame šį įvykį norėdami užtikrinti MAU („Microsoft“ automatinis naujinimas) būklę ir stebėti bei spręsti gedimus.
+
+Renkami šių laukų duomenys:
+
+- **App** – programos siuntimo procesas
+
+- **AppID** – programos identifikatorius.
+
+- **AppInfo_Language** – kalba, kuria veikia programa
+
+- **AppVersionLong** – programos versija.
+
+- **Channel** – auditorijos nuostatos
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **Payload** – pateikiama informacija apie patirtų klaidų pobūdį
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+
 ### <a name="guidashboardviewappisopendialogdisplay"></a>gui.dashboardview.appisopendialog.display 
 
 Šis įvykis nurodo, kad vartotojo sąsaja atidaro dialogo langą atidaro uždaryti programą, kad būtų galima tęsti jos naujinimą. Šis įvykis naudojamas nustatyti uždelstų naujinimų kiekį, kad būtų galima ateityje sumažinti trukdžius vartotojams.
@@ -10325,6 +10489,55 @@ Renkami šių laukų duomenys:
 - **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
 
 - **SessionId** – seanso identifikatorius
+
+
+### <a name="installedappacknowledgedcoreappleevent"></a>installedapp.acknowledgedcoreappleevent
+
+Šis įvykis nurodo, kad „Microsoft“ automatinis naujinimas (MAU) iš registruotos programos gavo „Apple“ įvykio patvirtinimą, kad nutrauktų programą ir tęstų laukiantį programos naujinimą. Šis įvykis naudojamas siekiant padėti plėtoti būsimą patobulinimą ir sumažinti vartotojų trukdžių naujinant programą. 
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppID** – atnaujinamos taikomosios programos identifikatorius
+
+- **AppInfo_Language** – kalba, kuria veikia programa
+
+- **AppleEventClass** – nurodo, kokio tipo įvykis siunčiamas/pripažįstamas
+
+- **AppleEventID** – unikalus siuntimo/pripažinto įvykio identifikatorius
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowToCheck** – kaip tikrinti parametrus
+
+- **Payload** – turi bandymų iš naujo skaičių
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+- **UpdateID** – naujinimo identifikatorius
 
 
 ### <a name="installedappinvalidbundle"></a>installedapp.invalidbundle
@@ -11197,7 +11410,7 @@ Renkami šių laukų duomenys:
 
 - **HowTocheck** – naujinimų tikrinimo pirmenybė
 
-- **Payload** – tekstas, nurodantis veikimo sėkmę.
+- **Payload** – tekstas, nurodantis veikimo sėkmę. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
@@ -11205,6 +11418,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
+- **Success** – Loginė reikšmė (Bulio logikos) rodanti operacijos sėkmę.
 
 ### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
@@ -11846,11 +12060,13 @@ Renkami šių laukų duomenys:
 
 - **HowToCheck** – kaip tikrinti parametrus
 
-- **Payload** – statinis tekstas.
+- **Payload** – statinis tekstas *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **Reason** – statinis tekstas
 
 - **SessionId** – seanso identifikatorius
 
@@ -12168,11 +12384,13 @@ Renkami šių laukų duomenys:
 
 - **HowToCheck** – kaip tikrinti parametrus
 
-- **Payload** – statinis tekstas.
+- **Payload** – statinis tekstas *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
 - **PipelineInfo_ClientIp** – pirmieji trys IP adreso aštuonkeliai
+
+- **Reason** – statinis tekstas
 
 - **SessionId** – seanso identifikatorius
 
@@ -12320,6 +12538,8 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
 
+- **Duration** – Tekstas, nurodantis snaudimo trukmę
+
 - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
 
 - **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
@@ -12328,7 +12548,7 @@ Renkami šių laukų duomenys:
 
 - **HowToCheck** – kaip tikrinti parametrus
 
-- **Payload** – statinis tekstas.
+- **Payload** – statinis tekstas *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
 - **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
 
@@ -14590,6 +14810,47 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
+
+### <a name="updatemanagernetwork"></a>updatemanager.network
+
+Šis įvykis įrašo tinklo prieinamumą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+ 
+Renkami šių laukų duomenys:
+
+- **App** – programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia programa
+
+- **AppVersionLong** – programos versija
+
+- **Channel** – auditorijos nuostatos
+
+- **Device_NetworkCountry** – įrenginio apskritis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos versija
+
+- **Event_ReceivedTime** – laikas, kada buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso oktetai
+
+- **SessionId** – seanso identifikatorius
+
+- **ServerReacheable** – Loginė reikšmė (Bulio logikos), nurodanti, ar tinklas yra prieinamas.
+
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
@@ -15447,6 +15708,19 @@ Renkami šių laukų duomenys:
 Tarnybų konfigūravimo paslauga nerenka būtinųjų tarnybų duomenų įvykių.
 
 ## <a name="telemetry-events"></a>Telemetrijos įvykiai
+
+### <a name="appdeeplink"></a>app.deep.link
+
+Šis įvykis padeda stebėti kalendoriaus susitikimo paleidimo naudojimą įvairiuose galiniuose punktuose. Šis įvykis leidžia mums nustatyti du dalykus, kai susitikimas paleidžiamas naudojant „Skype“ verslui, kai susitikimas paleidžiamas per „Teams“ ir jei įdiegta „Teams“ programa.
+
+Renkami šių laukų duomenys: 
+
+- **account** – Maišos paskyros informacija, kuri atliko veiksmą
+
+- **action_type** – atliktas veiksmas, pvz., susitikimo paleidimas ar programos diegimas
+
+- **application** – programa, kuri buvo paleista naudojant gilųjį saitą, pvz., „Teams“ ar „Skype“ verslui
+
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
 
@@ -16363,81 +16637,100 @@ Renkami šių laukų duomenys:
 
   - **AppName –** paveiktos programos pavadinimas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **CrashedAssignedFlights –** procesams, kuriuose įvyko gedimas, priskirti variantai. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **AppUsedVirtualMemory** - virtuali atmintis naudojama „Office“ programoje
 
-  - **CrashedConfigIds –** procesui, kuriame įvyko gedimas, priskirta konfigūracija. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **BucketId** – gedimo „Watson“ skirstymo identifikatorius
 
-  - **CrashedEcsETag -** proceso, kuriame įvyko gedimas, eksperimento identifikatorius.
+- **CabGuid** – globaliai unikalus identifikatorius (GUID) skirtas „Watson“ cab failui.
 
-  - **CrashedImpressionId –** proceso, kuriame įvyko gedimas, parodymo identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **CallStack** – „Microsoft“ vidinis iškvietimų dėklas, sukeliantis gedimą.
 
-  - **CrashedModuleName –** modulio su klaida pavadinimas.
+- **CrashedAssignedFlights –** procesams, kuriuose įvyko gedimas, priskirti variantai. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **CrashedProcessSessionID –** proceso, kuriame įvyko gedimas, unikalusis identifikatorius. 
+- **CrashedConfigIds –** procesui, kuriame įvyko gedimas, priskirta konfigūracija. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **CrashedProcessSessionInitTime –** paveikto proceso pradžios laikas. 
+- **CrashedEcsETag -** proceso, kuriame įvyko gedimas, eksperimento identifikatorius.
 
-  - **CrashedSessionInitTime –** paveikto proceso pabaigos laikas.
+- **CrashedImpressionId –** proceso, kuriame įvyko gedimas, parodymo identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **CrashTag** – unikalus gedimo kodo identifikatorius.
+- **CrashedModuleName –** modulio su klaida pavadinimas.
 
-  - **CrashType –** gedimo tipo skirstymo identifikatorius.
+- **CrashedProcessSessionID –** proceso, kuriame įvyko gedimas, unikalusis identifikatorius. 
 
-  - **DetectionTime –** netikėto išėjimo aptikimo laikas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **CrashedProcessSessionInitTime –** paveikto proceso pradžios laikas. 
 
-  - **ErrorString –** klaidos aprašas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **CrashedSessionInitTime –** paveikto proceso pabaigos laikas.
 
-  - **ExceptionAddress –** adresas programoje, kur įvyko triktis. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **CrashTag** – unikalus gedimo kodo identifikatorius.
 
-  - **ExceptionCode –** išimties skirstymo identifikatorius.
+- **CrashType –** gedimo tipo skirstymo identifikatorius.
 
-  - **FaultAppName –** programos su klaida pavadinimas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **DetectionTime –** netikėto išėjimo aptikimo laikas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **InstallMethod –** ar į dabartinę „Office“ komponavimo versiją buvo atnaujinta, ji buvo įdiegta atšaukus keitimus, ar tai nauja įdiegtis.
+- **ErrorString –** klaidos aprašas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **InstallType –** būdo, kuriuo įdiegtas „Office“, identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **ExceptionAddress –** adresas programoje, kur įvyko triktis. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **InstallTypeName –** būdo, kuriuo įdiegta „Office“, identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **ExceptionCode –** išimties skirstymo identifikatorius.
 
-  - **IsLabMachine –** ar „Office“ naudojama „Microsoft“ laboratorijoje. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **ExceptionInfo** - išimties sistemos informacija.
 
-  - **IsMsftInternal –** ar „Office“ naudojantis „Windows“ vartotojas yra „Microsoft“ darbuotojas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **FaultAppName –** programos su klaida pavadinimas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **HangTypeCode** - Nurodo pakibimo klasę, jei procesas „pakibo“ vykdymo metu.
 
-  - **ModuleBaseAddress –** modulio su klaida pradinis adresas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **InstallMethod –** ar į dabartinę „Office“ komponavimo versiją buvo atnaujinta, ji buvo įdiegta atšaukus keitimus, ar tai nauja įdiegtis.
 
-  - **ModuleBuildVersion –** modulio su klaida komponavimo versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **InstallType –** būdo, kuriuo įdiegtas „Office“, identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **ModuleMajorVersion –** modulio su klaida pagrindinės versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **InstallTypeName –** būdo, kuriuo įdiegta „Office“, identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **ModuleMinorVersion –** modulio su klaida papildomos versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **IsLabMachine –** ar „Office“ naudojama „Microsoft“ laboratorijoje. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **ModuleName –** modulio su klaida pavadinimas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **IsMsftInternal –** ar „Office“ naudojantis „Windows“ vartotojas yra „Microsoft“ darbuotojas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **HexModuleOffset –** poslinkis baitais (šešioliktainis) nuo pradinio adreso, kur įvyko triktis.
+- **ModuleBaseAddress –** modulio su klaida pradinis adresas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **ModuleRevisionVersion –** modulio su klaida komponavimo patikslintos versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **ModuleBuildVersion –** modulio su klaida komponavimo versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **ModuleSize –** modulio su klaida dydis baitais. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **ModuleMajorVersion –** modulio su klaida pagrindinės versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **ModuleVersion** - atsakingo už gedimą modulio su klaida versija.
+- **ModuleMinorVersion –** modulio su klaida papildomos versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **OfficeArchitectureText** - Įdiegimo architektūra: x64, x86 ir kt.
+- **ModuleName –** modulio su klaida pavadinimas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **OfficeUILang –** „Office“ komponavimo versijos vartotojo sąsajos kalba.
+- **HexModuleOffset –** poslinkis baitais (šešioliktainis) nuo pradinio adreso, kur įvyko triktis.
 
-  - **OSEnvironment –** aplinkos, kurioje naudojamas „Office“, identifikatorius.
+- **ModuleRevisionVersion –** modulio su klaida komponavimo patikslintos versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **PreviousBuild –** anksčiau įdiegta komponavimo versija
+- **ModuleSize –** modulio su klaida dydis baitais. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
-  - **ProcessorArchitecture** - aplinkos procesoriaus architektūra: x64, x86 ir kt.
+- **ModuleVersion** - atsakingo už gedimą modulio su klaida versija.
 
-  - **SessionFlags** - apibrėžia seanso sąlygas, tokias kaip: ar buvo atidarytas arba redaguotas failas, ar buvo atidarytas debesies dokumentas, ar įvykdyta sistemos įkrovos seka ir kt. 
+- **OfficeArchitectureText** - Įdiegimo architektūra: x64, x86 ir kt.
 
-  - **UAETypeName –** programos netinkamo išjungimo skirstymo identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **OfficeUILang –** „Office“ komponavimo versijos vartotojo sąsajos kalba.
 
-  - **UninitLibletId –** unikalus nepavykusio komponento identifikatorius.
+- **OSEnvironment –** aplinkos, kurioje naudojamas „Office“, identifikatorius.
 
-  - **VerifyElseCrashTag –** programos gedimo vietos unikalusis identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
+- **PreviousBuild –** anksčiau įdiegta komponavimo versija
+
+- **ProcessorArchitecture** - aplinkos procesoriaus architektūra: x64, x86 ir kt.
+
+- **SessionFlags** - apibrėžia seanso sąlygas, tokias kaip: ar buvo atidarytas arba redaguotas failas, ar buvo atidarytas debesies dokumentas, ar įvykdyta sistemos įkrovos seka ir kt. 
+
+- **StackHash** - pateikia maišos ID „Office“ trikčių rietuvei.
+
+- **SystemAvailableMemory** - laisva atmintis operacinėje sistemoje
+
+- **UAETypeName –** programos netinkamo išjungimo skirstymo identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+
+- **UninitLibletId –** unikalus nepavykusio komponento identifikatorius.
+
+- **VerifyElseCrashTag –** programos gedimo vietos unikalusis identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+
+- **WatsonReportId** - identifikatorius arba ataskaita nusiųsta „Windows Watson“ tarnybai.
+
+- **WerEventCreatedTime** - „Windows“ klaidų ataskaitos įvykio laiko žymė.
 
 ### <a name="officesystemsystemhealthungracefulappexitimmersive"></a>Office.System.SystemHealthUngracefulAppExitImmersive
 
