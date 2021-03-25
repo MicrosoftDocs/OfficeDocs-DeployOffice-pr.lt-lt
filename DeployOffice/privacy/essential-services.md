@@ -3376,7 +3376,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeandroiddocsuiviewspremiumfeatureupsell"></a>Office.Android.DocsUI.Views.PremiumFeatureUpsell
 
-Šis įvykis užfiksuoja nemokamų vartotojų paspaudimus, kai jie nori peržiūrėti mokamos prieigos prie informacijos funkciją. Duomenys naudojami norint įvertinti vartotojų sąveiką su kontekstine papildomo pardavimo patirtimi ir suprasti funkcijas, kurioms vartotojas teikia pirmenybę, skatinančias juos pirkti prenumeratą. Tai padeda mums investuoti, kad pagerintume pageidaujamą įeities taškų rinkinį. 
+Šis įvykis užfiksuoja nemokamus vartotojų paspaudimus, kai jie nori peržiūrėti mokamos prieigos prie informacijos funkciją. Duomenys naudojami norint įvertinti vartotojų sąveiką su kontekstine papildomo pardavimo patirtimi ir suprasti funkcijas, kurioms vartotojas teikia pirmenybę, skatinančias juos pirkti prenumeratą. Tai padeda mums investuoti, kad pagerintume pageidaujamą įeities taškų rinkinį. 
 
 Renkami šių laukų duomenys:
 
@@ -3491,7 +3491,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officedocssharedpremiumfeaturemessagebar"></a>Office.Docs.Shared.PremiumFeatureMessageBar
 
-Šis įvykis renka nemokamų vartotojų bakstelėjimus ant aukščiausios kokybės („Premium“ funkcijos, rodomos mokamoje prieigoje prie informacijos. Duomenys naudojami norint suprasti funkcijų, su kuriomis vartotojai sąveikauja, kai jie konvertuojasi į mokamą vartotoją, rinkinį. Tai mums praneša apie pageidaujamus vartotojų įeities taškus ir pagerina vartotojo patirtį.
+Šis įvykis renka nemokamų vartotojų bakstelėjimus ant aukščiausios kokybės („Premium“) funkcijos, rodomos mokamoje prieigoje prie informacijos. Duomenys naudojami norint suprasti funkcijų, su kuriomis vartotojai sąveikauja, kai jie konvertuojasi į mokamą vartotoją, rinkinį. Tai mums praneša apie pageidaujamus vartotojų įeities taškus ir pagerina vartotojo patirtį.
 
 Renkami šių laukų duomenys:
 
@@ -11418,7 +11418,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-- **Success** – Loginė reikšmė (Bulio logikos) rodanti operacijos sėkmę.
+- **Success** – Bulio logika rodanti operacijos sėkmę.
 
 ### <a name="installupdatestaskupdatestatus"></a>installupdatestask.updatestatus
 
@@ -12538,7 +12538,7 @@ Renkami šių laukų duomenys:
 
 - **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
 
-- **Duration** – Tekstas, nurodantis snaudimo trukmę
+- **Duration** – tekstas, nurodantis snaudimo trukmę
 
 - **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
 
@@ -14849,7 +14849,7 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
-- **ServerReacheable** – Loginė reikšmė (Bulio logikos), nurodanti, ar tinklas yra prieinamas.
+- **ServerReacheable** – Bulio logika, nurodanti, ar tinklas yra prieinamas.
 
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
