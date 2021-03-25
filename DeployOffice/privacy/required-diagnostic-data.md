@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 7bf7ce172600d1b944f521da6bb5e0420d6d59f2
-ms.sourcegitcommit: 163de1916420d26e4a0ef9de941fc4e86ade0412
+ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
+ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242198"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51167377"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -1788,6 +1788,8 @@ Toliau nurodyti laukai renkami „Android“ ir „Android“:
 
 - **include_deleted** – ar ieškos rezultatuose rodomos panaikintos parinktys 
 
+- **is_best_match_suggestion** – ar pasirinktas ieškos patarimas yra tiksliausias atitikmuo.
+
 - **is_ics_external_data** – fiksuoja, ar įtrauktas įvykis yra vidinis (pvz.,  įtraukta į „Outlook“ į „Outlook“ kalendorių) ar išorinis (t. y. įtraukta iš kitos el. pašto programos, pvz., iš „Gmail“ į „Outlook“ kalendorių).
 
 - **is_network_fully_connected** – užuominai apie neprisijungus atliktos paieškos priežastį gauti. Jei tinklas yra prijungtas ir ieška neprijungta, priežastis greičiausiai bus serverio skirtojo laiko pabaiga
@@ -2620,6 +2622,18 @@ Renkami šių laukų duomenys:
 - **txp** – nurodo, kokio tipo susitikimas buvo sukurtas iš skrydžio užsakymų ir pristatymų, kad būtų galima aptikti problemas, susijusias su šio tipo susitikimais
 
 - **with_message_enabled** – nurodo, ar vartotojas gali atsakyti naudodamas pranešimą, kad būtų galima nustatyti problemas, susijusias su atsakymu į susitikimų kvietimus
+
+
+#### <a name="multiwindowlaunch"></a>multi.window.launch
+
+Šis įvykis užfiksuoja, kada vartotojas imasi veiksmo, kuriame yra kelių langų paleidimas suskleidžiamuose įrenginiuose, pvz., kuria el. laišką, įvykį, atidaro kalendoriaus langą.  Jis naudoja veiksmą, kad atsimintų tokį veiksmą, pvz., ir toliau gauti raginimą arba visada paleisti naujame lange.  Šio įvykio surinkti duomenys bus naudojami įvertinti aptinkamumą, efektyvumą, o taip pat ir bendras vartotojo nuostatas, kad būtų galima valdyti dabartinę ir ateities kelių langų funkcijų plėtrą.
+
+Renkami šių laukų duomenys: 
+
+- **is_remembered** – ar nuostata paleisti naujame lange iš praneštos vietos buvo įrašyta vartotojo.
+
+- **multi_window_origin** – vieta programoje, kurioje vyksta sąveika paleisti kitą programos ekraną naujame lange.
+
 
 #### <a name="officeandroiddocsuifileoperationsopendocumentmeasurements"></a>Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
 
@@ -6592,6 +6606,28 @@ Renkami šių laukų duomenys:
 
   - **Data\_CloseAndReopen:bool –** ar šis dokumentas buvo uždarytas, ar pakartotinai atidarytas?
 
+  - **Data_ClpDocHasDrmDoc:bool** – ar dokumentas turi DRM dokumentą
+
+  - **Data_ClpDocHasIdentity:bool** – ar dokumentas turi tapatybės informaciją (naudojamą gauti ir nustatyti slaptumo žymas)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – ar dokumente yra veikiantys seanso slaptumo žymos metaduomenys
+
+  - **Data_ClpDocHasSpoMetadata:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IPackage
+
+  - **Data_ClpDocIsProtected:bool** – ar dokumentas yra apsaugotas IRM, ar ne
+
+  - **Data_ClpDocMetadataSource:int** – išvardijimas, nurodantis, iš kur gaunami slaptumo žymos metaduomenys (IRM, OPC dalies, „SharePoint“ ir t. t.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** – ar dokumentai reikia konvertuoti slaptumo žymos duomenis iš custom.xml dalies
+
+  - **Data_ClpDocNumFailedSetLabels:int** – slaptumo žymų, kurių nepavyko nustatyti dokumente, skaičius
+
+  - **Data_ClpDocSessionMetadataDirty:bool** – ar dokumente yra veikiantys slaptumo žymos duomenys, kurie buvo suteršti
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – ar dokumentas buvo patikimo ribose (o tai leidžia bendraautoriaus dirbti dokumentuose, apsaugotuose slaptumo žymų)
+
   - **Data\_DetachedDuration:long –** veiklos atskyrimo / neveikimo trukmė
 
   - **Data\_Doc\_AccessMode:long –** kaip šis dokumentas buvo atidarytas (tik skaityti | skaityti ir rašyti)
@@ -6711,6 +6747,28 @@ Renkami šių laukų duomenys:
   - **Data\_ClearDirtyFlagTimeMS:long –** laikas, skirtas dokumento neatnaujintai žymei valyti
 
   - **Data\_CloneDocumentTimeMS:long –** laikas, skirtas dokumentą prieš įrašymą klonuoti
+
+  - **Data_ClpDocHasDrmDoc:bool** – ar dokumentas turi DRM dokumentą
+
+  - **Data_ClpDocHasIdentity:bool** – ar dokumentas turi tapatybės informaciją (naudojamą gauti ir nustatyti slaptumo žymas)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – ar dokumente yra veikiantys seanso slaptumo žymos metaduomenys
+
+  - **Data_ClpDocHasSpoMetadata:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IPackage
+
+  - **Data_ClpDocIsProtected:bool** – ar dokumentas yra apsaugotas IRM, ar ne
+
+  - **Data_ClpDocMetadataSource:int** – išvardijimas, nurodantis, iš kur gaunami slaptumo žymos metaduomenys (IRM, OPC dalies, „SharePoint“ ir t. t.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** – ar dokumentai reikia konvertuoti slaptumo žymos duomenis iš custom.xml dalies
+
+  - **Data_ClpDocNumFailedSetLabels:int** – slaptumo žymų, kurių nepavyko nustatyti dokumente, skaičius
+
+  - **Data_ClpDocSessionMetadataDirty:bool** – ar dokumente yra veikiantys slaptumo žymos duomenys, kurie buvo suteršti
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – ar dokumentas buvo patikimo ribose (o tai leidžia bendraautoriaus dirbti dokumentuose, apsaugotuose slaptumo žymų)
 
   - **Data\_CommitTransactionTimeMS:long –** laikas, skirtas įrašymo operacijai atlikti
 
@@ -6857,6 +6915,28 @@ Surinkti kiekvieną kartą, kai „PowerPoint“ atlieka operaciją įrašyti ka
 Renkami šių laukų duomenys:
 
 - **Data_AddDocTelemetryResult:long** – ar šis žurnalo įrašas turi visą reikiamą dokumento telemetriją (Data_Doc_* fields)? Jei ne, kodėl?
+
+- **Data_ClpDocHasDrmDoc:bool** – ar dokumentas turi DRM dokumentą
+
+- **Data_ClpDocHasIdentity:bool** – ar dokumentas turi tapatybės informaciją (naudojamą gauti ir nustatyti slaptumo žymas)
+
+- **Data_ClpDocHasSessionMetadata:bool** – ar dokumente yra veikiantys seanso slaptumo žymos metaduomenys
+
+- **Data_ClpDocHasSpoMetadata:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IPackage
+
+- **Data_ClpDocIsProtected:bool** – ar dokumentas yra apsaugotas IRM, ar ne
+
+- **Data_ClpDocMetadataSource:int** – išvardijimas, nurodantis, iš kur gaunami slaptumo žymos metaduomenys (IRM, OPC dalies, „SharePoint“ ir t. t.)
+
+- **Data_ClpDocNeedsUpconversion:bool** – ar dokumentai reikia konvertuoti slaptumo žymos duomenis iš custom.xml dalies
+
+- **Data_ClpDocNumFailedSetLabels:int** – slaptumo žymų, kurių nepavyko nustatyti dokumente, skaičius
+
+- **Data_ClpDocSessionMetadataDirty:bool** – ar dokumente yra veikiantys slaptumo žymos duomenys, kurie buvo suteršti
+
+- **Data_ClpDocWasInTrustBoundary:bool** – ar dokumentas buvo patikimo ribose (o tai leidžia bendraautoriaus dirbti dokumentuose, apsaugotuose slaptumo žymų)
 
 - **Data_CppUncaughtExceptionCount:long** – veiklos veikimo metu neaptiktos vietinės išimtys
 
@@ -7044,6 +7124,28 @@ Surinkti kiekvieną kartą, kai „PowerPoint“ įrašo naudodama senesnį kodo
 Renkami šių laukų duomenys:
 
 - **Data_AddDocTelemetryResult:long** – ar šis žurnalo įrašas turi visą reikiamą dokumento telemetriją (Data_Doc_* fields)? Jei ne, kodėl?
+
+- **Data_ClpDocHasDrmDoc:bool** – ar dokumentas turi DRM dokumentą
+
+- **Data_ClpDocHasIdentity:bool** – ar dokumentas turi tapatybės informaciją (naudojamą gauti ir nustatyti slaptumo žymas)
+
+- **Data_ClpDocHasSessionMetadata:bool** – ar dokumente yra veikiantys seanso slaptumo žymos metaduomenys
+
+- **Data_ClpDocHasSpoMetadata:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IMetadataCache
+
+- **Data_ClpDocHasSpoPackage:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IPackage
+
+- **Data_ClpDocIsProtected:bool** – ar dokumentas yra apsaugotas IRM, ar ne
+
+- **Data_ClpDocMetadataSource:int** – išvardijimas, nurodantis, iš kur gaunami slaptumo žymos metaduomenys (IRM, OPC dalies, „SharePoint“ ir t. t.)
+
+- **Data_ClpDocNeedsUpconversion:bool** – ar dokumentai reikia konvertuoti slaptumo žymos duomenis iš custom.xml dalies
+
+- **Data_ClpDocNumFailedSetLabels:int** – slaptumo žymų, kurių nepavyko nustatyti dokumente, skaičius
+
+- **Data_ClpDocSessionMetadataDirty:bool** – ar dokumente yra veikiantys slaptumo žymos duomenys, kurie buvo suteršti
+
+- **Data_ClpDocWasInTrustBoundary:bool** – ar dokumentas buvo patikimo ribose (o tai leidžia bendraautoriaus dirbti dokumentuose, apsaugotuose slaptumo žymų)
 
 - **Data_CppUncaughtExceptionCount:long** – veiklos veikimo metu neaptiktos vietinės išimtys
 
@@ -8750,6 +8852,12 @@ Renkami šių laukų duomenys:
 
 - **has_mip_label** – nurodo, ar pranešime buvo pažymėtas MIK žyme
 
+- **image_attachment_count** – nurodo, kiek vaizdų siunčiama pranešimo prieduose
+
+- **image_body_count** – nurodo, kiek vaizdų siunčiama pranešimo tekste
+
+- **image_movement_count** – nurodo, kiek pranešimo vaizdų buvo perkelta į pranešimo tekstą arba atgal.
+
 - **is_group_escalation** – ar tai grupės eskaluotas pranešimas, „eskaluotas pranešimas“ – tai pranešimas, išsiųstas į vartotojo pašto dėžutę dėl eskalavimo (prenumeruota grupei)
 
 - **is_groups** – seka, ar siunčiamas pranešimas yra grupės pranešimas
@@ -9779,6 +9887,28 @@ Renkami šių laukų duomenys:
   - **Data\_CheckWebSharingViolationForIncOpen -** Metodo CheckWebSharingViolationForIncOpen vykdymo trukmė milisekundėmis
    
   - **Data_CloseAndReopenWithoutDiscard –** Ar dokumentas buvo uždarytas ir iš naujo atidarytas atidarymo proceso metu neatmetant.
+
+  - **Data_ClpDocHasDrmDoc:bool** – ar dokumentas turi DRM dokumentą
+
+  - **Data_ClpDocHasIdentity:bool** – ar dokumentas turi tapatybės informaciją (naudojamą gauti ir nustatyti slaptumo žymas)
+
+  - **Data_ClpDocHasSessionMetadata:bool** – ar dokumente yra veikiantys seanso slaptumo žymos metaduomenys
+
+  - **Data_ClpDocHasSpoMetadata:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IMetadataCache
+
+  - **Data_ClpDocHasSpoPackage:bool** – ar dokumente yra slaptumo žymos metaduomenys iš SPO per IPackage
+
+  - **Data_ClpDocIsProtected:bool** – ar dokumentas yra apsaugotas IRM, ar ne
+
+  - **Data_ClpDocMetadataSource:int** – išvardijimas, nurodantis, iš kur gaunami slaptumo žymos metaduomenys (IRM, OPC dalies, „SharePoint“ ir t. t.)
+
+  - **Data_ClpDocNeedsUpconversion:bool** – ar dokumentai reikia konvertuoti slaptumo žymos duomenis iš custom.xml dalies
+
+  - **Data_ClpDocNumFailedSetLabels:int** – slaptumo žymų, kurių nepavyko nustatyti dokumente, skaičius
+
+  - **Data_ClpDocSessionMetadataDirty:bool** – ar dokumente yra veikiantys slaptumo žymos duomenys, kurie buvo suteršti
+
+  - **Data_ClpDocWasInTrustBoundary:bool** – ar dokumentas buvo patikimo ribose (o tai leidžia bendraautoriaus dirbti dokumentuose, apsaugotuose slaptumo žymų)
 
   - **Data\_ContentTransaction -** Iš anksto nustatytų reikšmių rinkiniai, kai galima sukurti transakciją (AllowedOnLoadDocument, AllowedOnOpenComplete ir kt.)
 
@@ -12520,9 +12650,9 @@ Renkami šių laukų duomenys:
   
 - **BootToStart** – ar paleidžiant šią taikomąją programą vartotojas pasirinko rodyti pradžios ekraną.
 
-- **ColdBoot** – ar „Office“ taikomoji programa paleidžiama pirmą kartą paleidus sistemą iš naujo, ar reikėjo programos dvejetainį įkelti iš disko.
+- **ColdBoot** – ar „Office“ taikomoji programa buvo paleista pirmą kartą paleidus sistemą iš naujo, ar reikėjo programos dvejetainį įkelti iš disko. (tik „macOS“/ „iOS“)
 
-- **Model** – įrenginio modelis.
+- **DeviceModel** – įrenginio modelis. (tik „macOS“/ „iOS“)
 
 -  – atidarant dokumentą nurodo dokumentą pateikusią tarnybą („OneDrive“, „File Server“, „SharePoint“ ir kt.)
 
@@ -12532,6 +12662,8 @@ Renkami šių laukų duomenys:
 
 - **FirstBoot** – ar tai buvo pirmas taikomosios programos įkrovimas.
 
+- **FreeMemoryPercentage** – kiek procentų atminties įrenginyje laisva. (tik „Windows“)
+
 - **Initializationduration** – pirmojo „Office“ inicijavimo proceso trukmė mikrosekundėmis.
 
 - **InterruptionMessageId** – ar paleidimas buvo pertrauktas dialogo lango, prašančio naudotojo atlikti įvestį, dialogo lango ID.
@@ -12539,6 +12671,16 @@ Renkami šių laukų duomenys:
 - **LegacyDuration** – veiklos vykdymo trukmė, matuojama naudojant skirtingus pradžios ir pabaigos taškus nei Activity.Duration.
 
 - **OpenAsNew** – ar programa buvo paleista atidarius esamą dokumentą kaip šabloną naujam.
+
+- **PageFaultCount** – proceso puslapių klaidų skaičius. (tik „Windows“)
+
+- **PrimaryDiskType** – ar pirminis saugyklos įrenginys yra netrinusis loginis diskas ar pasukamasis diskas bei jo pasukimo greitis (jei taikoma). (tik „macOS“/ „iOS“)
+
+- **PrivateCommitUsageMB** – „Commit Charge“ (t. y. atminties, kurią atminties valdytojas paskyrė šiam procesui, kiekis) procesui megabaitais. (tik „Windows“)
+
+- **ProcessorCount** – procesorių skaičius įrenginyje. (tik „macOS“/ „iOS“)
+
+- **TotalPhysicalMemory** – bendras įrenginio fizinės atminties kiekis. (tik „macOS“/ „iOS“)
 
 - **TotalWorkingSetMB** – proceso darbinio rinkinio atminties kiekis megabaitais.
 
