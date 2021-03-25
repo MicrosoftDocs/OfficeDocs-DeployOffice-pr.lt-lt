@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Leidžia „Office“ administratoriams apžvelgti privalomuosius tarnybų duomenis, kurie renkami apie „Office“ prijungtąsias funkcijas.
 hideEdit: true
-ms.openlocfilehash: faa3507708b4768ee3b2b0f51257273c31ad2de7
-ms.sourcegitcommit: 73158b40bdc2d83bdadedeafe0fd152b449d2a44
+ms.openlocfilehash: 7480869114096dc8f858ce2b1551575c6224ae64
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47440180"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181927"
 ---
 # <a name="required-service-data-for-office"></a>Privalomieji „Office“ tarnybų duomenys
 
@@ -51,7 +51,7 @@ Būtinieji tarnybos duomenys yra atskirti nuo būtinųjų arba pasirenkamųjų [
 
 Taip pat renkami ir įmonei „Microsoft“ siunčiami [pagrindinių „Office“ tarnybų](essential-services.md), pvz., licencijavimo tarnybos, kuri patvirtina, kad turite tinkamą licenciją naudoti „Office“, būtinieji tarnybų duomenys. Jei esate organizacijos administratorius ir galite valdyti daugelį jums arba jūsų vartotojams pasiekiamų prisijungus naudojamų funkcijų, yra tarnybų, kurios yra būtinos, kad „Office“ veiktų, ir kurių išjungti negalima. Duomenys, skirti pagrindinėms tarnyboms, visada siunčiami ir tvarkomi „Microsoft“, kai naudojate „Office“, neatsižvelgiant į tai, kaip sukonfigūruoti kiti su privatumu susiję parametrai.
 
-Būtinieji tarnybos duomenys pasiekiami naudojant duomenų paslaugų užklausas (DSRs). Daugiau informacijos ieškokite [„Microsoft" privatumo nuostatose](https://privacy.microsoft.com/privacystatement) ir [„Office 365“ duomenų subjekto užklausose, skirtose GDPR ir CCMA](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365).
+Būtinieji tarnybos duomenys pasiekiami naudojant duomenų paslaugų užklausas (DSRs). Daugiau informacijos ieškokite [„Microsoft" privatumo nuostatose](https://privacy.microsoft.com/privacystatement) ir [„Office 365“ duomenų subjekto užklausose, skirtose GDPR ir CCMA](/microsoft-365/compliance/gdpr-dsr-office365).
 
 Jei esate organizacijos administratorius ir norite valdyti prisijungus naudojamas funkcijas, žr. šiuos straipsnius:
 

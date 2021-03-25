@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: fe0d70bb03699af3b393de560234f9a1bb32c3c7
-ms.sourcegitcommit: f7496035cde1b3a5a4efb9013fd30064fb0c9132
+ms.openlocfilehash: d7c4af6af94025136ab09f0709d8c65382f456dd
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597338"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181270"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -57,7 +57,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | „PowerPoint“ dizaino įrankis   | [Profesionalių skaidrių maketų kūrimas naudojant „PowerPoint“ dizaino įrankį](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 |Pranešėjo pagalbinė priemonė („PowerPoint“)|[Repetuoti pristatymą su pranešėjo pagalbine priemone](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publikavimas „Microsoft Stream“    | [Pateikties pavertimas vaizdo įrašu](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
-| Publikavimas „Power BI“   | [„Excel“ turinio publikavimas „Power BI“](https://docs.microsoft.com/power-bi/service-publish-from-excel) |
+| Publikavimas „Power BI“   | [„Excel“ turinio publikavimas „Power BI“](/power-bi/service-publish-from-excel) |
 | *Tyrimai*\*   | [Tyrimų paslaugų pridėjimas arba keitimas](https://support.microsoft.com/office/b862efc5-9a7b-4f88-a23d-93712d6e4397)  |
 | Vizitinės kortelės nuskaitymas|  [Kontaktų įtraukimas „Outlook“, skirtoje „Android“, nuskaitant arba bakstelėjant](https://support.microsoft.com/office/4818ef14-0fc8-4ec2-bb4d-440ea8cae17b)|
 |Bendrinamas pranešimas|[Pranešimų gavimas, kai komandos nariai atnaujina jūsų bendrinamą failą](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
@@ -120,14 +120,14 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 | Jau greitai („Outlook“)  |[Jau greitai](https://support.microsoft.com/office/d4b7db49-b4e0-4f98-a0dc-156952e551e2)  |
 | Kreiptis į palaikymo tarnybą („Outlook“) | Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje|
 | Pasirinktinis importavimas („Visio“)  | [Duomenų importavimas į figūras brėžinyje](https://support.microsoft.com/office/d174b3fd-3079-42fd-81e8-2dbf8d38bb03) |
-| Duomenų praradimo prevencijos (DLP) strategijos patarimai |[DLP strategijų pranešimų siuntimas el. paštu ir patarimų rodymas](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)  |
+| Duomenų praradimo prevencijos (DLP) strategijos patarimai |[DLP strategijų pranešimų siuntimas el. paštu ir patarimų rodymas](/microsoft-365/compliance/use-notifications-and-policy-tips)  |
 | Duomenų vizualizavimo priemonė („Visio“) |[Duomenų vizualizavimo priemonės diagramos kūrimas](https://support.microsoft.com/office/17211b46-d144-4ca2-9ea7-b0f48f0ae0a6)  |
 | „Flow“ kūrimas („Visio“)  | [Automatinės darbo eigos kūrimas programoje „Visio“](https://support.microsoft.com/office/35f0c9a9-912b-486d-88f7-4fc68013ad1a) |
 | Išorinis sąrašas („Outlook“) |[Išorinio sąrašo prijungimas prie „Outlook“](https://support.microsoft.com/office/9F00540E-A6B8-4510-9CE1-C79E31CBC8C9)  |
 | Reikšmingiausi gautieji („Outlook“) |[Reikšmingiausi gautieji programoje „Outlook“](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)  |
 | Informacijos teisių valdymas |[Atidaryti failą, kuriame yra apribotų teisių](https://support.microsoft.com/office/c7a70797-6b1e-493f-acf7-92a39b85e30c)  |
 | „LinkedIn“ kontakto kortelė |[„LinkedIn“ naudojimas „Microsoft“ programose ir paslaugose](https://support.microsoft.com/office/dc81cc70-4d64-4755-9f1c-b9536e34d381)  |
-| *„Office“ papildiniai*\* | [Papildinių peržiūra, valdymas ir diegimas „Office“ programose](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(vartotojams)* <br/> [Papildinių diegimas administravimo centre](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(administratoriams)* |
+| *„Office“ papildiniai*\* | [Papildinių peržiūra, valdymas ir diegimas „Office“ programose](https://support.microsoft.com/office/16278816-1948-4028-91e5-76dca5380f8d) *(vartotojams)* <br/> [Papildinių diegimas administravimo centre](/microsoft-365/admin/manage/manage-deployment-of-add-ins) *(administratoriams)* |
 | „Office“ atsiliepimai |[Kaip pateikti atsiliepimų „Microsoft Office“?](https://support.microsoft.com/office/2b102d44-b43f-4dd2-9ff4-23cf144cfb11)  |
 | „Office“ palaikymo tarnyba (susisiekite su mumis) |Kai pasirenkate **Žinynas** > **Kreiptis į palaikymo tarnybą** juostelėje |
 | Organizacijos schema („Visio“) |[Organizacijos schemos kūrimas programoje „Visio“](https://support.microsoft.com/office/abb3dd17-2692-439f-9945-3a015767d96a)|
@@ -136,8 +136,8 @@ Tolesnėje lentelėje pateiktas kitų prisijungus naudojamų funkcijų sąrašas
 | Naujausi dokumentai |[Failų atidarymas per meniu Failas](https://support.microsoft.com/office/97f087d8-3136-4485-8e86-c5b12a8c4176)  |
 | *CV kūrimo pagalbinė priemonė*\* |[Naudokitės CV kūrimo pagalbinė priemone ir „LinkedIn“, kad sukurtumėte puikių CV](https://support.microsoft.com/office/444ff6f0-ef74-4a9c-9091-ffd7a9d1917a")  |
 | Patalpų ieškiklis („Outlook“)|[Kaip valdyti patalpų ieškiklį programoje „Outlook“](https://support.microsoft.com/help/2673231/how-to-control-the-room-finder-in-outlook)  |
-|Saugūs dokumentai|[Saugūs dokumentai](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Saugūs dokumentai „Microsoft 365 E5“](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-| Saugieji saitai |[ATP saugieji saitai](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)  |
+|Saugūs dokumentai|[Saugūs dokumentai](https://support.microsoft.com/office/e2071599-fb31-442b-a30c-198c25e2aacd) <br/> [Saugūs dokumentai „Microsoft 365 E5“](/microsoft-365/security/office-365-security/safe-docs)|
+| Saugieji saitai |[ATP saugieji saitai](/microsoft-365/security/office-365-security/atp-safe-links)  |
 | Slaptumo žymos |[Slaptumo žymų pritaikymas dokumentams ir el. laiškams „Office“ programose](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)  |
 | Bendrinimas  |[„Excel“ darbaknygės bendrinimas su kitais](https://support.microsoft.com/office/8D8A52BB-03C3-4933-AB6C-330AABF1E589) <br/>[Pateikties bendrinimas („PowerPoint“)](https://support.microsoft.com/office/fdcad9ad-4f13-4f5b-9910-12b4108a4c86) <br/>[Dokumento bendrinimas („Word“)](https://support.microsoft.com/office/d39f3cd8-0aa0-412f-9a35-1abba926d354) |
 | Bendrinama su manimi |[Pasižiūrėkite, kokius failus su jumis bendrina kiti](https://support.microsoft.com/office/e0476dc7-bf2f-4203-b9ad-c809578b03e7)  |

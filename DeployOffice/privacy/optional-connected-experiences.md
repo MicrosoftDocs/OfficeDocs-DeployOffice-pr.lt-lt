@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: 942f32d7a8d177e6d74530a8382c145e94bec41a
-ms.sourcegitcommit: dee7b8706ba5a0e763052d2f2f79fb2d3d3a6907
+ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826414"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181739"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -76,7 +76,7 @@ Kai naudojate „Office“ parduotuvę, pačios parduotuvės svetainės naudojim
 
 > [!NOTE]
 > - Jūsų organizacijos administratorius gali pateikti papildinius, net jei nepasirenkate naudotis „Office“ parduotuve.
-> - Jei esate administratorius, daugiau informacijos apie papildinius žr. skyriuje „Pasirinktinės prisijungus naudojamos funkcijos“, kurį rasite temose [„Office“ papildinių privatumas ir sauga](https://docs.microsoft.com/office/dev/add-ins/concepts/privacy-and-security) ir [„Outlook“ papildinių privatumas, teisės ir sauga](https://docs.microsoft.com/office/dev/add-ins/outlook/privacy-and-security).
+> - Jei esate administratorius, daugiau informacijos apie papildinius žr. skyriuje „Pasirinktinės prisijungus naudojamos funkcijos“, kurį rasite temose [„Office“ papildinių privatumas ir sauga](/office/dev/add-ins/concepts/privacy-and-security) ir [„Outlook“ papildinių privatumas, teisės ir sauga](/office/dev/add-ins/outlook/privacy-and-security).
 
 ### <a name="research"></a>Tyrimai
 
@@ -91,7 +91,7 @@ Programoje „Outlook“ skirtoje „iOS“ jūsų ateinantis įvykis bus apiben
 
 ### <a name="weather-bar-in-outlook"></a>Orų prognozės juosta programoje „Outlook“
 
-Programos „Outlook“ [orų prognozės juostoje](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) rodomos pasirinktų geografinių vietų orų prognozės. Naudojant orų prognozės juosta programoje „Outlook“ pagal numatytuosius parametrus prisijungia prie MSN orų. MSN priklauso „Microsoft“ ir taikomos [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [„Microsoft“ privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygos. Kai naudojate orų prognozės juostą su MSN orais, „Microsoft“ neaptinka jūsų buvimo vietos ir miestai, kurių informaciją pasirenkate rodyti, nėra susiejami su jumis. Galite [pakeisti šį numatytąjį parametrą](https://docs.microsoft.com/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) ir prisijungti prie kitų orų prognozės paslaugų teikėjų. Jei nuspręsite naudoti kitą orų prognozės paslaugų teikėją, turėsite peržiūrėti to teikėjo privatumo patvirtinimą ir licenciją, kad sužinotumėte, kokios sąlygos taikomos.
+Programos „Outlook“ [orų prognozės juostoje](https://support.microsoft.com/office/d11b7532-7c58-489e-8103-5cc5d727b06b) rodomos pasirinktų geografinių vietų orų prognozės. Naudojant orų prognozės juosta programoje „Outlook“ pagal numatytuosius parametrus prisijungia prie MSN orų. MSN priklauso „Microsoft“ ir taikomos [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [„Microsoft“ privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygos. Kai naudojate orų prognozės juostą su MSN orais, „Microsoft“ neaptinka jūsų buvimo vietos ir miestai, kurių informaciją pasirenkate rodyti, nėra susiejami su jumis. Galite [pakeisti šį numatytąjį parametrą](/office/client-developer/outlook/weather/extending-the-weather-bar-in-outlook) ir prisijungti prie kitų orų prognozės paslaugų teikėjų. Jei nuspręsite naudoti kitą orų prognozės paslaugų teikėją, turėsite peržiūrėti to teikėjo privatumo patvirtinimą ir licenciją, kad sužinotumėte, kokios sąlygos taikomos.
 
 ## <a name="how-to-determine-if-your-admin-has-given-you-the-ability-to-use-optional-connected-experiences"></a>Kaip nustatyti, ar administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus naudojamas funkcijas
 
