@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams skirtų „Microsoft 365“ programų įmonėms ( anksčiau vadintų „Office 365 ProPlus“) privatumo valdiklių apžvalga, įskaitant diagnostikos duomenis ir prisijungus naudojamas funkcijas.
 hideEdit: true
-ms.openlocfilehash: f894db695caf8a6dfa56dd6db541d8b8fd4bd564
-ms.sourcegitcommit: 596a0a60394011aafe1119f353ac76f27e1a4d1b
+ms.openlocfilehash: d984be8ef09c8a46c4588ae643c4d6ebad1b2533
+ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794767"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51181703"
 ---
 # <a name="overview-of-privacy-controls-for-microsoft-365-apps-for-enterprise"></a>„Microsoft 365“ programų įmonėms privatumo kontrolės apžvalga
 
@@ -30,8 +30,8 @@ ms.locfileid: "48794767"
 „Microsoft“ yra įsipareigojusi suteikti jums reikiamą informaciją ir valdiklius, kad galėtumėte pasirinkti, kaip renkami ir naudojami jūsų duomenys, kai naudojate „Microsoft 365“ programas įmonėms (anksčiau vadintas „Office 365 ProPlus“).
 
 Pradedant „Microsoft 365“ programų įmonėms 1904 versija, jums bus pasiekiami nauji, atnaujinti ir patobulinti toliau nurodytų sričių privatumo valdikliai:
-- ***Diagnostikos duomenų** , kurie renkami ir siunčiami „Microsoft“, apie „Office“ kliento programinę įrangą, veikiančią jūsų organizacijos vartotojo įrenginyje.
-- _*_Prijungtųjų funkcijų_*_ , kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
+- ***Diagnostikos duomenų***, kurie renkami ir siunčiami „Microsoft“, apie organizacijos vartotojų įrenginiuose naudojamą „Office“ kliento programinę įrangą.
+- ***Prisijungus naudojamų funkcijų***, kurios veikia debesų technologijos pagrindu ir pagerina jūsų ir jūsų vartotojų naudojamas „Office“ funkcijas.
 
 Atliekant šiuos keitimus pristatyta naujų ir atnaujintų vartotojo sąsajos elementų ir strategijos parametrų.
 
@@ -43,7 +43,7 @@ Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, apt
 
 Yra trijų lygių „Microsoft 365“ programų įmonėms diagnostikos duomenys, iš kurių galite rinktis:
 
-- _ *Būtinieji* * Minimalūs duomenys, kurie yra būtini, kad „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
+- **Būtinieji.** Minimalūs duomenys, kurie yra būtini, kad programų paketas „Office“ būtų apsaugotas, atnaujintas ir veiktų kaip numatyta įrenginyje, kuriame jis įdiegtas.
 
 - **Pasirinktiniai.** Papildomi duomenys, kurie padeda mums tobulinti produktą ir gauti papildomos informacijos, padedančios aptikti, diagnozuoti ir spręsti kilusias problemas.
 
@@ -63,7 +63,7 @@ Norėdami pamatyti, kokie diagnostikos duomenys siunčiami „Microsoft“, gali
 
 Daugiau informacijos žiūrėkite šiuose straipsniuose:
 
-- [Privalomieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
+- [Būtinieji „Office“ diagnostikos duomenys](required-diagnostic-data.md)
 - [Pasirinktiniai „Office“ diagnostikos duomenys](optional-diagnostic-data.md)
 - [„Microsoft 365“ programos įmonėms privatumo valdiklių valdymas naudojant strategijos parametrus](manage-privacy-controls.md)
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
@@ -132,4 +132,4 @@ Daugiau informacijos žr. [Pagrindinės „Office“ paslaugos](essential-servic
 
 ## <a name="related-articles"></a>Susiję straipsniai
 - [„Microsoft“ privatumas](https://privacy.microsoft.com/)
-- [„Windows“ privatumas](https://docs.microsoft.com/windows/privacy/)
+- [„Windows“ privatumas](/windows/privacy/)
