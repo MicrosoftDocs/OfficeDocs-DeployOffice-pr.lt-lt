@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 52922aee6117744074d382f6c86e7ec50c6f874b
-ms.sourcegitcommit: f006f5890d12988e03a3878937eb02aa7e265f8d
+ms.openlocfilehash: 69abd5fc0355db7758debc0193b4439754eda2f2
+ms.sourcegitcommit: b6f55a032079a9525cedd93b9e431c188ca24775
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167377"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51889792"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -633,6 +633,8 @@ Be to, šie laukai dažniausiai naudojami visiems „Outlook“, skirtos „iOS�
 
 - **gcc_restrictions_enabled** – parodo, jei GCC apribojimai buvo taikomi programėlei, kad galėtume užtikrinti, kad mūsų GCC klientai saugiai naudoja mūsų programą
  
+- **multi_pane_mode** – parodo, ar vartotojas, naudojantis „iPad“, naudoja aplanką Gauta su keliomis įjungtomis sritimis, kuriose klasifikuodamas el. laiškus gali matyti aplankų sąrašą. To reikia, kad galėtume aptikti problemas, būdingas naudojant aplanką Gauta su keliomis atidarytomis sritimis.
+
 - **multi_window_mode** – parodo, ar vartotojas, naudojantis „iPad“ naudoja kelis langus, kad galėtume nustatyti problemas, susijusias su kelių langų naudojimu.
 
 - **office_session_id** – unikalus ID, kuriuo sekama prijungtų „Office“ tarnybų seansas, kad būtų lengviau aptikti „Office“ paslaugų integravimą programoje „Outlook“, pvz., „Word“
@@ -5237,6 +5239,16 @@ Renkami šių laukų duomenys:
 
 - **Data_FirstRunPanelName** – skydo, iš kurio buvo paleista programa, pavadinimas
 
+
+#### <a name="officefloodgateuserfactappusage"></a>Office.Floodgate.UserFact.AppUsage
+
+Tai parodo, ar vartotojas naudojo didelės vertės produkto funkcijas. Gali rodyti, kad vartotojas aptiko funkciją arba ja naudojosi. Signalas pateiks įžvalgų apie produkto funkcijos naudojimą, padedančių geriau naudotis produktu.
+
+Renkami šių laukų duomenys: 
+
+- **FeatureAction** – žyma, nurodanti didelės vertės funkciją ir vartotojo atliktą veiksmą, pvz., ContentPickerTried, TemplatesSeen.
+
+
 #### <a name="officelenslenssdkcloudconnectorlaunch"></a>Office.Lens.LensSdk.CloudConnectorLaunch
 
 Kai vartotojas apkarpo vaizdą ir bakstelėjimu patvirtina galutinį vaizdo pasirinkimą, kad būtų galima naudoti OCR, pasirenkamas šis įvykis.     
@@ -5289,19 +5301,6 @@ Renkami šių laukų duomenys:
 - **TaskType** – eilutė, identifikuojant tarnybos skambučio ketinimą.
 
 
-#### <a name="officelenslenssdkpermission"></a>Office.Lens.LensSdk.Permission
-
-Teisės yra svarbi funkcija, nes be jų vartotojas negali naudoti jokių „Lens“ funkcijų. Teisės stebimos siekiant suprasti vartotojo teisių suteikimo / atšaukimo įpročius. Kai vartotojas sąveikauja su mūsų programos dialogų dialogais, mes renkame tuos įvykius. Atsižvelgiant į vartotojų teisių priėmimo ir atmetimo tendencijas, mes identifikuojame funkcijų patobulinimus, kurie padeda vartotojams suprasti, kodėl teisės yra kritinės.
-
-Renkami šių laukų duomenys:
-
-- **Data_action** – apima reikšmes, pvz., CameraPermissionAllowed (arba Denied), StoragePermissionGranted (arba Denied), kurios padeda mums suprasti, ar vartotojas priėmė arba atmetė saugyklos ir kameros teises.
-
-- **Data_Action** – šis laukas padeda mums suprasti, kokio tipo teisės buvo paprašyta iš vartotojo, pvz., fotoaparato arba saugyklos
-
-- **Data_status** – apima reikšmes, pvz., Allowed, Denied ir DeniedForever, kurios padeda mums suprasti, ar vartotojas priėmė arba atmetė saugyklos ir kameros teises.
-
-
 #### <a name="officelenslenssdksavemedia"></a>Office.Lens.LensSdk.SaveMedia
 
 Šis įvykis iškviečiamas, kai vartotojas spustelėja mygtuką Atlikta ir įrašo vaizdus „Android“ ir „iOS“. Tai padeda išmatuoti vartotojo dalyvavimo lygį kiekybiškai įvertinant vartotojus, kurie įrašo vaizdus naudodami mūsų programą.
@@ -5349,105 +5348,22 @@ Toliau nurodyti laukai renkami tik „iOS“:
 
 #### <a name="officelenslenssdkserviceidmapping"></a>Office.Lens.LensSdk.ServiceIDMapping
 
-Šis įvykis fiksuojamas kai vaizdas sėkmingai įkeliamas į tarnybą. Tai reiškia, kad tarnyba atliks vieną ar daugiau užduočių, kad apdorotų vaizdą ir apims atitinkamus ID, kurie padės šalinti proceso nesklandumus. Jis taip pat padeda analizuoti skirtingų tarnybos funkcijų naudojimą.
+Duomenys apie šį įvykį renkami, kai „Lens SDK“ sąveikauja su „Microsoft“ vaizdo konvertavimo į dokumentą (arba „I2D“) tarnyba. Tai reiškia, kad įvykis iškviečiamas toliau nurodytais atvejais.
+
+- Nusiuntus vaizdą į „I2D“ tarnybą, siekiant konvertuoti ir išskleisti (OCR) failą.
+- Kai vartotojui reikia taisyti tarnybos išvestį, siunčiame atsiliepimą dėl kokybės tobulinimo.
+
+Šie duomenys naudojami siekiant analizuoti tarnybos naudojimą ir diagnozuoti bei šalinti gedimus.  
 
 Renkami šių laukų duomenys:
 
-- **CloudConnectorRequestId** – eilutė, kuri identifikuoja tarnybos užklausą, kuri buvo sukurta norint konvertuoti vaizdus naudojant tarnybą.
+- **CloudConnectorRequestId** – eilutė, identifikuojanti tarnybos užklausas dėl konvertavimo ir atsiliepimų scenarijų kliento programoje.
 
-- **I2DserviceProcessID** – eilutė, identifikuojanti tarnybos užduotį, kurioje vykdoma konkreti antrinė užklausa 
+- **CustomerId** – ši eilutė padeda susieti vartotojus su tarnybos užklausomis ir leidžia stebėti naudojimą. UserId turi atitikti BDAR reikalavimus, nes tarnyba yra ne tiesiogiai pasiekiama vartotojams, o per klientus, ir identifikuoja bendrą tarnyba besinaudojančių žmonių, skaičių, tokiu būdu padeda tarnybai sekti produktą naudojančių vartotojų kiekį. 
 
+- **I2DFeedbackAPICorrelationId** – eilutė, identifikuojanti atsiliepimų užklausą „I2D“ tarnyboje, kai vartotojas taiso tarnybos išvestį.
 
-#### <a name="officeiospaywallpaywallpresented"></a>Office.iOS.Paywall.Paywall.Presented
-
-Šis kritinė naudojimo telemetrija surenkama, kai vartotojui rodomas mokamos prieigos prie informacijos valdiklis, ir naudojama norint suprasti vartotojo įsigijimo programoje funkcijas ir optimizuoti būsimas versijas.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas)
-
-- **isFRE** – Bulio logika – ar rodome pirmojo vykdymo funkcijas ar įprastą vartotojo sąsają?
-
-#### <a name="officeiospaywallpaywallstats"></a>Office.iOS.Paywall.Paywall.Stats
-
-Šie seansu pagrįsti metaduomenys renkami, kai vartotojui rodoma mokamos prieigos prie informacijos vartotojo sąsaja, sąveikos trukmė ir ar buvo mėginama įsigyti, ar jis buvo sėkmingas arba nesėkmingas.  Duomenys naudojami visų mokėjimo funkcijų naudojimui ir derinimui suprasti, įsigijimo programoje funkcijoms optimizuoti ir trikčių diagnostikai būsimose versijose.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
-
-- **isFRE** – Bulio logika – ar rodome pirmojo vykdymo funkcijas ar įprastą vartotojo sąsają?
-
-- **status** – eilutė – išėjimo iš mokamos prieigos prie informacijos būsena. Pvz., „initiated“ (inicijuota), „paymentDone“ (mokėjimas atliktas), „provisionFailed“ (parengimas nepavyko)
-
-- **userDuration** – dvigubas – vartotojo praleisto mokomoje prieigoje prie informacijos trukmė milisekundėmis
-
-
-#### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Kritinė inžinerijos telemetrija su „Microsoft“ mažmeninės prekybos susiejimo tarnyba (RFS) skirta rinkti šiame įvykyje pateikiamą informaciją. RFS yra vidinė tarnyba, naudojama „Microsoft“, kad būtų atlikti įsigijimo kryžminė patikra. Duomenys naudojami gauti API skambučio į RFS sveikatos informacijai, nes tai padės suprasti bet kokių nesėkmių sėkmingų bandymų rodiklį ir pataisyti programines klaidas.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
-
-- **failureReason** – eilutė – įtraukiama, kai būsena yra „nepavyko“. Nurodomas klaidos atsakas, pateikiamas RFS parengimo atsako.
-
-- **productId** – eilutė – produkto „App Store“ ID, kuriam buvo pateikta užklausa
-
-- **status** – eilutė – „pavyko“ arba „nepavyko“, nurodanti, ar užklausa pavyko, ar nepavyko
-
-
-#### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Kritinė naudojimo telemetrija, kuri nurodo, kada vartotojas bakstelėja mygtuką „Įsigyti“ / „Pirkti“. Naudojamas nustatyti vartotojų, bandančių įsigyti prenumeratą taikomojoje programoje, naudojimo modelį ir konvertavimo metriką.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
-
-- **isDefaultSKU** – Bulio logikos – jei vartotojas įsigyja mūsų jiems rekomenduotą produktą, kuris rodomas pagal numatytuosius parametrus.
-
-- **productId** – eilutė – „App Store“ produkto ID, kuriam vartotojas paspaudė mygtuką „Pirkti“
-
-- **toggleCount** – sveikasis skaičius – kiek kartų vartotojas dabartinio mokamos prieigos prie informacijos seanso metu perjungė tarp žiūrimų įvairių produktų, prieš bakstelėdamas mygtuką „Pirkti“.
-
-
-#### <a name="officeiospaywallskuchoosermorebenefitsstats"></a>Office.iOS.Paywall.SKUChooser.MoreBenefits.Stats
-
-Šis įvykis renka funkcijas ir taikomąsias programas, kurias vartotojas išplečia iš elemento „Žr. daugiau pranašumų“, ir praleisto laiko trukmę.  Duomenys naudojami norint suprasti ypatybės „žr. visus pranašumus“ naudojimą, kad būtų galima dar labiau optimizuoti būsimųjų versijų naudojimo funkcijas.
-
-Renkami šių laukų duomenys:
-
-- **appsExpanded** – eilutė - kableliu atskirtų tarnybų arba taikomųjų programų, kurioms pranašumai buvo išskleisti, sąrašas.
-
-- **productId** – eilutė – vartotojo žiūrimo produkto „App Store“ ID, kuriam siūloma daugiau naudų
-
-- **userDuration** – dvigubas – vartotojo praleisto naudų ekrane trukmė milisekundėmis.
-
-
-### <a name="officeiospaywallskuchooserproductswitched"></a>Office.iOS.Paywall.SKUChooser.ProductSched
-
-Telemetrijos naudojimas, skirtas parodyti, kiek kartų vartotojas pereina per skirtingus SKU prieš bandydamas įsigyti.
-
-Renkami šių laukų duomenys:
-
-- **productId**– eilutė – produkto, į kurio peržiūrą vartotojas ką tik perėjo iš SKU parinkiklio galimų produktų, „App Store“ ID.
-
-
-#### <a name="officeiospaywallskuchooserstats"></a>Office.iOS.Paywall.SKUChooser.Stats
-
-Ši naudojimo telemetrija renkama, kad galima būtų matyti, kaip vartotojas įėjo į SKU parinkiklį, kiek laiko vartotojas praleidžia SKU parinkiklio ekrane ir kodėl išėjo iš SKU parinkiklio.  Duomenys naudojami suprasti SKU parinkiklio naudojimą ir optimizuoti pirkimo programoje funkcijas būsimose versijose.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
-
-- **exitReason** – String – išėjimo iš SKU parinkiklio priežastis. Pvz., „BuyButton“ (pirkimo mygtukas), „CloseButton“ (uždarymo mygtukas)
-
-- **isFRE** – Bulio logika – ar rodome pirmojo vykdymo funkcijas ar įprastą vartotojo sąsają?
-
-- **userDuration** – dvigubas – vartotojo praleisto SKU parinkiklyje trukmė milisekundėmis
+- **I2DServiceProcessID** – eilutė, identifikuojanti tarnybos užklausą „I2D“ tarnyboje, kai vartotojas nusiunčia vaizdus konvertuoti.
 
 
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office. LivePersonaCard. ConfigurationSetAction
@@ -9049,6 +8965,33 @@ Renkami šių laukų duomenys:
 
 - **RMS.Url** – teisių valdymo tarnybos serverio URL
 
+
+#### <a name="surveyfloodgatetriggermet"></a>Survey.Floodgate.TriggerMet
+
+Seka, kada įrenginys atitiko reikalavimus, kad jam būtų rodoma apklausa. Naudojama įvertinti apklausos suaktyvinimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+
+Renkami šių laukų duomenys: 
+
+- **CampaignId** – tarnyboje pristatomos kampanijos identifikatorius
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **SurveyType** – identifikuoja apklausos tipą
+
+
+#### <a name="surveyuiformsubmit"></a>Survey.UI.Form.Submit
+
+Seka, kada pateikiama apklausa. Naudojama siekiant įvertinti apklausų pateikimo proceso sveikatos būseną bei užtikrinti, kad signalas, naudojamas analizuojant klientų problemas ir būklę, veiktų tinkamai.
+
+Renkami šių laukų duomenys: 
+
+- **CampaignId** – tarnyboje pristatomos kampanijos identifikatorius
+
+- **SurveyId** – unikalus kampanijos egzempliorius
+
+- **SurveyType** – identifikuoja apklausos tipą
+
+
 #### <a name="watchappv2"></a>watchAppV2
 
 Šis įvykis leidžia aptikti ir išspręsti galimas „Apple Watch“ galimybių problemas, pvz., pranešimų gavimą ir atsakymą į el. laiškus.
@@ -12511,16 +12454,6 @@ Renkami šių laukų duomenys:
 
 - **TypeId** – GUID, skirtas sąsajai, kuriai šis metodas iškviečiamas
 
-#### <a name="officeiospaywallfailedscreenretrybuttontap"></a>Office.iOS.Paywall.FailedScreen.RetryButtonTap
-
-Ši naudojimo telemetrija renkama, kad būtų galima žinoti kada nepavyko įsigyti / parengti / aktyvinti ir vartotojas palietė mygtuką „Kartoti“.  Naudojamas norint diagnozuoti triktis pirkimo klaidų scenarijams, dėl kurių teko kartoti veiksmą ir pagerinti proceso patikimumą.
-
-Renkami šių laukų duomenys:
-
-- **failureReason** – eilutė – nurodo dėl kurios klaidos vartotojas kartojo. Pvz., „provisioningFailed“ (parengimas nepavyko), „purchaseFailed“ (įsigijimas nepavyko), „activationFailed“ (aktyvinimas nepavyko).
-
-- **productid** – eilutė – produkto „App Store“ ID, dėl kurio vartotojas kartoja nepavykusią užklausą
-
 
 #### <a name="officemanageabilityserviceapplypolicy"></a>Office.Manageability.Service.ApplyPolicy
 
@@ -12650,6 +12583,8 @@ Renkami šių laukų duomenys:
   
 - **BootToStart** – ar paleidžiant šią taikomąją programą vartotojas pasirinko rodyti pradžios ekraną.
 
+- **Child ProcessesCount** – programos paleistų antrinių procesų skaičius. (tik „Windows“)
+
 - **ColdBoot** – ar „Office“ taikomoji programa buvo paleista pirmą kartą paleidus sistemą iš naujo, ar reikėjo programos dvejetainį įkelti iš disko. (tik „macOS“/ „iOS“)
 
 - **DeviceModel** – įrenginio modelis. (tik „macOS“/ „iOS“)
@@ -12664,6 +12599,10 @@ Renkami šių laukų duomenys:
 
 - **FreeMemoryPercentage** – kiek procentų atminties įrenginyje laisva. (tik „Windows“)
 
+- **HandleCount** – proceso atidarytų operacinės sistemos sisteminių nuorodų skaičius. (tik „Windows“)
+
+- **PageFaultCount** – aparatūrinių proceso puslapių klaidų skaičius. (tik „Windows“)
+
 - **Initializationduration** – pirmojo „Office“ inicijavimo proceso trukmė mikrosekundėmis.
 
 - **InterruptionMessageId** – ar paleidimas buvo pertrauktas dialogo lango, prašančio naudotojo atlikti įvestį, dialogo lango ID.
@@ -12672,13 +12611,23 @@ Renkami šių laukų duomenys:
 
 - **OpenAsNew** – ar programa buvo paleista atidarius esamą dokumentą kaip šabloną naujam.
 
+- **OtherOperationCount** – atliktų įvesties / išvesties operacijų, išskyrus skaitymo ir rašymo operacijas, skaičius. (tik „Windows“)
+
+- **OtherTransferCount** – baitų, perduotų vykdant ne skaitymo ir rašymo operacijas, skaičius. (tik „Windows“)
+
 - **PageFaultCount** – proceso puslapių klaidų skaičius. (tik „Windows“)
 
 - **PrimaryDiskType** – ar pirminis saugyklos įrenginys yra netrinusis loginis diskas ar pasukamasis diskas bei jo pasukimo greitis (jei taikoma). (tik „macOS“/ „iOS“)
 
 - **PrivateCommitUsageMB** – „Commit Charge“ (t. y. atminties, kurią atminties valdytojas paskyrė šiam procesui, kiekis) procesui megabaitais. (tik „Windows“)
 
+- **TotalWorkingSetMB** – proceso darbinio rinkinio atminties kiekis, nebendrinamas su kitais procesais, nurodytas megabaitais. (tik „Windows“)
+
 - **ProcessorCount** – procesorių skaičius įrenginyje. (tik „macOS“/ „iOS“)
+
+- **ReadOperationCount** – atliktų skaitymo operacijų skaičius. (tik „Windows“)
+
+- **ReadTransferCount** – perskaitytų baitų skaičius.
 
 - **TotalPhysicalMemory** – bendras įrenginio fizinės atminties kiekis. (tik „macOS“/ „iOS“)
 
@@ -12687,6 +12636,10 @@ Renkami šių laukų duomenys:
 - **VirtualSetMB** – proceso virtualiojo rinkinio atminties kiekis megabaitais. (tik „macOS“/ „iOS“)
 
 - **WorkingSetPeakMB** – didžiausias atminties kiekis megabaitais, kuris iki šiol yra buvęs proceso darbiniame rinkinyje.
+
+- **ReadOperationCount** – atliktų rašymo operacijų skaičius. (tik „Windows“)
+
+- **ReadTransferCount** – parašytų baitų skaičius. (tik „Windows“)
 
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
@@ -13886,6 +13839,30 @@ Renkami šių laukų duomenys:
   - **Data\_TagCount** – Visų įvykusių klaidų skaičius
 
   - **Data\_TagID** – Įvykusios klaidos identifikatorius
+
+
+#### <a name="officeofficemobilepersonalizedcampaigningerrors"></a>Office.OfficeMobile.PersonalizedCampaigning.Errors
+
+Norint geriau informuoti vartotojus apie jų dar neištyrinėtas „Office Mobile“ funkcijas, „Office Mobile“ integruojama su IRIS, siekiant palaikyti pranešimus programoje bei „push“ pranešimus. Pranešimų programoje atveju fiksuojamos klaidos, kurios įvyksta gaunant arba rodant pranešimą ir vartotojui sąveikaujant su pranešimu bei teikiant atsiliepimus į IRIS serverį. „Push“ pranešimų atveju fiksuojamos klaidos, kurios įvyksta rodant pranešimą ir kai vartotojas sąveikauja su pranešimu.
+
+Renkami šių laukų duomenys:
+
+- **Dalykas** – dalyko, kurio metu įvyko klaida, pavadinimas
+
+- **CreativeId** – pranešimo ID, unikaliai identifikuojantis pranešimą ir jo turinį.
+
+- **ErrorDetails** – išsami informacija apie klaidą
+
+- **ErrorMessage** – klaidos pranešimas.
+
+- **ErrorReason** – esama klaidos priežastis
+
+- **Metodas** – funkcijos, kurioje įvyko klaida, pavadinimas.
+
+- **RequestParams** – užklausos parametrai, naudoti jungiantis prie IRIS serverio, siekiant gauti pranešimą.
+
+- **SurfaceId** – srities, kurioje bus rodomas pranešimas, ID.
+
 
 #### <a name="officeoutlookdesktopcalendaracceptcalsharenavigatetosharedfoldererror"></a>Office.Outlook.Desktop.Calendar.AcceptCalShareNavigateToSharedFolder.Error
 
