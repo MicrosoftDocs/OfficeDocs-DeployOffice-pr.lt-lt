@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: 8408a2e8a6e9c8594e428762034ba5b8e8a54548
-ms.sourcegitcommit: a31e96cefd11ffece917dce618414989bf3a98da
+ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
+ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031991"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51891212"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -3410,6 +3410,92 @@ Renkami šių laukų duomenys:
 - **context** – Eilutė – Srautas, per kurį vartotojas pateko į pirkimo programoje puslapį
 
 
+### <a name="officeapplelicensingcommonpaywallcontrol"></a>Office.Apple.Licensing.CommonPaywallControl
+
+Šis įvykis naudojamas siekiant suprasti vartotojo pirkimo programėlėje (IAP) patirtį. Jis leidžia užtikrinti, kad IAP veiktų taip, kaip numatyta, ir padeda suprasti vartotojų problemas, kad galėtume optimizuoti IAP funkcijas.  Duomenys renkami naudojant vieną iš toliau nurodytų papildomų įvykių.
+
+- **Office.iOS.Paywall.Paywall.Presented** – duomenys renkami, kai vartotojui rodomas mokamos prieigos prie informacijos valdiklis. Duomenys naudojami siekiant sukurti rodinį, leidžiantį išmatuoti konvertavimo greitį atliekant kiekvieną veiksmą ir užtikrinti, kad vartotojo sąsaja veiktų taip, kaip numatyta, ir vartotojai pirkimo metu patirtų kuo mažiau nesklandumų.
+
+   Renkami šių laukų duomenys:
+
+  - **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas)
+  - **isFRE** – Bulio logika – ar rodome pirmojo vykdymo funkcijas ar įprastą vartotojo sąsają?
+
+- **Office.iOS.Paywall.Paywall.Stats** – duomenys renkami, kai vartotojui rodoma mokamos prieigos prie informacijos vartotojo sąsaja, sąveikos trukmė ir informacija apie tai, ar buvo mėginama pirkti, pirkimas pavyko arba nepavyko. Duomenys naudojami siekiant įvertinti vartotojo sąsajos efektyvumą ir užtikrinti, kad ji veiktų, kaip numatyta. 
+
+   Renkami šių laukų duomenys:
+
+   - **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+   - **isFRE** – Bulio logikos reikšmė – tikrina, ar rodoma pirmojo sistemos paleidimo programa, ar įprasta vartotojo sąsaja.
+   - **status** – eilutė – išėjimo iš mokamos prieigos prie informacijos būsena. Pvz., „initiated“ (inicijuota), „paymentDone“ (mokėjimas atliktas), „provisionFailed“ (parengti nepavyko).
+   - **userDuration** – dvigubo tikslumo – vartotojo naudojimosi mokoma prieiga prie informacijos trukmė milisekundėmis
+  
+- **Office.iOS.Paywall.SKUChooser.BuyButtonTap** – duomenys renkami, kai vartotojas bakstelėja mygtuką Pirkti. Duomenys naudojami siekiant įvertinti mygtuko efektyvumą ir užtikrinti, kad jis veiktų, kaip numatyta.
+
+   Renkami šių laukų duomenys:
+
+   - **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+   - **isDefaultSKU** – Bulio logikos – jei vartotojas įsigyja mūsų jiems rekomenduotą produktą, kuris rodomas pagal numatytuosius parametrus.
+   - **productId** – eilutė – „App Store“ produkto, kurio mygtukas Pirkti buvo bakstelėtas, ID.
+   - **toggleCount** – sveikasis skaičius – kiek kartų vartotojas dabartinio mokamos prieigos prie informacijos seanso metu perjungė tarp žiūrimų įvairių produktų, prieš bakstelėdamas mygtuką Pirkti.
+
+- **Office.iOS.Paywall.SKUChooser.Stats** – duomenys renkami, siekiant patikrinti, kaip vartotojas įėjo į SKU parinkiklio ekraną, kiek laiko jame praleido ir kodėl iš jo išėjo. Naudodami šią informaciją galime užtikrinti, kad SKU parinkiklis veikia taip, kaip tikėtasi, ir optimizuoti bei gerinti galutinio vartotojo patirtį.
+
+   Renkami šių laukų duomenys:
+
+   - **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+   - **exitReason** – String – išėjimo iš SKU parinkiklio priežastis. Pvz., „BuyButton“ (mygtukas Pirkti), „CloseButton“ (mygtukas Uždaryti)
+   - **isFRE** – Bulio logikos – ar rodoma pirmojo sistemos paleidimo programa, ar įprasta vartotojo sąsaja?
+   - **userDuration** – dvigubo tikslumo – vartotojo buvimo SKU parinkiklio ekrane trukmė milisekundėmis.
+
+- **Office.iOS.Paywall.FailedScreen.RetryButtonTap** – duomenys renkami, kai pirkimo / parengimo / aktyvinimo operacijos nepavyksta atlikti ir vartotojas bakstelėja mygtuką Kartoti. Duomenys naudojami siekiant nustatyti ir ištaisyti pirkimo scenarijų klaidas bei užtikrinti, kad jie veiktų tinkamai.
+
+   Renkami šių laukų duomenys:
+
+   - **failureReason** – eilutė – nurodo triktį, dėl kurios vartotojas atlieka kartojimą; pvz., „provisioningFailed“ (parengti nepavyko), „purchaseFailed“ (nupirkti nepavyko), „activationFailed“ (suaktyvinti nepavyko).
+   - **productid** – eilutė – produkto, dėl kurio vartotojas kartoja nepavykusią užklausą, „App Store“ ID.
+
+- **Office.iOS.Paywall.SKUChooser.More Nepelnofits.Stats** – duomenys renkami, kai vartotojai bakstelėja parinktį Rodyti daugiau privalumų norėdami peržiūrėti visas į pirkinį įtrauktas paslaugas, programas ir funkcijas. Jie turi išplėsti skyrius, kuriuose išsamiai aprašomos kiekvienos programos funkcijos. Šis įvykis renka duomenis apie tai, kurios funkcijos ir programos buvo išplėstos, bei apie praleistą laiką. Duomenys naudojami siekiant užtikrinti, kad galutiniams vartotojams, norintiems sužinoti apie privalumus, teikiama vartotojo sąsaja veiktų tinkamai. 
+
+   Renkami šių laukų duomenys:
+
+   - **appsExpanded** – eilutė - kableliu atskirtų tarnybų arba programų, kurių privalumai buvo išskleisti, sąrašas.
+   - **productId** – eilutė – produkto, kurio daugiau siūlomų privalumų peržiūri vartotojas, „App Store“ ID
+   - **userDuration** – dvigubo tikslumo – vartotojo buvimo privalumų ekrane trukmė milisekundėmis.
+
+- **Office.iOS.Paywall.SuccessScreen.SeeAllRetasButtonTap** – šio įvykio duomenys renkami, kai vartotojas bakstelėja parinktį Rodyti daugiau privalumų po sėkmingai atliktos pirkimo operacijos norėdamas peržiūrėti į pirkinį įtrauktas programas ir funkcijas. Duomenys naudojami siekiant įsitikinti, kad vartotojo sąsaja veikia, kaip numatyta.
+
+   Renkami šių laukų duomenys:
+
+   - **productId** – eilutė – produkto, kurio visus siūlomus privalumus peržiūri vartotojas, „App Store“ ID.
+
+- **Office.iOS.Paywall.SKUChooser.ProductSched** – naudojimo telemetrija, leidžianti peržiūrėti galutinio vartotojo sąveiką su teikiama vartotojo sąsaja norint perjungti įvairius SKU ir užtikrinti, kad ji veiktų, kaip numatyta. 
+
+   Renkami šių laukų duomenys:
+
+  - **productId**– eilutė – produkto, į kurio peržiūrą vartotojas ką tik perjungė iš SKU parinkiklyje galimų produktų, „App Store“ ID.
+
+- **Office.iOS.Paywall.StoreKit.Response** – kritinė inžinerijos telemetrija, leidžianti užregistruoti pirkimo bandymo, suaktyvinto vartotojo rankiniu būdu, rezultatą ir „App Store“ atsaką į įvykį. Duomenys naudojami siekiant įvertinti pirkimo bandymo būseną ir nesėkmės priežastis (jei tokių yra) bei atlikti koregavimo veiksmus, kad IAP ir visi įvesties taškai veiktų, kaip numatyta.
+
+   Renkami šių laukų duomenys:
+
+   - **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+   - **failureReason** – eilutė – įtraukiama, kai būsena yra „triktis“. Nurodo klaidos atsaką, pateiktą „App Store“ atsake.
+   - **productId** – eilutė – tik „MakePurchase“, „PendingPurchase“, „App Store“ produkto ID, kuriam užklausa buvo sukurta.
+   - **productsCount** – sveikasis skaičius – tik „ProductsFetch“, produktų skaičius, grąžintas „Store“.
+   - **requestType** – eilutė – „StoreKit“ užklausos tipas. Pvz., „ProductsFetch“, „PendingPurchase“
+   - **status** – eilutė – pavyko arba nepavyko, nurodanti, ar užklausa pavyko.
+
+- **Office.iOS.Paywall.Provisioning.Response** – kritinė inžinerijos telemetrija ir sutartis su „Retail“ susiejimo tarnyba (RFS), kad būtų galima rinkti šiame įvykyje pateikiamą informaciją. RFS yra vidinė tarnyba, naudojama „Microsoft“ atliekant pirkimo kryžminę patikrą. Ji naudojama siekiant nustatyti API iškvietos, adresuotos į RFS, sveikatos būklę, nes tai padeda suprasti, ar integravimas veikia tinkamai.  
+
+   Renkami šių laukų duomenys:
+
+   - **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
+   - **failureReason** – eilutė – įtraukiama, kai būsena yra „triktis“. Nurodomas klaidos atsakas, pateikiamas RFS parengimo atsako.
+   - **productId** – eilutė – produkto „App Store“ ID, kuriam buvo pateikta užklausa
+   - **status** – eilutė – sėkmė arba triktis, nurodanti, ar užklausa pavyko, ar nepavyko
+
+
 ### <a name="officedimesdkhealth"></a>Office.Dime.Sdk.Health
 
 Šis įvykis užfiksuoja duomenis, kurie padeda stebėti „Dime“ komponentų sveikatą. Pavyzdžiui, pirkimo programoje srautui, kai vartotojas pasirenka pirkti „Microsoft 365“ prenumeratą „Office“ programoje, skirtoje „Android“, arba įrenginiuose, kuriuose veikia „Windows“.
@@ -3496,29 +3582,6 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
 - **featureId** – TCID (įrankių juostos valdiklio identifikatorius) skirtas aukščiausios kokybės („Premium“) funkcijai, kurį vartotojas bakstelėja
-
-
-### <a name="officeiospaywallskuchooserbuybuttontap"></a>Office.iOS.Paywall.SKUChooser.BuyButtonTap
-
-Kritinė naudojimo telemetrija renkama, kad būtų galima nustatyti, kada vartotojas baksteli mygtuką Įsigyti / pirkti.  Duomenys naudojami nustatyti vartotojų, bandančių įsigyti prenumeratą taikomojoje programoje, naudojimo modelį ir konvertavimo metriką.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
-
-- **isDefaultSKU** – Bulio logikos – jei vartotojas įsigyja mūsų jiems rekomenduotą produktą, kuris rodomas pagal numatytuosius parametrus.
-
-- **productId** – eilutė – „App Store“ produkto ID, kuriam vartotojas paspaudė mygtuką Pirkti
-
-- **toggleCount** – sveikasis skaičius – kiek kartų vartotojas dabartinio mokamos prieigos prie informacijos seanso metu perjungė tarp žiūrimų įvairių produktų, prieš bakstelėdamas mygtuką Pirkti.
-
-### <a name="officeiospaywallsuccessscreenseeallbenefitsbuttontap"></a>Office.iOS.Paywall.SuccessScreen.SeeAllBenefitsButtonTap
-
-Telemetrija naudojama sužinoti, kada vartotojas po sėkmingo apsipirkimo baksteli „Žr. visus pranašumus", kad pamatytų į ką tik įsigytą pirkinį įtrauktas taikomąsias programas ir funkcijas. Šie duomenys naudojam i siekiant padėti plėtoti būsimą patobulinimą ir sumažinti trukdžius vartotojams naujinant.
-
-Renkami šių laukų duomenys:
-
-- **productId** – eilutė – vartotojo žiūrimo produkto „App Store“ ID, kuriam siūlomos visos naudos
 
 
 ### <a name="officelicensingaccepteulaforcurrentlicense"></a>Office.Licensing.AcceptEulaForCurrentLicense 
@@ -3675,7 +3738,7 @@ Renkami šių laukų duomenys:
 
 - **ErrorType** – trikties priežastis, pvz., AlreadyRedeemedByOther.
 
-- **InAFOFlow** – Bulio logikos reikšmė, nurodanti, ar vykdoma AFO panaudojimo eiga.
+- **InAFOFlow** – Bulio logikos reikšmė, nurodanti, ar vykdome „Office“ aktyvinimo panaudojimo srautą.
 
 - **StatusCode** – tarnybos iškvietimo rezultatas kaip vienas žodis, pvz., Sukurta.
 
@@ -3831,6 +3894,107 @@ Jei dėl kokios nors priežasties negalime suaktyvinti vartotojo ir turime parod
 
 Šis įvykis nerenka jokių laukų duomenų.
 
+### <a name="officelicensingoobehandledigitalattachfailure"></a>Office.Licensing.OOBE.HandleDigitalAttachFailure
+
+Šis įvykis suaktyvinamas, jei atlikus paslaugų patikrą (žr. Office.Licensing.OOBE.SearchForDigitalAttach) galimo skaitmeninio prijungimo pasiūlymo šiame įrenginyje nerasta. Atsižvelgdami į skirtingas įrenginių sąlygas, vartotojams bus rodomi skirtingi dialogo langai. Šis įvykis registruos įvairius scenarijus, kaip mes tvarkome nesėkmingus skaitmeninius prijungimus.
+
+Renkami šių laukų duomenys:
+
+- **Activity_Result_Tag** nurodo, kaip perkeliame vartotoją į įvairių klaidų būsenas.
+   - 0x222e318f – turime tęsti „Office“ pasiūlymo aktyvinimo paiešką.
+   - 0x222e318e – šiame seanse grįšime į OĮG režimą, kai įrenginys tiekiamas be skaitmeninio prijungimo pasiūlymo.
+   - 0x222e318d – nėra interneto ryšio, todėl vartotojui bus rodomas dialogo langas NoInternetConnectivity 
+   - 0 – atsižvelgiant į konkretų klaidos kodą, vartotojui bus rodomos įvairių klaidų vartotojo sąsajos.
+
+- **Data_DigitalAttachErrorType** – nurodo konkretų tarnybos iškvietos klaidos kodą.
+
+- **Data_FallbackFlight** – nurodo, ar UseAFOAsFallBack testuojamas variantas yra įjungtas.
+
+
+### <a name="officelicensingoobehandledigitalattachsuccess"></a>Office.Licensing.OOBE.HandleDigitalAttachSuccess
+
+Šis įvykis suaktyvinamas, kai atlikus paslaugų patikrą įrenginyje randamas galimas skaitmeninio prijungimo pasiūlymas. Atsižvelgdami į skirtingas įrenginių sąlygas, vartotojams bus rodomi skirtingi dialogo langai. Šis įvykis registruos įvairius scenarijus, kaip mes tvarkome sėkmingus skaitmeninius prijungimus.
+
+Renkami šių laukų duomenys:
+
+- **Activity_Result_Tag** – nurodo, kaip tvarkome sėkmingo skaitmeninio prijungimo scenarijus.
+   - 0 – galime automatiškai įkelti tapatybę ir vartotojui rodome vartotojo sąsają „Gavote „Office“ (su paskyra).
+   - 0x222e3191 – negalime automatiškai įkelti tapatybės, todėl vartotojui rodysime vartotojo sąsają „Gavote „Office“ (be paskyros).
+   - 0x222e3193 – vartotojui rodome vartotojo sąsają „Gavote „Office“ (be paskyros) arba vartotojui nereikia rodyti jokios vartotojo sąsajos „Gavote „Office“, nes tai yra su įrenginiu susijęs pasiūlymas.
+
+- **Data_IsClaimTypeDevice** – nurodo, ar pranešimo apie skaitmeninio prijungimo pasiūlymą tipas yra susijęs su įrenginiu.
+
+### <a name="officelicensingoobepopulatedigitalattachoffersignindex"></a>Office.Licensing.OOBE.PopulateDigitalAttachOfferSignInDEX
+
+Originalios įrangos gamintojai (OEM) parduoda įrenginius, tiekiamus su „Office“ paketu (vienerių metų prenumerata arba nuolatine licencija), už kurį klientas sumoka įsigydamas įrenginį. Šis įvykis seka, kai įrenginyje aptinkama išankstinė teisė naudoti „Office“ paketą ir vartotojas jau prisijungė naudodamas „Microsoft“ paskyrą, ir leidžia mums stebėti sistemos ir paslaugų sveikatą.
+
+Renkami šių laukų duomenys:
+
+- **Data_ExpirationDate** – nurodo prenumeratos pasiūlymo galiojimo pabaigos datą
+
+- **Data_IsSubscription** – nurodo, ar produktas, apie kurį bus pranešama, yra prenumeratos SKU, ar nuolatinis SKU.
+
+- **Data_ProductName** – nurodo skaitmeninio prijungimo pasiūlymo produkto pavadinimą
+
+
+### <a name="officelicensingoobesearchfordigitalattach"></a>Office.Licensing.OOBE.SearchForDigitalAttach
+
+Originalios įrangos gamintojai (OEM) parduoda įrenginius, tiekiamus su „Office“ paketu (vienerių metų prenumerata arba nuolatine licencija), už kurį klientas sumoka įsigydamas įrenginį. Įrenginiai, sukonfigūruoti naudojant tam tikrą registro raktą (OOBEMode: OEMTA), gali būti tiekiami su skaitmeniniu būdu pridėtu „Office“ pasiūlymu. Paleisdami „Office" atliekame paslaugų patikras, siekdami patikrinti, ar yra skaitmeniniu būdu pridėtas „Office“ pasiūlymas. Ši veikla skirta tai stebėti. 
+
+Renkami šių laukų duomenys:
+
+- **Activity_Result_Tag** – nurodo bendrą šios paslaugų patikros rezultatą. 
+   - 0x222e318c skaitmeninio prijungimo testuojamas variantas yra išjungtas, todėl paslaugų patikros neatliekamos.
+   - 0x222e318b klientas neturi prieigos prie interneto, todėl paslaugų patikros neatliekamos.
+   - 0x222e318a rastas išperkamas skaitmeninio prijungimo pasiūlymas
+   - 0x222e3189 rastas neišperkamas skaitmeninio prijungimo pasiūlymas
+
+- **Data_EnableDAFlight** – nurodo, ar šią paslaugų patikrą įgalinęs skaitmeninio prijungimo testuojamas variantas yra įjungtas.
+
+
+### <a name="officelicensingoobeshowtouchlessattachfailuredialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachFailureDialog
+
+Originalios įrangos gamintojai (OEM) parduoda įrenginius, tiekiamus su „Office“ paketu (vienerių metų prenumerata arba nuolatine licencija), už kurį klientas sumoka įsigydamas įrenginį. Šis įvykis suaktyvinamas, kai vykdant skaitmeninio prijungimo panaudojimo ir aktyvinimo srautą OĮG kompiuteriuose, kurie tiekiami su išankstine teise naudoti „Office“, įvyksta klaida.  Naudojame šiuos duomenis siekdami stebėti sistemų ir paslaugų sveikatą ir išspręsti problemas, susijusias su OĮG „Office“ aktyvinimo srautu.
+
+Renkami šių laukų duomenys:
+
+- **Data_Continue** – praneša, jei vartotojas dialogo lange spustelėja Tęsti.
+
+- **Activity_Result_Tag** – nurodo mygtuką, kurį vartotojas spustelėjo dialogo lange.
+   - 0x222e319d – vartotojas dialogo lange spustelėja Kartoti
+   - 0x222e319c – vartotojas dialogo lange spustelėja Tęsti
+   - 0 – vartotojas uždaro dialogo langą
+
+- **Data_IsForDigitalAttach** – nurodo, kokioje platformoje ir darbo eigoje vartotojas atlieka veiksmus – senesnėje („Office“ aktyvinimas (AFO)) arba modernioje (skaitmeninis prijungimas).
+
+- **Data_Retry** – praneša, jei vartotojas dialogo lange spustelėja Kartoti.
+
+
+### <a name="officelicensingoobeshowtouchlessattachofferdialog"></a>Office.Licensing.OOBE.ShowTouchlessAttachOfferDialog
+
+Originalios įrangos gamintojai (OEM) parduoda įrenginius, tiekiamus su „Office“ paketu (vienerių metų prenumerata arba nuolatine licencija), už kurį klientas sumoka įsigydamas įrenginį. Šis įvykis seka, kai įrenginyje aptinkama išankstinė teisė naudoti „Office“ paketą, bet vartotojas neprisijungė naudodamasis „Microsoft“ paskyra, ir leidžia mums stebėti sistemos ir paslaugų sveikatą.
+
+Renkami šių laukų duomenys:
+
+- **Activity_Result_Tag** – praneša, ar buvo nustatyta vartotojo tapatybė
+   - 0x222e3194 – nepavyko nustatyti vartotojo tapatybės (jis (ji) atšaukė prisijungimą arba nepavyko autentifikuoti).
+   - 0 – vartotojas nurodė tapatybę.
+
+- **Data_ExpirationDate** – nurodo prenumeratos pasiūlymo galiojimo pabaigos datą
+
+- **Data_IsCentennial** – nurodo, ar „Office“ programa veikia“Centennial“ platformoje
+
+- **Data_IsForDigitalAttach** – nurodo, ar šį dialogo langą suaktyvino skaitmeninio prijungimo srautas, ar „Office“ aktyvinimo srautas.
+
+- **Data_IsSubscription** – nurodo, ar produktas, apie kurį bus pranešama, yra prenumeratos SKU, ar nuolatinis SKU.
+
+- **Data_OExType** – nurodo, ar vartotojas uždaro dialogo langą, spustelėjęs saitą ChangeAccount
+
+- **Data_ProductName** – nurodo skaitmeninio prijungimo pasiūlymo produkto pavadinimą
+
+- **Data_UseInAppRedemption** – nurodo, ar naudojame panaudojimo žiniatinklyje parinktį Panaudojimas programoje – tai susiję tik su „Office“ aktyvinimo srautu.
+
+
 ### <a name="officelicensingoobetrybuychoice"></a>Office.Licensing.OOBE.TryBuyChoice
 
 Vartotojams, kurių naujuose įrenginiuose „Office“ buvo įdiegtas iš anksto, bet kurie neturi teisės jo naudoti, rodomas dialogo langas, kuriame jie gali pasirinkti išbandyti „Office“, jį įsigyti arba įvesti produkto kodą, kad gautų licenciją. Šis įvykis užregistruoja vartotojo veiksmą dialogo lange. Šis įvykis naudojamas siekiant stebėti dialogo lange, rodomame vartotojui, kurio įrenginyje „Office“ buvo įdiegtas iš anksto, tačiau kuris neturi teisės jo naudoti, atliekamus veiksmus, ir padeda nustatyti, ar vartotojas gauna licenciją, ar ne.
@@ -3965,7 +4129,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingtelemetryflowshowafodialogs"></a>Office.Licensing.TelemetryFlow.ShowAFODialogs
 
-Sėkmingai gavus galiojantį „Office“ PIN, skirtą įrenginiui, kuriame iš anksto įdiegtas „Office“, parodome vartotojui prisijungimo arba panaudojimo dialogo langą.  Kai PIN panaudojamas, parodome GVLS dialogo langą.  Modernizuodami AFO funkciją atnaujinome du dialogo langus, kad suteiktume daugiau informacijos apie įrenginyje esantį „Office“ produktą.  Ši telemetrija skirta stebėti, ar naudojant funkciją vartotojams kyla mažiau nesklandumų gaunant produktą. Stebima panaudojimo proceso eiga ir išėjimo taškai (kuris dialogo langas buvo atmestas).
+Sėkmingai gavus galiojantį „Office“ PIN, skirtą įrenginiui, kuriame iš anksto įdiegtas „Office“, parodome vartotojui prisijungimo arba panaudojimo dialogo langą.  Kai PIN panaudojamas, parodome GVLS dialogo langą.  Modernizuodami „Office“ aktyvinimo funkciją, atnaujinome du dialogo langus, kad suteiktume daugiau informacijos apie su įrenginiu teikiamą „Office“ produktą.  Ši telemetrija skirta stebėti, ar naudojant funkciją vartotojams kyla mažiau nesklandumų gaunant produktą. Stebima panaudojimo proceso eiga ir išėjimo taškai (kuris dialogo langas buvo atmestas).
 
 Renkami šių laukų duomenys:
 
@@ -3981,9 +4145,9 @@ Renkami šių laukų duomenys:
 
 - **DialogEULA** – signalas, kad parodėme „Patvirtinti EULA“ dialogo langą. 
 
-- **DialogRedemption** – signalas, kad parodėme AFO padengimo dialogo langą.
+- **DialogRedemption** – signalas, kad parodėme „Office“ aktyvinimo panaudojimo dialogo langą.
 
-- **DialogSignIn** – signalas, kad parodėme AFO prisijungimo dialogo langą.
+- **DialogSignIn** – signalas, kad parodėme „Office“ aktyvinimo prisijungimo dialogo langą.
 
 - **EmptyRedemptionDefaults** – signalas, kad nepavyko gauti numatytosios padengimo informacijos.
  
@@ -3995,7 +4159,7 @@ Renkami šių laukų duomenys:
 
 - **OExType** – klaidos tipas, kurį gauname, kai atmetamas prisijungimo dialogo langas.
 
-- **Tag** – nurodo, kuriame etape vartotojas išėjo iš AFO panaudojimo proceso. Galimos žymės:
+- **Tag** – nurodo, kuriame etape vartotojas išėjo iš „Office“ aktyvinimo panaudojimo proceso. Galimos žymės:
     - 0x0311380b    Vartotojas atmetė prisijungimo dialogo langą panaudojimo dialogo lange
     - 0x0311380c    Nepavyko automatiškai įkelti tapatybės, kai vartotojas prisijungė panaudojimo dialogo lange
     - 0x03113810    Nepavyko įkelti paskyros demografinės informacijos (šalies kodo, kalbos, valiutos, bandomojo pasiūlymo ir rinkodaros nuostatų)
@@ -4010,13 +4174,13 @@ Renkami šių laukų duomenys:
     - 0x2370e3c1 Eiti į žiniatinklį siekiant padengti PIN
     - 0x2370e3a1 Eiti į žiniatinklį siekiant padengti PIN
     - 0x2370e3c0 Dialogo lango sekos ciklas dėl vartotojo grįžimo ir perėjimo į priekį dialogo langų sraute
-    - 0x2370e3a3 Vartotojas spustelėjo hipersaitą „Ne dabar“, todėl buvo praleistas AFO pasiūlymas tame seanse
-    - 0x2370e3a2 Vartotojas spustelėjo hipersaitą „Niekada šito man nerodyti“, todėl buvo išjungtas AFO pasiūlymas
+    - 0x2370e3a3 Vartotojas spustelėjo hipersaitą „Ne dabar“, todėl šiame seanse „Office“ aktyvinimo pasiūlymas buvo praleistas
+    - 0x2370e3a2 Vartotojas spustelėjo hipersaitą „Niekada šito man nerodyti“, todėl „Office“ aktyvinimo pasiūlymas buvo išjungtas
 
 
-- **UseInAppRedemption** – nurodo, ar vartotojai išlaikomi programoje ir gali panaudoti PIN joje, ar siunčiami į žiniatinklį, kad panaudotų iškviestą PIN (iš anksto įvestą).
+- **UseInAppRedemption** – nurodo, ar vartotojai lieka programoje ir gali panaudoti PIN joje, ar siunčiami į žiniatinklį, kad panaudotų iškviestą PIN (iš anksto įvestą).
 
-- **UseModernAFO** – nurodo, ar naudojame naująją, ar senąją AFO funkciją.
+- **UseModernAFO** – nurodo, ar naudojame naująją, ar senąją „Office“ aktyvinimo funkciją.
 
 ### <a name="officelicensingtelemetryflowshowtrybuydialogforoobe"></a>Office.Licensing.TelemetryFlow.ShowTryBuyDialogForOOBE
 
@@ -4026,7 +4190,7 @@ Renkami šių laukų duomenys:
 
 - **ActiveView** – nurodo vartotojui parodyto dialogo lango ID
 
-- **CurrentOOBEMode** – nurodo išankstinio diegimo režimą (OOBE režimą, pvz., AFO, OĮG ir pan.)
+- **CurrentOOBEMode** – nurodo išankstinio diegimo režimą (OOBE režimą, pvz., „Office“ aktyvinimas, OĮG ir pan.)
 
 - **NotInitializedBeforeWhileAdding** – tai skirta tik informacijai, ar įvykis buvo įtrauktas į telemetrijos tvarkytuvo schemą jo tiesiogiai neužregistruojant
 
@@ -10704,6 +10868,55 @@ Renkami šių laukų duomenys:
 - **SessionId** – seanso identifikatorius
 
 
+### <a name="installedapprespondedcoreappleevent"></a>installedapp.respondedcoreappleevent
+
+Šis įvykis nurodo, kad „Microsoft“ automatinis naujinimas (MAU) iš registruotos programos gavo „Apple“ įvykio atsako kodą, kad uždarytų programą ir pereitų prie laukiamo programos naujinimo. Šis įvykis naudojamas siekiant padėti plėtoti būsimą patobulinimą ir sumažinti vartotojų trukdžių naujinant programą. 
+
+Renkami šių laukų duomenys:
+
+- **App** – taikomosios programos siuntimo procesas
+
+- **AppID** – atnaujinamos taikomosios programos identifikatorius
+
+- **AppInfo_Language** – kalba, kuria veikia programa
+
+- **AppleEventClass** – nurodo, kokio tipo įvykis siunčiamas/pripažįstamas
+
+- **AppleEventID** – unikalus siuntimo/pripažinto įvykio identifikatorius
+
+- **AppVersionLong** – taikomosios programos versija
+
+- **Channel** – auditorijos pirmenybė
+
+- **Device_NetworkCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius.
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos komponavimo versija.
+
+- **Event_ReceivedTime** – laikas, kuriuo buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowToCheck** – kaip tikrinti parametrus
+
+- **Payload** – turi bandymų iš naujo skaičių
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso aštuonkeliai
+
+- **SessionId** – seanso identifikatorius
+
+- **UpdateID** – naujinimo identifikatorius
+
+
 ### <a name="installedappsendcoreappleevent"></a>installedapp.sendcoreappleevent
 
 Šis įvykis nurodo, kad „Microsoft“ automatinis naujinimas (MAU) siunčia „Apple“ įvykį į registruotą programą, kad ją nutrauktų ir būtų tęsiamas laukiantis programos naujinimas. Šis įvykis šiuo metu naudojamas siekiant padėti plėtoti būsimą patobulinimą ir sumažinti trukdžius vartotojams naujinant. 
@@ -15764,39 +15977,6 @@ Renkami šių laukų duomenys:
 Renkami šių laukų duomenys:
 
 - **Data_EventId** – kodas, nurodantis vartotojo pasirinktą diagnostikos duomenų rinkimo nuostatą.
-
-### <a name="officeiospaywallprovisioningresponse"></a>Office.iOS.Paywall.Provisioning.Response
-
-Produkto telemetrija naudojama norint suderinti pirkimo operacijos informaciją su „Microsoft“ komercijos sistema, kad būtų galima įgalinti susietas prenumeratos privilegijas. Naudojamas siekiant palengvinti operacijų registravimą ir prenumeratos parengimą, jei reikėtų peržiūrėti vėliau ar atlikti vidinį derinimą.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
-
-- **failureReason** – eilutė – įtraukiama, kai būsena yra „triktis“. Nurodomas klaidos atsakas, pateikiamas RFS parengimo atsako.
-
-- **productId** – eilutė – produkto „App Store“ ID, kuriam buvo pateikta užklausa
-
-- **status** – eilutė – sėkmė arba triktis, nurodanti, ar užklausa pavyko, ar nepavyko
-
-
-### <a name="officeiospaywallstorekitresponse"></a>Office.iOS.Paywall.StoreKit.Response
-
-Duomenys renkami kaip kritinė inžinerinė telemetrija, skirta registruoti pirkimo bandymo rezultatą, kurį neautomatiškai inicijavo vartotojas. Produkto telemetrija naudojama norint suderinti pirkimo operacijos informaciją su „Microsoft“ komercijos sistema, kad būtų galima įgalinti susietas prenumeratos privilegijas.
-
-Renkami šių laukų duomenys:
-
-- **entryPoint** – eilutė – mygtukas arba srautas iš kurio buvo rodoma mokama prieiga prie informacijos. Pvz., „Premium Upgrade Button“ („Premium“ atnaujinimo mygtukas“) arba „First Run Flow“ (pirmojo vykdymo srautas).
-
-- **failureReason** – eilutė – įtraukiama, kai būsena yra „triktis“. Nurodomas klaidos atsakas, pateikiamas „App Store“ atsako.
-
-- **productId** – eilutė – tik „MakePurchase“, „PendingPurchase“, „App Store“ produkto ID, kuriam užklausa buvo sukurta.
-
-- **productsCount** – sveikasis skaičius – tik „ProductsFetch“, produktų skaičius, grąžintas „Store“.
-
-- **requestType** – eilutė – „StoreKit“ užklausos tipas. Pvz., „ProductsFetch“, „PendingPurchase“
-
-- **status** – eilutė – sėkmė arba triktis, nurodanti, ar užklausa pavyko, ar nepavyko
 
 ### <a name="officeonenotegetsharepointidsfordocument"></a>Office.OneNote.GetSharePointIdsForDocument
 
