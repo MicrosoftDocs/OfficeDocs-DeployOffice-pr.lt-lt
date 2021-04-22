@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: d651fb94cb031a0fc1a154201e2875c28f979f2a
-ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
+ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
+ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51181739"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51914953"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -43,6 +43,7 @@ Funkcijos, kurias „Bing“ siūlo „Outlook“, skirtoje „iOS“ ir „Andr
 - **Vietos pasiūlymai:**   kai įtraukiate viešąją vietą su adresu į kalendoriaus elementą, lauke Vieta taip pat bus nurodomas visas adresas.
 - **Įdomūs kalendoriai:**   galite [prenumeruoti](https://support.microsoft.com/office/cff1429c-5af6-41ec-a5b4-74f2c278e98c) kalendorius apie savo mėgstamas sporto komandas ar televizijos laidas.
 - **Kelionės laikas kortelėje „Up Next“:** Jūsų ateinantis įvykis bus apibendrintas el. pašto aplanko Gauta viršuje esančioje kortelėje [„Up Next“](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e). Programoje „Outlook“ skirtoje „Android“, šiai funkcijai reikalinga „Bing Maps“, kad būtų pateiktas numatomas kelionės laikas.
+- **Orai kalendoriuje:** dabartinės jūsų vietos [orų prognozė](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2) bus rodoma jūsų kalendoriaus ekrano viršuje.
 
  Šios „Bing“ grindžiamos funkcijos jums licencijuotos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) sąlygas ir joms taikomas [privatumo patvirtinimas](https://privacy.microsoft.com/). Bet kokios ieškos užklausos, kurias pateikiate „Office 365“ programoms įmonėms organizacijai naudodami šias paslaugas, siunčiamos į „Microsoft Bing“. „Bing“ organizacija jų nesusieja su jumis.
 

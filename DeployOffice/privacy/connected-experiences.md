@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: d7c4af6af94025136ab09f0709d8c65382f456dd
-ms.sourcegitcommit: 2c4bf05e77415559080766cc7d7f241e9f968108
+ms.openlocfilehash: c1fb64bc45ed9e97cde37541dad85162a5a3699c
+ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51181270"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51916095"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -36,16 +36,16 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | **Pavadinimas**   | **Daugiau informacijos**   |
 | ----------- | ------------------ |
 | *3D Maps*\*    | [Darbo su trimačiais žemėlapiais pradžia](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
+| Duomenų analizė (anksčiau vad. Idėjos) | [Duomenų analizė programoje „Excel“](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 |Automatinis taisymas|[Greitas ir lengvas turinio lygiavimas naudojant automatinį taisymą](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Automatinis alternatyvusis tekstas   | [Viskas, ką turite žinoti apie efektyvaus alternatyviojo teksto rašymą](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
 |Diagramų rekomendacijos (internetinė „Excel“)|[Kurti diagramą su rekomenduojamomis diagramomis](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
 |Mokomųjų bloknotų priedai („OneNote“)|[Darbo su „OneNote“ mokomaisiais bloknotais pradžia: nurodymai mokytojams](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Duomenų tipai| [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
 |Dizaino įrankis (internetinė „Word“)|[Dizaino įrankio naudojimas kuriant geresnius dokumentus](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
-| Diktavimo funkcija  | [Diktuokite dokumentus „Word“](https://support.microsoft.com/office/d4fd296e-8f15-4168-afec-1f95b13a6408) |
+| Diktavimo funkcija  | [Diktavimas „Microsoft 365“](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Rengyklė<sup>1</sup> |[„Microsoft“ rengyklė patikrina gramatiką ir daugiau dokumentuose, pašte ir žiniatinklyje](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Patogūs saitai programoje „Outlook“ |[Patogesni saitų pavadinimai el. laiškuose](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
-| Idėjos     | [Idėjos programoje „Excel“](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
 | Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 |Mokomieji įrankiai|[Mokomieji įrankiai](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
@@ -103,6 +103,7 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 | Šablonai  | [Nemokamų, iš anksto sukurtų šablonų atsisiuntimas](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Numatomas kelionės laikas kortelėje „Up Next“*\*|Kai pasirenkate leisti „Outlook“ skirtai „iOS“ ir „Android“ pasiekti jūsų vietą, numatomas jūsų kelionės laikas iki kito įvykio bus įtrauktas į [„Up Next“](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) kortelę, esančią aplanko Gauta viršuje.<br/><br/> [Kas yra „Laikas palikti pranešimų“?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Orų prognozės juosta*\* („Outlook“)| [Kalendoriuje nurodyto miesto, kuriam juostoje skelbiama orų prognozė, keitimas](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
+|*Orai kalendoriuje*\* („Outlook Mobile“)|[Kaip įjungti orų prognozę kalendoriuje „Outlook Mobile“?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
 
 > [!NOTE]
 >\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“* strategijos nustatymą.
