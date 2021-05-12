@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: d71859f75046ad13901aae1b381bf97227f05383
-ms.sourcegitcommit: 8982800d8026ec2f82e8389b7dfa762381258874
+ms.openlocfilehash: d3e5ca5381c9fb68a1e05fca703729e282593ded
+ms.sourcegitcommit: cb1f6e3ba1336fc1a8cdca927f545dc43fd8e829
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51891212"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52308153"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -47,7 +47,7 @@ Jei esate organizacijos administratorius, just taip pat gali dominti šie straip
 
 | **Paslauga**  | **Aprašas**  |
 | ------ | ---- |
-| [Autentifikavimas](#authentication-events) | Autentifikavimas yra keliose platformose veikianti paslauga, kurią naudojant patvirtinama jūsų „Office“ vartotojo tapatybė.  Ji reikalinga, kad galėtumėte prisijungti prie „Office“, suaktyvinti „Office“ licenciją ir pasiekti debesyje saugomus failus. Ji veikia vienodai visuose „Office“ seansuose ir įrenginiuose.    |
+| [Autentifikavimas](#authentication-events) | Autentifikavimas yra keliose platformose veikianti paslauga, kurią naudojant patvirtinama jūsų „Office“ vartotojo tapatybė. Ji reikalinga, kad galėtumėte prisijungti prie „Office“, suaktyvinti „Office“ licenciją ir pasiekti debesyje saugomus failus. Ji veikia vienodai visuose „Office“ seansuose ir įrenginiuose.    |
 | [Spustelėkite ir naudokitės](#click-to-run-events) | Spustelėkite ir naudokitės yra diegimo technologija, naudojama diegiant ir naujinant „Office“ sistemoje „Windows“. Ji tikrina, ar išleista naujų „Office“ versijų, o kai nauja versija pasiekiama, ją atsisiunčia ir įdiegia. Paslauga Spustelėkite ir naudokitės aptiks, kada reikia naujinti „Office“, atsiųs naujinimus, įskaitant saugos naujinimus, ir juos įdiegs.     |
 | [Patobulinta konfigūravimo paslauga (ECS)](#enhanced-configuration-service-ecs-events) | ECS suteikia „Microsoft“ galimybę perkonfigūruoti „Office“ įdiegtis, išvengiant poreikio iš naujo visuotinai įdiegti „Office“. Ji naudojama valdyti palaipsniui diegiamas funkcijas arba naujinimus, o diegimo poveikis stebimas pagal renkamus diagnostikos duomenis. Ji taip pat naudojama siekiant sumažinti saugos arba veikimo problemas diegiant funkcijas arba naujinimus. Be to, ECS palaiko su diagnostikos duomenimis susijusius konfigūracijos keitimus, kad užtikrintų, jog būtų renkami tinkami įvykiai. |
 | [Licencijavimas](#licensing-events)     | Licencijavimas yra debesų technologija pagrįsta paslauga, kuri palaiko naujų „Office“ įdiegčių aktyvinimą ir išlaiko licenciją įrenginiuose suaktyvinus „Office“. Ji užregistruoja visus jūsų įrenginius ir suaktyvina „Office“, patikrina „Office“ prenumeratos būseną ir valdo produktų raktus.    |
@@ -898,7 +898,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="onenotesigninssoexternalappsaccountfound"></a>OneNote.SignIn.SSOExternalAppsAccountFound
  
-Šis įvykis užregistruojamas, kai TokenSharingManager pateiktame paskyrų sąraše randama paskyra su galiojančiu atnaujinimo atpažinimo ženklu.  Šis scenarijus būdingas bendrajai autentifikacijai (SSO).
+Šis įvykis užregistruojamas, kai TokenSharingManager pateiktame paskyrų sąraše randama paskyra su galiojančiu atnaujinimo atpažinimo ženklu. Šis scenarijus būdingas bendrajai autentifikacijai (SSO).
  
 Renkami šių laukų duomenys:
  
@@ -908,7 +908,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="onenotesigninssoexternalappsinvalidaccount"></a>OneNote.SignIn.SSOExternalAppsInvalidAccount
 
-Šis įvykis užregistruojamas, kai įvyksta klaida bandant gauti TokenSharingManager pateiktame paskyrų sąraše esančios paskyros atnaujinimo atpažinimo ženklą. Šis scenarijus būdingas bendrajai autentifikacijai (SSO)
+Šis įvykis užregistruojamas, kai įvyksta klaida bandant gauti TokenSharingManager pateiktame paskyrų sąraše esančios paskyros atnaujinimo atpažinimo ženklą. Šis scenarijus būdingas bendrajai autentifikacijai (SSO).
  
 Renkami šių laukų duomenys:
  
@@ -1168,7 +1168,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -1266,7 +1266,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioinstalltaskfinalintegrate"></a>Office.ClickToRun.Scenario.InstallTaskFinalintegrate
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa diegia licencijas ir registro parametrus. Naudojami vertinant „Office“ diegimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa diegia licencijas ir registrų parametrus. Naudojami vertinant „Office“ diegimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
@@ -1320,7 +1320,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -1418,7 +1418,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioinstalltaskinitupdates"></a>Office.ClickToRun.Scenario.InstallTaskInitupdates
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa kuria parametrus, kurių reikia, kad tinkamai veiktų naujinimai. Naudojami vertinant „Office“ diegimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa kuria parametrus naujinimams, kad veiktų tinkamai. Naudojami vertinant „Office“ diegimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
@@ -1472,7 +1472,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -1548,7 +1548,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -1624,7 +1624,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -1700,7 +1700,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -1852,7 +1852,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -1874,7 +1874,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioinstalltaskstream"></a>Office.ClickToRun.Scenario.InstallTaskStream
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa atsisiunčia naujus „Office“ failus. Naudojami vertinant „Office“ diegimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa atsisiunčia naujus „Office“ skirtus failus. Naudojami vertinant „Office“ diegimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
@@ -1928,7 +1928,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2004,7 +2004,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2080,7 +2080,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2156,7 +2156,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2232,7 +2232,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2308,7 +2308,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2384,7 +2384,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2460,7 +2460,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2482,7 +2482,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioupdatetaskupdateapply"></a>Office.ClickToRun.Scenario.UpdateTaskUpdateapply
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai Spustelėkite ir naudokitės klientas išjungia veikiančias programas (jei būtina) ir įdiegia naujus atsisiųstus failus. Naudojami vertinant „Office“ naujinimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai Spustelėkite ir naudokitės klientas išjungia veikiančias programas (jei būtina) ir įdiegia naujus atsisiųstus failus.Naudojami vertinant „Office“ naujinimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
@@ -2546,7 +2546,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2708,7 +2708,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2796,7 +2796,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -2818,7 +2818,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatefinalize"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatefinalize
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai Spustelėkite ir naudokitės klientas valo po naujinimo ir atkuria anksčiau atidarytas programas. Naudojami vertinant „Office“ naujinimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai Spustelėkite ir naudokitės klientas valo po naujinimo ir atkuria anksčiau atidarytas programas.Naudojami vertinant „Office“ naujinimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
@@ -2872,7 +2872,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
   - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
@@ -3053,7 +3053,7 @@ Ataskaitos apie veiksmą, atskiriantį įvestį, renkamą naudojant CollectParam
 
 ### <a name="officeclicktorununiversalbootstrappercollectembeddedsignature"></a>Office.ClickToRun.UniversalBootstrapper.CollectEmbeddedSignature
 
-Ataskaitos apie veiksmą, kuris skaito pažymėtą įvestį iš exe įdėtojo parašo.  Tai nėra įrodyta koncepcija, ankstesnė „setup. exe“ iteracija nebuvo įgyvendinta ir tuo pasikliaujame, kad perkeltume vartotojo produktų/kalbų/bitų pasirinkimus iš tinklalapio į „setup. exe“ procesą.
+Ataskaitos apie veiksmą, kuris skaito pažymėtą įvestį iš „exe“ įdėtojo parašo. Tai nėra įrodyta koncepcija, ankstesnė „setup. exe“ iteracija nebuvo įgyvendinta ir tuo pasikliaujame, kad perkeltume vartotojo produktų, kalbų arba bitų pasirinkimus iš tinklalapio į „setup. exe“ procesą.
  
 - **ErrorCode –** sveikasis skaičius, susietas su neapdorota išimtimi
 
@@ -3277,7 +3277,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalluishown"></a>Office.Android.DocsUI.PaywallControl.PaywallUIShown
 
-Kritinis telemetrijos naudojimas, kai vartotojui rodomas mokamos prieigos prie informacijos valdiklis. Naudojamas suprasti įsigijimo programoje vartotojo patirtį ir optimizuoti tą pačią arba būsimas versijas.
+Kritinė naudojimo telemetrija gaunama, kai vartotojui rodomas mokamos prieigos prie informacijos valdiklis. Naudojama norint suprasti vartotojo įsigijimo programoje funkcijas ir optimizuoti būsimas versijas.
 
 Renkami šių laukų duomenys:
 
@@ -3644,7 +3644,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingdialogswebviewdialoghandleerrornotification"></a>Office.Licensing.Dialogs.WebViewDialog.HandleErrorNotification
  
-Šis įvykis naudojamas kaip signalas mums pranešti, kad bandyta įkelti pirkimo programėlėje patirtį, bet įvyko klaida, dėl kurios nebuvo rodomas dialogo langas. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą norint užtikrinti, kad ji veikia kaip ir numatyta.  
+Šis įvykis naudojamas kaip signalas mums pranešti, kad bandyta įkelti pirkimo programėlėje funkcijas, bet įvyko klaida, dėl kurios nerodomas dialogo langas. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą norint užtikrinti, kad ji veikia kaip ir numatyta.  
  
 Renkami šių laukų duomenys:
   
@@ -3652,7 +3652,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingdialogswebviewdialogpreload"></a>Office.Licensing.Dialogs.WebViewDialog.Preload
  
-Šis įvykis naudojamas kaip signalas mums pranešti, kad pirkimo programėlėje patirtis įkeliama fone. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą norint užtikrinti, kad ji veikia kaip ir numatyta.  
+Šis įvykis naudojamas kaip signalas mums pranešti, kad pirkimo programėlėje funkcijos įkeltos fone. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą norint užtikrinti, kad ji veikia kaip ir numatyta.  
  
 Renkami šių laukų duomenys:
 
@@ -3660,7 +3660,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingdialogswebviewdialogshow"></a>Office.Licensing.Dialogs.WebViewDialog.Show
  
-Šis įvykis naudojamas kaip signalas mums pranešti, kad pirkimo programėlėje patirtis yra rodoma vartotojui. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą.  
+Šis įvykis naudojamas kaip signalas mums pranešti, kad pirkimo programėlėje funkcijos parodytos vartotojui. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą.  
 
 Renkami šių laukų duomenys:
 
@@ -3685,7 +3685,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingexpirationdialogshown"></a>Office.Licensing.ExpirationDialogShown
 
-Informacija renkama, kai vartotojui rodome galiojimo laiko pabaigos dialogo langą, kuriame nurodoma, kad jų licencija pasibaigė. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
+Renkama, kai rodome galiojimo pabaigos dialogo langą vartotojui, kuriame sakoma, kad licencijos galiojimas baigėsi. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie savo kompiuterio problemą
 
 Renkami šių laukų duomenys:
 
@@ -3716,6 +3716,29 @@ Renkame, kai vartotojas nustato įrenginį, ir iškviečiame licencijavimo pasla
 Renkami šių laukų duomenys:
 
 - **EntitlementCount** – vartotojo turimų teisių skaičius
+
+
+### <a name="officelicensinggetnextuserlicense"></a>Office.Licensing.GetNextUserLicense
+
+Šis įvykis paleidžiamas, kai gaunama licencija, skirta pasirinktam vartotojo patirtimi pagrįstam „Office“ teisių suteikimui aktyvinimui pirmojo funkcijų paleidimo metu. Naudojame šiuos duomenis norėdami stebėti sistemų ir tarnybų sveikatą.
+
+Renkami šių laukų duomenys:
+
+- **Activity_Success** – Bulio logikos: nurodo mums, ar sėkmingai gavome įrenginio licenciją, kad ji būtų suaktyvinta jo „Office“ programoje.
+
+- **Data_AllowNULPerpetual** – Bulio logikos: nurodo mums, ar įjungtas testuojamas variantas, įgalinantis vNext Perpetual.
+
+- **Data_AttemptNulReactivation** – Bulio logikos: nurodo mums, ar tai aktyvinimo iš naujo scenarijus.
+
+- **Data_CurrentMode** – 0 reiškia SPP (pasenęs licencijavimo procesas), 2 reiškia vNext (modernus licencijavimo procesas).
+
+- **Data_HasError** – Bulio logikos: nurodo mums, ar gavome kokį nors klaidos pranešimą bandydami gauti licenciją pasirinktam vartotojo patirtimi pagrįstam teisių suteikimui.
+
+- **Data_IsSubscription** – Bulio logikos: nurodo mums, ar „Office“ prenumerata aktyvinama pakartotinai.
+
+- **Data_NewMode** – 0 reiškia SPP (pasenęs licencijavimo procesas), 2 reiškia vNext (modernus licencijavimo procesas). Daugiausia turėtume tikėtis „2“.
+
+- **Data_SkuToSkuNeeded** – Bulio logikos: nurodo mums, ar reikia atlikti SKU į SKU konvertavimą, nes turintis teisę „Office“ SKU neatitinka įdiegto „Office“ SKU.
 
 
 ### <a name="officelicensingheartbeat"></a>Office.Licensing.Heartbeat 
@@ -3774,7 +3797,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensinginvokelicensewizard"></a>Office.Licensing.InvokeLicenseWizard
 
-Jei pastebime problemų su aktyvinimo darbo eiga, paleidžiame licencijos vediklį ir siunčiame šį signalą, kad nurodytumėte tą patį. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
+Jei matome problemų dėl aktyvinimo darbo eigos, suaktyviname licencijos vediklį ir išsiunčiame šį signalą, kad tai nurodytume. Tai svarbu nustatant, ar vartotojo būsena yra tinkama ir jam veikia visos funkcijos, taip pat naudojama sistemos sveikatos ir diagnostikos tikslais, jei vartotojas praneša apie kompiuterio problemą
 
 Renkami šių laukų duomenys:
 
@@ -5127,7 +5150,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="controllercheckwindownoupdatefoundok"></a>controller.checkwindow.noupdatefoundok
 
-Šis įvykis nurodo, kad tikrinant naujinimus nebuvo rasta naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+Šis įvykis reiškia, kad tikrinant, ar yra naujinimų, nerasta jokių naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
 Renkami šių laukų duomenys:
 
@@ -5333,7 +5356,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="controllercheckwindowuptodate"></a>controller.checkwindow.uptodate
 
-Šis įvykis nurodo, kad tikrinant, ar yra naujinimų, jų nerasta, nes įrenginyje įdiegtos taikomosios programos yra atnaujintos.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
+Šis įvykis nurodo, kad tikrinant, ar yra naujinimų, jų nerasta, nes įrenginyje įdiegtos taikomosios programos yra atnaujintos. Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
 
 Renkami šių laukų duomenys:
 
@@ -8255,7 +8278,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbamausilentupdate"></a>fba.mausilentupdate
 
-Šis įvykis nurodo, kad „Microsoft Update“ asistentas pradeda tyliai atnaujintus naujinimus. Šis įvykis naudojamas norint nustatyti, kokie naujinimai taikomi nenaudojant vartotojo įsikišimo, kad būtų lengviau valdyti vartotojų patirtį.
+Šis įvykis nurodo, kad „Microsoft Update“ asistentas pradeda tyliojo atnaujintus naujinimus. Šis įvykis naudojamas norint nustatyti, kokie naujinimai taikomi nenaudojant vartotojo įsikišimo, kad būtų lengviau valdyti vartotojų patirtį.
 
 Renkami šių laukų duomenys:
 
@@ -15603,7 +15626,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 ### <a name="officeonenotestoragerealtimewebsocketsessioninfo"></a>Office.OneNote.Storage.RealTime.WebSocketSessionInfo
  
-Šis įvykis registruoja „WebSocket“ sinchronizavimo rezultatus, kad OneNot" moderniame puslapyje turinys būtų sinchronizuojamas šiuolaikiška hierarchija. Jis naudojamas norint suprasti, kiek yra unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą. Jis taip pat naudojamas „OneNote“ modernių sinchronizavimo efektyvumo ataskaitų srityje.
+Šis įvykis registruoja „WebSocket“ sinchronizavimo rezultatus, kad „OneNote“ modernaus puslapio turinys būtų sinchronizuojamas šiuolaikiška hierarchija. Jis naudojamas norint suprasti, kiek yra unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą. Jis taip pat naudojamas „OneNote“ modernių sinchronizavimo efektyvumo ataskaitų srityje.
  
 Renkami šių laukų duomenys:
  
@@ -15908,7 +15931,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="onenotesyncfirstrunerror"></a>OneNote.Sync.FirstRunError
  
-Šis įvykis užregistruojamas, kai įvyksta trumpųjų pastabų sinchronizavimo triktis vartotojui pirmą kartą naudojantis paslauga įrenginyje.  Tai būdinga pirmojo paslaugos naudojimo scenarijui.
+Šis įvykis užregistruojamas, kai įvyksta trumpųjų pastabų sinchronizavimo triktis vartotojui pirmą kartą naudojantis paslauga įrenginyje. Tai būdinga pirmojo paslaugos naudojimo scenarijui.
  
 Renkami šių laukų duomenys:
  
@@ -15933,6 +15956,10 @@ Renkami šių laukų duomenys:
 - **action_type** – atliktas veiksmas, pvz., susitikimo paleidimas ar programos diegimas
 
 - **application** – programa, kuri buvo paleista naudojant gilųjį saitą, pvz., „Teams“ ar „Skype“ verslui
+
+- **context** – perėjimo programoje funkcijų naudojimas, pvz., „office_union“ – „Word“, „office_union“ – „Excel“ ir t. t.
+
+- **source** – veiksmo, pvz., inicijavo vartotojas, automatiškai kliento ir t. t., kilmė.
 
 
 ### <a name="officeandroiddocsuipaywallcontrolpaywalloperationmetrics"></a>Office.Android.DocsUI.PaywallControl.PaywallOperationMetrics
@@ -16791,15 +16818,17 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **AffectedProcessAppBuild –** paveikto proceso komponavimo versijos identifikatorius.
+  - **AffectedProcessAppBuild –** paveikto proceso komponavimo versijos identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
-  - **AffectedProcessAppBuildRevision –** paveikto proceso komponavimo versijos peržiūros identifikatorius.
+  - **AffectedProcessAppBuildRevision –** paveikto proceso komponavimo versijos peržiūros identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
-  - **AffectedProcessAppMajorVer –** paveikto proceso papildomos versijos identifikatorius.
+  - **AffectedProcessAppMajorVer –** paveikto proceso papildomos versijos identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
-  - **AffectedProcessAppMinorVer –** paveikto proceso papildomos versijos identifikatorius.
+  - **AffectedProcessAppMinorVer –** paveikto proceso papildomos versijos identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]*
 
   - **AffectedProcessAppName –** paveikto proceso pavadinimas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+  
+  - **AffectedProcessAppVersion** – paveikto proceso komponavimo versijos identifikatorius.
 
   - **AffectedProcessExeBuildVersion –** paveikto proceso komponavimo versijos numeris. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
@@ -16985,6 +17014,8 @@ Renkami šių laukų duomenys:
   - **BucketId** - gedimo „Watson“ skirstymo identifikatorius
  
   - **CabGuid** - globaliai unikalus identifikatorius (GUID) skirtas „Watson“ cab failui.
+
+  - **CallStack** – „Microsoft“ vidinis iškvietimų dėklas, sukeliantis gedimą.
 
   - **CrashedAppBuild** - paveikto proceso komponavimo versijos identifikatorius. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
