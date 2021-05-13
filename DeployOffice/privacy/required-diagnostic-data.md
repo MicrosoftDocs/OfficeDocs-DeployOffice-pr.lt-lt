@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 69abd5fc0355db7758debc0193b4439754eda2f2
-ms.sourcegitcommit: b6f55a032079a9525cedd93b9e431c188ca24775
+ms.openlocfilehash: c61c3072c4c0f61926b51c0fab5e46a1b5151e00
+ms.sourcegitcommit: 2796ba69444926d686e7ed587a89d8ee9e313d84
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51889792"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52328431"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -62,7 +62,7 @@ Būtini diagnostikos duomenys suskirstyti į kategorijas ir duomenų potipius. S
 | **Programinės įrangos sąranka ir inventorius** | [„Office“ sąranka ir inventorius](#office-setup-and-inventory-subtype)   | Įdiegtas produktas ir versija, bei diegimo būsena.  |
 | | [„Office“ papildinio konfigūracija](#office-add-in-configuration-subtype)  | Programinės įrangos papildiniai ir jų parametrai.     |
 | | [Sauga](#security-subtype)  | Dokumento, funkcijos ir papildinio sąlygos, kurios gali pažeisti saugą, įskaitant produkto parengimą naujinti.  |
-| **Produktų ir tarnybų naudojimas**    | [Taikomosios programos funkcijų sėkmingas atlikimas](#application-feature-success-subtype)   | Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas). |
+| **Produktų ir tarnybų naudojimas**    | [Taikomosios programos funkcijų sėkmingas atlikimas](#application-feature-success-subtype)   | Sėkmingos taikomosios programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas). |
 | | [Taikomosios programos būsena ir įkrova](#application-status-and-boot-subtype)    | Nustatymas, ar įvyko specifiniai funkcijų įvykiai, pvz., paleidimas ar sustabdymas, ir ar funkcija veikia.   |
 | | [„Office“ pritaikymo neįgaliesiems konfigūracija](#office-accessibility-configuration-subtype)  | „Office“ pritaikymo neįgaliesiems funkcijos       |
 | | [Privatumas](#privacy-subtype)| „Office“ privatumo parametrai|
@@ -91,7 +91,7 @@ Visiems atvejams bendra informacija renkama į toliau nurodytas kategorijas.
 
 #### <a name="app"></a>Taikomoji programa 
 
-Informacija apie taikomąją programą. Visi laukai pastovūs visiems konkretiems taikomosios programos versijos seansams.
+Informacija apie taikomąją programą. Visi laukai pastovūs visiems konkrečios taikomosios programos versijos seansams.
 
 Šioje kategorijoje yra šie laukai:
 
@@ -103,7 +103,7 @@ Informacija apie taikomąją programą. Visi laukai pastovūs visiems konkretiem
 
 #### <a name="client"></a>Klientas 
 
-Identifikatorius, susijęs su įrenginio „Office“ egzemplioriumi. Pateiktos diegimo versijos, skirtos keliems taikomųjų programų paketams, visų taikomųjų programų seansų arba pateiktos taikomosios programos versijos seansų metu išlieka tokie patys.
+Identifikatorius, susijęs su įrenginyje įdiegtu „Office“ egzemplioriumi. Pateiktos diegimo versijos, skirtos keliems taikomųjų programų paketams, visų taikomųjų programų seansų arba pateiktos taikomosios programos versijos seansų metu išlieka tokie patys.
 
 Šioje kategorijoje yra šie laukai:
 
@@ -373,7 +373,7 @@ Konkretaus įvykio informacija, įskaitant jo unikalų identifikatorių seanse.
 
   - **RuleVersion** – duomenis generavusios taisyklės identifikatorius, jeigu jie buvo sugeneruoti taisyklės. Leidžia mums nustatyti dalies duomenų šaltinį, kad galėtume patvirtinti ir tvarkyti įvykių parametrus.
 
-  - **SampleRate** – indikatorius, nurodanti koks vartotojų procentas siunčia šį duomenų fragmentą. Tai leidžia mums atlikti statistinę duomenų analizę ir nereikia, kad dažniausius naudojamus duomenų elementus siųstų visi vartotojai.
+  - **SampleRate** – indikatorius, nurodantis koks vartotojų procentas siunčia šią informacijos dalį. Tai leidžia mums atlikti statistinę duomenų analizę ir nereikia, kad dažniausius naudojamus duomenų elementus siųstų visi vartotojai.
 
   - **SchemaVersion** – schemos versija, naudojama generuoti diagnostikos duomenis. Būtina valdyti iš kliento siunčiamus duomenis. Taip užtikrina kiekvieno kliento siunčiamų duomenų pokyčius per tam tikrą laiką.
 
@@ -616,6 +616,8 @@ Informacija apie proceso seansą.
 
 - **PipelineInfo.IngestionTime** – laiko žyma, kai vyksta mūsų telemetrijos failų įdėjimas šiam renginiui
 
+- **sample_rate** – įvykio egzempliorius renkančių įrenginių procentinė dalis. Padeda apskaičiuoti pradinį įvykio egzempliorių skaičių.
+
 - **Session.Id** – unikalus taikomosios programos seanso identifikatorius, padedantis nustatyti su seansu susijusias triktis
 
 - **Seansas. ImpressionId** – unikalus funkcijų išleidimo valdymo identifikatorius, siekiant užtikrinti, kad funkcijos būtų sėkmingai išleistos visiems vartotojams ir įrenginiams
@@ -652,7 +654,13 @@ Be to, šie laukai dažniausiai naudojami visiems „Outlook“, skirtos „Andr
 
 - **is_dex_mode_enabled** – ar „Samsung DeX Mode“ įgalinta „Samsung“ įrenginiuose, norint aptikti DeX režimu būdingas triktis
 
+- **is_preload_install** – nurodo mums, ar jūsų programa įrenginyje buvo iš anksto įkelta (įrenginiuose su „Android 11“ ar vėlesne versija)
+
 - **is_sliding_drawer_enabled** – ar slankiojo stalčiaus sąsajos įgalintos, padeda aptikti slankiojo stalčiaus sąsajos triktis
+
+- **oem_preinstall** – nurodo, ar programa buvo iš anksto įdiegta įrenginyje
+
+- **oem_preload_property** – nurodo, ar jūsų programa buvo iš anksto įkelta, kaip konkrečios sutarties su OĮG dalis
 
 - **orientation** – fizinė ekrano padėtis (stačias/gulsčias), padedanti aptikti įrenginio padėties būdingus dalykus
 
@@ -704,7 +712,7 @@ Renkami šių laukų duomenys:
  
 #### <a name="officeclicktorunupdatestatus"></a>Office.ClickToRun.UpdateStatus
 
-Taikoma visoms „win32“ taikomosioms programoms. Padeda suprasti „Office“ paketo naujinimo proceso būseną (sėkmingai ar nesėkmingai atliktas, bei pateikiama klaidų informacija)
+Taikoma visoms „win32“ programoms. Padeda suprasti „Office“ paketo naujinimo proceso būseną (sėkmingai ar nesėkmingai atliktas, bei pateikiama klaidų informacija)
 
 Renkami šių laukų duomenys:
 
@@ -921,6 +929,21 @@ Renkami šių laukų duomenys:
 - **OnPremNBCount** – bloknotų skaičius „Prem“ serveryje
 
 - **TotalNBCount** – bendras su vartotojo paskyra susietų bloknotų skaičius
+
+#### <a name="officeonenotesystemapplifecycleuseraccountinfo"></a>Office.OneNote.System.AppLifeCycle.UserAccountInfo
+
+Šis įvykis suaktyvinamas bendrinamam kodui ir įrašo reikšmes to tipo paskyroms, prie kurių prisijungta per „isEdu“, „isMsftInternal“, „isIW“, „isMSA“. Duomenys renkami, kai po paleisties eilė pirmą kartą tampa laukimo būsenos. Šis žymeklis naudojamas paskyrų, prie kurių įrenginyje buvo prisijungta, tipams sekti. Tai padės mums identifikuoti EDU vartotojus programoje „OneNote“. 
+
+Renkami šių laukų duomenys: 
+
+- **IsEdu** – galimos reikšmės – teisinga / klaidinga
+
+- **IsMSA** – galimos reikšmės – teisinga / klaidinga
+
+- **IsIW** – galimos reikšmės – teisinga / klaidinga
+
+- **IsMsftInternal** – galimos reikšmės – teisinga / klaidinga
+
 
 #### <a name="officetargetedmessagingensurecached"></a>Office.TargetedMessaging.EnsureCached 
 
@@ -1201,7 +1224,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookdesktopadd-insadd-inloaded"></a>Office.Outlook.Desktop.Add-ins.Add-inLoaded
 
-Renka informaciją apie sėkmingą arba nesėkmingą „Outlook“ papildinio paleidimą. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su kliento papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
+Renka informaciją apie sėkmingą ir nesėkmingą „Outlook“ papildinio įkėlimą. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su kliento papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
 
 Renkami šių laukų duomenys:
 
@@ -1244,7 +1267,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookmacaddininstallationfrominclientstore"></a>Office.Outlook.Mac.AddInInstallationFromInClientStore
 
-Surenka informaciją apie sėkmingą arba nesėkmingą papildinio diegimą programoje „Outlook“. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
+Renka informaciją apie sėkmingą ar nesėkmingą „Outlook“ papildinio įdiegimą. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
 
 Renkami šių laukų duomenys:
 
@@ -1351,7 +1374,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeappguardlaunchfile"></a>Office.AppGuard.LaunchFile
 
-Šis įvykis nurodo „Application Guard“ paleidimo failo vykdymą. Mes galėsime nustatyti, kiek procentų mūsų sėkmingai paleidome „Word“, „Excel“ arba „PowerPoint“ failus ir nepavykusių bandymų klaidų kodus.
+Šis įvykis nurodo „Application Guard“ paleisties failo vykdymą. Mes galėsime nustatyti, kiek procentų seansų sėkmingai paleidome „Word“, „Excel“ arba „PowerPoint“ failus ir nepavykusių bandymų klaidų kodus.
 
 Renkami šių laukų duomenys:
 
@@ -1516,7 +1539,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officesecuritymacroxl4prompted"></a>Office.Security.Macro.XL4Prompted
 
-Seka, kada vartotojas yra raginamas įgalinti XL4 makrokomandas. Naudojamas įvertinti XL4 makrokomandų paplitimą programoje „Excel“, kad užtikrinti būsimas riziką mažinančias saugos priemones, blokuojančias XL4 pagal numatytuosius parametrus, bei atsižvelgti į saugos incidentus, atsirandančius netinkamai naudojant XL4 makrokomandas.
+Seka, kada vartotojas raginamas įgalinti XL4 makrokomandas. Naudojamas siekiant įvertinti XL4 makrokomandų paplitimą programoje „Excel“, kad būtų galima užtikrinti būsimas riziką mažinančias saugos priemones, blokuojančias XL4 pagal numatytuosius parametrus, bei atsižvelgti į saugos incidentus, atsirandančius netinkamai naudojant XL4 makrokomandas.
 
 Renkami šių laukų duomenys:
 
@@ -1538,7 +1561,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officesecuritysecurereaderhostopeninosr"></a>Office.Security.SecureReaderHost.OpenInOSR
 
-Seka atidarymo įvykdymą apsaugotame rodinyje. Skirtas nustatyti sąlygas, dėk kurių įvyko triktis atidarant failus apsaugotame rodinyje, bei kurios daro įtaką vartotojų saugumui ir produktyvumui.
+Seka atidaryto apsaugoto rodinio užbaigimą. Skirtas nustatyti sąlygoms, dėk kurių įvyko triktis atidarant failus apsaugotame rodinyje, bei kurios daro įtaką vartotojų saugumui ir produktyvumui.
 
 Renkami šių laukų duomenys:
 
@@ -1556,7 +1579,7 @@ Toliau pateikiami šios kategorijos duomenų potipiai:
 
 ### <a name="application-feature-success-subtype"></a>*Taikomosios programos funkcijos sėkmingo atlikimo potipis*
 
-Informacija apie tai, ar sėkmingai veikia programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas).
+Sėkmingos taikomosios programos funkcijos. Tik taikomosios programos ir dokumentų atidarymas ir uždarymas, failų redagavimas ir failų bendrinimas (bendradarbiavimas).
 
 #### <a name="accountaction"></a>account.action
 
@@ -1745,6 +1768,8 @@ Renkami šių laukų duomenys:
 - **meeting_insights_type** – įvykio informacijos susitikimo įžvalgų tipas.  Apima failą ir pranešimą. Padeda suprasti rodomų susitikimo įžvalgų skaičių. 
 
 - **meeting_type** – su veiksmu susieto internetinio susitikimo tipas.  Apima „Skype“, „Skype“ verslui, „Hangout“ ir „Teams“ verslui tipus. Padeda suprasti, ar susitikimai internete tinkamai sukonfigūruoti. 
+
+- **online_meeting_provider_switch_type** – perjungimo, kurį vartotojas atlieka tarp susitikimų internetu paslaugų teikėjų, tipas. Padeda mums suprasti vartotojo pasirinkimą naudoti funkciją.
 
 - **origin** – kalendoriaus veiksmo kilmė. Apima tokius tipus kaip darbotvarkė, kalendorius, valdiklio darbotvarkė ir t. t. Padeda mums užtikrinti geresnę sąveiką tarp kalendoriaus komponentų 
 
@@ -1963,7 +1988,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipccreaterepublishinglicense"></a>IpcCreateRepublishingLicense
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcCreateRepublishingLicense API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcpSerializeLicense API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -1993,7 +2018,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcgetlicenseproperty"></a>IpcGetLicenseProperty
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetLicenseProperty API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcGetLicenseProperty API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -2025,7 +2050,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcgetserializedlicenseproperty"></a>IpcGetSerializedLicenseProperty
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetSerializedLicenseProperty API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcGetSerializedLicenseProperty API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -2057,7 +2082,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcgettemplateissuerlist"></a>IpcGetTemplateIssuerList
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetTemplateIssuerList API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcGetTemplateIssuerList API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -2119,7 +2144,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcgettemplatelist"></a>IpcGetTemplateList
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcGetTemplateList API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcGetTemplateList API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -2183,7 +2208,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcpcreatelicensefromscratch"></a>IpcpCreateLicenseFromScratch
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpCreateLicenseFromScratch API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcpCreateLicenseFromScratch API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -2237,7 +2262,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcpcreatelicensefromtemplate"></a>IpcpCreateLicenseFromTemplate
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpCreateLicenseFromTemplate API iškvietimo metu. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcpCreateLicenseFromTemplate API iškvietimą. 
 
 Renkami šių laukų duomenys:
 
@@ -2275,7 +2300,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcpgettemplatelistforuser"></a>IpcpGetTemplateListForUser
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpGetTemplateListForUser API iškvietimo metu. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcpGetTemplateListForUser API iškvietimą. 
 
 Renkami šių laukų duomenys:
 
@@ -2393,7 +2418,7 @@ Renkami šių laukų duomenys:
 
 - **RMS.LicenseFormat** – licencijos formatas: Xrml arba Json
 
-- **RMS.PL.KeyType** – reikšmės „Single“ arba „Double“. Nurodo, ar PL apsaugoti buvo naudota vieno, ar dviejų raktų apsauga.
+- **RMS.PL.KeyType** – reikšmė „Single“ arba „Double“. Nurodo, ar PL apsaugoti buvo naudota vieno, ar dviejų raktų apsauga.
 
 - **RMS.RACType** –teisių paskyros sertifikato tipas
 
@@ -2415,7 +2440,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcsetlicenseproperty"></a>IpcSetLicenseProperty
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcSetLicenseProperty API iškvietimo metu. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcSetLicenseProperty API iškvietimą. 
 
 Renkami šių laukų duomenys:
 
@@ -2580,6 +2605,8 @@ Naudojama stebėti galimą neigiamą poveikį jūsų gebėjimui kurti ir atsakyt
 Renkami šių laukų duomenys: 
 
 - **draft_message_id** – kuriamo pokalbio juodraščio ID, kad būtų galima nustatyti su el. pašto juodraščiais susijusias problemas
+
+- **from_context_menu** – nurodo, ar kūrimas pradėtas atliekant kontekstinio meniu veiksmus.
 
 - **message_id** – atsakomo ar persiunčiamo pokalbio pranešimo ID, kad būtų galima nustatyti problemas, susijusias su konkrečiu laišku
 
@@ -3064,7 +3091,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeappleactivateperpetual"></a>Office.Apple.ActivatePerpetual
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis naudojamas nuolatinio aktyvinimo srauto sveikatai stebėti, bei tirti trikčių priežastis, peržiūrint parametro „FailedAt“ reikšmes.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Apple“ platformose. Įvykis naudojamas nuolatinio aktyvinimo srauto sveikatai stebėti bei tirti trikčių priežastims, peržiūrint parametro „FailedAt“ reikšmes.
 
 Renkami šių laukų duomenys:
 
@@ -3176,7 +3203,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappdocsoperationopenfrommrubypath"></a>Office.Docs.AppDocs.OperationOpenFromMruByPath
 
-Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija iš kelio, pateikto vėliausiai naudotųjų sąraše, ir yra naudojamas siekiant suprasti bei pagal svarbą suskirstyti vartotojo patirties klaidas pagal failo atidarymo operacijos informaciją.
 
 Renkami šių laukų duomenys:
 
@@ -3288,7 +3315,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappdocsoperationopenfrommrubyurl"></a>Office.Docs.AppDocs.OperationOpenFromMruByUrl
 
-Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją. 
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija iš URL, pateikto vėliausiai naudotųjų sąraše, ir yra naudojamas siekiant suprasti bei pagal svarbą suskirstyti vartotojo patirčiai pagal failo atidarymo operacijos informaciją. 
 
 Renkami šių laukų duomenys:
 
@@ -3862,7 +3889,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappledocsuxmacatmentioninsertedatmention"></a>Office.Docs.Apple.DocsUXMacAtMentionInsertedAtMention 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašomas, kai vartotojas „@“ pamini kitą vartotoją ir yra naudojamas norint suprasti ir nustatyti vartotojo patirčių prioritetus, atsižvelgiant į tai, kaip vartotojai bendradarbiauja su kitais vartotojais.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kada vartotojas „@“ pamini kitą vartotoją ir yra naudojamas norint suprasti ir nustatyti vartotojo patirčių prioritetus, atsižvelgiant į tai, kaip vartotojai bendradarbiauja su kitais vartotojais.
 
 Renkami šių laukų duomenys:
 
@@ -3870,7 +3897,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappledocsuxmacodspsharingwebviewsharingcompleted"></a>Office.Docs.Apple.DocsUXMacODSPSharingWebViewSharingCompleted 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka bendrinti debesies dokumentą naudodamas „OneDrive“ bendrinimo patirtį ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kada vartotojas pasirenka bendrinti debesies dokumentą naudodamas „OneDrive“ bendrinimo patirtį ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
 
 Renkami šių laukų duomenys:
 
@@ -3922,7 +3949,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsuidocstagerecommendedopen"></a>Office.DocsUI.DocStage.RecommendedOpen
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, naudojama nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašo, kada vykdoma failo atidarymo operacija iš rekomenduojamo dokumentų galerijos failų skyriaus, ir yra naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija.
 
 Renkami šių laukų duomenys:
 
@@ -3940,7 +3967,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsuifileoperationsopendocumentmeasurements"></a>Office.DocsUI.FileOperations.OpenDocumentMeasurements
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „iOS“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją ir ypač efektyvumo informaciją.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „iOS“ platformoje. Įvykis įrašo, kada vykdoma failo atidarymo operacija, ir yra naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, o ypač – veikimo informacija.
 
 Renkami šių laukų duomenys:
 
@@ -4034,6 +4061,8 @@ Renkami šių laukų duomenys:
 
 - **Data_OpenStartTime** – „Unix“ laikotarpis, kai prasidėjo failo atidarymas.
 
+- **Data_PrefetchSourceOptions** – išvardijimas, nurodantis, kaip debesies dokumentų failas padarytas pasiekiamas neprisijungus, pvz., iš vėliausiai naudotų ir rekomenduojamų failų. 
+
 - **Data_SilhouetteDuration** – failo atidarymo generavimo trukmė.
 
 - **Data_SourceApplication** – eilutė, nurodanti šaltinio taikomosios programos grupavimo ID, kai failas atidaromas naudojant kitą taikomąją programą.
@@ -4044,7 +4073,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsuifileoperationsopenfilewithreason"></a>Office.DocsUI.FileOperations.OpenFileWithReason 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“ ir kurioje programos vietoje naudotojas pateikė prašymą atidaryti failą.
+Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai remiantis failo atidarymo operacijos informacija, pvz., vietinėmis kategorijomis „ServiceType“, bei iš kurios programos vietos vartotojas pateikė failo atidarymo užklausą.
 
 Renkami šių laukų duomenys:
 
@@ -4123,7 +4152,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsuisharinguicopylinkoperation"></a>Office.DocsUI.SharingUI.CopyLinkOperation
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka dokumento bendrinimą sugeneruodamas nuorodą į debesies dokumentą ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+Šis įvykis renkamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kada vartotojas pasirenka bendrinti dokumentą sugeneruodamas saitą su debesies dokumentu, ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
 
 Renkami šių laukų duomenys:
 
@@ -4135,7 +4164,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsuisharinguidocsuionedriveshare"></a>Office.DocsUI.SharingUI.DocsUIOneDriveShare 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka bendrinti debesies dokumentą naudodamas „OneDrive“ bendrinimo patirtį ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kada vartotojas pasirenka bendrinti debesies dokumentą naudodamas „OneDrive“ bendrinimo patirtį ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
 
 Renkami šių laukų duomenys:
 
@@ -4151,7 +4180,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsuisharinguiinvitepeople"></a>Office.DocsUI.SharingUI.InvitePeople 
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis fiksuoja, kada vartotojas pasirenka žmonių kvietimą prisijungti prie debesies dokumento ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+Šis įvykis renkamas „Office“ programoms, veikiančioms „Apple“ platformose. Šis įvykis įrašo, kada vartotojas pasirenka pakviesti žmones naudotis debesies dokumentu, ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
 
 Renkami šių laukų duomenys:
 
@@ -4167,7 +4196,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsuisharinguisendacopyoperation"></a>Office.DocsUI.SharingUI.SendACopyOperation
 
-Šis įvykis gaunamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis fiksuoja, kada vartotojas pasirenka siųsti dokumento kopiją ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
+Šis įvykis renkamas „Office“ programoms, veikiančioms „Apple“ platformose. Įvykis įrašo, kada vartotojas pasirenka siųsti dokumento kopiją, ir yra naudojamas norint geriau suprasti ir nustatyti vartotojo patirties prioritetus, atsižvelgiant į dokumentų bendrinimą.
 
 Renkami šių laukų duomenys:
 
@@ -4416,7 +4445,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officefeedbacksurveyfloodgateclientuserselected"></a>Office.Feedback.Survey.FloodgateClient.UserSelected
 
-Seka, kada įrenginys pasirenkamas apklausai. Naudojama įvertinti apklausos vartotojo pasirinkimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+Seka, kada įrenginys pasirenkamas apklausai. Naudojama įvertinti apklausos vartotojo pasirinkimo proceso būklei bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemoms ir būklei, veikia tinkamai.
 
 Renkami šių laukų duomenys:
 
@@ -4486,7 +4515,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officefeedbacksurveyuiwin32toast"></a>Office.Feedback.Survey.UI.Win32.Toast
 
-Seka, kai rodomas apklausos raginimas. Naudojama įvertinti apklausos paraginimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+Seka, kada rodomas apklausos raginimas. Naudojama norint įvertinti apklausos paraginimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemoms ir būklei, veikia tinkamai.
 
 Renkami šių laukų duomenys:
 
@@ -4500,7 +4529,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officefileiocsiccachedfilecsiloadfilebasic"></a>Office.FileIO.CSI.CCachedFileCsiLoadFileBasic
 
-Leidžia mums žinoti, ar failas iš FIO sluoksnio atidarytas sėkmingai. Naudojama funkcijos sveikatai užtikrinti ir stebėti.
+Leidžia mums žinoti, ar failas iš FIO sluoksnio atidarytas sėkmingai. Naudojama funkcijos sveikatai ir stebėjimui.
 
 Renkami šių laukų duomenys:
 
@@ -4748,7 +4777,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officefileiocsiccachedfilecsisavefilebasic"></a>Office.FileIO.CSI.CCachedFileCsiSaveFileBasic
 
-Leidžia mums žinoti, ar failas iš FIO sluoksnio įrašytas sėkmingai. Naudojama funkcijos sveikatai užtikrinti ir stebėti.
+Šis įvykis leidžia mums žinoti, ar failas iš FIO sluoksnio įrašytas sėkmingai. Naudojama funkcijos sveikatai užtikrinti ir stebėti.
 
 Renkami šių laukų duomenys:
 
@@ -5252,7 +5281,7 @@ Renkami šių laukų duomenys:
 #### <a name="officelenslenssdkcloudconnectorlaunch"></a>Office.Lens.LensSdk.CloudConnectorLaunch
 
 Kai vartotojas apkarpo vaizdą ir bakstelėjimu patvirtina galutinį vaizdo pasirinkimą, kad būtų galima naudoti OCR, pasirenkamas šis įvykis.     
-Tai yra tarnybos vartotojo-su-užklausa įrašas, nes tarnyboje nėra vartotojo-su-tarnybos-užduotimi susiejimo. Vartotojo ID turi atitikti BDAR reikalavimus, nes tarnyba yra ne tiesiogiai pasiekiama vartotojams, o per klientus, ir identifikuoja bendrą žmonių, naudojančių tarnybą, skaičių, padedantį sekti vartotojų, naudojančių produktą, kiekį, taip pat nustatyti tendencijų pokyčius, padėti rasti ir pataisyti produkto problemas.
+Tai yra tarnybos vartotojo-su-užklausa įrašas, nes tarnyboje nėra vartotojo-su-tarnybos-užduotimi susiejimo. Vartotojo ID turi atitikti BDAR reikalavimus, nes tarnyba nėra tiesiogiai pasiekiama vartotojams, o per klientus, ir identifikuoja bendrą žmonių, naudojančių tarnybą, skaičių, padedantį sekti vartotojų, naudojančių produktą, kiekį, taip pat nustatyti tendencijų pokyčius, padėti rasti ir pataisyti produkto problemas.
 
 Renkami šių laukų duomenys:
 
@@ -5368,7 +5397,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officelivepersonacardconfigurationsetaction"></a>Office. LivePersonaCard. ConfigurationSetAction
 
-Registruojame, kada vartotojas yra programoje, kuri įkelia asmens kortelę, tikintis, kad vartotojas atidarys „Live“ asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai įkelta. 
+Registruojame, kada vartotojas yra programoje, kuri įkelia asmens kortelę, tikintis, kad vartotojas atidarys „Live“ asmens kortelę. Duomenys naudojami siekiant nustatyti, ar kortelė įkeliama tinkamai. 
 
 Renkami šių laukų duomenys: 
 
@@ -5729,7 +5758,7 @@ Renkami šių laukų duomenys:
 
 - **Data.personaCorrelationId** – seanso unikalių asmenų visuotinis unikalusis identifikatorius
 
-- **Data.properties** – kiekvieno tolesnio įvykio surinkti papildomi metaduomenys. *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
+- **Data.properties** – papildomi kiekvieno įvykio metaduomenys renkami taip: *[Šis laukas buvo pašalintas iš dabartinės „Office“ komponavimo versijos, bet vis tiek gali būti rodomas senesnėse komponavimo versijose.]*
 
     - **cardCorrelationId** pirmiau esančio Data.appContextId dublikatas 
     - **cardPersonaCorrelationId** pirmiau esančio Data.cardCorrelationId dublikatas
@@ -5784,36 +5813,6 @@ Renkami šių laukų duomenys:
 
   - **Data.Log** – pasirinktinis žurnalo pranešimas nurodo, ar pirminis tikrinimas pavyko
 
-#### <a name="officeofficemobilepdfviewerpdffileopenmeasurements"></a>Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements
-
-Šis įvykis renkamas „Office“ programai, jis fiksuoja, kada failas atidaromas. Mes renkame šiuos duomenis, kad būtų užtikrintas tinkamas visų failų, esančių programoje, atidarymas. 
-
-Renkami šių laukų duomenys:
-
-- **"Data_Doc_ActivationFQDN** – teikėjo taikomosios programos, skirtos failo suaktyvinimo scenarijui, domeno vardas (registruojama tik pirmosios šalies taikomosios programos informacija).
-
-- **Data_Doc_CreateTelemetryReason** – telemetrijos priežastys kurti PDF. (pvz., Kurti iš nuskaitymo, naudojant veiksmą „paveikslėlis į PDF“, „dokumentas į PDF“ ir t. t.)
-
-- **Data_Doc_DownloadDurationms** – laikas, per kurį atsisiunčiamas PDF debesies failas.
-
-- **Data_Doc_DownloadEndTime** – debesies failo atsisiuntimo pabaigos laiko žyma.
-
-- **Data_Doc_DownloadEndTime** – debesies failo atsisiuntimo pradžios laiko žyma.
-
-- **Data_Doc_FileOpSessionID** – dokumento seanso unikalusis ID.
-
-- **Data_Doc_Location** – vieta, kurioje yra failas (vietinis, ODSP, „iCloud“, trečiosios šalies failų programa, „wopi“).
-
-- **Data_Doc_OpenCompletionTime** – PDF failo atidarymo operacijos pabaigos laiko žyma.
-
-- **Data_Doc_OpenDurationms** – laikas milisekundėmis, per kurį atidaromas PDF failas.
-
-- **Data_Doc_OpenStartTime** – PDF failo atidarymo operacijos pradžios laiko žyma.
-
-- **Data_Doc_TelemetryReason** – telemetrijos priežastys įvykiui atidaryti (pvz., atidarymas iš MRU arba naršymas, failo suaktyvinimas, protokolo suaktyvinimas ir t. t.).
-
-- **Doc_RenderDurationms**– laikas, per kurį sugeneruojamas PDF failas
-
 
 #### <a name="officeofficemobilepdfviewerpdffileoperations-on-android"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations („Android“)
 
@@ -5828,6 +5827,8 @@ Renkami šių laukų duomenys:
 - **Data_ErrorMessage** – pranešimas, susijęs su klaidos kodu
 
 - **Data_FailureReason** – esant atidarymo trikčiai, nurodoma trikties priežastis.
+
+- **Data_FetchReason** – nurodo, kaip buvo gautas failas (rankiniu būdu, įrašytas į talpyklą, neįrašytas į talpyklą) 
 
 - **Data_FileGUID** – bendrasis failo, kuris yra atsitiktinai sugeneruotas, identifikatorius
 
@@ -5866,6 +5867,8 @@ Renkami šių laukų duomenys:
 - **Data_ErrorMessage** – pranešimas, susijęs su klaidos kodu 
 
 - **Data_FailureReason** – esant atidarymo trikčiai, nurodoma trikties priežastis. 
+
+- **Data_FetchReason** – nurodo, kaip buvo gautas failas (rankiniu būdu, įrašytas į talpyklą, neįrašytas į talpyklą)
 
 - **Data_FileGUID** – bendrasis failo, kuris yra atsitiktinai sugeneruotas, identifikatorius
 
@@ -6510,7 +6513,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointdocoperationopencompleteprotocol"></a>Office.PowerPoint.DocOperation.OpenCompleteProtocol
 
-Surinkta „PowerPoint“ atidarius pateiktis. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atidarymo proceso baigiamosiose stadijose.
+Renkama, kai „PowerPoint“ atidaro pateiktis. Jame yra informacija, reikalinga norint tinkamai nustatyti ir diagnozuoti problemas, įvykstančias atidarymo proceso baigiamosiose stadijose.
 
 „Microsoft“ naudoja šiuos duomenis užtikrinti, jog funkcija veikia kaip numatyta ir pateikčių atidarymas nesuprastėjo.
 
@@ -7318,7 +7321,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointpptiosrehearseview"></a>Office.PowerPoint.PPT.IOS.RehearseView 
 
-Šis įvykis reiškia, kad vartotojas sustabdė kartojimo seansą. Kartu su „Office.PowerPoint.IOS.Android.RehearseView.StartSession“ tai bus pirmasis bet kokių gedimų arba klaidų, su kuriomis susiduria vartotojas, indikatorius.  
+Šis įvykis nurodo, kad vartotojas sustabdė repeticijos seansą. Duomenys naudojami kartu su Office.PowerPoint.IOS.Android.RehearseView.StartSession, kaip pirmasis bet kokių gedimų arba klaidų, su kuriomis susiduria vartotojas, indikatorius.  
  
 Renkami šių laukų duomenys:
 
@@ -7969,7 +7972,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officevisiosharedfeatureexperimentation"></a>Office.Visio.Shared.FeatureExperimentation
 
-Stebi funkcijos testavimą vartotojams. Šis įvykis padės mums nustatyti, ar funkcija testuojama sėkmingai.
+Stebi funkcijos testavimą vartotojams. Šis įvykis padeda mums nustatyti, ar funkcija testuojama sėkmingai.
 
 Renkami šių laukų duomenys:
 
@@ -8656,7 +8659,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="parselicenseop"></a>ParseLicenseOp
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias analizuojant licencijų operacijas. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant licencijų analizės operaciją. 
 
 Renkami šių laukų duomenys:
 
@@ -8796,7 +8799,7 @@ Renkami šių laukų duomenys:
 
 - **suggestions_requested** – nurodo, kiek išmaniojo rašymo pasiūlymų prašoma
 
-- **suggestions_results** – išmaniojo rašymo pasiūlymų rezultatas, t. y. accepted, rejected
+- **suggestions_results** – išmaniojo rašymo pasiūlymų rezultatas, t. y. priimtas, atmestas
 
 - **suggestions_returned** – nurodo, kiek išmaniojo rašymo pasiūlymų pateikta iš serverio
 
@@ -8824,7 +8827,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="settingsaction"></a>settings.action
 
-Šis įvykis surenka konfigūravimo informaciją dalyje Parametrai. Duomenys leidžia aptikti situacijas, kai gali būti neigiamas poveikis vartotojo gebėjimui konfigūruoti programos parametrus, pvz., pranešimų parametrus, pagrindinę el. pašto paskyrą ir konfigūruoti el. pašto parašą.
+Šis įvykis renka konfigūracijos informaciją parametruose. Duomenys leidžia aptikti situacijas, kai gali būti neigiamas poveikis vartotojo gebėjimui konfigūruoti programos parametrus, pvz., pranešimų parametrus, pagrindinę el. pašto paskyrą ir konfigūruoti el. pašto parašą.
 
 Renkami šių laukų duomenys: 
 
@@ -8968,7 +8971,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="surveyfloodgatetriggermet"></a>Survey.Floodgate.TriggerMet
 
-Seka, kada įrenginys atitiko reikalavimus, kad jam būtų rodoma apklausa. Naudojama įvertinti apklausos suaktyvinimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+Seka, kada įrenginys atitiko kriterijus rodyti apklausai. Naudojama įvertinti apklausos suaktyvinimo proceso būklei bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemoms ir būklei, veikia tinkamai.
 
 Renkami šių laukų duomenys: 
 
@@ -9159,7 +9162,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="httpop"></a>HttpOp
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant HTTP užklausos operaciją.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant http užklausos operaciją.
 
 Renkami šių laukų duomenys:
 
@@ -9217,7 +9220,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipccreateoauth2token"></a>IpcCreateOauth2Token
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcCreateOauth2Token API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcCreateOauth2Token API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -9283,7 +9286,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilityofficejsappactivated"></a>Office.Extensibility.OfficeJS.Appactivated
 
-Įrašo informaciją apie netikėtą „Office“ uždarymą. Tai leidžia mums nustatyti produkto gedimus ir pakibimus programoje, kad juos būtų galima pašalinti.
+Įrašo informaciją apie netikėtus „Office“ uždarymus. Tai leidžia mums nustatyti produkto gedimus ir pakibimus programoje, kad juos būtų galima pašalinti.
 
 Renkami šių laukų duomenys:
 
@@ -9626,7 +9629,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeofficemobilefrefirstrunsetup"></a>Office.OfficeMobile.FRE.FirstRunSetup
 
-Pirmą kartą paleidus programą po įdiegimo, bus suaktyvintas šis reguliarių pranešimų įvykis. Tai padės nustatyti diegimus ir automatinius miš senesnių programos versijų ir leis nustatyti klaidas automatiniame naujinime, įskaitant bibliotekos įkėlimus ir išplėtimo/kalbos paketo atsisiuntimo triktis.
+Pirmasis programos paleidimas po įdiegimo suaktyvins šį kontrolinio signalo įvykį. Tai padės nustatyti diegimus ir automatinius versijos naujinimus iš senesnių programos versijų ir leis nustatyti automatinių versijos naujinimų klaidas, įskaitant bibliotekos įkėlimus ir išplėtimo / kalbos paketo atsisiuntimo triktis.
 
 Renkami šių laukų duomenys:
 
@@ -9978,6 +9981,8 @@ Renkami šių laukų duomenys:
   - **Data\_FCreateNewFromTemplate -** Ar tai naujas dokumentas, sukurtas naudojant šablonus
 
   - **Data_FErrorAfterDocWinCreation:boolean –** ar įvyko bet kokia klaida arba išimtis po dokumento lango sukūrimo.
+
+  - **Data_FileIOClpState:int** – Bitset su reikšmėmis, susijusiomis su slaptumo žymų būsena. Pavyzdžiui, tai apima informaciją apie tai, ar bendradarbiavimas naudojant apsaugotas žymas yra įgalintas, ar dokumentas turi pritaikytą žymą iš dabartinio nuomotojo ir ar dokumentas yra apsaugotas IRM.
 
   - **Data\_FileUrlLocation -** Iš anksto nustatytų reikšmių, kur saugomas dokumentas (NetworkShare, LocalDrive, ServerOther ir kt.) rinkinys
 
@@ -10886,7 +10891,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="servicediscoveryop"></a>ServiceDiscoveryOp
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant tarnybos aptikimo operaciją. 
+Gaunamas, kai vartotojas bando taikyti IRM apsaugas dokumentui. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant tarnybos aptikimo operaciją. 
 
 Renkami šių laukų duomenys:
 
@@ -11344,6 +11349,8 @@ Renkami šių laukų duomenys:
 - **AssetId** – taikomosios programos ištekliaus ID
 
 - **ErrorCode** – bendras praleistas laikas
+
+- **IsArm64** – nurodo, ar papildinio aktyvinimas vyksta programoje, imituojamoje ARM64 įrenginyje
 
 - **IsAugmentationScenario** – nurodo, ar praplėtimo ciklas yra atsakingas už „Office“ sprendimų sistemos valdiklio inicijavimą
 
@@ -11920,7 +11927,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcpbootstrapuser"></a>IpcpBootstrapUser
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpBootstrapUser API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcpBootstrapUser API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -11990,7 +11997,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="ipcpgetkey"></a>IpcpGetKey
 
-Renkama, kai vartotojas bando atidaryti IRM (informacijos teisių valdymas) apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias IpcpGetKey API iškvietimo metu.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, būtina norint tinkamai ištirti ir nustatyti problemas, kurios įvyksta atliekant IpcpGetKey API iškvietimą.
 
 Renkami šių laukų duomenys:
 
@@ -12132,7 +12139,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="messagerenderingintercepted"></a>message.rendering.intercepted
 
-Šis įvykis leidžia sekti, kaip dažnai vartotojai įsiterpia į generavimo procesą, kol jis baigiamas. Mes naudojame šiuos duomenis, kad aptiktumėte veiklos triktis.
+Šis įvykis leidžia sekti, kaip dažnai vartotojai įsiterpia į generavimo procesą, kol jis baigiamas. Šiuos duomenis naudojame veikimo problemoms aptikti.
 
 Renkami šių laukų duomenys: 
 
@@ -12236,6 +12243,38 @@ Renkami šių laukų duomenys:
 - **UIRaaSDownloadLanguagePackageBoot** – informacija, susijusi su kalbos paketo atsisiuntimu
 
 - **UserDialogInterruptionDuringBoot** – Bulio logika bet kokiam blokavimo dialogo langui, rodomam paleidimo metu
+
+
+#### <a name="officeandroiddocsuiviewsdimepurchaseflowstate"></a>Office.Android.DocsUI.Views.DimePurchaseFlowState
+
+Šis sveikatos įvykis bando užfiksuoti kiekvieną būseną, kurią pereina vartotojas, bandydamas atlikti pirkimą, vykdydamas pirkimo programoje veiksmus, kuriuos valdo „Dime“. Duomenys naudojami siekiant stebėti ir įspėti apie pirkimo eigos sveikatą; šiuos veiksmus suaktyvina „Office Mobile“ programėlė, kai vartotojas pasirenka pirkti „Microsoft 365“ prenumeratą.
+
+Renkami šių laukų duomenys:
+
+- **EntryPoint** – vartotojo bandyto atlikti pirkimo įėjimo taškas
+
+- **OEMPreInstalled** – identifikuoja, ar programa yra įdiegta iš anksto, ar natūraliai įdiegta vartotojo
+
+- **PurchaseState** – vartotojo būsena, bandant atlikti pirkimą
+    - 0 – nežinoma klaida
+    - 1 – vartotojas bandė atidaryti „Dime“
+    - 2 – tinklo klaida
+    - 3 – „Dime“ rodoma vartotojui
+    - 4 - „Dime“ atšaukė vartotojas
+    - 5 –  reikia atnaujinti, nes pirkimas sėkmingas
+    - 6 – pirkimas sėkmingas
+    - 7 – bendroji „Dime“ klaida
+    - 8 – „Dime“ telemetrijos negalima nusiųsti dėl ryšio trikties
+    - 9 – du veikiantys „Dime“ egzemplioriai sukelia pertraukimo klaidą
+    - 10 – bazinis WebURL, įkeltas „officemobile“ programėlėje, neleistinas
+    - 11 – „officemobile“ programėlės su „Dime“ ryšys nesėkmingas 
+    - 12 – nepavyko užmegzti ryšio su ryšio kanalais
+    - 13 – nepavyko išsiųsti ryšio ID į „Dime“
+    - 14 – „officemobile“ programėlė užmezga ryšį su klaidingu galiniu punktu
+    - 15 – šiai MSA paskyrai negautas „AuthToken“
+    - 16 – „AuthToken“ neišsiųsta į „Dime“
+
+- **WebViewShownDuration** – „Dime“ pirkimo puslapio rodymo vartotojui trukmė 
 
 
 #### <a name="officeappleappleappbootmac"></a>Office.Apple.Apple.AppBoot.Mac
@@ -12466,6 +12505,58 @@ Renkami šių laukų duomenys:
   - **Data.Cid** – dinamiškai sukurtas sąsajos identifikatorius, siunčiamas į tarnybą, kai buvo atliktas tarnybos iškvietimas, kad gautų debesijos strategiją. Naudojamas nustatyti, kuris iškvietimas sukėlė problemą taikant strategiją debesyje.
 
   - **Data.Last Error** – Viena iš penkių eilučių reikšmių (surašytuvai), norint užregistruoti, kuris strategijos taikymo etapas buvo įvykdytas, kai įvyko išimtis
+
+
+#### <a name="officeofficemobilepdfviewerpdffileopenmeasurements-on-android"></a>Office.OfficeMobile.PdfViewer.PdfFileOpenMeasurements („Android“)
+
+Įvykis renkamas „Office“ programai, skirtai „Android“. Jis įrašomas, kai atliekama failo atidarymo operacija. Mes renkame šiuos duomenis, kad būtų užtikrintas tinkamas visų failų, esančių programoje, atidarymas. 
+
+Renkami šių laukų duomenys:
+
+- **"Data_Doc_ActivationFQDN** – teikėjo taikomosios programos, skirtos failo suaktyvinimo scenarijui, domeno vardas (registruojama tik pirmosios šalies taikomosios programos informacija).
+
+- **Data_Doc_DownloadDurationms** – laikas, per kurį atsisiunčiamas PDF debesies failas.
+
+- **Data_Doc_Location** – vieta, kurioje yra failas (vietinis, ODSP, „iCloud“, trečiosios šalies failų programa, „wopi“).
+
+- **Data_Doc_OpenDurationms** – laikas milisekundėmis, per kurį atidaromas PDF failas.
+
+- **Data_FetchReason** – nurodo, kaip buvo gautas failas (rankiniu būdu, įrašytas į talpyklą, neįrašytas į talpyklą)
+
+- **Doc_RenderDurationms** – laikas, per kurį sugeneruojamas PDF failas
+
+#### <a name="officeofficemobilepdfviewerpdffileopenmeasurements-on-ios"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations („iOS“)
+
+Šis įvykis renkamas „Office“ programai, skirtai „iOS“. Jis įrašomas, kai atliekama failo atidarymo operacija. Mes renkame šiuos duomenis, kad būtų užtikrintas tinkamas visų failų, esančių programoje, atidarymas. 
+
+Renkami šių laukų duomenys:
+
+- **"Data_Doc_ActivationFQDN** – teikėjo taikomosios programos, skirtos failo suaktyvinimo scenarijui, domeno vardas (registruojama tik pirmosios šalies taikomosios programos informacija).
+
+- **Data_Doc_CreateTelemetryReason** – telemetrijos priežastys kurti PDF. (pvz., Kurti iš nuskaitymo, naudojant veiksmą „paveikslėlis į PDF“, „dokumentas į PDF“ ir t. t.)
+
+- **Data_Doc_DownloadDurationms** – laikas, per kurį atsisiunčiamas PDF debesies failas.
+
+- **Data_Doc_DownloadEndTime** – debesies failo atsisiuntimo pabaigos laiko žyma.
+
+- **Data_Doc_DownloadEndTime** – debesies failo atsisiuntimo pradžios laiko žyma.
+
+- **Data_Doc_FileOpSessionID** – dokumento seanso unikalusis ID.
+
+- **Data_Doc_Location** – vieta, kurioje yra failas (vietinis, ODSP, „iCloud“, trečiosios šalies failų programa, „wopi“).
+
+- **Data_Doc_OpenCompletionTime** – PDF failo atidarymo operacijos pabaigos laiko žyma.
+
+- **Data_Doc_OpenDurationms** – laikas milisekundėmis, per kurį atidaromas PDF failas.
+
+- **Data_Doc_OpenStartTime** – PDF failo atidarymo operacijos pradžios laiko žyma.
+
+- **Data_Doc_TelemetryReason** – telemetrijos priežastys įvykiui atidaryti (pvz., atidarymas iš MRU arba naršymas, failo suaktyvinimas, protokolo suaktyvinimas ir t. t.).
+
+- **Data_FetchReason** – nurodo, kaip buvo gautas failas (rankiniu būdu, įrašytas į talpyklą, neįrašytas į talpyklą)
+
+- **Doc_RenderDurationms** – laikas, per kurį sugeneruojamas PDF failas
+
 
 #### <a name="officeonenoteandroidsyncprovisioningcompleted"></a>Office.OneNote.Android.Sync.ProvisioningCompleted
 
@@ -12712,7 +12803,7 @@ Renkami šių laukų duomenys:
 
 *[Šis įvykis anksčiau buvo vadinamas Office.PowerPoint.PPT.Android.RehearseView.Errors]*
 
-Įvykis paleidžiamas įvykus bet kuriai klaidai. Šis įvykis padės mums žinoti klaidas, su kuriomis susidūrė vartotojas, ir padės išlaikyti pranešėjo pagalbinės priemonės našumą mobiliuosiuose įrenginiuose.
+Įvykis suaktyvinamas, kai įvyksta bet kokia klaida. Šis įvykis padės mums žinoti klaidas, su kuriomis susidūrė vartotojas, ir padės išlaikyti pranešėjo pagalbinės priemonės našumą mobiliuosiuose įrenginiuose.
 
 Renkami šių laukų duomenys:
 
@@ -12759,7 +12850,7 @@ Renkami šių laukų duomenys:
 
 - **SessionDurationInMs** – tai viso seanso trukmė, skaičiuojama nuo tada, kai vartotojas paspaudė pradėti, iki tada, kai vartotojas paspaudė baigti.
 
-- **Sessionid** – tai kalbos pagrindinių durų seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
+- **SessionId** – tai kalbos pagrindinių durų seanso ID. Galime jį naudoti, kad galėtumėte derinti paslaugų žurnalus.
 
 - **SpeechClientResultEventsWithTimestamps** – tai klaidų kodų, gautų kartu su laiko ženklais, kurie gali padėti taisyti, masyvas.
 
@@ -12957,7 +13048,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="performancerecord"></a>performance.record
 
-Šis įvykis surenka programos produktyvumo metriką. Tai leidžia nustatyti ir pataisyti situacijas, kai programos atminties ir CPU naudojimas tampa kritiškai didelis arba atsiranda kitų veiklos problemų, dėl ko gali sulėtėti įrenginys.
+Šis įvykis renka programos produktyvumo metriką. Tai leidžia nustatyti ir ištaisyti situacijas, kai programos atminties ir CPU naudojimas tampa kritiškai didelis arba atsiranda kitų veiklos problemų, dėl ko gali sulėtėti įrenginys.
 
 Renkami šių laukų duomenys: 
 
@@ -13468,7 +13559,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroidclientsideiap"></a>Office.Android.ClientSideIAP
 
-Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos programose „Word“, „Excel“ ar „PowerPoint“, nustatyti.
+Duomenų bazės trikties kritinės klaidos telemetrija, kai naršomi failai ir įtraukiamos vietos.„Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos programose „Word“, „Excel“ ar „PowerPoint“, nustatyti.
 
 Renkami šių laukų duomenys:
 
@@ -13510,7 +13601,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeandroiddbfailurecause"></a>Office.Android.DBFailureCause
 
-Duomenų bazės trikties kritinės klaidos telemetrija, kai peržiūrimas failas ir įtraukiamos vietos.  „Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos programose „Word“, „Excel“ ar „PowerPoint“, nustatyti.
+Duomenų bazės trikties kritinės klaidos telemetrija, kai naršomi failai ir įtraukiamos vietos.„Microsoft“ šią funkciją naudoja DB sugadinimo trikčiai programose, kurios gali trukdyti vartotojams įtraukti vietas arba peržiūrėti juos programose „Word“, „Excel“ ar „PowerPoint“, nustatyti.
 
 Renkami šių laukų duomenys:
 
@@ -14036,7 +14127,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officesystemsystemhealtherrorsetwshim"></a>Office.System.SystemHealthErrorsEtwShim
 
-Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso metu.
+Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso vykdymo metu.
 
 Renkami šių laukų duomenys:
 
@@ -14052,7 +14143,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officesystemsystemhealtherrorsulsandasserts"></a>Office.System.SystemHealthErrorsUlsAndAsserts
 
-Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso metu.
+Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso vykdymo metu.
 
 Renkami šių laukų duomenys:
 
@@ -14068,7 +14159,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officesystemsystemhealtherrorsulsworkaround"></a>Office.System.SystemHealthErrorsUlsWorkaround
 
-Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso metu
+Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso vykdymo metu.
 
 Renkami šių laukų duomenys:
 
@@ -14082,7 +14173,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officesystemsystemhealtherrorswithouttag"></a>Office.System.SystemHealthErrorsWithoutTag
 
-Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso metu.
+Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso vykdymo metu.
 
 Renkami šių laukų duomenys:
 
@@ -14102,7 +14193,7 @@ Skaičiavimas – kiekvienos klaidos skaičius
 
 #### <a name="officesystemsystemhealtherrorswithtag"></a>Office.System.SystemHealthErrorsWithTag
 
-Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso metu.
+Naudojamas nustatyti klientams, kurie daro įtaką problemų atsiradimui, kai veikia programa, kuri gali pasireikšti kaip gedimai ar blogėjančios funkcijos. Įrašo klaidas, įvykstančias proceso vykdymo metu.
 
 Renkami šių laukų duomenys:
 
@@ -14236,7 +14327,7 @@ Leidžia aptikti situacijas, kai mūsų el. pašto pokalbių rodinys verčia nau
 
 Renkami šių laukų duomenys:
 
-- Nerenkami jokie laukai arba įtraukti duomenys. Renkami tik žurnalai, jei yra atminties nutekėjimas, susijęs su pokalbio gija.
+- Nerenkami jokie laukai ar įtraukti duomenys. Renkami tik žurnalai, jei yra atminties nutekėjimas, susijęs su pokalbio gija.
 
 #### <a name="coredatacorruption"></a>core.data.corruption
 
@@ -14269,6 +14360,8 @@ Renkami šių laukų duomenys:
 Šis įvykis renka informaciją, kuri leidžia skirstyti ir klasifikuoti „Outlook“ programos problemas, susijusias su pritaikymo neįgaliesiems ir įrenginio parametrais.  Šis skirstymas į kategorijas būtinas tam, kad būtų galima nustatyti problemų poveikį klientams.
 
 Toliau nurodyti laukai renkami tik „iOS“:
+
+- **alternate_app_icon** – nurodo alternatyvią programos piktogramą, kurią vartotojas šiuo metu pasirinko programai
 
 - **bold_text** – nurodo, ar įrenginyje įjungtas paryškintasis tekstas, kad būtų galima nustatyti su paryškintu tekstu susijusias problemas
 
@@ -14307,8 +14400,6 @@ Toliau nurodyti laukai renkami tik „Android“:
 - **high_contrast** – nurodo, ar vartotojas įrenginyje įjungė didelio kontrasto parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
 
 - **large_text** – nurodo, ar įrenginyje įjungtas didelio teksto parametras, kad būtų galima nustatyti su dideliu tekstu susijusias problemas
-
-- **oem_preinstall** – nurodo, ar programa buvo iš anksto įdiegta įrenginyje (taikoma tik „Samsung“ įrenginiams)
 
 - **supported_abis** – nurodo, kokio tipo programos dvejetaines sąsajas (ABIs) palaiko įrenginio platforma, kad būtų galima nustatyti su šiuo parametru susijusias problemas
 
@@ -14434,7 +14525,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointpptsharednointernetconnectivity"></a>Office.PowerPoint.PPT.Shared.NoInternetConnectivity
 
-Renkama, kai „PowerPoint“ aptinka, kad nėra interneto ryšio. „Microsoft“ naudoja šiuos duomenis, kad gautų diagnostinę informaciją apie vartotojo interneto ryšį, kad galėtų suprasti, kokią tai daro įtaką ryšiui su „Office“ paslaugomis.
+Renkama kaskart, kai „PowerPoint“ aptinka, kad nėra interneto ryšio. „Microsoft“ naudoja šiuos duomenis, kad gautų diagnostinę informaciją apie vartotojo interneto ryšį, kad galėtų suprasti, kokią tai daro įtaką ryšiui su „Office“ paslaugomis.
 
 Renkami šių laukų duomenys:
 
