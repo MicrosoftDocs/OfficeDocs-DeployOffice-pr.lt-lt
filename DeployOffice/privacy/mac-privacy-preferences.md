@@ -14,14 +14,17 @@ ms.custom:
 - Ent_Office_Mac
 description: Suteikia informacijos „Office“ administratoriams, kaip valdyti „Office for Mac“ privatumo kontrolės valdiklius naudojant nuostatas.
 hideEdit: true
-ms.openlocfilehash: d23d1288adf823888c900b44acd5bc905037cd94
-ms.sourcegitcommit: 3890a23390edd0b5fdb2cf33613ec0778566cf97
+ms.openlocfilehash: b7beda7409cff00d54f36851eb21e4d66a8cacce
+ms.sourcegitcommit: 9b5f18c543c286c95e546e22fc8edb60ef541030
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43992881"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52578380"
 ---
 # <a name="use-preferences-to-manage-privacy-controls-for-office-for-mac"></a>„Office for Mac“ privatumo valdiklių valdymas naudojant nuostatas
+
+> [!NOTE]
+> „Office“ produktų, kuriems taikoma ši privatumo informacija, sąrašą žr. [Galimi „Office“ produktų privatumo valdikliai](products-versions-privacy-controls.md).
 
 Nauji nuostatų parametrai, pradedant nuo „Office for Mac“ 16.28 versijos, leis valdyti parametrus, susijusius su:
 
@@ -56,19 +59,18 @@ Daugiau informacijos apie diagnostikos duomenis ir prijungtąsias funkcijas žr.
 
 Diagnostikos duomenys naudojami siekiant apsaugoti ir naujinti „Office“, aptikti, diagnozuoti ir spręsti problemas, taip pat tobulinti produktus. Daugiau informacijos žr. [Diagnostikos duomenys, siunčiami „Microsoft“ iš „Microsoft 365“ programų įmonėms](overview-privacy-controls.md#diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft).
 
-|||
+|Kategorija|Išsami informacija|
 |:-----|:-----|
 |**Nuostatų domenas**  | `com.microsoft.office` |
 |**Raktas**  | `DiagnosticDataTypePreference`  |
 |**Duomenų tipas**  | Eilutė |
-|**Galimos reikšmės**  | `BasicDiagnosticData` *(nustatomas lygis Privalomieji)* <br/> `FullDiagnosticData` *(nustatomas lygis Pasirinktiniai)* <br/> `ZeroDiagnosticData` *(nustatomas lygis Nė vienas)* |
+|**Galimos reikšmės**  | `BasicDiagnosticData` *(ši reikšmė nustato lygį į Būtina)* <br/> `FullDiagnosticData` *(ši reikšmė nustato lygį į Pasirinktinai)* <br/> `ZeroDiagnosticData` *(ši reikšmė nustato lygį į Nė vienas)* |
 |**Pasiekiamumas** |16.28 ir vėlesnės versijos |
 
-Pradedant nuo naujų 16.30 versijos diegimų, jei nenustatysite šios nuostatos, „Microsoft“ bus siunčiami tik privalomieji diagnostikos duomenys, jei vartotojai, turintys „Office 365“ (arba „Microsoft 365“) prenumeratą, yra prisijungę naudodami darbo arba mokymo įstaigos paskyrą arba jei vartotojai turi bendrojo licencijavimo „Office 2019 for Mac“ versiją. Be to, šie vartotojai negali pakeisti diagnostikos duomenų lygio, neatsižvelgiant į tai, kaip nustatėte šią nuostatą.
+Jei nenustatysite šios nuostatos, „Microsoft“ bus siunčiami tik pasirinktiniai diagnostikos duomenys, jei vartotojai, turintys „Office 365“ (arba „Microsoft 365“) prenumeratą, yra prisijungę naudodami darbo arba mokymo įstaigos paskyrą arba jei vartotojai turi bendrojo licencijavimo „Office 2019 for Mac“ versiją. Be to, šie vartotojai negali pakeisti diagnostikos duomenų lygio, neatsižvelgiant į tai, kaip nustatėte šią nuostatą.
 
 > [!NOTE]
-> - Jei įdiegsite 16.28 arba 16.29 versiją ir nenustatysite šios nuostatos, „Microsoft“ bus siunčiami ir pasirinktiniai, ir privalomieji diagnostikos duomenys. Jei tada atnaujinsite versiją į 16.30 ar naujesnę, tiek pasirinktiniai, tiek privalomieji diagnostikos duomenys vis tiek bus siunčiami „Microsoft“, nebent pasinaudosite šia nuostata ir nustatysite kitą reikšmę.
-> - Jei nustatysite šią nuostatą, ji taip pat bus taikoma 1.00.217856 ir vėlesnei „Teams for Mac“ versijai bei 16.28 ir vėlesnei „Skype“ verslui, skirtos „Mac“, versijai.
+> Atnaujinome ankstesnę pastraipą, kad paaiškintume, jog pasirinktiniai diagnostikos duomenys taip pat siunčiami „Microsoft“, jei nenustatėte šios nuostatos.
 
 Kitų vartotojų, pvz., namų vartotojų, turinčių „Office 365“ (arba „Microsoft 365“) prenumeratą, siunčiami tik privalomieji diagnostikos duomenys, nebent vartotojas pasirenka taip pat siųsti pasirinktinius diagnostikos duomenis nuėjęs į sritį **Preferences** > **Privacy** (Nuostatos > Privatumas).
 
@@ -76,7 +78,7 @@ Kitų vartotojų, pvz., namų vartotojų, turinčių „Office 365“ (arba „M
 
 Turinį analizuojančios prijungtosios funkcijos yra funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir panašių funkcijų. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba „Word“ Tyrinėtojas. Išsamesnį prijungtųjų funkcijų sąrašą žr. [„Office“ prijungtosios funkcijos](connected-experiences.md).
 
-|||
+|Kategorija|Išsami informacija|
 |:-----|:-----|
 |**Nuostatų domenas**  | `com.microsoft.office` |
 |**Raktas**  | `OfficeExperiencesAnalyzingContentPreference`  |
@@ -92,9 +94,9 @@ Kiti vartotojai, pvz., namų vartotojai, turintys „Office 365“ (arba „Micr
 
 ## <a name="preference-setting-for-connected-experiences-that-download-online-content"></a>Prijungtųjų funkcijų, kurios atsisiunčia internetinį turinį, nuostatų nustatymas
 
-Prijungtosios funkcijos, kurios atsisiunčia turinį, yra funkcijos, kurias naudodami galite ieškoti internetinio turinio ir jį atsisiųsti, įskaitant šablonus, vaizdus, 3D modelius, vaizdo įrašus ir pagalbinę medžiagą, kad patobulintumėte dokumentus. Pavyzdžiui, „Office“ šablonai arba „PowerPoint“ funkcija „QuickStarter“. Išsamesnį prijungtųjų funkcijų sąrašą žr. [Prisijungus naudojamos funkcijos naudojant „Office“](connected-experiences.md).
+Prijungtosios funkcijos, kurios atsisiunčia turinį, yra funkcijos, kurias naudodami galite ieškoti internetinio turinio ir jį atsisiųsti, įskaitant šablonus, vaizdus, 3D modelius, vaizdo įrašus ir pagalbinę medžiagą, kad patobulintumėte dokumentus. Pavyzdžiui, „Office“ šablonai arba „PowerPoint“ funkcija „QuickStarter“. Išsamesnį prisijungus naudojamų funkcijų sąrašą žr. [Prisijungus naudojamos funkcijos naudojant „Office“](connected-experiences.md).
 
-|||
+|Kategorija|Išsami informacija|
 |:-----|:-----|
 |**Nuostatų domenas**  | `com.microsoft.office` |
 |**Raktas**  | `OfficeExperiencesDownloadingContentPreference`  |
@@ -112,7 +114,7 @@ Kiti vartotojai, pvz., namų vartotojai, turintys „Office 365“ (arba „Micr
 
 Be anksčiau minėtų prijungtųjų funkcijų, yra tam tikrų pasirinktinių prijungtųjų funkcijų, kurias galite leisti pasiekti vartotojams, prisijungusiems su organizacijos paskyra, kuri kartais vadinama darbo arba mokymo įstaigos paskyra. Pavyzdžiui, „LinkedIn“ CV kūrimo pagalbinės priemonės funkcijos programoje „Word“ arba orų prognozės juosta programoje „Outlook“, kurią naudoja MSN orai. Daugiau pavyzdžių rasite [Pasirinktinių „Office“ prijungtųjų funkcijų apžvalga](optional-connected-experiences.md).
 
-|||
+|Kategorija|Išsami informacija|
 |:-----|:-----|
 |**Nuostatų domenas**  | `com.microsoft.office` |
 |**Raktas**  | `OptionalConnectedExperiencesPreference`  |
@@ -128,7 +130,7 @@ Kitiems vartotojams, pvz., namų vartotojams, turintiems „Office 365“ (arba 
 
 Šią nuostatą galite naudoti norėdami kontroliuoti, ar prijungtosios funkcijos pasiekiamos jūsų vartotojams.
 
-|||
+|Kategorija|Išsami informacija|
 |:-----|:-----|
 |**Nuostatų domenas**  | `com.microsoft.office` |
 |**Raktas**  | `ConnectedOfficeExperiencesPreference`  |
@@ -157,7 +159,7 @@ Pirmą kartą paleidus „Microsoft AutoUpdate“ (MAU) 4.12 arba vėlesnę vers
 
 Jei nenorite, kad vartotojai matytų „Microsoft AutoUpdate“ dialogo langą **Pranešimas apie privalomuosius duomenis**, galite nustatyti toliau pateiktą nuostatą. Neatsižvelgiant į tai, kurią reikšmę nustatėte, vartotojams nebus rodomas dialogo langas.
 
-|||
+|Kategorija|Išsami informacija|
 |:-----|:-----|
 |**Nuostatų domenas**  | `com.microsoft.autoupdate2` |
 |**Raktas**  | `AcknowledgedDataCollectionPolicy`  |
@@ -168,7 +170,7 @@ Jei nenorite, kad vartotojai matytų „Microsoft AutoUpdate“ dialogo langą *
 Jei leisite vartotojams matyti šį dialogo langą, tada vartotojui pasirinkus **Gerai**, reikšmė `RequiredDataOnly` įrašoma į `AcknowledgedDataCollectionPolicy`ir vartotojui daugiau neberodomas dialogo langas.
 
 
-## <a name="related-topics"></a>Susijusios temos
+## <a name="related-articles"></a>Susiję straipsniai
 
 - [Konfigūravimo profilio nuoroda („Apple“ kūrėjų dokumentacija)](https://go.microsoft.com/fwlink/p/?linkid=852998)
 - [„Office for Mac“ diegimo nuostatos](../mac/deploy-preferences-for-office-for-mac.md)
