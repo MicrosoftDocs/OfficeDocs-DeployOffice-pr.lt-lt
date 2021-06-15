@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pagrindines „Office“ paslaugas, pvz., Spustelėkite ir naudokitės ir licencijavimą, taip pat pateikiamas šių pagrindinių paslaugų įvykių bei duomenų laukų sąrašas.
 hideEdit: true
-ms.openlocfilehash: d3e5ca5381c9fb68a1e05fca703729e282593ded
-ms.sourcegitcommit: cb1f6e3ba1336fc1a8cdca927f545dc43fd8e829
+ms.openlocfilehash: 6dede4fdc57074aa5a9daaf28a20a736c813d626
+ms.sourcegitcommit: 0e2ec395ca334719883a7a48b5313a72217f2eab
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52308153"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52907362"
 ---
 # <a name="essential-services-for-office"></a>Pagrindinės „Office“ paslaugos
 
@@ -1114,11 +1114,11 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioinstalltaskconfigure"></a>Office.ClickToRun.Scenario.InstallTaskConfigure
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa įdeda naujai atsisiųstus failus. Naudojami vertinant „Office“ diegimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa pateikia naujai atsisiųstus failus. Naudojami vertinant „Office“ diegimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1158,21 +1158,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -1194,11 +1194,11 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1234,21 +1234,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -1270,7 +1270,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1310,21 +1310,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -1346,7 +1346,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1386,21 +1386,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -1422,7 +1422,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1462,21 +1462,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -1494,11 +1494,11 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioinstalltaskintegrateinstall"></a>Office.ClickToRun.Scenario.InstallTaskIntegrateinstall
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa kuria „Office“ programų registro įrašus. Naudojami vertinant „Office“ diegimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa kuria „Office“ programų registro įrašus. Naudojami vertinant „Office“ diegimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1538,21 +1538,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -1574,7 +1574,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1614,21 +1614,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -1646,11 +1646,11 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioinstalltaskmigrate"></a>Office.ClickToRun.Scenario.InstallTaskMigrate
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa perkelia parametrus iš ankstesnių „Office“ versijų. Naudojami vertinant „Office“ diegimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ diegimo programa perkelia parametrus iš senesnių "Office" versijų. Naudojami vertinant „Office“ diegimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1690,21 +1690,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -1726,7 +1726,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1766,21 +1766,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -1802,11 +1802,11 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -1842,21 +1842,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -1878,7 +1878,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1918,21 +1918,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -1954,7 +1954,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -1994,21 +1994,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -2026,15 +2026,15 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenariorepairtaskfinalintegrate"></a>Office.ClickToRun.Scenario.RepairTaskFinalintegrate
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ taisymo klientas iš naujo publikuoja .msi failus ir „Office“ plėtinius. Naudojami vertinant „Office“ taisymo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Office“ taisymo klientas iš naujo publikuoja .msi failus ir „Office“ plėtinius. Naudojami vertinant „Office“ taisymo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -2064,27 +2064,27 @@ Renkami šių laukų duomenys:
 
   - **Data\_IsErrorCodeIgnorable –** ar klaidos kodą galima ignoruoti 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth –** ar, mūsų manymu, klaidos kodą galima ignoruoti 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth –** ar, mūsų manymu, klaidos kodą galima ignoruoti 
 
   - **Data\_NewestPackageVersion –** naujausia „Office“ versija kompiuteryje 
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2106,7 +2106,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2146,21 +2146,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2182,7 +2182,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2216,27 +2216,27 @@ Renkami šių laukų duomenys:
 
   - **Data\_IsErrorCodeIgnorable –** ar klaidos kodą galima ignoruoti 
 
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth –** ar, mūsų manymu, klaidos kodą galima ignoruoti 
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth –** ar, mūsų manymu, klaidos kodą galima ignoruoti 
 
   - **Data\_NewestPackageVersion –** naujausia „Office“ versija kompiuteryje 
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2258,83 +2258,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
-
-  - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
-
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
-
-  - **Data\_15\_Version –** „Office 15“ versija 
-
-  - **Data\_16\_SourceType –** kur yra „Office 16“ šaltinis, pvz., CDN arba vietoje 
-
-  - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
-
-  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
-
-  - **Data\_16\_Version –** „Office 16“ versija 
-
-  - **Data\_AddingFixedProducts –** įtraukiami produktai 
-
-  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
-
-  - **Data\_CompletionState –** ar įvykdėme užduotį
-
-  - **Data\_ErrorCode –** įvykusios klaidos kodas 
-
-  - **Data\_ErrorDetails –** papildoma informacija apie klaidą 
-
-  - **Data\_ErrorMessage –** klaidos pranešimas 
-
-  - **Data\_ErrorSource –** kur įvyko klaida 
-
-  - **Data\_ExceptionType –** išimtis 
-
-  - **Data\_IsErrorCodeIgnorable –** ar klaidos kodą galima ignoruoti 
-
-  - **Data\_IsErrorCodeIgnorableForScenarioHealth –** ar, mūsų manymu, klaidos kodą galima ignoruoti 
-
-  - **Data\_NewestPackageVersion –** naujausia „Office“ versija kompiuteryje 
-
-  - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
-
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
-
-  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
-
-  - **Data\_RemovingFixedProducts –** šalinami produktai 
-
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
-
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
-
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
-
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
-
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
-
-  - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
-
-  - **Data\_SusClientID –** kompiuterio „Office“ naujinimo identifikatorius 
-
-  - **Data\_TaskState –** kokia užduoties būsena, pvz., vykdoma arba atšaukta 
-
-  - **Data\_TotalClientCabSize –** kliento .cab failo dydis 
-
-  - **Data\_TriggeringUI –** kas suaktyvino vartotojo sąsają 
-
-  - **Data\_UpdatesEnabled –** ar „Office“ naujinimai įgalinti 
-
-  - **Data\_Version –** „Office“ versija 
-
-### <a name="officeclicktorunscenarioupdatetaskintegrateupdate"></a>Office.ClickToRun.Scenario.UpdateTaskIntegrateupdate 
-
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai Spustelėkite ir naudokitės klientas naujina licencijas (jei būtina). Naudojami vertinant „Office“ naujinimo sėkmingumą.
-
-Renkami šių laukų duomenys:
-
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2374,21 +2298,97 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+
+  - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
+
+  - **Data\_SusClientID –** kompiuterio „Office“ naujinimo identifikatorius 
+
+  - **Data\_TaskState –** kokia užduoties būsena, pvz., vykdoma arba atšaukta 
+
+  - **Data\_TotalClientCabSize –** kliento .cab failo dydis 
+
+  - **Data\_TriggeringUI –** kas suaktyvino vartotojo sąsają 
+
+  - **Data\_UpdatesEnabled –** ar „Office“ naujinimai įgalinti 
+
+  - **Data\_Version –** „Office“ versija 
+
+### <a name="officeclicktorunscenarioupdatetaskintegrateupdate"></a>Office.ClickToRun.Scenario.UpdateTaskIntegrateupdate 
+
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Spustelėkite ir naudokitės“ klientas atnaujina licencijas, jei reikia. Naudojami vertinant „Office“ naujinimo sėkmingumą.
+
+Renkami šių laukų duomenys:
+
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+
+  - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
+
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+
+  - **Data\_15\_Version –** „Office 15“ versija 
+
+  - **Data\_16\_SourceType –** kur yra „Office 16“ šaltinis, pvz., CDN arba vietoje 
+
+  - **Data\_16\_UpdatesEnabled –** ar įgalinti „Office 16“ naujinimai 
+
+  - **Data\_16\_UpdateVersion –** į kokią „Office 16“ versiją naujinama 
+
+  - **Data\_16\_Version –** „Office 16“ versija 
+
+  - **Data\_AddingFixedProducts –** įtraukiami produktai 
+
+  - **Data\_AddingProducts –** kokius produktus mūsų prašoma įtraukti 
+
+  - **Data\_CompletionState –** ar įvykdėme užduotį
+
+  - **Data\_ErrorCode –** įvykusios klaidos kodas 
+
+  - **Data\_ErrorDetails –** papildoma informacija apie klaidą 
+
+  - **Data\_ErrorMessage –** klaidos pranešimas 
+
+  - **Data\_ErrorSource –** kur įvyko klaida 
+
+  - **Data\_ExceptionType –** išimtis 
+
+  - **Data\_IsErrorCodeIgnorable –** ar klaidos kodą galima ignoruoti 
+
+  - **Data\_IsErrorCodeIgnorableForScenarioHealth –** ar, mūsų manymu, klaidos kodą galima ignoruoti 
+
+  - **Data\_NewestPackageVersion –** naujausia „Office“ versija kompiuteryje 
+
+  - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
+
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+
+  - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
+
+  - **Data\_RemovingFixedProducts –** šalinami produktai 
+
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2410,7 +2410,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2450,21 +2450,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2486,7 +2486,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2536,21 +2536,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_PackageOperationSuccessful –** teisinga, jei sėkmingai užbaigėme užduotį „Office“ pakete
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -2574,7 +2574,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2614,21 +2614,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
   - **Data\_ScenarioName –** koks scenarijus vykdomas. Pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“
 
@@ -2650,7 +2650,7 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2698,21 +2698,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_PackageUpdateAvailable –** teisinga, jei galima nauja „Office“ versija
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2730,11 +2730,11 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeclicktorunscenarioupdatetaskupdatedownload"></a>Office.ClickToRun.Scenario.UpdateTaskUpdatedownload
 
-„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Spustelėkite ir naudokitės“ klientas siunčia naują naujinimą. Naudojami vertinant „Office“ naujinimo sėkmingumą.
+„Office“ sąrankos ir inventoriaus duomenys, renkami, kai „Spustelėkite ir naudokitės“ klientas atsisiunčia naują naujinimą. Naudojami vertinant „Office“ naujinimo sėkmingumą.
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
@@ -2786,21 +2786,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_PipelineExitCode –** failų srauto pateiktas išėjimo kodas
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2822,11 +2822,11 @@ Renkami šių laukų duomenys:
 
 Renkami šių laukų duomenys:
 
-  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
+  - **Data\_15\_SourceType –** kur yra „Office 15“ šaltinis, pvz., CDN arba vietoje 
 
   - **Data\_15\_UpdatesEnabled –** ar įgalinti „Office 15“ naujinimai 
 
-  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
+  - **Data\_15\_UpdateVersion –** į kokią „Office 15“ versiją naujinama 
 
   - **Data\_15\_Version –** „Office 15“ versija 
 
@@ -2862,21 +2862,21 @@ Renkami šių laukų duomenys:
 
   - **Data\_OldestPackageVersion –** seniausia „Office“ versija kompiuteryje 
 
-  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
+  - **Data\_ProductsToAdd –** kokius „Office“ produktus įtraukiame 
 
   - **Data\_ProductsToRemove –** kokius „Office“ produktus šaliname 
 
   - **Data\_RemovingFixedProducts –** šalinami produktai 
 
-  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
+  - **Data\_RemovingProducts –** produktai, kuriuos mūsų prašoma pašalinti 
 
-  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
+  - **Data\_ScenarioInstanceID –** vykdomo scenarijaus unikalusis GUID 
 
-  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
+  - **Data\_ScenarioName –** koks scenarijus vykdomas, pvz., diegimas 
 
-  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
+  - **Data\_ScenarioSubType –** kokio tipo scenarijų vykdome, pvz., pašalinimas, diegimas iš naujo 
 
-  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
+  - **Data\_SourceType –** kur yra mūsų šaltinis, pvz., CDN 
 
   - **Data\_SqmMachineID –** unikalusis kompiuterio ID, kurį naudoja „Windows SQM“ 
 
@@ -2947,7 +2947,7 @@ Renkami šių laukų duomenys:
 
   - **Data\_IsInstallMode** – 1, jei diegiame ir siunčiame failus, 0, jei ne
 
-  - **Data\_SourceProtocol –** jei atsisiunčiame iš turinio duomenų tinklo, CDN, kompiuterio, kuriame diegiama, vietinio katalogo arba iš ištekliaus vietiniame tinkle
+  - **Data\_SourceProtocol –** jei atsisiunčiame iš turinio duomenų tinklo, CDN, kompiuterio, kuriame diegiama, vietinio katalogo arba iš ištekliaus vietiniame tinkle
 
   - **Data\_Status**– sėkminga ar nesėkminga 
 
@@ -3133,17 +3133,17 @@ Praneša apie parametrus, naudojamus „Office“ įdiegčiai
 
 Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus duomenis iš „CalculateParameters“
 
-- **AvailableClientVersionText –** eilutės reikšmė C2R kliento 16.0.xxxxx.yyyyy versijoje, rasta „Version Descriptor XML“, kuri naudojama nustatyti, ar šiuo metu įdiegtas C2R klientas turi būti atnaujintas
+- **AvailableClientVersionText –** eilutės reikšmė C2R kliento 16.0.xxxxx.yyyyy versijoje, rasta „Version Descriptor XML“, kuri naudojama nustatyti, ar šiuo metu įdiegtas C2R klientas turi būti atnaujintas
 
-- **CleanFireflyAction –** „teisinga“, jei „CleanFireFlyAction“ užduotis suplanuota vykdyti šio diegimo metu
+- **CleanFireflyAction –** „teisinga“, jei „CleanFireFlyAction“ užduotis suplanuota vykdyti šio diegimo metu
 
-- **CleanO15Action –** „teisinga“, jei „CleanO15Action“ užduotis suplanuota vykdyti šio diegimo metu
+- **CleanO15Action –** „teisinga“, jei „CleanO15Action“ užduotis suplanuota vykdyti šio diegimo metu
 
 - **CMDMode –** draugiška eilutė, parodanti, į kurį bendrąjį režimą aptiktas perjungimas iš cmd argumentų į exe. Galimybės: automatinis vykdymas, konfigūravimas, vartotojams, atsisiuntimas, žinynas, pakavimo programa
 
-- **DeliveryMechanism –** „FFNRoot“ GUID, išgaunamas iš versijos aprašo XML (įspaustas RDX), kuriame nurodoma, iš kokios auditorijos/kanalo gautas komponavimo šaltinis
+- **DeliveryMechanism –** „FFNRoot“ GUID, išgaunamas iš versijos aprašo XML (įspaustas RDX), kuriame nurodoma, iš kokios auditorijos/kanalo gautas komponavimo šaltinis
 
-- **DownloadC2RClientAction –** „teisinga“, jei „DownloadC2RClientAction“ užduotis suplanuota vykdyti šio diegimo metu
+- **DownloadC2RClientAction –** „teisinga“, jei „DownloadC2RClientAction“ užduotis suplanuota vykdyti šio diegimo metu
 
 - **ErrorCode –** sveikoji reikšmė, susieta su neapdorota išimtimi
 
@@ -3155,13 +3155,13 @@ Ataskaitos apie kompiuterio įtakotus veiksmus, kurie nustatomi pagal motyvuotus
 
 - **ExitCode –** sveikoji reikšmė, susieta su perkrovimo vykdymo fazės rezultatu, rodanti sėkmingus bandymus ir tam tikrų tipų triktis
 
-- **LaunchAction –** „teisinga“, jei „LaunchAction“ užduotis suplanuota vykdyti šio diegimo metu
+- **LaunchAction –** „teisinga“, jei „LaunchAction“ užduotis suplanuota vykdyti šio diegimo metu
 
-- **LaunchUpdateAction –** „teisinga“, jei „LaunchAction“ užduotis suplanuota vykdyti šio diegimo metu
+- **LaunchUpdateAction –** „teisinga“, jei „LaunchAction“ užduotis suplanuota vykdyti šio diegimo metu
 
-- **PreReqResult –** sveikojo skaičiaus išvardijimo reikšmė, kai buvo atlikti „PreReq“ tikrinimai (pavyko/nepavyko/paleisti iš naujo)
+- **PreReqResult –** sveikojo skaičiaus išvardijimo reikšmė, kai buvo atlikti „PreReq“ tikrinimai (pavyko/nepavyko/paleisti iš naujo)
 
-- **UnexpectedAction –** „teisinga“, jei „UnexpectedAction“ užduotis (klaidos atvejis) suplanuota vykdyti šio diegimo metu
+- **UnexpectedAction –** „teisinga“, jei „UnexpectedAction“ užduotis (klaidos atvejis) suplanuota vykdyti šio diegimo metu
 
 - **VersionToInstall –** eilutės reikšmė, nurodanti diegiamos „Office“ 16.0.xxxxx.yyyyy versiją
 
@@ -3596,6 +3596,24 @@ Renkami šių laukų duomenys:
 
   - **DwEulaId** – GVLS, su kuria vartotojas sutiko, tipo skaitinis identifikatorius
 
+
+### <a name="officelicensingactivatedeviceentitlement"></a>Office.Licensing.ActivateDeviceEntitlement
+
+Šis įvykis paleidžiamas, kai bandome aktyvinti įrenginio nuolatinį „Office“ pasiūlymą vartotojui. Naudojame šiuos duomenis norėdami stebėti sistemų ir tarnybų sveikatą.
+
+Renkami šių laukų duomenys: 
+
+- **Activity_Success** – nurodo, ar įrenginys licencijuotas naudoti įrenginių nuolatinį „Office“ pasiūlymą.
+
+- **Data_Count** – nurodo įrenginiu pagrįstos nuolatinės „Office“ teisės, susijusios su įrenginiu, skaičių. Techniškai jų neturėtų būti daugiau nei vienas.
+
+- **Data_EligibleEntitlementsCount** – nurodo mums tinkamų teisių skaičių. Tarnyba grąžins visas su įrenginiu susijusias įrenginių teises, tačiau mums reikia patikrinti šiuos pasiūlymus, kurie yra susiję su vykdoma „Office“ programa.
+
+- **Data_Errors** – eilutė su klaidų sąrašu, kol gauname teisių licencijas, atskirtas kableliu.
+
+- **Data_LicensedEntitlementsCount** – nurodo teisių, kurioms sėkmingai gauta licencija, skaičių. Gali būti teisių klaidų, dėl kurių mums nepavyks gauti licencijos. 
+
+
 ### <a name="officelicensingactivation"></a>Office.Licensing.Activation 
 
 Nustatę licenciją kompiuteryje, bandome suaktyvinti licenciją iškviesdami AVS paslaugą. Tai praneša apie aktyvinimo iškvietimo rezultatą
@@ -3636,7 +3654,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officelicensingdialogswebviewdialogclose"></a>Office.Licensing.Dialogs.WebViewDialog.Close
  
-Šis įvykis naudojamas kaip signalas mums pranešti, kad pirkimo programėlėje patirtis uždaryta vartotojo arba programos. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą norint užtikrinti, kad ji veikia kaip ir numatyta.  
+Šis įvykis naudojamas kaip signalas mums pranešti, kad pirkimo programėlėje funkcijas uždaro vartotojas arba programa. Duomenys naudojami stebėti ir įspėti apie pirkimo programėlėje srauto sveikatą norint užtikrinti, kad ji veikia kaip ir numatyta.  
  
 Renkami šių laukų duomenys:
  
@@ -3806,6 +3824,19 @@ Renkami šių laukų duomenys:
   - **LicenseStatus** – „Office“ licencijos, kurią naudoja vartotojas, būsena
 
   - **MachineKey** – vartotojui išduoto licencijos rakto iš raidžių ir skaitmenų sudarytas identifikatorius
+
+### <a name="officelicensinglaunchsetupoffice"></a>Office.Licensing.LaunchSetupOffice
+
+Šis įvykis suaktyvinamas, kai mes panaudojame „Office“ pasiūlymą vartotojui, kuris įsigijo įrenginį, sugrupuotą su OĮG „Office“ išankstinėmis teisėmis arba įvedė produkto kodą. Naudojame šiuos duomenis norėdami stebėti sistemų ir tarnybų sveikatą.
+
+Renkami šių laukų duomenys:
+
+- **Activity_Result_Tag** – nurodo, kaip baigėme šį įvykį.
+
+- **Data_DialogResult** – nurodo bendrą panaudojimo proceso rezultatą.
+
+- **Data_Scenario** – nurodo mums scenarijų, kada buvo vykdomas panaudojimas.
+
 
 ### <a name="officelicensinglicensingbar"></a>Office.Licensing.LicensingBar
 
@@ -4691,6 +4722,48 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
+
+### <a name="cataloginvalid"></a>catalog.invalid
+
+Šis įvykis užregistruoja klaidos sąlygą, kuri rodo į atsisiųstą neleistiną deklaracijos katalogą. Šį įvykį naudojame norėdami užtikrinti, kad publikuotuose deklaracijos failuose nėra klaidų. 
+
+Renkami šių laukų duomenys:
+
+- **App** – programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia programa
+
+- **AppVersionLong** – programos versija.
+
+- **CatalogFile** – katalogo failo, dėl kurio atsirado klaidos sąlyga, pavadinimas.
+
+- **Channel** – auditorijos nuostatos
+
+- **Device_NetworkCountry** – įrenginio apskritis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos versija
+
+- **Event_ReceivedTime** – laikas, kada buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso oktetai
+
+- **SessionId** – seanso identifikatorius
+
+
 ### <a name="cloningtaskbegin"></a>cloningtask.begin
 
 Šis įvykis nurodo klonavimo užduoties pradžią prieš programų naujinimą. Šis įvykis naudojamas kartu su „cloningtask.status“ įvykiu, kad būtų galima nustatyti klonavimo nesėkmes, siekiant nustatyti, ar klonavimo funkcija turėtų būti ribojama skirtinguose auditorijos kanaluose.
@@ -5192,7 +5265,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="controllercheckwindowupdatecheck"></a>controller.checkwindow.updatecheck
 
-Šis įvykis nurodo, kad buvo tikrinama, ar yra naujinimų. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+Šis įvykis nurodo, kad buvo atlikta naujinimų patikra. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą, ir apibrėžiame, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti savo leidimų išleidimą atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
 Renkami šių laukų duomenys:
 
@@ -5233,7 +5306,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="controllercheckwindowupdatecheckcancel"></a>controller.checkwindow.updatecheckcancel
 
-Šis įvykis nurodo, kad buvo atšauktas naujinimų tikrinimo procesas (vartotojo arba sistemos). Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+Šis įvykis nurodo, kad buvo atšauktas naujinimų tikrinimo procesas (kurį atšaukė vartotojas arba sistema). Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžiame, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti leidimų išleidimą atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
 Renkami šių laukų duomenys:
 
@@ -5274,7 +5347,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="controllercheckwindowupdatecheckcanceluser"></a>controller.checkwindow.updatecheckcanceluser
 
-Šis įvykis nurodo, kad naujinimų tikrinimo procesas buvo atšauktas vartotojo.  Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžtų, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti išleidimo terminus atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
+Šis įvykis nurodo, kad vartotojas atšaukė naujinimų tikrinimo procesą. Naudojame šį įvykį, kad naujinimai būtų siūlomi tinkamai, optimizuodami tarnybų apkrovą ir apibrėžiame, kaip dažnai turi būti tikrinami naujinimai. Taip pat norime optimizuoti leidimų išleidimą atsižvelgdami į vartotojų lūkesčius dėl naujinimų.
 
 Renkami šių laukų duomenys:
 
@@ -5315,7 +5388,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="controllercheckwindowupdatesfound"></a>controller.checkwindow.updatesfound
 
-Šis įvykis nurodo, kad tikrinant naujinimus buvo rasta naujinimų.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
+Šis įvykis nurodo, kad buvo rasti naujinimai tikrinant, ar yra naujinimų.  Šis įvykis naudojamas siekiant užtikrinti, kad naujinimai būtų siūlomi tinkamai.
 
 Renkami šių laukų duomenys:
 
@@ -5807,7 +5880,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="controllerdownloadwindownetworkunavailablealert"></a>controller.downloadwindow.networkunavailablealert
 
-Šis įvykis nurodo, kad, atsisiunčiant naujinimus, nutrūko tinklo ryšys.  Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad atsisiunčiant naujinimus buvo prarastas tinklo ryšys.  Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
 Renkami šių laukų duomenys:
 
@@ -6052,7 +6125,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="controllerdownloadwindowupdatesuccessful"></a>controller.downloadwindow.updatesuccessful
 
-Šis įvykis nurodo, kad visi dabartinio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad visi šio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
 Renkami šių laukų duomenys:
 
@@ -6093,7 +6166,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="controllerdownloadwindowuserpaused"></a>controller.downloadwindow.userpaused
 
-Šis įvykis nurodo, kad visi dabartinio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad visi šio paketo naujinimai buvo sėkmingi. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
 
 Renkami šių laukų duomenys:
 
@@ -7527,7 +7600,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="downloadmgrdownloadstart"></a>downloadmgr.downloadstart
 
-Šis įvykis registruoja naujinimą, kuris bus atsisiųstas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis užregistruoja naujinimą, kuris bus atsisiunčiamas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -7832,7 +7905,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbacheckforupdate"></a>fba.checkforupdate
 
-Šis įvykis nurodo, kad procesas fone tikrina, ar yra naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad fono procesas tikrina, ar yra naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -8233,7 +8306,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbalaunchstatus"></a>fba.launchstatus
 
-Šis įvykis registruoja MAU „Daemon“ nesėkmes bandant paleisti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis užregistruoja MAU tarnybos triktis bandant paleisti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -8523,7 +8596,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbasilentupdateoptin"></a>fba.silentupdateoptin
 
-Šis įvykis reiškia, kad vartotojas renkasi tyliuosius naujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad vartotojas pasirenka tylius atnaujinimus. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -8645,7 +8718,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbaterminate"></a>fba.terminate
 
-Šis įvykis reiškia, kad MAU „Daemon“ nutrauktas įprastai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad MAU tarnyba buvo nutraukta įprastai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -8686,7 +8759,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbaupdatefound"></a>fba.updatefound
 
-Šis įvykis nurodo, kad MAU „Daemon“ rado siūlomų naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad MAU tarnyba rado galimų pasiūlyti naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -9065,7 +9138,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbasilentupdatedownload"></a>fbasilentupdate.download
 
-Šis įvykis nurodo, kad atsisiunčiamas naujinimas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad naujinimas yra atsiunčiamas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -9323,7 +9396,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="fbasilentupdateinstallcomplete"></a>fbasilentupdate.installcomplete
 
-Šis įvykis nurodo, kad visi paketiniai naujinimai baigti diegti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad visi paketo naujinimai baigė diegti. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -10994,7 +11067,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="installstatuscodesign"></a>installstatus.codesign
 
-Šis įvykis registruoja OS koprojektinių dvejetainių būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja OS bendro dizaino dvejetainę būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -11035,7 +11108,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="installstatusdaemon"></a>installstatus.daemon
 
-Šis įvykis užregistruoja „Microsoft AutoUpdate“ „Daemon“ būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis užregistruoja „Microsoft AutoUpdate“ tarnybos būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -11082,7 +11155,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="installstatushelper"></a>installstatus.helper
 
-Šis įvykis užregistruoja „Microsoft AutoUpdate“ pagalbininko įrankio būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis užregistruoja „Microsoft AutoUpdate“ pagalbos įrankio būseną. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -11451,7 +11524,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="installupdatestaskretryfail"></a>installupdatestask.retryfail
 
-Šis įvykis nurodo, kad vykstant diegimo kartojimo procesui įvyko klaidų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad įvyko klaidų diegimo pakartotinio bandymo metu. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -11492,7 +11565,7 @@ Renkami šių laukų duomenys:
    
 ### <a name="installupdatestaskretryproxyerror"></a>installupdatestask.retryproxyerror
 
-Šis įvykis registruoja vidinio proceso ryšio klaidas (bendravimas su MAU pagalbininko įrankiu). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja vidinio proceso ryšių klaidas (bendravimas su MAU pagalbos priemone). Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -11534,7 +11607,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="installupdatestaskretryresponse"></a>installupdatestask.retryresponse
 
-Šis įvykis registruoja nepavykusius bandymus iš naujo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja, kad pakartotinis bandymas nesuveikė. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -11575,7 +11648,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="installupdatestaskretrysuccess"></a>installupdatestask.retrysuccess
 
-Šis įvykis po pakartotinio atnaujinimo užregistruoja sėkmingą naujinimo diegimą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja sėkmingą naujinimo diegimą po pakartotinio diegimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -12143,7 +12216,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="msupdatemonitorprogressfinished"></a>msupdate.monitor.progress.finished
 
-Šis įvykis užregistruoja eilėje esančių naujinimų, kurie baigti diegti, sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja eilėje laukiamų naujinimų, kurie buvo baigti diegti, sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -12184,7 +12257,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="msupdatemonitorprogressqueued"></a>msupdate.monitor.progress.queued
 
-Šis įvykis užregistruoja eilėje esančių naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja eilėje laukiamų naujinimų sąrašą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -13130,6 +13203,47 @@ Renkami šių laukų duomenys:
 
 - **SessionId** – seanso identifikatorius
 
+### <a name="updateclonedisablereason"></a>update.clonedisablereason
+
+Šis įvykis registruoja sąlygą, kad tam tikrame naujinime yra išjungta „Install-on-Clone“ funkcija. Šį įvykį naudojame norėdami stebėti „Install-On-Flash“ funkcijos sveikatą ir teikti patobulintas paslaugas.
+
+Renkami šių laukų duomenys:
+
+- **App** – programos siuntimo procesas
+
+- **AppInfo_Language** – kalba, kuria veikia programa
+
+- **AppVersionLong** – programos versija.
+
+- **Channel** – auditorijos nuostatos
+
+- **Device_NetworkCountry** – įrenginio apskritis (pagrįsta IP adresu)
+
+- **DeviceID**– įrenginio identifikatorius
+
+- **DeviceInfo_Model** – įrenginio aparatūros modelis
+
+- **DeviceInfo_NetworkType** – tinklo tipas (Wi-Fi, laidinis, nežinomas)
+
+- **DeviceInfo_OsBuild** – operacinės sistemos versija
+
+- **Event_ReceivedTime** – laikas, kada buvo gauta telemetrija
+
+- **EventInfo_Name** – užregistruoto telemetrijos įvykio pavadinimas
+
+- **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
+
+- **HowTocheck** – naujinimų tikrinimo pirmenybė
+
+- **PipelineInfo_ClientCountry** – įrenginio šalis (pagrįsta IP adresu)
+
+- **PipelineInfo_ClientIp** – pirmieji 3 IP adreso oktetai
+
+- **Reason** – priežastis, kodėl šiame naujinime išjungta „Install On Clone“.
+
+- **SessionId** – seanso identifikatorius
+
+
 ### <a name="updatedownloadbegin"></a>update.download.begin 
 
 Šis įvykis nurodo programos naujinimo proceso pradžią. Šis įvykis yra naujinimo piltuvėlio dalis ir naudojamas nustatyti programų naujinimų sveikatą. 
@@ -13430,6 +13544,8 @@ Renkami šių laukų duomenys:
 
 - **EventInfo_Time** – laikas, kada įvyko užregistruotasis įvykis 
 
+- **Prisekitenaujinti** – eilutė, nurodanti, ar naujinimas yra priversti IT administratoriaus
+
 - **HowToCheck** – kaip tikrinti parametrus
 
 - **Payload** – nurodo, ar diegimo proceso metu rodoma eigos peržiūra
@@ -13699,7 +13815,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="updatecoreappregistration"></a>updatecore.appregistration
 
-Šis įvykis registruoja žurnale bandymus užregistruoti taikomąją programą ir rezultatą/priežastį. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis įrašo bandymus užregistruoti programą ir rezultatą / priežastį. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -13740,7 +13856,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="updatecoreloadinglaunchagent"></a>updatecore.loadinglaunchagent
 
-Šis įvykis nurodo, kad įkeliamas paleidimo agentas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad įkeliamas paleisties agentas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -13820,7 +13936,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="updatecoreserverconnectionfail"></a>updatecore.server.connectionfail
 
-Šis įvykis registruoja klaidas, kurios gautos siekiant „CDN“. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja klaidas, kurios pasitaiko pasiekus CDN. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -14187,7 +14303,7 @@ Renkami šių laukų duomenys:
  
 ### <a name="updatefindercheckstart"></a>updatefinder.check.start
 
-Šis įvykis užregistruoja kaskart, kai inicijuojame tikrinimą dėl naujinimų. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis įrašo kiekvieną kartą, kai inicijuojame atnaujinimo operacijos patikrą. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -15090,7 +15206,7 @@ Renkami šių laukų duomenys:
     
 ### <a name="updatemanagerupdatespending"></a>updatemanager.updatespending
 
-Šis įvykis nurodo, kad naujinimai buvo rasti ir laukiama diegimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad buvo rasti naujinimai ir laukiama diegimo. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -15220,7 +15336,7 @@ Renkami šių laukų duomenys:
    
 ### <a name="webservicescheckforsilentupdates"></a>webservices.checkforsilentupdates
 
-Šis įvykis nurodo, kad buvo rasti tylaus atnaujinimo kandidatai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis nurodo, kad buvo rasti automatinio naujinimo kandidatai. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -15343,7 +15459,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="webservicesserviceresponse"></a>webservices.serviceresponse
 
-Šis įvykis registruoja MAU tarnybos, atsakymo laiko ir klaidų užklausas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
+Šis įvykis registruoja užklausas į MAU tarnybą, atsako laiką ir klaidas. Šis įvykis naudojamas, kad būtų užtikrinta, jog naujinimo procesas veikia taip, kaip tikėtasi, ir padėti pašalinti klaidas.
  
 Renkami šių laukų duomenys:
 
@@ -15562,7 +15678,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 - **Gosid** – visuotinio objekto srities ID
 
-- **IdentityType** – tapatybės tipas, pavyzdžiui, „Windows Live“, organizacijos ID ir t. t.
+- **IdentityType** – tapatybės tipas, pavyzdžiui, „Windows Live“, organizacijos ID ir t. t.
 
 - **InitialReplicationInSession** – nurodo, ar dubliuojamas pirmasis bloknoto dubliavimas atidarius, ar ne
 
@@ -15678,7 +15794,7 @@ Renkami šių laukų duomenys:
 
 ### <a name="officeonenotestoragesectionsyncresult"></a>Office.OneNote.Storage.SectionSyncResult
  
-Šis įvykis registruoja skyriaus sinchronizavimo rezultatą. Jis naudojamas norint suprasti, kiek reikia unikalių sinchronizavimo tikslų, apskaičiuojant „OneNote“ sinchronizavimo balą. Jis taip pat naudojamas „OneNote“ modernių sinchronizavimo efektyvumo ataskaitų srityje.
+Šis įvykis registruoja sekcijos sinchronizavimo rezultatą. Jis naudojamas norint sužinoti, kiek unikalių sinchronizavimo tikslų taikoma skaičiuojant „OneNote“ sinchronizavimo įvertinimą. Jis taip pat naudojamas „OneNote“ moderniam sinchronizavimo našumui ataskaitų srityje.
  
 Renkami toliau apibūdintų laukų duomenys
 

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: c61c3072c4c0f61926b51c0fab5e46a1b5151e00
-ms.sourcegitcommit: 2796ba69444926d686e7ed587a89d8ee9e313d84
+ms.openlocfilehash: 47ecf8e0195324b1c40a627333275bbed0947253
+ms.sourcegitcommit: 0e2ec395ca334719883a7a48b5313a72217f2eab
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52328431"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52907398"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -45,6 +45,11 @@ Jei esate organizacijos administratorius, galbūt jus domina šie straipsniai:
 - [„Office“, skirto „Mac“, privatumo valdiklių valdymas, naudojant nuostatas](mac-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „iOS“ įrenginiuose naudojant nuostatas](ios-privacy-preferences.md)
 - [„Office“ privatumo valdiklių valdymas „Android“ įrenginiuose naudojant strategijos parametrus](android-privacy-controls.md)
+
+> [!NOTE]
+> Informacijos apie privalomuosius „Microsoft Teams“ diagnostikos duomenis žr. šiuose straipsniuose:
+> - [Privalomieji kompiuterio diagnostikos duomenys, skirti „Microsoft Teams“](/microsoftteams/policy-control-diagnostic-data-desktop)
+> - [Privalomieji mobiliųjų įrenginių diagnostikos duomenys, skirti „Microsoft Teams“](/microsoftteams/policy-control-diagnostic-data-mobile)
 
 ## <a name="categories-data-subtypes-events-and-data-fields-for-required-diagnostic-data"></a>Būtinų diagnostikos duomenų kategorijos, duomenų porūšiai, įvykiai ir duomenų laukai
 
@@ -153,6 +158,8 @@ Informacija apie operacinę sistemą ir komponavimo versiją.
 
 Šioje kategorijoje yra šie laukai:
 
+  - **Model** – eilutė, kurioje yra įrenginio, kuriame veikia programa, fizinis modelis. tik „iOS“. Pvz., „iPhone13,3“ arba „iPad11,6“.
+  
   - **OsBuild** – įrenginyje įdiegtos operacinės sistemos komponavimo versijos numeris. Leidžia mums nustatyti, ar problema skirtingai nuo kitų veikia atskirus pakeitimų paketus arba pateiktos operacinės sistemos versijas, kad galėtume nustatyti problemų prioritetus.
 
   - **OsVersion** – įrenginyje įdiegtos operacinės sistemos pagrindinė versija. Leidžia mums nustatyti, ar problemos labiau nei kitas veikia konkrečią operacinės sistemos versiją, kad galėtume nustatyti problemų prioritetus.
@@ -360,6 +367,8 @@ Konkretaus įvykio informacija, įskaitant jo unikalų identifikatorių seanse.
   - **Flags** – informacija, naudojama keisti pateikiamo įvykio reagavimą. Naudojama valdyti pateikiamo įvykio traktavimą duomenų įkėlimo į „Microsoft“ tikslų atžvilgiu.
 
   - **Id** – unikalus įvykio identifikatorius. Leidžia mums unikaliai identifikuoti gautus įvykius.
+
+  - **IsExportable** – laukas, nurodantis, ar šį įvykį reikia toliau apdoroti naudojant eksportavimo srautą.
 
   - **Level** – nurodo įvykio tipą.
 
@@ -1076,7 +1085,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeextensibilitycatalogexchangegetlastupdate"></a>Office.Extensibility.Catalog.ExchangeGetLastUpdate
 
-Informacija apie sėkmingą arba nesėkmingą „Office 365“ nuomotojo administratoriui priskirtų papildinių poreikį atnaujintiems duomenims. Naudota sveikatos metrikoms, diagramoms ir kliento problemų analizei. ExchangeGetLastUpdate visada bus paleista įkrovos metu kaip dalis pagrindinio kompiuterio kodo ir nustatys, ar buvo vartotojui pakeistos papildinio užduotys.  Jei taip, tuomet osf.DLL bus įkeltas, kad galėtume iškviesti ExchangeGetEntitlements ir gauti konkrečius priskyrimus (ir ExchangeGetManifests bus iškviestas, kad būtų gautos visos naujos reikalingos deklaracijos).   ExchangeGetEntitlements (ir ExchangeGetManifests) gali taip pat būti iškviestos pagal poreikį, kai jau veikia pagrindinio kompiuterio taikomoji programa.  Norima, kad nebūtų įkeltas didelis DLL, jei mums jis nereikalingas.  Jeigu nepavyksta pirmasis tarnybos kvietimas, be šio įvykio nurodyto lauke Privaloma, negalėtume pasakyti, ar vartotojai negali gauti jiems priskirtų papildinių.  Tai taip pat yra pagrindinis įspėjimas dėl galimų bet kokių autentifikavimo problemų, su kuriomis galime susidurti kreipdamiesi į savo paslaugą.
+Informacija apie sėkmingą arba nesėkmingą „Office 365“ nuomotojo administratoriui priskirtų papildinių poreikį atnaujintiems duomenims. Naudota sveikatos metrikoms, diagramoms ir kliento problemų analizei. ExchangeGetLastUpdate visada bus paleista įkrovos metu kaip dalis pagrindinio kompiuterio kodo ir nustatys, ar buvo vartotojui pakeistos papildinio užduotys.  Jei taip, tuomet osf.DLL bus įkeltas, kad galėtume iškviesti ExchangeGetEntitlements ir gauti konkrečius priskyrimus (ir ExchangeGetManifests bus iškviestas, kad būtų gautos visos naujos reikalingos deklaracijos).   ExchangeGetEntitlements (ir ExchangeGetManifests) gali taip pat būti iškviestos pagal poreikį, kai jau veikia pagrindinio kompiuterio taikomoji programa.  Norima, kad nebūtų įkeltas didelis DLL, jei mums jis nereikalingas.  Jeigu nepavyksta pirmasis tarnybos kvietimas, be šio įvykio nurodyto lauke Privaloma, negalėtume pasakyti, ar vartotojai negali gauti jiems priskirtų papildinių.  Tai taip pat yra pagrindinis įspėjimas dėl galimų bet kokių autentifikavimo problemų, su kuriomis galime susidurti kreipdamiesi į savo paslaugą.
 
 Renkami šių laukų duomenys:
 
@@ -1232,7 +1241,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookmacaddinapiusage"></a>Office.Outlook.Mac.AddinAPIUsage
 
-Surenka informaciją apie sėkmingą ir nesėkmingą papildinio vykdymą programoje „Outlook“. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
+Renka informaciją apie sėkmingą ir nesėkmingą „Outlook“ papildinio vykdymą. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
 
 Renkami šių laukų duomenys:
 
@@ -1253,7 +1262,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeoutlookmacaddineventapisusage"></a>Office.Outlook.Mac.AddinEventAPIsUsage
 
-Surenka informaciją apie sėkmingą arba nesėkmingą papildinio vykdymą programoje „Outlook“. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
+Renka informaciją apie sėkmingą ar nesėkmingą „Outlook“ papildinio vykdymą. Šie duomenys yra aktyviai stebimi, siekiant užtikrinti, kad „Outlook“ su papildiniais veikia tinkamai. Šie duomenys naudojami problemoms aptikti ir tirti.
 
 Renkami šių laukų duomenys:
 
@@ -1747,6 +1756,8 @@ Renkami šių laukų duomenys:
 
 - **is_all_day** – naudojama kartu su „meeting_duration“ siekiant nurodyti, ar susitikimas vyksta visą dieną. Padeda suprasti, ar yra kokių nors problemų, susijusių su veiksmais, atliekamais visą dieną vykstančių susitikimų metu. 
 
+- **is_every_meeting_online_on** – teisinga, jei pagal numatytuosius parametrus vartotojo paskyroje yra nustatyti susitikimai internetu. Padeda suprasti, ar yra kokių nors problemų dėl kalendorių, kuriuose įgalinti internetiniai susitikimai. 
+
 - **is_location_permission_granted** – ar vartotojas suteikė taikomosios programos sistemos vietos teises. Jei suteikiamas vietos leidimas, taikomoji programa gali pateikti papildomą naudingumo informaciją vartotojo sąsajoje. Žinodami, ar suteikiamas leidimas naudoti vietą, turėsime galimybę sužinoti, kaip dažnai vartotojams rodoma papildoma naudingumo informacija.
 
 - **is_organizer** – padeda suprasti, ar organizatorius gali tinkamai redaguoti ir kurti susitikimus. 
@@ -1805,7 +1816,9 @@ Toliau nurodyti laukai renkami „Android“ ir „Android“:
 
 - **account_switcher_action_type** – šis veiksmų tipas seka, ar vartotojas naudojo paskyros perjungiklį paprastam aptikimui, ar nusprendė perjungti paskyrą
 
-- **action_type** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas. 
+- **action** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas.
+
+- **action_type** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas. *[Šis laukas buvo pašalintas iš dabartinių „Office“ komponavimo versijų, bet gali būti rodomas senesnėse komponavimo versijose.]* 
 
 - **conversation_id** – unikalus kiekvieno ieškos seanso ID (pvz., kiekvieną kartą, kai vartotojas įveda ieškos lauką)
 
@@ -1840,8 +1853,6 @@ Toliau nurodyti laukai renkami „Android“ ir „Android“:
 - **search_result_filter_type** – nurodo, kokio tipo filtras buvo pritaikytas paieškai: rodyti visus ar tik priedus
 
 Toliau nurodyti laukai renkami „Outlook Mobile“ „iOS“ programose. 
-
-- **action** – veiksmo, kuris buvo atliktas ieškai, tipas. Nurodo, ar ieška buvo pradėta, pasikartojanti, ar užbaigta, ir kokių veiksmų buvo imtasi atliekant iešką, t. y. ar buvo naudotas mikrofonas. Padeda užtikrinti tikslias ir naudingas paieškas.
 
 - **answer_result_selected_count** – seka, kiek kartų ieška buvo „sėkminga“, t. y. ar vartotojas rado pageidaujamą žmogų? Sukūrė el. laišką? Pažymėjo laišką? 
 
@@ -1903,6 +1914,8 @@ Renkami šių laukų duomenys:
 - **hx_error_type** – praneša mums, kokia klaida įvyko, kai tarnyba uždraudė pašalinti, atnaujinti arba įtraukti atsakymą į laišką.
 
 - **hx_string_tag** – praneš mums klaidos žymę tarnybos kode
+
+- **is_pinned** – nurodo, ar pokalbis prisegtas. Tai skirta įvertinti, ar vartotojai sąveikauja su prisegimo pranešimais ir ar prisegimo funkcija veikia taip, kaip numatyta.
 
 - **reaction_origin** – nurodo mums kilmę įvykio, kur vartotojas reagavo 
 
@@ -2542,6 +2555,8 @@ Renkami šių laukų duomenys:
 
 - **is_group_escalation** – nurodo, ar pranešimas, pagal kurį buvo atliktas veiksmas, buvo nusiųstas į vartotojo pašto dėžutę dėl eskalavimo (prenumeruota grupei)
 
+- **is_pinned** – nurodo, ar pokalbis prisegtas. Tai skirta įvertinti, ar vartotojai sąveikauja su prisegimo pranešimais ir ar prisegimo funkcija veikia taip, kaip numatyta.
+
 - **is_rule** – nurodo, ar atliktas pašto veiksmas iš naujo nustato reikšmingiausių / kitą klasifikaciją.
 
 - **is_threaded_mode** – nurodo, ar pranešimas buvo gijos režimu, t. y. kaip grupuojami pranešimai
@@ -2965,7 +2980,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeappcompatappcompattelemetrydashboardresiliencycrashlog"></a>Office.AppCompat.AppCompat.TelemetryDashboardResiliencyCrashLog
 
-Renkama tik kai „Office“ telemetrijos ataskaitų sritis yra įgalinta galutinio vartotojo (greičiausiai administratoriaus). Renka „Office“ papildinių ir dokumentų gedimų įvykius.  Duomenys renkami tik tuo atveju, kai vartotojas įgalino „Office“ telemetrijos ataskaitų sritį ir naudoja nustatyti, ar yra padidėjo papildinių arba dokumentų gedimų įvykių.
+Renkama tik kai „Office“ telemetrijos ataskaitų sritis yra įgalinta galutinio vartotojo (greičiausiai administratoriaus). Renka „Office“ papildinių ir dokumentų gedimų įvykius.  Duomenys renkami tik tuo atveju, kai vartotojas įgalino „Office“ telemetrijos ataskaitų sritį ir naudoja nustatyti, ar yra padidėjo papildinių arba dokumentų gedimų įvykių.
 
 Renkami šių laukų duomenys:
 
@@ -2973,7 +2988,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officeappdocsappdocsdocumentoperation"></a>Office.AppDocs.AppDocs.DocumentOperation
 
-Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo operacija (kurti / atidaryti / įrašyti / eksportuoti / kt.), naudojami suprasti ir nustatyti prioritetus, pagrįstus vartotojo patirtimi pagal failo atidarymo operacijos informaciją.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykis įrašomas, kai vykdoma failo operacija (kurti / atidaryti / įrašyti / eksportuoti ir kt.), ir naudojamas suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo operacijos informaciją.
 
 Renkami šių laukų duomenys:
 
@@ -3428,7 +3443,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappdocsoperationopenfrompath"></a>Office.Docs.AppDocs.OperationOpenFromPath
 
-Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija iš kelio, naudojami suprasti ir yra naudojamas siekiant suprasti bei pagal svarbą suskirstyti vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
 Renkami šių laukų duomenys:
 
@@ -3540,7 +3555,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappdocsoperationopenfromprotocolhandler"></a>Office.Docs.AppDocs.OperationOpenFromProtocolHandler
 
-Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš kitos programos naudojant protokolų apdorojimo sąsają, naudojama suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija iš kitos programos naudojant protokolų apdorojimo programos sąsają, ir yra naudojamas siekiant suprasti bei pagal svarbą suskirstyti vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
 Renkami šių laukų duomenys:
 
@@ -3652,7 +3667,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappdocsoperationopenfromshell"></a>Office.Docs.AppDocs.OperationOpenFromShell
 
-Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš apvalkalo, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija iš apvalkalo, ir yra naudojamas siekiant suprasti bei pagal svarbą suskirstyti vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
 Renkami šių laukų duomenys:
 
@@ -3765,7 +3780,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officedocsappdocsoperationopenfromurl"></a>Office.Docs.AppDocs.OperationOpenFromUrl
 
-Šis įvykis renkamas „Office“ programoms, kurios veikia „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykių įrašai, kai vykdoma failo atidarymo operacija iš URL, naudojami suprasti ir nustatyti prioritetus vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
+Šis įvykis renkamas „Office“ taikomosioms programoms, veikiančioms „Android“, „iOS“, „Universal“ arba „Windows“ platformose. Įvykis įrašomas, kai vykdoma failo atidarymo operacija iš URL, pateikto vėliausiai naudotųjų sąraše, ir yra naudojamas siekiant suprasti bei pagal svarbą suskirstyti vartotojo patirčiai pagal failo atidarymo operacijos informaciją.
 
 Renkami šių laukų duomenys:
 
@@ -4414,10 +4429,20 @@ Renkami šių laukų duomenys:
 
 - **version** – informacijos santraukos kliento versija.
 
+#### <a name="officefeedbacksurveyfloodgateclientgetdecisionforactionprestart"></a>Office.Feedback.Survey.FloodgateClient.GetDecisionForActionPreStart
+
+„Office“ programose valdome produkte esančių ir „push“ pranešimų dažnumą valdymo lygmeniu. Šis įvykis užregistruojamas klaidų sąlygomis, kai bandome taikyti valdymą programos pranešimams prieš visiškai suaktyvinus modulį, kuris tvarko valdymą. Ši telemetrija padeda pagerinti mūsų valdymo logiką renkant išsamią informaciją apie scenarijus, kuriuose nėra taikomas valdymas.
+
+Renkami šių laukų duomenys:
+
+- **Data_EventId** – unikalusis žurnalo išrašo identifikatorius.
+
+- **Data_SurveyId** – pranešimo, kurį bandome rodyti, kai generuojama ši klaida, pavadinimas.
+
 
 #### <a name="officefeedbacksurveyfloodgateclientsurveytracked"></a>Office.Feedback.Survey.FloodgateClient.SurveyTracked
 
-Seka, kada įrenginys, atitinkantis reikalavimus apklausai, paleidžia programą. Naudojama įvertinti apklausos vartotojo pasirinkimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+Seka, kada įrenginys, tinkamas apklausai, paleidžia programą. Naudojama įvertinti apklausos vartotojo pasirinkimo proceso būklei bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemoms ir būklei, veikia tinkamai.
 
 Renkami šių laukų duomenys:
 
@@ -4431,7 +4456,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officefeedbacksurveyfloodgateclienttriggermet"></a>Office.Feedback.Survey.FloodgateClient.TriggerMet
 
-Seka, kada įrenginys atitiko reikalavimus, kad jam būtų rodoma apklausa. Naudojama įvertinti apklausos suaktyvinimo proceso būklę bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemas ir būklę, veikia tinkamai.
+Seka, kada įrenginys atitiko kriterijus rodyti apklausai. Naudojama įvertinti apklausos suaktyvinimo proceso būklei bei užtikrinti, kad signalas, naudojamas analizuoti klientų problemoms ir būklei, veikia tinkamai.
 
 Renkami šių laukų duomenys:
 
@@ -5568,7 +5593,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officelivepersonacarduseractionsclosedpersonacard"></a>Office.LivePersonaCard.UserActions.ClosedPersonaCard
 
-Registruojame, kai vartotojas uždaro asmens kortelę.  Duomenys naudojami nustatyti, ar kortelė tinkamai uždaryta. 
+Registruojame, kai vartotojas uždaro asmens kortelę. Duomenys naudojami siekiant nustatyti, ar kortelė uždaroma tinkamai. 
 
 Renkami šių laukų duomenys: 
 
@@ -6185,7 +6210,7 @@ Renkami toliau apibūdintų laukų duomenys
 
 - **Gosid** – visuotinio objekto srities ID
 
-- **IdentityType** – tapatybės tipas, pavyzdžiui, „Windows Live“, organizacijos ID ir t. t.
+- **IdentityType** – tapatybės tipas, pavyzdžiui, „Windows Live“, organizacijos ID ir t. t.
 
 - **InitialReplicationInSession** – nurodo, ar dubliuojamas pirmasis bloknoto dubliavimas atidarius, ar ne
 
@@ -6501,7 +6526,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointdocoperationnewdocument"></a>Office.PowerPoint.DocOperation.NewDocument
 
-Surinkta, „PowerPoint“ naujos pateikties sukūrimo metu.  Apima sėkmingą klaidos šalinimą ir našumo metrikas.
+Surinkta, „PowerPoint“ naujos pateikties sukūrimo metu.  Apima sėkmingą klaidos šalinimą ir našumo metrikas.
 
 Ši informacija naudojama užtikrinti, kad galėsime sukurti failus sėkmingai, nesumažėjant našumui.
 
@@ -7310,7 +7335,7 @@ Renkami šių laukų duomenys:
 
 - **Data_StopwatchDuration:long** – visas veiklos laikas
 
-- **Data_TypeOfSaveDialog:long** – iš anksto apibrėžtas dialogo reikšmių rinkinys (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG ir t. t.)
+- **Data_TypeOfSaveDialog:long** – iš anksto apibrėžtas dialogo reikšmių rinkinys (RUN_SAVEAS_DLG, RUN_SAVEMEDIA_DLG, RUN_SAVEAS_VIDEO_DLG ir t. t.)
 
 - **Doc** – dabartinis dokumentas įrašymui
 
@@ -8697,6 +8722,16 @@ Renkami šių laukų duomenys:
 
 - **RMS.VerifySignatureDuration** – parašo patvirtinimo trukmė
 
+
+#### <a name="qrcodescan"></a>qr.code.scan
+
+Šis įvykis mums praneša, kai vartotojas prisijungia prie „Outlook Mobile“, nuskaitydamas autentifikavimo QR kodą „Outlook“ darbalaukyje, kuriame saugiai pateikiama vartotojo prisijungimo informacija, todėl nebereikia prisijungti rankiniu būdu. Įvykis naudojamas aptikti sėkmingą vartotojo autentifikavimo proceso inicijavimą ir baigimą naudojant QR funkciją. Įvykis diagnozuoja prisijungimo klaidas, kurios gali neleisti vartotojui sėkmingai autentifikuotis mobiliųjų įrenginių programėlėje.
+
+Renkami šių laukų duomenys: 
+
+- **action** – kokius veiksmus vartotojas atliko QR kodo srautui
+
+
 #### <a name="readconversation"></a>read.conversation
 
 Naudojama stebėti galimą neigiamą įtaką el. laiško generavimo sveikatai ir veikimo efektyvumui
@@ -8841,6 +8876,10 @@ Renkami šių laukų duomenys:
 
 - **delete_scope** – paskyros naikinimo metu, ar panaikinote paskyrą iš šio įrenginio, ar iš visų įrenginių su „Outlook“.  
 
+- **emo_default_provider_selected_type** – laukas, nustatantis vartotojo nustatyto numatytojo susitikimo teikėjo tipą. 
+
+- **emo_default_provider_switch_type** – perjungimo, kurį vartotojas atliko tarp internetinių susitikimų teikėjų, tipas ekrane „Kiekvienas susitikimas internete“. Padeda mums suprasti vartotojo įsitraukimą naudojant funkciją. 
+
 - **enabled_state** – ar tinkamai sukonfigūruotas automatinis atsakymas, kontaktų įrašymas ir išorinių vaizdų blokavimo parametrai  
 
 - **notification_action** – skirta tikrinti, ar konfigūravote kokius nors pranešimų veiksmus el. laiškų klasifikavimui, kad galėtumėte įsitikinti, jog šis nustatymas veikia tinkamai 
@@ -8928,7 +8967,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="storeop"></a>StoreOp
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias teisių valdymo tarnybos licencijos operacijos problemas. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą.  Jame yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant „Rights Management“ tarnybos licencijos saugyklos operaciją. 
 
 Renkami šių laukų duomenys:
 
@@ -9066,7 +9105,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="dnslookupop"></a>DnsLookupOp
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant DNS informacijos peržvalgos operaciją. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą.  Jame yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant DNS informacijos peržvalgos operaciją. 
 
 Renkami šių laukų duomenys:
 
@@ -9122,7 +9161,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="getuserop"></a>GetUserOp
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant vartotojo sertifikatų gavimo operaciją. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant vartotojo sertifikatų gavimo operaciją. 
 
 Renkami šių laukų duomenys:
 
@@ -9557,7 +9596,7 @@ Renkami šių laukų duomenys:
 
 - **AppId** – taikomosios programos ID
 
-- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
 
 - **AppInstanceId** – taikomosios programos egzemplioriaus ID 
 
@@ -9872,6 +9911,8 @@ Renkami šių laukų duomenys:
 
   - **Data\_CreateLocalTempFile -** Metodo CreateDocumentTimeMS vykdymo trukmė milisekundėmis
 
+  - **Data_CsiDownloadErrDlgSuppressed:bool** – ar dialogo langas, kuris būtų rodomas CSI atsisiuntimo klaidos metu, buvo sulaikytas, dažniausiai naudingas dialogui, kurį rodo „PowerPoint“.
+
   - **Data\_DetachedDuration:long -** veiklos atskyrimo / neveikimo trukmė
 
   - **Data\_DetermineFileType -** Metodo DetermineFileType vykdymo trukmė milisekundėmis
@@ -9953,6 +9994,10 @@ Renkami šių laukų duomenys:
   - **Data\_Doc\_UsedWrsDataOnOpen:bool –** „True“, jei failas buvo atidarytas palaipsniui naudojant iš anksto pagrindinio kompiuterio talpykloje saugomus WRS duomenis
 
   - **Data\_Doc\_WopiServiceId:string –** WOPI tarnybos identifikatorius, pvz., „Dropbox“
+
+  - **Data_DownloadErrorCsi:int** – atsisiuntimo klaidos tipas, pateiktas CSI
+
+  - **Data_DownloadErrorHResult:int** – atsisiuntimo klaidos HResult, pateiktas CSI
 
   - **Data\_DownloadExcludedData -** Metodo DownloadExcludedData vykdymo trukmė milisekundėmis
 
@@ -10853,7 +10898,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="renewuserop"></a>RenewUserOp
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas.  Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant vartotojo sertifikatų atnaujinimo operaciją. 
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą.  Jame yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias atliekant vartotojo sertifikatų atnaujinimo operaciją. 
 
 Renkami šių laukų duomenys:
 
@@ -11342,7 +11387,7 @@ Renkami šių laukų duomenys:
 
 - **AppId** – taikomosios programos ID
 
-- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
+- **AppInfo** – duomenys, susiję su papildinio tipu (užduočių sritis arba be sąsajos, arba turinys ir t. t.) ir teikėjo tipu (domenas, „SharePoint“, failų sistema ir t. t.)
 
 - **AppInstanceId** – taikomosios programos egzemplioriaus ID 
 
@@ -11680,6 +11725,20 @@ Renkami šių laukų duomenys:
 - **Exception** – Išimties iškvietimų rietuvė
 
 - **Event Name** – Įvykio pavadinimas yra įvykio kategorija ir įvykio etiketė.
+
+
+#### <a name="onenotesafebootaction"></a>OneNote.SafeBootAction
+
+Tai suaktyvinama programos paleidimo metu, jei programa sugedo per ankstesnį seansą. Šie duomenys naudojami naujiems gedimams sekti ir padės mums nustatyti, ar gedimų aptikimo logika veikia tinkamai, ir stebėti įkrovos gedimų ir ankstyvų gedimų skaičių.
+
+Renkami šių laukų duomenys: 
+
+- **ActionType** – galimos reikšmės – IncrementCount, ResetBootCounter, ResetEarlyCounter
+
+- **IsLoopCrash** – galimos reikšmės – taip / ne
+
+- **IsNativeCrash** – galimos reikšmės – taip / ne
+
 
 #### <a name="onenotesafebootresetcrashcounteronappsuspend-officeonenoteandroidsafebootresetcrashcounteronappsuspend-officeandroidearlytelemetrysafebootresetcrashcounteronappsuspend"></a>OneNote.SafeBootResetCrashCounterOnAppSuspend, Office.OneNote.Android.SafeBootResetCrashCounterOnAppSuspend, Office.Android.EarlyTelemetry.SafeBootResetCrashCounterOnAppSuspend
 
@@ -12735,7 +12794,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="officepowerpointpptandroidrehearseview"></a>Office.PowerPoint.PPT.Android.RehearseView
 
-Šis įvykis reiškia, kad vartotojas sustabdė kartojimo seansą. Kartu su „Office.PowerPoint.PPT.Android.RehearseView.StartSession“ tai bus pirmasis bet kokių gedimų arba klaidų, su kuriomis susiduria vartotojas, indikatorius.
+Šis įvykis nurodo, kad vartotojas sustabdė repeticijos seansą. Kartu su Office.PowerPoint.PPT.Android.RehearseView.StartSession tai bus pirmasis gedimų arba klaidų, su kuriomis susiduria vartotojas, indikatorius.
 
 Renkami šių laukų duomenys:
 
@@ -13010,7 +13069,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="onenoteappsafebootdialogactiontaken-officeonenoteandroidsafebootdialogactiontaken-officeandroidearlytelemetrysafebootdialogactiontaken"></a>OneNote.App.SafeBootDialogActionTaken, Office.OneNote.Android.SafeBootDialogActionTaken, Office.Android.EarlyTelemetry.SafeBootDialogActionTaken
 
-Kritinis signalas, naudojamas vartotojo atsakui sekti, kai vartotojas mato saugos įkrovos dialogo langą. Saugaus paleidimo dialogo langas rodomas, kai nepavyksta paleisti pakartotinai. Vartotojas renkasi saugią paleistį, kad būtų galima sėkmingai paleisti programos duomenis. Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Vartotojas mato, kai susiduria su kritine įkrovos gedimo klaida. Ši informacija padės sekti, jei buvo išspręsta gedimo triktis ir ar vartotojas gali sėkmingai įjungti programą.
+Kritinis signalas, naudojamas vartotojo atsakui sekti, kai jam rodomas saugaus paleidimo dialogo langas. Saugaus paleidimo dialogo langas rodomas, kai nepavyksta paleisti pakartotinai. Tai naudojama siekiant užtikrinti regresijos aptikimą, kuris ypač svarbus programai „OneNote“ ir tarnybos sveikatai. Vartotojas mato, kai susiduria su kritine įkrovos gedimo klaida. Ši informacija padės sekti, jei buvo išspręsta gedimo triktis ir ar vartotojas gali sėkmingai įjungti programą.
 
 Renkami šių laukų duomenys: 
 
@@ -14213,7 +14272,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="renewidentityfailure"></a>RenewIdentityFailure
 
-Renkama, kai vartotojas bando atidaryti IRM apsaugotą dokumentą ar taikyti IRM apsaugas. Joje yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias kai nepavyko atnaujinti vartotojo sertifikatų.
+Gaunamas, kai vartotojas bando atidaryti IRM apsaugotą dokumentą arba taikyti IRM apsaugą. Jame yra informacija, reikalinga tinkamai nustatyti ir diagnozuoti problemas, įvykusias, kai nepavyko atnaujinti vartotojo sertifikatų.
 
 Renkami šių laukų duomenys:
 
@@ -14396,6 +14455,8 @@ Toliau nurodyti laukai renkami tik „Android“:
 - **caption** – nurodo, ar vartotojas įjungė paslėptuosius titrus savo įrenginyje, kad padėtų mums aptikti su paslėptaisiais titrais susijusias problemas
 
 - **color_inversion** – nurodo, ar vartotojas įrenginyje įjungė spalvų pakeitimo parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
+
+- **density_setting** – pasirinktinis (vartotojo pasirinktas) tankio režimas, kurį šiuo metu naudoja programa
 
 - **high_contrast** – nurodo, ar vartotojas įrenginyje įjungė didelio kontrasto parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
 
