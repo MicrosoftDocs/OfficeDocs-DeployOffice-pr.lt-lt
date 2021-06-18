@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Informacija „Office“ administratoriams apie pasirinktines prisijungus naudojamas funkcijas, įskaitant tai, kokios sąlygos taikomos.
 hideEdit: true
-ms.openlocfilehash: 8a5f236c3dbb2cb3bb61a9a987f764880987a189
-ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
+ms.openlocfilehash: 3583b22e9df50a3cdaff5e4cd3f6e695ab447498
+ms.sourcegitcommit: b906a2ca706cd4441964f09e1f4adf2e8b94d6be
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51914953"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957655"
 ---
 # <a name="overview-of-optional-connected-experiences-in-office"></a>Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga
 
@@ -28,7 +28,8 @@ ms.locfileid: "51914953"
 Jei turite darbo arba mokymo įstaigos paskyrą, jūsų organizacijos administratorius galbūt suteikė jums galimybę pasiekti vieną arba daugiau debesų technologija pagrįstų paslaugų (dar vadinamų pasirinktinėmis prisijungus naudojamomis funkcijomis) naudojant „Office“ programas, pavyzdžiui, „Word“, „Excel“, kurios yra įtrauktos į „Microsoft 365“ programas įmonėms (anksčiau vadintas „Office 365 ProPlus“). Šios debesų technologija pagrįstos paslaugos yra pasirinktinės. Ar jas naudoti, sprendžiate jūs. Jos jums teikiamos pagal [„Microsoft“ paslaugų teikimo sutarties](https://www.microsoft.com/servicesagreement) ir [privatumo patvirtinimo](https://privacy.microsoft.com/) sąlygas. Kai kuriais atvejais gali būti taikomos ir kitos sąlygos. Šiame straipsnyje išvardytos debesų technologijos pagrindu veikiančios paslaugos, išsamiau paaiškintos jų naudojimo sąlygos ir paaiškinta, kaip galite jas bet kada išjungti arba įjungti.
 
 > [!NOTE]
-> Jei esate administratorius, žr. [Administratorių valdikliai, susiję su pasirinktinėmis prisijungus naudojamomis funkcijomis](#admin-controls-for-optional-connected-experiences).
+> - Jei esate administratorius, žr. [Administratorių valdikliai, susiję su pasirinktinėmis prisijungus naudojamomis funkcijomis](#admin-controls-for-optional-connected-experiences).
+> - Jei naudojate „Microsoft Teams“, žr. [„Microsoft Teams“ pasirinktinių prijungtųjų funkcijų apžvalga](/microsoftteams/teams-privacy-oce-overview).
 
 ### <a name="if-you-use-these-services-what-terms-of-use-do-you-need-to-agree-to"></a>Jei naudojate šias paslaugas, su kokiomis naudojimo sąlygomis turite sutikti?
 
@@ -100,7 +101,7 @@ Norėdami nustatyti, ar administratorius suteikė jums galimybę pasiekti kokias
 
 Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
-Daugiau informacijos žr. [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Daugiau informacijos žr. [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
 > Jei jūsų organizacijos administratorius jums suteikė bendrojo licencijavimo „Office 2019“, „Project 2019“ arba „Visio 2019“ versiją, eikite į **Failas** > **Parinktys** > **Patikimumo centras** > **Patikimumo centro parametrai** > **Privatumo parinktys**. Čia turėtumėte matyti žymės langelį, kad **Įjungti pasirenkamą ryšį**. Jei šio žymės langelio nematote „Project 2019“ arba „Visio 2019“, pasirinkite **Privatumo parametrai...** tame **Patikimumo centro** dialogo lange. Tada turėtų būti rodomas dialogo langas **Privatumo parametrai** su žymės langeliu, kad būtų galima **Įgalinti pasirinktines sujungtas funkcijas**.
@@ -111,7 +112,7 @@ Jei administratorius suteikė jums galimybę pasiekti pasirinktines prisijungus 
 
 Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
 
-Daugiau informacijos žr. [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+Daugiau informacijos žr. [Paskyros privatumo parametrai](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 > [!NOTE]
 > Jei jūsų organizacijos administratorius jums suteikė bendrojo licencijavimo „Office 2019“, „Project 2019“ arba „Visio 2019“ versiją, eikite į **Failas** > **Parinktys** > **Patikimumo centras** > **Patikimumo centro parametrai** > **Privatumo parinktys**. Čia turėtumėte matyti žymės langelį, kad **Įjungti pasirenkamą ryšį**. Jei šio žymės langelio nematote „Project 2019“ arba „Visio 2019“, pasirinkite **Privatumo parametrai...** tame **Patikimumo centro** dialogo lange. Tada turėtų būti rodomas dialogo langas **Privatumo parametrai** su žymės langeliu, kad būtų galima **Įgalinti pasirinktines sujungtas funkcijas**.

@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: Teikia „Office“ administratoriams informaciją apie „Office“ prisijungus naudojamas funkcijas, pvz., funkcijas, kurios analizuoja turinį, arba funkcijas, kurios atsisiunčia internetinį turinį.
 hideEdit: true
-ms.openlocfilehash: c1fb64bc45ed9e97cde37541dad85162a5a3699c
-ms.sourcegitcommit: 54b9d411bb6a021fb6db8df4acfb28287693c84c
+ms.openlocfilehash: 176166681e1e1e14ac6a13dce65e432de4bdac61
+ms.sourcegitcommit: b906a2ca706cd4441964f09e1f4adf2e8b94d6be
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51916095"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957619"
 ---
 # <a name="connected-experiences-in-office"></a>„Office“ prisijungus naudojamos funkcijos
 
@@ -29,7 +29,7 @@ ms.locfileid: "51916095"
 
 ## <a name="connected-experiences-that-analyze-your-content"></a>Prisijungus naudojamos funkcijos, kurios analizuoja turinį
 
-Prisijungus naudojamos funkcijos, kurios analizuoja turinį, yra funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir pan. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba vertyklė.
+Prisijungus naudojamos funkcijos, kurios analizuoja turinį, yra funkcijos, kurios naudodamos „Office“ turinį pateikia dizaino rekomendacijų, redagavimo pasiūlymų, duomenų įžvalgų ir pan. Pavyzdžiui, „PowerPoint“ dizaino įrankis arba vertyklė.
 
 Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizuoja turinį, sąrašas, taip pat saitų, kur galite rasti daugiau informacijos apie jas.
 
@@ -37,23 +37,21 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 | ----------- | ------------------ |
 | *3D Maps*\*    | [Darbo su trimačiais žemėlapiais pradžia](https://support.microsoft.com/office/6b56a50d-3c3e-4a9e-a527-eea62a387030)   |
 | Duomenų analizė (anksčiau vad. Idėjos) | [Duomenų analizė programoje „Excel“](https://support.microsoft.com/office/3223aab8-f543-4fda-85ed-76bb0295ffc4) |
-|Automatinis taisymas|[Greitas ir lengvas turinio lygiavimas naudojant automatinį taisymą](https://support.microsoft.com/office/b5ec9a1e-f955-46d5-a91b-f236459525b4)|
 | Automatinis alternatyvusis tekstas   | [Viskas, ką turite žinoti apie efektyvaus alternatyviojo teksto rašymą](https://support.microsoft.com/office/df98f884-ca3d-456c-807b-1a1fa82f5dc2) |
-|Diagramų rekomendacijos (internetinė „Excel“)|[Kurti diagramą su rekomenduojamomis diagramomis](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0#ID0EAADAAA=Web)|
+|Diagramų rekomendacijos|[Kurti diagramą su rekomenduojamomis diagramomis](https://support.microsoft.com/office/cd131b77-79c7-4537-a438-8db20cea84c0)|
 |Mokomųjų bloknotų priedai („OneNote“)|[Darbo su „OneNote“ mokomaisiais bloknotais pradžia: nurodymai mokytojams](https://support.microsoft.com/office/28666b8e-b0ae-48fe-b001-1874f5f6db58)|
 | Duomenų tipai| [„Excel“ duomenų tipai: akcijų ir geografiniai duomenys](https://support.microsoft.com/office/61a33056-9935-484f-8ac8-f1a89e210877)   |
-|Dizaino įrankis (internetinė „Word“)|[Dizaino įrankio naudojimas kuriant geresnius dokumentus](https://support.microsoft.com/office/97844bd3-b52d-4c94-9deb-b51db7f36d91    )|
 | Diktavimo funkcija  | [Diktavimas „Microsoft 365“](https://support.microsoft.com/office/eab203e1-d030-43c1-84ef-999b0b9675fe) |
 |Rengyklė<sup>1</sup> |[„Microsoft“ rengyklė patikrina gramatiką ir daugiau dokumentuose, pašte ir žiniatinklyje](https://support.microsoft.com/office/91ecbe1b-d021-4e9e-a82e-abc4cd7163d7)|
 |Patogūs saitai programoje „Outlook“ |[Patogesni saitų pavadinimai el. laiškuose](https://support.microsoft.com/office/02040f47-bd56-4806-8311-fc913fed54c0)|
-| Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
+| Rankraščio konvertavimas į tekstą, rankraščio konvertavimas į figūrą, rankraštinio teksto konvertavimas į matematinį<sup>2</sup> | [Rankraščio keitimas į figūras, tekstą arba matematinį tekstą naudojant „PowerPoint“, skirtą „Microsoft 365“](https://support.microsoft.com/office/0740dec3-6291-4c1f-8baa-011d18449919) |
 | Duomenų įterpimas iš paveikslėlio| [Duomenų įterpimas iš paveikslėlio](https://support.microsoft.com/office/3c1bb58d-2c59-4bc0-b04a-a671a6868fd7)|
 |Mokomieji įrankiai|[Mokomieji įrankiai](https://support.microsoft.com/office/eff7f7e3-7e21-42f0-a6f1-da7027f98261)|
 | Automatiniai aprašai ir subtitrai |  [Pristatymas naudojant tikralaikius automatinius aprašus programoje „PowerPoint“](https://support.microsoft.com/office/68d20e49-aec3-456a-939d-34a79e8ddd5f)   |
 | *Žemėlapio diagrama*\*    | [Žemėlapio diagramos kūrimas programoje „Excel“](https://support.microsoft.com/office/f2cfed55-d622-42cd-8ec9-ec8a358b593b)  |
 | Žemėlapiai papildinyje „Power View“   | [Žemėlapiai papildinyje „Power View“](https://support.microsoft.com/office/8A9B2AF3-A055-4131-A327-85CC835271F7) |
 | „Office“ pristatymo paslauga  | [„PowerPoint“ pateikties transliavimas internetu nuotolinei auditorijai](https://support.microsoft.com/office/25330108-518e-44be-a281-e3d85f784fee)    |
-|„PivotTable“ rekomendacijos (internetinė „Excel“)|[„PivotTable“ kūrimas siekiant analizuoti darbalapio duomenis](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576#OfficeVersion=Web)|
+|„PivotTable“ rekomendacijos|[„PivotTable“ kūrimas siekiant analizuoti darbalapio duomenis](https://support.microsoft.com/office/a9a84538-bfe9-40a9-a8e9-f99134456576)|
 | „PowerPoint“ dizaino įrankis   | [Profesionalių skaidrių maketų kūrimas naudojant „PowerPoint“ dizaino įrankį](https://support.microsoft.com/office/53c77d7b-dc40-45c2-b684-81415eac0617)   |
 |Pranešėjo pagalbinė priemonė („PowerPoint“)|[Repetuoti pristatymą su pranešėjo pagalbine priemone](https://support.microsoft.com/office/cd7fc941-5c3b-498c-a225-83ef3f64f07b)|
 | Publikavimas „Microsoft Stream“    | [Pateikties pavertimas vaizdo įrašu](https://support.microsoft.com/office/c140551f-cb37-4818-b5d4-3e30815c3e83#bkmk_microsoftstream)  |
@@ -63,21 +61,22 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios analizu
 |Bendrinamas pranešimas|[Pranešimų gavimas, kai komandos nariai atnaujina jūsų bendrinamą failą](https://support.microsoft.com/office/9cc94893-02d5-4d96-9b3f-8b9414d5047a)|
 |*Panašumų tikrintuvas*\* („Editor“ funkcija)|[Tikrinkite savo dokumento panašumą į internetinius šaltinius](https://support.microsoft.com/office/6d942360-b5ca-445f-a84d-6e8c66fc40d2) |
 | *Išmanioji ieška*\*   | [Įžvalgų apie darbą gavimas naudojant išmaniąją iešką](https://support.microsoft.com/office/debf2083-5ac0-4739-8667-ae2467bec044) |
-| Siūlomi atsakymai | [Kas yra siūlomi atsakymai?](https://support.microsoft.com/office/58517b93-946e-42d4-95d0-777aa5aa42a5) <br/> [Kaip generuojami siūlomi atsakymai?](https://support.microsoft.com/office/af9cfa57-4f4f-419f-b76d-bb305c3a9d4d)|
+| Siūlomi atsakymai | [Siūlomų atsakymų naudojimas programoje „Outlook“](https://support.microsoft.com/office/19316194-0434-43ba-a742-6b5890157379)|
 | Teminė ieška „Word“ (įtraukimas iš failų)   | [Reikiamo turinio radimas ir panaudojimas, neišeinant iš „Word“](https://support.microsoft.com/office/860118fc-1f61-41f6-922f-40084a284658)   |
 |Teksto numatymas (redaktoriaus funkcija)|[Rašymas greičiau naudojant „Word“ teksto numatymą](https://support.microsoft.com/office/7afcb4f3-4aa2-443a-9b08-125a5d692576)|
-|Transkripcija |[Įrašų transkribavimas](https://support.microsoft.com/office/7fc2efec-245e-45f0-b053-2a97531ecf57)|
 | Transformavimas į tinklalapį   | [„Word“ dokumento transformavimas į „Sway“ tinklalapį](https://support.microsoft.com/office/65912b2d-8b81-41e1-ac52-c20a65ce8ecf) |
 | Vertyklė   | [Teksto vertimas į kitą kalbą](https://support.microsoft.com/office/287380e4-a56c-48a1-9977-f2dca89ce93f)  |
 
 <sup>1</sup> pagrindinės „Editor“ funkcijos išlieka pasiekiamos, net jei nesate prisijungę prie interneto. Tos pačios pagrindinės funkcijos taip pat išlieka pasiekiamos, net jei nusprendžiate išjungti susietų patirčių naudojimą, kuris analizuoja turinį.  Abiem atvejais, duomenys apie „Editor“ naudojimą „Microsoft“ nesiunčiami.
+
+<sup>2</sup> Įrenginiuose, kuriuose veikia „Android“, šios rankraščio galimybės lieka pasiekiamos, net jei nesate prisijungę prie interneto. Šios rankraščio galimybės taip pat lieka pasiekiamos įrenginiuose, kuriuose veikia „Android“, net jei nusprendžiate išjungti prisijungus naudojamas funkcijas, kurios analizuoja turinį. Abiem atvejais „Microsoft“ nesiunčiami jokie duomenys apie šių rankraščio galimybių naudojimą.
 
 > [!NOTE]
 > \*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“* strategijos nustatymą.
 
 ## <a name="connected-experiences-that-download-online-content"></a>Prisijungus naudojamos funkcijos, kurios atsisiunčia internetinį turinį
 
-Prisijungus naudojamos funkcijos, kurios atsisiunčia turinį, yra funkcijos, kurias naudodami galite ieškoti internetinio turinio ir jį atsisiųsti, įskaitant šablonus, vaizdus, 3D modelius, vaizdo įrašus ir pagalbinę medžiagą, kad patobulintumėte dokumentus. Pavyzdžiui, „Office“ šablonai arba „PowerPoint“ funkcija „QuickStarter“.
+Prisijungus naudojamos funkcijos, kurios atsisiunčia internetinį turinį, yra funkcijos, kurias naudodami galite ieškoti internetinio turinio ir jį atsisiųsti, įskaitant šablonus, vaizdus, 3D modelius, vaizdo įrašus ir pagalbinę medžiagą, kad patobulintumėte dokumentus. Pavyzdžiui, „Office“ šablonai arba „PowerPoint“ funkcija „QuickStarter“.
 
 Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiunčia internetinį turinį, sąrašas, taip pat saitų, kur galite rasti daugiau informacijos apie jas.
 
@@ -99,11 +98,13 @@ Tolesnėje lentelėje pateiktas prisijungus naudojamų funkcijų, kurios atsisiu
 | Internetinių figūrų ieška („Visio“) | [Daugiau figūrų ir šablonų rinkinių](https://support.microsoft.com/office/0475ddea-2a0a-4dec-ab8c-7dda9e63bca9)  |
 | *„PowerPoint“ funkcija „QuickStarter“*\*     | [Temos nagrinėjimas naudojant „PowerPoint“ funkciją „QuickStarter“](https://support.microsoft.com/office/4784f273-0b2c-456c-9c89-24e5b977c224) |
 | *Tyrėjas*\*    | [Programoje „Word“ lengvai ieškokite informacijos, susijusios su dokumentu](https://support.microsoft.com/office/1728f286-8702-4d72-8169-ab7677ca0e1f) |
-| Ką norite daryti    | [Spartesnis darbas su funkcija Ką norite daryti](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
+| Ką norite daryti<sup>3</sup>    | [Spartesnis darbas su funkcija Ką norite daryti](https://support.microsoft.com/office/f20d2198-17b8-4b09-a3e5-007a337f1e4e)  |
 | Šablonai  | [Nemokamų, iš anksto sukurtų šablonų atsisiuntimas](https://support.microsoft.com/office/29f2a18d-29a6-4a07-998b-cfe5ff7ffbbb)  |
 |*Numatomas kelionės laikas kortelėje „Up Next“*\*|Kai pasirenkate leisti „Outlook“ skirtai „iOS“ ir „Android“ pasiekti jūsų vietą, numatomas jūsų kelionės laikas iki kito įvykio bus įtrauktas į [„Up Next“](https://support.microsoft.com/office/d316ba95-c0d8-4a6e-87a3-84dd17f3775e) kortelę, esančią aplanko Gauta viršuje.<br/><br/> [Kas yra „Laikas palikti pranešimų“?](https://support.microsoft.com/office/ff4896c5-d3a7-40ef-8954-e5c99e8b88bd)|
 | *Orų prognozės juosta*\* („Outlook“)| [Kalendoriuje nurodyto miesto, kuriam juostoje skelbiama orų prognozė, keitimas](https://support.microsoft.com/office/D11B7532-7C58-489E-8103-5CC5D727B06B) |
 |*Orai kalendoriuje*\* („Outlook Mobile“)|[Kaip įjungti orų prognozę kalendoriuje „Outlook Mobile“?](https://support.microsoft.com/office/04c48f70-4780-47d6-bc2e-d77d2f4c4ef2)|
+
+<sup>3</sup> pagrindinės Ką norite daryti funkcijos išlieka pasiekiamos, net jei nesate prisijungę prie interneto. Tos pačios pagrindinės funkcijos taip pat išlieka pasiekiamos, net jei nusprendžiate išjungti prisijungus naudojamas funkcijas, kurios atsisiunčia internetinį turinį. Abiem atvejais, duomenys apie funkcijos Ką norite daryti naudojimą „Microsoft“ nesiunčiami.
 
 > [!NOTE]
 >\*Kai vartotojai yra prisijungę prie darbo ar mokyklos paskyros, prijungtos sąsajos, nurodytos anksčiau pasviruoju šriftu, yra neprivalomos ir teikiamos pagal [ „Microsoft“ paslaugų teikimo sutarties ](https://www.microsoft.com/servicesagreement) ir [ privatumo patvirtinimo ](https://privacy.microsoft.com/) sąlygas, gali būti taikomos ir kitos sąlygos. Daugiau informacijos rasite [Pasirinktinių „Office“ prisijungus naudojamų funkcijų apžvalga](optional-connected-experiences.md). Jei esate administratorius, šias prijungtas sąsajas galite valdyti naudodamiesi prijungtos sąsajos privatumo valdikliais arba *Leisti naudoti papildomą neprivalomą prijungtą sąsają naudojant „Office“* strategijos nustatymą.
@@ -160,7 +161,7 @@ Jei esate prisijungę prie darbo arba mokymo įstaigos paskyros, jūsų organiza
 
 > [!NOTE]
 > - Jei naudojate „Office for Mac“, atidarykite bet kurią „Office“ programą ir pasirinkite programos meniu (pvz., „Word“ arba „Excel“) > **Nuostatos** > **Privatumas**. Bus atidarytas paskyros privatumo parametrų dialogo langas, kuriame galėsite matyti privatumo parinktis.
-> - Daugiau informacijos žr. [Paskyros privatumo parametruose](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
+> - Daugiau informacijos žr. [Paskyros privatumo parametruose](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b).
 
 Jei esate organizacijos administratorius, naudodami strategijos parametrus galite nuspręsti, ar šios prisijungus naudojamos funkcijos pasiekiamos vartotojams. Jei nenaudosite šių strategijos parametrų, visos prisijungus naudojamos funkcijos bus pasiekiamos vartotojams. Daugiau informacijos apie šių politikos parametrų naudojimą ieškokite šiuose straipsniuose: 
 
