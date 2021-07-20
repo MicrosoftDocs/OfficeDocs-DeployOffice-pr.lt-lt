@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Privacy
 description: „Office“ administratoriams suteikia informaciją apie būtinuosius „Office“ diagnostikos duomenis ir pateikia įvykių ir duomenų laukų sąrašą.
 hideEdit: true
-ms.openlocfilehash: 47ecf8e0195324b1c40a627333275bbed0947253
-ms.sourcegitcommit: 0e2ec395ca334719883a7a48b5313a72217f2eab
+ms.openlocfilehash: 575d9e737e529ba999ece88d69bf8dd91d171d64
+ms.sourcegitcommit: 85bef3bf44e4d6db25fd5817a0e49a159642dab2
 ms.translationtype: HT
 ms.contentlocale: lt-LT
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52907398"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53456204"
 ---
 # <a name="required-diagnostic-data-for-office"></a>Būtinieji „Office“ diagnostikos duomenys
 
@@ -1327,6 +1327,28 @@ Renkami šių laukų duomenys:
 
   - **"OfficeArchitecture** " – „Office“ kliento architektūra
 
+
+#### <a name="officeprogrammabilityaddinsribbonbuttonclick"></a>Office.Programmability.Addins.RibbonButtonClick
+
+Įvykis generuojamas, kai pirmą kartą seanso metu vartotojas spusteli mygtuką, kurį į juostelę įtraukia konkretus papildinys. Jei seansas trunka kelias dienas, ši telemetrija bus siunčiama kartą per dieną. Duomenys naudojami dviem būdais: 1. Kai papildinys sugenda, žinant, kiek vartotojų iš tikrųjų naudoja papildinį, padės mums išspręsti problemą. 2. Rodyti administratoriams kaip COM papildinių valdymo scenarijų dalį papildinių atsargose ir kaip suplanuotų papildinių sveikatos scenarijų „Microsoft 365“ programų sveikatos dalį. Administratoriai galės stebėti papildinių naudojimą kiekviename įrenginyje, leisdami išjungti arba pašalinti nenaudojamus COM papildinius.
+
+Renkami šių laukų duomenys:
+
+- **Add-inTimeDateStamp** – papildinio laiko žyma iš DLL metaduomenų
+
+- **CLSID** – papildinio klasės identifikatorius
+
+- **Description** – papildinio aprašas
+
+- **FileName** – papildinio failo vardas, be failo kelio
+
+- **FriendlyName** – papildinio draugiškas vardas
+
+- **OfficeApplication** – šiuo metu vykdoma „Office“ programa
+
+- **ProgId** – papildinio programos identifikatorius
+
+
 #### <a name="officevisiovisioaddonload"></a>Office.Visio.Visio.AddonLoad
 
 Fiksuoja klaidas, kai nepavyksta įkelti sprendimo. Būtinas derinti priedų įkėlimo klaidas programoje „Visio“.
@@ -1692,7 +1714,7 @@ Visi simboliai taip pat gali būti ypatybės. Padeda mums suprasti laiško juodr
 
 #### <a name="applaunchreport"></a>app.launch.report
 
-Šis įvykis leidžia mums aptikti ir išspręsti problemas, kai „Outlook“ paleidžiama lėtai arba nevisiškai, todėl vartotojams tampa sudėtinga naudoti mūsų programą. Apima informaciją apie tam tikras įgalintas funkcijas ir kiek laiko buvo truko dalių paleistis.
+Šis įvykis paleidžiamas, kai „Outlook“ paleidžiama lėtai arba ne iki galo. Surinkti duomenys teikia informaciją apie tam tikras įgalintas funkcijas ir kiek laiko buvo truko dalių paleistis.  Tai leidžia mums aptikti ir išspręsti problemų priežastis.
 
 Renkami šių laukų duomenys: 
 
@@ -2677,6 +2699,20 @@ Renkami šių laukų duomenys:
 - **is_remembered** – ar nuostata paleisti naujame lange iš praneštos vietos buvo įrašyta vartotojo.
 
 - **multi_window_origin** – vieta programoje, kurioje vyksta sąveika paleisti kitą programos ekraną naujame lange.
+
+
+#### <a name="notificationcenter"></a>notification.center
+
+Šis įvykis leidžia sekti, kada vartotojai įeina į pranešimų centrą ir išeina iš jo, taip pat neperskaitytų pranešimų skaičių. Tai padeda užtikrinti, kad pranešimų centras suderinamas su visais kitais klientais. Taip pat sekame, kada vartotojas bakstelėja pranešimą, kad galėtume pasakyti, kokio tipo jis yra.
+
+Renkami šių laukų duomenys: 
+
+- **action** – vartotojo atliktas veiksmas (closed, opened, notification_tapped)
+
+- **type** – nuo šiol pranešimo tipas visada bus reakcija
+
+- **unseen_count** – kiek pranešimų dabartiniame rodinyje nebuvo peržiūrėti anksčiau
+ 
 
 
 #### <a name="officeandroiddocsuifileoperationsopendocumentmeasurements"></a>Office.Android.DocsUI.FileOperations.OpenDocumentMeasurements
@@ -5839,6 +5875,19 @@ Renkami šių laukų duomenys:
   - **Data.Log** – pasirinktinis žurnalo pranešimas nurodo, ar pirminis tikrinimas pavyko
 
 
+#### <a name="officeofficemobilefluidfluidfileoperations"></a>Office.OfficeMobile.Fluid.FluidFileOperations
+
+Šis įvykis renkamas „Office“ programoms, kai įvykdoma „Fluid“ failo operacija. Duomenys naudojami funkcijos sveikatai sekti ir vartotojo patirčiai suprasti pagal operacijos informaciją.
+
+Renkami šių laukų duomenys: 
+
+- **FailureReason** – jei operacija buvo nesėkminga. Apima klaidos kodą.
+
+- **Result** – Bulio logikos reikšmė, nurodanti operacijos galutinį rezultatą.
+
+- **Type** – operacijos tipas (pvz., Open).
+
+
 #### <a name="officeofficemobilepdfviewerpdffileoperations-on-android"></a>Office.OfficeMobile.PdfViewer.PdfFileOperations („Android“)
 
 Įvykis renkamas naudojantis „Office“ programa, skirta „Android“. Jis įrašomas, kai vykdoma .pdf failo atidarymo, uždarymo arba įrašymo operacija, ir naudojamas siekiant suprasti ir nustatyti prioritetus vartotojo patirčiai pagal .pdf failo operacijos informaciją. Įvykis mums leidžia užtikrinti, kad .pdf failų atidarymo, uždarymo ir įrašymo operacijos būtų vykdomos, kaip numatyta, ir pagerinti .pdf failų operacijų veikimą.
@@ -8790,11 +8839,13 @@ Renkami šių laukų duomenys:
 
 #### <a name="sendmessage"></a>send.message
 
-Naudojama stebėti galimą neigiamą įtaką el. laiško siuntimo sveikatai ir veikimo efektyvumui.
+Surinkti duomenys nurodo galimą neigiamą įtaką el. laiško siuntimo sveikatai ir veikimo efektyvumui. Duomenys naudojami norint suprasti, ar funkcija veikia sėkmingai, ir planuoti vaizdų funkcijos tobulinimą el. laiškuose.
 
 Renkami šių laukų duomenys:
   
 - **account** – seka veiksmą atlikusią paskyrą
+
+- **compose_addressing_duration** – nurodo bendrą laiką, kurį vartotojas praleidžia laukuose Kam/ Kopija / Nematoma kopija
 
 - **compose_duration** – seka bendrą laiką, kurį vartotoją kūrė laišką, įskaitant kelis juodraščių seansus
 
@@ -11203,7 +11254,7 @@ Renkami šių laukų duomenys:
 
 - **device_brand** – įrenginio prekės ženklas (gamintojas ar operatorius), kurį nurodo android.os.Build#BRAND
 
-- **device_ID** – įrenginio unikalusis identifikatorius (IMEI)
+- **device_ID** – unikalus įrenginio ID (IMEI) *[Šis laukas buvo pašalintas iš dabartinių „Office“ versijų, bet gali būti rodomas senesnėse versijose.]*
 
 - **device_manufacturer** – įrenginio gamintojas, kurį nurodo android.os.Build#MANUFACTURER
 
@@ -11729,7 +11780,7 @@ Renkami šių laukų duomenys:
 
 #### <a name="onenotesafebootaction"></a>OneNote.SafeBootAction
 
-Tai suaktyvinama programos paleidimo metu, jei programa sugedo per ankstesnį seansą. Šie duomenys naudojami naujiems gedimams sekti ir padės mums nustatyti, ar gedimų aptikimo logika veikia tinkamai, ir stebėti įkrovos gedimų ir ankstyvų gedimų skaičių.
+Suaktyvinama programos paleidimo metu, jei programa sugedo ankstesnio seanso metu. Šie duomenys naudojami naujiems gedimams sekti ir padės mums nustatyti, ar gedimų aptikimo logika veikia tinkamai, ir stebėti įkrovos gedimų ir ankstyvų gedimų skaičių.
 
 Renkami šių laukų duomenys: 
 
@@ -14461,6 +14512,8 @@ Toliau nurodyti laukai renkami tik „Android“:
 - **high_contrast** – nurodo, ar vartotojas įrenginyje įjungė didelio kontrasto parametrą, kad padėtų mums nustatyti su šiuo parametru susijusias problemas
 
 - **large_text** – nurodo, ar įrenginyje įjungtas didelio teksto parametras, kad būtų galima nustatyti su dideliu tekstu susijusias problemas
+
+- **oem_preinstall** – nurodo, ar programa buvo iš anksto įdiegta įrenginyje (taikoma tik „Samsung“ įrenginiams)
 
 - **supported_abis** – nurodo, kokio tipo programos dvejetaines sąsajas (ABIs) palaiko įrenginio platforma, kad būtų galima nustatyti su šiuo parametru susijusias problemas
 
